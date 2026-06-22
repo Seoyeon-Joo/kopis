@@ -1,0 +1,5 @@
+output/
+chunk_output/
+artifacts/
+__pycache__/
+*.pyc

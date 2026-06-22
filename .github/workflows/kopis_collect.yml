@@ -1,0 +1,213 @@
+name: KOPIS 전체 데이터 수집
+
+on:
+  workflow_dispatch:          # 수동 실행
+  schedule:
+    - cron: '0 1 * * 0'      # 매주 일요일 01:00 UTC (한국 10:00)
+
+permissions:
+  contents: write
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 병렬 실행 구조
+#
+#  Phase 1 (5개 동시 실행)
+#  ┌──────────────┐ ┌──────────────┐ ┌───────────────┐ ┌─────────────┐ ┌─────────────┐
+#  │  공연목록     │ │  시설목록     │ │ 기타목록(5~8) │ │  예매통계    │ │  공연통계    │
+#  │  (IDs 저장)  │ │  (IDs 저장)  │ │               │ │  (9~12)     │ │  (13~18)    │
+#  └──────┬───────┘ └──────┬───────┘ └───────────────┘ └─────────────┘ └─────────────┘
+#         │                │
+#  Phase 2 (청크 병렬)
+#         ↓                ↓
+#  ┌──────────────┐ ┌──────────────┐
+#  │ 공연상세 ×10 │ │ 시설상세 ×5  │
+#  └──────┬───────┘ └──────┬───────┘
+#         └────────┬────────┘
+#  Phase 3
+#                  ↓
+#          ┌───────────────┐
+#          │ 병합 & 커밋    │
+#          └───────────────┘
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+jobs:
+
+  # ──────────────────────────── Phase 1 ────────────────────────────
+
+  fetch-perf-list:
+    name: "[01] 공연목록"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 공연목록 수집
+        run: python scripts/fetch_list.py performances
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-01-perf-list
+          path: output/
+
+  fetch-venue-list:
+    name: "[03] 공연시설목록"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 시설목록 수집
+        run: python scripts/fetch_list.py venues
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-03-venue-list
+          path: output/
+
+  fetch-other-lists:
+    name: "[05-08] 기타 목록"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 기획사/수상/축제/창작자 수집
+        run: |
+          python scripts/fetch_list.py producers
+          python scripts/fetch_list.py awards
+          python scripts/fetch_list.py festivals
+          python scripts/fetch_list.py creators
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-05-08-other-lists
+          path: output/
+
+  fetch-booking-stats:
+    name: "[09-12] 예매통계"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 예매통계 수집
+        run: python scripts/fetch_stats.py booking
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-09-12-booking-stats
+          path: output/
+
+  fetch-perf-stats:
+    name: "[13-18] 공연통계"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 공연통계 수집
+        run: python scripts/fetch_stats.py performance
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-13-18-perf-stats
+          path: output/
+
+  # ──────────────────────────── Phase 2 ────────────────────────────
+
+  fetch-perf-details:
+    name: "[02] 공연상세 chunk ${{ matrix.chunk }}/10"
+    needs: fetch-perf-list
+    strategy:
+      matrix:
+        chunk: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+      fail-fast: false   # 일부 청크 실패해도 나머지 계속
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 공연목록 ID 파일 다운로드
+        uses: actions/download-artifact@v4
+        with:
+          name: data-01-perf-list
+          path: output/
+      - name: 공연상세 수집 (청크 ${{ matrix.chunk }})
+        run: python scripts/fetch_details.py performances ${{ matrix.chunk }} 10
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-02-perf-details-${{ matrix.chunk }}
+          path: chunk_output/
+
+  fetch-venue-details:
+    name: "[04] 시설상세 chunk ${{ matrix.chunk }}/5"
+    needs: fetch-venue-list
+    strategy:
+      matrix:
+        chunk: [0, 1, 2, 3, 4]
+      fail-fast: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 시설목록 ID 파일 다운로드
+        uses: actions/download-artifact@v4
+        with:
+          name: data-03-venue-list
+          path: output/
+      - name: 시설상세 수집 (청크 ${{ matrix.chunk }})
+        run: python scripts/fetch_details.py venues ${{ matrix.chunk }} 5
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-04-venue-details-${{ matrix.chunk }}
+          path: chunk_output/
+
+  # ──────────────────────────── Phase 3 ────────────────────────────
+
+  merge-and-commit:
+    name: "결과 병합 및 저장"
+    needs:
+      - fetch-perf-details
+      - fetch-venue-details
+      - fetch-other-lists
+      - fetch-booking-stats
+      - fetch-perf-stats
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - name: 모든 아티팩트 다운로드
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+
+      - name: CSV 병합
+        run: python scripts/merge.py
+
+      - name: data/ 커밋 및 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "KOPIS 데이터 자동 수집: $(date +'%Y-%m-%d %H:%M UTC')" \
+            || echo "변경사항 없음, 커밋 건너뜀"
+          git push
