@@ -86,7 +86,7 @@ def collect_booking():
     for cur in month_iter(STAT_START, TODAY):
         date_str = cur.strftime("%Y%m%d")
 
-        for ststype, bucket in [("D", rows_daily), ("W", rows_weekly), ("M", rows_monthly)]:
+        for ststype, bucket in [("day", rows_daily), ("week", rows_weekly), ("month", rows_monthly)]:
             root = fetch_xml(f"{BASE_URL}/boxoffice", {"ststype": ststype, "date": date_str})
             if root:
                 for r in to_rows(root):
@@ -96,7 +96,7 @@ def collect_booking():
         for code, name in GENRE_CODES.items():
             root = fetch_xml(
                 f"{BASE_URL}/boxoffice",
-                {"ststype": "M", "date": date_str, "catecode": code},
+                {"ststype": "month", "date": date_str, "catecode": code},
             )
             if root:
                 for r in to_rows(root):
