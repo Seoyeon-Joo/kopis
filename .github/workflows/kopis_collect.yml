@@ -211,3 +211,5 @@ jobs:
           git commit -m "KOPIS 데이터 자동 수집: $(date +'%Y-%m-%d %H:%M UTC')" \
             || echo "변경사항 없음, 커밋 건너뜀"
           git push
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
