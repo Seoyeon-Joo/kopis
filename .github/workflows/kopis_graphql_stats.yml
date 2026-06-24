@@ -1,0 +1,78 @@
+name: KOPIS GraphQL 통계 수집
+
+on:
+  workflow_dispatch:          # 수동 실행
+  schedule:
+    - cron: '0 2 * * 0'      # 매주 일요일 02:00 UTC (한국 11:00, 메인 파이프라인 1시간 뒤)
+
+permissions:
+  contents: write
+
+jobs:
+
+  fetch-graphql-summary:
+    name: "[GQL] 통계 요약표 7종"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: GraphQL 요약표 수집
+        run: python scripts/fetch_graphql_stats.py summary full
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-graphql-summary
+          path: output_graphql/
+
+  fetch-graphql-perfoby:
+    name: "[GQL] 공연별 일별 chunk ${{ matrix.chunk }}/6"
+    strategy:
+      matrix:
+        chunk: [0, 1, 2, 3, 4, 5]
+      fail-fast: false   # 일부 청크 실패해도 나머지 계속
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 공연별 일별 수집 (청크 ${{ matrix.chunk }})
+        run: python scripts/fetch_graphql_stats.py perfoby ${{ matrix.chunk }} 6 full
+      - uses: actions/upload-artifact@v4
+        with:
+          name: data-graphql-perfoby-${{ matrix.chunk }}
+          path: output_graphql/
+
+  merge-and-commit:
+    name: "GraphQL 결과 병합 및 저장"
+    needs:
+      - fetch-graphql-summary
+      - fetch-graphql-perfoby
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - name: 모든 아티팩트 다운로드
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+
+      - name: CSV 병합
+        run: python scripts/merge.py
+
+      - name: data/ 커밋 및 푸시
+        run: |
+          git lfs install
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "KOPIS GraphQL 통계 자동 수집: $(date +'%Y-%m-%d %H:%M UTC')" \
+            || echo "변경사항 없음, 커밋 건너뜀"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
