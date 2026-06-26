@@ -1,0 +1,43 @@
+name: YouTube Condensed Content 데이터 수집
+
+on:
+  workflow_dispatch:        # 수동 실행 버튼
+  schedule:
+    - cron: "0 22 * * *"    # 매일 한국시간 오전 7시 (UTC 22:00) 자동 실행
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 레포 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 스크립트 실행
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          python youtube_collect.py \
+            --input data/16_공연통계_공연별_주간_전체.csv \
+            --out-dir data/youtube \
+            --state-file data/youtube/processed_perf_ids.txt \
+            --limit 90 \
+            --max-videos-per-perf 30 \
+            --max-comments-per-video 30
+
+      - name: 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/youtube/
+          git diff --staged --quiet && echo "변경사항 없음" && exit 0
+          git commit -m "YouTube 데이터 수집: $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
