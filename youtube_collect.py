@@ -13,34 +13,11 @@
 5. video_type / source_type / notes 컬럼은 빈 칸으로 남겨서
    나중에 수동으로 trailer / condensed / full_broadcast / other 등으로 코딩
 
-준비물
-------
-1. Google Cloud Console (console.cloud.google.com) 에서:
-   - 새 프로젝트 생성 (또는 기존 프로젝트 사용)
-   - "YouTube Data API v3" 활성화
-   - API 키 발급 (사용자 인증 정보 > API 키 만들기)
-2. 발급받은 키를 환경변수로 등록:
-     export YOUTUBE_API_KEY="발급받은키"
-   (GitHub Actions에서 쓸 거면 레포 Settings > Secrets에 YOUTUBE_API_KEY로 등록)
-
-실행 예시
---------
-   python youtube_collect.py --input performances_sample.csv --out-dir ./output
-
-출력
-----
-- videos.csv   : 영상 단위 메타데이터 (공연 매칭 정보 포함)
-- comments.csv : 영상별 댓글 (video_id 로 videos.csv와 JOIN)
-
 Quota 주의사항
 --------------
 YouTube Data API 기본 일일 할당량은 10,000 units 예요.
 - search.list  : 1회 호출(결과 50개 이하 한 페이지) = 100 units  ← 제일 비쌈
 - videos.list / channels.list / commentThreads.list : 1회 호출 = 1 unit
-즉 공연 1개당 기본 약 100 units 이므로, 하루에 처리 가능한 공연 수는
-대략 100개 정도예요(영상/채널/댓글 호출 비용은 미미함).
-공연이 그보다 많으면 --limit 으로 잘라서 여러 날에 나눠 돌리거나,
-입력 CSV 자체를 사전에 후보군만 추려서 넣어주세요.
 """
 
 import os
@@ -295,6 +272,15 @@ def load_processed_ids(state_path):
         return set(line.strip() for line in f if line.strip())
 
 
+def partition_shard(performances, shard_index, shard_count):
+    """
+    공연 리스트를 shard_count개로 나눠서 shard_index번째 몫만 반환해요.
+    """
+    if shard_count is None or shard_count <= 1:
+        return performances
+    return performances[shard_index::shard_count]
+
+
 def append_processed_ids(state_path, perf_ids):
     """ 처리 완료한 perf_id를 상태 파일에 기록해요 (다음 실행에서 건너뛰기용) """
     with open(state_path, "a", encoding="utf-8") as f:
@@ -312,13 +298,20 @@ def main():
     )
     parser.add_argument("--limit", type=int, default=None, help="처리할 공연 수 제한 (quota 관리용)")
     parser.add_argument("--max-videos-per-perf", type=int, default=30, help="공연당 최대 검색 영상 수")
-    parser.add_argument("--max-comments-per-video", type=int, default=30, help="영상당 최대 댓글 수")
+    parser.add_argument(
+        "--max-comments-per-video",
+        type=int,
+        default=30,
+        help="영상당 최대 댓글 수 (0이면 댓글 수집을 건너뛰어서 quota를 크게 아껴요)",
+    )
     parser.add_argument("--out-dir", default="./output", help="출력 폴더")
     parser.add_argument(
         "--state-file",
         default=None,
         help="처리 완료한 perf_id를 기록할 파일 (지정하면 다음 실행에서 자동으로 건너뜀)",
     )
+    parser.add_argument("--shard-index", type=int, default=None, help="여러 키로 병렬 처리할 때, 이 작업이 맡을 분할 번호 (0부터 시작)")
+    parser.add_argument("--shard-count", type=int, default=None, help="전체 분할 개수")
     args = parser.parse_args()
 
     if not args.api_key:
@@ -326,7 +319,12 @@ def main():
         sys.exit(1)
 
     os.makedirs(args.out_dir, exist_ok=True)
-    performances = load_performances(args.input, limit=None)  # 전체를 먼저 불러오고 아래서 거름
+    performances = load_performances(args.input, limit=None)
+
+    if args.shard_count:
+        before = len(performances)
+        performances = partition_shard(performances, args.shard_index, args.shard_count)
+        print(f"shard {args.shard_index}/{args.shard_count}: 전체 {before}개 중 {len(performances)}개 담당")
 
     if args.state_file:
         processed = load_processed_ids(args.state_file)
@@ -343,9 +341,10 @@ def main():
     print(f"예상 search.list 비용: 약 {estimated_units} units (일일 한도 10,000)")
     if estimated_units > 9000:
         print("⚠️  quota를 거의 다 쓸 것 같아요. --limit으로 줄이는 걸 권장해요.")
+    if args.max_comments_per_video <= 0:
+        print("ℹ️  댓글 수집을 건너뛰어요.")
 
-    all_videos = []
-    all_comments = []
+    perf_video_map = []
     done_perf_ids = []
     quota_hit = False
 
@@ -361,56 +360,70 @@ def main():
             break
 
         done_perf_ids.append(perf["perf_id"])
-
         if not video_ids:
             print("  검색 결과 없음")
-            continue
+        perf_video_map.append((perf, video_ids))
+        time.sleep(0.1)
 
-        details = get_video_details(args.api_key, video_ids)
+    all_video_ids = []
+    for _, vids in perf_video_map:
+        all_video_ids.extend(vids)
+    unique_video_ids = list(dict.fromkeys(all_video_ids))
 
-        # 공연 매칭 정보 + 수동 코딩용 빈 컬럼 추가
-        for d in details:
-            d.update(
+    print(f"\n고유 영상 {len(unique_video_ids)}개 메타데이터 일괄 조회 중...")
+    video_detail_list = get_video_details(args.api_key, unique_video_ids)
+    video_detail_by_id = {d["video_id"]: d for d in video_detail_list}
+
+    unique_channel_ids = list(dict.fromkeys(d["channel_id"] for d in video_detail_list if d["channel_id"]))
+    print(f"고유 채널 {len(unique_channel_ids)}개 구독자 수 일괄 조회 중...")
+    channel_info = get_channel_details(args.api_key, unique_channel_ids)
+
+    comments_by_video = {}
+    if args.max_comments_per_video > 0:
+        print(f"영상별 댓글 수집 중 (최대 {args.max_comments_per_video}개씩)...")
+        for vid in unique_video_ids:
+            comments_by_video[vid] = get_comments(args.api_key, vid, max_comments=args.max_comments_per_video)
+            time.sleep(0.05)
+
+    all_videos = []
+    all_comments = []
+
+    for perf, video_ids in perf_video_map:
+        for vid in video_ids:
+            base = video_detail_by_id.get(vid)
+            if not base:
+                continue
+            row = dict(base)
+            ch = channel_info.get(row["channel_id"], {})
+            row.update(
                 {
+                    "channel_subscriber_count": ch.get("subscriber_count", ""),
+                    "channel_video_count": ch.get("channel_video_count", ""),
                     "matched_perf_id": perf["perf_id"],
                     "matched_title": perf["title"],
                     "matched_genre": perf["genre"],
                     "matched_venue": perf["venue_name"],
                     "matched_perf_start": perf["perf_start_date"],
                     "matched_perf_end": perf["perf_end_date"],
-                    "video_type": "",   # trailer / condensed / full_broadcast / other
-                    "source_type": "",  # 프레스콜 / 온라인콜 / 공식MV / 팬채널 / 리뷰채널 등
+                    "video_type": "",
+                    "source_type": "",
                     "notes": "",
                 }
             )
+            all_videos.append(row)
 
-        # 채널 구독자수
-        channel_ids = [d["channel_id"] for d in details]
-        channel_info = get_channel_details(args.api_key, channel_ids)
-        for d in details:
-            ch = channel_info.get(d["channel_id"], {})
-            d["channel_subscriber_count"] = ch.get("subscriber_count", "")
-            d["channel_video_count"] = ch.get("channel_video_count", "")
-
-        # 댓글
-        for d in details:
-            cmts = get_comments(args.api_key, d["video_id"], max_comments=args.max_comments_per_video)
-            all_comments.extend(cmts)
-            time.sleep(0.1)
-
-        all_videos.extend(details)
-        time.sleep(0.3)
+        if args.max_comments_per_video > 0:
+            for vid in video_ids:
+                all_comments.extend(comments_by_video.get(vid, []))
 
     videos_path = os.path.join(args.out_dir, "videos.csv")
     comments_path = os.path.join(args.out_dir, "comments.csv")
 
     if args.state_file:
-        # 여러 날에 나눠 돌리는 모드 -> 이어붙이기 + 처리완료 perf_id 기록
         append_csv(videos_path, all_videos)
         append_csv(comments_path, all_comments)
         append_processed_ids(args.state_file, done_perf_ids)
     else:
-        # 단발성 실행 -> 새로 덮어쓰기
         write_csv(videos_path, all_videos)
         write_csv(comments_path, all_comments)
 
@@ -419,7 +432,7 @@ def main():
     if args.state_file:
         print(f"이번 실행에서 처리 완료한 공연: {len(done_perf_ids)}개 (상태 파일: {args.state_file})")
     if quota_hit:
-        sys.exit(0)  # quota 초과는 실패가 아니라 "오늘 분량 끝" 이므로 정상 종료 처리
+        sys.exit(0)
 
 
 if __name__ == "__main__":
