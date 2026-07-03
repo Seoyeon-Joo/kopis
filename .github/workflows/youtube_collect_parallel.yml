@@ -2,8 +2,8 @@ name: YouTube Condensed Content 데이터 수집 (병렬)
 
 on:
   workflow_dispatch:        # 수동 실행 버튼
-  schedule:
-    - cron: "0 22 * * *"    # 매일 한국시간 오전 7시 (UTC 22:00) 자동 실행
+#  schedule:
+#    - cron: "0 22 * * *"    # 매일 한국시간 오전 7시 (UTC 22:00) 자동 실행
 
 permissions:
   contents: write          # 레포에 git push 하려면 필요해요
