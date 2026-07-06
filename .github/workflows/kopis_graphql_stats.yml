@@ -2,8 +2,8 @@ name: KOPIS GraphQL 통계 수집
 
 on:
   workflow_dispatch:          # 수동 실행
-  schedule:
-    - cron: '0 2 * * 0'      # 매주 일요일 02:00 UTC (한국 11:00, 메인 파이프라인 1시간 뒤)
+#  schedule:
+#    - cron: '0 2 * * 0'      # 매주 일요일 02:00 UTC (한국 11:00, 메인 파이프라인 1시간 뒤)
 
 permissions:
   contents: write
