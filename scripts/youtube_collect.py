@@ -28,6 +28,8 @@ import time
 import argparse
 import requests
 
+from net_utils import robust_get
+
 API_BASE = "https://www.googleapis.com/youtube/v3"
 DURATION_PATTERN = re.compile(
     r"PT(?:(?P<hours>\d+)H)?(?:(?P<minutes>\d+)M)?(?:(?P<seconds>\d+)S)?"
@@ -73,7 +75,7 @@ def search_videos(api_key, query, max_results=30):
     while len(video_ids) < max_results:
         if next_page_token:
             params["pageToken"] = next_page_token
-        resp = requests.get(f"{API_BASE}/search", params=params, timeout=20)
+        resp = robust_get(f"{API_BASE}/search", params=params, timeout=20)
         data = resp.json()
 
         if "error" in data:
@@ -106,7 +108,7 @@ def get_video_details(api_key, video_ids):
             "id": ",".join(batch),
             "part": "snippet,contentDetails,statistics",
         }
-        resp = requests.get(f"{API_BASE}/videos", params=params, timeout=20)
+        resp = robust_get(f"{API_BASE}/videos", params=params, timeout=20)
         data = resp.json()
 
         if "error" in data:
@@ -151,7 +153,7 @@ def get_channel_details(api_key, channel_ids):
             "id": ",".join(batch),
             "part": "statistics",
         }
-        resp = requests.get(f"{API_BASE}/channels", params=params, timeout=20)
+        resp = robust_get(f"{API_BASE}/channels", params=params, timeout=20)
         data = resp.json()
 
         if "error" in data:
@@ -184,7 +186,7 @@ def get_comments(api_key, video_id, max_comments=30):
         "textFormat": "plainText",
     }
     try:
-        resp = requests.get(f"{API_BASE}/commentThreads", params=params, timeout=20)
+        resp = robust_get(f"{API_BASE}/commentThreads", params=params, timeout=20)
         data = resp.json()
         if "error" in data:
             return comments  # 댓글 비활성화 / 댓글 없음 등

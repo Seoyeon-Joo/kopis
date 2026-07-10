@@ -39,15 +39,24 @@ import argparse
 
 import youtube_collect as yc
 from signal_scorer import score_row, normalize_venue_core
+from net_utils import robust_get
 
 
-def search_videos_ext(api_key, query, max_results=15, video_duration=None):
+class PerMinuteRateLimitError(Exception):
+    """일일 quota가 아니라 '분당' 요청 제한에 걸렸을 때 (대기 후 재시도 가능)"""
+    pass
+
+
+def search_videos_ext(api_key, query, max_results=15, video_duration=None, max_retries=3):
     """
     yc.search_videos와 동일하지만 videoDuration 파라미터를 추가로 받는다.
     (any / short / medium / long — 여기서는 주로 'short'를 추가 호출에 사용)
-    """
-    import requests
 
+    '분당' rate limit(PerMinuteRateLimitError)은 일일 quota 소진과 다르게,
+    잠깐 대기했다가 같은 요청을 재시도하면 대부분 풀린다. 최대 max_retries번
+    재시도하고, 그래도 안 되면 포기하고 빈 리스트를 반환한다(shard 전체를
+    죽이지 않음).
+    """
     params = {
         "key": api_key,
         "q": query,
@@ -66,22 +75,39 @@ def search_videos_ext(api_key, query, max_results=15, video_duration=None):
     while len(video_ids) < max_results:
         if next_page_token:
             params["pageToken"] = next_page_token
-        resp = requests.get(f"{yc.API_BASE}/search", params=params, timeout=20)
-        data = resp.json()
-        if "error" in data:
+
+        attempt = 0
+        while True:
+            resp = robust_get(f"{yc.API_BASE}/search", params=params, timeout=20)
+            data = resp.json()
+            if "error" not in data:
+                break
             msg = data["error"].get("message", "")
-            print(f"  [search 오류] '{query}' ({video_duration}): {msg}")
+            if "per minute" in msg.lower() or "per 100 seconds" in msg.lower():
+                attempt += 1
+                if attempt > max_retries:
+                    print(f"  [분당 한도] '{query}': {max_retries}번 재시도해도 안 풀림, 이 쿼리는 건너뜀")
+                    return video_ids[:max_results]
+                wait = 20 * attempt
+                print(f"  [분당 한도] '{query}': {wait}초 대기 후 재시도 ({attempt}/{max_retries})")
+                time.sleep(wait)
+                continue
             if "quota" in msg.lower():
+                # 분당 한도가 아닌 진짜 일일 quota 소진
                 raise yc.QuotaExceededError(msg)
-            break
+            print(f"  [search 오류] '{query}' ({video_duration}): {msg}")
+            return video_ids[:max_results]
+
         for item in data.get("items", []):
             vid = item.get("id", {}).get("videoId")
             if vid:
                 video_ids.append(vid)
+
         next_page_token = data.get("nextPageToken")
         if not next_page_token or len(video_ids) >= max_results:
             break
-        time.sleep(0.2)
+        time.sleep(0.5)
+
     return video_ids[:max_results]
 
 
@@ -184,14 +210,16 @@ def main():
                 found_ids.extend(
                     search_videos_ext(args.api_key, q, max_results=args.max_videos_per_query)
                 )
+                time.sleep(1.2)  # 쿼리마다 살짝 쉬어서 분당 한도에 안 걸리게
             # 짧은 콘텐츠(쇼츠) 누락 방지용 별도 검색 (원제목만, videoDuration=short)
             found_ids.extend(
                 search_videos_ext(
                     args.api_key, perf["title"], max_results=args.max_videos_per_query, video_duration="short"
                 )
             )
+            time.sleep(1.2)
         except yc.QuotaExceededError:
-            print("  -> quota 초과. 지금까지 모은 데이터를 저장하고 종료할게요.")
+            print("  -> 일일 quota 초과. 지금까지 모은 데이터를 저장하고 종료할게요.")
             quota_hit = True
             break
 
