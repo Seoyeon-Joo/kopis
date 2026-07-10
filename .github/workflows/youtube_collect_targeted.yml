@@ -60,6 +60,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # data/youtube_targeted, data/youtube 경로는 .gitattributes에서
+          # merge=ours로 지정돼 있음 -> 이 드라이버를 등록해야 실제로 적용됨
+          git config merge.ours.driver true
+
           git add "data/youtube_targeted/shard_${{ matrix.shard }}/"
           if git diff --staged --quiet; then
             echo "변경사항 없음"
@@ -68,10 +72,27 @@ jobs:
           git commit -m "타겟 추가 수집 shard ${{ matrix.shard }}: $(date -u +'%Y-%m-%d')"
 
           for i in 1 2 3 4 5 6 7 8; do
+            # 이전 시도가 conflict로 중단된 상태(unmerged)로 남아있으면
+            # 재시도해도 계속 실패하므로, 매 시도 전에 진행 중이던
+            # rebase를 정리하고 시작한다.
+            git rebase --abort 2>/dev/null || true
+
             if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
               echo "푸시 성공"
               exit 0
             fi
+
+            if git status --porcelain | grep -q "^UU\|^AA"; then
+              echo "충돌 발생 -> merge=ours 정책으로 자동 해결 시도"
+              git rebase --abort 2>/dev/null || true
+              # rebase 대신 merge로 전환해서 .gitattributes의 merge=ours가
+              # 확실히 적용되도록 함
+              if git pull --no-rebase origin "${GITHUB_REF_NAME}" && git push; then
+                echo "merge 방식으로 푸시 성공"
+                exit 0
+              fi
+            fi
+
             echo "푸시 충돌, 잠시 후 재시도 ($i/8)..."
             sleep $(( (RANDOM % 15) + 5 ))
           done
