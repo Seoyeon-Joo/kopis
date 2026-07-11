@@ -31,7 +31,6 @@ import sys
 import time
 
 import pandas as pd
-import requests
 
 API_BASE = "https://www.googleapis.com/youtube/v3"
 
@@ -211,6 +210,7 @@ class DailyQuotaExceededError(Exception):
 
 
 def robust_get(url, params, max_retries=5, timeout=20):
+    import requests  # collect 커맨드에서만 필요 (prepare/merge/qa는 pandas만 있으면 됨)
     backoff = 2
     for attempt in range(max_retries):
         try:
