@@ -239,7 +239,7 @@ def robust_get(url, params, max_retries=3, timeout=20):
                     wait = max(wait, float(retry_after))
                 except ValueError:
                     pass
-            wait = min(wait, 30)  # 한 번에 너무 오래 안 기다리게 상한
+            wait = min(wait, 45)  # 한 번에 너무 오래 안 기다리게 상한
             if attempt == max_retries - 1:
                 raise PerMinuteRateLimitError(f"429 재시도 소진: {resp.text[:200]}")
             print(f"    [429] {wait:.0f}초 대기 후 재시도 ({attempt + 1}/{max_retries})", flush=True)
@@ -275,16 +275,16 @@ class KeyRotator:
         return True
 
 
-def search_with_retry(rotator, query, max_results=15, per_minute_wait=10):
+def search_with_retry(rotator, query, max_results=15, per_minute_wait=20):
     base = {"part": "snippet", "q": query, "type": "video",
             "maxResults": max_results, "relevanceLanguage": "ko"}
-    for attempt in range(2):
+    for attempt in range(3):
         params = dict(base, key=rotator.current)
         try:
             resp = robust_get(f"{API_BASE}/search", params)
             return resp.json().get("items", [])
         except PerMinuteRateLimitError:
-            print(f"  [분당제한] '{query}' - {per_minute_wait}초 대기 후 재시도 ({attempt + 1}/2)", flush=True)
+            print(f"  [분당제한] '{query}' - {per_minute_wait}초 대기 후 재시도 ({attempt + 1}/3)", flush=True)
             time.sleep(per_minute_wait)
         except DailyQuotaExceededError:
             if not rotator.rotate():
