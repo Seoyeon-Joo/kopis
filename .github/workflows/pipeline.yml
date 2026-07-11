@@ -80,6 +80,8 @@ jobs:
           for k in "${KEYS[@]}"; do echo "::add-mask::$k"; done
 
       - name: 수집 실행 (shard ${{ matrix.shard }})
+        env:
+          PYTHONUNBUFFERED: "1"
         run: |
           EXCLUDED=""
           if [ -f "data/excluded_video_ids.txt" ]; then
