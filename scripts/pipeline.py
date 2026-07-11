@@ -209,7 +209,7 @@ class DailyQuotaExceededError(Exception):
     pass
 
 
-def robust_get(url, params, max_retries=5, timeout=20):
+def robust_get(url, params, max_retries=3, timeout=20):
     import requests  # collect 커맨드에서만 필요 (prepare/merge/qa는 pandas만 있으면 됨)
     backoff = 2
     for attempt in range(max_retries):
@@ -231,7 +231,7 @@ def robust_get(url, params, max_retries=5, timeout=20):
                 raise DailyQuotaExceededError(body[:300])
             raise RuntimeError(f"403: {body[:300]}")
         if resp.status_code == 429:
-            # 초당/분당 과다 요청. Retry-After 헤더가 있으면 그만큼, 없으면 백오프만큼 대기 후 재시도.
+            # 초당/분당 과다 요청. Retry-After 있으면 그만큼(최대 30초로 상한), 없으면 백오프.
             wait = backoff
             retry_after = resp.headers.get("Retry-After")
             if retry_after:
@@ -239,9 +239,10 @@ def robust_get(url, params, max_retries=5, timeout=20):
                     wait = max(wait, float(retry_after))
                 except ValueError:
                     pass
+            wait = min(wait, 30)  # 한 번에 너무 오래 안 기다리게 상한
             if attempt == max_retries - 1:
                 raise PerMinuteRateLimitError(f"429 재시도 소진: {resp.text[:200]}")
-            print(f"    [429] {wait:.0f}초 대기 후 재시도 ({attempt + 1}/{max_retries})")
+            print(f"    [429] {wait:.0f}초 대기 후 재시도 ({attempt + 1}/{max_retries})", flush=True)
             time.sleep(wait)
             backoff *= 2
             continue
@@ -270,29 +271,27 @@ class KeyRotator:
         self.idx += 1
         if self.idx >= len(self.keys):
             return False
-        print(f"  키 전환: {self.idx + 1}/{len(self.keys)}번째 키로 전환")
+        print(f"  키 전환: {self.idx + 1}/{len(self.keys)}번째 키로 전환", flush=True)
         return True
 
 
-def search_with_retry(rotator, query, max_results=15, per_minute_wait=20):
+def search_with_retry(rotator, query, max_results=15, per_minute_wait=10):
     base = {"part": "snippet", "q": query, "type": "video",
             "maxResults": max_results, "relevanceLanguage": "ko"}
-    while True:
+    for attempt in range(2):
         params = dict(base, key=rotator.current)
-        for attempt in range(3):
-            try:
-                resp = robust_get(f"{API_BASE}/search", params)
-                return resp.json().get("items", [])
-            except PerMinuteRateLimitError:
-                print(f"  [분당제한] '{query}' - {per_minute_wait}초 대기 후 재시도 ({attempt + 1}/3)")
-                time.sleep(per_minute_wait)
-            except DailyQuotaExceededError:
-                if not rotator.rotate():
-                    print("  이 shard에 배정된 키를 모두 소진했어요.")
-                    return None
-                params = dict(base, key=rotator.current)
-        print(f"  [포기] '{query}' 3회 재시도 실패, 건너뜀")
-        return []
+        try:
+            resp = robust_get(f"{API_BASE}/search", params)
+            return resp.json().get("items", [])
+        except PerMinuteRateLimitError:
+            print(f"  [분당제한] '{query}' - {per_minute_wait}초 대기 후 재시도 ({attempt + 1}/2)", flush=True)
+            time.sleep(per_minute_wait)
+        except DailyQuotaExceededError:
+            if not rotator.rotate():
+                print("  이 shard에 배정된 키를 모두 소진했어요.", flush=True)
+                return None
+    print(f"  [포기] '{query}' 재시도 실패, 건너뜀", flush=True)
+    return []
 
 
 def videos_list(rotator, video_ids):
@@ -454,7 +453,7 @@ def cmd_collect(args):
     for unit in units:
         queries = build_queries(unit["title"], unit["genre"], unit["venue_name"],
                                  is_group=unit["is_group"], inst_name=unit["inst_name"])
-        print(f"[{unit['unit_id']}] 쿼리 {len(queries)}개")
+        print(f"[{unit['unit_id']}] 쿼리 {len(queries)}개", flush=True)
         seen_ids, kept = set(), []
 
         for q in queries:
