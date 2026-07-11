@@ -275,17 +275,26 @@ class KeyRotator:
         return True
 
 
-def search_with_retry(rotator, query, max_results=15, per_minute_wait=20):
+def search_with_retry(rotator, query, max_results=15, per_minute_wait=15):
+    """429/분당제한이 뜨면 같은 키로 오래 기다리기보다, 배정된 다른 키로 바로
+    전환해서 시도한다 (이 shard가 여러 개 키를 갖고 있는 걸 활용). 그래도 막히면
+    그때 짧게 대기 후 재시도. 최대 min(len(키), 6)개 키까지 돌려본다."""
     base = {"part": "snippet", "q": query, "type": "video",
             "maxResults": max_results, "relevanceLanguage": "ko"}
-    for attempt in range(3):
+    max_key_tries = min(len(rotator.keys), 6)
+    for key_try in range(max_key_tries):
         params = dict(base, key=rotator.current)
         try:
             resp = robust_get(f"{API_BASE}/search", params)
             return resp.json().get("items", [])
         except PerMinuteRateLimitError:
-            print(f"  [분당제한] '{query}' - {per_minute_wait}초 대기 후 재시도 ({attempt + 1}/3)", flush=True)
+            print(f"  [429/분당제한] '{query}' - 키 전환 시도 ({key_try + 1}/{max_key_tries})", flush=True)
+            if rotator.rotate():
+                continue  # 다른 키로 바로 재시도 (대기 없이)
+            # 이 shard 키를 전부 써봤는데도 막힘 -> 그제서야 짧게 대기하고 처음 키로 복귀
+            print(f"  키를 모두 돌려봤는데도 막혀요. {per_minute_wait}초 대기 후 처음 키로 재시도.", flush=True)
             time.sleep(per_minute_wait)
+            rotator.idx = 0
         except DailyQuotaExceededError:
             if not rotator.rotate():
                 print("  이 shard에 배정된 키를 모두 소진했어요.", flush=True)
