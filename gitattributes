@@ -1,6 +1,1 @@
-# 병렬 shard들이 각자 자기 폴더(shard_N/)만 쓰지만, 같은 shard가 재실행되거나
-# 워크플로우가 겹쳐 돌아가면 같은 파일에 add/add 충돌이 날 수 있다.
-# 이 경로들은 shard 자신의 최신 실행 결과가 항상 맞는 버전이므로,
-# 충돌 시 사람이 손댈 것 없이 "이번에 실행한 쪽(ours)"을 자동으로 채택한다.
 data/youtube_targeted/** merge=ours
-data/youtube/** merge=ours
