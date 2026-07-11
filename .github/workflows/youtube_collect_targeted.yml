@@ -1,0 +1,100 @@
+name: YouTube 저매칭 공연 타겟 추가 수집 (병렬)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect_targeted:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 62
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61]
+
+    steps:
+      - name: 레포 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 이번 shard가 쓸 API 키 고르기
+        env:
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          IFS=',' read -ra KEYS <<< "$YOUTUBE_API_KEYS"
+          INDEX=${{ matrix.shard }}
+          SELECTED="${KEYS[$INDEX]}"
+          if [ -z "$SELECTED" ]; then
+            echo "shard $INDEX 에 해당하는 키가 없어요."
+            exit 1
+          fi
+          echo "::add-mask::$SELECTED"
+          echo "SELECTED_KEY=$SELECTED" >> "$GITHUB_ENV"
+
+      - name: 타겟 수집 스크립트 실행 (shard ${{ matrix.shard }})
+        env:
+          API_KEY: ${{ env.SELECTED_KEY }}
+        run: |
+          python scripts/youtube_collect_targeted.py \
+            --targets data/missing_or_low_coverage_perfs.csv \
+            --excluded-ids data/excluded_video_ids.txt \
+            --api-key "$API_KEY" \
+            --shard-index ${{ matrix.shard }} \
+            --shard-count 62 \
+            --out-dir "data/youtube_targeted/shard_${{ matrix.shard }}" \
+            --state-file "data/youtube_targeted/shard_${{ matrix.shard }}/processed_perf_ids.txt" \
+            --max-videos-per-query 15 \
+            --max-comments-per-video 30
+
+      - name: 변경사항 커밋 & 푸시 (충돌 시 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # data/youtube_targeted, data/youtube 경로는 .gitattributes에서
+          # merge=ours로 지정돼 있음 -> 이 드라이버를 등록해야 실제로 적용됨
+          git config merge.ours.driver true
+
+          git add "data/youtube_targeted/shard_${{ matrix.shard }}/"
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"
+            exit 0
+          fi
+          git commit -m "타겟 추가 수집 shard ${{ matrix.shard }}: $(date -u +'%Y-%m-%d')"
+
+          for i in 1 2 3 4 5 6 7 8; do
+            # 이전 시도가 conflict로 중단된 상태(unmerged)로 남아있으면
+            # 재시도해도 계속 실패하므로, 매 시도 전에 진행 중이던
+            # rebase를 정리하고 시작한다.
+            git rebase --abort 2>/dev/null || true
+
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
+              echo "푸시 성공"
+              exit 0
+            fi
+
+            if git status --porcelain | grep -q "^UU\|^AA"; then
+              echo "충돌 발생 -> merge=ours 정책으로 자동 해결 시도"
+              git rebase --abort 2>/dev/null || true
+              # rebase 대신 merge로 전환해서 .gitattributes의 merge=ours가
+              # 확실히 적용되도록 함
+              if git pull --no-rebase origin "${GITHUB_REF_NAME}" && git push; then
+                echo "merge 방식으로 푸시 성공"
+                exit 0
+              fi
+            fi
+
+            echo "푸시 충돌, 잠시 후 재시도 ($i/8)..."
+            sleep $(( (RANDOM % 15) + 5 ))
+          done
+          echo "여러 번 재시도했지만 푸시 실패. 다음 실행에서 이어집니다."
+          exit 1
