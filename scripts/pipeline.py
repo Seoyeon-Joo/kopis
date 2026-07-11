@@ -230,6 +230,21 @@ def robust_get(url, params, max_retries=5, timeout=20):
             if "quota" in body.lower():
                 raise DailyQuotaExceededError(body[:300])
             raise RuntimeError(f"403: {body[:300]}")
+        if resp.status_code == 429:
+            # 초당/분당 과다 요청. Retry-After 헤더가 있으면 그만큼, 없으면 백오프만큼 대기 후 재시도.
+            wait = backoff
+            retry_after = resp.headers.get("Retry-After")
+            if retry_after:
+                try:
+                    wait = max(wait, float(retry_after))
+                except ValueError:
+                    pass
+            if attempt == max_retries - 1:
+                raise PerMinuteRateLimitError(f"429 재시도 소진: {resp.text[:200]}")
+            print(f"    [429] {wait:.0f}초 대기 후 재시도 ({attempt + 1}/{max_retries})")
+            time.sleep(wait)
+            backoff *= 2
+            continue
         if resp.status_code >= 500:
             if attempt == max_retries - 1:
                 resp.raise_for_status()
