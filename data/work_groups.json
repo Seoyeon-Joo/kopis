@@ -8,7 +8,8 @@
         "venue_name": "공연일번지",
         "perf_start_date": "2023-04-14",
         "perf_end_date": "2023-04-15",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF216756",
@@ -16,7 +17,8 @@
         "venue_name": "밀양아리나 (구, 밀양연극촌) 성벽극장 (야외극장) ",
         "perf_start_date": "2023-04-21",
         "perf_end_date": "2023-04-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -29,7 +31,8 @@
         "venue_name": "씨어터 제이",
         "perf_start_date": "2023-10-06",
         "perf_end_date": "2023-10-07",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF224259",
@@ -37,7 +40,8 @@
         "venue_name": "아신극장 1관 (3층) ",
         "perf_start_date": "2023-09-08",
         "perf_end_date": "2023-09-09",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       }
     ]
   },
@@ -50,7 +54,8 @@
         "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
         "perf_start_date": "2024-02-27",
         "perf_end_date": "2024-02-27",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "복합"
       },
       {
         "perf_id": "PF233991",
@@ -58,7 +63,8 @@
         "venue_name": "광주 예술의 전당 대극장",
         "perf_start_date": "2024-02-25",
         "perf_end_date": "2024-02-25",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "복합"
       }
     ]
   },
@@ -71,7 +77,8 @@
         "venue_name": "다산아트홀",
         "perf_start_date": "2025-11-07",
         "perf_end_date": "2025-11-08",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF270087",
@@ -79,7 +86,8 @@
         "venue_name": "충주시문화회관",
         "perf_start_date": "2025-08-09",
         "perf_end_date": "2025-08-09",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -92,7 +100,8 @@
         "venue_name": "당진문예의전당 대공연장",
         "perf_start_date": "2025-09-13",
         "perf_end_date": "2025-09-13",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF271870",
@@ -100,7 +109,8 @@
         "venue_name": "동래문화회관 대극장",
         "perf_start_date": "2025-09-19",
         "perf_end_date": "2025-09-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF274923",
@@ -108,7 +118,8 @@
         "venue_name": "울산북구문화예술회관 공연장",
         "perf_start_date": "2025-10-23",
         "perf_end_date": "2025-10-23",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF278410",
@@ -116,7 +127,8 @@
         "venue_name": "정선아리랑센터 아리랑홀",
         "perf_start_date": "2025-10-16",
         "perf_end_date": "2025-10-16",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -129,7 +141,8 @@
         "venue_name": "고흥문화회관 김연수실",
         "perf_start_date": "2024-09-13",
         "perf_end_date": "2024-09-13",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF243437",
@@ -137,7 +150,8 @@
         "venue_name": "정읍사예술회관",
         "perf_start_date": "2024-07-26",
         "perf_end_date": "2024-07-26",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -150,7 +164,8 @@
         "venue_name": "예술의전당 [서울] 콘서트홀",
         "perf_start_date": "2025-02-14",
         "perf_end_date": "2025-02-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF257789",
@@ -158,7 +173,8 @@
         "venue_name": "롯데콘서트홀",
         "perf_start_date": "2025-02-15",
         "perf_end_date": "2025-02-15",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -171,7 +187,8 @@
         "venue_name": "봉산문화회관 가온홀",
         "perf_start_date": "2023-08-26",
         "perf_end_date": "2023-08-27",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF220926",
@@ -179,7 +196,8 @@
         "venue_name": "함안문화예술회관 대공연장",
         "perf_start_date": "2023-07-22",
         "perf_end_date": "2023-07-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF222109",
@@ -187,7 +205,8 @@
         "venue_name": "경북고령대가야문화누리 (구. 대가야국악당) 대공연장 (우륵홀) ",
         "perf_start_date": "2023-07-29",
         "perf_end_date": "2023-07-29",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -200,7 +219,8 @@
         "venue_name": "충주시문화회관",
         "perf_start_date": "2025-06-21",
         "perf_end_date": "2025-06-21",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF264174",
@@ -208,7 +228,8 @@
         "venue_name": "부천시민회관 대공연장",
         "perf_start_date": "2025-07-11",
         "perf_end_date": "2025-07-12",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -221,7 +242,8 @@
         "venue_name": "GS칼텍스 예울마루 대극장",
         "perf_start_date": "2025-05-29",
         "perf_end_date": "2025-05-29",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF264512",
@@ -229,7 +251,8 @@
         "venue_name": "광명시민회관 대공연장",
         "perf_start_date": "2025-06-11",
         "perf_end_date": "2025-06-11",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -242,7 +265,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2025-08-23",
         "perf_end_date": "2025-08-23",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF246743",
@@ -250,7 +274,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2024-08-24",
         "perf_end_date": "2024-08-24",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -263,7 +288,8 @@
         "venue_name": "해운대문화회관 해운홀",
         "perf_start_date": "2025-04-12",
         "perf_end_date": "2025-04-12",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF289794",
@@ -271,7 +297,8 @@
         "venue_name": "전북예술회관 공연장",
         "perf_start_date": "2026-06-13",
         "perf_end_date": "2026-06-13",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF291384",
@@ -279,7 +306,8 @@
         "venue_name": "부산민주공원 공연장 큰방(중극장)",
         "perf_start_date": "2026-06-20",
         "perf_end_date": "2026-06-20",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       }
     ]
   },
@@ -292,7 +320,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2024-08-18",
         "perf_end_date": "2024-08-18",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF246803",
@@ -300,7 +329,8 @@
         "venue_name": "금정문화회관 대공연장(금빛누리홀)",
         "perf_start_date": "2024-08-29",
         "perf_end_date": "2024-08-29",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -313,7 +343,8 @@
         "venue_name": "거제문화예술회관 대극장",
         "perf_start_date": "2025-06-17",
         "perf_end_date": "2025-06-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF261099",
@@ -321,7 +352,8 @@
         "venue_name": "경상남도문화예술회관 대공연장",
         "perf_start_date": "2025-04-17",
         "perf_end_date": "2025-04-19",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -334,7 +366,8 @@
         "venue_name": "창녕문화예술회관 대공연장",
         "perf_start_date": "2025-05-14",
         "perf_end_date": "2025-05-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF263481",
@@ -342,7 +375,8 @@
         "venue_name": "하동문화예술회관 대공연장",
         "perf_start_date": "2025-05-01",
         "perf_end_date": "2025-05-01",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -355,7 +389,8 @@
         "venue_name": "예주문화예술회관",
         "perf_start_date": "2024-09-25",
         "perf_end_date": "2024-09-25",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF253778",
@@ -363,7 +398,8 @@
         "venue_name": "철원군 화강문화센터 공연장",
         "perf_start_date": "2024-11-14",
         "perf_end_date": "2024-11-14",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF222775",
@@ -371,7 +407,8 @@
         "venue_name": "아트팩토리 봄",
         "perf_start_date": "2023-09-01",
         "perf_end_date": "2023-09-02",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -384,7 +421,8 @@
         "venue_name": "광주서구문화센터",
         "perf_start_date": "2024-10-05",
         "perf_end_date": "2024-10-05",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF248759",
@@ -392,7 +430,8 @@
         "venue_name": "광주디자인센터 이벤트홀",
         "perf_start_date": "2024-10-07",
         "perf_end_date": "2024-10-07",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF248754",
@@ -400,7 +439,8 @@
         "venue_name": "빛고을아트스페이스 소공연장",
         "perf_start_date": "2024-10-08",
         "perf_end_date": "2024-10-08",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -413,7 +453,8 @@
         "venue_name": "광주북구문화센터 (양산도서관) 공연장",
         "perf_start_date": "2024-07-19",
         "perf_end_date": "2024-07-20",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF268334",
@@ -421,7 +462,8 @@
         "venue_name": "광주북구문화센터 (양산도서관) 공연장",
         "perf_start_date": "2025-07-18",
         "perf_end_date": "2025-07-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -434,7 +476,8 @@
         "venue_name": "대전시립연정국악원 큰마당",
         "perf_start_date": "2025-07-02",
         "perf_end_date": "2025-07-02",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF242383",
@@ -442,7 +485,8 @@
         "venue_name": "국립민속국악원 예원당",
         "perf_start_date": "2024-06-22",
         "perf_end_date": "2024-06-22",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -455,7 +499,8 @@
         "venue_name": "광주 예술의 전당 소극장",
         "perf_start_date": "2025-06-25",
         "perf_end_date": "2025-06-25",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF236625",
@@ -463,7 +508,8 @@
         "venue_name": "광주 예술의 전당 소극장",
         "perf_start_date": "2024-03-27",
         "perf_end_date": "2024-03-27",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF241998",
@@ -471,7 +517,8 @@
         "venue_name": "광주 예술의 전당 소극장",
         "perf_start_date": "2024-06-26",
         "perf_end_date": "2024-06-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -484,7 +531,8 @@
         "venue_name": "국립극장 해오름극장",
         "perf_start_date": "2025-01-03",
         "perf_end_date": "2025-01-03",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF279302",
@@ -492,7 +540,8 @@
         "venue_name": "국립극장 해오름극장",
         "perf_start_date": "2026-01-09",
         "perf_end_date": "2026-01-09",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF230594",
@@ -500,7 +549,8 @@
         "venue_name": "국립극장 해오름극장",
         "perf_start_date": "2024-01-12",
         "perf_end_date": "2024-01-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -513,7 +563,8 @@
         "venue_name": "국립극단 [명동] 명동예술극장",
         "perf_start_date": "2024-04-12",
         "perf_end_date": "2024-05-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF234678",
@@ -521,7 +572,8 @@
         "venue_name": "경상남도문화예술회관 대공연장",
         "perf_start_date": "2024-05-24",
         "perf_end_date": "2024-05-25",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF238348",
@@ -529,7 +581,8 @@
         "venue_name": "군포문화예술회관 수리홀",
         "perf_start_date": "2024-05-31",
         "perf_end_date": "2024-06-01",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF240530",
@@ -537,7 +590,8 @@
         "venue_name": "하남문화예술회관 검단홀(대극장)",
         "perf_start_date": "2024-06-07",
         "perf_end_date": "2024-06-08",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF234135",
@@ -545,7 +599,8 @@
         "venue_name": "안동문화예술의전당 웅부홀",
         "perf_start_date": "2024-05-16",
         "perf_end_date": "2024-05-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -558,7 +613,8 @@
         "venue_name": "국립극단 [명동] 명동예술극장",
         "perf_start_date": "2025-06-12",
         "perf_end_date": "2025-07-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF267187",
@@ -566,7 +622,8 @@
         "venue_name": "(재) 영화의전당 하늘연극장",
         "perf_start_date": "2025-08-08",
         "perf_end_date": "2025-08-09",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -579,7 +636,8 @@
         "venue_name": "3.15아트센터 대극장",
         "perf_start_date": "2025-08-01",
         "perf_end_date": "2025-08-02",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF267379",
@@ -587,7 +645,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2025-07-18",
         "perf_end_date": "2025-07-19",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF268017",
@@ -595,7 +654,8 @@
         "venue_name": "김포아트홀",
         "perf_start_date": "2025-07-25",
         "perf_end_date": "2025-07-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -608,7 +668,8 @@
         "venue_name": "국립극단 [명동] 명동예술극장",
         "perf_start_date": "2025-05-16",
         "perf_end_date": "2025-06-01",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF262682",
@@ -616,7 +677,8 @@
         "venue_name": "당진문예의전당 대공연장",
         "perf_start_date": "2025-06-14",
         "perf_end_date": "2025-06-15",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -629,7 +691,8 @@
         "venue_name": "국립아시아문화전당 극장2",
         "perf_start_date": "2026-04-03",
         "perf_end_date": "2026-04-04",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF230515",
@@ -637,7 +700,8 @@
         "venue_name": "국립극장 달오름극장",
         "perf_start_date": "2024-06-28",
         "perf_end_date": "2024-06-30",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF287957",
@@ -645,7 +709,8 @@
         "venue_name": "속초문화예술회관 대공연장",
         "perf_start_date": "2026-04-17",
         "perf_end_date": "2026-04-17",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -658,7 +723,8 @@
         "venue_name": "국립극장 해오름극장",
         "perf_start_date": "2025-09-17",
         "perf_end_date": "2025-09-20",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF268355",
@@ -666,7 +732,8 @@
         "venue_name": "성남아트리움 (구. 성남시민회관) 대극장",
         "perf_start_date": "2025-08-30",
         "perf_end_date": "2025-08-30",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF269806",
@@ -674,7 +741,8 @@
         "venue_name": "밀양아리랑아트센터 대공연장",
         "perf_start_date": "2025-08-23",
         "perf_end_date": "2025-08-23",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -687,7 +755,8 @@
         "venue_name": "국립민속국악원 예원당",
         "perf_start_date": "2024-10-18",
         "perf_end_date": "2024-10-19",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF250593",
@@ -695,7 +764,8 @@
         "venue_name": "국립국악원 예악당",
         "perf_start_date": "2024-10-24",
         "perf_end_date": "2024-10-25",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF275586",
@@ -703,7 +773,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2025-11-08",
         "perf_end_date": "2025-11-08",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF272922",
@@ -711,7 +782,8 @@
         "venue_name": "경주예술의전당 대공연장(화랑홀)",
         "perf_start_date": "2025-09-05",
         "perf_end_date": "2025-09-06",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -724,7 +796,8 @@
         "venue_name": "예술의전당 [서울] 오페라극장",
         "perf_start_date": "2024-06-05",
         "perf_end_date": "2024-06-09",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF243892",
@@ -732,7 +805,8 @@
         "venue_name": "대구오페라하우스",
         "perf_start_date": "2024-08-30",
         "perf_end_date": "2024-08-31",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF244630",
@@ -740,7 +814,8 @@
         "venue_name": "당진문예의전당 대공연장",
         "perf_start_date": "2024-09-11",
         "perf_end_date": "2024-09-12",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -753,7 +828,8 @@
         "venue_name": "부산시민회관 대극장",
         "perf_start_date": "2024-03-15",
         "perf_end_date": "2024-03-16",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF234442",
@@ -761,7 +837,8 @@
         "venue_name": "구미시문화예술회관 대공연장",
         "perf_start_date": "2024-03-20",
         "perf_end_date": "2024-03-21",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -774,7 +851,8 @@
         "venue_name": "예술의전당 [서울] 오페라극장",
         "perf_start_date": "2025-11-12",
         "perf_end_date": "2025-11-16",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF275398",
@@ -782,7 +860,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2025-10-31",
         "perf_end_date": "2025-11-01",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF275044",
@@ -790,7 +869,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2025-11-06",
         "perf_end_date": "2025-11-07",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -803,7 +883,8 @@
         "venue_name": "세종예술의전당 대공연장",
         "perf_start_date": "2025-12-02",
         "perf_end_date": "2025-12-03",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF250884",
@@ -811,7 +892,8 @@
         "venue_name": "천안예술의전당 대공연장",
         "perf_start_date": "2024-11-23",
         "perf_end_date": "2024-11-24",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF262691",
@@ -819,7 +901,8 @@
         "venue_name": "부산시민회관 대극장",
         "perf_start_date": "2025-12-05",
         "perf_end_date": "2025-12-06",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -832,7 +915,8 @@
         "venue_name": "세종예술의전당 대공연장",
         "perf_start_date": "2024-09-13",
         "perf_end_date": "2024-09-13",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF246701",
@@ -840,7 +924,8 @@
         "venue_name": "통영국제음악당 콘서트홀",
         "perf_start_date": "2024-11-30",
         "perf_end_date": "2024-11-30",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -853,7 +938,8 @@
         "venue_name": "고양아람누리 아람극장",
         "perf_start_date": "2024-07-20",
         "perf_end_date": "2024-07-21",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF260093",
@@ -861,7 +947,8 @@
         "venue_name": "포항문화예술회관 대공연장",
         "perf_start_date": "2025-04-05",
         "perf_end_date": "2025-04-05",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF269973",
@@ -869,7 +956,8 @@
         "venue_name": "국립극장 달오름극장",
         "perf_start_date": "2025-08-17",
         "perf_end_date": "2025-08-17",
-        "season_rank": 11.0
+        "season_rank": 11.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF266968",
@@ -877,7 +965,8 @@
         "venue_name": "제천예술의전당 대공연장",
         "perf_start_date": "2025-07-11",
         "perf_end_date": "2025-07-11",
-        "season_rank": 9.0
+        "season_rank": 9.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF269027",
@@ -885,7 +974,8 @@
         "venue_name": "인천서구문화회관 대공연장",
         "perf_start_date": "2025-08-02",
         "perf_end_date": "2025-08-02",
-        "season_rank": 10.0
+        "season_rank": 10.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF238252",
@@ -893,7 +983,8 @@
         "venue_name": "음성문화예술회관 대공연장",
         "perf_start_date": "2024-04-25",
         "perf_end_date": "2024-04-25",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF266143",
@@ -901,7 +992,8 @@
         "venue_name": "동해문화예술회관 대공연장",
         "perf_start_date": "2025-07-05",
         "perf_end_date": "2025-07-05",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF262470",
@@ -909,7 +1001,8 @@
         "venue_name": "평택시남부문예회관 대공연장",
         "perf_start_date": "2025-05-02",
         "perf_end_date": "2025-05-02",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -922,7 +1015,8 @@
         "venue_name": "국립극장 해오름극장",
         "perf_start_date": "2024-10-11",
         "perf_end_date": "2024-10-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF268202",
@@ -930,7 +1024,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2025-08-15",
         "perf_end_date": "2025-08-16",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF268136",
@@ -938,7 +1033,8 @@
         "venue_name": "울산문화예술회관 대공연장",
         "perf_start_date": "2025-08-22",
         "perf_end_date": "2025-08-23",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF268633",
@@ -946,7 +1042,8 @@
         "venue_name": "안성맞춤아트홀 대공연장",
         "perf_start_date": "2025-08-08",
         "perf_end_date": "2025-08-08",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF268636",
@@ -954,7 +1051,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 소공연장",
         "perf_start_date": "2025-07-17",
         "perf_end_date": "2025-07-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -967,7 +1065,8 @@
         "venue_name": "경상남도문화예술회관 대공연장",
         "perf_start_date": "2025-12-12",
         "perf_end_date": "2025-12-13",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF274268",
@@ -975,7 +1074,8 @@
         "venue_name": "당진문예의전당 대공연장",
         "perf_start_date": "2025-12-20",
         "perf_end_date": "2025-12-20",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -988,7 +1088,8 @@
         "venue_name": "수원SK아트리움 대공연장",
         "perf_start_date": "2025-11-01",
         "perf_end_date": "2025-11-01",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF259859",
@@ -996,7 +1097,8 @@
         "venue_name": "음성문화예술회관 대공연장",
         "perf_start_date": "2025-03-27",
         "perf_end_date": "2025-03-27",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF251800",
@@ -1004,7 +1106,8 @@
         "venue_name": "동해문화예술회관 대공연장",
         "perf_start_date": "2024-11-16",
         "perf_end_date": "2024-11-16",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF273993",
@@ -1012,7 +1115,8 @@
         "venue_name": "(재) 영화의전당 하늘연극장",
         "perf_start_date": "2025-11-08",
         "perf_end_date": "2025-11-08",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF250053",
@@ -1020,7 +1124,8 @@
         "venue_name": "연천수레울아트홀 대공연장",
         "perf_start_date": "2024-11-23",
         "perf_end_date": "2024-11-23",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF266593",
@@ -1028,7 +1133,8 @@
         "venue_name": "대전예술의전당 앙상블홀",
         "perf_start_date": "2025-08-29",
         "perf_end_date": "2025-08-29",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1041,7 +1147,8 @@
         "venue_name": "예술의전당 [서울] 오페라극장",
         "perf_start_date": "2024-05-23",
         "perf_end_date": "2024-05-26",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF265319",
@@ -1049,7 +1156,8 @@
         "venue_name": "대구오페라하우스",
         "perf_start_date": "2025-09-05",
         "perf_end_date": "2025-09-06",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF268738",
@@ -1057,7 +1165,8 @@
         "venue_name": "성산아트홀 대극장",
         "perf_start_date": "2025-09-13",
         "perf_end_date": "2025-09-14",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1070,7 +1179,8 @@
         "venue_name": "국립극장 달오름극장",
         "perf_start_date": "2025-11-21",
         "perf_end_date": "2025-11-29",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF245490",
@@ -1078,7 +1188,8 @@
         "venue_name": "국립극장 달오름극장",
         "perf_start_date": "2024-11-14",
         "perf_end_date": "2024-11-21",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF276722",
@@ -1086,7 +1197,8 @@
         "venue_name": "평택시남부문예회관 대공연장",
         "perf_start_date": "2025-11-13",
         "perf_end_date": "2025-11-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -1099,7 +1211,8 @@
         "venue_name": "국립극장 달오름극장",
         "perf_start_date": "2025-09-25",
         "perf_end_date": "2025-09-26",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF266164",
@@ -1107,7 +1220,8 @@
         "venue_name": "용인시문화예술회관 처인홀",
         "perf_start_date": "2025-07-05",
         "perf_end_date": "2025-07-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF243712",
@@ -1115,7 +1229,8 @@
         "venue_name": "음성문화예술회관 대공연장",
         "perf_start_date": "2024-07-10",
         "perf_end_date": "2024-07-10",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -1128,7 +1243,8 @@
         "venue_name": "춘천문화예술회관 공연장",
         "perf_start_date": "2026-01-16",
         "perf_end_date": "2026-01-17",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF281967",
@@ -1136,7 +1252,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 소공연장",
         "perf_start_date": "2026-01-31",
         "perf_end_date": "2026-02-01",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF282423",
@@ -1144,7 +1261,8 @@
         "venue_name": "횡성문화예술회관 대공연장",
         "perf_start_date": "2026-02-06",
         "perf_end_date": "2026-02-07",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF282189",
@@ -1152,7 +1270,8 @@
         "venue_name": "삼척문화예술회관 대공연장",
         "perf_start_date": "2026-01-23",
         "perf_end_date": "2026-01-24",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF282428",
@@ -1160,7 +1279,8 @@
         "venue_name": "속초문화예술회관 대공연장",
         "perf_start_date": "2026-02-27",
         "perf_end_date": "2026-02-28",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1173,7 +1293,8 @@
         "venue_name": "당진문예의전당 대공연장",
         "perf_start_date": "2024-07-12",
         "perf_end_date": "2024-07-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF251446",
@@ -1181,7 +1302,8 @@
         "venue_name": "이천아트홀 대공연장",
         "perf_start_date": "2024-11-23",
         "perf_end_date": "2024-11-23",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF253160",
@@ -1189,7 +1311,8 @@
         "venue_name": "군포문화예술회관 수리홀",
         "perf_start_date": "2024-12-26",
         "perf_end_date": "2024-12-26",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF251511",
@@ -1197,7 +1320,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2024-11-19",
         "perf_end_date": "2024-11-19",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1210,7 +1334,8 @@
         "venue_name": "부산콘서트홀 콘서트홀",
         "perf_start_date": "2025-05-16",
         "perf_end_date": "2025-05-16",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF250895",
@@ -1218,7 +1343,8 @@
         "venue_name": "3.15아트센터 대극장",
         "perf_start_date": "2024-12-14",
         "perf_end_date": "2024-12-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF254978",
@@ -1226,7 +1352,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2024-12-24",
         "perf_end_date": "2024-12-24",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF277125",
@@ -1234,7 +1361,8 @@
         "venue_name": "안성맞춤아트홀 대공연장",
         "perf_start_date": "2025-12-05",
         "perf_end_date": "2025-12-05",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1247,7 +1375,8 @@
         "venue_name": "국립극장 해오름극장",
         "perf_start_date": "2024-05-10",
         "perf_end_date": "2024-05-10",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF269599",
@@ -1255,7 +1384,8 @@
         "venue_name": "국립극장 해오름극장",
         "perf_start_date": "2025-11-11",
         "perf_end_date": "2025-11-11",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1268,7 +1398,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2024-01-26",
         "perf_end_date": "2024-01-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF289284",
@@ -1276,7 +1407,8 @@
         "venue_name": "나주문화예술회관",
         "perf_start_date": "2026-05-01",
         "perf_end_date": "2026-05-01",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1289,7 +1421,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2024-01-23",
         "perf_end_date": "2024-01-23",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF270867",
@@ -1297,7 +1430,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2025-09-13",
         "perf_end_date": "2025-09-13",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -1310,7 +1444,8 @@
         "venue_name": "부산시민회관 대극장",
         "perf_start_date": "2025-08-30",
         "perf_end_date": "2025-08-30",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF266639",
@@ -1318,7 +1453,8 @@
         "venue_name": "세종예술의전당 대공연장",
         "perf_start_date": "2025-08-14",
         "perf_end_date": "2025-08-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF265177",
@@ -1326,7 +1462,8 @@
         "venue_name": "안동문화예술의전당 웅부홀",
         "perf_start_date": "2025-08-22",
         "perf_end_date": "2025-08-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -1339,7 +1476,8 @@
         "venue_name": "금나래아트홀",
         "perf_start_date": "2025-05-17",
         "perf_end_date": "2025-05-17",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF286382",
@@ -1347,7 +1485,8 @@
         "venue_name": "3.15아트센터 대극장",
         "perf_start_date": "2026-05-05",
         "perf_end_date": "2026-05-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -1360,7 +1499,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2025-06-14",
         "perf_end_date": "2025-06-15",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF258014",
@@ -1368,7 +1508,8 @@
         "venue_name": "공주문예회관 대공연장",
         "perf_start_date": "2025-06-20",
         "perf_end_date": "2025-06-21",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF264191",
@@ -1376,7 +1517,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2025-06-06",
         "perf_end_date": "2025-06-06",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF262108",
@@ -1384,7 +1526,8 @@
         "venue_name": "포항시청 대잠홀",
         "perf_start_date": "2025-06-28",
         "perf_end_date": "2025-06-28",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF257339",
@@ -1392,7 +1535,8 @@
         "venue_name": "대전예술의전당 앙상블홀",
         "perf_start_date": "2025-05-04",
         "perf_end_date": "2025-05-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF260944",
@@ -1400,7 +1544,8 @@
         "venue_name": "광주시문화예술의전당 (구. 남한산성아트홀) 남한산성홀",
         "perf_start_date": "2025-05-31",
         "perf_end_date": "2025-05-31",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -1413,7 +1558,8 @@
         "venue_name": "예술의전당 [서울] CJ 토월극장",
         "perf_start_date": "2024-04-11",
         "perf_end_date": "2024-04-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF235795",
@@ -1421,7 +1567,8 @@
         "venue_name": "안동문화예술의전당 웅부홀",
         "perf_start_date": "2024-03-29",
         "perf_end_date": "2024-03-29",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF273471",
@@ -1429,7 +1576,8 @@
         "venue_name": "익산예술의전당 대공연장",
         "perf_start_date": "2025-10-18",
         "perf_end_date": "2025-10-18",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -1442,7 +1590,8 @@
         "venue_name": "순천문화예술회관 대극장",
         "perf_start_date": "2024-09-07",
         "perf_end_date": "2024-09-07",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF247894",
@@ -1450,7 +1599,8 @@
         "venue_name": "완주향토예술문화회관 공연장",
         "perf_start_date": "2024-09-28",
         "perf_end_date": "2024-09-28",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -1463,7 +1613,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2025-05-03",
         "perf_end_date": "2025-05-03",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF248875",
@@ -1471,7 +1622,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2024-10-04",
         "perf_end_date": "2024-10-04",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1484,7 +1636,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2024-04-04",
         "perf_end_date": "2024-04-04",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF283283",
@@ -1492,7 +1645,8 @@
         "venue_name": "군산예술의전당 소공연장",
         "perf_start_date": "2026-02-05",
         "perf_end_date": "2026-02-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1505,7 +1659,8 @@
         "venue_name": "남동소래아트홀 소래극장 (대공연장) ",
         "perf_start_date": "2023-07-15",
         "perf_end_date": "2023-07-15",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF218932",
@@ -1513,7 +1668,8 @@
         "venue_name": "청양문예회관 대공연장",
         "perf_start_date": "2023-06-22",
         "perf_end_date": "2023-06-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF217554",
@@ -1521,7 +1677,8 @@
         "venue_name": "오산문화예술회관 소공연장",
         "perf_start_date": "2023-06-02",
         "perf_end_date": "2023-06-03",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1534,7 +1691,8 @@
         "venue_name": "3.15아트센터 소극장",
         "perf_start_date": "2023-09-01",
         "perf_end_date": "2023-09-02",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF223025",
@@ -1542,7 +1700,8 @@
         "venue_name": "원주치악예술관",
         "perf_start_date": "2023-08-27",
         "perf_end_date": "2023-08-27",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1555,7 +1714,8 @@
         "venue_name": "세종예술의전당 대공연장",
         "perf_start_date": "2025-05-09",
         "perf_end_date": "2025-05-10",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF265815",
@@ -1563,7 +1723,8 @@
         "venue_name": "한국소리문화의전당 연지홀",
         "perf_start_date": "2025-07-19",
         "perf_end_date": "2025-07-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -1576,7 +1737,8 @@
         "venue_name": "국립극장 하늘극장",
         "perf_start_date": "2024-08-29",
         "perf_end_date": "2024-09-28",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF241790",
@@ -1584,7 +1746,8 @@
         "venue_name": "대전시립연정국악원 큰마당",
         "perf_start_date": "2024-07-27",
         "perf_end_date": "2024-07-27",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF250291",
@@ -1592,7 +1755,8 @@
         "venue_name": "강릉단오제전수교육관 (구. 단오문화관) 공연장",
         "perf_start_date": "2024-10-26",
         "perf_end_date": "2024-10-26",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -1605,7 +1769,8 @@
         "venue_name": "순천문화예술회관 대극장",
         "perf_start_date": "2025-11-14",
         "perf_end_date": "2025-11-15",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF273774",
@@ -1613,7 +1778,8 @@
         "venue_name": "과천시민회관 소극장",
         "perf_start_date": "2025-10-17",
         "perf_end_date": "2025-10-18",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1626,7 +1792,8 @@
         "venue_name": "홍주문화회관 대공연장",
         "perf_start_date": "2025-09-04",
         "perf_end_date": "2025-09-04",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF269403",
@@ -1634,7 +1801,8 @@
         "venue_name": "홍천문화예술회관",
         "perf_start_date": "2025-08-23",
         "perf_end_date": "2025-08-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF270982",
@@ -1642,7 +1810,8 @@
         "venue_name": "사천문화예술회관 대공연장",
         "perf_start_date": "2025-08-28",
         "perf_end_date": "2025-08-28",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF269535",
@@ -1650,7 +1819,8 @@
         "venue_name": "서산시문화회관 대공연장",
         "perf_start_date": "2025-07-26",
         "perf_end_date": "2025-07-26",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -1663,7 +1833,8 @@
         "venue_name": "연천수레울아트홀 대공연장",
         "perf_start_date": "2025-05-17",
         "perf_end_date": "2025-05-17",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF263944",
@@ -1671,7 +1842,8 @@
         "venue_name": "인천학생교육문화회관 싸리재홀(대공연장)",
         "perf_start_date": "2025-05-10",
         "perf_end_date": "2025-05-10",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1684,7 +1856,8 @@
         "venue_name": "아양아트센터 아양홀",
         "perf_start_date": "2025-09-26",
         "perf_end_date": "2025-09-26",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF265546",
@@ -1692,7 +1865,8 @@
         "venue_name": "예주문화예술회관",
         "perf_start_date": "2025-07-19",
         "perf_end_date": "2025-07-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF264687",
@@ -1700,7 +1874,8 @@
         "venue_name": "용인시문화예술회관 처인홀",
         "perf_start_date": "2025-05-31",
         "perf_end_date": "2025-05-31",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1713,7 +1888,8 @@
         "venue_name": "김해문화의전당 마루홀",
         "perf_start_date": "2024-09-06",
         "perf_end_date": "2024-09-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF274122",
@@ -1721,7 +1897,8 @@
         "venue_name": "김해문화의전당 마루홀",
         "perf_start_date": "2025-09-25",
         "perf_end_date": "2025-09-25",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -1734,7 +1911,8 @@
         "venue_name": "남도소리울림터",
         "perf_start_date": "2024-08-24",
         "perf_end_date": "2024-08-24",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF242209",
@@ -1742,7 +1920,8 @@
         "venue_name": "영주문화예술회관 까치홀",
         "perf_start_date": "2024-06-22",
         "perf_end_date": "2024-06-22",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -1755,7 +1934,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2025-05-16",
         "perf_end_date": "2025-05-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF266730",
@@ -1763,7 +1943,8 @@
         "venue_name": "제천예술의전당 대공연장",
         "perf_start_date": "2025-07-04",
         "perf_end_date": "2025-07-05",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1776,7 +1957,8 @@
         "venue_name": "성남아트센터 앙상블씨어터",
         "perf_start_date": "2026-05-02",
         "perf_end_date": "2026-05-02",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF291509",
@@ -1784,7 +1966,8 @@
         "venue_name": "과천시민회관 소극장",
         "perf_start_date": "2026-06-19",
         "perf_end_date": "2026-06-20",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1797,7 +1980,8 @@
         "venue_name": "용인시평생학습관 (여성회관) 큰어울마당",
         "perf_start_date": "2024-12-07",
         "perf_end_date": "2024-12-07",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF249083",
@@ -1805,7 +1989,8 @@
         "venue_name": "영등포아트홀",
         "perf_start_date": "2024-11-23",
         "perf_end_date": "2024-11-23",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF248792",
@@ -1813,7 +1998,8 @@
         "venue_name": "연천수레울아트홀 대공연장",
         "perf_start_date": "2024-10-26",
         "perf_end_date": "2024-10-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1826,7 +2012,8 @@
         "venue_name": "논산아트센터(구. 논산문화예술회관) 대공연장",
         "perf_start_date": "2025-08-22",
         "perf_end_date": "2025-08-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF271671",
@@ -1834,7 +2021,8 @@
         "venue_name": "광명시민회관 대공연장",
         "perf_start_date": "2025-09-13",
         "perf_end_date": "2025-09-13",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -1847,7 +2035,8 @@
         "venue_name": "대덕문화전당",
         "perf_start_date": "2026-03-13",
         "perf_end_date": "2026-03-14",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF286331",
@@ -1855,7 +2044,8 @@
         "venue_name": "제천예술의전당 대공연장",
         "perf_start_date": "2026-03-27",
         "perf_end_date": "2026-03-28",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -1868,7 +2058,8 @@
         "venue_name": "다산아트홀",
         "perf_start_date": "2024-03-09",
         "perf_end_date": "2024-03-09",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF260602",
@@ -1876,7 +2067,8 @@
         "venue_name": "다산아트홀",
         "perf_start_date": "2025-03-22",
         "perf_end_date": "2025-03-22",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF286085",
@@ -1884,7 +2076,8 @@
         "venue_name": "다산아트홀",
         "perf_start_date": "2026-03-14",
         "perf_end_date": "2026-03-14",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1897,7 +2090,8 @@
         "venue_name": "이석영 뉴미디어 도서관 계단존 (1F) ",
         "perf_start_date": "2025-06-14",
         "perf_end_date": "2025-06-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF269339",
@@ -1905,7 +2099,8 @@
         "venue_name": "남양주 어린이비전센터 다목적강당",
         "perf_start_date": "2025-07-26",
         "perf_end_date": "2025-07-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF288356",
@@ -1913,7 +2108,8 @@
         "venue_name": "화도수동행정복지센터 천마홀(다목적공연장)",
         "perf_start_date": "2026-04-11",
         "perf_end_date": "2026-04-11",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF275068",
@@ -1921,7 +2117,8 @@
         "venue_name": "와부읍주민자치센터 미디어센터",
         "perf_start_date": "2025-10-16",
         "perf_end_date": "2025-10-16",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1934,7 +2131,8 @@
         "venue_name": "정약용도서관",
         "perf_start_date": "2024-10-22",
         "perf_end_date": "2024-10-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF246652",
@@ -1942,7 +2140,8 @@
         "venue_name": "와부읍주민자치센터 미디어센터",
         "perf_start_date": "2024-08-22",
         "perf_end_date": "2024-08-22",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1955,7 +2154,8 @@
         "venue_name": "아양아트센터 아양홀",
         "perf_start_date": "2025-09-04",
         "perf_end_date": "2025-09-05",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF242734",
@@ -1963,7 +2163,8 @@
         "venue_name": "함안문화예술회관 대공연장",
         "perf_start_date": "2024-07-20",
         "perf_end_date": "2024-07-20",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1976,7 +2177,8 @@
         "venue_name": "수원SK아트리움 대공연장",
         "perf_start_date": "2024-09-07",
         "perf_end_date": "2024-09-08",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF252173",
@@ -1984,7 +2186,8 @@
         "venue_name": "거창문화센터 공연장",
         "perf_start_date": "2024-10-29",
         "perf_end_date": "2024-10-29",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -1997,7 +2200,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2024-11-09",
         "perf_end_date": "2024-11-09",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF250430",
@@ -2005,7 +2209,8 @@
         "venue_name": "성남아트센터 오페라하우스",
         "perf_start_date": "2024-11-13",
         "perf_end_date": "2024-11-13",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF246801",
@@ -2013,7 +2218,8 @@
         "venue_name": "어울아트센터(구. 대구북구문예회관) 함지홀(대공연장)",
         "perf_start_date": "2024-09-07",
         "perf_end_date": "2024-09-07",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF274898",
@@ -2021,7 +2227,8 @@
         "venue_name": "예주문화예술회관",
         "perf_start_date": "2025-12-06",
         "perf_end_date": "2025-12-06",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -2034,7 +2241,8 @@
         "venue_name": "경기아트센터(구. 경기도문화의전당) 소극장",
         "perf_start_date": "2024-05-03",
         "perf_end_date": "2024-05-05",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF261729",
@@ -2042,7 +2250,8 @@
         "venue_name": "경기아트센터(구. 경기도문화의전당) 소극장",
         "perf_start_date": "2025-05-08",
         "perf_end_date": "2025-05-11",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2055,7 +2264,8 @@
         "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
         "perf_start_date": "2025-08-20",
         "perf_end_date": "2025-08-20",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF269591",
@@ -2063,7 +2273,8 @@
         "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
         "perf_start_date": "2025-08-21",
         "perf_end_date": "2025-08-21",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -2076,7 +2287,8 @@
         "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
         "perf_start_date": "2024-08-23",
         "perf_end_date": "2024-08-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF245082",
@@ -2084,7 +2296,8 @@
         "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
         "perf_start_date": "2024-08-22",
         "perf_end_date": "2024-08-22",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -2097,7 +2310,8 @@
         "venue_name": "대전시립연정국악원 큰마당",
         "perf_start_date": "2025-11-06",
         "perf_end_date": "2025-11-06",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF250115",
@@ -2105,7 +2319,8 @@
         "venue_name": "대전시립연정국악원 큰마당",
         "perf_start_date": "2024-11-01",
         "perf_end_date": "2024-11-01",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -2118,7 +2333,8 @@
         "venue_name": "대전시립연정국악원 큰마당",
         "perf_start_date": "2024-03-29",
         "perf_end_date": "2024-03-29",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF237428",
@@ -2126,7 +2342,8 @@
         "venue_name": "대전시립연정국악원 큰마당",
         "perf_start_date": "2024-04-12",
         "perf_end_date": "2024-04-12",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -2139,7 +2356,8 @@
         "venue_name": "국립아시아문화전당 어린이극장",
         "perf_start_date": "2026-05-09",
         "perf_end_date": "2026-05-10",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF263198",
@@ -2147,7 +2365,8 @@
         "venue_name": "국립아시아문화전당 광장",
         "perf_start_date": "2025-05-09",
         "perf_end_date": "2025-05-11",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -2160,7 +2379,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2025-04-04",
         "perf_end_date": "2025-04-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF259116",
@@ -2168,7 +2388,8 @@
         "venue_name": "울주문화예술회관 그린나래홀 (공연장) ",
         "perf_start_date": "2025-03-14",
         "perf_end_date": "2025-03-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2181,7 +2402,8 @@
         "venue_name": "산청문화예술회관 대공연장",
         "perf_start_date": "2025-11-06",
         "perf_end_date": "2025-11-06",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF272417",
@@ -2189,7 +2411,8 @@
         "venue_name": "어울아트센터(구. 대구북구문예회관) 함지홀(대공연장)",
         "perf_start_date": "2025-09-25",
         "perf_end_date": "2025-09-25",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -2202,7 +2425,8 @@
         "venue_name": "완주문화예술회관 대극장",
         "perf_start_date": "2025-08-14",
         "perf_end_date": "2025-08-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF269086",
@@ -2210,7 +2434,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 소공연장",
         "perf_start_date": "2025-08-24",
         "perf_end_date": "2025-08-24",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2223,7 +2448,8 @@
         "venue_name": "춘향문화예술회관 대공연장",
         "perf_start_date": "2025-06-14",
         "perf_end_date": "2025-06-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF262459",
@@ -2231,7 +2457,8 @@
         "venue_name": "증평문화회관 대강당",
         "perf_start_date": "2025-04-10",
         "perf_end_date": "2025-04-10",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2244,7 +2471,8 @@
         "venue_name": "서천문예의전당 대강당",
         "perf_start_date": "2026-04-08",
         "perf_end_date": "2026-04-08",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF271504",
@@ -2252,7 +2480,8 @@
         "venue_name": "영도문화예술회관 대공연장(봉래홀)",
         "perf_start_date": "2025-09-06",
         "perf_end_date": "2025-09-06",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF266522",
@@ -2260,7 +2489,8 @@
         "venue_name": "영월군문화예술회관",
         "perf_start_date": "2025-07-04",
         "perf_end_date": "2025-07-04",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF272247",
@@ -2268,7 +2498,8 @@
         "venue_name": "창녕문화예술회관 대공연장",
         "perf_start_date": "2025-09-10",
         "perf_end_date": "2025-09-10",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF264609",
@@ -2276,7 +2507,8 @@
         "venue_name": "강진아트홀 대공연장",
         "perf_start_date": "2025-06-21",
         "perf_end_date": "2025-06-21",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -2289,7 +2521,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2025-06-14",
         "perf_end_date": "2025-06-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF271723",
@@ -2297,7 +2530,8 @@
         "venue_name": "경북고령대가야문화누리 (구. 대가야국악당) 대공연장 (우륵홀) ",
         "perf_start_date": "2025-08-29",
         "perf_end_date": "2025-08-29",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -2310,7 +2544,8 @@
         "venue_name": "평촌아트홀",
         "perf_start_date": "2025-06-27",
         "perf_end_date": "2025-06-28",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF256997",
@@ -2318,7 +2553,8 @@
         "venue_name": "공주문예회관 대공연장",
         "perf_start_date": "2025-07-11",
         "perf_end_date": "2025-07-12",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF266183",
@@ -2326,7 +2562,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2025-07-05",
         "perf_end_date": "2025-07-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2339,7 +2576,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2023-12-15",
         "perf_end_date": "2023-12-16",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF223348",
@@ -2347,7 +2585,8 @@
         "venue_name": "세종국악당",
         "perf_start_date": "2023-09-16",
         "perf_end_date": "2023-09-16",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2360,7 +2599,8 @@
         "venue_name": "구미시문화예술회관 대공연장",
         "perf_start_date": "2024-10-25",
         "perf_end_date": "2024-10-26",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF229738",
@@ -2368,7 +2608,8 @@
         "venue_name": "평촌아트홀",
         "perf_start_date": "2023-12-23",
         "perf_end_date": "2023-12-24",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF249407",
@@ -2376,7 +2617,8 @@
         "venue_name": "울진문화예술회관",
         "perf_start_date": "2024-10-04",
         "perf_end_date": "2024-10-05",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2389,7 +2631,8 @@
         "venue_name": "국립극단 [명동] 명동예술극장",
         "perf_start_date": "2025-08-23",
         "perf_end_date": "2025-08-31",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF270620",
@@ -2397,7 +2640,8 @@
         "venue_name": "(재) 영화의전당 하늘연극장",
         "perf_start_date": "2025-09-05",
         "perf_end_date": "2025-09-06",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2410,7 +2654,8 @@
         "venue_name": "평택시남부문예회관 대공연장",
         "perf_start_date": "2025-07-04",
         "perf_end_date": "2025-07-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF263844",
@@ -2418,7 +2663,8 @@
         "venue_name": "광명시민회관 대공연장",
         "perf_start_date": "2025-05-30",
         "perf_end_date": "2025-05-31",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2431,7 +2677,8 @@
         "venue_name": "홍익대 대학로 아트센터 대극장",
         "perf_start_date": "2023-11-24",
         "perf_end_date": "2024-02-18",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF226243",
@@ -2439,7 +2686,8 @@
         "venue_name": "부산문화회관 대극장",
         "perf_start_date": "2023-10-14",
         "perf_end_date": "2023-10-15",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2452,7 +2700,8 @@
         "venue_name": "부평아트센터 해누리극장",
         "perf_start_date": "2025-12-13",
         "perf_end_date": "2025-12-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF274251",
@@ -2460,7 +2709,8 @@
         "venue_name": "고양어울림누리 어울림극장",
         "perf_start_date": "2025-11-08",
         "perf_end_date": "2025-11-09",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2473,7 +2723,8 @@
         "venue_name": "상주문화회관 대공연장",
         "perf_start_date": "2024-07-20",
         "perf_end_date": "2024-07-20",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF242250",
@@ -2481,7 +2732,8 @@
         "venue_name": "강진아트홀 대공연장",
         "perf_start_date": "2024-06-15",
         "perf_end_date": "2024-06-15",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -2494,7 +2746,8 @@
         "venue_name": "장흥문화예술회관 대공연장",
         "perf_start_date": "2025-09-12",
         "perf_end_date": "2025-09-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF273685",
@@ -2502,7 +2755,8 @@
         "venue_name": "계양문화회관 대공연장",
         "perf_start_date": "2025-09-26",
         "perf_end_date": "2025-09-27",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF273348",
@@ -2510,7 +2764,8 @@
         "venue_name": "하동문화예술회관 대공연장",
         "perf_start_date": "2025-09-18",
         "perf_end_date": "2025-09-18",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -2523,7 +2778,8 @@
         "venue_name": "동래문화회관 대극장",
         "perf_start_date": "2024-08-17",
         "perf_end_date": "2024-08-17",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF247486",
@@ -2531,7 +2787,8 @@
         "venue_name": "울산중구문화의전당 함월홀 (2층) ",
         "perf_start_date": "2024-10-11",
         "perf_end_date": "2024-10-11",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF249735",
@@ -2539,7 +2796,8 @@
         "venue_name": "이천아트홀 소공연장",
         "perf_start_date": "2024-11-08",
         "perf_end_date": "2024-11-08",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -2552,7 +2810,8 @@
         "venue_name": "하남문화예술회관 검단홀(대극장)",
         "perf_start_date": "2025-05-28",
         "perf_end_date": "2025-05-28",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF262081",
@@ -2560,7 +2819,8 @@
         "venue_name": "부평아트센터 해누리극장",
         "perf_start_date": "2025-06-13",
         "perf_end_date": "2025-06-13",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF264802",
@@ -2568,7 +2828,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2025-06-20",
         "perf_end_date": "2025-06-20",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF277835",
@@ -2576,7 +2837,8 @@
         "venue_name": "의성문화회관",
         "perf_start_date": "2025-11-13",
         "perf_end_date": "2025-11-13",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -2589,7 +2851,8 @@
         "venue_name": "은평문화예술회관 공연장",
         "perf_start_date": "2024-11-23",
         "perf_end_date": "2024-11-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF253658",
@@ -2597,7 +2860,8 @@
         "venue_name": "아산시 평생학습관(아산아트홀) 아산아트홀(아산시평생학습관)",
         "perf_start_date": "2024-11-16",
         "perf_end_date": "2024-11-16",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -2610,7 +2874,8 @@
         "venue_name": "거창문화센터 공연장",
         "perf_start_date": "2024-06-22",
         "perf_end_date": "2024-06-22",
-        "season_rank": 22.0
+        "season_rank": 22.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF242496",
@@ -2618,7 +2883,8 @@
         "venue_name": "의령군민문화회관",
         "perf_start_date": "2024-06-19",
         "perf_end_date": "2024-06-19",
-        "season_rank": 21.0
+        "season_rank": 21.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF243448",
@@ -2626,7 +2892,8 @@
         "venue_name": "춘천인형극장 대극장",
         "perf_start_date": "2024-07-27",
         "perf_end_date": "2024-07-27",
-        "season_rank": 23.0
+        "season_rank": 23.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2639,7 +2906,8 @@
         "venue_name": "부평아트센터 해누리극장",
         "perf_start_date": "2023-10-20",
         "perf_end_date": "2023-10-21",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF226234",
@@ -2647,7 +2915,8 @@
         "venue_name": "현장아트홀",
         "perf_start_date": "2023-10-27",
         "perf_end_date": "2023-10-28",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2660,7 +2929,8 @@
         "venue_name": "익산예술의전당 대공연장",
         "perf_start_date": "2025-08-02",
         "perf_end_date": "2025-08-02",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF268184",
@@ -2668,7 +2938,8 @@
         "venue_name": "수원문화원 (빛누리아트홀) 수원문화원 (빛누리아트홀) ",
         "perf_start_date": "2025-07-26",
         "perf_end_date": "2025-07-26",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -2681,7 +2952,8 @@
         "venue_name": "태안군문화예술회관 대공연장",
         "perf_start_date": "2025-10-23",
         "perf_end_date": "2025-10-23",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF266826",
@@ -2689,7 +2961,8 @@
         "venue_name": "예천군문화회관",
         "perf_start_date": "2025-06-28",
         "perf_end_date": "2025-06-28",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF265274",
@@ -2697,7 +2970,8 @@
         "venue_name": "포천반월아트홀 대극장",
         "perf_start_date": "2025-06-13",
         "perf_end_date": "2025-06-13",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2710,7 +2984,8 @@
         "venue_name": "김포아트홀",
         "perf_start_date": "2024-10-04",
         "perf_end_date": "2024-10-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF249338",
@@ -2718,7 +2993,8 @@
         "venue_name": "서울주문화센터 공연장",
         "perf_start_date": "2024-10-01",
         "perf_end_date": "2024-10-02",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2731,7 +3007,8 @@
         "venue_name": "고창문화의전당 공연장",
         "perf_start_date": "2025-09-11",
         "perf_end_date": "2025-09-11",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF273519",
@@ -2739,7 +3016,8 @@
         "venue_name": "아산시 평생학습관(아산아트홀) 아산아트홀(아산시평생학습관)",
         "perf_start_date": "2025-10-18",
         "perf_end_date": "2025-10-18",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2752,7 +3030,8 @@
         "venue_name": "오산문화예술회관 대공연장",
         "perf_start_date": "2025-09-06",
         "perf_end_date": "2025-09-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF272116",
@@ -2760,7 +3039,8 @@
         "venue_name": "서산시문화회관 대공연장",
         "perf_start_date": "2025-09-12",
         "perf_end_date": "2025-09-12",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -2773,7 +3053,8 @@
         "venue_name": "화성아트홀",
         "perf_start_date": "2024-09-21",
         "perf_end_date": "2024-09-21",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF247301",
@@ -2781,7 +3062,8 @@
         "venue_name": "영광예술의전당 대공연장",
         "perf_start_date": "2024-08-29",
         "perf_end_date": "2024-08-29",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2794,7 +3076,8 @@
         "venue_name": "부천시민회관 대공연장",
         "perf_start_date": "2024-10-12",
         "perf_end_date": "2024-10-12",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF249134",
@@ -2802,7 +3085,8 @@
         "venue_name": "용인시평생학습관 (여성회관) 큰어울마당",
         "perf_start_date": "2024-10-03",
         "perf_end_date": "2024-10-03",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -2815,7 +3099,8 @@
         "venue_name": "고양아람누리 새라새극장",
         "perf_start_date": "2025-09-13",
         "perf_end_date": "2025-09-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF264532",
@@ -2823,7 +3108,8 @@
         "venue_name": "군포문화예술회관 철쭉홀",
         "perf_start_date": "2025-07-12",
         "perf_end_date": "2025-07-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -2836,7 +3122,8 @@
         "venue_name": "평택시남부문예회관 대공연장",
         "perf_start_date": "2025-09-19",
         "perf_end_date": "2025-09-19",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF244934",
@@ -2844,7 +3131,8 @@
         "venue_name": "광양시문화예술회관 대공연장",
         "perf_start_date": "2024-08-03",
         "perf_end_date": "2024-08-03",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF246102",
@@ -2852,7 +3140,8 @@
         "venue_name": "(재) 영화의전당 하늘연극장",
         "perf_start_date": "2024-09-21",
         "perf_end_date": "2024-09-21",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF244670",
@@ -2860,7 +3149,8 @@
         "venue_name": "논산아트센터(구. 논산문화예술회관) 대공연장",
         "perf_start_date": "2024-07-19",
         "perf_end_date": "2024-07-20",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF248479",
@@ -2868,7 +3158,8 @@
         "venue_name": "순천문화예술회관 대극장",
         "perf_start_date": "2024-09-28",
         "perf_end_date": "2024-09-28",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2881,7 +3172,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2024-07-13",
         "perf_end_date": "2024-07-13",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF244121",
@@ -2889,7 +3181,8 @@
         "venue_name": "목포문화예술회관",
         "perf_start_date": "2024-07-27",
         "perf_end_date": "2024-07-27",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2902,7 +3195,8 @@
         "venue_name": "평촌아트홀",
         "perf_start_date": "2025-09-13",
         "perf_end_date": "2025-09-13",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF263660",
@@ -2910,7 +3204,8 @@
         "venue_name": "김해서부문화센터 하늬홀",
         "perf_start_date": "2025-06-20",
         "perf_end_date": "2025-06-21",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       }
     ]
   },
@@ -2923,7 +3218,8 @@
         "venue_name": "김해서부문화센터 하늬홀",
         "perf_start_date": "2025-05-04",
         "perf_end_date": "2025-05-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF245710",
@@ -2931,7 +3227,8 @@
         "venue_name": "완주향토예술문화회관 공연장",
         "perf_start_date": "2024-08-23",
         "perf_end_date": "2024-08-24",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -2944,7 +3241,8 @@
         "venue_name": "연천수레울아트홀 대공연장",
         "perf_start_date": "2024-08-30",
         "perf_end_date": "2024-08-30",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF247340",
@@ -2952,7 +3250,8 @@
         "venue_name": "영도문화예술회관 대공연장(봉래홀)",
         "perf_start_date": "2024-09-20",
         "perf_end_date": "2024-09-20",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF252836",
@@ -2960,7 +3259,8 @@
         "venue_name": "합천군문화예술회관 대공연장",
         "perf_start_date": "2024-11-20",
         "perf_end_date": "2024-11-20",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -2973,7 +3273,8 @@
         "venue_name": "충남도청 문예회관",
         "perf_start_date": "2025-12-11",
         "perf_end_date": "2025-12-11",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF277374",
@@ -2981,7 +3282,8 @@
         "venue_name": "울산중구문화의전당 함월홀 (2층) ",
         "perf_start_date": "2025-12-13",
         "perf_end_date": "2025-12-13",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -2994,7 +3296,8 @@
         "venue_name": "부산문화회관 대극장",
         "perf_start_date": "2024-06-20",
         "perf_end_date": "2024-06-20",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF259029",
@@ -3002,7 +3305,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2025-03-05",
         "perf_end_date": "2025-03-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3015,7 +3319,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2025-04-23",
         "perf_end_date": "2025-04-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF234748",
@@ -3023,7 +3328,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2024-02-27",
         "perf_end_date": "2024-02-27",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -3036,7 +3342,8 @@
         "venue_name": "부산문화회관 사랑채극장 (소극장) ",
         "perf_start_date": "2024-09-07",
         "perf_end_date": "2024-10-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF263156",
@@ -3044,7 +3351,8 @@
         "venue_name": "부산문화회관 사랑채극장 (소극장) ",
         "perf_start_date": "2025-06-06",
         "perf_end_date": "2025-07-06",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF287280",
@@ -3052,7 +3360,8 @@
         "venue_name": "부산문화회관 사랑채극장 (소극장) ",
         "perf_start_date": "2026-04-03",
         "perf_end_date": "2026-04-25",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3065,7 +3374,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2026-03-07",
         "perf_end_date": "2026-03-07",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF259850",
@@ -3073,7 +3383,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2025-03-29",
         "perf_end_date": "2025-03-29",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3086,7 +3397,8 @@
         "venue_name": "부산문화회관 대극장",
         "perf_start_date": "2024-07-04",
         "perf_end_date": "2024-07-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF239764",
@@ -3094,7 +3406,8 @@
         "venue_name": "부산시민회관 소극장",
         "perf_start_date": "2024-04-24",
         "perf_end_date": "2024-05-03",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3107,7 +3420,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2024-10-15",
         "perf_end_date": "2024-10-15",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF252566",
@@ -3115,7 +3429,8 @@
         "venue_name": "부산시민회관 대극장",
         "perf_start_date": "2024-10-30",
         "perf_end_date": "2024-10-30",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF251956",
@@ -3123,7 +3438,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2024-10-22",
         "perf_end_date": "2024-10-22",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF253540",
@@ -3131,7 +3447,8 @@
         "venue_name": "부산문화회관 대극장",
         "perf_start_date": "2024-11-12",
         "perf_end_date": "2024-11-12",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF265798",
@@ -3139,7 +3456,8 @@
         "venue_name": "부산문화회관 대극장",
         "perf_start_date": "2025-06-04",
         "perf_end_date": "2025-06-04",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3152,7 +3470,8 @@
         "venue_name": "부산문화회관 챔버홀",
         "perf_start_date": "2025-04-19",
         "perf_end_date": "2025-04-19",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF265800",
@@ -3160,7 +3479,8 @@
         "venue_name": "부산문화회관 챔버홀",
         "perf_start_date": "2025-06-14",
         "perf_end_date": "2025-06-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3173,7 +3493,8 @@
         "venue_name": "부산문화회관 챔버홀",
         "perf_start_date": "2025-11-05",
         "perf_end_date": "2025-11-07",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF275579",
@@ -3181,7 +3502,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2025-10-01",
         "perf_end_date": "2025-10-01",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF240659",
@@ -3189,7 +3511,8 @@
         "venue_name": "부산시민회관 소극장",
         "perf_start_date": "2024-06-05",
         "perf_end_date": "2024-06-05",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF240601",
@@ -3197,7 +3520,8 @@
         "venue_name": "부산문화회관 중극장",
         "perf_start_date": "2024-10-02",
         "perf_end_date": "2024-10-02",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF253064",
@@ -3205,7 +3529,8 @@
         "venue_name": "부산시민회관 대극장",
         "perf_start_date": "2024-11-06",
         "perf_end_date": "2024-11-06",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF253760",
@@ -3213,7 +3538,8 @@
         "venue_name": "부산문화회관 대극장",
         "perf_start_date": "2024-11-14",
         "perf_end_date": "2024-11-14",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3226,7 +3552,8 @@
         "venue_name": "부산문화회관 대극장",
         "perf_start_date": "2024-05-03",
         "perf_end_date": "2024-05-04",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF258224",
@@ -3234,7 +3561,8 @@
         "venue_name": "부산문화회관 대극장",
         "perf_start_date": "2025-05-03",
         "perf_end_date": "2025-05-04",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3247,7 +3575,8 @@
         "venue_name": "부천아트센터 콘서트홀",
         "perf_start_date": "2024-10-02",
         "perf_end_date": "2024-10-02",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF262258",
@@ -3255,7 +3584,8 @@
         "venue_name": "부천아트센터 콘서트홀",
         "perf_start_date": "2025-09-26",
         "perf_end_date": "2025-09-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3268,7 +3598,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2024-11-09",
         "perf_end_date": "2024-11-09",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF251705",
@@ -3276,7 +3607,8 @@
         "venue_name": "김포아트홀",
         "perf_start_date": "2024-11-01",
         "perf_end_date": "2024-11-02",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3289,7 +3621,8 @@
         "venue_name": "인천중구문화회관",
         "perf_start_date": "2024-09-28",
         "perf_end_date": "2024-09-29",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF246675",
@@ -3297,7 +3630,8 @@
         "venue_name": "남동소래아트홀 소래극장 (대공연장) ",
         "perf_start_date": "2024-09-06",
         "perf_end_date": "2024-09-07",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3310,7 +3644,8 @@
         "venue_name": "천안시성환문화회관 대공연장",
         "perf_start_date": "2024-10-12",
         "perf_end_date": "2024-10-13",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF251719",
@@ -3318,7 +3653,8 @@
         "venue_name": "거창문화센터 공연장",
         "perf_start_date": "2024-10-25",
         "perf_end_date": "2024-10-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3331,7 +3667,8 @@
         "venue_name": "사천문화예술회관 대공연장",
         "perf_start_date": "2024-06-28",
         "perf_end_date": "2024-06-29",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF249539",
@@ -3339,7 +3676,8 @@
         "venue_name": "통영시민문화회관 대극장",
         "perf_start_date": "2024-09-28",
         "perf_end_date": "2024-09-29",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3352,7 +3690,8 @@
         "venue_name": "빛고을시민문화관 공연장",
         "perf_start_date": "2024-08-31",
         "perf_end_date": "2024-08-31",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF243843",
@@ -3360,7 +3699,8 @@
         "venue_name": "한국소리문화의전당 연지홀",
         "perf_start_date": "2024-08-24",
         "perf_end_date": "2024-08-24",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3373,7 +3713,8 @@
         "venue_name": "속초문화예술회관 대공연장",
         "perf_start_date": "2025-08-22",
         "perf_end_date": "2025-08-23",
-        "season_rank": 37.0
+        "season_rank": 37.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF278298",
@@ -3381,7 +3722,8 @@
         "venue_name": "과천시민회관 소극장",
         "perf_start_date": "2025-12-13",
         "perf_end_date": "2025-12-13",
-        "season_rank": 41.0
+        "season_rank": 41.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3394,7 +3736,8 @@
         "venue_name": "화성아트홀",
         "perf_start_date": "2026-06-13",
         "perf_end_date": "2026-06-14",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF288081",
@@ -3402,7 +3745,8 @@
         "venue_name": "세종예술의전당 대공연장",
         "perf_start_date": "2026-06-05",
         "perf_end_date": "2026-06-06",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF248080",
@@ -3410,7 +3754,8 @@
         "venue_name": "영등포아트홀",
         "perf_start_date": "2024-10-19",
         "perf_end_date": "2024-10-19",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF247259",
@@ -3418,7 +3763,8 @@
         "venue_name": "세종국악당",
         "perf_start_date": "2024-10-05",
         "perf_end_date": "2024-10-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3431,7 +3777,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2025-07-18",
         "perf_end_date": "2025-07-19",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF261787",
@@ -3439,7 +3786,8 @@
         "venue_name": "태백문화예술회관 대공연장",
         "perf_start_date": "2025-04-11",
         "perf_end_date": "2025-04-12",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3452,7 +3800,8 @@
         "venue_name": "구미시문화예술회관 대공연장",
         "perf_start_date": "2025-04-19",
         "perf_end_date": "2025-04-19",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF268666",
@@ -3460,7 +3809,8 @@
         "venue_name": "반석아트홀",
         "perf_start_date": "2025-10-15",
         "perf_end_date": "2025-10-16",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -3473,7 +3823,8 @@
         "venue_name": "고창문화의전당 공연장",
         "perf_start_date": "2025-09-26",
         "perf_end_date": "2025-09-27",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF272825",
@@ -3481,7 +3832,8 @@
         "venue_name": "세종예술의전당 대공연장",
         "perf_start_date": "2025-10-19",
         "perf_end_date": "2025-10-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -3494,7 +3846,8 @@
         "venue_name": "GS칼텍스 예울마루 소극장",
         "perf_start_date": "2023-09-01",
         "perf_end_date": "2023-09-02",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF220095",
@@ -3502,7 +3855,8 @@
         "venue_name": "평택시남부문예회관 대공연장",
         "perf_start_date": "2023-07-07",
         "perf_end_date": "2023-07-08",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF225362",
@@ -3510,7 +3864,8 @@
         "venue_name": "성북미디어문화마루 꿈빛극장",
         "perf_start_date": "2023-11-04",
         "perf_end_date": "2023-11-05",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF218167",
@@ -3518,7 +3873,8 @@
         "venue_name": "현장아트홀",
         "perf_start_date": "2023-06-17",
         "perf_end_date": "2023-06-18",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3531,7 +3887,8 @@
         "venue_name": "서귀포예술의전당 대극장",
         "perf_start_date": "2025-12-05",
         "perf_end_date": "2025-12-06",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF277741",
@@ -3539,7 +3896,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2025-12-12",
         "perf_end_date": "2025-12-13",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -3552,7 +3910,8 @@
         "venue_name": "세종문화회관 세종M씨어터",
         "perf_start_date": "2025-09-05",
         "perf_end_date": "2025-09-28",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF233740",
@@ -3560,7 +3919,8 @@
         "venue_name": "세종문화회관 세종M씨어터",
         "perf_start_date": "2024-11-11",
         "perf_end_date": "2024-11-27",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3573,7 +3933,8 @@
         "venue_name": "세종문화회관 세종S씨어터",
         "perf_start_date": "2025-11-07",
         "perf_end_date": "2025-11-30",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF234482",
@@ -3581,7 +3942,8 @@
         "venue_name": "세종문화회관 세종S씨어터",
         "perf_start_date": "2024-09-27",
         "perf_end_date": "2024-10-20",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3594,7 +3956,8 @@
         "venue_name": "강동아트센터 대극장 한강",
         "perf_start_date": "2025-03-27",
         "perf_end_date": "2025-03-27",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF255240",
@@ -3602,7 +3965,8 @@
         "venue_name": "성북미디어문화마루 꿈빛극장",
         "perf_start_date": "2024-12-03",
         "perf_end_date": "2024-12-03",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3615,7 +3979,8 @@
         "venue_name": "구미시문화예술회관 대공연장",
         "perf_start_date": "2025-11-21",
         "perf_end_date": "2025-11-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF281834",
@@ -3623,7 +3988,8 @@
         "venue_name": "김포아트홀",
         "perf_start_date": "2026-01-17",
         "perf_end_date": "2026-01-17",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -3636,7 +4002,8 @@
         "venue_name": "세종문화회관 세종체임버홀",
         "perf_start_date": "2025-06-13",
         "perf_end_date": "2025-06-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF233644",
@@ -3644,7 +4011,8 @@
         "venue_name": "세종문화회관 세종체임버홀",
         "perf_start_date": "2024-06-21",
         "perf_end_date": "2024-06-21",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF278595",
@@ -3652,7 +4020,8 @@
         "venue_name": "부산콘서트홀 챔버홀",
         "perf_start_date": "2025-11-22",
         "perf_end_date": "2025-11-22",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3665,7 +4034,8 @@
         "venue_name": "예술의전당 [서울] CJ 토월극장",
         "perf_start_date": "2026-05-02",
         "perf_end_date": "2026-05-17",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF289529",
@@ -3673,7 +4043,8 @@
         "venue_name": "밀양아리랑아트센터 대공연장",
         "perf_start_date": "2026-05-23",
         "perf_end_date": "2026-05-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3686,7 +4057,8 @@
         "venue_name": "김해문화의전당 마루홀",
         "perf_start_date": "2025-08-22",
         "perf_end_date": "2025-08-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF266669",
@@ -3694,7 +4066,8 @@
         "venue_name": "익산예술의전당 대공연장",
         "perf_start_date": "2025-07-19",
         "perf_end_date": "2025-07-19",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3707,7 +4080,8 @@
         "venue_name": "예술의전당 [서울] CJ 토월극장",
         "perf_start_date": "2024-05-12",
         "perf_end_date": "2024-05-26",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF253992",
@@ -3715,7 +4089,8 @@
         "venue_name": "국립극장 해오름극장",
         "perf_start_date": "2025-02-22",
         "perf_end_date": "2025-03-07",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF266595",
@@ -3723,7 +4098,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2025-07-12",
         "perf_end_date": "2025-07-12",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3736,7 +4112,8 @@
         "venue_name": "제주문예회관 대극장",
         "perf_start_date": "2024-12-07",
         "perf_end_date": "2024-12-08",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF265974",
@@ -3744,7 +4121,8 @@
         "venue_name": "대구학생문화센터 대공연장",
         "perf_start_date": "2025-07-05",
         "perf_end_date": "2025-07-05",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF263111",
@@ -3752,7 +4130,8 @@
         "venue_name": "안동문화예술의전당 웅부홀",
         "perf_start_date": "2025-06-27",
         "perf_end_date": "2025-06-27",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3765,7 +4144,8 @@
         "venue_name": "의정부예술의전당 소극장",
         "perf_start_date": "2024-07-26",
         "perf_end_date": "2024-07-27",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF262145",
@@ -3773,7 +4153,8 @@
         "venue_name": "대전시립연정국악원 작은마당",
         "perf_start_date": "2025-05-02",
         "perf_end_date": "2025-05-02",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3786,7 +4167,8 @@
         "venue_name": "예천군문화회관",
         "perf_start_date": "2025-08-29",
         "perf_end_date": "2025-08-30",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF269982",
@@ -3794,7 +4176,8 @@
         "venue_name": "김포아트홀",
         "perf_start_date": "2025-08-22",
         "perf_end_date": "2025-08-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF272392",
@@ -3802,7 +4185,8 @@
         "venue_name": "삼척문화예술회관 대공연장",
         "perf_start_date": "2025-09-13",
         "perf_end_date": "2025-09-13",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF267258",
@@ -3810,7 +4194,8 @@
         "venue_name": "해남문화예술회관 대공연장",
         "perf_start_date": "2025-07-03",
         "perf_end_date": "2025-07-03",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3823,7 +4208,8 @@
         "venue_name": "제천예술의전당 대공연장",
         "perf_start_date": "2025-10-24",
         "perf_end_date": "2025-10-25",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF273460",
@@ -3831,7 +4217,8 @@
         "venue_name": "논산아트센터(구. 논산문화예술회관) 대공연장",
         "perf_start_date": "2025-09-19",
         "perf_end_date": "2025-09-19",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF277022",
@@ -3839,7 +4226,8 @@
         "venue_name": "제물포구문화체육센터(구. 동구문화체육센터) 공연장",
         "perf_start_date": "2025-12-05",
         "perf_end_date": "2025-12-06",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3852,7 +4240,8 @@
         "venue_name": "고창문화의전당 공연장",
         "perf_start_date": "2024-09-04",
         "perf_end_date": "2024-09-05",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF249202",
@@ -3860,7 +4249,8 @@
         "venue_name": "거창문화센터 공연장",
         "perf_start_date": "2024-10-05",
         "perf_end_date": "2024-10-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -3873,7 +4263,8 @@
         "venue_name": "인제하늘내린센터 대공연장",
         "perf_start_date": "2026-05-23",
         "perf_end_date": "2026-05-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF287270",
@@ -3881,7 +4272,8 @@
         "venue_name": "예천군문화회관",
         "perf_start_date": "2026-04-04",
         "perf_end_date": "2026-04-04",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -3894,7 +4286,8 @@
         "venue_name": "고창문화의전당 공연장",
         "perf_start_date": "2024-06-15",
         "perf_end_date": "2024-06-15",
-        "season_rank": 11.0
+        "season_rank": 11.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF239400",
@@ -3902,7 +4295,8 @@
         "venue_name": "거창문화센터 공연장",
         "perf_start_date": "2024-04-27",
         "perf_end_date": "2024-04-27",
-        "season_rank": 10.0
+        "season_rank": 10.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3915,7 +4309,8 @@
         "venue_name": "국립부여박물관 사비마루",
         "perf_start_date": "2023-12-01",
         "perf_end_date": "2023-12-02",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF231335",
@@ -3923,7 +4318,8 @@
         "venue_name": "관악아트홀 (구. 관악문화관) 관악아트홀 (구. 관악문화관) ",
         "perf_start_date": "2023-12-22",
         "perf_end_date": "2023-12-23",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3936,7 +4332,8 @@
         "venue_name": "완주문화예술회관 대극장",
         "perf_start_date": "2024-05-31",
         "perf_end_date": "2024-05-31",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF240907",
@@ -3944,7 +4341,8 @@
         "venue_name": "장수한누리전당 소공연장",
         "perf_start_date": "2024-05-30",
         "perf_end_date": "2024-05-30",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -3957,7 +4355,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2026-05-22",
         "perf_end_date": "2026-05-23",
-        "season_rank": 9.0
+        "season_rank": 9.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF290299",
@@ -3965,7 +4364,8 @@
         "venue_name": "고성군문화복지센터 대공연장",
         "perf_start_date": "2026-05-09",
         "perf_end_date": "2026-05-09",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -3978,7 +4378,8 @@
         "venue_name": "대전예술의전당 앙상블홀",
         "perf_start_date": "2025-11-29",
         "perf_end_date": "2025-11-29",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF269326",
@@ -3986,7 +4387,8 @@
         "venue_name": "인천중구문화회관",
         "perf_start_date": "2025-08-16",
         "perf_end_date": "2025-08-16",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF272493",
@@ -3994,7 +4396,8 @@
         "venue_name": "평창문화예술회관 대공연장",
         "perf_start_date": "2025-09-17",
         "perf_end_date": "2025-09-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -4007,7 +4410,8 @@
         "venue_name": "충남도청 문예회관",
         "perf_start_date": "2025-06-25",
         "perf_end_date": "2025-06-26",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF270041",
@@ -4015,7 +4419,8 @@
         "venue_name": "양주문화예술회관 소공연장",
         "perf_start_date": "2025-08-23",
         "perf_end_date": "2025-08-23",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4028,7 +4433,8 @@
         "venue_name": "목포문화예술회관",
         "perf_start_date": "2025-09-06",
         "perf_end_date": "2025-09-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF273188",
@@ -4036,7 +4442,8 @@
         "venue_name": "강진아트홀 대공연장",
         "perf_start_date": "2025-09-20",
         "perf_end_date": "2025-09-20",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4049,7 +4456,8 @@
         "venue_name": "김제문화예술회관 대공연장",
         "perf_start_date": "2024-07-04",
         "perf_end_date": "2024-07-06",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF242850",
@@ -4057,7 +4465,8 @@
         "venue_name": "성남아트센터 앙상블씨어터",
         "perf_start_date": "2024-07-13",
         "perf_end_date": "2024-07-13",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF240309",
@@ -4065,7 +4474,8 @@
         "venue_name": "거창문화센터 공연장",
         "perf_start_date": "2024-05-11",
         "perf_end_date": "2024-05-11",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF239147",
@@ -4073,7 +4483,8 @@
         "venue_name": "청라복합문화센터 블루노바홀 공연장",
         "perf_start_date": "2024-05-17",
         "perf_end_date": "2024-05-18",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF243693",
@@ -4081,7 +4492,8 @@
         "venue_name": "울진문화예술회관",
         "perf_start_date": "2024-07-18",
         "perf_end_date": "2024-07-18",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF264787",
@@ -4089,7 +4501,8 @@
         "venue_name": "울산북구문화예술회관 공연장",
         "perf_start_date": "2025-06-11",
         "perf_end_date": "2025-06-11",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4102,7 +4515,8 @@
         "venue_name": "천안예술의전당 대공연장",
         "perf_start_date": "2024-09-12",
         "perf_end_date": "2024-09-12",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF245472",
@@ -4110,7 +4524,8 @@
         "venue_name": "김포아트홀",
         "perf_start_date": "2024-09-25",
         "perf_end_date": "2024-09-25",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4123,7 +4538,8 @@
         "venue_name": "남동소래아트홀 소래극장 (대공연장) ",
         "perf_start_date": "2025-03-15",
         "perf_end_date": "2025-03-15",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF261678",
@@ -4131,7 +4547,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2025-04-15",
         "perf_end_date": "2025-04-15",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF261661",
@@ -4139,7 +4556,8 @@
         "venue_name": "익산예술의전당 대공연장",
         "perf_start_date": "2025-04-27",
         "perf_end_date": "2025-04-27",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4152,7 +4570,8 @@
         "venue_name": "제주문예회관 대극장",
         "perf_start_date": "2025-06-06",
         "perf_end_date": "2025-06-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF266199",
@@ -4160,7 +4579,8 @@
         "venue_name": "예주문화예술회관",
         "perf_start_date": "2025-07-05",
         "perf_end_date": "2025-07-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4173,7 +4593,8 @@
         "venue_name": "예천군문화회관",
         "perf_start_date": "2025-07-26",
         "perf_end_date": "2025-07-26",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF264196",
@@ -4181,7 +4602,8 @@
         "venue_name": "옥천문화예술회관",
         "perf_start_date": "2025-05-16",
         "perf_end_date": "2025-05-16",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF276774",
@@ -4189,7 +4611,8 @@
         "venue_name": "완주향토예술문화회관 공연장",
         "perf_start_date": "2025-11-07",
         "perf_end_date": "2025-11-07",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4202,7 +4625,8 @@
         "venue_name": "목포문화예술회관",
         "perf_start_date": "2025-08-09",
         "perf_end_date": "2025-08-09",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF264614",
@@ -4210,7 +4634,8 @@
         "venue_name": "강진아트홀 대공연장",
         "perf_start_date": "2025-06-14",
         "perf_end_date": "2025-06-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4223,7 +4648,8 @@
         "venue_name": "제천예술의전당 대공연장",
         "perf_start_date": "2025-09-26",
         "perf_end_date": "2025-09-27",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF278470",
@@ -4231,7 +4657,8 @@
         "venue_name": "논산아트센터(구. 논산문화예술회관) 대공연장",
         "perf_start_date": "2025-11-21",
         "perf_end_date": "2025-11-21",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -4244,7 +4671,8 @@
         "venue_name": "해남문화예술회관 대공연장",
         "perf_start_date": "2024-09-03",
         "perf_end_date": "2024-09-04",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF245104",
@@ -4252,7 +4680,8 @@
         "venue_name": "증평문화회관 대강당",
         "perf_start_date": "2024-08-09",
         "perf_end_date": "2024-08-10",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -4265,7 +4694,8 @@
         "venue_name": "세종국악당",
         "perf_start_date": "2024-10-17",
         "perf_end_date": "2024-10-17",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF250159",
@@ -4273,7 +4703,8 @@
         "venue_name": "춘천인형극장 대극장",
         "perf_start_date": "2024-10-19",
         "perf_end_date": "2024-10-20",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4286,7 +4717,8 @@
         "venue_name": "연천수레울아트홀 대공연장",
         "perf_start_date": "2024-08-02",
         "perf_end_date": "2024-08-03",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF246890",
@@ -4294,7 +4726,8 @@
         "venue_name": "천안시성환문화회관 대공연장",
         "perf_start_date": "2024-09-21",
         "perf_end_date": "2024-09-22",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF280439",
@@ -4302,7 +4735,8 @@
         "venue_name": "무안승달문화예술회관 대공연장",
         "perf_start_date": "2025-12-04",
         "perf_end_date": "2025-12-04",
-        "season_rank": 13.0
+        "season_rank": 13.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF266546",
@@ -4310,7 +4744,8 @@
         "venue_name": "함안문화예술회관 대공연장",
         "perf_start_date": "2025-07-18",
         "perf_end_date": "2025-07-18",
-        "season_rank": 9.0
+        "season_rank": 9.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF273245",
@@ -4318,7 +4753,8 @@
         "venue_name": "부안예술회관 공연장",
         "perf_start_date": "2025-09-10",
         "perf_end_date": "2025-09-10",
-        "season_rank": 10.0
+        "season_rank": 10.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF274977",
@@ -4326,7 +4762,8 @@
         "venue_name": "장흥문화예술회관 대공연장",
         "perf_start_date": "2025-10-23",
         "perf_end_date": "2025-10-23",
-        "season_rank": 12.0
+        "season_rank": 12.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF273167",
@@ -4334,7 +4771,8 @@
         "venue_name": "아산시 평생학습관(아산아트홀) 아산아트홀(아산시평생학습관)",
         "perf_start_date": "2025-10-02",
         "perf_end_date": "2025-10-02",
-        "season_rank": 11.0
+        "season_rank": 11.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4347,7 +4785,8 @@
         "venue_name": "부안예술회관 공연장",
         "perf_start_date": "2024-11-01",
         "perf_end_date": "2024-11-01",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF247303",
@@ -4355,7 +4794,8 @@
         "venue_name": "경북고령대가야문화누리 (구. 대가야국악당) 대공연장 (우륵홀) ",
         "perf_start_date": "2024-09-06",
         "perf_end_date": "2024-09-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF248473",
@@ -4363,7 +4803,8 @@
         "venue_name": "홍주문화회관 대공연장",
         "perf_start_date": "2024-09-28",
         "perf_end_date": "2024-09-28",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -4376,7 +4817,8 @@
         "venue_name": "완주문화예술회관 대극장",
         "perf_start_date": "2025-05-03",
         "perf_end_date": "2025-05-03",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF266288",
@@ -4384,7 +4826,8 @@
         "venue_name": "증평문화회관 대강당",
         "perf_start_date": "2025-06-04",
         "perf_end_date": "2025-06-04",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF273091",
@@ -4392,7 +4835,8 @@
         "venue_name": "여수시민회관 대공연장",
         "perf_start_date": "2025-09-27",
         "perf_end_date": "2025-09-27",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4405,7 +4849,8 @@
         "venue_name": "춘천문화예술회관 공연장",
         "perf_start_date": "2025-05-03",
         "perf_end_date": "2025-05-03",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF248795",
@@ -4413,7 +4858,8 @@
         "venue_name": "광주 예술의 전당 소극장",
         "perf_start_date": "2024-10-05",
         "perf_end_date": "2024-10-05",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4426,7 +4872,8 @@
         "venue_name": "고양아람누리 아람극장",
         "perf_start_date": "2024-07-27",
         "perf_end_date": "2024-07-28",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF243975",
@@ -4434,7 +4881,8 @@
         "venue_name": "군포문화예술회관 수리홀",
         "perf_start_date": "2024-08-30",
         "perf_end_date": "2024-08-31",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF245822",
@@ -4442,7 +4890,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2024-09-07",
         "perf_end_date": "2024-09-07",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF246013",
@@ -4450,7 +4899,8 @@
         "venue_name": "횡성문화예술회관 대공연장",
         "perf_start_date": "2024-08-24",
         "perf_end_date": "2024-08-24",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -4463,7 +4913,8 @@
         "venue_name": "대전예술의전당 앙상블홀",
         "perf_start_date": "2025-11-08",
         "perf_end_date": "2025-11-09",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF273964",
@@ -4471,7 +4922,8 @@
         "venue_name": "평택시남부문예회관 대공연장",
         "perf_start_date": "2025-10-19",
         "perf_end_date": "2025-10-19",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4484,7 +4936,8 @@
         "venue_name": "성남아트센터 오페라하우스",
         "perf_start_date": "2023-08-25",
         "perf_end_date": "2023-08-26",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF221813",
@@ -4492,7 +4945,8 @@
         "venue_name": "마포아트센터 아트홀맥",
         "perf_start_date": "2023-08-11",
         "perf_end_date": "2023-08-12",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF221804",
@@ -4500,7 +4954,8 @@
         "venue_name": "광명시민회관 대공연장",
         "perf_start_date": "2023-08-04",
         "perf_end_date": "2023-08-05",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF221768",
@@ -4508,7 +4963,8 @@
         "venue_name": "충주시문화회관",
         "perf_start_date": "2023-07-26",
         "perf_end_date": "2023-07-27",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -4521,7 +4977,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2024-07-07",
         "perf_end_date": "2024-07-07",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF244668",
@@ -4529,7 +4986,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2024-08-13",
         "perf_end_date": "2024-08-13",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF243259",
@@ -4537,7 +4995,8 @@
         "venue_name": "익산예술의전당 대공연장",
         "perf_start_date": "2024-07-05",
         "perf_end_date": "2024-07-05",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4550,7 +5009,8 @@
         "venue_name": "목포문화예술회관",
         "perf_start_date": "2025-07-05",
         "perf_end_date": "2025-07-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF260394",
@@ -4558,7 +5018,8 @@
         "venue_name": "울진문화예술회관",
         "perf_start_date": "2025-03-20",
         "perf_end_date": "2025-03-20",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4571,7 +5032,8 @@
         "venue_name": "광산문화예술회관 공연장",
         "perf_start_date": "2023-07-22",
         "perf_end_date": "2023-07-22",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF248265",
@@ -4579,7 +5041,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2024-09-10",
         "perf_end_date": "2024-09-10",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF220076",
@@ -4587,7 +5050,8 @@
         "venue_name": "고양아람누리 새라새극장",
         "perf_start_date": "2023-08-18",
         "perf_end_date": "2023-08-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF242999",
@@ -4595,7 +5059,8 @@
         "venue_name": "정선아리랑센터 아리랑홀",
         "perf_start_date": "2024-06-21",
         "perf_end_date": "2024-06-21",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF226211",
@@ -4603,7 +5068,8 @@
         "venue_name": "은평문화예술회관 공연장",
         "perf_start_date": "2023-10-12",
         "perf_end_date": "2023-10-13",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -4616,7 +5082,8 @@
         "venue_name": "금나래아트홀",
         "perf_start_date": "2023-11-16",
         "perf_end_date": "2023-11-18",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF224240",
@@ -4624,7 +5091,8 @@
         "venue_name": "구름에 리조트 천자문마당",
         "perf_start_date": "2023-09-07",
         "perf_end_date": "2023-09-09",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF222350",
@@ -4632,7 +5100,8 @@
         "venue_name": "한국소리문화의전당 연지홀",
         "perf_start_date": "2023-09-22",
         "perf_end_date": "2023-09-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -4645,7 +5114,8 @@
         "venue_name": "정선아리랑센터 아리랑홀",
         "perf_start_date": "2024-08-14",
         "perf_end_date": "2024-08-14",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF254928",
@@ -4653,7 +5123,8 @@
         "venue_name": "계양문화회관 대공연장",
         "perf_start_date": "2024-12-04",
         "perf_end_date": "2024-12-04",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF249183",
@@ -4661,7 +5132,8 @@
         "venue_name": "양구문화복지센터",
         "perf_start_date": "2024-09-28",
         "perf_end_date": "2024-09-28",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -4674,7 +5146,8 @@
         "venue_name": "반석아트홀",
         "perf_start_date": "2023-11-17",
         "perf_end_date": "2023-11-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF217047",
@@ -4682,7 +5155,8 @@
         "venue_name": "영등포아트홀",
         "perf_start_date": "2023-06-21",
         "perf_end_date": "2023-06-21",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4695,7 +5169,8 @@
         "venue_name": "반석아트홀",
         "perf_start_date": "2023-11-19",
         "perf_end_date": "2023-11-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF216125",
@@ -4703,7 +5178,8 @@
         "venue_name": "영등포아트홀",
         "perf_start_date": "2023-06-24",
         "perf_end_date": "2023-06-24",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4716,7 +5192,8 @@
         "venue_name": "반석아트홀",
         "perf_start_date": "2023-11-18",
         "perf_end_date": "2023-11-18",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF216127",
@@ -4724,7 +5201,8 @@
         "venue_name": "영등포아트홀",
         "perf_start_date": "2023-06-25",
         "perf_end_date": "2023-06-25",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4737,7 +5215,8 @@
         "venue_name": "제주문예회관 대극장",
         "perf_start_date": "2025-12-05",
         "perf_end_date": "2025-12-05",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF261132",
@@ -4745,7 +5224,8 @@
         "venue_name": "경기아트센터(구. 경기도문화의전당) 소극장",
         "perf_start_date": "2025-04-26",
         "perf_end_date": "2025-04-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF261073",
@@ -4753,7 +5233,8 @@
         "venue_name": "연천수레울아트홀 대공연장",
         "perf_start_date": "2025-04-12",
         "perf_end_date": "2025-04-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4766,7 +5247,8 @@
         "venue_name": "3.15아트센터 대극장",
         "perf_start_date": "2023-11-17",
         "perf_end_date": "2023-11-18",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF272568",
@@ -4774,7 +5256,8 @@
         "venue_name": "하남문화예술회관 검단홀(대극장)",
         "perf_start_date": "2025-10-18",
         "perf_end_date": "2025-10-18",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF228736",
@@ -4782,7 +5265,8 @@
         "venue_name": "거창문화센터 공연장",
         "perf_start_date": "2023-11-10",
         "perf_end_date": "2023-11-11",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF226470",
@@ -4790,7 +5274,8 @@
         "venue_name": "세종국악당",
         "perf_start_date": "2023-11-03",
         "perf_end_date": "2023-11-04",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF226126",
@@ -4798,7 +5283,8 @@
         "venue_name": "구리아트홀 코스모스대극장",
         "perf_start_date": "2023-10-28",
         "perf_end_date": "2023-10-28",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -4811,7 +5297,8 @@
         "venue_name": "경기아트센터(구. 경기도문화의전당) 소극장",
         "perf_start_date": "2024-11-16",
         "perf_end_date": "2024-11-24",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF252947",
@@ -4819,7 +5306,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2024-12-07",
         "perf_end_date": "2024-12-07",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4832,7 +5320,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2024-12-20",
         "perf_end_date": "2024-12-21",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF253643",
@@ -4840,7 +5329,8 @@
         "venue_name": "밀양아리랑아트센터 대공연장",
         "perf_start_date": "2024-12-06",
         "perf_end_date": "2024-12-06",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4853,7 +5343,8 @@
         "venue_name": "울산문화예술회관 대공연장",
         "perf_start_date": "2025-11-14",
         "perf_end_date": "2025-11-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF276164",
@@ -4861,7 +5352,8 @@
         "venue_name": "경주예술의전당 대공연장(화랑홀)",
         "perf_start_date": "2025-11-15",
         "perf_end_date": "2025-11-15",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -4874,7 +5366,8 @@
         "venue_name": "상주문화회관 대공연장",
         "perf_start_date": "2024-10-26",
         "perf_end_date": "2024-10-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF240838",
@@ -4882,7 +5375,8 @@
         "venue_name": "하남문화예술회관 검단홀(대극장)",
         "perf_start_date": "2024-06-22",
         "perf_end_date": "2024-06-22",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -4895,7 +5389,8 @@
         "venue_name": "양산문화예술회관 대공연장",
         "perf_start_date": "2024-09-28",
         "perf_end_date": "2024-09-28",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF246248",
@@ -4903,7 +5398,8 @@
         "venue_name": "창녕문화예술회관 대공연장",
         "perf_start_date": "2024-09-05",
         "perf_end_date": "2024-09-05",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF247565",
@@ -4911,7 +5407,8 @@
         "venue_name": "김해서부문화센터 하늬홀",
         "perf_start_date": "2024-09-21",
         "perf_end_date": "2024-09-21",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4924,7 +5421,8 @@
         "venue_name": "성남아트리움 (구. 성남시민회관) 대극장",
         "perf_start_date": "2024-09-13",
         "perf_end_date": "2024-09-14",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF243850",
@@ -4932,7 +5430,8 @@
         "venue_name": "하남문화예술회관 검단홀(대극장)",
         "perf_start_date": "2024-08-30",
         "perf_end_date": "2024-08-31",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       }
     ]
   },
@@ -4945,7 +5444,8 @@
         "venue_name": "천안어린이꿈누리터 (구. 천안시 어린이 회관) 꿈누리대공연장",
         "perf_start_date": "2026-05-30",
         "perf_end_date": "2026-05-31",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF289430",
@@ -4953,7 +5453,8 @@
         "venue_name": "트라이보울 공연장 (2층) ",
         "perf_start_date": "2026-06-13",
         "perf_end_date": "2026-06-13",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -4966,7 +5467,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2024-09-08",
         "perf_end_date": "2024-09-08",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF243411",
@@ -4974,7 +5476,8 @@
         "venue_name": "원주치악예술관",
         "perf_start_date": "2024-07-07",
         "perf_end_date": "2024-07-07",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -4987,7 +5490,8 @@
         "venue_name": "청라복합문화센터 블루노바홀 공연장",
         "perf_start_date": "2025-11-01",
         "perf_end_date": "2025-11-01",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF272219",
@@ -4995,7 +5499,8 @@
         "venue_name": "대전예술의전당 앙상블홀",
         "perf_start_date": "2025-12-05",
         "perf_end_date": "2025-12-06",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5008,7 +5513,8 @@
         "venue_name": "아트센터 인천 콘서트홀",
         "perf_start_date": "2024-02-16",
         "perf_end_date": "2024-02-16",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF281686",
@@ -5016,7 +5522,8 @@
         "venue_name": "인천문화예술회관 대공연장",
         "perf_start_date": "2026-02-25",
         "perf_end_date": "2026-02-25",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF256047",
@@ -5024,7 +5531,8 @@
         "venue_name": "아트센터 인천 콘서트홀",
         "perf_start_date": "2025-01-23",
         "perf_end_date": "2025-01-23",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -5037,7 +5545,8 @@
         "venue_name": "군포문화예술회관 수리홀",
         "perf_start_date": "2025-08-23",
         "perf_end_date": "2025-08-24",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF270397",
@@ -5045,7 +5554,8 @@
         "venue_name": "군산예술의전당 대공연장",
         "perf_start_date": "2025-08-30",
         "perf_end_date": "2025-08-30",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5058,7 +5568,8 @@
         "venue_name": "한국소리문화의전당 모악당",
         "perf_start_date": "2024-10-17",
         "perf_end_date": "2024-10-19",
-        "season_rank": 42.0
+        "season_rank": 42.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF288098",
@@ -5066,7 +5577,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2026-05-23",
         "perf_end_date": "2026-05-23",
-        "season_rank": 54.0
+        "season_rank": 54.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF246030",
@@ -5074,7 +5586,8 @@
         "venue_name": "음성문화예술회관 대공연장",
         "perf_start_date": "2024-08-24",
         "perf_end_date": "2024-08-24",
-        "season_rank": 40.0
+        "season_rank": 40.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF250496",
@@ -5082,7 +5595,8 @@
         "venue_name": "이천아트홀 대공연장",
         "perf_start_date": "2024-11-30",
         "perf_end_date": "2024-12-01",
-        "season_rank": 44.0
+        "season_rank": 44.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF252663",
@@ -5090,7 +5604,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2024-11-13",
         "perf_end_date": "2024-11-14",
-        "season_rank": 43.0
+        "season_rank": 43.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5103,7 +5618,8 @@
         "venue_name": "화순 하니움 문화스포츠센터 적벽실 (대강당) ",
         "perf_start_date": "2024-10-19",
         "perf_end_date": "2024-10-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF250534",
@@ -5111,7 +5627,8 @@
         "venue_name": "남도소리울림터",
         "perf_start_date": "2024-10-12",
         "perf_end_date": "2024-10-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -5124,7 +5641,8 @@
         "venue_name": "예술의전당 [서울] CJ 토월극장",
         "perf_start_date": "2025-10-25",
         "perf_end_date": "2025-11-02",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF275221",
@@ -5132,7 +5650,8 @@
         "venue_name": "한국소리문화의전당 모악당",
         "perf_start_date": "2025-11-08",
         "perf_end_date": "2025-11-08",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5145,7 +5664,8 @@
         "venue_name": "상주문화회관 대공연장",
         "perf_start_date": "2024-08-23",
         "perf_end_date": "2024-08-23",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF250753",
@@ -5153,7 +5673,8 @@
         "venue_name": "무안승달문화예술회관 대공연장",
         "perf_start_date": "2024-10-17",
         "perf_end_date": "2024-10-17",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF260625",
@@ -5161,7 +5682,8 @@
         "venue_name": "인천학생교육문화회관 싸리재홀(대공연장)",
         "perf_start_date": "2025-03-22",
         "perf_end_date": "2025-03-22",
-        "season_rank": 9.0
+        "season_rank": 9.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF250361",
@@ -5169,7 +5691,8 @@
         "venue_name": "부안예술회관 공연장",
         "perf_start_date": "2024-10-11",
         "perf_end_date": "2024-10-11",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF266645",
@@ -5177,7 +5700,8 @@
         "venue_name": "김제문화예술회관 대공연장",
         "perf_start_date": "2025-06-13",
         "perf_end_date": "2025-06-13",
-        "season_rank": 10.0
+        "season_rank": 10.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5190,7 +5714,8 @@
         "venue_name": "안동문화예술의전당 웅부홀",
         "perf_start_date": "2025-10-24",
         "perf_end_date": "2025-10-25",
-        "season_rank": 24.0
+        "season_rank": 24.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF268948",
@@ -5198,7 +5723,8 @@
         "venue_name": "경상남도문화예술회관 대공연장",
         "perf_start_date": "2025-09-12",
         "perf_end_date": "2025-09-13",
-        "season_rank": 17.0
+        "season_rank": 17.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5211,7 +5737,8 @@
         "venue_name": "남도소리울림터",
         "perf_start_date": "2025-09-06",
         "perf_end_date": "2025-09-06",
-        "season_rank": 12.0
+        "season_rank": 12.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF275567",
@@ -5219,7 +5746,8 @@
         "venue_name": "울진문화예술회관",
         "perf_start_date": "2025-10-23",
         "perf_end_date": "2025-10-23",
-        "season_rank": 13.0
+        "season_rank": 13.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF272011",
@@ -5227,7 +5755,8 @@
         "venue_name": "철원군 화강문화센터 공연장",
         "perf_start_date": "2025-08-21",
         "perf_end_date": "2025-08-21",
-        "season_rank": 10.0
+        "season_rank": 10.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF272973",
@@ -5235,7 +5764,8 @@
         "venue_name": "전북예술회관 공연장",
         "perf_start_date": "2025-10-25",
         "perf_end_date": "2025-10-26",
-        "season_rank": 14.0
+        "season_rank": 14.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF272804",
@@ -5243,7 +5773,8 @@
         "venue_name": "남해문화센터 (구. 남해군문화체육센터) 다목적홀",
         "perf_start_date": "2025-09-04",
         "perf_end_date": "2025-09-04",
-        "season_rank": 11.0
+        "season_rank": 11.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5256,7 +5787,8 @@
         "venue_name": "용인포은아트홀",
         "perf_start_date": "2023-11-03",
         "perf_end_date": "2023-11-04",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF225115",
@@ -5264,7 +5796,8 @@
         "venue_name": "대구문화예술회관 팔공홀",
         "perf_start_date": "2023-10-14",
         "perf_end_date": "2023-10-15",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF220723",
@@ -5272,7 +5805,8 @@
         "venue_name": "김정문화회관",
         "perf_start_date": "2023-07-01",
         "perf_end_date": "2023-07-02",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -5285,7 +5819,8 @@
         "venue_name": "과천시민회관 대극장",
         "perf_start_date": "2024-09-21",
         "perf_end_date": "2024-09-21",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF246315",
@@ -5293,7 +5828,8 @@
         "venue_name": "덕진예술회관",
         "perf_start_date": "2024-09-14",
         "perf_end_date": "2024-09-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF241452",
@@ -5301,7 +5837,8 @@
         "venue_name": "장수한누리전당 소공연장",
         "perf_start_date": "2024-06-13",
         "perf_end_date": "2024-06-13",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -5314,7 +5851,8 @@
         "venue_name": "평택시남부문예회관 대공연장",
         "perf_start_date": "2025-08-22",
         "perf_end_date": "2025-08-22",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF241538",
@@ -5322,7 +5860,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2024-07-12",
         "perf_end_date": "2024-07-13",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF251920",
@@ -5330,7 +5869,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2024-10-31",
         "perf_end_date": "2024-10-31",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF270209",
@@ -5338,7 +5878,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2025-08-30",
         "perf_end_date": "2025-08-30",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF242130",
@@ -5346,7 +5887,8 @@
         "venue_name": "포항문화예술회관 대공연장",
         "perf_start_date": "2024-07-27",
         "perf_end_date": "2024-07-27",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF241408",
@@ -5354,7 +5896,8 @@
         "venue_name": "정조테마공연장",
         "perf_start_date": "2024-06-14",
         "perf_end_date": "2024-06-15",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF251917",
@@ -5362,7 +5905,8 @@
         "venue_name": "강릉단오제전수교육관 (구. 단오문화관) 공연장",
         "perf_start_date": "2024-11-08",
         "perf_end_date": "2024-11-09",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF254800",
@@ -5370,7 +5914,8 @@
         "venue_name": "완주향토예술문화회관 공연장",
         "perf_start_date": "2024-12-27",
         "perf_end_date": "2024-12-28",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -5383,7 +5928,8 @@
         "venue_name": "(재) 영화의전당 하늘연극장",
         "perf_start_date": "2023-11-23",
         "perf_end_date": "2023-11-24",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF225300",
@@ -5391,7 +5937,8 @@
         "venue_name": "용인시문화예술회관 처인홀",
         "perf_start_date": "2023-11-11",
         "perf_end_date": "2023-11-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF225627",
@@ -5399,7 +5946,8 @@
         "venue_name": "국립아시아문화전당 극장2",
         "perf_start_date": "2023-11-18",
         "perf_end_date": "2023-11-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5412,7 +5960,8 @@
         "venue_name": "양산문화예술회관 대공연장",
         "perf_start_date": "2024-08-31",
         "perf_end_date": "2024-08-31",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF246187",
@@ -5420,7 +5969,8 @@
         "venue_name": "의성문화회관",
         "perf_start_date": "2024-08-20",
         "perf_end_date": "2024-08-20",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -5433,7 +5983,8 @@
         "venue_name": "예주문화예술회관",
         "perf_start_date": "2024-09-04",
         "perf_end_date": "2024-09-05",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF244203",
@@ -5441,7 +5992,8 @@
         "venue_name": "횡성문화예술회관 대공연장",
         "perf_start_date": "2024-07-20",
         "perf_end_date": "2024-07-20",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF290290",
@@ -5449,7 +6001,8 @@
         "venue_name": "창녕문화예술회관 대공연장",
         "perf_start_date": "2026-05-22",
         "perf_end_date": "2026-05-22",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF292145",
@@ -5457,7 +6010,8 @@
         "venue_name": "울산문화예술회관 대공연장",
         "perf_start_date": "2026-06-20",
         "perf_end_date": "2026-06-20",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF251433",
@@ -5465,7 +6019,8 @@
         "venue_name": "영월군문화예술회관",
         "perf_start_date": "2024-11-08",
         "perf_end_date": "2024-11-09",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5478,7 +6033,8 @@
         "venue_name": "금산다락원 생명의집 대공연장",
         "perf_start_date": "2025-07-24",
         "perf_end_date": "2025-07-24",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF244814",
@@ -5486,7 +6042,8 @@
         "venue_name": "광명시민회관 대공연장",
         "perf_start_date": "2024-08-17",
         "perf_end_date": "2024-08-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF267446",
@@ -5494,7 +6051,8 @@
         "venue_name": "대덕구문예회관 (구. 대덕구평생학습센터) 앞마당",
         "perf_start_date": "2025-07-05",
         "perf_end_date": "2025-07-05",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF266399",
@@ -5502,7 +6060,8 @@
         "venue_name": "예산문예회관",
         "perf_start_date": "2025-06-12",
         "perf_end_date": "2025-06-12",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF280417",
@@ -5510,7 +6069,8 @@
         "venue_name": "양구문화복지센터",
         "perf_start_date": "2025-12-13",
         "perf_end_date": "2025-12-13",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5523,7 +6083,8 @@
         "venue_name": "국립민속국악원 예음헌",
         "perf_start_date": "2025-03-26",
         "perf_end_date": "2025-11-26",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF286553",
@@ -5531,7 +6092,8 @@
         "venue_name": "국립민속국악원 예음헌",
         "perf_start_date": "2026-03-25",
         "perf_end_date": "2026-11-25",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -5544,7 +6106,8 @@
         "venue_name": "안성맞춤아트홀 대공연장",
         "perf_start_date": "2024-09-13",
         "perf_end_date": "2024-09-13",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF268629",
@@ -5552,7 +6115,8 @@
         "venue_name": "연천수레울아트홀 대공연장",
         "perf_start_date": "2025-09-13",
         "perf_end_date": "2025-09-13",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF245470",
@@ -5560,7 +6124,8 @@
         "venue_name": "수성아트피아 대극장 (대공연장) ",
         "perf_start_date": "2024-09-12",
         "perf_end_date": "2024-09-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -5573,7 +6138,8 @@
         "venue_name": "문화예술전용극장CT",
         "perf_start_date": "2023-09-13",
         "perf_end_date": "2023-09-13",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF224958",
@@ -5581,7 +6147,8 @@
         "venue_name": "BNK부산은행 조은극장 1관",
         "perf_start_date": "2023-09-06",
         "perf_end_date": "2023-09-07",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5594,7 +6161,8 @@
         "venue_name": "영덕 무형문화재 전수교육관 소극장",
         "perf_start_date": "2023-07-12",
         "perf_end_date": "2023-07-12",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF224813",
@@ -5602,7 +6170,8 @@
         "venue_name": "BNK부산은행 조은극장 1관",
         "perf_start_date": "2023-09-04",
         "perf_end_date": "2023-09-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5615,7 +6184,8 @@
         "venue_name": "구리아트홀 코스모스대극장",
         "perf_start_date": "2024-05-18",
         "perf_end_date": "2024-05-18",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF240856",
@@ -5623,7 +6193,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2024-06-29",
         "perf_end_date": "2024-06-29",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF239325",
@@ -5631,7 +6202,8 @@
         "venue_name": "함안문화예술회관 대공연장",
         "perf_start_date": "2024-05-25",
         "perf_end_date": "2024-05-25",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF241045",
@@ -5639,7 +6211,8 @@
         "venue_name": "함양문화예술회관 대공연장",
         "perf_start_date": "2024-06-01",
         "perf_end_date": "2024-06-01",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5652,7 +6225,8 @@
         "venue_name": "영천시민회관 스타홀",
         "perf_start_date": "2024-06-08",
         "perf_end_date": "2024-06-08",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF241228",
@@ -5660,7 +6234,8 @@
         "venue_name": "동래문화회관 대극장",
         "perf_start_date": "2024-06-22",
         "perf_end_date": "2024-06-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5673,7 +6248,8 @@
         "venue_name": "울주문화예술회관 그린나래홀 (공연장) ",
         "perf_start_date": "2024-10-26",
         "perf_end_date": "2024-10-26",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "복합"
       },
       {
         "perf_id": "PF251075",
@@ -5681,7 +6257,8 @@
         "venue_name": "용인문화예술원 마루홀",
         "perf_start_date": "2024-11-02",
         "perf_end_date": "2024-11-02",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "복합"
       }
     ]
   },
@@ -5694,7 +6271,8 @@
         "venue_name": "양산문화예술회관 대공연장",
         "perf_start_date": "2025-09-27",
         "perf_end_date": "2025-09-27",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF276228",
@@ -5702,7 +6280,8 @@
         "venue_name": "대덕문화전당",
         "perf_start_date": "2025-11-29",
         "perf_end_date": "2025-11-29",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF276399",
@@ -5710,7 +6289,8 @@
         "venue_name": "제물포구문화체육센터(구. 동구문화체육센터) 공연장",
         "perf_start_date": "2025-11-18",
         "perf_end_date": "2025-11-18",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -5723,7 +6303,8 @@
         "venue_name": "춘천문화예술회관 공연장",
         "perf_start_date": "2024-02-29",
         "perf_end_date": "2024-02-29",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF287234",
@@ -5731,7 +6312,8 @@
         "venue_name": "춘천문화예술회관 로비",
         "perf_start_date": "2026-04-03",
         "perf_end_date": "2026-04-03",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -5744,7 +6326,8 @@
         "venue_name": "춘천문화예술회관 공연장",
         "perf_start_date": "2025-09-10",
         "perf_end_date": "2025-09-10",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF271656",
@@ -5752,7 +6335,8 @@
         "venue_name": "하남문화예술회관 아랑홀(소극장)",
         "perf_start_date": "2025-09-06",
         "perf_end_date": "2025-09-06",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF273826",
@@ -5760,7 +6344,8 @@
         "venue_name": "태안군문화예술회관 대공연장",
         "perf_start_date": "2025-09-25",
         "perf_end_date": "2025-09-25",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5773,7 +6358,8 @@
         "venue_name": "세종국악당",
         "perf_start_date": "2024-12-21",
         "perf_end_date": "2024-12-21",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF251528",
@@ -5781,7 +6367,8 @@
         "venue_name": "금정문화회관 대공연장(금빛누리홀)",
         "perf_start_date": "2024-12-13",
         "perf_end_date": "2024-12-13",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -5794,7 +6381,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2024-09-21",
         "perf_end_date": "2024-09-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF247849",
@@ -5802,7 +6390,8 @@
         "venue_name": "공주문예회관 대공연장",
         "perf_start_date": "2024-10-11",
         "perf_end_date": "2024-10-12",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF246729",
@@ -5810,7 +6399,8 @@
         "venue_name": "이천아트홀 소공연장",
         "perf_start_date": "2024-10-04",
         "perf_end_date": "2024-10-05",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5823,7 +6413,8 @@
         "venue_name": "김해문화의전당 누리홀",
         "perf_start_date": "2024-05-17",
         "perf_end_date": "2024-05-18",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF270709",
@@ -5831,7 +6422,8 @@
         "venue_name": "밀양아리랑아트센터 대공연장",
         "perf_start_date": "2025-08-29",
         "perf_end_date": "2025-08-30",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF271626",
@@ -5839,7 +6431,8 @@
         "venue_name": "음성문화예술회관 대공연장",
         "perf_start_date": "2025-09-04",
         "perf_end_date": "2025-09-04",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5852,7 +6445,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2024-10-16",
         "perf_end_date": "2024-10-17",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF246684",
@@ -5860,7 +6454,8 @@
         "venue_name": "함안문화예술회관 대공연장",
         "perf_start_date": "2024-10-12",
         "perf_end_date": "2024-10-12",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF248052",
@@ -5868,7 +6463,8 @@
         "venue_name": "오산문화예술회관 대공연장",
         "perf_start_date": "2024-10-25",
         "perf_end_date": "2024-10-26",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF242547",
@@ -5876,7 +6472,8 @@
         "venue_name": "횡성문화예술회관 대공연장",
         "perf_start_date": "2024-06-29",
         "perf_end_date": "2024-06-29",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5889,7 +6486,8 @@
         "venue_name": "빛고을시민문화관 공연장",
         "perf_start_date": "2024-09-04",
         "perf_end_date": "2024-09-04",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF244801",
@@ -5897,7 +6495,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2024-08-31",
         "perf_end_date": "2024-08-31",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   },
@@ -5910,7 +6509,8 @@
         "venue_name": "수원SK아트리움 대공연장",
         "perf_start_date": "2023-09-02",
         "perf_end_date": "2023-09-02",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF221516",
@@ -5918,7 +6518,8 @@
         "venue_name": "군포문화예술회관 수리홀",
         "perf_start_date": "2023-08-25",
         "perf_end_date": "2023-08-26",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF221163",
@@ -5926,7 +6527,8 @@
         "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
         "perf_start_date": "2023-08-12",
         "perf_end_date": "2023-08-13",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF226763",
@@ -5934,7 +6536,8 @@
         "venue_name": "의정부예술의전당 대극장",
         "perf_start_date": "2023-11-25",
         "perf_end_date": "2023-11-25",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF223560",
@@ -5942,7 +6545,8 @@
         "venue_name": "오산문화예술회관 대공연장",
         "perf_start_date": "2023-10-13",
         "perf_end_date": "2023-10-14",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF219472",
@@ -5950,7 +6554,8 @@
         "venue_name": "익산예술의전당 대공연장",
         "perf_start_date": "2023-07-07",
         "perf_end_date": "2023-07-08",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF221102",
@@ -5958,7 +6563,8 @@
         "venue_name": "당진문예의전당 대공연장",
         "perf_start_date": "2023-07-21",
         "perf_end_date": "2023-07-22",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF217477",
@@ -5966,7 +6572,8 @@
         "venue_name": "부천시민회관 대공연장",
         "perf_start_date": "2023-06-23",
         "perf_end_date": "2023-06-24",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -5979,7 +6586,8 @@
         "venue_name": "안양아트센터 수리홀",
         "perf_start_date": "2024-11-08",
         "perf_end_date": "2024-11-08",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF261224",
@@ -5987,7 +6595,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2025-04-19",
         "perf_end_date": "2025-04-19",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF251664",
@@ -5995,7 +6604,8 @@
         "venue_name": "밀양아리랑아트센터 소공연장",
         "perf_start_date": "2024-11-14",
         "perf_end_date": "2024-11-14",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -6008,7 +6618,8 @@
         "venue_name": "무형문화재 전수관 소공연장",
         "perf_start_date": "2023-09-16",
         "perf_end_date": "2023-09-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF225303",
@@ -6016,7 +6627,8 @@
         "venue_name": "광명시민회관 대공연장",
         "perf_start_date": "2023-10-06",
         "perf_end_date": "2023-10-07",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -6029,7 +6641,8 @@
         "venue_name": "한국소리문화의전당 모악당",
         "perf_start_date": "2025-08-27",
         "perf_end_date": "2025-08-27",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF259898",
@@ -6037,7 +6650,8 @@
         "venue_name": "인천학생교육문화회관 싸리재홀(대공연장)",
         "perf_start_date": "2025-03-08",
         "perf_end_date": "2025-03-08",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF262571",
@@ -6045,7 +6659,8 @@
         "venue_name": "김포아트홀",
         "perf_start_date": "2025-05-03",
         "perf_end_date": "2025-05-03",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -6058,7 +6673,8 @@
         "venue_name": "(재) 영화의전당 하늘연극장",
         "perf_start_date": "2023-09-06",
         "perf_end_date": "2023-09-07",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF221678",
@@ -6066,7 +6682,8 @@
         "venue_name": "속초문화예술회관 대공연장",
         "perf_start_date": "2023-08-25",
         "perf_end_date": "2023-08-26",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -6079,7 +6696,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2024-07-23",
         "perf_end_date": "2024-07-23",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF222966",
@@ -6087,7 +6705,8 @@
         "venue_name": "정선아리랑센터 아리랑홀",
         "perf_start_date": "2023-08-31",
         "perf_end_date": "2023-08-31",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF244176",
@@ -6095,7 +6714,8 @@
         "venue_name": "광산문화예술회관 공연장",
         "perf_start_date": "2024-07-20",
         "perf_end_date": "2024-07-20",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -6108,7 +6728,8 @@
         "venue_name": "빛고을시민문화관 공연장",
         "perf_start_date": "2025-08-23",
         "perf_end_date": "2025-08-23",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF272076",
@@ -6116,7 +6737,8 @@
         "venue_name": "광양시문화예술회관 대공연장",
         "perf_start_date": "2025-09-05",
         "perf_end_date": "2025-09-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -6129,7 +6751,8 @@
         "venue_name": "안동문화예술의전당 웅부홀",
         "perf_start_date": "2025-07-10",
         "perf_end_date": "2025-07-10",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF263848",
@@ -6137,7 +6760,8 @@
         "venue_name": "밀양아리랑아트센터 대공연장",
         "perf_start_date": "2025-06-05",
         "perf_end_date": "2025-06-05",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -6150,7 +6774,8 @@
         "venue_name": "안산문화예술의전당 달맞이극장",
         "perf_start_date": "2023-09-15",
         "perf_end_date": "2023-09-16",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "무용(서양/한국무용)"
       },
       {
         "perf_id": "PF228587",
@@ -6158,7 +6783,8 @@
         "venue_name": "광명시민회관 대공연장",
         "perf_start_date": "2023-11-24",
         "perf_end_date": "2023-11-25",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "무용(서양/한국무용)"
       }
     ]
   },
@@ -6171,7 +6797,8 @@
         "venue_name": "산청문화예술회관 대공연장",
         "perf_start_date": "2024-10-17",
         "perf_end_date": "2024-10-17",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF254563",
@@ -6179,7 +6806,8 @@
         "venue_name": "구리아트홀 코스모스대극장",
         "perf_start_date": "2024-12-07",
         "perf_end_date": "2024-12-07",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -6192,7 +6820,8 @@
         "venue_name": "포항문화예술회관 대공연장",
         "perf_start_date": "2024-10-10",
         "perf_end_date": "2024-10-10",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF250180",
@@ -6200,7 +6829,8 @@
         "venue_name": "경주예술의전당 대공연장(화랑홀)",
         "perf_start_date": "2024-10-31",
         "perf_end_date": "2024-10-31",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "서양음악(클래식)"
       },
       {
         "perf_id": "PF249898",
@@ -6208,7 +6838,8 @@
         "venue_name": "울산문화예술회관 대공연장",
         "perf_start_date": "2024-10-17",
         "perf_end_date": "2024-10-17",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "서양음악(클래식)"
       }
     ]
   },
@@ -6221,7 +6852,8 @@
         "venue_name": "보성군문화예술회관",
         "perf_start_date": "2024-08-22",
         "perf_end_date": "2024-08-22",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF267088",
@@ -6229,7 +6861,8 @@
         "venue_name": "부안예술회관 공연장",
         "perf_start_date": "2025-06-19",
         "perf_end_date": "2025-06-19",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF261103",
@@ -6237,7 +6870,8 @@
         "venue_name": "대전시립연정국악원 큰마당",
         "perf_start_date": "2025-04-11",
         "perf_end_date": "2025-04-11",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF272927",
@@ -6245,7 +6879,8 @@
         "venue_name": "김해서부문화센터 하늬홀",
         "perf_start_date": "2025-10-17",
         "perf_end_date": "2025-10-17",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF238855",
@@ -6253,7 +6888,8 @@
         "venue_name": "광주북구문화센터 (양산도서관) 공연장",
         "perf_start_date": "2024-04-25",
         "perf_end_date": "2024-04-25",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF263046",
@@ -6261,7 +6897,8 @@
         "venue_name": "창녕문화예술회관 대공연장",
         "perf_start_date": "2025-04-23",
         "perf_end_date": "2025-04-23",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "한국음악(국악)"
       },
       {
         "perf_id": "PF267264",
@@ -6269,7 +6906,8 @@
         "venue_name": "영주문화예술회관 까치홀",
         "perf_start_date": "2025-06-21",
         "perf_end_date": "2025-06-21",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "한국음악(국악)"
       }
     ]
   },
@@ -6282,7 +6920,8 @@
         "venue_name": "하남문화예술회관 검단홀(대극장)",
         "perf_start_date": "2024-10-05",
         "perf_end_date": "2024-10-05",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF243514",
@@ -6290,7 +6929,8 @@
         "venue_name": "정선아리랑센터 아리랑홀",
         "perf_start_date": "2024-07-10",
         "perf_end_date": "2024-07-10",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       }
     ]
   },
@@ -6303,7 +6943,8 @@
         "venue_name": "고창문화의전당 공연장",
         "perf_start_date": "2026-05-07",
         "perf_end_date": "2026-05-07",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF273313",
@@ -6311,7 +6952,8 @@
         "venue_name": "남도소리울림터",
         "perf_start_date": "2025-10-25",
         "perf_end_date": "2025-10-25",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF279038",
@@ -6319,7 +6961,8 @@
         "venue_name": "무안승달문화예술회관 대공연장",
         "perf_start_date": "2025-11-20",
         "perf_end_date": "2025-11-20",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF270711",
@@ -6327,7 +6970,8 @@
         "venue_name": "영주문화예술회관 까치홀",
         "perf_start_date": "2025-08-09",
         "perf_end_date": "2025-08-09",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF265978",
@@ -6335,7 +6979,8 @@
         "venue_name": "양산문화예술회관 대공연장",
         "perf_start_date": "2025-06-28",
         "perf_end_date": "2025-06-28",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF278371",
@@ -6343,7 +6988,8 @@
         "venue_name": "정선아리랑센터 아리랑홀",
         "perf_start_date": "2025-08-20",
         "perf_end_date": "2025-08-20",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF265263",
@@ -6351,7 +6997,8 @@
         "venue_name": "평창문화예술회관 대공연장",
         "perf_start_date": "2025-06-25",
         "perf_end_date": "2025-06-25",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -6364,7 +7011,8 @@
         "venue_name": "제주아트센터 대극장",
         "perf_start_date": "2023-09-24",
         "perf_end_date": "2023-09-24",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF220910",
@@ -6372,7 +7020,8 @@
         "venue_name": "안산문화예술의전당 달맞이극장",
         "perf_start_date": "2023-09-08",
         "perf_end_date": "2023-09-09",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF221317",
@@ -6380,7 +7029,8 @@
         "venue_name": "평택시서부문예회관 대공연장",
         "perf_start_date": "2023-07-22",
         "perf_end_date": "2023-07-22",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF222752",
@@ -6388,7 +7038,8 @@
         "venue_name": "어울아트센터(구. 대구북구문예회관) 함지홀(대공연장)",
         "perf_start_date": "2023-08-26",
         "perf_end_date": "2023-08-26",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF231846",
@@ -6396,7 +7047,8 @@
         "venue_name": "통진두레문화센터 두레홀",
         "perf_start_date": "2023-12-16",
         "perf_end_date": "2023-12-16",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF221314",
@@ -6404,7 +7056,8 @@
         "venue_name": "고양어울림누리 별모래극장",
         "perf_start_date": "2023-09-16",
         "perf_end_date": "2023-09-16",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -6417,7 +7070,8 @@
         "venue_name": "탄금호 국제조정경기장",
         "perf_start_date": "2023-09-21",
         "perf_end_date": "2023-09-24",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "복합"
       },
       {
         "perf_id": "PF224122",
@@ -6425,7 +7079,8 @@
         "venue_name": "세종호수공원 축제섬",
         "perf_start_date": "2023-10-06",
         "perf_end_date": "2023-10-09",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "복합"
       }
     ]
   },
@@ -6438,7 +7093,8 @@
         "venue_name": "공주문예회관 대공연장",
         "perf_start_date": "2025-11-14",
         "perf_end_date": "2025-11-15",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "뮤지컬"
       },
       {
         "perf_id": "PF271599",
@@ -6446,7 +7102,8 @@
         "venue_name": "과천시민회관 소극장",
         "perf_start_date": "2025-09-27",
         "perf_end_date": "2025-09-27",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "뮤지컬"
       }
     ]
   },
@@ -6459,7 +7116,8 @@
         "venue_name": "제천예술의전당 대공연장",
         "perf_start_date": "2025-06-20",
         "perf_end_date": "2025-06-20",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF264795",
@@ -6467,7 +7125,8 @@
         "venue_name": "충청북도학생교육문화원 대공연장",
         "perf_start_date": "2025-06-13",
         "perf_end_date": "2025-06-14",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       }
     ]
   },
@@ -6480,7 +7139,8 @@
         "venue_name": "수원SK아트리움 대공연장",
         "perf_start_date": "2024-10-12",
         "perf_end_date": "2024-10-13",
-        "season_rank": 6.0
+        "season_rank": 6.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF250228",
@@ -6488,7 +7148,8 @@
         "venue_name": "고양아람누리 새라새극장",
         "perf_start_date": "2024-11-02",
         "perf_end_date": "2024-11-03",
-        "season_rank": 7.0
+        "season_rank": 7.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF217043",
@@ -6496,7 +7157,8 @@
         "venue_name": "하남문화예술회관 아랑홀(소극장)",
         "perf_start_date": "2023-05-20",
         "perf_end_date": "2023-05-20",
-        "season_rank": 4.0
+        "season_rank": 4.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF217323",
@@ -6504,7 +7166,8 @@
         "venue_name": "울산문화예술회관 소공연장",
         "perf_start_date": "2023-05-27",
         "perf_end_date": "2023-05-28",
-        "season_rank": 5.0
+        "season_rank": 5.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF217042",
@@ -6512,7 +7175,8 @@
         "venue_name": "광산문화예술회관 공연장",
         "perf_start_date": "2023-05-12",
         "perf_end_date": "2023-05-13",
-        "season_rank": 3.0
+        "season_rank": 3.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF256988",
@@ -6520,7 +7184,8 @@
         "venue_name": "공주문예회관 대공연장",
         "perf_start_date": "2025-02-14",
         "perf_end_date": "2025-02-15",
-        "season_rank": 8.0
+        "season_rank": 8.0,
+        "genre": "연극"
       }
     ]
   },
@@ -6533,7 +7198,8 @@
         "venue_name": "두산아트센터 연강홀",
         "perf_start_date": "2023-03-10",
         "perf_end_date": "2023-04-02",
-        "season_rank": 1.0
+        "season_rank": 1.0,
+        "genre": "연극"
       },
       {
         "perf_id": "PF249121",
@@ -6541,7 +7207,8 @@
         "venue_name": "관악아트홀 (구. 관악문화관) 관악아트홀 (구. 관악문화관) ",
         "perf_start_date": "2024-10-18",
         "perf_end_date": "2024-10-19",
-        "season_rank": 2.0
+        "season_rank": 2.0,
+        "genre": "연극"
       }
     ]
   }
