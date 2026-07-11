@@ -1,0 +1,158 @@
+name: KOPIS YouTube 축약콘텐츠 수집 파이프라인
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  # ---------------------------------------------------------------------
+  # 1단계: 타겟/그룹 파일 준비 (KOPIS 통계 + 시즌매칭 -> targets_enriched.csv, work_groups.json)
+  # ---------------------------------------------------------------------
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas
+      - name: 타겟 파일 생성
+        run: |
+          python scripts/pipeline.py build-targets \
+            --stats "data/16_공연통계_공연별_주간_전체_with_runtime.csv" \
+            --season "data/final_season_match_status.csv" \
+            --out-dir data/
+      - name: 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/targets_enriched.csv data/work_groups.json
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "타겟/그룹 파일 갱신: $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
+
+  # ---------------------------------------------------------------------
+  # 2단계: 20개 shard 병렬 수집 (669개 키를 라운드로빈으로 배분)
+  # ---------------------------------------------------------------------
+  collect:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20   # GitHub Free 플랜 동시 job 한도
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pandas
+
+      - name: 이번 shard가 쓸 API 키들 고르기 (669개를 20개로 라운드로빈)
+        env:
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          python3 - <<'PYEOF'
+          import os
+          keys = [k.strip() for k in os.environ["YOUTUBE_API_KEYS"].split(",") if k.strip()]
+          shard, shard_count = ${{ matrix.shard }}, 20
+          my_keys = [k for i, k in enumerate(keys) if i % shard_count == shard]
+          if not my_keys:
+              raise SystemExit(f"shard {shard}에 배정된 키가 없어요 (전체 {len(keys)}개)")
+          with open(os.environ["GITHUB_ENV"], "a") as f:
+              f.write(f"SELECTED_KEYS={','.join(my_keys)}\n")
+          print(f"shard {shard}: 키 {len(my_keys)}개 배정됨")
+          PYEOF
+
+      - name: 키 마스킹
+        run: |
+          IFS=',' read -ra KEYS <<< "$SELECTED_KEYS"
+          for k in "${KEYS[@]}"; do echo "::add-mask::$k"; done
+
+      - name: 수집 실행 (shard ${{ matrix.shard }})
+        run: |
+          EXCLUDED=""
+          if [ -f "data/excluded_video_ids.txt" ]; then
+            EXCLUDED="--excluded-ids data/excluded_video_ids.txt"
+          fi
+          python scripts/pipeline.py collect \
+            --targets data/targets_enriched.csv \
+            --groups data/work_groups.json \
+            $EXCLUDED \
+            --api-keys "$SELECTED_KEYS" \
+            --shard-index ${{ matrix.shard }} \
+            --shard-count 20 \
+            --out-dir "data/youtube_targeted/shard_${{ matrix.shard }}" \
+            --state-file "data/youtube_targeted/shard_${{ matrix.shard }}/processed_units.txt" \
+            --max-videos-per-query 15 \
+            --query-delay 1.5
+
+      - name: 변경사항 커밋 & 푸시 (충돌 시 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.ours.driver true   # data/youtube_targeted/** merge=ours (.gitattributes)
+          git add "data/youtube_targeted/shard_${{ matrix.shard }}/"
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "수집 shard ${{ matrix.shard }}: $(date -u +'%Y-%m-%d')"
+          for i in 1 2 3 4 5 6 7 8; do
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
+              echo "푸시 성공"; exit 0
+            fi
+            if git status --porcelain | grep -q "^UU\|^AA"; then
+              git rebase --abort 2>/dev/null || true
+              if git pull --no-rebase origin "${GITHUB_REF_NAME}" && git push; then
+                echo "merge 방식으로 푸시 성공"; exit 0
+              fi
+            fi
+            echo "푸시 충돌, 재시도 ($i/8)..."
+            sleep $(( (RANDOM % 15) + 5 ))
+          done
+          echo "재시도 소진, 다음 실행에서 이어집니다."; exit 1
+
+  # ---------------------------------------------------------------------
+  # 3단계: 병합 + QA (모든 shard 끝난 뒤 1회)
+  # ---------------------------------------------------------------------
+  finalize:
+    needs: collect
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas
+
+      - name: shard 결과 병합 (video_id 중복 제거)
+        run: |
+          python scripts/pipeline.py merge \
+            --base-dir data/youtube_targeted \
+            --out-dir data/youtube_targeted
+
+      - name: 기관 교차검증 QA (perf_id 오배정 탐지)
+        run: |
+          python scripts/pipeline.py qa \
+            --videos data/youtube_targeted/all_videos.csv \
+            --catalog data/targets_enriched.csv \
+            --out data/perf_id_mismatch_report.csv
+
+      - name: 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/youtube_targeted/all_videos.csv data/perf_id_mismatch_report.csv
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "영상 통합 CSV + QA 리포트 갱신: $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
