@@ -1,0 +1,6548 @@
+{
+  "12인의 성난 사람들::cast2": {
+    "representative_title": "12인의 성난 사람들 [광주]",
+    "members": [
+      {
+        "perf_id": "PF215689",
+        "title": "12인의 성난 사람들 [광주]",
+        "venue_name": "공연일번지",
+        "perf_start_date": "2023-04-14",
+        "perf_end_date": "2023-04-15",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF216756",
+        "title": "12인의 성난 사람들 [밀양]",
+        "venue_name": "밀양아리나 (구, 밀양연극촌) 성벽극장 (야외극장) ",
+        "perf_start_date": "2023-04-21",
+        "perf_end_date": "2023-04-22",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "12인의 성난 사람들::극단 산수유": {
+    "representative_title": "12인의 성난 사람들 [청주]",
+    "members": [
+      {
+        "perf_id": "PF226478",
+        "title": "12인의 성난 사람들 [청주]",
+        "venue_name": "씨어터 제이",
+        "perf_start_date": "2023-10-06",
+        "perf_end_date": "2023-10-07",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF224259",
+        "title": "12인의 성난 사람들 [대전]",
+        "venue_name": "아신극장 1관 (3층) ",
+        "perf_start_date": "2023-09-08",
+        "perf_end_date": "2023-09-09",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "3.1절 기념 한용운이 부르는 님의침묵::cast0": {
+    "representative_title": "3.1절 기념 한용운이 부르는 님의침묵 [대구]",
+    "members": [
+      {
+        "perf_id": "PF234126",
+        "title": "3.1절 기념 한용운이 부르는 님의침묵 [대구]",
+        "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
+        "perf_start_date": "2024-02-27",
+        "perf_end_date": "2024-02-27",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF233991",
+        "title": "3.1절 기념 한용운이 부르는 님의침묵 [광주]",
+        "venue_name": "광주 예술의 전당 대극장",
+        "perf_start_date": "2024-02-25",
+        "perf_end_date": "2024-02-25",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "6시 퇴근::cast2": {
+    "representative_title": "6시 퇴근 [충주]",
+    "members": [
+      {
+        "perf_id": "PF275674",
+        "title": "6시 퇴근 [남양주]",
+        "venue_name": "다산아트홀",
+        "perf_start_date": "2025-11-07",
+        "perf_end_date": "2025-11-08",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF270087",
+        "title": "6시 퇴근 [충주]",
+        "venue_name": "충주시문화회관",
+        "perf_start_date": "2025-08-09",
+        "perf_end_date": "2025-08-09",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "In search of PARADISE: 낙원을 찾아서::cast0": {
+    "representative_title": "In search of PARADISE: 낙원을 찾아서 [당진]",
+    "members": [
+      {
+        "perf_id": "PF271072",
+        "title": "In search of PARADISE: 낙원을 찾아서 [당진]",
+        "venue_name": "당진문예의전당 대공연장",
+        "perf_start_date": "2025-09-13",
+        "perf_end_date": "2025-09-13",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF271870",
+        "title": "In search of PARADISE: 낙원을 찾아서 [부산]",
+        "venue_name": "동래문화회관 대극장",
+        "perf_start_date": "2025-09-19",
+        "perf_end_date": "2025-09-19",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF274923",
+        "title": "In search of PARADISE: 낙원을 찾아서 [울산]",
+        "venue_name": "울산북구문화예술회관 공연장",
+        "perf_start_date": "2025-10-23",
+        "perf_end_date": "2025-10-23",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF278410",
+        "title": "In search of PARADISE: 낙원을 찾아서 [정선]",
+        "venue_name": "정선아리랑센터 아리랑홀",
+        "perf_start_date": "2025-10-16",
+        "perf_end_date": "2025-10-16",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "NEW 달을 품은 슈퍼맨::라이노컴퍼니(구. 극단 셰익스피어)": {
+    "representative_title": "NEW 달을 품은 슈퍼맨 [고흥]",
+    "members": [
+      {
+        "perf_id": "PF247217",
+        "title": "NEW 달을 품은 슈퍼맨 [고흥]",
+        "venue_name": "고흥문화회관 김연수실",
+        "perf_start_date": "2024-09-13",
+        "perf_end_date": "2024-09-13",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF243437",
+        "title": "NEW 달을 품은 슈퍼맨 [정읍]",
+        "venue_name": "정읍사예술회관",
+        "perf_start_date": "2024-07-26",
+        "perf_end_date": "2024-07-26",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "SM CLASSICS LIVE with 서울시립교향악단::cast0": {
+    "representative_title": "SM CLASSICS LIVE with 서울시립교향악단 [예술의전당]",
+    "members": [
+      {
+        "perf_id": "PF257538",
+        "title": "SM CLASSICS LIVE with 서울시립교향악단 [예술의전당]",
+        "venue_name": "예술의전당 [서울] 콘서트홀",
+        "perf_start_date": "2025-02-14",
+        "perf_end_date": "2025-02-14",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF257789",
+        "title": "SM CLASSICS LIVE with 서울시립교향악단 [롯데콘서트홀]",
+        "venue_name": "롯데콘서트홀",
+        "perf_start_date": "2025-02-15",
+        "perf_end_date": "2025-02-15",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "YOU & IT::cast1": {
+    "representative_title": "YOU & IT [대구]",
+    "members": [
+      {
+        "perf_id": "PF221036",
+        "title": "YOU & IT [대구]",
+        "venue_name": "봉산문화회관 가온홀",
+        "perf_start_date": "2023-08-26",
+        "perf_end_date": "2023-08-27",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF220926",
+        "title": "YOU & IT [함안]",
+        "venue_name": "함안문화예술회관 대공연장",
+        "perf_start_date": "2023-07-22",
+        "perf_end_date": "2023-07-22",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF222109",
+        "title": "YOU & IT [고령]",
+        "venue_name": "경북고령대가야문화누리 (구. 대가야국악당) 대공연장 (우륵홀) ",
+        "perf_start_date": "2023-07-29",
+        "perf_end_date": "2023-07-29",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "갑신의 거::cast0": {
+    "representative_title": "갑신의 거 [충주]",
+    "members": [
+      {
+        "perf_id": "PF266161",
+        "title": "갑신의 거 [충주]",
+        "venue_name": "충주시문화회관",
+        "perf_start_date": "2025-06-21",
+        "perf_end_date": "2025-06-21",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF264174",
+        "title": "갑신의 거 [부천]",
+        "venue_name": "부천시민회관 대공연장",
+        "perf_start_date": "2025-07-11",
+        "perf_end_date": "2025-07-12",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "갓|::cast1": {
+    "representative_title": "갓 [여수]",
+    "members": [
+      {
+        "perf_id": "PF261950",
+        "title": "갓 [여수]",
+        "venue_name": "GS칼텍스 예울마루 대극장",
+        "perf_start_date": "2025-05-29",
+        "perf_end_date": "2025-05-29",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF264512",
+        "title": "갓 [광명]",
+        "venue_name": "광명시민회관 대공연장",
+        "perf_start_date": "2025-06-11",
+        "perf_end_date": "2025-06-11",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "강릉 청소년 오케스트라 페스티벌::cast0": {
+    "representative_title": "강릉 청소년 오케스트라 페스티벌",
+    "members": [
+      {
+        "perf_id": "PF270733",
+        "title": "강릉 청소년 오케스트라 페스티벌",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2025-08-23",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF246743",
+        "title": "강릉 청소년 오케스트라 페스티벌",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2024-08-24",
+        "perf_end_date": "2024-08-24",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "강아지똥|극단 모시는사람들::극단 모시는사람들": {
+    "representative_title": "강아지똥 [부산]",
+    "members": [
+      {
+        "perf_id": "PF260453",
+        "title": "강아지똥 [부산]",
+        "venue_name": "해운대문화회관 해운홀",
+        "perf_start_date": "2025-04-12",
+        "perf_end_date": "2025-04-12",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF289794",
+        "title": "강아지똥 [전주]",
+        "venue_name": "전북예술회관 공연장",
+        "perf_start_date": "2026-06-13",
+        "perf_end_date": "2026-06-13",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF291384",
+        "title": "강아지똥 [부산]",
+        "venue_name": "부산민주공원 공연장 큰방(중극장)",
+        "perf_start_date": "2026-06-20",
+        "perf_end_date": "2026-06-20",
+        "season_rank": 5.0
+      }
+    ]
+  },
+  "걷다 바라보다 그리고 서다::cast0": {
+    "representative_title": "걷다 바라보다 그리고 서다 [제주]",
+    "members": [
+      {
+        "perf_id": "PF245772",
+        "title": "걷다 바라보다 그리고 서다 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2024-08-18",
+        "perf_end_date": "2024-08-18",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF246803",
+        "title": "걷다 바라보다 그리고 서다 [부산]",
+        "venue_name": "금정문화회관 대공연장(금빛누리홀)",
+        "perf_start_date": "2024-08-29",
+        "perf_end_date": "2024-08-29",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "경남도립극단 둥둥 낙랑둥::경남도립극단": {
+    "representative_title": "경남도립극단, 둥둥 낙랑둥 [거제]",
+    "members": [
+      {
+        "perf_id": "PF263113",
+        "title": "경남도립극단, 둥둥 낙랑둥 [거제]",
+        "venue_name": "거제문화예술회관 대극장",
+        "perf_start_date": "2025-06-17",
+        "perf_end_date": "2025-06-17",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF261099",
+        "title": "경남도립극단, 둥둥 낙랑둥 [진주]",
+        "venue_name": "경상남도문화예술회관 대공연장",
+        "perf_start_date": "2025-04-17",
+        "perf_end_date": "2025-04-19",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "경남도립극단 순회공연 빌미::경남도립극단": {
+    "representative_title": "경남도립극단 순회공연, 빌미 [창녕]",
+    "members": [
+      {
+        "perf_id": "PF264373",
+        "title": "경남도립극단 순회공연, 빌미 [창녕]",
+        "venue_name": "창녕문화예술회관 대공연장",
+        "perf_start_date": "2025-05-14",
+        "perf_end_date": "2025-05-14",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF263481",
+        "title": "경남도립극단 순회공연, 빌미 [하동]",
+        "venue_name": "하동문화예술회관 대공연장",
+        "perf_start_date": "2025-05-01",
+        "perf_end_date": "2025-05-01",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "고추장수 서일록씨의 잔혹한 하룻밤::cast0": {
+    "representative_title": "고추장수 서일록씨의 잔혹한 하룻밤 [영덕]",
+    "members": [
+      {
+        "perf_id": "PF248424",
+        "title": "고추장수 서일록씨의 잔혹한 하룻밤 [영덕]",
+        "venue_name": "예주문화예술회관",
+        "perf_start_date": "2024-09-25",
+        "perf_end_date": "2024-09-25",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF253778",
+        "title": "고추장수 서일록씨의 잔혹한 하룻밤 [철원]",
+        "venue_name": "철원군 화강문화센터 공연장",
+        "perf_start_date": "2024-11-14",
+        "perf_end_date": "2024-11-14",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF222775",
+        "title": "고추장수 서일록씨의 잔혹한 하룻밤 [춘천]",
+        "venue_name": "아트팩토리 봄",
+        "perf_start_date": "2023-09-01",
+        "perf_end_date": "2023-09-02",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "광주시립극단 출장 연극 시리즈 1: 오스카와 장미할머니::광주시립극단": {
+    "representative_title": "광주시립극단, 출장 연극 시리즈 1: 오스카와 장미할머니 [광주디자인센터]",
+    "members": [
+      {
+        "perf_id": "PF248757",
+        "title": "광주시립극단, 출장 연극 시리즈 1: 오스카와 장미할머니 [광주서구문화센터]",
+        "venue_name": "광주서구문화센터",
+        "perf_start_date": "2024-10-05",
+        "perf_end_date": "2024-10-05",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF248759",
+        "title": "광주시립극단, 출장 연극 시리즈 1: 오스카와 장미할머니 [광주디자인센터]",
+        "venue_name": "광주디자인센터 이벤트홀",
+        "perf_start_date": "2024-10-07",
+        "perf_end_date": "2024-10-07",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF248754",
+        "title": "광주시립극단, 출장 연극 시리즈 1: 오스카와 장미할머니 [빛고을아트스페이스]",
+        "venue_name": "빛고을아트스페이스 소공연장",
+        "perf_start_date": "2024-10-08",
+        "perf_end_date": "2024-10-08",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "광주시립발레단 초청공연 해설이 있는 발레::광주시립발레단 초청공연": {
+    "representative_title": "광주시립발레단 초청공연, 해설이 있는 발레",
+    "members": [
+      {
+        "perf_id": "PF243885",
+        "title": "광주시립발레단 초청공연, 해설이 있는 발레",
+        "venue_name": "광주북구문화센터 (양산도서관) 공연장",
+        "perf_start_date": "2024-07-19",
+        "perf_end_date": "2024-07-20",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF268334",
+        "title": "광주시립발레단 초청공연, 해설이 있는 발레",
+        "venue_name": "광주북구문화센터 (양산도서관) 공연장",
+        "perf_start_date": "2025-07-18",
+        "perf_end_date": "2025-07-19",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "광주시립창극단 교류공연 천변만화::광주시립창극단 교류공연": {
+    "representative_title": "광주시립창극단 교류공연, 천변만화",
+    "members": [
+      {
+        "perf_id": "PF266927",
+        "title": "광주시립창극단 교류공연, 천변만화 [대전]",
+        "venue_name": "대전시립연정국악원 큰마당",
+        "perf_start_date": "2025-07-02",
+        "perf_end_date": "2025-07-02",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF242383",
+        "title": "광주시립창극단 교류공연, 천변만화",
+        "venue_name": "국립민속국악원 예원당",
+        "perf_start_date": "2024-06-22",
+        "perf_end_date": "2024-06-22",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "광주시립창극단 판소리 감상회::광주시립창극단": {
+    "representative_title": "광주시립창극단, 판소리 감상회",
+    "members": [
+      {
+        "perf_id": "PF265782",
+        "title": "광주시립창극단, 판소리 감상회",
+        "venue_name": "광주 예술의 전당 소극장",
+        "perf_start_date": "2025-06-25",
+        "perf_end_date": "2025-06-25",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF236625",
+        "title": "광주시립창극단, 판소리 감상회",
+        "venue_name": "광주 예술의 전당 소극장",
+        "perf_start_date": "2024-03-27",
+        "perf_end_date": "2024-03-27",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF241998",
+        "title": "광주시립창극단, 판소리 감상회",
+        "venue_name": "광주 예술의 전당 소극장",
+        "perf_start_date": "2024-06-26",
+        "perf_end_date": "2024-06-26",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립국악관현악단 신년 음악회::국립국악관현악단": {
+    "representative_title": "국립국악관현악단, 신년 음악회",
+    "members": [
+      {
+        "perf_id": "PF253868",
+        "title": "국립국악관현악단, 신년 음악회",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2025-01-03",
+        "perf_end_date": "2025-01-03",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF279302",
+        "title": "국립국악관현악단, 신년 음악회",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2026-01-09",
+        "perf_end_date": "2026-01-09",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF230594",
+        "title": "국립국악관현악단, 신년 음악회",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2024-01-12",
+        "perf_end_date": "2024-01-12",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "국립극단 스카팽::(재) 국립극단": {
+    "representative_title": "국립극단, 스카팽 [서울]",
+    "members": [
+      {
+        "perf_id": "PF237184",
+        "title": "국립극단, 스카팽 [서울]",
+        "venue_name": "국립극단 [명동] 명동예술극장",
+        "perf_start_date": "2024-04-12",
+        "perf_end_date": "2024-05-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF234678",
+        "title": "국립극단, 스카팽 [경남]",
+        "venue_name": "경상남도문화예술회관 대공연장",
+        "perf_start_date": "2024-05-24",
+        "perf_end_date": "2024-05-25",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF238348",
+        "title": "국립극단, 스카팽 [군포]",
+        "venue_name": "군포문화예술회관 수리홀",
+        "perf_start_date": "2024-05-31",
+        "perf_end_date": "2024-06-01",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF240530",
+        "title": "국립극단, 스카팽 [하남]",
+        "venue_name": "하남문화예술회관 검단홀(대극장)",
+        "perf_start_date": "2024-06-07",
+        "perf_end_date": "2024-06-08",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF234135",
+        "title": "국립극단, 스카팽 [안동]",
+        "venue_name": "안동문화예술의전당 웅부홀",
+        "perf_start_date": "2024-05-16",
+        "perf_end_date": "2024-05-17",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립극단 십이야::(재) 국립극단": {
+    "representative_title": "국립극단, 십이야",
+    "members": [
+      {
+        "perf_id": "PF264966",
+        "title": "국립극단, 십이야",
+        "venue_name": "국립극단 [명동] 명동예술극장",
+        "perf_start_date": "2025-06-12",
+        "perf_end_date": "2025-07-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF267187",
+        "title": "국립극단, 십이야 [부산]",
+        "venue_name": "(재) 영화의전당 하늘연극장",
+        "perf_start_date": "2025-08-08",
+        "perf_end_date": "2025-08-09",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립극단 십이야::국립극단": {
+    "representative_title": "국립극단, 십이야 [창원]",
+    "members": [
+      {
+        "perf_id": "PF266809",
+        "title": "국립극단, 십이야 [창원]",
+        "venue_name": "3.15아트센터 대극장",
+        "perf_start_date": "2025-08-01",
+        "perf_end_date": "2025-08-02",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF267379",
+        "title": "국립극단, 십이야 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2025-07-18",
+        "perf_end_date": "2025-07-19",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF268017",
+        "title": "국립극단, 십이야 [김포]",
+        "venue_name": "김포아트홀",
+        "perf_start_date": "2025-07-25",
+        "perf_end_date": "2025-07-26",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립극단 헤다 가블러::국립극단": {
+    "representative_title": "국립극단, 헤다 가블러",
+    "members": [
+      {
+        "perf_id": "PF262726",
+        "title": "국립극단, 헤다 가블러",
+        "venue_name": "국립극단 [명동] 명동예술극장",
+        "perf_start_date": "2025-05-16",
+        "perf_end_date": "2025-06-01",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF262682",
+        "title": "국립극단, 헤다 가블러 [당진]",
+        "venue_name": "당진문예의전당 대공연장",
+        "perf_start_date": "2025-06-14",
+        "perf_end_date": "2025-06-15",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립무용단 몽유도원무::국립무용단": {
+    "representative_title": "국립무용단, 몽유도원무",
+    "members": [
+      {
+        "perf_id": "PF285991",
+        "title": "국립무용단, 몽유도원무 [광주]",
+        "venue_name": "국립아시아문화전당 극장2",
+        "perf_start_date": "2026-04-03",
+        "perf_end_date": "2026-04-04",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF230515",
+        "title": "국립무용단, 몽유도원무",
+        "venue_name": "국립극장 달오름극장",
+        "perf_start_date": "2024-06-28",
+        "perf_end_date": "2024-06-30",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF287957",
+        "title": "국립무용단, 몽유도원무 [속초]",
+        "venue_name": "속초문화예술회관 대공연장",
+        "perf_start_date": "2026-04-17",
+        "perf_end_date": "2026-04-17",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "국립무용단 사자의 서::국립무용단": {
+    "representative_title": "국립무용단, 사자의 서 [서울]",
+    "members": [
+      {
+        "perf_id": "PF269545",
+        "title": "국립무용단, 사자의 서 [서울]",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2025-09-17",
+        "perf_end_date": "2025-09-20",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF268355",
+        "title": "국립무용단, 사자의 서 [성남]",
+        "venue_name": "성남아트리움 (구. 성남시민회관) 대극장",
+        "perf_start_date": "2025-08-30",
+        "perf_end_date": "2025-08-30",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF269806",
+        "title": "국립무용단, 사자의 서 [밀양]",
+        "venue_name": "밀양아리랑아트센터 대공연장",
+        "perf_start_date": "2025-08-23",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "국립민속국악원 지지지::국립민속국악원": {
+    "representative_title": "국립민속국악원, 지지지 [남원]",
+    "members": [
+      {
+        "perf_id": "PF250595",
+        "title": "국립민속국악원, 지지지 [남원]",
+        "venue_name": "국립민속국악원 예원당",
+        "perf_start_date": "2024-10-18",
+        "perf_end_date": "2024-10-19",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF250593",
+        "title": "국립민속국악원, 지지지 [서울]",
+        "venue_name": "국립국악원 예악당",
+        "perf_start_date": "2024-10-24",
+        "perf_end_date": "2024-10-25",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF275586",
+        "title": "국립민속국악원, 지지지 [군산]",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2025-11-08",
+        "perf_end_date": "2025-11-08",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF272922",
+        "title": "국립민속국악원, 지지지 [경주]",
+        "venue_name": "경주예술의전당 대공연장(화랑홀)",
+        "perf_start_date": "2025-09-05",
+        "perf_end_date": "2025-09-06",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "국립발레단 돈키호테::국립발레단": {
+    "representative_title": "국립발레단, 돈키호테",
+    "members": [
+      {
+        "perf_id": "PF239415",
+        "title": "국립발레단, 돈키호테",
+        "venue_name": "예술의전당 [서울] 오페라극장",
+        "perf_start_date": "2024-06-05",
+        "perf_end_date": "2024-06-09",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF243892",
+        "title": "국립발레단, 돈키호테 [대구]",
+        "venue_name": "대구오페라하우스",
+        "perf_start_date": "2024-08-30",
+        "perf_end_date": "2024-08-31",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF244630",
+        "title": "국립발레단, 돈키호테 [당진]",
+        "venue_name": "당진문예의전당 대공연장",
+        "perf_start_date": "2024-09-11",
+        "perf_end_date": "2024-09-12",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "국립발레단 백조의 호수::(재)국립발레단": {
+    "representative_title": "국립발레단, 백조의 호수 [부산]",
+    "members": [
+      {
+        "perf_id": "PF232367",
+        "title": "국립발레단, 백조의 호수 [부산]",
+        "venue_name": "부산시민회관 대극장",
+        "perf_start_date": "2024-03-15",
+        "perf_end_date": "2024-03-16",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF234442",
+        "title": "국립발레단, 백조의 호수 [구미]",
+        "venue_name": "구미시문화예술회관 대공연장",
+        "perf_start_date": "2024-03-20",
+        "perf_end_date": "2024-03-21",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립발레단 지젤::국립발레단": {
+    "representative_title": "국립발레단, 지젤 [서울]",
+    "members": [
+      {
+        "perf_id": "PF275402",
+        "title": "국립발레단, 지젤 [서울]",
+        "venue_name": "예술의전당 [서울] 오페라극장",
+        "perf_start_date": "2025-11-12",
+        "perf_end_date": "2025-11-16",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF275398",
+        "title": "국립발레단, 지젤 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2025-10-31",
+        "perf_end_date": "2025-11-01",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF275044",
+        "title": "국립발레단, 지젤 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2025-11-06",
+        "perf_end_date": "2025-11-07",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "국립발레단 호두까기인형::국립발레단": {
+    "representative_title": "국립발레단, 호두까기인형 [세종]",
+    "members": [
+      {
+        "perf_id": "PF272813",
+        "title": "국립발레단, 호두까기인형 [세종]",
+        "venue_name": "세종예술의전당 대공연장",
+        "perf_start_date": "2025-12-02",
+        "perf_end_date": "2025-12-03",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF250884",
+        "title": "국립발레단, 호두까기인형 [천안]",
+        "venue_name": "천안예술의전당 대공연장",
+        "perf_start_date": "2024-11-23",
+        "perf_end_date": "2024-11-24",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF262691",
+        "title": "국립발레단, 호두까기인형 [부산]",
+        "venue_name": "부산시민회관 대극장",
+        "perf_start_date": "2025-12-05",
+        "perf_end_date": "2025-12-06",
+        "season_rank": 8.0
+      }
+    ]
+  },
+  "국립심포니오케스트라 ECO & ECHO 콘서트::국립심포니오케스트라": {
+    "representative_title": "국립심포니오케스트라, ECO & ECHO 콘서트 [세종]",
+    "members": [
+      {
+        "perf_id": "PF245064",
+        "title": "국립심포니오케스트라, ECO & ECHO 콘서트 [세종]",
+        "venue_name": "세종예술의전당 대공연장",
+        "perf_start_date": "2024-09-13",
+        "perf_end_date": "2024-09-13",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF246701",
+        "title": "국립심포니오케스트라, ECO & ECHO 콘서트 [통영]",
+        "venue_name": "통영국제음악당 콘서트홀",
+        "perf_start_date": "2024-11-30",
+        "perf_end_date": "2024-11-30",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립오페라단 마술피리::국립오페라단": {
+    "representative_title": "국립오페라단, 마술피리",
+    "members": [
+      {
+        "perf_id": "PF242154",
+        "title": "국립오페라단, 마술피리 [고양]",
+        "venue_name": "고양아람누리 아람극장",
+        "perf_start_date": "2024-07-20",
+        "perf_end_date": "2024-07-21",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF260093",
+        "title": "국립오페라단, 마술피리 [포항]",
+        "venue_name": "포항문화예술회관 대공연장",
+        "perf_start_date": "2025-04-05",
+        "perf_end_date": "2025-04-05",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF269973",
+        "title": "국립오페라단, 마술피리",
+        "venue_name": "국립극장 달오름극장",
+        "perf_start_date": "2025-08-17",
+        "perf_end_date": "2025-08-17",
+        "season_rank": 11.0
+      },
+      {
+        "perf_id": "PF266968",
+        "title": "국립오페라단, 마술피리 [제천]",
+        "venue_name": "제천예술의전당 대공연장",
+        "perf_start_date": "2025-07-11",
+        "perf_end_date": "2025-07-11",
+        "season_rank": 9.0
+      },
+      {
+        "perf_id": "PF269027",
+        "title": "국립오페라단, 마술피리 [인천 서구]",
+        "venue_name": "인천서구문화회관 대공연장",
+        "perf_start_date": "2025-08-02",
+        "perf_end_date": "2025-08-02",
+        "season_rank": 10.0
+      },
+      {
+        "perf_id": "PF238252",
+        "title": "국립오페라단, 마술피리 [음성]",
+        "venue_name": "음성문화예술회관 대공연장",
+        "perf_start_date": "2024-04-25",
+        "perf_end_date": "2024-04-25",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF266143",
+        "title": "국립오페라단, 마술피리 [동해]",
+        "venue_name": "동해문화예술회관 대공연장",
+        "perf_start_date": "2025-07-05",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 8.0
+      },
+      {
+        "perf_id": "PF262470",
+        "title": "국립오페라단, 마술피리 [평택]",
+        "venue_name": "평택시남부문예회관 대공연장",
+        "perf_start_date": "2025-05-02",
+        "perf_end_date": "2025-05-02",
+        "season_rank": 7.0
+      }
+    ]
+  },
+  "국립오페라단 박쥐::국립오페라단": {
+    "representative_title": "국립오페라단, 박쥐",
+    "members": [
+      {
+        "perf_id": "PF245456",
+        "title": "국립오페라단, 박쥐",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2024-10-11",
+        "perf_end_date": "2024-10-12",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF268202",
+        "title": "국립오페라단, 박쥐 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2025-08-15",
+        "perf_end_date": "2025-08-16",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF268136",
+        "title": "국립오페라단, 박쥐 [울산]",
+        "venue_name": "울산문화예술회관 대공연장",
+        "perf_start_date": "2025-08-22",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF268633",
+        "title": "국립오페라단, 박쥐 [안성]",
+        "venue_name": "안성맞춤아트홀 대공연장",
+        "perf_start_date": "2025-08-08",
+        "perf_end_date": "2025-08-08",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF268636",
+        "title": "국립오페라단, 박쥐 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 소공연장",
+        "perf_start_date": "2025-07-17",
+        "perf_end_date": "2025-07-17",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립오페라단 오페레타 박쥐::국립오페라단 오페레타": {
+    "representative_title": "국립오페라단 오페레타, 박쥐",
+    "members": [
+      {
+        "perf_id": "PF268799",
+        "title": "국립오페라단 오페레타, 박쥐",
+        "venue_name": "경상남도문화예술회관 대공연장",
+        "perf_start_date": "2025-12-12",
+        "perf_end_date": "2025-12-13",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF274268",
+        "title": "국립오페라단 오페레타, 박쥐",
+        "venue_name": "당진문예의전당 대공연장",
+        "perf_start_date": "2025-12-20",
+        "perf_end_date": "2025-12-20",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립오페라단 잔니 스키키::국립오페라단": {
+    "representative_title": "국립오페라단, 잔니 스키키 [수원]",
+    "members": [
+      {
+        "perf_id": "PF274483",
+        "title": "국립오페라단, 잔니 스키키 [수원]",
+        "venue_name": "수원SK아트리움 대공연장",
+        "perf_start_date": "2025-11-01",
+        "perf_end_date": "2025-11-01",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF259859",
+        "title": "국립오페라단, 잔니 스키키 [음성]",
+        "venue_name": "음성문화예술회관 대공연장",
+        "perf_start_date": "2025-03-27",
+        "perf_end_date": "2025-03-27",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF251800",
+        "title": "국립오페라단, 잔니 스키키 [동해]",
+        "venue_name": "동해문화예술회관 대공연장",
+        "perf_start_date": "2024-11-16",
+        "perf_end_date": "2024-11-16",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF273993",
+        "title": "국립오페라단, 잔니 스키키 [부산]",
+        "venue_name": "(재) 영화의전당 하늘연극장",
+        "perf_start_date": "2025-11-08",
+        "perf_end_date": "2025-11-08",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF250053",
+        "title": "국립오페라단, 잔니 스키키 [연천]",
+        "venue_name": "연천수레울아트홀 대공연장",
+        "perf_start_date": "2024-11-23",
+        "perf_end_date": "2024-11-23",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF266593",
+        "title": "국립오페라단, 잔니 스키키 [대전]",
+        "venue_name": "대전예술의전당 앙상블홀",
+        "perf_start_date": "2025-08-29",
+        "perf_end_date": "2025-08-29",
+        "season_rank": 5.0
+      }
+    ]
+  },
+  "국립오페라단 죽음의 도시::국립오페라단": {
+    "representative_title": "국립오페라단, 죽음의 도시",
+    "members": [
+      {
+        "perf_id": "PF235657",
+        "title": "국립오페라단, 죽음의 도시",
+        "venue_name": "예술의전당 [서울] 오페라극장",
+        "perf_start_date": "2024-05-23",
+        "perf_end_date": "2024-05-26",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF265319",
+        "title": "국립오페라단, 죽음의 도시 [대구]",
+        "venue_name": "대구오페라하우스",
+        "perf_start_date": "2025-09-05",
+        "perf_end_date": "2025-09-06",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF268738",
+        "title": "국립오페라단, 죽음의 도시 [창원]",
+        "venue_name": "성산아트홀 대극장",
+        "perf_start_date": "2025-09-13",
+        "perf_end_date": "2025-09-14",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "국립창극단 이날치::국립창극단": {
+    "representative_title": "국립창극단, 이날치傳",
+    "members": [
+      {
+        "perf_id": "PF269586",
+        "title": "국립창극단, 이날치傳",
+        "venue_name": "국립극장 달오름극장",
+        "perf_start_date": "2025-11-21",
+        "perf_end_date": "2025-11-29",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF245490",
+        "title": "국립창극단, 이날치傳",
+        "venue_name": "국립극장 달오름극장",
+        "perf_start_date": "2024-11-14",
+        "perf_end_date": "2024-11-21",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF276722",
+        "title": "국립창극단, 이날치傳 [평택]",
+        "venue_name": "평택시남부문예회관 대공연장",
+        "perf_start_date": "2025-11-13",
+        "perf_end_date": "2025-11-14",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립창극단 토선생 용궁가다::국립창극단": {
+    "representative_title": "국립창극단, 토선생, 용궁가다",
+    "members": [
+      {
+        "perf_id": "PF269537",
+        "title": "국립창극단, 토선생, 용궁가다",
+        "venue_name": "국립극장 달오름극장",
+        "perf_start_date": "2025-09-25",
+        "perf_end_date": "2025-09-26",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF266164",
+        "title": "국립창극단, 토선생, 용궁가다 [용인]",
+        "venue_name": "용인시문화예술회관 처인홀",
+        "perf_start_date": "2025-07-05",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF243712",
+        "title": "국립창극단, 토선생 용궁가다 [음성]",
+        "venue_name": "음성문화예술회관 대공연장",
+        "perf_start_date": "2024-07-10",
+        "perf_end_date": "2024-07-10",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "국립청년극단 미녀와 야수::(재) 국립극단": {
+    "representative_title": "국립청년극단, 미녀와 야수 [춘천]",
+    "members": [
+      {
+        "perf_id": "PF282237",
+        "title": "국립청년극단, 미녀와 야수 [춘천]",
+        "venue_name": "춘천문화예술회관 공연장",
+        "perf_start_date": "2026-01-16",
+        "perf_end_date": "2026-01-17",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF281967",
+        "title": "국립청년극단, 미녀와 야수 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 소공연장",
+        "perf_start_date": "2026-01-31",
+        "perf_end_date": "2026-02-01",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF282423",
+        "title": "국립청년극단, 미녀와 야수 [횡성]",
+        "venue_name": "횡성문화예술회관 대공연장",
+        "perf_start_date": "2026-02-06",
+        "perf_end_date": "2026-02-07",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF282189",
+        "title": "국립청년극단, 미녀와 야수 [삼척]",
+        "venue_name": "삼척문화예술회관 대공연장",
+        "perf_start_date": "2026-01-23",
+        "perf_end_date": "2026-01-24",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF282428",
+        "title": "국립청년극단, 미녀와 야수 [속초]",
+        "venue_name": "속초문화예술회관 대공연장",
+        "perf_start_date": "2026-02-27",
+        "perf_end_date": "2026-02-28",
+        "season_rank": 5.0
+      }
+    ]
+  },
+  "국립합창단 전쟁 그리고 평화::국립합창단": {
+    "representative_title": "국립합창단, 전쟁 그리고 평화 [당진]",
+    "members": [
+      {
+        "perf_id": "PF243364",
+        "title": "국립합창단, 전쟁 그리고 평화 [당진]",
+        "venue_name": "당진문예의전당 대공연장",
+        "perf_start_date": "2024-07-12",
+        "perf_end_date": "2024-07-12",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF251446",
+        "title": "국립합창단, 전쟁 그리고 평화 [이천]",
+        "venue_name": "이천아트홀 대공연장",
+        "perf_start_date": "2024-11-23",
+        "perf_end_date": "2024-11-23",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF253160",
+        "title": "국립합창단, 전쟁 그리고 평화 [군포]",
+        "venue_name": "군포문화예술회관 수리홀",
+        "perf_start_date": "2024-12-26",
+        "perf_end_date": "2024-12-26",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF251511",
+        "title": "국립합창단, 전쟁 그리고 평화 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2024-11-19",
+        "perf_end_date": "2024-11-19",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "국립합창단 카르미나 부라나::국립합창단": {
+    "representative_title": "국립합창단, 카르미나 부라나 [부산]",
+    "members": [
+      {
+        "perf_id": "PF261805",
+        "title": "국립합창단, 카르미나 부라나 [부산]",
+        "venue_name": "부산콘서트홀 콘서트홀",
+        "perf_start_date": "2025-05-16",
+        "perf_end_date": "2025-05-16",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF250895",
+        "title": "국립합창단, 카르미나 부라나 [창원]",
+        "venue_name": "3.15아트센터 대극장",
+        "perf_start_date": "2024-12-14",
+        "perf_end_date": "2024-12-14",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF254978",
+        "title": "국립합창단, 카르미나 부라나 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2024-12-24",
+        "perf_end_date": "2024-12-24",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF277125",
+        "title": "국립합창단, 카르미나 부라나 [안성]",
+        "venue_name": "안성맞춤아트홀 대공연장",
+        "perf_start_date": "2025-12-05",
+        "perf_end_date": "2025-12-05",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "국립합창단 한국 가곡의 모든 것::국립합창단": {
+    "representative_title": "국립합창단, 한국 가곡의 모든 것",
+    "members": [
+      {
+        "perf_id": "PF230610",
+        "title": "국립합창단, 한국 가곡의 모든 것",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2024-05-10",
+        "perf_end_date": "2024-05-10",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF269599",
+        "title": "국립합창단, 한국 가곡의 모든 것",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2025-11-11",
+        "perf_end_date": "2025-11-11",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립합창단 흥겨운 합창여행::국립합창단": {
+    "representative_title": "국립합창단, 흥겨운 합창여행",
+    "members": [
+      {
+        "perf_id": "PF233348",
+        "title": "국립합창단, 흥겨운 합창여행",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2024-01-26",
+        "perf_end_date": "2024-01-26",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF289284",
+        "title": "국립합창단, 흥겨운 합창여행 [나주]",
+        "venue_name": "나주문화예술회관",
+        "perf_start_date": "2026-05-01",
+        "perf_end_date": "2026-05-01",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "국립현대무용단 HIP::국립현대무용단": {
+    "representative_title": "국립현대무용단, HIP 合 [제주]",
+    "members": [
+      {
+        "perf_id": "PF233604",
+        "title": "국립현대무용단, HIP合 (힙합) [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2024-01-23",
+        "perf_end_date": "2024-01-23",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF270867",
+        "title": "국립현대무용단, HIP 合 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2025-09-13",
+        "perf_end_date": "2025-09-13",
+        "season_rank": 6.0
+      }
+    ]
+  },
+  "국립현대무용단 내가 물에서 본 것::국립현대무용단": {
+    "representative_title": "국립현대무용단, 내가 물에서 본 것 [부산]",
+    "members": [
+      {
+        "perf_id": "PF262693",
+        "title": "국립현대무용단, 내가 물에서 본 것 [부산]",
+        "venue_name": "부산시민회관 대극장",
+        "perf_start_date": "2025-08-30",
+        "perf_end_date": "2025-08-30",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF266639",
+        "title": "국립현대무용단, 내가 물에서 본 것 [세종]",
+        "venue_name": "세종예술의전당 대공연장",
+        "perf_start_date": "2025-08-14",
+        "perf_end_date": "2025-08-14",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF265177",
+        "title": "국립현대무용단, 내가 물에서 본 것 [안동]",
+        "venue_name": "안동문화예술의전당 웅부홀",
+        "perf_start_date": "2025-08-22",
+        "perf_end_date": "2025-08-22",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립현대무용단 얍! 얍! 얍!::(재)국립현대무용단": {
+    "representative_title": "국립현대무용단, 얍! 얍! 얍! [창원]",
+    "members": [
+      {
+        "perf_id": "PF261980",
+        "title": "국립현대무용단, 얍! 얍! 얍! [서울 금천]",
+        "venue_name": "금나래아트홀",
+        "perf_start_date": "2025-05-17",
+        "perf_end_date": "2025-05-17",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF286382",
+        "title": "국립현대무용단, 얍! 얍! 얍! [창원]",
+        "venue_name": "3.15아트센터 대극장",
+        "perf_start_date": "2026-05-05",
+        "perf_end_date": "2026-05-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립현대무용단 얍! 얍! 얍!::국립현대무용단": {
+    "representative_title": "국립현대무용단, 얍! 얍! 얍! [부산]",
+    "members": [
+      {
+        "perf_id": "PF251353",
+        "title": "국립현대무용단, 얍! 얍! 얍! [부산]",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2025-06-14",
+        "perf_end_date": "2025-06-15",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF258014",
+        "title": "국립현대무용단, 얍! 얍! 얍! [공주]",
+        "venue_name": "공주문예회관 대공연장",
+        "perf_start_date": "2025-06-20",
+        "perf_end_date": "2025-06-21",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF264191",
+        "title": "국립현대무용단, 얍! 얍! 얍! [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2025-06-06",
+        "perf_end_date": "2025-06-06",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF262108",
+        "title": "국립현대무용단, 얍! 얍! 얍! [포항]",
+        "venue_name": "포항시청 대잠홀",
+        "perf_start_date": "2025-06-28",
+        "perf_end_date": "2025-06-28",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF257339",
+        "title": "국립현대무용단, 얍! 얍! 얍! [대전]",
+        "venue_name": "대전예술의전당 앙상블홀",
+        "perf_start_date": "2025-05-04",
+        "perf_end_date": "2025-05-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF260944",
+        "title": "국립현대무용단, 얍! 얍! 얍! [경기 광주]",
+        "venue_name": "광주시문화예술의전당 (구. 남한산성아트홀) 남한산성홀",
+        "perf_start_date": "2025-05-31",
+        "perf_end_date": "2025-05-31",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "국립현대무용단 정글::국립현대무용단": {
+    "representative_title": "국립현대무용단, 정글",
+    "members": [
+      {
+        "perf_id": "PF235597",
+        "title": "국립현대무용단, 정글",
+        "venue_name": "예술의전당 [서울] CJ 토월극장",
+        "perf_start_date": "2024-04-11",
+        "perf_end_date": "2024-04-14",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF235795",
+        "title": "국립현대무용단, 정글 [안동]",
+        "venue_name": "안동문화예술의전당 웅부홀",
+        "perf_start_date": "2024-03-29",
+        "perf_end_date": "2024-03-29",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF273471",
+        "title": "국립현대무용단, 정글 [익산]",
+        "venue_name": "익산예술의전당 대공연장",
+        "perf_start_date": "2025-10-18",
+        "perf_end_date": "2025-10-18",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "국악 관현악 콘서트: Break out and fly #2::cast0": {
+    "representative_title": "국악 관현악 콘서트: Break out and fly #2 [순천]",
+    "members": [
+      {
+        "perf_id": "PF247074",
+        "title": "국악 관현악 콘서트: Break out and fly #2 [순천]",
+        "venue_name": "순천문화예술회관 대극장",
+        "perf_start_date": "2024-09-07",
+        "perf_end_date": "2024-09-07",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF247894",
+        "title": "국악 관현악 콘서트: Break out and fly #2 [완주]",
+        "venue_name": "완주향토예술문화회관 공연장",
+        "perf_start_date": "2024-09-28",
+        "perf_end_date": "2024-09-28",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "군산시립교향악단 특별기획연주회::cast2": {
+    "representative_title": "제77회 군산시립교향악단 특별기획연주회",
+    "members": [
+      {
+        "perf_id": "PF262285",
+        "title": "제77회 군산시립교향악단 특별기획연주회",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2025-05-03",
+        "perf_end_date": "2025-05-03",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF248875",
+        "title": "제74회 군산시립교향악단 특별기획연주회",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2024-10-04",
+        "perf_end_date": "2024-10-04",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "군산시립합창단 정기 연주회::군산시청": {
+    "representative_title": "제116회 군산시립합창단 정기 연주회",
+    "members": [
+      {
+        "perf_id": "PF237626",
+        "title": "제116회 군산시립합창단 정기 연주회",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2024-04-04",
+        "perf_end_date": "2024-04-04",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF283283",
+        "title": "제121회 군산시립합창단 정기 연주회 [군산]",
+        "venue_name": "군산예술의전당 소공연장",
+        "perf_start_date": "2026-02-05",
+        "perf_end_date": "2026-02-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "그때도 오늘::cast1": {
+    "representative_title": "그때도 오늘 [인천]",
+    "members": [
+      {
+        "perf_id": "PF220664",
+        "title": "그때도 오늘 [인천]",
+        "venue_name": "남동소래아트홀 소래극장 (대공연장) ",
+        "perf_start_date": "2023-07-15",
+        "perf_end_date": "2023-07-15",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF218932",
+        "title": "그때도 오늘 [청양]",
+        "venue_name": "청양문예회관 대공연장",
+        "perf_start_date": "2023-06-22",
+        "perf_end_date": "2023-06-22",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF217554",
+        "title": "그때도 오늘 [오산]",
+        "venue_name": "오산문화예술회관 소공연장",
+        "perf_start_date": "2023-06-02",
+        "perf_end_date": "2023-06-03",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "그때도 오늘::공연배달서비스간다": {
+    "representative_title": "그때도 오늘 [창원]",
+    "members": [
+      {
+        "perf_id": "PF223593",
+        "title": "그때도 오늘 [창원]",
+        "venue_name": "3.15아트센터 소극장",
+        "perf_start_date": "2023-09-01",
+        "perf_end_date": "2023-09-02",
+        "season_rank": 8.0
+      },
+      {
+        "perf_id": "PF223025",
+        "title": "그때도 오늘 [원주]",
+        "venue_name": "원주치악예술관",
+        "perf_start_date": "2023-08-27",
+        "perf_end_date": "2023-08-27",
+        "season_rank": 7.0
+      }
+    ]
+  },
+  "그해 여름::cast0": {
+    "representative_title": "그해 여름 [세종]",
+    "members": [
+      {
+        "perf_id": "PF261855",
+        "title": "그해 여름 [세종]",
+        "venue_name": "세종예술의전당 대공연장",
+        "perf_start_date": "2025-05-09",
+        "perf_end_date": "2025-05-10",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF265815",
+        "title": "그해 여름 [전주]",
+        "venue_name": "한국소리문화의전당 연지홀",
+        "perf_start_date": "2025-07-19",
+        "perf_end_date": "2025-07-19",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "금란방|(재)서울예술단::(재)서울예술단": {
+    "representative_title": "금란방",
+    "members": [
+      {
+        "perf_id": "PF245054",
+        "title": "금란방",
+        "venue_name": "국립극장 하늘극장",
+        "perf_start_date": "2024-08-29",
+        "perf_end_date": "2024-09-28",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF241790",
+        "title": "금란방 [대전]",
+        "venue_name": "대전시립연정국악원 큰마당",
+        "perf_start_date": "2024-07-27",
+        "perf_end_date": "2024-07-27",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF250291",
+        "title": "금란방 [강릉]",
+        "venue_name": "강릉단오제전수교육관 (구. 단오문화관) 공연장",
+        "perf_start_date": "2024-10-26",
+        "perf_end_date": "2024-10-26",
+        "season_rank": 5.0
+      }
+    ]
+  },
+  "기도문|::cast0": {
+    "representative_title": "기도문 (Litanei) [순천]",
+    "members": [
+      {
+        "perf_id": "PF277775",
+        "title": "기도문 (Litanei) [순천]",
+        "venue_name": "순천문화예술회관 대극장",
+        "perf_start_date": "2025-11-14",
+        "perf_end_date": "2025-11-15",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF273774",
+        "title": "기도문 (Litanei) [과천]",
+        "venue_name": "과천시민회관 소극장",
+        "perf_start_date": "2025-10-17",
+        "perf_end_date": "2025-10-18",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "기린자리|::cast0": {
+    "representative_title": "기린자리 [홍성]",
+    "members": [
+      {
+        "perf_id": "PF271692",
+        "title": "기린자리 [홍성]",
+        "venue_name": "홍주문화회관 대공연장",
+        "perf_start_date": "2025-09-04",
+        "perf_end_date": "2025-09-04",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF269403",
+        "title": "기린자리 [홍천]",
+        "venue_name": "홍천문화예술회관",
+        "perf_start_date": "2025-08-23",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF270982",
+        "title": "기린자리 [사천]",
+        "venue_name": "사천문화예술회관 대공연장",
+        "perf_start_date": "2025-08-28",
+        "perf_end_date": "2025-08-28",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF269535",
+        "title": "기린자리 [서산]",
+        "venue_name": "서산시문화회관 대공연장",
+        "perf_start_date": "2025-07-26",
+        "perf_end_date": "2025-07-26",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "김성녀의 마당놀이: 심청이와 춘향이가 온다::cast2": {
+    "representative_title": "김성녀의 마당놀이: 심청이와 춘향이가 온다 [연천]",
+    "members": [
+      {
+        "perf_id": "PF262835",
+        "title": "김성녀의 마당놀이: 심청이와 춘향이가 온다 [연천]",
+        "venue_name": "연천수레울아트홀 대공연장",
+        "perf_start_date": "2025-05-17",
+        "perf_end_date": "2025-05-17",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF263944",
+        "title": "김성녀의 마당놀이: 심청이와 춘향이가 온다 [인천 중구]",
+        "venue_name": "인천학생교육문화회관 싸리재홀(대공연장)",
+        "perf_start_date": "2025-05-10",
+        "perf_end_date": "2025-05-10",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "김성녀의 마당놀이: 심청이와 춘향이가 온다::cast3": {
+    "representative_title": "김성녀의 마당놀이: 심청이와 춘향이가 온다 [대구]",
+    "members": [
+      {
+        "perf_id": "PF271401",
+        "title": "김성녀의 마당놀이: 심청이와 춘향이가 온다 [대구]",
+        "venue_name": "아양아트센터 아양홀",
+        "perf_start_date": "2025-09-26",
+        "perf_end_date": "2025-09-26",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF265546",
+        "title": "김성녀의 마당놀이: 심청이와 춘향이가 온다 [영덕]",
+        "venue_name": "예주문화예술회관",
+        "perf_start_date": "2025-07-19",
+        "perf_end_date": "2025-07-19",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF264687",
+        "title": "김성녀의 마당놀이: 심청이와 춘향이가 온다 [용인]",
+        "venue_name": "용인시문화예술회관 처인홀",
+        "perf_start_date": "2025-05-31",
+        "perf_end_date": "2025-05-31",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "김해가야금축제 김해시립가야금연주단 콘서트: 지금::cast0": {
+    "representative_title": "제14회 김해가야금축제, 김해시립가야금연주단 콘서트: 지금",
+    "members": [
+      {
+        "perf_id": "PF247150",
+        "title": "제14회 김해가야금축제, 김해시립가야금연주단 콘서트: 지금",
+        "venue_name": "김해문화의전당 마루홀",
+        "perf_start_date": "2024-09-06",
+        "perf_end_date": "2024-09-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF274122",
+        "title": "제15회 김해가야금축제, 김해시립가야금연주단 콘서트: 지금 知琴",
+        "venue_name": "김해문화의전당 마루홀",
+        "perf_start_date": "2025-09-25",
+        "perf_end_date": "2025-09-25",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "깃털피리|동화가 꽃피는 나무::동화가 꽃피는 나무": {
+    "representative_title": "깃털피리 [무안]",
+    "members": [
+      {
+        "perf_id": "PF245367",
+        "title": "깃털피리 [무안]",
+        "venue_name": "남도소리울림터",
+        "perf_start_date": "2024-08-24",
+        "perf_end_date": "2024-08-24",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF242209",
+        "title": "깃털피리 [영주]",
+        "venue_name": "영주문화예술회관 까치홀",
+        "perf_start_date": "2024-06-22",
+        "perf_end_date": "2024-06-22",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "꽃의 비밀::(주)파크컴퍼니": {
+    "representative_title": "꽃의 비밀 [제주]",
+    "members": [
+      {
+        "perf_id": "PF263656",
+        "title": "꽃의 비밀 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2025-05-16",
+        "perf_end_date": "2025-05-17",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF266730",
+        "title": "꽃의 비밀 [제천]",
+        "venue_name": "제천예술의전당 대공연장",
+        "perf_start_date": "2025-07-04",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "꿈속에선 다정하였네::화이트캣시어터컴퍼니": {
+    "representative_title": "꿈속에선 다정하였네 [성남]",
+    "members": [
+      {
+        "perf_id": "PF288254",
+        "title": "꿈속에선 다정하였네 [성남]",
+        "venue_name": "성남아트센터 앙상블씨어터",
+        "perf_start_date": "2026-05-02",
+        "perf_end_date": "2026-05-02",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF291509",
+        "title": "꿈속에선 다정하였네 [과천]",
+        "venue_name": "과천시민회관 소극장",
+        "perf_start_date": "2026-06-19",
+        "perf_end_date": "2026-06-20",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "꿈의 아리아::cast0": {
+    "representative_title": "꿈의 아리아 [용인]",
+    "members": [
+      {
+        "perf_id": "PF253677",
+        "title": "꿈의 아리아 [용인]",
+        "venue_name": "용인시평생학습관 (여성회관) 큰어울마당",
+        "perf_start_date": "2024-12-07",
+        "perf_end_date": "2024-12-07",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF249083",
+        "title": "꿈의 아리아 [영등포]",
+        "venue_name": "영등포아트홀",
+        "perf_start_date": "2024-11-23",
+        "perf_end_date": "2024-11-23",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF248792",
+        "title": "꿈의 아리아 [연천]",
+        "venue_name": "연천수레울아트홀 대공연장",
+        "perf_start_date": "2024-10-26",
+        "perf_end_date": "2024-10-26",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "나 옥분뎐!::cast0": {
+    "representative_title": "나, 옥분뎐傳! [논산]",
+    "members": [
+      {
+        "perf_id": "PF271346",
+        "title": "나, 옥분뎐傳! [논산]",
+        "venue_name": "논산아트센터(구. 논산문화예술회관) 대공연장",
+        "perf_start_date": "2025-08-22",
+        "perf_end_date": "2025-08-22",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF271671",
+        "title": "나, 옥분뎐傳! [광명]",
+        "venue_name": "광명시민회관 대공연장",
+        "perf_start_date": "2025-09-13",
+        "perf_end_date": "2025-09-13",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "난쟁이들|(주)랑::(주)랑": {
+    "representative_title": "난쟁이들 [대구]",
+    "members": [
+      {
+        "perf_id": "PF284904",
+        "title": "난쟁이들 [대구]",
+        "venue_name": "대덕문화전당",
+        "perf_start_date": "2026-03-13",
+        "perf_end_date": "2026-03-14",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF286331",
+        "title": "난쟁이들 [제천]",
+        "venue_name": "제천예술의전당 대공연장",
+        "perf_start_date": "2026-03-27",
+        "perf_end_date": "2026-03-28",
+        "season_rank": 6.0
+      }
+    ]
+  },
+  "남양주시립예술단 신춘음악회::cast0": {
+    "representative_title": "남양주시립예술단 신춘음악회",
+    "members": [
+      {
+        "perf_id": "PF236358",
+        "title": "남양주시립예술단 신춘음악회",
+        "venue_name": "다산아트홀",
+        "perf_start_date": "2024-03-09",
+        "perf_end_date": "2024-03-09",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF260602",
+        "title": "남양주시립예술단 신춘음악회",
+        "venue_name": "다산아트홀",
+        "perf_start_date": "2025-03-22",
+        "perf_end_date": "2025-03-22",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF286085",
+        "title": "남양주시립예술단 신춘음악회",
+        "venue_name": "다산아트홀",
+        "perf_start_date": "2026-03-14",
+        "perf_end_date": "2026-03-14",
+        "season_rank": 5.0
+      }
+    ]
+  },
+  "남양주시립합창단 상상더이상 음악회::남양주시립합창단": {
+    "representative_title": "남양주시립합창단, 상상더이상 음악회",
+    "members": [
+      {
+        "perf_id": "PF266308",
+        "title": "남양주시립합창단, 상상더이상 음악회",
+        "venue_name": "이석영 뉴미디어 도서관 계단존 (1F) ",
+        "perf_start_date": "2025-06-14",
+        "perf_end_date": "2025-06-14",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF269339",
+        "title": "남양주시립합창단, 상상더이상 음악회",
+        "venue_name": "남양주 어린이비전센터 다목적강당",
+        "perf_start_date": "2025-07-26",
+        "perf_end_date": "2025-07-26",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF288356",
+        "title": "남양주시립합창단, 상상더이상 음악회",
+        "venue_name": "화도수동행정복지센터 천마홀(다목적공연장)",
+        "perf_start_date": "2026-04-11",
+        "perf_end_date": "2026-04-11",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF275068",
+        "title": "남양주시립합창단, 상상더이상 음악회",
+        "venue_name": "와부읍주민자치센터 미디어센터",
+        "perf_start_date": "2025-10-16",
+        "perf_end_date": "2025-10-16",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "남양주시립합창단 해설이 있는 음악회: 합창으로 듣는 뮤지컬::남양주시립합창단": {
+    "representative_title": "남양주시립합창단, 해설이 있는 음악회: 합창으로 듣는 뮤지컬",
+    "members": [
+      {
+        "perf_id": "PF250905",
+        "title": "남양주시립합창단, 해설이 있는 음악회: 합창으로 듣는 뮤지컬",
+        "venue_name": "정약용도서관",
+        "perf_start_date": "2024-10-22",
+        "perf_end_date": "2024-10-22",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF246652",
+        "title": "남양주시립합창단, 해설이 있는 음악회: 합창으로 듣는 뮤지컬",
+        "venue_name": "와부읍주민자치센터 미디어센터",
+        "perf_start_date": "2024-08-22",
+        "perf_end_date": "2024-08-22",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "놀부전|::cast0": {
+    "representative_title": "놀부전 [대구]",
+    "members": [
+      {
+        "perf_id": "PF270836",
+        "title": "놀부전 [대구]",
+        "venue_name": "아양아트센터 아양홀",
+        "perf_start_date": "2025-09-04",
+        "perf_end_date": "2025-09-05",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF242734",
+        "title": "놀부전 [함안]",
+        "venue_name": "함안문화예술회관 대공연장",
+        "perf_start_date": "2024-07-20",
+        "perf_end_date": "2024-07-20",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "뉴서울필하모닉의 브람스 & 라흐마니노프::cast0": {
+    "representative_title": "뉴서울필하모닉의 브람스 & 라흐마니노프 [수원]",
+    "members": [
+      {
+        "perf_id": "PF246485",
+        "title": "뉴서울필하모닉의 브람스 & 라흐마니노프 [수원]",
+        "venue_name": "수원SK아트리움 대공연장",
+        "perf_start_date": "2024-09-07",
+        "perf_end_date": "2024-09-08",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF252173",
+        "title": "뉴서울필하모닉의 브람스 & 라흐마니노프 [거창]",
+        "venue_name": "거창문화센터 공연장",
+        "perf_start_date": "2024-10-29",
+        "perf_end_date": "2024-10-29",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "다크니스 품바::cast1": {
+    "representative_title": "다크니스 품바 [제주]",
+    "members": [
+      {
+        "perf_id": "PF250763",
+        "title": "다크니스 품바 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2024-11-09",
+        "perf_end_date": "2024-11-09",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF250430",
+        "title": "다크니스 품바 [성남]",
+        "venue_name": "성남아트센터 오페라하우스",
+        "perf_start_date": "2024-11-13",
+        "perf_end_date": "2024-11-13",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF246801",
+        "title": "다크니스 품바 [대구]",
+        "venue_name": "어울아트센터(구. 대구북구문예회관) 함지홀(대공연장)",
+        "perf_start_date": "2024-09-07",
+        "perf_end_date": "2024-09-07",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF274898",
+        "title": "다크니스 품바 [영덕]",
+        "venue_name": "예주문화예술회관",
+        "perf_start_date": "2025-12-06",
+        "perf_end_date": "2025-12-06",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "단명소녀 투쟁기::경기도극단": {
+    "representative_title": "단명소녀 투쟁기 [수원]",
+    "members": [
+      {
+        "perf_id": "PF238099",
+        "title": "단명소녀 투쟁기 [수원]",
+        "venue_name": "경기아트센터(구. 경기도문화의전당) 소극장",
+        "perf_start_date": "2024-05-03",
+        "perf_end_date": "2024-05-05",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF261729",
+        "title": "단명소녀 투쟁기 [수원]",
+        "venue_name": "경기아트센터(구. 경기도문화의전당) 소극장",
+        "perf_start_date": "2025-05-08",
+        "perf_end_date": "2025-05-11",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "대구국제금관·타악페스티벌 대구시립교향악단::대구국제금관·타악페스티벌": {
+    "representative_title": "대구국제금관·타악페스티벌, 대구시립교향악단 (08.20)",
+    "members": [
+      {
+        "perf_id": "PF269620",
+        "title": "대구국제금관·타악페스티벌, 대구시립교향악단 (08.20)",
+        "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
+        "perf_start_date": "2025-08-20",
+        "perf_end_date": "2025-08-20",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF269591",
+        "title": "대구국제금관·타악페스티벌, 대구시립교향악단 (08.21)",
+        "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
+        "perf_start_date": "2025-08-21",
+        "perf_end_date": "2025-08-21",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "대구시립교향악단 대구국제피아노페스티벌::대구시립교향악단": {
+    "representative_title": "대구시립교향악단, 대구국제피아노페스티벌 (08.23)",
+    "members": [
+      {
+        "perf_id": "PF245073",
+        "title": "대구시립교향악단, 대구국제피아노페스티벌 (08.23)",
+        "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
+        "perf_start_date": "2024-08-23",
+        "perf_end_date": "2024-08-23",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF245082",
+        "title": "대구시립교향악단, 대구국제피아노페스티벌 (08.22)",
+        "venue_name": "대구콘서트하우스 그랜드홀 (대공연장) ",
+        "perf_start_date": "2024-08-22",
+        "perf_end_date": "2024-08-22",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "대전시립연정국악단 풍류마당 젊은국악::대전시립연정국악단 풍류마당": {
+    "representative_title": "대전시립연정국악단 풍류마당, 젊은국악",
+    "members": [
+      {
+        "perf_id": "PF274090",
+        "title": "대전시립연정국악단 풍류마당, 젊은국악",
+        "venue_name": "대전시립연정국악원 큰마당",
+        "perf_start_date": "2025-11-06",
+        "perf_end_date": "2025-11-06",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF250115",
+        "title": "대전시립연정국악단 풍류마당, 젊은국악",
+        "venue_name": "대전시립연정국악원 큰마당",
+        "perf_start_date": "2024-11-01",
+        "perf_end_date": "2024-11-01",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "대전시립합창단 기획연주회2: 봄의 시작::대전시립합창단": {
+    "representative_title": "대전시립합창단, 기획연주회2: 봄의 시작",
+    "members": [
+      {
+        "perf_id": "PF237732",
+        "title": "대전시립합창단, 기획연주회2: 봄의 시작",
+        "venue_name": "대전시립연정국악원 큰마당",
+        "perf_start_date": "2024-03-29",
+        "perf_end_date": "2024-03-29",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF237428",
+        "title": "대전시립합창단, 기획연주회2: 봄의 시작",
+        "venue_name": "대전시립연정국악원 큰마당",
+        "perf_start_date": "2024-04-12",
+        "perf_end_date": "2024-04-12",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "더 어린 관객을 위한 극장 봄여름가을겨울 슴숨슘::국립아시아문화전당": {
+    "representative_title": "더 어린 관객을 위한 극장, 봄여름가을겨울 슴숨슘",
+    "members": [
+      {
+        "perf_id": "PF288035",
+        "title": "더 어린 관객을 위한 극장, 봄여름가을겨울 슴숨슘",
+        "venue_name": "국립아시아문화전당 어린이극장",
+        "perf_start_date": "2026-05-09",
+        "perf_end_date": "2026-05-10",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF263198",
+        "title": "더 어린 관객을 위한 극장, 봄여름가을겨울 슴숨슘",
+        "venue_name": "국립아시아문화전당 광장",
+        "perf_start_date": "2025-05-09",
+        "perf_end_date": "2025-05-11",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "돈데보이: 가객들의 여행::극단 물결": {
+    "representative_title": "돈데보이: 가객들의 여행 [울주]",
+    "members": [
+      {
+        "perf_id": "PF259390",
+        "title": "돈데보이: 가객들의 여행 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2025-04-04",
+        "perf_end_date": "2025-04-05",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF259116",
+        "title": "돈데보이: 가객들의 여행 [울주]",
+        "venue_name": "울주문화예술회관 그린나래홀 (공연장) ",
+        "perf_start_date": "2025-03-14",
+        "perf_end_date": "2025-03-14",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "돈키호테|M발레단(엠발레단)::M발레단(엠발레단)": {
+    "representative_title": "돈키호테 [산청]",
+    "members": [
+      {
+        "perf_id": "PF277192",
+        "title": "돈키호테 [산청]",
+        "venue_name": "산청문화예술회관 대공연장",
+        "perf_start_date": "2025-11-06",
+        "perf_end_date": "2025-11-06",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF272417",
+        "title": "돈키호테 [대구]",
+        "venue_name": "어울아트센터(구. 대구북구문예회관) 함지홀(대공연장)",
+        "perf_start_date": "2025-09-25",
+        "perf_end_date": "2025-09-25",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "동백당: 빵집의 사람들::cast0": {
+    "representative_title": "동백당: 빵집의 사람들 [완주]",
+    "members": [
+      {
+        "perf_id": "PF269321",
+        "title": "동백당: 빵집의 사람들 [완주]",
+        "venue_name": "완주문화예술회관 대극장",
+        "perf_start_date": "2025-08-14",
+        "perf_end_date": "2025-08-14",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF269086",
+        "title": "동백당: 빵집의 사람들 [강원]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 소공연장",
+        "perf_start_date": "2025-08-24",
+        "perf_end_date": "2025-08-24",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "동백당: 빵집의 사람들::프로덕션IDA": {
+    "representative_title": "동백당: 빵집의 사람들 [남원]",
+    "members": [
+      {
+        "perf_id": "PF266152",
+        "title": "동백당: 빵집의 사람들 [남원]",
+        "venue_name": "춘향문화예술회관 대공연장",
+        "perf_start_date": "2025-06-14",
+        "perf_end_date": "2025-06-14",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF262459",
+        "title": "동백당: 빵집의 사람들 [증평]",
+        "venue_name": "증평문화회관 대강당",
+        "perf_start_date": "2025-04-10",
+        "perf_end_date": "2025-04-10",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "딴소리 판::cast0": {
+    "representative_title": "딴소리 판 [서천]",
+    "members": [
+      {
+        "perf_id": "PF287419",
+        "title": "딴소리 판 [서천]",
+        "venue_name": "서천문예의전당 대강당",
+        "perf_start_date": "2026-04-08",
+        "perf_end_date": "2026-04-08",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF271504",
+        "title": "딴소리 판 [부산 영도]",
+        "venue_name": "영도문화예술회관 대공연장(봉래홀)",
+        "perf_start_date": "2025-09-06",
+        "perf_end_date": "2025-09-06",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF266522",
+        "title": "딴소리 판 [영월]",
+        "venue_name": "영월군문화예술회관",
+        "perf_start_date": "2025-07-04",
+        "perf_end_date": "2025-07-04",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF272247",
+        "title": "딴소리 판 [창녕]",
+        "venue_name": "창녕문화예술회관 대공연장",
+        "perf_start_date": "2025-09-10",
+        "perf_end_date": "2025-09-10",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF264609",
+        "title": "딴소리 판 [강진]",
+        "venue_name": "강진아트홀 대공연장",
+        "perf_start_date": "2025-06-21",
+        "perf_end_date": "2025-06-21",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "라 트라비아타::cast27": {
+    "representative_title": "라 트라비아타 [고령]",
+    "members": [
+      {
+        "perf_id": "PF262887",
+        "title": "라 트라비아타 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2025-06-14",
+        "perf_end_date": "2025-06-14",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF271723",
+        "title": "라 트라비아타 [고령]",
+        "venue_name": "경북고령대가야문화누리 (구. 대가야국악당) 대공연장 (우륵홀) ",
+        "perf_start_date": "2025-08-29",
+        "perf_end_date": "2025-08-29",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "라흐 헤스트::cast0": {
+    "representative_title": "라흐 헤스트 [안양]",
+    "members": [
+      {
+        "perf_id": "PF265466",
+        "title": "라흐 헤스트 [안양]",
+        "venue_name": "평촌아트홀",
+        "perf_start_date": "2025-06-27",
+        "perf_end_date": "2025-06-28",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF256997",
+        "title": "라흐 헤스트 [공주]",
+        "venue_name": "공주문예회관 대공연장",
+        "perf_start_date": "2025-07-11",
+        "perf_end_date": "2025-07-12",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF266183",
+        "title": "라흐 헤스트 [군산]",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2025-07-05",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "렛미플라이::cast0": {
+    "representative_title": "렛미플라이 [부산]",
+    "members": [
+      {
+        "perf_id": "PF217908",
+        "title": "렛미플라이 [부산]",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2023-12-15",
+        "perf_end_date": "2023-12-16",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF223348",
+        "title": "렛미플라이 [여주]",
+        "venue_name": "세종국악당",
+        "perf_start_date": "2023-09-16",
+        "perf_end_date": "2023-09-16",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "렛미플라이::cast1": {
+    "representative_title": "렛미플라이 [구미]",
+    "members": [
+      {
+        "perf_id": "PF248774",
+        "title": "렛미플라이 [구미]",
+        "venue_name": "구미시문화예술회관 대공연장",
+        "perf_start_date": "2024-10-25",
+        "perf_end_date": "2024-10-26",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF229738",
+        "title": "렛미플라이 [안양]",
+        "venue_name": "평촌아트홀",
+        "perf_start_date": "2023-12-23",
+        "perf_end_date": "2023-12-24",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF249407",
+        "title": "렛미플라이 [울진]",
+        "venue_name": "울진문화예술회관",
+        "perf_start_date": "2024-10-04",
+        "perf_end_date": "2024-10-05",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "로제타|국립아시아문화전당::국립아시아문화전당": {
+    "representative_title": "로제타",
+    "members": [
+      {
+        "perf_id": "PF270404",
+        "title": "로제타",
+        "venue_name": "국립극단 [명동] 명동예술극장",
+        "perf_start_date": "2025-08-23",
+        "perf_end_date": "2025-08-31",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF270620",
+        "title": "로제타 [부산]",
+        "venue_name": "(재) 영화의전당 하늘연극장",
+        "perf_start_date": "2025-09-05",
+        "perf_end_date": "2025-09-06",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "록산느를 위한 발라드::국립어린이청소년극단(구. (재) 국립극단 어린이청소년극연구소)": {
+    "representative_title": "록산느를 위한 발라드 [평택]",
+    "members": [
+      {
+        "perf_id": "PF266239",
+        "title": "록산느를 위한 발라드 [평택]",
+        "venue_name": "평택시남부문예회관 대공연장",
+        "perf_start_date": "2025-07-04",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF263844",
+        "title": "록산느를 위한 발라드 [광명]",
+        "venue_name": "광명시민회관 대공연장",
+        "perf_start_date": "2025-05-30",
+        "perf_end_date": "2025-05-31",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "마리 퀴리::cast0": {
+    "representative_title": "마리 퀴리",
+    "members": [
+      {
+        "perf_id": "PF226540",
+        "title": "마리 퀴리",
+        "venue_name": "홍익대 대학로 아트센터 대극장",
+        "perf_start_date": "2023-11-24",
+        "perf_end_date": "2024-02-18",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF226243",
+        "title": "마리 퀴리 [부산]",
+        "venue_name": "부산문화회관 대극장",
+        "perf_start_date": "2023-10-14",
+        "perf_end_date": "2023-10-15",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "마리 퀴리::cast2": {
+    "representative_title": "마리 퀴리 [부평]",
+    "members": [
+      {
+        "perf_id": "PF274839",
+        "title": "마리 퀴리 [부평]",
+        "venue_name": "부평아트센터 해누리극장",
+        "perf_start_date": "2025-12-13",
+        "perf_end_date": "2025-12-14",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF274251",
+        "title": "마리 퀴리 [고양]",
+        "venue_name": "고양어울림누리 어울림극장",
+        "perf_start_date": "2025-11-08",
+        "perf_end_date": "2025-11-09",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "마술피리: 희망의 메아리::cast0": {
+    "representative_title": "마술피리: 희망의 메아리 [상주]",
+    "members": [
+      {
+        "perf_id": "PF244361",
+        "title": "마술피리: 희망의 메아리 [상주]",
+        "venue_name": "상주문화회관 대공연장",
+        "perf_start_date": "2024-07-20",
+        "perf_end_date": "2024-07-20",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF242250",
+        "title": "마술피리: 희망의 메아리 [전남]",
+        "venue_name": "강진아트홀 대공연장",
+        "perf_start_date": "2024-06-15",
+        "perf_end_date": "2024-06-15",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "만능재치꾼 피가로 세빌리아의 이발사::만능재치꾼 피가로": {
+    "representative_title": "만능재치꾼 피가로, 세빌리아의 이발사 [장흥]",
+    "members": [
+      {
+        "perf_id": "PF272418",
+        "title": "만능재치꾼 피가로, 세빌리아의 이발사 [장흥]",
+        "venue_name": "장흥문화예술회관 대공연장",
+        "perf_start_date": "2025-09-12",
+        "perf_end_date": "2025-09-12",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF273685",
+        "title": "만능재치꾼 피가로, 세빌리아의 이발사 [인천 계양]",
+        "venue_name": "계양문화회관 대공연장",
+        "perf_start_date": "2025-09-26",
+        "perf_end_date": "2025-09-27",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF273348",
+        "title": "만능재치꾼 피가로, 세빌리아의 이발사 [하동]",
+        "venue_name": "하동문화예술회관 대공연장",
+        "perf_start_date": "2025-09-18",
+        "perf_end_date": "2025-09-18",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "말뚝이 가라사대::cast0": {
+    "representative_title": "말뚝이 가라사대 [울산]",
+    "members": [
+      {
+        "perf_id": "PF245647",
+        "title": "말뚝이 가라사대 [부산 동래]",
+        "venue_name": "동래문화회관 대극장",
+        "perf_start_date": "2024-08-17",
+        "perf_end_date": "2024-08-17",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF247486",
+        "title": "말뚝이 가라사대 [울산]",
+        "venue_name": "울산중구문화의전당 함월홀 (2층) ",
+        "perf_start_date": "2024-10-11",
+        "perf_end_date": "2024-10-11",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF249735",
+        "title": "말뚝이 가라사대 [이천]",
+        "venue_name": "이천아트홀 소공연장",
+        "perf_start_date": "2024-11-08",
+        "perf_end_date": "2024-11-08",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "매우 춰라!::cast0": {
+    "representative_title": "매우 춰라! [하남]",
+    "members": [
+      {
+        "perf_id": "PF261893",
+        "title": "매우 춰라! [하남]",
+        "venue_name": "하남문화예술회관 검단홀(대극장)",
+        "perf_start_date": "2025-05-28",
+        "perf_end_date": "2025-05-28",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF262081",
+        "title": "매우 춰라! [인천]",
+        "venue_name": "부평아트센터 해누리극장",
+        "perf_start_date": "2025-06-13",
+        "perf_end_date": "2025-06-13",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF264802",
+        "title": "매우 춰라! [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2025-06-20",
+        "perf_end_date": "2025-06-20",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF277835",
+        "title": "매우 춰라! [의성]",
+        "venue_name": "의성문화회관",
+        "perf_start_date": "2025-11-13",
+        "perf_end_date": "2025-11-13",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "명가월륜: 불멸의 춤 원왕생무::cast0": {
+    "representative_title": "명가월륜: 불멸의 춤, 원왕생무 [아산]",
+    "members": [
+      {
+        "perf_id": "PF252724",
+        "title": "명가월륜: 불멸의 춤, 원왕생무 [서울 은평]",
+        "venue_name": "은평문화예술회관 공연장",
+        "perf_start_date": "2024-11-23",
+        "perf_end_date": "2024-11-23",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF253658",
+        "title": "명가월륜: 불멸의 춤, 원왕생무 [아산]",
+        "venue_name": "아산시 평생학습관(아산아트홀) 아산아트홀(아산시평생학습관)",
+        "perf_start_date": "2024-11-16",
+        "perf_end_date": "2024-11-16",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "목 짧은 기린 지피::cast0": {
+    "representative_title": "목 짧은 기린 지피 [거창]",
+    "members": [
+      {
+        "perf_id": "PF242723",
+        "title": "목 짧은 기린 지피 [거창]",
+        "venue_name": "거창문화센터 공연장",
+        "perf_start_date": "2024-06-22",
+        "perf_end_date": "2024-06-22",
+        "season_rank": 22.0
+      },
+      {
+        "perf_id": "PF242496",
+        "title": "목 짧은 기린 지피 [의령]",
+        "venue_name": "의령군민문화회관",
+        "perf_start_date": "2024-06-19",
+        "perf_end_date": "2024-06-19",
+        "season_rank": 21.0
+      },
+      {
+        "perf_id": "PF243448",
+        "title": "목 짧은 기린 지피 [춘천]",
+        "venue_name": "춘천인형극장 대극장",
+        "perf_start_date": "2024-07-27",
+        "perf_end_date": "2024-07-27",
+        "season_rank": 23.0
+      }
+    ]
+  },
+  "목련 아래의 디오니소스::극단 난희 (The 난희)": {
+    "representative_title": "목련 아래의 디오니소스 [인천]",
+    "members": [
+      {
+        "perf_id": "PF224589",
+        "title": "목련 아래의 디오니소스 [인천]",
+        "venue_name": "부평아트센터 해누리극장",
+        "perf_start_date": "2023-10-20",
+        "perf_end_date": "2023-10-21",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF226234",
+        "title": "목련 아래의 디오니소스 [진주]",
+        "venue_name": "현장아트홀",
+        "perf_start_date": "2023-10-27",
+        "perf_end_date": "2023-10-28",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "몬드리안: 더 라인 오브 옵세션::cast0": {
+    "representative_title": "몬드리안: 더 라인 오브 옵세션 [익산]",
+    "members": [
+      {
+        "perf_id": "PF267170",
+        "title": "몬드리안: 더 라인 오브 옵세션 [익산]",
+        "venue_name": "익산예술의전당 대공연장",
+        "perf_start_date": "2025-08-02",
+        "perf_end_date": "2025-08-02",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF268184",
+        "title": "몬드리안: 더 라인 오브 옵세션 [수원]",
+        "venue_name": "수원문화원 (빛누리아트홀) 수원문화원 (빛누리아트홀) ",
+        "perf_start_date": "2025-07-26",
+        "perf_end_date": "2025-07-26",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "무명호걸|::cast1": {
+    "representative_title": "무명호걸 [태안]",
+    "members": [
+      {
+        "perf_id": "PF276019",
+        "title": "무명호걸 [태안]",
+        "venue_name": "태안군문화예술회관 대공연장",
+        "perf_start_date": "2025-10-23",
+        "perf_end_date": "2025-10-23",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF266826",
+        "title": "무명호걸 [예천]",
+        "venue_name": "예천군문화회관",
+        "perf_start_date": "2025-06-28",
+        "perf_end_date": "2025-06-28",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF265274",
+        "title": "무명호걸 [포천]",
+        "venue_name": "포천반월아트홀 대극장",
+        "perf_start_date": "2025-06-13",
+        "perf_end_date": "2025-06-13",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "밀정리스트::cast2": {
+    "representative_title": "밀정리스트 [김포]",
+    "members": [
+      {
+        "perf_id": "PF248929",
+        "title": "밀정리스트 [김포]",
+        "venue_name": "김포아트홀",
+        "perf_start_date": "2024-10-04",
+        "perf_end_date": "2024-10-05",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF249338",
+        "title": "밀정리스트 [울산]",
+        "venue_name": "서울주문화센터 공연장",
+        "perf_start_date": "2024-10-01",
+        "perf_end_date": "2024-10-02",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "바람 다녀가셔요::바람": {
+    "representative_title": "바람, 다녀가셔요 [고창]",
+    "members": [
+      {
+        "perf_id": "PF273432",
+        "title": "바람, 다녀가셔요 [고창]",
+        "venue_name": "고창문화의전당 공연장",
+        "perf_start_date": "2025-09-11",
+        "perf_end_date": "2025-09-11",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF273519",
+        "title": "바람, 다녀가셔요 [아산]",
+        "venue_name": "아산시 평생학습관(아산아트홀) 아산아트홀(아산시평생학습관)",
+        "perf_start_date": "2025-10-18",
+        "perf_end_date": "2025-10-18",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "바흐가 사랑한 커피 이야기::cast0": {
+    "representative_title": "바흐가 사랑한 커피 이야기 [오산]",
+    "members": [
+      {
+        "perf_id": "PF271259",
+        "title": "바흐가 사랑한 커피 이야기 [오산]",
+        "venue_name": "오산문화예술회관 대공연장",
+        "perf_start_date": "2025-09-06",
+        "perf_end_date": "2025-09-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF272116",
+        "title": "바흐가 사랑한 커피 이야기 [서산]",
+        "venue_name": "서산시문화회관 대공연장",
+        "perf_start_date": "2025-09-12",
+        "perf_end_date": "2025-09-12",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "반쪽이전|협동조합손에손에::협동조합손에손에": {
+    "representative_title": "반쪽이전 [화성]",
+    "members": [
+      {
+        "perf_id": "PF243526",
+        "title": "반쪽이전 [화성]",
+        "venue_name": "화성아트홀",
+        "perf_start_date": "2024-09-21",
+        "perf_end_date": "2024-09-21",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF247301",
+        "title": "반쪽이전 [영광]",
+        "venue_name": "영광예술의전당 대공연장",
+        "perf_start_date": "2024-08-29",
+        "perf_end_date": "2024-08-29",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "발레 판타지아::cast0": {
+    "representative_title": "발레 판타지아 [부천]",
+    "members": [
+      {
+        "perf_id": "PF248671",
+        "title": "발레 판타지아 [부천]",
+        "venue_name": "부천시민회관 대공연장",
+        "perf_start_date": "2024-10-12",
+        "perf_end_date": "2024-10-12",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF249134",
+        "title": "발레 판타지아 [용인]",
+        "venue_name": "용인시평생학습관 (여성회관) 큰어울마당",
+        "perf_start_date": "2024-10-03",
+        "perf_end_date": "2024-10-03",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "방구석 뮤지컬::(주)쇼노트": {
+    "representative_title": "방구석 뮤지컬 [고양]",
+    "members": [
+      {
+        "perf_id": "PF270919",
+        "title": "방구석 뮤지컬 [고양]",
+        "venue_name": "고양아람누리 새라새극장",
+        "perf_start_date": "2025-09-13",
+        "perf_end_date": "2025-09-14",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF264532",
+        "title": "방구석 뮤지컬 [군포]",
+        "venue_name": "군포문화예술회관 철쭉홀",
+        "perf_start_date": "2025-07-12",
+        "perf_end_date": "2025-07-12",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "배소고지 이야기: 기억의 연못::cast0": {
+    "representative_title": "배소고지 이야기: 기억의 연못 [평택]",
+    "members": [
+      {
+        "perf_id": "PF270847",
+        "title": "배소고지 이야기: 기억의 연못 [평택]",
+        "venue_name": "평택시남부문예회관 대공연장",
+        "perf_start_date": "2025-09-19",
+        "perf_end_date": "2025-09-19",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF244934",
+        "title": "배소고지 이야기: 기억의 연못 [광양]",
+        "venue_name": "광양시문화예술회관 대공연장",
+        "perf_start_date": "2024-08-03",
+        "perf_end_date": "2024-08-03",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF246102",
+        "title": "배소고지 이야기: 기억의 연못 [부산]",
+        "venue_name": "(재) 영화의전당 하늘연극장",
+        "perf_start_date": "2024-09-21",
+        "perf_end_date": "2024-09-21",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF244670",
+        "title": "배소고지 이야기: 기억의 연못 [논산]",
+        "venue_name": "논산아트센터(구. 논산문화예술회관) 대공연장",
+        "perf_start_date": "2024-07-19",
+        "perf_end_date": "2024-07-20",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF248479",
+        "title": "배소고지 이야기: 기억의 연못 [순천]",
+        "venue_name": "순천문화예술회관 대극장",
+        "perf_start_date": "2024-09-28",
+        "perf_end_date": "2024-09-28",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "배소고지 이야기: 기억의 연못::프로덕션IDA": {
+    "representative_title": "배소고지 이야기: 기억의 연못 [제주]",
+    "members": [
+      {
+        "perf_id": "PF243226",
+        "title": "배소고지 이야기: 기억의 연못 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2024-07-13",
+        "perf_end_date": "2024-07-13",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF244121",
+        "title": "배소고지 이야기: 기억의 연못 [목포]",
+        "venue_name": "목포문화예술회관",
+        "perf_start_date": "2024-07-27",
+        "perf_end_date": "2024-07-27",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "베로나의 두 신사::극단 여행자": {
+    "representative_title": "베로나의 두 신사 [안양]",
+    "members": [
+      {
+        "perf_id": "PF270573",
+        "title": "베로나의 두 신사 [안양]",
+        "venue_name": "평촌아트홀",
+        "perf_start_date": "2025-09-13",
+        "perf_end_date": "2025-09-13",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF263660",
+        "title": "베로나의 두 신사 [김해]",
+        "venue_name": "김해서부문화센터 하늬홀",
+        "perf_start_date": "2025-06-20",
+        "perf_end_date": "2025-06-21",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "벨벳토끼|창작하는 타루::창작하는 타루": {
+    "representative_title": "벨벳토끼 [김해]",
+    "members": [
+      {
+        "perf_id": "PF262046",
+        "title": "벨벳토끼 [김해]",
+        "venue_name": "김해서부문화센터 하늬홀",
+        "perf_start_date": "2025-05-04",
+        "perf_end_date": "2025-05-05",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF245710",
+        "title": "벨벳토끼 [완주]",
+        "venue_name": "완주향토예술문화회관 공연장",
+        "perf_start_date": "2024-08-23",
+        "perf_end_date": "2024-08-24",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "보물섬을 찾아 떠나보세!::cast0": {
+    "representative_title": "보물섬을 찾아 떠나보세! [연천]",
+    "members": [
+      {
+        "perf_id": "PF245040",
+        "title": "보물섬을 찾아 떠나보세! [연천]",
+        "venue_name": "연천수레울아트홀 대공연장",
+        "perf_start_date": "2024-08-30",
+        "perf_end_date": "2024-08-30",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF247340",
+        "title": "보물섬을 찾아 떠나보세! [부산]",
+        "venue_name": "영도문화예술회관 대공연장(봉래홀)",
+        "perf_start_date": "2024-09-20",
+        "perf_end_date": "2024-09-20",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF252836",
+        "title": "보물섬을 찾아 떠나보세! [합천]",
+        "venue_name": "합천군문화예술회관 대공연장",
+        "perf_start_date": "2024-11-20",
+        "perf_end_date": "2024-11-20",
+        "season_rank": 6.0
+      }
+    ]
+  },
+  "부산발레시어터 호두까기인형::부산발레시어터": {
+    "representative_title": "부산발레시어터, 호두까기인형 [예산]",
+    "members": [
+      {
+        "perf_id": "PF278816",
+        "title": "부산발레시어터, 호두까기인형 [예산]",
+        "venue_name": "충남도청 문예회관",
+        "perf_start_date": "2025-12-11",
+        "perf_end_date": "2025-12-11",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF277374",
+        "title": "부산발레시어터, 호두까기인형 [울산 중구]",
+        "venue_name": "울산중구문화의전당 함월홀 (2층) ",
+        "perf_start_date": "2025-12-13",
+        "perf_end_date": "2025-12-13",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "부산시립교향악단 기획음악회 미완성 음악회 Ⅱ::부산시립교향악단 기획음악회": {
+    "representative_title": "부산시립교향악단 기획음악회, 미완성 음악회 Ⅱ",
+    "members": [
+      {
+        "perf_id": "PF240023",
+        "title": "부산시립교향악단 기획음악회, 미완성 음악회 Ⅱ",
+        "venue_name": "부산문화회관 대극장",
+        "perf_start_date": "2024-06-20",
+        "perf_end_date": "2024-06-20",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF259029",
+        "title": "부산시립교향악단 기획음악회, 미완성 음악회 Ⅱ",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2025-03-05",
+        "perf_end_date": "2025-03-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "부산시립국악관현악단 특별연주회 국악 브런치 콘서트: 국악 살롱 Salon::부산시립국악관현악단 특별연주회": {
+    "representative_title": "부산시립국악관현악단 특별연주회, 국악 브런치 콘서트: 국악 살롱, Salon",
+    "members": [
+      {
+        "perf_id": "PF261768",
+        "title": "부산시립국악관현악단 특별연주회, 국악 브런치 콘서트: 국악 살롱, Salon",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2025-04-23",
+        "perf_end_date": "2025-04-23",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF234748",
+        "title": "부산시립국악관현악단 특별연주회, 국악 브런치 콘서트: 국악 살롱, Salon",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2024-02-27",
+        "perf_end_date": "2024-02-27",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "부산시립극단 신데렐라: 너의 뜻대로::부산시립극단": {
+    "representative_title": "부산시립극단, 신데렐라: 너의 뜻대로",
+    "members": [
+      {
+        "perf_id": "PF234025",
+        "title": "부산시립극단, 신데렐라: 너의 뜻대로",
+        "venue_name": "부산문화회관 사랑채극장 (소극장) ",
+        "perf_start_date": "2024-09-07",
+        "perf_end_date": "2024-10-12",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF263156",
+        "title": "부산시립극단, 신데렐라: 너의 뜻대로",
+        "venue_name": "부산문화회관 사랑채극장 (소극장) ",
+        "perf_start_date": "2025-06-06",
+        "perf_end_date": "2025-07-06",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF287280",
+        "title": "부산시립극단, 신데렐라: 너의 뜻대로 [부산]",
+        "venue_name": "부산문화회관 사랑채극장 (소극장) ",
+        "perf_start_date": "2026-04-03",
+        "perf_end_date": "2026-04-25",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "부산시립소년소녀합창단 특별연주회 Friendly Concert::부산시립소년소녀합창단 특별연주회": {
+    "representative_title": "부산시립소년소녀합창단 특별연주회, Friendly Concert (프렌들리 콘서트)",
+    "members": [
+      {
+        "perf_id": "PF284619",
+        "title": "부산시립소년소녀합창단 특별연주회, Friendly Concert (프렌들리 콘서트)",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2026-03-07",
+        "perf_end_date": "2026-03-07",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF259850",
+        "title": "부산시립소년소녀합창단 특별연주회, Friendly Concert (프렌들리 콘서트)",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2025-03-29",
+        "perf_end_date": "2025-03-29",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "부산시립예술단 토크오페라 마술피리::부산시립예술단 토크오페라": {
+    "representative_title": "부산시립예술단 토크오페라, 마술피리",
+    "members": [
+      {
+        "perf_id": "PF243878",
+        "title": "부산시립예술단 토크오페라, 마술피리",
+        "venue_name": "부산문화회관 대극장",
+        "perf_start_date": "2024-07-04",
+        "perf_end_date": "2024-07-05",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF239764",
+        "title": "부산시립예술단 토크오페라, 마술피리 [부산]",
+        "venue_name": "부산시민회관 소극장",
+        "perf_start_date": "2024-04-24",
+        "perf_end_date": "2024-05-03",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "부산시립청소년교향악단 예술교육공연 재밌는 클래식 맛있는 클래식::부산시립청소년교향악단 예술교육공연": {
+    "representative_title": "부산시립청소년교향악단 예술교육공연, 재밌는 클래식 맛있는 클래식",
+    "members": [
+      {
+        "perf_id": "PF251355",
+        "title": "부산시립청소년교향악단 예술교육공연, 재밌는 클래식 맛있는 클래식",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2024-10-15",
+        "perf_end_date": "2024-10-15",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF252566",
+        "title": "부산시립청소년교향악단 예술교육공연, 재밌는 클래식 맛있는 클래식",
+        "venue_name": "부산시민회관 대극장",
+        "perf_start_date": "2024-10-30",
+        "perf_end_date": "2024-10-30",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF251956",
+        "title": "부산시립청소년교향악단 예술교육공연, 재밌는 클래식 맛있는 클래식",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2024-10-22",
+        "perf_end_date": "2024-10-22",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF253540",
+        "title": "부산시립청소년교향악단 예술교육공연, 재밌는 클래식 맛있는 클래식",
+        "venue_name": "부산문화회관 대극장",
+        "perf_start_date": "2024-11-12",
+        "perf_end_date": "2024-11-12",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF265798",
+        "title": "부산시립청소년교향악단 예술교육공연, 재밌는 클래식 맛있는 클래식",
+        "venue_name": "부산문화회관 대극장",
+        "perf_start_date": "2025-06-04",
+        "perf_end_date": "2025-06-04",
+        "season_rank": 8.0
+      }
+    ]
+  },
+  "부산시립청소년교향악단 특별연주회 유망주음악회::부산시립청소년교향악단 특별연주회": {
+    "representative_title": "부산시립청소년교향악단 특별연주회, 유망주음악회",
+    "members": [
+      {
+        "perf_id": "PF259885",
+        "title": "부산시립청소년교향악단 특별연주회, 유망주음악회",
+        "venue_name": "부산문화회관 챔버홀",
+        "perf_start_date": "2025-04-19",
+        "perf_end_date": "2025-04-19",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF265800",
+        "title": "부산시립청소년교향악단 특별연주회, 유망주음악회",
+        "venue_name": "부산문화회관 챔버홀",
+        "perf_start_date": "2025-06-14",
+        "perf_end_date": "2025-06-14",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "부산시립합창단 예술교육공연 교실 밖 합창여행::부산시립합창단 예술교육공연": {
+    "representative_title": "부산시립합창단 예술교육공연, 교실 밖 합창여행",
+    "members": [
+      {
+        "perf_id": "PF278381",
+        "title": "부산시립합창단 예술교육공연, 교실 밖 합창여행",
+        "venue_name": "부산문화회관 챔버홀",
+        "perf_start_date": "2025-11-05",
+        "perf_end_date": "2025-11-07",
+        "season_rank": 8.0
+      },
+      {
+        "perf_id": "PF275579",
+        "title": "부산시립합창단 예술교육공연, 교실 밖 합창여행 (10.01)",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2025-10-01",
+        "perf_end_date": "2025-10-01",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF240659",
+        "title": "부산시립합창단 예술교육공연, 교실 밖 합창여행",
+        "venue_name": "부산시민회관 소극장",
+        "perf_start_date": "2024-06-05",
+        "perf_end_date": "2024-06-05",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF240601",
+        "title": "부산시립합창단 예술교육공연, 교실 밖 합창여행 (10.02)",
+        "venue_name": "부산문화회관 중극장",
+        "perf_start_date": "2024-10-02",
+        "perf_end_date": "2024-10-02",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF253064",
+        "title": "부산시립합창단 예술교육공연, 교실 밖 합창여행 (11.06)",
+        "venue_name": "부산시민회관 대극장",
+        "perf_start_date": "2024-11-06",
+        "perf_end_date": "2024-11-06",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF253760",
+        "title": "부산시립합창단 예술교육공연, 교실 밖 합창여행 (11.14)",
+        "venue_name": "부산문화회관 대극장",
+        "perf_start_date": "2024-11-14",
+        "perf_end_date": "2024-11-14",
+        "season_rank": 6.0
+      }
+    ]
+  },
+  "부산시립합창단 피노키오와 파란마녀::부산시립합창단": {
+    "representative_title": "부산시립합창단, 피노키오와 파란마녀",
+    "members": [
+      {
+        "perf_id": "PF235055",
+        "title": "부산시립합창단, 피노키오와 파란마녀",
+        "venue_name": "부산문화회관 대극장",
+        "perf_start_date": "2024-05-03",
+        "perf_end_date": "2024-05-04",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF258224",
+        "title": "부산시립합창단, 피노키오와 파란마녀",
+        "venue_name": "부산문화회관 대극장",
+        "perf_start_date": "2025-05-03",
+        "perf_end_date": "2025-05-04",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "부천시립예술단 BICOF와 함께하는 부천시민의날 경축음악회::cast0": {
+    "representative_title": "부천시립예술단 BICOF와 함께하는 부천시민의날 경축음악회",
+    "members": [
+      {
+        "perf_id": "PF249759",
+        "title": "부천시립예술단 BICOF와 함께하는 부천시민의날 경축음악회",
+        "venue_name": "부천아트센터 콘서트홀",
+        "perf_start_date": "2024-10-02",
+        "perf_end_date": "2024-10-02",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF262258",
+        "title": "부천시립예술단 BICOF와 함께하는 부천시민의날 경축음악회 [부천]",
+        "venue_name": "부천아트센터 콘서트홀",
+        "perf_start_date": "2025-09-26",
+        "perf_end_date": "2025-09-26",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "북극곰 로라::공연배달서비스간다": {
+    "representative_title": "북극곰 로라 [군산]",
+    "members": [
+      {
+        "perf_id": "PF251073",
+        "title": "북극곰 로라 [군산]",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2024-11-09",
+        "perf_end_date": "2024-11-09",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF251705",
+        "title": "북극곰 로라 [김포]",
+        "venue_name": "김포아트홀",
+        "perf_start_date": "2024-11-01",
+        "perf_end_date": "2024-11-02",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "브람스|NTA 컴퍼니::NTA 컴퍼니": {
+    "representative_title": "브람스 [인천 중구]",
+    "members": [
+      {
+        "perf_id": "PF248029",
+        "title": "브람스 [인천 중구]",
+        "venue_name": "인천중구문화회관",
+        "perf_start_date": "2024-09-28",
+        "perf_end_date": "2024-09-29",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF246675",
+        "title": "브람스 [인천 남동]",
+        "venue_name": "남동소래아트홀 소래극장 (대공연장) ",
+        "perf_start_date": "2024-09-06",
+        "perf_end_date": "2024-09-07",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "블루도그스::cast0": {
+    "representative_title": "블루도그스 [천안]",
+    "members": [
+      {
+        "perf_id": "PF248138",
+        "title": "블루도그스 [천안]",
+        "venue_name": "천안시성환문화회관 대공연장",
+        "perf_start_date": "2024-10-12",
+        "perf_end_date": "2024-10-13",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF251719",
+        "title": "블루도그스 [거창]",
+        "venue_name": "거창문화센터 공연장",
+        "perf_start_date": "2024-10-25",
+        "perf_end_date": "2024-10-26",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "블루도그스::극단 벅수골": {
+    "representative_title": "블루도그스 [사천]",
+    "members": [
+      {
+        "perf_id": "PF242912",
+        "title": "블루도그스 [사천]",
+        "venue_name": "사천문화예술회관 대공연장",
+        "perf_start_date": "2024-06-28",
+        "perf_end_date": "2024-06-29",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF249539",
+        "title": "블루도그스 [통영]",
+        "venue_name": "통영시민문화회관 대극장",
+        "perf_start_date": "2024-09-28",
+        "perf_end_date": "2024-09-29",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "비르투오소들의 조우::cast0": {
+    "representative_title": "비르투오소들의 조우 (遭遇) [광주]",
+    "members": [
+      {
+        "perf_id": "PF245567",
+        "title": "비르투오소들의 조우 (遭遇) [광주]",
+        "venue_name": "빛고을시민문화관 공연장",
+        "perf_start_date": "2024-08-31",
+        "perf_end_date": "2024-08-31",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF243843",
+        "title": "비르투오소들의 조우 (遭遇) [전주]",
+        "venue_name": "한국소리문화의전당 연지홀",
+        "perf_start_date": "2024-08-24",
+        "perf_end_date": "2024-08-24",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "빨래|(주)씨에이치수박::(주)씨에이치수박": {
+    "representative_title": "빨래 [속초]",
+    "members": [
+      {
+        "perf_id": "PF270606",
+        "title": "빨래 [속초]",
+        "venue_name": "속초문화예술회관 대공연장",
+        "perf_start_date": "2025-08-22",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 37.0
+      },
+      {
+        "perf_id": "PF278298",
+        "title": "빨래 [과천]",
+        "venue_name": "과천시민회관 소극장",
+        "perf_start_date": "2025-12-13",
+        "perf_end_date": "2025-12-13",
+        "season_rank": 41.0
+      }
+    ]
+  },
+  "빵야|(주)쇼노트::(주)쇼노트": {
+    "representative_title": "빵야 [화성]",
+    "members": [
+      {
+        "perf_id": "PF289415",
+        "title": "빵야 [화성]",
+        "venue_name": "화성아트홀",
+        "perf_start_date": "2026-06-13",
+        "perf_end_date": "2026-06-14",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF288081",
+        "title": "빵야 [세종]",
+        "venue_name": "세종예술의전당 대공연장",
+        "perf_start_date": "2026-06-05",
+        "perf_end_date": "2026-06-06",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF248080",
+        "title": "빵야 [서울 영등포]",
+        "venue_name": "영등포아트홀",
+        "perf_start_date": "2024-10-19",
+        "perf_end_date": "2024-10-19",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF247259",
+        "title": "빵야 [여주]",
+        "venue_name": "세종국악당",
+        "perf_start_date": "2024-10-05",
+        "perf_end_date": "2024-10-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "사의찬미|::cast2": {
+    "representative_title": "사의찬미 [강릉]",
+    "members": [
+      {
+        "perf_id": "PF265988",
+        "title": "사의찬미 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2025-07-18",
+        "perf_end_date": "2025-07-19",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF261787",
+        "title": "사의찬미 [태백]",
+        "venue_name": "태백문화예술회관 대공연장",
+        "perf_start_date": "2025-04-11",
+        "perf_end_date": "2025-04-12",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "살로메|::cast0": {
+    "representative_title": "살로메 [구미]",
+    "members": [
+      {
+        "perf_id": "PF260468",
+        "title": "살로메 [구미]",
+        "venue_name": "구미시문화예술회관 대공연장",
+        "perf_start_date": "2025-04-19",
+        "perf_end_date": "2025-04-19",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF268666",
+        "title": "살로메 [화성]",
+        "venue_name": "반석아트홀",
+        "perf_start_date": "2025-10-15",
+        "perf_end_date": "2025-10-16",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "살로메|시화사(구. 움직임팩토리)::시화사(구. 움직임팩토리)": {
+    "representative_title": "살로메 [고창]",
+    "members": [
+      {
+        "perf_id": "PF274502",
+        "title": "살로메 [고창]",
+        "venue_name": "고창문화의전당 공연장",
+        "perf_start_date": "2025-09-26",
+        "perf_end_date": "2025-09-27",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF272825",
+        "title": "살로메 [세종]",
+        "venue_name": "세종예술의전당 대공연장",
+        "perf_start_date": "2025-10-19",
+        "perf_end_date": "2025-10-19",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "서교동에서 죽다::cast0": {
+    "representative_title": "서교동에서 죽다 [여수]",
+    "members": [
+      {
+        "perf_id": "PF221137",
+        "title": "서교동에서 죽다 [여수]",
+        "venue_name": "GS칼텍스 예울마루 소극장",
+        "perf_start_date": "2023-09-01",
+        "perf_end_date": "2023-09-02",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF220095",
+        "title": "서교동에서 죽다 [평택]",
+        "venue_name": "평택시남부문예회관 대공연장",
+        "perf_start_date": "2023-07-07",
+        "perf_end_date": "2023-07-08",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF225362",
+        "title": "서교동에서 죽다 [서울 꿈빛극장]",
+        "venue_name": "성북미디어문화마루 꿈빛극장",
+        "perf_start_date": "2023-11-04",
+        "perf_end_date": "2023-11-05",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF218167",
+        "title": "서교동에서 죽다 [진주]",
+        "venue_name": "현장아트홀",
+        "perf_start_date": "2023-06-17",
+        "perf_end_date": "2023-06-18",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "서울발레시어터 호두까기 인형::서울발레시어터": {
+    "representative_title": "서울발레시어터, 호두까기 인형 [제주]",
+    "members": [
+      {
+        "perf_id": "PF279096",
+        "title": "서울발레시어터, 호두까기 인형 [제주]",
+        "venue_name": "서귀포예술의전당 대극장",
+        "perf_start_date": "2025-12-05",
+        "perf_end_date": "2025-12-06",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF277741",
+        "title": "서울발레시어터, 호두까기 인형 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2025-12-12",
+        "perf_end_date": "2025-12-13",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "서울시극단 퉁소소리::서울시극단": {
+    "representative_title": "서울시극단, 퉁소소리",
+    "members": [
+      {
+        "perf_id": "PF257900",
+        "title": "서울시극단, 퉁소소리",
+        "venue_name": "세종문화회관 세종M씨어터",
+        "perf_start_date": "2025-09-05",
+        "perf_end_date": "2025-09-28",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF233740",
+        "title": "서울시극단, 퉁소소리",
+        "venue_name": "세종문화회관 세종M씨어터",
+        "perf_start_date": "2024-11-11",
+        "perf_end_date": "2024-11-27",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "서울시극단 트랩::서울시극단": {
+    "representative_title": "서울시극단, 트랩",
+    "members": [
+      {
+        "perf_id": "PF257901",
+        "title": "서울시극단, 트랩",
+        "venue_name": "세종문화회관 세종S씨어터",
+        "perf_start_date": "2025-11-07",
+        "perf_end_date": "2025-11-30",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF234482",
+        "title": "서울시극단, 트랩 (Trap)",
+        "venue_name": "세종문화회관 세종S씨어터",
+        "perf_start_date": "2024-09-27",
+        "perf_end_date": "2024-10-20",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "서울시립교향악단 우리동네 음악회::서울시립교향악단": {
+    "representative_title": "서울시립교향악단, 우리동네 음악회",
+    "members": [
+      {
+        "perf_id": "PF260909",
+        "title": "서울시립교향악단, 우리동네 음악회",
+        "venue_name": "강동아트센터 대극장 한강",
+        "perf_start_date": "2025-03-27",
+        "perf_end_date": "2025-03-27",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF255240",
+        "title": "서울시립교향악단, 우리동네 음악회",
+        "venue_name": "성북미디어문화마루 꿈빛극장",
+        "perf_start_date": "2024-12-03",
+        "perf_end_date": "2024-12-03",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "서울시발레단 오하드 나하린: 데카당스::서울시발레단": {
+    "representative_title": "서울시발레단, 오하드 나하린: 데카당스 [구미]",
+    "members": [
+      {
+        "perf_id": "PF274045",
+        "title": "서울시발레단, 오하드 나하린: 데카당스 [구미]",
+        "venue_name": "구미시문화예술회관 대공연장",
+        "perf_start_date": "2025-11-21",
+        "perf_end_date": "2025-11-22",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF281834",
+        "title": "서울시발레단, 오하드 나하린: 데카당스 [김포]",
+        "venue_name": "김포아트홀",
+        "perf_start_date": "2026-01-17",
+        "perf_end_date": "2026-01-17",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "서울시합창단 가곡시대::서울시합창단": {
+    "representative_title": "서울시합창단, 가곡시대",
+    "members": [
+      {
+        "perf_id": "PF257886",
+        "title": "서울시합창단, 가곡시대",
+        "venue_name": "세종문화회관 세종체임버홀",
+        "perf_start_date": "2025-06-13",
+        "perf_end_date": "2025-06-14",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF233644",
+        "title": "서울시합창단, 가곡시대",
+        "venue_name": "세종문화회관 세종체임버홀",
+        "perf_start_date": "2024-06-21",
+        "perf_end_date": "2024-06-21",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF278595",
+        "title": "서울시합창단, 가곡시대 [부산]",
+        "venue_name": "부산콘서트홀 챔버홀",
+        "perf_start_date": "2025-11-22",
+        "perf_end_date": "2025-11-22",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "서울예술단 나빌레라::(재)서울예술단": {
+    "representative_title": "서울예술단, 나빌레라 [밀양]",
+    "members": [
+      {
+        "perf_id": "PF287859",
+        "title": "서울예술단, 나빌레라 [서울 서초]",
+        "venue_name": "예술의전당 [서울] CJ 토월극장",
+        "perf_start_date": "2026-05-02",
+        "perf_end_date": "2026-05-17",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF289529",
+        "title": "서울예술단, 나빌레라 [밀양]",
+        "venue_name": "밀양아리랑아트센터 대공연장",
+        "perf_start_date": "2026-05-23",
+        "perf_end_date": "2026-05-23",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "서울예술단 윤동주 달을 쏘다.::서울예술단": {
+    "representative_title": "서울예술단, 윤동주, 달을 쏘다. [김해]",
+    "members": [
+      {
+        "perf_id": "PF264901",
+        "title": "서울예술단, 윤동주, 달을 쏘다. [김해]",
+        "venue_name": "김해문화의전당 마루홀",
+        "perf_start_date": "2025-08-22",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF266669",
+        "title": "서울예술단, 윤동주, 달을 쏘다. [익산]",
+        "venue_name": "익산예술의전당 대공연장",
+        "perf_start_date": "2025-07-19",
+        "perf_end_date": "2025-07-19",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "서울예술단 천 개의 파랑::(재)서울예술단": {
+    "representative_title": "서울예술단, 천 개의 파랑",
+    "members": [
+      {
+        "perf_id": "PF238095",
+        "title": "서울예술단, 천 개의 파랑",
+        "venue_name": "예술의전당 [서울] CJ 토월극장",
+        "perf_start_date": "2024-05-12",
+        "perf_end_date": "2024-05-26",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF253992",
+        "title": "서울예술단, 천 개의 파랑",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2025-02-22",
+        "perf_end_date": "2025-03-07",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF266595",
+        "title": "서울예술단, 천 개의 파랑 [군산]",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2025-07-12",
+        "perf_end_date": "2025-07-12",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "서울예술단 천 개의 파랑::서울예술단": {
+    "representative_title": "서울예술단, 천 개의 파랑 [제주]",
+    "members": [
+      {
+        "perf_id": "PF253213",
+        "title": "서울예술단, 천 개의 파랑 [제주]",
+        "venue_name": "제주문예회관 대극장",
+        "perf_start_date": "2024-12-07",
+        "perf_end_date": "2024-12-08",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF265974",
+        "title": "서울예술단, 천 개의 파랑 [대구]",
+        "venue_name": "대구학생문화센터 대공연장",
+        "perf_start_date": "2025-07-05",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF263111",
+        "title": "서울예술단, 천 개의 파랑 [안동]",
+        "venue_name": "안동문화예술의전당 웅부홀",
+        "perf_start_date": "2025-06-27",
+        "perf_end_date": "2025-06-27",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "선녀씨 이야기::cast1": {
+    "representative_title": "선녀씨 이야기 [대전]",
+    "members": [
+      {
+        "perf_id": "PF241527",
+        "title": "선녀씨 이야기 [의정부]",
+        "venue_name": "의정부예술의전당 소극장",
+        "perf_start_date": "2024-07-26",
+        "perf_end_date": "2024-07-27",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF262145",
+        "title": "선녀씨 이야기 [대전]",
+        "venue_name": "대전시립연정국악원 작은마당",
+        "perf_start_date": "2025-05-02",
+        "perf_end_date": "2025-05-02",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "세기의 사나이::cast0": {
+    "representative_title": "세기의 사나이 [예천]",
+    "members": [
+      {
+        "perf_id": "PF271460",
+        "title": "세기의 사나이 [예천]",
+        "venue_name": "예천군문화회관",
+        "perf_start_date": "2025-08-29",
+        "perf_end_date": "2025-08-30",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF269982",
+        "title": "세기의 사나이 [김포]",
+        "venue_name": "김포아트홀",
+        "perf_start_date": "2025-08-22",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF272392",
+        "title": "세기의 사나이 [삼척]",
+        "venue_name": "삼척문화예술회관 대공연장",
+        "perf_start_date": "2025-09-13",
+        "perf_end_date": "2025-09-13",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF267258",
+        "title": "세기의 사나이 [해남]",
+        "venue_name": "해남문화예술회관 대공연장",
+        "perf_start_date": "2025-07-03",
+        "perf_end_date": "2025-07-03",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "세상친구|::cast1": {
+    "representative_title": "세상친구 [제천]",
+    "members": [
+      {
+        "perf_id": "PF274319",
+        "title": "세상친구 [제천]",
+        "venue_name": "제천예술의전당 대공연장",
+        "perf_start_date": "2025-10-24",
+        "perf_end_date": "2025-10-25",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF273460",
+        "title": "세상친구 [논산]",
+        "venue_name": "논산아트센터(구. 논산문화예술회관) 대공연장",
+        "perf_start_date": "2025-09-19",
+        "perf_end_date": "2025-09-19",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF277022",
+        "title": "세상친구 [인천]",
+        "venue_name": "제물포구문화체육센터(구. 동구문화체육센터) 공연장",
+        "perf_start_date": "2025-12-05",
+        "perf_end_date": "2025-12-06",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "속살: 숨겨둔 진실::cast0": {
+    "representative_title": "속살: 숨겨둔 진실 [고창]",
+    "members": [
+      {
+        "perf_id": "PF247958",
+        "title": "속살: 숨겨둔 진실 [고창]",
+        "venue_name": "고창문화의전당 공연장",
+        "perf_start_date": "2024-09-04",
+        "perf_end_date": "2024-09-05",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF249202",
+        "title": "속살: 숨겨둔 진실 [거창]",
+        "venue_name": "거창문화센터 공연장",
+        "perf_start_date": "2024-10-05",
+        "perf_end_date": "2024-10-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "송소희 Χ 두번째달 Χ 김준수: 모던민요::cast0": {
+    "representative_title": "송소희 Χ 두번째달 Χ 김준수: 모던민요 [인제]",
+    "members": [
+      {
+        "perf_id": "PF291006",
+        "title": "송소희 Χ 두번째달 Χ 김준수: 모던민요 [인제]",
+        "venue_name": "인제하늘내린센터 대공연장",
+        "perf_start_date": "2026-05-23",
+        "perf_end_date": "2026-05-23",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF287270",
+        "title": "송소희 Χ 두번째달 Χ 김준수: 모던민요 [예천]",
+        "venue_name": "예천군문화회관",
+        "perf_start_date": "2026-04-04",
+        "perf_end_date": "2026-04-04",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "수박수영장::(주)에이엠컬쳐(AMCULTURE)": {
+    "representative_title": "수박수영장 [고창]",
+    "members": [
+      {
+        "perf_id": "PF242653",
+        "title": "수박수영장 [고창]",
+        "venue_name": "고창문화의전당 공연장",
+        "perf_start_date": "2024-06-15",
+        "perf_end_date": "2024-06-15",
+        "season_rank": 11.0
+      },
+      {
+        "perf_id": "PF239400",
+        "title": "수박수영장 [거창]",
+        "venue_name": "거창문화센터 공연장",
+        "perf_start_date": "2024-04-27",
+        "perf_end_date": "2024-04-27",
+        "season_rank": 10.0
+      }
+    ]
+  },
+  "수박수영장::cast1": {
+    "representative_title": "수박수영장 [부여]",
+    "members": [
+      {
+        "perf_id": "PF229281",
+        "title": "수박수영장 [부여]",
+        "venue_name": "국립부여박물관 사비마루",
+        "perf_start_date": "2023-12-01",
+        "perf_end_date": "2023-12-02",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF231335",
+        "title": "수박수영장 [서울 관악]",
+        "venue_name": "관악아트홀 (구. 관악문화관) 관악아트홀 (구. 관악문화관) ",
+        "perf_start_date": "2023-12-22",
+        "perf_end_date": "2023-12-23",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "순정대학x밀당대학::cast0": {
+    "representative_title": "순정대학x밀당대학 [전북 완주]",
+    "members": [
+      {
+        "perf_id": "PF241315",
+        "title": "순정대학x밀당대학 [전북 완주]",
+        "venue_name": "완주문화예술회관 대극장",
+        "perf_start_date": "2024-05-31",
+        "perf_end_date": "2024-05-31",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF240907",
+        "title": "순정대학x밀당대학 [전북 장수]",
+        "venue_name": "장수한누리전당 소공연장",
+        "perf_start_date": "2024-05-30",
+        "perf_end_date": "2024-05-30",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "슈퍼거북 슈퍼토끼::할리퀸크리에이션즈(주)": {
+    "representative_title": "슈퍼거북 슈퍼토끼 [보성]",
+    "members": [
+      {
+        "perf_id": "PF289510",
+        "title": "슈퍼거북 슈퍼토끼 [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2026-05-22",
+        "perf_end_date": "2026-05-23",
+        "season_rank": 9.0
+      },
+      {
+        "perf_id": "PF290299",
+        "title": "슈퍼거북 슈퍼토끼 [고성]",
+        "venue_name": "고성군문화복지센터 대공연장",
+        "perf_start_date": "2026-05-09",
+        "perf_end_date": "2026-05-09",
+        "season_rank": 8.0
+      }
+    ]
+  },
+  "스윙 어게인::cast0": {
+    "representative_title": "스윙 어게인 [대전]",
+    "members": [
+      {
+        "perf_id": "PF272134",
+        "title": "스윙 어게인 [대전]",
+        "venue_name": "대전예술의전당 앙상블홀",
+        "perf_start_date": "2025-11-29",
+        "perf_end_date": "2025-11-29",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF269326",
+        "title": "스윙 어게인 [인천]",
+        "venue_name": "인천중구문화회관",
+        "perf_start_date": "2025-08-16",
+        "perf_end_date": "2025-08-16",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF272493",
+        "title": "스윙 어게인 [평창]",
+        "venue_name": "평창문화예술회관 대공연장",
+        "perf_start_date": "2025-09-17",
+        "perf_end_date": "2025-09-17",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "스프레이|::cast0": {
+    "representative_title": "스프레이 [예산]",
+    "members": [
+      {
+        "perf_id": "PF265338",
+        "title": "스프레이 [예산]",
+        "venue_name": "충남도청 문예회관",
+        "perf_start_date": "2025-06-25",
+        "perf_end_date": "2025-06-26",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF270041",
+        "title": "스프레이 [양주]",
+        "venue_name": "양주문화예술회관 소공연장",
+        "perf_start_date": "2025-08-23",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 6.0
+      }
+    ]
+  },
+  "스프레이|::cast1": {
+    "representative_title": "스프레이 [목포]",
+    "members": [
+      {
+        "perf_id": "PF272064",
+        "title": "스프레이 [목포]",
+        "venue_name": "목포문화예술회관",
+        "perf_start_date": "2025-09-06",
+        "perf_end_date": "2025-09-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF273188",
+        "title": "스프레이 [전남 강진]",
+        "venue_name": "강진아트홀 대공연장",
+        "perf_start_date": "2025-09-20",
+        "perf_end_date": "2025-09-20",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "스프레이|극단 초인::극단 초인": {
+    "representative_title": "스프레이 [김제]",
+    "members": [
+      {
+        "perf_id": "PF243809",
+        "title": "스프레이 [김제]",
+        "venue_name": "김제문화예술회관 대공연장",
+        "perf_start_date": "2024-07-04",
+        "perf_end_date": "2024-07-06",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF242850",
+        "title": "스프레이 [성남]",
+        "venue_name": "성남아트센터 앙상블씨어터",
+        "perf_start_date": "2024-07-13",
+        "perf_end_date": "2024-07-13",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF240309",
+        "title": "스프레이 [거창]",
+        "venue_name": "거창문화센터 공연장",
+        "perf_start_date": "2024-05-11",
+        "perf_end_date": "2024-05-11",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF239147",
+        "title": "스프레이 [인천]",
+        "venue_name": "청라복합문화센터 블루노바홀 공연장",
+        "perf_start_date": "2024-05-17",
+        "perf_end_date": "2024-05-18",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF243693",
+        "title": "스프레이 [울진]",
+        "venue_name": "울진문화예술회관",
+        "perf_start_date": "2024-07-18",
+        "perf_end_date": "2024-07-18",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF264787",
+        "title": "스프레이 [울산]",
+        "venue_name": "울산북구문화예술회관 공연장",
+        "perf_start_date": "2025-06-11",
+        "perf_end_date": "2025-06-11",
+        "season_rank": 8.0
+      }
+    ]
+  },
+  "신 별주부전::cast0": {
+    "representative_title": "신 별주부전 [천안]",
+    "members": [
+      {
+        "perf_id": "PF244466",
+        "title": "신 별주부전 [천안]",
+        "venue_name": "천안예술의전당 대공연장",
+        "perf_start_date": "2024-09-12",
+        "perf_end_date": "2024-09-12",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF245472",
+        "title": "신 별주부전 [김포]",
+        "venue_name": "김포아트홀",
+        "perf_start_date": "2024-09-25",
+        "perf_end_date": "2024-09-25",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "신귀복 가곡 음악회: 가곡의 별::cast0": {
+    "representative_title": "신귀복 가곡 음악회: 가곡의 별 [인천]",
+    "members": [
+      {
+        "perf_id": "PF259689",
+        "title": "신귀복 가곡 음악회: 가곡의 별 [인천]",
+        "venue_name": "남동소래아트홀 소래극장 (대공연장) ",
+        "perf_start_date": "2025-03-15",
+        "perf_end_date": "2025-03-15",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF261678",
+        "title": "신귀복 가곡 음악회: 가곡의 별 [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2025-04-15",
+        "perf_end_date": "2025-04-15",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF261661",
+        "title": "신귀복 가곡 음악회: 가곡의 별 [익산]",
+        "venue_name": "익산예술의전당 대공연장",
+        "perf_start_date": "2025-04-27",
+        "perf_end_date": "2025-04-27",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "신귀복 가곡음악회: 가곡의 별::cast0": {
+    "representative_title": "신귀복 가곡음악회: 가곡의 별 [제주]",
+    "members": [
+      {
+        "perf_id": "PF265434",
+        "title": "신귀복 가곡음악회: 가곡의 별 [제주]",
+        "venue_name": "제주문예회관 대극장",
+        "perf_start_date": "2025-06-06",
+        "perf_end_date": "2025-06-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF266199",
+        "title": "신귀복 가곡음악회: 가곡의 별 [영덕]",
+        "venue_name": "예주문화예술회관",
+        "perf_start_date": "2025-07-05",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "신데렐라의 모래이야기::(주)콘텐츠컬쳐플레이스": {
+    "representative_title": "신데렐라의 모래이야기 [예천]",
+    "members": [
+      {
+        "perf_id": "PF268969",
+        "title": "신데렐라의 모래이야기 [예천]",
+        "venue_name": "예천군문화회관",
+        "perf_start_date": "2025-07-26",
+        "perf_end_date": "2025-07-26",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF264196",
+        "title": "신데렐라의 모래이야기 [옥천]",
+        "venue_name": "옥천문화예술회관",
+        "perf_start_date": "2025-05-16",
+        "perf_end_date": "2025-05-16",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF276774",
+        "title": "신데렐라의 모래이야기 [완주]",
+        "venue_name": "완주향토예술문화회관 공연장",
+        "perf_start_date": "2025-11-07",
+        "perf_end_date": "2025-11-07",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "신데렐라의 모래이야기::cast0": {
+    "representative_title": "신데렐라의 모래이야기 [목포]",
+    "members": [
+      {
+        "perf_id": "PF269912",
+        "title": "신데렐라의 모래이야기 [목포]",
+        "venue_name": "목포문화예술회관",
+        "perf_start_date": "2025-08-09",
+        "perf_end_date": "2025-08-09",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF264614",
+        "title": "신데렐라의 모래이야기 [강진]",
+        "venue_name": "강진아트홀 대공연장",
+        "perf_start_date": "2025-06-14",
+        "perf_end_date": "2025-06-14",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "신명의 꽃: 헌화가::cast1": {
+    "representative_title": "신명의 꽃: 헌화가 [제천]",
+    "members": [
+      {
+        "perf_id": "PF272744",
+        "title": "신명의 꽃: 헌화가 [제천]",
+        "venue_name": "제천예술의전당 대공연장",
+        "perf_start_date": "2025-09-26",
+        "perf_end_date": "2025-09-27",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF278470",
+        "title": "신명의 꽃: 헌화가 [논산]",
+        "venue_name": "논산아트센터(구. 논산문화예술회관) 대공연장",
+        "perf_start_date": "2025-11-21",
+        "perf_end_date": "2025-11-21",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "신명의 꽃::cast0": {
+    "representative_title": "신명의 꽃 [해남]",
+    "members": [
+      {
+        "perf_id": "PF246932",
+        "title": "신명의 꽃 [해남]",
+        "venue_name": "해남문화예술회관 대공연장",
+        "perf_start_date": "2024-09-03",
+        "perf_end_date": "2024-09-04",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF245104",
+        "title": "신명의 꽃 [충북]",
+        "venue_name": "증평문화회관 대강당",
+        "perf_start_date": "2024-08-09",
+        "perf_end_date": "2024-08-10",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "신뺑파전 2::cast0": {
+    "representative_title": "신뺑파전 2 [여주]",
+    "members": [
+      {
+        "perf_id": "PF251549",
+        "title": "신뺑파전 2 [여주]",
+        "venue_name": "세종국악당",
+        "perf_start_date": "2024-10-17",
+        "perf_end_date": "2024-10-17",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF250159",
+        "title": "신뺑파전 2 [춘천]",
+        "venue_name": "춘천인형극장 대극장",
+        "perf_start_date": "2024-10-19",
+        "perf_end_date": "2024-10-20",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "신뺑파전|::cast0": {
+    "representative_title": "신뺑파전 [연천]",
+    "members": [
+      {
+        "perf_id": "PF244399",
+        "title": "신뺑파전 [연천]",
+        "venue_name": "연천수레울아트홀 대공연장",
+        "perf_start_date": "2024-08-02",
+        "perf_end_date": "2024-08-03",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF246890",
+        "title": "신뺑파전 [천안]",
+        "venue_name": "천안시성환문화회관 대공연장",
+        "perf_start_date": "2024-09-21",
+        "perf_end_date": "2024-09-22",
+        "season_rank": 8.0
+      },
+      {
+        "perf_id": "PF280439",
+        "title": "신뺑파전 [무안]",
+        "venue_name": "무안승달문화예술회관 대공연장",
+        "perf_start_date": "2025-12-04",
+        "perf_end_date": "2025-12-04",
+        "season_rank": 13.0
+      },
+      {
+        "perf_id": "PF266546",
+        "title": "신뺑파전 [함안]",
+        "venue_name": "함안문화예술회관 대공연장",
+        "perf_start_date": "2025-07-18",
+        "perf_end_date": "2025-07-18",
+        "season_rank": 9.0
+      },
+      {
+        "perf_id": "PF273245",
+        "title": "신뺑파전 [부안]",
+        "venue_name": "부안예술회관 공연장",
+        "perf_start_date": "2025-09-10",
+        "perf_end_date": "2025-09-10",
+        "season_rank": 10.0
+      },
+      {
+        "perf_id": "PF274977",
+        "title": "신뺑파전 [장흥]",
+        "venue_name": "장흥문화예술회관 대공연장",
+        "perf_start_date": "2025-10-23",
+        "perf_end_date": "2025-10-23",
+        "season_rank": 12.0
+      },
+      {
+        "perf_id": "PF273167",
+        "title": "신뺑파전 [아산]",
+        "venue_name": "아산시 평생학습관(아산아트홀) 아산아트홀(아산시평생학습관)",
+        "perf_start_date": "2025-10-02",
+        "perf_end_date": "2025-10-02",
+        "season_rank": 11.0
+      }
+    ]
+  },
+  "신의 손가락::cast0": {
+    "representative_title": "신의 손가락 [부안]",
+    "members": [
+      {
+        "perf_id": "PF251952",
+        "title": "신의 손가락 [부안]",
+        "venue_name": "부안예술회관 공연장",
+        "perf_start_date": "2024-11-01",
+        "perf_end_date": "2024-11-01",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF247303",
+        "title": "신의 손가락 [고령]",
+        "venue_name": "경북고령대가야문화누리 (구. 대가야국악당) 대공연장 (우륵홀) ",
+        "perf_start_date": "2024-09-06",
+        "perf_end_date": "2024-09-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF248473",
+        "title": "신의 손가락 [홍성]",
+        "venue_name": "홍주문화회관 대공연장",
+        "perf_start_date": "2024-09-28",
+        "perf_end_date": "2024-09-28",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "신콩쥐|::cast1": {
+    "representative_title": "신콩쥐 [완주]",
+    "members": [
+      {
+        "perf_id": "PF263285",
+        "title": "신콩쥐 [완주]",
+        "venue_name": "완주문화예술회관 대극장",
+        "perf_start_date": "2025-05-03",
+        "perf_end_date": "2025-05-03",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF266288",
+        "title": "신콩쥐 [증평]",
+        "venue_name": "증평문화회관 대강당",
+        "perf_start_date": "2025-06-04",
+        "perf_end_date": "2025-06-04",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF273091",
+        "title": "신콩쥐 [여수]",
+        "venue_name": "여수시민회관 대공연장",
+        "perf_start_date": "2025-09-27",
+        "perf_end_date": "2025-09-27",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "실험실 콘서트::cast2": {
+    "representative_title": "실험실 콘서트 [춘천]",
+    "members": [
+      {
+        "perf_id": "PF263063",
+        "title": "실험실 콘서트 [춘천]",
+        "venue_name": "춘천문화예술회관 공연장",
+        "perf_start_date": "2025-05-03",
+        "perf_end_date": "2025-05-03",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF248795",
+        "title": "실험실 콘서트 [광주]",
+        "venue_name": "광주 예술의 전당 소극장",
+        "perf_start_date": "2024-10-05",
+        "perf_end_date": "2024-10-05",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "아가사|::cast1": {
+    "representative_title": "아가사 [고양]",
+    "members": [
+      {
+        "perf_id": "PF242464",
+        "title": "아가사 [고양]",
+        "venue_name": "고양아람누리 아람극장",
+        "perf_start_date": "2024-07-27",
+        "perf_end_date": "2024-07-28",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF243975",
+        "title": "아가사 [군포]",
+        "venue_name": "군포문화예술회관 수리홀",
+        "perf_start_date": "2024-08-30",
+        "perf_end_date": "2024-08-31",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF245822",
+        "title": "아가사 [군산]",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2024-09-07",
+        "perf_end_date": "2024-09-07",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF246013",
+        "title": "아가사 [횡성]",
+        "venue_name": "횡성문화예술회관 대공연장",
+        "perf_start_date": "2024-08-24",
+        "perf_end_date": "2024-08-24",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "아들에게: 미옥 앨리스 현::cast0": {
+    "representative_title": "아들에게: 미옥 앨리스 현 [대전]",
+    "members": [
+      {
+        "perf_id": "PF272217",
+        "title": "아들에게: 미옥 앨리스 현 [대전]",
+        "venue_name": "대전예술의전당 앙상블홀",
+        "perf_start_date": "2025-11-08",
+        "perf_end_date": "2025-11-09",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF273964",
+        "title": "아들에게: 미옥 앨리스 현 [평택 남부]",
+        "venue_name": "평택시남부문예회관 대공연장",
+        "perf_start_date": "2025-10-19",
+        "perf_end_date": "2025-10-19",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "안중근 천국에서의 춤::안중근": {
+    "representative_title": "안중근, 천국에서의 춤 [성남]",
+    "members": [
+      {
+        "perf_id": "PF221938",
+        "title": "안중근, 천국에서의 춤 [성남]",
+        "venue_name": "성남아트센터 오페라하우스",
+        "perf_start_date": "2023-08-25",
+        "perf_end_date": "2023-08-26",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF221813",
+        "title": "안중근, 천국에서의 춤 [마포]",
+        "venue_name": "마포아트센터 아트홀맥",
+        "perf_start_date": "2023-08-11",
+        "perf_end_date": "2023-08-12",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF221804",
+        "title": "안중근, 천국에서의 춤 [광명]",
+        "venue_name": "광명시민회관 대공연장",
+        "perf_start_date": "2023-08-04",
+        "perf_end_date": "2023-08-05",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF221768",
+        "title": "안중근, 천국에서의 춤 [충주]",
+        "venue_name": "충주시문화회관",
+        "perf_start_date": "2023-07-26",
+        "perf_end_date": "2023-07-27",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "앙상블 오푸스의 꿈꾸는 저녁::cast0": {
+    "representative_title": "앙상블 오푸스의 꿈꾸는 저녁 [제주]",
+    "members": [
+      {
+        "perf_id": "PF242718",
+        "title": "앙상블 오푸스의 꿈꾸는 저녁 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2024-07-07",
+        "perf_end_date": "2024-07-07",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF244668",
+        "title": "앙상블 오푸스의 꿈꾸는 저녁 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2024-08-13",
+        "perf_end_date": "2024-08-13",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF243259",
+        "title": "앙상블 오푸스의 꿈꾸는 저녁 [익산]",
+        "venue_name": "익산예술의전당 대공연장",
+        "perf_start_date": "2024-07-05",
+        "perf_end_date": "2024-07-05",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "앙상블오푸스: 열정과 서정 사이::cast0": {
+    "representative_title": "앙상블오푸스: 열정과 서정 사이 [목포]",
+    "members": [
+      {
+        "perf_id": "PF267645",
+        "title": "앙상블오푸스: 열정과 서정 사이 [목포]",
+        "venue_name": "목포문화예술회관",
+        "perf_start_date": "2025-07-05",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF260394",
+        "title": "앙상블오푸스: 열정과 서정 사이 [울진]",
+        "venue_name": "울진문화예술회관",
+        "perf_start_date": "2025-03-20",
+        "perf_end_date": "2025-03-20",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "얼쑤|::cast0": {
+    "representative_title": "얼쑤 [보성]",
+    "members": [
+      {
+        "perf_id": "PF220629",
+        "title": "얼쑤 [광주 광산]",
+        "venue_name": "광산문화예술회관 공연장",
+        "perf_start_date": "2023-07-22",
+        "perf_end_date": "2023-07-22",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF248265",
+        "title": "얼쑤 [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2024-09-10",
+        "perf_end_date": "2024-09-10",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF220076",
+        "title": "얼쑤 [고양]",
+        "venue_name": "고양아람누리 새라새극장",
+        "perf_start_date": "2023-08-18",
+        "perf_end_date": "2023-08-19",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF242999",
+        "title": "얼쑤 [정선]",
+        "venue_name": "정선아리랑센터 아리랑홀",
+        "perf_start_date": "2024-06-21",
+        "perf_end_date": "2024-06-21",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF226211",
+        "title": "얼쑤 [은평]",
+        "venue_name": "은평문화예술회관 공연장",
+        "perf_start_date": "2023-10-12",
+        "perf_end_date": "2023-10-13",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "오셀로와 이아고::cast0": {
+    "representative_title": "오셀로와 이아고",
+    "members": [
+      {
+        "perf_id": "PF226762",
+        "title": "오셀로와 이아고",
+        "venue_name": "금나래아트홀",
+        "perf_start_date": "2023-11-16",
+        "perf_end_date": "2023-11-18",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF224240",
+        "title": "오셀로와 이아고 [안동]",
+        "venue_name": "구름에 리조트 천자문마당",
+        "perf_start_date": "2023-09-07",
+        "perf_end_date": "2023-09-09",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF222350",
+        "title": "오셀로와 이아고 [전주]",
+        "venue_name": "한국소리문화의전당 연지홀",
+        "perf_start_date": "2023-09-22",
+        "perf_end_date": "2023-09-22",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "오즈의 의류수거함::cast0": {
+    "representative_title": "오즈의 의류수거함 [정선]",
+    "members": [
+      {
+        "perf_id": "PF245871",
+        "title": "오즈의 의류수거함 [정선]",
+        "venue_name": "정선아리랑센터 아리랑홀",
+        "perf_start_date": "2024-08-14",
+        "perf_end_date": "2024-08-14",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF254928",
+        "title": "오즈의 의류수거함 [인천]",
+        "venue_name": "계양문화회관 대공연장",
+        "perf_start_date": "2024-12-04",
+        "perf_end_date": "2024-12-04",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF249183",
+        "title": "오즈의 의류수거함 [양구]",
+        "venue_name": "양구문화복지센터",
+        "perf_start_date": "2024-09-28",
+        "perf_end_date": "2024-09-28",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "오페라 하이라이트 페스타 봄봄::오페라 하이라이트 페스타": {
+    "representative_title": "오페라 하이라이트 페스타, 봄봄",
+    "members": [
+      {
+        "perf_id": "PF225030",
+        "title": "오페라 하이라이트 페스타, 봄봄 [화성]",
+        "venue_name": "반석아트홀",
+        "perf_start_date": "2023-11-17",
+        "perf_end_date": "2023-11-17",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF217047",
+        "title": "오페라 하이라이트 페스타, 봄봄",
+        "venue_name": "영등포아트홀",
+        "perf_start_date": "2023-06-21",
+        "perf_end_date": "2023-06-21",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "오페라 하이라이트 페스타 오텔로::오페라 하이라이트 페스타": {
+    "representative_title": "오페라 하이라이트 페스타, 오텔로",
+    "members": [
+      {
+        "perf_id": "PF225031",
+        "title": "오페라 하이라이트 페스타, 오텔로 [화성]",
+        "venue_name": "반석아트홀",
+        "perf_start_date": "2023-11-19",
+        "perf_end_date": "2023-11-19",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF216125",
+        "title": "오페라 하이라이트 페스타, 오텔로",
+        "venue_name": "영등포아트홀",
+        "perf_start_date": "2023-06-24",
+        "perf_end_date": "2023-06-24",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "오페라 하이라이트 페스타 카르멘::오페라 하이라이트 페스타": {
+    "representative_title": "오페라 하이라이트 페스타, 카르멘",
+    "members": [
+      {
+        "perf_id": "PF225029",
+        "title": "오페라 하이라이트 페스타, 카르멘 [화성]",
+        "venue_name": "반석아트홀",
+        "perf_start_date": "2023-11-18",
+        "perf_end_date": "2023-11-18",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF216127",
+        "title": "오페라 하이라이트 페스타, 카르멘",
+        "venue_name": "영등포아트홀",
+        "perf_start_date": "2023-06-25",
+        "perf_end_date": "2023-06-25",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "올라비올라의 B to B::cast2": {
+    "representative_title": "올라비올라의 B to B [제주]",
+    "members": [
+      {
+        "perf_id": "PF279680",
+        "title": "올라비올라의 B to B [제주]",
+        "venue_name": "제주문예회관 대극장",
+        "perf_start_date": "2025-12-05",
+        "perf_end_date": "2025-12-05",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF261132",
+        "title": "올라비올라의 B to B [수원]",
+        "venue_name": "경기아트센터(구. 경기도문화의전당) 소극장",
+        "perf_start_date": "2025-04-26",
+        "perf_end_date": "2025-04-26",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF261073",
+        "title": "올라비올라의 B to B [연천]",
+        "venue_name": "연천수레울아트홀 대공연장",
+        "perf_start_date": "2025-04-12",
+        "perf_end_date": "2025-04-12",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "왕세자 실종사건::cast0": {
+    "representative_title": "왕세자 실종사건 [창원]",
+    "members": [
+      {
+        "perf_id": "PF227454",
+        "title": "왕세자 실종사건 [창원]",
+        "venue_name": "3.15아트센터 대극장",
+        "perf_start_date": "2023-11-17",
+        "perf_end_date": "2023-11-18",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF272568",
+        "title": "왕세자 실종사건 [하남]",
+        "venue_name": "하남문화예술회관 검단홀(대극장)",
+        "perf_start_date": "2025-10-18",
+        "perf_end_date": "2025-10-18",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF228736",
+        "title": "왕세자 실종사건 [거창]",
+        "venue_name": "거창문화센터 공연장",
+        "perf_start_date": "2023-11-10",
+        "perf_end_date": "2023-11-11",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF226470",
+        "title": "왕세자 실종사건 [여주]",
+        "venue_name": "세종국악당",
+        "perf_start_date": "2023-11-03",
+        "perf_end_date": "2023-11-04",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF226126",
+        "title": "왕세자 실종사건 [구리]",
+        "venue_name": "구리아트홀 코스모스대극장",
+        "perf_start_date": "2023-10-28",
+        "perf_end_date": "2023-10-28",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "우리읍내|경기도극단::경기도극단": {
+    "representative_title": "우리읍내 [수원]",
+    "members": [
+      {
+        "perf_id": "PF249758",
+        "title": "우리읍내 [수원]",
+        "venue_name": "경기아트센터(구. 경기도문화의전당) 소극장",
+        "perf_start_date": "2024-11-16",
+        "perf_end_date": "2024-11-24",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF252947",
+        "title": "우리읍내 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2024-12-07",
+        "perf_end_date": "2024-12-07",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "우정만리|::cast0": {
+    "representative_title": "우정만리 [밀양]",
+    "members": [
+      {
+        "perf_id": "PF251665",
+        "title": "우정만리 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2024-12-20",
+        "perf_end_date": "2024-12-21",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF253643",
+        "title": "우정만리 [밀양]",
+        "venue_name": "밀양아리랑아트센터 대공연장",
+        "perf_start_date": "2024-12-06",
+        "perf_end_date": "2024-12-06",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "울산 포항 경주 해오름동맹 시립예술단 합동공연 공존: Coexistence::cast0": {
+    "representative_title": "울산 포항 경주 해오름동맹 시립예술단 합동공연, 공존: Coexistence [울산]",
+    "members": [
+      {
+        "perf_id": "PF275919",
+        "title": "울산 포항 경주 해오름동맹 시립예술단 합동공연, 공존: Coexistence [울산]",
+        "venue_name": "울산문화예술회관 대공연장",
+        "perf_start_date": "2025-11-14",
+        "perf_end_date": "2025-11-14",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF276164",
+        "title": "울산 포항 경주 해오름동맹 시립예술단 합동공연, 공존: Coexistence [경주]",
+        "venue_name": "경주예술의전당 대공연장(화랑홀)",
+        "perf_start_date": "2025-11-15",
+        "perf_end_date": "2025-11-15",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "유앤잇|이지(EG)뮤지컬 컴퍼니::이지(EG)뮤지컬 컴퍼니": {
+    "representative_title": "유앤잇 [상주]",
+    "members": [
+      {
+        "perf_id": "PF250853",
+        "title": "유앤잇 [상주]",
+        "venue_name": "상주문화회관 대공연장",
+        "perf_start_date": "2024-10-26",
+        "perf_end_date": "2024-10-26",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF240838",
+        "title": "유앤잇 [하남]",
+        "venue_name": "하남문화예술회관 검단홀(대극장)",
+        "perf_start_date": "2024-06-22",
+        "perf_end_date": "2024-06-22",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "유쾌한 하녀 마리사::경남도립극단": {
+    "representative_title": "유쾌한 하녀 마리사 [양산]",
+    "members": [
+      {
+        "perf_id": "PF248401",
+        "title": "유쾌한 하녀 마리사 [양산]",
+        "venue_name": "양산문화예술회관 대공연장",
+        "perf_start_date": "2024-09-28",
+        "perf_end_date": "2024-09-28",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF246248",
+        "title": "유쾌한 하녀 마리사 [창녕]",
+        "venue_name": "창녕문화예술회관 대공연장",
+        "perf_start_date": "2024-09-05",
+        "perf_end_date": "2024-09-05",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF247565",
+        "title": "유쾌한 하녀 마리사 [김해]",
+        "venue_name": "김해서부문화센터 하늬홀",
+        "perf_start_date": "2024-09-21",
+        "perf_end_date": "2024-09-21",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "의자 고치는 여인::cast0": {
+    "representative_title": "의자 고치는 여인 [성남]",
+    "members": [
+      {
+        "perf_id": "PF243928",
+        "title": "의자 고치는 여인 [성남]",
+        "venue_name": "성남아트리움 (구. 성남시민회관) 대극장",
+        "perf_start_date": "2024-09-13",
+        "perf_end_date": "2024-09-14",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF243850",
+        "title": "의자 고치는 여인 [하남]",
+        "venue_name": "하남문화예술회관 검단홀(대극장)",
+        "perf_start_date": "2024-08-30",
+        "perf_end_date": "2024-08-31",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "이상한 나라의 숨바꼭질::해의아이들": {
+    "representative_title": "이상한 나라의 숨바꼭질 [천안]",
+    "members": [
+      {
+        "perf_id": "PF291624",
+        "title": "이상한 나라의 숨바꼭질 [천안]",
+        "venue_name": "천안어린이꿈누리터 (구. 천안시 어린이 회관) 꿈누리대공연장",
+        "perf_start_date": "2026-05-30",
+        "perf_end_date": "2026-05-31",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF289430",
+        "title": "이상한 나라의 숨바꼭질 [인천]",
+        "venue_name": "트라이보울 공연장 (2층) ",
+        "perf_start_date": "2026-06-13",
+        "perf_end_date": "2026-06-13",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "이야기로 만나는 춤의 정원::궁중춤예술연구원": {
+    "representative_title": "이야기로 만나는 춤의 정원 [강릉]",
+    "members": [
+      {
+        "perf_id": "PF247008",
+        "title": "이야기로 만나는 춤의 정원 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2024-09-08",
+        "perf_end_date": "2024-09-08",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF243411",
+        "title": "이야기로 만나는 춤의 정원 [원주]",
+        "venue_name": "원주치악예술관",
+        "perf_start_date": "2024-07-07",
+        "perf_end_date": "2024-07-07",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "인사이드 윌리엄::cast0": {
+    "representative_title": "인사이드 윌리엄 [대전]",
+    "members": [
+      {
+        "perf_id": "PF275734",
+        "title": "인사이드 윌리엄 [인천 서구]",
+        "venue_name": "청라복합문화센터 블루노바홀 공연장",
+        "perf_start_date": "2025-11-01",
+        "perf_end_date": "2025-11-01",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF272219",
+        "title": "인사이드 윌리엄 [대전]",
+        "venue_name": "대전예술의전당 앙상블홀",
+        "perf_start_date": "2025-12-05",
+        "perf_end_date": "2025-12-06",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "인천시립교향악단 기획연주회 인천 영 아티스트 콘서트::인천시립교향악단 기획연주회": {
+    "representative_title": "인천시립교향악단 기획연주회, 인천 영 아티스트 콘서트",
+    "members": [
+      {
+        "perf_id": "PF233983",
+        "title": "인천시립교향악단 기획연주회, 인천 영 아티스트 콘서트",
+        "venue_name": "아트센터 인천 콘서트홀",
+        "perf_start_date": "2024-02-16",
+        "perf_end_date": "2024-02-16",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF281686",
+        "title": "인천시립교향악단 기획연주회, 인천 영 아티스트 콘서트",
+        "venue_name": "인천문화예술회관 대공연장",
+        "perf_start_date": "2026-02-25",
+        "perf_end_date": "2026-02-25",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF256047",
+        "title": "인천시립교향악단 기획연주회, 인천 영 아티스트 콘서트 [인천]",
+        "venue_name": "아트센터 인천 콘서트홀",
+        "perf_start_date": "2025-01-23",
+        "perf_end_date": "2025-01-23",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "장녀들|::cast0": {
+    "representative_title": "장녀들 [군포]",
+    "members": [
+      {
+        "perf_id": "PF267737",
+        "title": "장녀들 [군포]",
+        "venue_name": "군포문화예술회관 수리홀",
+        "perf_start_date": "2025-08-23",
+        "perf_end_date": "2025-08-24",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF270397",
+        "title": "장녀들 [군산]",
+        "venue_name": "군산예술의전당 대공연장",
+        "perf_start_date": "2025-08-30",
+        "perf_end_date": "2025-08-30",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "장수탕 선녀님::할리퀸크리에이션즈(주)": {
+    "representative_title": "장수탕 선녀님 [전주]",
+    "members": [
+      {
+        "perf_id": "PF248685",
+        "title": "장수탕 선녀님 [전주]",
+        "venue_name": "한국소리문화의전당 모악당",
+        "perf_start_date": "2024-10-17",
+        "perf_end_date": "2024-10-19",
+        "season_rank": 42.0
+      },
+      {
+        "perf_id": "PF288098",
+        "title": "장수탕 선녀님 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2026-05-23",
+        "perf_end_date": "2026-05-23",
+        "season_rank": 54.0
+      },
+      {
+        "perf_id": "PF246030",
+        "title": "장수탕 선녀님 [음성]",
+        "venue_name": "음성문화예술회관 대공연장",
+        "perf_start_date": "2024-08-24",
+        "perf_end_date": "2024-08-24",
+        "season_rank": 40.0
+      },
+      {
+        "perf_id": "PF250496",
+        "title": "장수탕 선녀님 [이천]",
+        "venue_name": "이천아트홀 대공연장",
+        "perf_start_date": "2024-11-30",
+        "perf_end_date": "2024-12-01",
+        "season_rank": 44.0
+      },
+      {
+        "perf_id": "PF252663",
+        "title": "장수탕 선녀님 [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2024-11-13",
+        "perf_end_date": "2024-11-14",
+        "season_rank": 43.0
+      }
+    ]
+  },
+  "전남도립국악단 명인명창과 함께하는 오마주: 사제::전남도립국악단": {
+    "representative_title": "전남도립국악단, 명인명창과 함께하는 오마주: 사제 (師弟) (10.19) [화순]",
+    "members": [
+      {
+        "perf_id": "PF250538",
+        "title": "전남도립국악단, 명인명창과 함께하는 오마주: 사제 (師弟) (10.19) [화순]",
+        "venue_name": "화순 하니움 문화스포츠센터 적벽실 (대강당) ",
+        "perf_start_date": "2024-10-19",
+        "perf_end_date": "2024-10-19",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF250534",
+        "title": "전남도립국악단, 명인명창과 함께하는 오마주: 사제 (師弟) (10.12) [무안]",
+        "venue_name": "남도소리울림터",
+        "perf_start_date": "2024-10-12",
+        "perf_end_date": "2024-10-12",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "전우치|(재)서울예술단::(재)서울예술단": {
+    "representative_title": "전우치 [서울]",
+    "members": [
+      {
+        "perf_id": "PF273634",
+        "title": "전우치 [서울]",
+        "venue_name": "예술의전당 [서울] CJ 토월극장",
+        "perf_start_date": "2025-10-25",
+        "perf_end_date": "2025-11-02",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF275221",
+        "title": "전우치 [전주]",
+        "venue_name": "한국소리문화의전당 모악당",
+        "perf_start_date": "2025-11-08",
+        "perf_end_date": "2025-11-08",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "정글라이프::cast0": {
+    "representative_title": "정글라이프 [상주]",
+    "members": [
+      {
+        "perf_id": "PF246929",
+        "title": "정글라이프 [상주]",
+        "venue_name": "상주문화회관 대공연장",
+        "perf_start_date": "2024-08-23",
+        "perf_end_date": "2024-08-23",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF250753",
+        "title": "정글라이프 [무안]",
+        "venue_name": "무안승달문화예술회관 대공연장",
+        "perf_start_date": "2024-10-17",
+        "perf_end_date": "2024-10-17",
+        "season_rank": 8.0
+      },
+      {
+        "perf_id": "PF260625",
+        "title": "정글라이프 [인천]",
+        "venue_name": "인천학생교육문화회관 싸리재홀(대공연장)",
+        "perf_start_date": "2025-03-22",
+        "perf_end_date": "2025-03-22",
+        "season_rank": 9.0
+      },
+      {
+        "perf_id": "PF250361",
+        "title": "정글라이프 [부안]",
+        "venue_name": "부안예술회관 공연장",
+        "perf_start_date": "2024-10-11",
+        "perf_end_date": "2024-10-11",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF266645",
+        "title": "정글라이프 [김제]",
+        "venue_name": "김제문화예술회관 대공연장",
+        "perf_start_date": "2025-06-13",
+        "perf_end_date": "2025-06-13",
+        "season_rank": 10.0
+      }
+    ]
+  },
+  "정글북|::cast2": {
+    "representative_title": "정글북 [안동]",
+    "members": [
+      {
+        "perf_id": "PF265251",
+        "title": "정글북 [안동]",
+        "venue_name": "안동문화예술의전당 웅부홀",
+        "perf_start_date": "2025-10-24",
+        "perf_end_date": "2025-10-25",
+        "season_rank": 24.0
+      },
+      {
+        "perf_id": "PF268948",
+        "title": "정글북 [경남 진주]",
+        "venue_name": "경상남도문화예술회관 대공연장",
+        "perf_start_date": "2025-09-12",
+        "perf_end_date": "2025-09-13",
+        "season_rank": 17.0
+      }
+    ]
+  },
+  "정크 클라운::정크": {
+    "representative_title": "정크, 클라운 [무안]",
+    "members": [
+      {
+        "perf_id": "PF272482",
+        "title": "정크, 클라운 [무안]",
+        "venue_name": "남도소리울림터",
+        "perf_start_date": "2025-09-06",
+        "perf_end_date": "2025-09-06",
+        "season_rank": 12.0
+      },
+      {
+        "perf_id": "PF275567",
+        "title": "정크, 클라운 [울진]",
+        "venue_name": "울진문화예술회관",
+        "perf_start_date": "2025-10-23",
+        "perf_end_date": "2025-10-23",
+        "season_rank": 13.0
+      },
+      {
+        "perf_id": "PF272011",
+        "title": "정크, 클라운 [철원]",
+        "venue_name": "철원군 화강문화센터 공연장",
+        "perf_start_date": "2025-08-21",
+        "perf_end_date": "2025-08-21",
+        "season_rank": 10.0
+      },
+      {
+        "perf_id": "PF272973",
+        "title": "정크, 클라운 [전주]",
+        "venue_name": "전북예술회관 공연장",
+        "perf_start_date": "2025-10-25",
+        "perf_end_date": "2025-10-26",
+        "season_rank": 14.0
+      },
+      {
+        "perf_id": "PF272804",
+        "title": "정크, 클라운 [남해]",
+        "venue_name": "남해문화센터 (구. 남해군문화체육센터) 다목적홀",
+        "perf_start_date": "2025-09-04",
+        "perf_end_date": "2025-09-04",
+        "season_rank": 11.0
+      }
+    ]
+  },
+  "조상님께 바치는 댄스::cast0": {
+    "representative_title": "조상님께 바치는 댄스 [용인]",
+    "members": [
+      {
+        "perf_id": "PF226232",
+        "title": "조상님께 바치는 댄스 [용인]",
+        "venue_name": "용인포은아트홀",
+        "perf_start_date": "2023-11-03",
+        "perf_end_date": "2023-11-04",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF225115",
+        "title": "조상님께 바치는 댄스 [대구]",
+        "venue_name": "대구문화예술회관 팔공홀",
+        "perf_start_date": "2023-10-14",
+        "perf_end_date": "2023-10-15",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF220723",
+        "title": "조상님께 바치는 댄스 [제주]",
+        "venue_name": "김정문화회관",
+        "perf_start_date": "2023-07-01",
+        "perf_end_date": "2023-07-02",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "조선에서 온 리골레토::cast0": {
+    "representative_title": "조선에서 온 리골레토 [과천]",
+    "members": [
+      {
+        "perf_id": "PF246558",
+        "title": "조선에서 온 리골레토 [과천]",
+        "venue_name": "과천시민회관 대극장",
+        "perf_start_date": "2024-09-21",
+        "perf_end_date": "2024-09-21",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF246315",
+        "title": "조선에서 온 리골레토 [전주]",
+        "venue_name": "덕진예술회관",
+        "perf_start_date": "2024-09-14",
+        "perf_end_date": "2024-09-14",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF241452",
+        "title": "조선에서 온 리골레토 [전북]",
+        "venue_name": "장수한누리전당 소공연장",
+        "perf_start_date": "2024-06-13",
+        "perf_end_date": "2024-06-13",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "종이꽃밭: 두할망본풀이::판소리아지트 놀애박스": {
+    "representative_title": "종이꽃밭: 두할망본풀이 [보성]",
+    "members": [
+      {
+        "perf_id": "PF270187",
+        "title": "종이꽃밭: 두할망본풀이 [평택 남부]",
+        "venue_name": "평택시남부문예회관 대공연장",
+        "perf_start_date": "2025-08-22",
+        "perf_end_date": "2025-08-22",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF241538",
+        "title": "종이꽃밭: 두할망본풀이 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2024-07-12",
+        "perf_end_date": "2024-07-13",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF251920",
+        "title": "종이꽃밭: 두할망본풀이 [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2024-10-31",
+        "perf_end_date": "2024-10-31",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF270209",
+        "title": "종이꽃밭: 두할망본풀이 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2025-08-30",
+        "perf_end_date": "2025-08-30",
+        "season_rank": 8.0
+      },
+      {
+        "perf_id": "PF242130",
+        "title": "종이꽃밭: 두할망본풀이 [포항]",
+        "venue_name": "포항문화예술회관 대공연장",
+        "perf_start_date": "2024-07-27",
+        "perf_end_date": "2024-07-27",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF241408",
+        "title": "종이꽃밭: 두할망본풀이 [수원]",
+        "venue_name": "정조테마공연장",
+        "perf_start_date": "2024-06-14",
+        "perf_end_date": "2024-06-15",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF251917",
+        "title": "종이꽃밭: 두할망본풀이 [강릉]",
+        "venue_name": "강릉단오제전수교육관 (구. 단오문화관) 공연장",
+        "perf_start_date": "2024-11-08",
+        "perf_end_date": "2024-11-09",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF254800",
+        "title": "종이꽃밭: 두할망본풀이 [완주]",
+        "venue_name": "완주향토예술문화회관 공연장",
+        "perf_start_date": "2024-12-27",
+        "perf_end_date": "2024-12-28",
+        "season_rank": 6.0
+      }
+    ]
+  },
+  "지정|::cast0": {
+    "representative_title": "지정 [부산]",
+    "members": [
+      {
+        "perf_id": "PF225297",
+        "title": "지정 [부산]",
+        "venue_name": "(재) 영화의전당 하늘연극장",
+        "perf_start_date": "2023-11-23",
+        "perf_end_date": "2023-11-24",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF225300",
+        "title": "지정 [용인]",
+        "venue_name": "용인시문화예술회관 처인홀",
+        "perf_start_date": "2023-11-11",
+        "perf_end_date": "2023-11-12",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF225627",
+        "title": "지정 [광주]",
+        "venue_name": "국립아시아문화전당 극장2",
+        "perf_start_date": "2023-11-18",
+        "perf_end_date": "2023-11-19",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "진호의 책방::cast0": {
+    "representative_title": "진호의 책방 [양산]",
+    "members": [
+      {
+        "perf_id": "PF246511",
+        "title": "진호의 책방 [양산]",
+        "venue_name": "양산문화예술회관 대공연장",
+        "perf_start_date": "2024-08-31",
+        "perf_end_date": "2024-08-31",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF246187",
+        "title": "진호의 책방 [의성]",
+        "venue_name": "의성문화회관",
+        "perf_start_date": "2024-08-20",
+        "perf_end_date": "2024-08-20",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "쪽빛황혼|(사)마당극패 우금치::(사)마당극패 우금치": {
+    "representative_title": "쪽빛황혼 [예주]",
+    "members": [
+      {
+        "perf_id": "PF247425",
+        "title": "쪽빛황혼 [예주]",
+        "venue_name": "예주문화예술회관",
+        "perf_start_date": "2024-09-04",
+        "perf_end_date": "2024-09-05",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF244203",
+        "title": "쪽빛황혼 [횡성]",
+        "venue_name": "횡성문화예술회관 대공연장",
+        "perf_start_date": "2024-07-20",
+        "perf_end_date": "2024-07-20",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF290290",
+        "title": "쪽빛황혼 [창녕]",
+        "venue_name": "창녕문화예술회관 대공연장",
+        "perf_start_date": "2026-05-22",
+        "perf_end_date": "2026-05-22",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF292145",
+        "title": "쪽빛황혼 [울산]",
+        "venue_name": "울산문화예술회관 대공연장",
+        "perf_start_date": "2026-06-20",
+        "perf_end_date": "2026-06-20",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF251433",
+        "title": "쪽빛황혼 [영월]",
+        "venue_name": "영월군문화예술회관",
+        "perf_start_date": "2024-11-08",
+        "perf_end_date": "2024-11-09",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "쪽빛황혼|::cast0": {
+    "representative_title": "쪽빛황혼 [금산]",
+    "members": [
+      {
+        "perf_id": "PF269039",
+        "title": "쪽빛황혼 [금산]",
+        "venue_name": "금산다락원 생명의집 대공연장",
+        "perf_start_date": "2025-07-24",
+        "perf_end_date": "2025-07-24",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF244814",
+        "title": "쪽빛황혼 [광명]",
+        "venue_name": "광명시민회관 대공연장",
+        "perf_start_date": "2024-08-17",
+        "perf_end_date": "2024-08-17",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF267446",
+        "title": "쪽빛황혼 [대전]",
+        "venue_name": "대덕구문예회관 (구. 대덕구평생학습센터) 앞마당",
+        "perf_start_date": "2025-07-05",
+        "perf_end_date": "2025-07-05",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF266399",
+        "title": "쪽빛황혼 [예산]",
+        "venue_name": "예산문예회관",
+        "perf_start_date": "2025-06-12",
+        "perf_end_date": "2025-06-12",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF280417",
+        "title": "쪽빛황혼 [양구]",
+        "venue_name": "양구문화복지센터",
+        "perf_start_date": "2025-12-13",
+        "perf_end_date": "2025-12-13",
+        "season_rank": 6.0
+      }
+    ]
+  },
+  "차와 이야기가 있는 국악콘서트: 다담::cast0": {
+    "representative_title": "차와 이야기가 있는 국악콘서트: 다담 [남원]",
+    "members": [
+      {
+        "perf_id": "PF260883",
+        "title": "차와 이야기가 있는 국악콘서트: 다담 [남원]",
+        "venue_name": "국립민속국악원 예음헌",
+        "perf_start_date": "2025-03-26",
+        "perf_end_date": "2025-11-26",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF286553",
+        "title": "차와 이야기가 있는 국악콘서트: 다담 [남원]",
+        "venue_name": "국립민속국악원 예음헌",
+        "perf_start_date": "2026-03-25",
+        "perf_end_date": "2026-11-25",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "차이콥스키 콩쿠르 수상자 콘서트::cast0": {
+    "representative_title": "차이콥스키 콩쿠르 수상자 콘서트 [안성]",
+    "members": [
+      {
+        "perf_id": "PF245309",
+        "title": "차이콥스키 콩쿠르 수상자 콘서트 [안성]",
+        "venue_name": "안성맞춤아트홀 대공연장",
+        "perf_start_date": "2024-09-13",
+        "perf_end_date": "2024-09-13",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF268629",
+        "title": "차이콥스키 콩쿠르 수상자 콘서트 [연천]",
+        "venue_name": "연천수레울아트홀 대공연장",
+        "perf_start_date": "2025-09-13",
+        "perf_end_date": "2025-09-13",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF245470",
+        "title": "차이콥스키 콩쿠르 수상자 콘서트 [대구]",
+        "venue_name": "수성아트피아 대극장 (대공연장) ",
+        "perf_start_date": "2024-09-12",
+        "perf_end_date": "2024-09-12",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "청소년을 위한 공연예술축제 5=1::극단 디아코노스": {
+    "representative_title": "청소년을 위한 공연예술축제, 5=1 [대구]",
+    "members": [
+      {
+        "perf_id": "PF224957",
+        "title": "청소년을 위한 공연예술축제, 5=1 [대구]",
+        "venue_name": "문화예술전용극장CT",
+        "perf_start_date": "2023-09-13",
+        "perf_end_date": "2023-09-13",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF224958",
+        "title": "청소년을 위한 공연예술축제, 5=1 [부산]",
+        "venue_name": "BNK부산은행 조은극장 1관",
+        "perf_start_date": "2023-09-06",
+        "perf_end_date": "2023-09-07",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "청소년을 위한 공연예술축제 Do It Now!::(주)아트파이": {
+    "representative_title": "청소년을 위한 공연예술축제, Do It Now! [영덕]",
+    "members": [
+      {
+        "perf_id": "PF221037",
+        "title": "청소년을 위한 공연예술축제, Do It Now! [영덕]",
+        "venue_name": "영덕 무형문화재 전수교육관 소극장",
+        "perf_start_date": "2023-07-12",
+        "perf_end_date": "2023-07-12",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF224813",
+        "title": "청소년을 위한 공연예술축제, Do It Now! [부산]",
+        "venue_name": "BNK부산은행 조은극장 1관",
+        "perf_start_date": "2023-09-04",
+        "perf_end_date": "2023-09-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "청춘연가|::cast0": {
+    "representative_title": "청춘연가 [구리]",
+    "members": [
+      {
+        "perf_id": "PF239901",
+        "title": "청춘연가 [구리]",
+        "venue_name": "구리아트홀 코스모스대극장",
+        "perf_start_date": "2024-05-18",
+        "perf_end_date": "2024-05-18",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF240856",
+        "title": "청춘연가 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2024-06-29",
+        "perf_end_date": "2024-06-29",
+        "season_rank": 8.0
+      },
+      {
+        "perf_id": "PF239325",
+        "title": "청춘연가 [함안]",
+        "venue_name": "함안문화예술회관 대공연장",
+        "perf_start_date": "2024-05-25",
+        "perf_end_date": "2024-05-25",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF241045",
+        "title": "청춘연가 [함양]",
+        "venue_name": "함양문화예술회관 대공연장",
+        "perf_start_date": "2024-06-01",
+        "perf_end_date": "2024-06-01",
+        "season_rank": 7.0
+      }
+    ]
+  },
+  "청춘연가|뉴스테이지(NEWSTAGE)::뉴스테이지(NEWSTAGE)": {
+    "representative_title": "청춘연가 [영천]",
+    "members": [
+      {
+        "perf_id": "PF241069",
+        "title": "청춘연가 [영천]",
+        "venue_name": "영천시민회관 스타홀",
+        "perf_start_date": "2024-06-08",
+        "perf_end_date": "2024-06-08",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF241228",
+        "title": "청춘연가 [부산]",
+        "venue_name": "동래문화회관 대극장",
+        "perf_start_date": "2024-06-22",
+        "perf_end_date": "2024-06-22",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "첼로가야금 2.0 콘서트::cast0": {
+    "representative_title": "첼로가야금 2.0 콘서트 [울산]",
+    "members": [
+      {
+        "perf_id": "PF250071",
+        "title": "첼로가야금 2.0 콘서트 [울산]",
+        "venue_name": "울주문화예술회관 그린나래홀 (공연장) ",
+        "perf_start_date": "2024-10-26",
+        "perf_end_date": "2024-10-26",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF251075",
+        "title": "첼로가야금 2.0 콘서트 [용인]",
+        "venue_name": "용인문화예술원 마루홀",
+        "perf_start_date": "2024-11-02",
+        "perf_end_date": "2024-11-02",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "첼리스타 첼로 앙상블::cast0": {
+    "representative_title": "첼리스타 첼로 앙상블 [양산]",
+    "members": [
+      {
+        "perf_id": "PF273307",
+        "title": "첼리스타 첼로 앙상블 [양산]",
+        "venue_name": "양산문화예술회관 대공연장",
+        "perf_start_date": "2025-09-27",
+        "perf_end_date": "2025-09-27",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF276228",
+        "title": "첼리스타 첼로 앙상블 [대구]",
+        "venue_name": "대덕문화전당",
+        "perf_start_date": "2025-11-29",
+        "perf_end_date": "2025-11-29",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF276399",
+        "title": "첼리스타 첼로 앙상블 [인천]",
+        "venue_name": "제물포구문화체육센터(구. 동구문화체육센터) 공연장",
+        "perf_start_date": "2025-11-18",
+        "perf_end_date": "2025-11-18",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "춘천시립예술단 정기회원 음악회::cast0": {
+    "representative_title": "춘천시립예술단 정기회원 음악회",
+    "members": [
+      {
+        "perf_id": "PF235151",
+        "title": "춘천시립예술단 정기회원 음악회",
+        "venue_name": "춘천문화예술회관 공연장",
+        "perf_start_date": "2024-02-29",
+        "perf_end_date": "2024-02-29",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF287234",
+        "title": "춘천시립예술단 정기회원 음악회 [춘천]",
+        "venue_name": "춘천문화예술회관 로비",
+        "perf_start_date": "2026-04-03",
+        "perf_end_date": "2026-04-03",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "춤추는 은빛 초상화::cast0": {
+    "representative_title": "춤추는 은빛 초상화 [춘천]",
+    "members": [
+      {
+        "perf_id": "PF271180",
+        "title": "춤추는 은빛 초상화 [춘천]",
+        "venue_name": "춘천문화예술회관 공연장",
+        "perf_start_date": "2025-09-10",
+        "perf_end_date": "2025-09-10",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF271656",
+        "title": "춤추는 은빛 초상화 [하남]",
+        "venue_name": "하남문화예술회관 아랑홀(소극장)",
+        "perf_start_date": "2025-09-06",
+        "perf_end_date": "2025-09-06",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF273826",
+        "title": "춤추는 은빛 초상화 [태안]",
+        "venue_name": "태안군문화예술회관 대공연장",
+        "perf_start_date": "2025-09-25",
+        "perf_end_date": "2025-09-25",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "카운터테너 이동규 리사이틀: Dream Quilter 꿈을 누비는 자::cast0": {
+    "representative_title": "카운터테너 이동규 리사이틀: Dream Quilter 꿈을 누비는 자 [여주]",
+    "members": [
+      {
+        "perf_id": "PF254074",
+        "title": "카운터테너 이동규 리사이틀: Dream Quilter 꿈을 누비는 자 [여주]",
+        "venue_name": "세종국악당",
+        "perf_start_date": "2024-12-21",
+        "perf_end_date": "2024-12-21",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF251528",
+        "title": "카운터테너 이동규 리사이틀: Dream Quilter 꿈을 누비는 자 [부산]",
+        "venue_name": "금정문화회관 대공연장(금빛누리홀)",
+        "perf_start_date": "2024-12-13",
+        "perf_end_date": "2024-12-13",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "쿠로이 저택엔 누가 살고 있을까?::cast0": {
+    "representative_title": "쿠로이 저택엔 누가 살고 있을까? [제주]",
+    "members": [
+      {
+        "perf_id": "PF247511",
+        "title": "쿠로이 저택엔 누가 살고 있을까? [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2024-09-21",
+        "perf_end_date": "2024-09-22",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF247849",
+        "title": "쿠로이 저택엔 누가 살고 있을까? [공주]",
+        "venue_name": "공주문예회관 대공연장",
+        "perf_start_date": "2024-10-11",
+        "perf_end_date": "2024-10-12",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF246729",
+        "title": "쿠로이 저택엔 누가 살고 있을까? [이천]",
+        "venue_name": "이천아트홀 소공연장",
+        "perf_start_date": "2024-10-04",
+        "perf_end_date": "2024-10-05",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "템플|::cast1": {
+    "representative_title": "템플 [김해]",
+    "members": [
+      {
+        "perf_id": "PF239719",
+        "title": "템플 [김해]",
+        "venue_name": "김해문화의전당 누리홀",
+        "perf_start_date": "2024-05-17",
+        "perf_end_date": "2024-05-18",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF270709",
+        "title": "템플 [밀양]",
+        "venue_name": "밀양아리랑아트센터 대공연장",
+        "perf_start_date": "2025-08-29",
+        "perf_end_date": "2025-08-30",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF271626",
+        "title": "템플 [음성]",
+        "venue_name": "음성문화예술회관 대공연장",
+        "perf_start_date": "2025-09-04",
+        "perf_end_date": "2025-09-04",
+        "season_rank": 8.0
+      }
+    ]
+  },
+  "템플|공연배달서비스간다::공연배달서비스간다": {
+    "representative_title": "템플 [보성]",
+    "members": [
+      {
+        "perf_id": "PF250689",
+        "title": "템플 [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2024-10-16",
+        "perf_end_date": "2024-10-17",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF246684",
+        "title": "템플 [함안]",
+        "venue_name": "함안문화예술회관 대공연장",
+        "perf_start_date": "2024-10-12",
+        "perf_end_date": "2024-10-12",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF248052",
+        "title": "템플 [오산]",
+        "venue_name": "오산문화예술회관 대공연장",
+        "perf_start_date": "2024-10-25",
+        "perf_end_date": "2024-10-26",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF242547",
+        "title": "템플 [횡성]",
+        "venue_name": "횡성문화예술회관 대공연장",
+        "perf_start_date": "2024-06-29",
+        "perf_end_date": "2024-06-29",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "통속소설이 머 어때서?!::극단 수수파보리": {
+    "representative_title": "통속소설이 머 어때서?! [광주]",
+    "members": [
+      {
+        "perf_id": "PF245967",
+        "title": "통속소설이 머 어때서?! [광주]",
+        "venue_name": "빛고을시민문화관 공연장",
+        "perf_start_date": "2024-09-04",
+        "perf_end_date": "2024-09-04",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF244801",
+        "title": "통속소설이 머 어때서?! [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2024-08-31",
+        "perf_end_date": "2024-08-31",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "파리넬리|::cast0": {
+    "representative_title": "파리넬리 [수원]",
+    "members": [
+      {
+        "perf_id": "PF222302",
+        "title": "파리넬리 [수원]",
+        "venue_name": "수원SK아트리움 대공연장",
+        "perf_start_date": "2023-09-02",
+        "perf_end_date": "2023-09-02",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF221516",
+        "title": "파리넬리 [군포]",
+        "venue_name": "군포문화예술회관 수리홀",
+        "perf_start_date": "2023-08-25",
+        "perf_end_date": "2023-08-26",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF221163",
+        "title": "파리넬리 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관) 사임당홀 (대공연장) ",
+        "perf_start_date": "2023-08-12",
+        "perf_end_date": "2023-08-13",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF226763",
+        "title": "파리넬리 [의정부]",
+        "venue_name": "의정부예술의전당 대극장",
+        "perf_start_date": "2023-11-25",
+        "perf_end_date": "2023-11-25",
+        "season_rank": 8.0
+      },
+      {
+        "perf_id": "PF223560",
+        "title": "파리넬리 [오산]",
+        "venue_name": "오산문화예술회관 대공연장",
+        "perf_start_date": "2023-10-13",
+        "perf_end_date": "2023-10-14",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF219472",
+        "title": "파리넬리 [익산]",
+        "venue_name": "익산예술의전당 대공연장",
+        "perf_start_date": "2023-07-07",
+        "perf_end_date": "2023-07-08",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF221102",
+        "title": "파리넬리 [당진]",
+        "venue_name": "당진문예의전당 대공연장",
+        "perf_start_date": "2023-07-21",
+        "perf_end_date": "2023-07-22",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF217477",
+        "title": "파리넬리 [부천]",
+        "venue_name": "부천시민회관 대공연장",
+        "perf_start_date": "2023-06-23",
+        "perf_end_date": "2023-06-24",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "판소리 레미제라블 구구선 사람들::판소리 레미제라블": {
+    "representative_title": "판소리 레미제라블, 구구선 사람들 [안양]",
+    "members": [
+      {
+        "perf_id": "PF249590",
+        "title": "판소리 레미제라블, 구구선 사람들 [안양]",
+        "venue_name": "안양아트센터 수리홀",
+        "perf_start_date": "2024-11-08",
+        "perf_end_date": "2024-11-08",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF261224",
+        "title": "판소리 레미제라블, 구구선 사람들 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2025-04-19",
+        "perf_end_date": "2025-04-19",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF251664",
+        "title": "판소리 레미제라블, 구구선 사람들 [밀양]",
+        "venue_name": "밀양아리랑아트센터 소공연장",
+        "perf_start_date": "2024-11-14",
+        "perf_end_date": "2024-11-14",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "판소리 레미제라블: 구구선 사람들::cast0": {
+    "representative_title": "판소리 레미제라블: 구구선 사람들 [영덕]",
+    "members": [
+      {
+        "perf_id": "PF225340",
+        "title": "판소리 레미제라블: 구구선 사람들 [영덕]",
+        "venue_name": "무형문화재 전수관 소공연장",
+        "perf_start_date": "2023-09-16",
+        "perf_end_date": "2023-09-17",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF225303",
+        "title": "판소리 레미제라블: 구구선 사람들 [광명]",
+        "venue_name": "광명시민회관 대공연장",
+        "perf_start_date": "2023-10-06",
+        "perf_end_date": "2023-10-07",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "판타스틱 애니멀즈::cast0": {
+    "representative_title": "판타스틱 애니멀즈 [전주]",
+    "members": [
+      {
+        "perf_id": "PF269505",
+        "title": "판타스틱 애니멀즈 [전주]",
+        "venue_name": "한국소리문화의전당 모악당",
+        "perf_start_date": "2025-08-27",
+        "perf_end_date": "2025-08-27",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF259898",
+        "title": "판타스틱 애니멀즈 [인천]",
+        "venue_name": "인천학생교육문화회관 싸리재홀(대공연장)",
+        "perf_start_date": "2025-03-08",
+        "perf_end_date": "2025-03-08",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF262571",
+        "title": "판타스틱 애니멀즈 [김포]",
+        "venue_name": "김포아트홀",
+        "perf_start_date": "2025-05-03",
+        "perf_end_date": "2025-05-03",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "패스|::cast1": {
+    "representative_title": "패스 [부산]",
+    "members": [
+      {
+        "perf_id": "PF221677",
+        "title": "패스 [부산]",
+        "venue_name": "(재) 영화의전당 하늘연극장",
+        "perf_start_date": "2023-09-06",
+        "perf_end_date": "2023-09-07",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF221678",
+        "title": "패스 [속초]",
+        "venue_name": "속초문화예술회관 대공연장",
+        "perf_start_date": "2023-08-25",
+        "perf_end_date": "2023-08-26",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "패스|극단 산::극단 산": {
+    "representative_title": "패스 [보성]",
+    "members": [
+      {
+        "perf_id": "PF245042",
+        "title": "패스 [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2024-07-23",
+        "perf_end_date": "2024-07-23",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF222966",
+        "title": "패스 [정선]",
+        "venue_name": "정선아리랑센터 아리랑홀",
+        "perf_start_date": "2023-08-31",
+        "perf_end_date": "2023-08-31",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF244176",
+        "title": "패스 [광주]",
+        "venue_name": "광산문화예술회관 공연장",
+        "perf_start_date": "2024-07-20",
+        "perf_end_date": "2024-07-20",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "표류|::cast0": {
+    "representative_title": "표류 [광주]",
+    "members": [
+      {
+        "perf_id": "PF270356",
+        "title": "표류 [광주]",
+        "venue_name": "빛고을시민문화관 공연장",
+        "perf_start_date": "2025-08-23",
+        "perf_end_date": "2025-08-23",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF272076",
+        "title": "표류 [광양]",
+        "venue_name": "광양시문화예술회관 대공연장",
+        "perf_start_date": "2025-09-05",
+        "perf_end_date": "2025-09-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "풍편에 넌즞 들은 아가멤논::cast0": {
+    "representative_title": "풍편에 넌즞 들은 아가멤논 [안동]",
+    "members": [
+      {
+        "perf_id": "PF265217",
+        "title": "풍편에 넌즞 들은 아가멤논 [안동]",
+        "venue_name": "안동문화예술의전당 웅부홀",
+        "perf_start_date": "2025-07-10",
+        "perf_end_date": "2025-07-10",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF263848",
+        "title": "풍편에 넌즞 들은 아가멤논 [밀양]",
+        "venue_name": "밀양아리랑아트센터 대공연장",
+        "perf_start_date": "2025-06-05",
+        "perf_end_date": "2025-06-05",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "피스트: 여덟 개의 순간::cast0": {
+    "representative_title": "피스트: 여덟 개의 순간 [안산]",
+    "members": [
+      {
+        "perf_id": "PF222573",
+        "title": "피스트: 여덟 개의 순간 [안산]",
+        "venue_name": "안산문화예술의전당 달맞이극장",
+        "perf_start_date": "2023-09-15",
+        "perf_end_date": "2023-09-16",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF228587",
+        "title": "피스트: 여덟 개의 순간 [광명]",
+        "venue_name": "광명시민회관 대공연장",
+        "perf_start_date": "2023-11-24",
+        "perf_end_date": "2023-11-25",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "한빛오케스트라와 함께하는 희망음악회::cast0": {
+    "representative_title": "한빛오케스트라와 함께하는 희망음악회 [산청]",
+    "members": [
+      {
+        "perf_id": "PF249660",
+        "title": "한빛오케스트라와 함께하는 희망음악회 [산청]",
+        "venue_name": "산청문화예술회관 대공연장",
+        "perf_start_date": "2024-10-17",
+        "perf_end_date": "2024-10-17",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF254563",
+        "title": "한빛오케스트라와 함께하는 희망음악회 [구리]",
+        "venue_name": "구리아트홀 코스모스대극장",
+        "perf_start_date": "2024-12-07",
+        "perf_end_date": "2024-12-07",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "해녀의 바다::cast0": {
+    "representative_title": "해녀의 바다 [포항]",
+    "members": [
+      {
+        "perf_id": "PF248833",
+        "title": "해녀의 바다 [포항]",
+        "venue_name": "포항문화예술회관 대공연장",
+        "perf_start_date": "2024-10-10",
+        "perf_end_date": "2024-10-10",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF250180",
+        "title": "해녀의 바다 [경주]",
+        "venue_name": "경주예술의전당 대공연장(화랑홀)",
+        "perf_start_date": "2024-10-31",
+        "perf_end_date": "2024-10-31",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF249898",
+        "title": "해녀의 바다 [울산]",
+        "venue_name": "울산문화예술회관 대공연장",
+        "perf_start_date": "2024-10-17",
+        "perf_end_date": "2024-10-17",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "허튼소리|::cast0": {
+    "representative_title": "허튼소리 [보성]",
+    "members": [
+      {
+        "perf_id": "PF246023",
+        "title": "허튼소리 [보성]",
+        "venue_name": "보성군문화예술회관",
+        "perf_start_date": "2024-08-22",
+        "perf_end_date": "2024-08-22",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF267088",
+        "title": "허튼소리 [부안]",
+        "venue_name": "부안예술회관 공연장",
+        "perf_start_date": "2025-06-19",
+        "perf_end_date": "2025-06-19",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF261103",
+        "title": "허튼소리 [대전]",
+        "venue_name": "대전시립연정국악원 큰마당",
+        "perf_start_date": "2025-04-11",
+        "perf_end_date": "2025-04-11",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF272927",
+        "title": "허튼소리 [김해]",
+        "venue_name": "김해서부문화센터 하늬홀",
+        "perf_start_date": "2025-10-17",
+        "perf_end_date": "2025-10-17",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF238855",
+        "title": "허튼소리 [광주]",
+        "venue_name": "광주북구문화센터 (양산도서관) 공연장",
+        "perf_start_date": "2024-04-25",
+        "perf_end_date": "2024-04-25",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF263046",
+        "title": "허튼소리 [창녕]",
+        "venue_name": "창녕문화예술회관 대공연장",
+        "perf_start_date": "2025-04-23",
+        "perf_end_date": "2025-04-23",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF267264",
+        "title": "허튼소리 [영주]",
+        "venue_name": "영주문화예술회관 까치홀",
+        "perf_start_date": "2025-06-21",
+        "perf_end_date": "2025-06-21",
+        "season_rank": 6.0
+      }
+    ]
+  },
+  "헤비메탈 걸스::cast0": {
+    "representative_title": "헤비메탈 걸스 [하남]",
+    "members": [
+      {
+        "perf_id": "PF247149",
+        "title": "헤비메탈 걸스 [하남]",
+        "venue_name": "하남문화예술회관 검단홀(대극장)",
+        "perf_start_date": "2024-10-05",
+        "perf_end_date": "2024-10-05",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF243514",
+        "title": "헤비메탈 걸스 [정선]",
+        "venue_name": "정선아리랑센터 아리랑홀",
+        "perf_start_date": "2024-07-10",
+        "perf_end_date": "2024-07-10",
+        "season_rank": 3.0
+      }
+    ]
+  },
+  "헤어드레서::cast2": {
+    "representative_title": "헤어드레서 [고창]",
+    "members": [
+      {
+        "perf_id": "PF290637",
+        "title": "헤어드레서 [고창]",
+        "venue_name": "고창문화의전당 공연장",
+        "perf_start_date": "2026-05-07",
+        "perf_end_date": "2026-05-07",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF273313",
+        "title": "헤어드레서 [무안]",
+        "venue_name": "남도소리울림터",
+        "perf_start_date": "2025-10-25",
+        "perf_end_date": "2025-10-25",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF279038",
+        "title": "헤어드레서 [무안]",
+        "venue_name": "무안승달문화예술회관 대공연장",
+        "perf_start_date": "2025-11-20",
+        "perf_end_date": "2025-11-20",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF270711",
+        "title": "헤어드레서 [영주]",
+        "venue_name": "영주문화예술회관 까치홀",
+        "perf_start_date": "2025-08-09",
+        "perf_end_date": "2025-08-09",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF265978",
+        "title": "헤어드레서 [양산]",
+        "venue_name": "양산문화예술회관 대공연장",
+        "perf_start_date": "2025-06-28",
+        "perf_end_date": "2025-06-28",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF278371",
+        "title": "헤어드레서 [정선]",
+        "venue_name": "정선아리랑센터 아리랑홀",
+        "perf_start_date": "2025-08-20",
+        "perf_end_date": "2025-08-20",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF265263",
+        "title": "헤어드레서 [평창]",
+        "venue_name": "평창문화예술회관 대공연장",
+        "perf_start_date": "2025-06-25",
+        "perf_end_date": "2025-06-25",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "헬렌 앤 미::cast1": {
+    "representative_title": "헬렌 앤 미 [제주]",
+    "members": [
+      {
+        "perf_id": "PF225083",
+        "title": "헬렌 앤 미 [제주]",
+        "venue_name": "제주아트센터 대극장",
+        "perf_start_date": "2023-09-24",
+        "perf_end_date": "2023-09-24",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF220910",
+        "title": "헬렌 앤 미 [안산]",
+        "venue_name": "안산문화예술의전당 달맞이극장",
+        "perf_start_date": "2023-09-08",
+        "perf_end_date": "2023-09-09",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF221317",
+        "title": "헬렌 앤 미 [평택]",
+        "venue_name": "평택시서부문예회관 대공연장",
+        "perf_start_date": "2023-07-22",
+        "perf_end_date": "2023-07-22",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF222752",
+        "title": "헬렌 앤 미 [대구]",
+        "venue_name": "어울아트센터(구. 대구북구문예회관) 함지홀(대공연장)",
+        "perf_start_date": "2023-08-26",
+        "perf_end_date": "2023-08-26",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF231846",
+        "title": "헬렌 앤 미 [김포]",
+        "venue_name": "통진두레문화센터 두레홀",
+        "perf_start_date": "2023-12-16",
+        "perf_end_date": "2023-12-16",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF221314",
+        "title": "헬렌 앤 미 [고양]",
+        "venue_name": "고양어울림누리 별모래극장",
+        "perf_start_date": "2023-09-16",
+        "perf_end_date": "2023-09-16",
+        "season_rank": 4.0
+      }
+    ]
+  },
+  "호수 위 우주::cast0": {
+    "representative_title": "호수 위 우주 [충주]",
+    "members": [
+      {
+        "perf_id": "PF225545",
+        "title": "호수 위 우주 [충주]",
+        "venue_name": "탄금호 국제조정경기장",
+        "perf_start_date": "2023-09-21",
+        "perf_end_date": "2023-09-24",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF224122",
+        "title": "호수 위 우주 [세종]",
+        "venue_name": "세종호수공원 축제섬",
+        "perf_start_date": "2023-10-06",
+        "perf_end_date": "2023-10-09",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "홍련|::cast1": {
+    "representative_title": "홍련 [공주]",
+    "members": [
+      {
+        "perf_id": "PF257030",
+        "title": "홍련 [공주]",
+        "venue_name": "공주문예회관 대공연장",
+        "perf_start_date": "2025-11-14",
+        "perf_end_date": "2025-11-15",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF271599",
+        "title": "홍련 [과천]",
+        "venue_name": "과천시민회관 소극장",
+        "perf_start_date": "2025-09-27",
+        "perf_end_date": "2025-09-27",
+        "season_rank": 2.0
+      }
+    ]
+  },
+  "환도열차|충북도립극단::충북도립극단": {
+    "representative_title": "환도열차 [제천]",
+    "members": [
+      {
+        "perf_id": "PF265503",
+        "title": "환도열차 [제천]",
+        "venue_name": "제천예술의전당 대공연장",
+        "perf_start_date": "2025-06-20",
+        "perf_end_date": "2025-06-20",
+        "season_rank": 2.0
+      },
+      {
+        "perf_id": "PF264795",
+        "title": "환도열차 [청주]",
+        "venue_name": "충청북도학생교육문화원 대공연장",
+        "perf_start_date": "2025-06-13",
+        "perf_end_date": "2025-06-14",
+        "season_rank": 1.0
+      }
+    ]
+  },
+  "회란기|::cast0": {
+    "representative_title": "회란기 [수원]",
+    "members": [
+      {
+        "perf_id": "PF248417",
+        "title": "회란기 [수원]",
+        "venue_name": "수원SK아트리움 대공연장",
+        "perf_start_date": "2024-10-12",
+        "perf_end_date": "2024-10-13",
+        "season_rank": 6.0
+      },
+      {
+        "perf_id": "PF250228",
+        "title": "회란기 [고양]",
+        "venue_name": "고양아람누리 새라새극장",
+        "perf_start_date": "2024-11-02",
+        "perf_end_date": "2024-11-03",
+        "season_rank": 7.0
+      },
+      {
+        "perf_id": "PF217043",
+        "title": "회란기 [하남]",
+        "venue_name": "하남문화예술회관 아랑홀(소극장)",
+        "perf_start_date": "2023-05-20",
+        "perf_end_date": "2023-05-20",
+        "season_rank": 4.0
+      },
+      {
+        "perf_id": "PF217323",
+        "title": "회란기 [울산]",
+        "venue_name": "울산문화예술회관 소공연장",
+        "perf_start_date": "2023-05-27",
+        "perf_end_date": "2023-05-28",
+        "season_rank": 5.0
+      },
+      {
+        "perf_id": "PF217042",
+        "title": "회란기 [광주]",
+        "venue_name": "광산문화예술회관 공연장",
+        "perf_start_date": "2023-05-12",
+        "perf_end_date": "2023-05-13",
+        "season_rank": 3.0
+      },
+      {
+        "perf_id": "PF256988",
+        "title": "회란기 [공주]",
+        "venue_name": "공주문예회관 대공연장",
+        "perf_start_date": "2025-02-14",
+        "perf_end_date": "2025-02-15",
+        "season_rank": 8.0
+      }
+    ]
+  },
+  "회란기|극공작소 마방진::극공작소 마방진": {
+    "representative_title": "회란기",
+    "members": [
+      {
+        "perf_id": "PF213114",
+        "title": "회란기",
+        "venue_name": "두산아트센터 연강홀",
+        "perf_start_date": "2023-03-10",
+        "perf_end_date": "2023-04-02",
+        "season_rank": 1.0
+      },
+      {
+        "perf_id": "PF249121",
+        "title": "회란기 [관악]",
+        "venue_name": "관악아트홀 (구. 관악문화관) 관악아트홀 (구. 관악문화관) ",
+        "perf_start_date": "2024-10-18",
+        "perf_end_date": "2024-10-19",
+        "season_rank": 2.0
+      }
+    ]
+  }
+}
