@@ -1,0 +1,49 @@
+name: 타겟 수집 후보 -> verified/review/delete 병합
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 레포 체크아웃
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 최신 상태로 맞추기
+        run: git pull origin master
+
+      - name: 후보 -> 마스터 파일 병합
+        run: python scripts/merge_candidates_into_master.py --data-dir data
+
+      - name: 결과 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/all_videos_verified.csv data/videos_to_review.csv \
+                  data/videos_to_delete_from_targeted.csv data/excluded_video_ids.txt
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"
+            exit 0
+          fi
+          git commit -m "타겟 수집 후보 병합: $(date -u +'%Y-%m-%d')"
+          for i in 1 2 3; do
+            if git pull --rebase origin master && git push; then
+              echo "푸시 성공"
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep 10
+          done
+          echo "푸시 실패, 다음에 다시 시도해주세요"
+          exit 1
