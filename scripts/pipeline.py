@@ -185,7 +185,7 @@ def cmd_build_targets(args):
         members = [{
             "perf_id": row["perf_id"], "title": row["title"], "venue_name": row["venue_name"],
             "perf_start_date": str(row["perf_start_date"]), "perf_end_date": str(row["perf_end_date"]),
-            "season_rank": row["season_rank"],
+            "season_rank": row["season_rank"], "genre": row["genre"],
         } for _, row in g.iterrows()]
         rep = min(g["title"], key=len)
         groups[key] = {"representative_title": rep, "members": members}
@@ -320,6 +320,25 @@ def videos_list(rotator, video_ids):
     return out
 
 
+def channels_list(rotator, channel_ids, cache):
+    """채널 구독자수/영상수. 이미 캐시에 있는 채널은 다시 안 부름 (같은 채널이
+    여러 영상에 겹치는 경우가 많아서 quota 절약)."""
+    new_ids = [c for c in dict.fromkeys(channel_ids) if c and c not in cache]
+    for i in range(0, len(new_ids), 50):
+        chunk = new_ids[i:i + 50]
+        params = {"part": "statistics", "id": ",".join(chunk), "key": rotator.current}
+        try:
+            resp = robust_get(f"{API_BASE}/channels", params)
+        except DailyQuotaExceededError:
+            if not rotator.rotate():
+                break
+            params["key"] = rotator.current
+            resp = robust_get(f"{API_BASE}/channels", params)
+        for item in resp.json().get("items", []):
+            cache[item["id"]] = item.get("statistics", {})
+    return cache
+
+
 def build_queries(title, genre, venue_name, is_group=False, inst_name=None):
     title = (title or "").strip()
     if not title:
@@ -414,6 +433,7 @@ def build_search_units(targets, groups):
             "members": [{
                 "perf_id": row["perf_id"], "title": row["title"], "venue_name": row.get("venue_name"),
                 "perf_start_date": row.get("perf_start_date"), "perf_end_date": row.get("perf_end_date"),
+                "genre": row.get("genre"),
             }],
             "inst_name": None,
         })
@@ -454,11 +474,15 @@ def cmd_collect(args):
     videos_path = os.path.join(args.out_dir, "videos.csv")
     fieldnames = [
         "video_id", "video_title", "description", "channel_id", "channel_name",
-        "published_at", "duration_sec", "view_count", "video_url",
-        "matched_perf_id", "matched_title", "season_match",
+        "channel_subscriber_count", "channel_video_count",
+        "published_at", "duration_sec", "video_format",
+        "view_count", "like_count", "comment_count", "video_url",
+        "matched_perf_id", "matched_title", "matched_genre", "season_match",
         "substring_hit", "quote_hit", "venue_match", "date_match",
     ]
+    channel_cache = {}  # channel_id -> statistics dict. shard 전체에서 재사용해 quota 절약.
 
+    total_kept = 0
     for unit in units:
         queries = build_queries(unit["title"], unit["genre"], unit["venue_name"],
                                  is_group=unit["is_group"], inst_name=unit["inst_name"])
@@ -468,7 +492,7 @@ def cmd_collect(args):
         for q in queries:
             items = search_with_retry(rotator, q, args.max_videos_per_query)
             if items is None:
-                print("전체 키 소진 - 스크립트 종료 (다음 실행에서 이어감)")
+                print("전체 키 소진 - 스크립트 종료 (다음 실행에서 이어감)", flush=True)
                 return
             time.sleep(args.query_delay)
 
@@ -495,24 +519,38 @@ def cmd_collect(args):
 
         if kept:
             meta = videos_list(rotator, [v[0] for v in kept])
+            channel_cache = channels_list(rotator, [sn.get("channelId", "") for _, sn, *_ in kept], channel_cache)
             for vid, sn, target_perf_id, member, season_match, signals in kept:
                 m = meta.get(vid, {})
+                ch_id = sn.get("channelId", "")
+                ch_stats = channel_cache.get(ch_id, {})
+                duration_sec = _parse_iso8601_duration(m.get("contentDetails", {}).get("duration", ""))
                 _write_csv_row(videos_path, fieldnames, {
                     "video_id": vid, "video_title": sn.get("title", ""),
-                    "description": sn.get("description", ""), "channel_id": sn.get("channelId", ""),
-                    "channel_name": sn.get("channelTitle", ""), "published_at": sn.get("publishedAt", ""),
-                    "duration_sec": _parse_iso8601_duration(m.get("contentDetails", {}).get("duration", "")),
+                    "description": sn.get("description", ""), "channel_id": ch_id,
+                    "channel_name": sn.get("channelTitle", ""),
+                    "channel_subscriber_count": ch_stats.get("subscriberCount", ""),
+                    "channel_video_count": ch_stats.get("videoCount", ""),
+                    "published_at": sn.get("publishedAt", ""),
+                    "duration_sec": duration_sec,
+                    "video_format": "shorts" if (duration_sec and duration_sec <= 60) else "general",
                     "view_count": m.get("statistics", {}).get("viewCount", ""),
+                    "like_count": m.get("statistics", {}).get("likeCount", ""),
+                    "comment_count": m.get("statistics", {}).get("commentCount", ""),
                     "video_url": f"https://www.youtube.com/watch?v={vid}",
                     "matched_perf_id": target_perf_id, "matched_title": member["title"],
+                    "matched_genre": member.get("genre", ""),
                     "season_match": season_match, "substring_hit": signals["substring_hit"],
                     "quote_hit": signals["quote_hit"], "venue_match": signals["venue_match"],
                     "date_match": signals["date_match"],
                 })
 
+        total_kept += len(kept)
+        print(f"  -> 이 유닛 게이트통과: {len(kept)}건 (누적: {total_kept}건)", flush=True)
+
         _append_line(args.state_file, unit["unit_id"])
 
-    print("완료.")
+    print(f"완료. 이 shard 총 게이트통과: {total_kept}건", flush=True)
 
 
 # =============================================================================
