@@ -413,6 +413,10 @@ def iter_date_windows(start_date, end_date, pre_buffer_days=30, post_buffer_days
 
     cursor = start - timedelta(days=pre_buffer_days)
     limit = end + timedelta(days=post_buffer_days)
+    from datetime import timezone
+    now = datetime.now(timezone.utc).replace(tzinfo=None)  # start/end가 naive라 맞춰서 비교
+    if limit > now:
+        limit = now  # 미래 날짜는 검색해봐야 결과가 있을 수 없고 API 에러 유발 가능성도 있음
     windows = []
     while cursor < limit:
         chunk_end = min(cursor + timedelta(days=window_days), limit)
@@ -441,6 +445,7 @@ def search_with_retry(rotator, query, max_results=15, per_minute_wait=15,
         base["publishedAfter"] = published_after
     if published_before:
         base["publishedBefore"] = published_before
+    import requests  # HTTPError 참조용 (prepare/merge/qa 등은 requests 불필요하므로 로컬 import 유지)
     max_key_tries = min(len(rotator.keys), 6)
     for key_try in range(max_key_tries):
         params = dict(base, key=rotator.current)
@@ -459,6 +464,14 @@ def search_with_retry(rotator, query, max_results=15, per_minute_wait=15,
             if not rotator.rotate():
                 print("  이 shard에 배정된 키를 모두 소진했어요.", flush=True)
                 return None
+        except requests.exceptions.HTTPError as e:
+            # 400 등 재시도해도 소용없는(파라미터 자체가 문제인) 에러는 이 검색
+            # 1건만 건너뛰고 계속 진행한다 - shard 전체가 죽으면 안 됨.
+            status = e.response.status_code if e.response is not None else "?"
+            body = e.response.text[:200] if e.response is not None else str(e)
+            print(f"  [HTTP {status}] '{query}' (published_after={published_after}, "
+                  f"published_before={published_before}): {body} - 이 검색만 건너뜀", flush=True)
+            return []
     print(f"  [포기] '{query}' 재시도 실패, 건너뜀", flush=True)
     return []
 
