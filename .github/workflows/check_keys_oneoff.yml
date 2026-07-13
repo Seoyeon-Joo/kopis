@@ -21,7 +21,7 @@ jobs:
         env:
           YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
         run: |
-          python check_keys_standalone.py \
+          python scripts/check_keys_standalone.py \
             --api-keys "$YOUTUBE_API_KEYS" \
             --out key_check_result.csv \
             --valid-keys-out valid_keys.txt
