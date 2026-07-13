@@ -251,23 +251,30 @@ def cmd_build_targets(args):
     merged.loc[merged["season_match_status"] == "matched", "actual_group_size"] = actual_size
     merged["runtime_missing"] = merged["runtime_min"].isna()
 
-    # 시즌그룹(초연/재연)으로 공식 매칭되지 않은 공연 중, 같은 작품명이 서로
-    # 다른 perf_id로 여러 번 반복되면 "매년 반복되는 행사/시리즈"일 가능성이
-    # 큼(예: 흥으로 잇는 세상 - 지역 연희축제가 해마다 이름 그대로 재개최).
-    # 이런 제목은 검색 결과가 다른 해/다른 회차 영상과 뒤섞이기 쉬워서, 게이트에서
-    # venue_match만으로 통과시키면(같은 지역 문화회관을 매년 씀) 엉뚱한 해의
-    # 영상이 잘못 배정될 위험이 큼 -> date_match를 필수로 요구하도록 표시.
+    # 시즌그룹(초연/재연)으로 공식 매칭되지 않은 공연 중, "같은 작품명 + 같은
+    # 극장"이 서로 다른 perf_id/날짜로 반복되면 "매년 같은 장소에서 재개최되는
+    # 지역 축제/시리즈"일 가능성이 큼(예: 흥으로 잇는 세상 - 원주치악예술관에서
+    # 해마다 재개최). 이런 경우는 극장 이름만으론 "어느 해"인지 구분이 안 되므로
+    # date_match를 필수로 요구한다.
+    #
+    # 주의: "같은 작품명"만 보고 판단하면 안 됨 - 시지프스[함안]/시지프스[고양]
+    # 처럼 같은 제목이 여러 도시를 도는 투어 공연도 여기 걸려버리는데, 이건
+    # 도시마다 극장이 다르므로 venue_match가 오히려 훌륭한 구분 신호임(그
+    # 도시 극장 이름이 언급되면 그 도시 공연이 맞다는 뜻). 그래서 "극장까지
+    # 같아야" 반복행사로 간주하고, 극장이 다르면(투어) venue_match를 그대로
+    # 유효한 신호로 남겨둔다.
     standalone = merged[merged["season_match_status"] != "matched"].copy()
     standalone["_work_title_norm"] = standalone["title"].apply(
         lambda t: normalize(split_institution_and_work(t)[1])
     )
-    recurrence_count = standalone.groupby("_work_title_norm")["perf_id"].transform("nunique")
+    standalone["_venue_norm"] = standalone["venue_name"].apply(lambda v: normalize(venue_core(v)))
+    recurrence_count = standalone.groupby(["_work_title_norm", "_venue_norm"])["perf_id"].transform("nunique")
     recurring_perf_ids = set(standalone.loc[recurrence_count >= 2, "perf_id"])
     merged["is_recurring_title"] = merged["perf_id"].isin(recurring_perf_ids)
     n_recurring = merged["is_recurring_title"].sum()
     if n_recurring:
-        print(f"반복 행사명 감지: {n_recurring}건 (예: 매년 재개최되는 지역 축제/시리즈) "
-              f"-> 날짜매칭 필수로 게이트 강화")
+        print(f"반복 행사명 감지(같은 작품명+같은 극장 반복): {n_recurring}건 "
+              f"-> 날짜매칭 필수로 게이트 강화 (투어 공연은 극장이 달라서 제외됨)")
 
     merged = merged.sort_values("total_ticket_sales_qty", ascending=False)
 
