@@ -2,6 +2,20 @@ name: KOPIS YouTube 축약콘텐츠 수집 파이프라인
 
 on:
   workflow_dispatch:
+    inputs:
+      order_strategy:
+        description: "검색 정렬 전략 (both는 quota 2배)"
+        type: choice
+        options: [relevance, date, both]
+        default: relevance
+      use_date_windows:
+        description: "공연 기간을 월 단위로 쪼개서 검색 (quota 크게 증가, 커버리지 최우선일 때만)"
+        type: boolean
+        default: false
+      run_channel_discovery:
+        description: "제작사/극장 채널 발견+크롤링 단계도 같이 실행 (quota 추가 소모)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -16,6 +30,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
+          lfs: true   # data/02_공연상세.csv가 Git LFS 파일이라 캐스트/제작사 정보를 읽으려면 필요
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -25,6 +40,7 @@ jobs:
           python scripts/pipeline.py build-targets \
             --stats "data/16_공연통계_공연별_주간_전체_with_runtime.csv" \
             --season "data/final_season_match_status.csv" \
+            --detail "data/02_공연상세.csv" \
             --out-dir data/
       - name: 커밋 & 푸시
         run: |
@@ -93,6 +109,10 @@ jobs:
           if [ -f "data/excluded_video_ids.txt" ]; then
             EXCLUDED="--excluded-ids data/excluded_video_ids.txt"
           fi
+          DATE_WINDOWS_FLAG=""
+          if [ "${{ inputs.use_date_windows }}" = "true" ]; then
+            DATE_WINDOWS_FLAG="--use-date-windows"
+          fi
           python scripts/pipeline.py collect \
             --targets data/targets_enriched.csv \
             --groups data/work_groups.json \
@@ -103,7 +123,9 @@ jobs:
             --out-dir "data/youtube_targeted/shard_${{ matrix.shard }}" \
             --state-file "data/youtube_targeted/shard_${{ matrix.shard }}/processed_units.txt" \
             --max-videos-per-query 15 \
-            --query-delay 3
+            --query-delay 3 \
+            --order-strategy "${{ inputs.order_strategy }}" \
+            $DATE_WINDOWS_FLAG
 
       - name: 변경사항 커밋 & 푸시 (충돌 시 재시도)
         run: |
@@ -159,14 +181,88 @@ jobs:
             --catalog data/targets_enriched.csv \
             --out data/perf_id_mismatch_report.csv
 
+      - name: 게이트 적용 (collect는 더 이상 게이트에서 거르지 않으므로 여기서 별도 수행)
+        run: |
+          python scripts/pipeline.py apply-gate \
+            --videos data/youtube_targeted/all_videos.csv \
+            --mode strict \
+            --out data/youtube_targeted/all_videos_gated.csv \
+            --dropped-out data/youtube_targeted/all_videos_dropped.csv
+
       - name: 커밋 & 푸시
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/youtube_targeted/all_videos.csv data/perf_id_mismatch_report.csv
+          git add data/youtube_targeted/all_videos.csv data/youtube_targeted/all_videos_gated.csv \
+                  data/youtube_targeted/all_videos_dropped.csv data/perf_id_mismatch_report.csv
           if git diff --staged --quiet; then
             echo "변경사항 없음"; exit 0
           fi
-          git commit -m "영상 통합 CSV + QA 리포트 갱신: $(date -u +'%Y-%m-%d')"
+          git commit -m "영상 통합/게이트 CSV + QA 리포트 갱신: $(date -u +'%Y-%m-%d')"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
+
+  # ---------------------------------------------------------------------
+  # 4단계(선택): 제작사/극장 채널 발견 + 크롤링 + 매칭
+  # discover-channels는 quota를 쓰므로 workflow_dispatch에서 껐다 켰다 할 수 있게 함.
+  # channel-crawl/match-channel-videos는 사람이 검수해서 만든
+  # data/channel_allowlist.csv가 저장소에 있을 때만 실행됨(없으면 건너뜀).
+  # ---------------------------------------------------------------------
+  channel_pipeline:
+    needs: prepare
+    if: ${{ inputs.run_channel_discovery == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas requests
+
+      - name: 채널 후보 자동 탐색 (제작사/극장명 기준)
+        env:
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          FIRST_KEY=$(echo "$YOUTUBE_API_KEYS" | cut -d',' -f1)
+          echo "::add-mask::$FIRST_KEY"
+          python scripts/pipeline.py discover-channels \
+            --targets data/targets_enriched.csv \
+            --api-keys "$FIRST_KEY" \
+            --out data/channel_candidates_auto.csv
+
+      - name: 채널 크롤링 + 매칭 (channel_allowlist.csv가 검수 완료된 경우에만)
+        env:
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          if [ ! -f "data/channel_allowlist.csv" ]; then
+            echo "data/channel_allowlist.csv가 아직 없어요 (discover-channels 결과를"
+            echo "검수해서 만들어주세요) - 크롤링/매칭은 건너뜁니다."
+            exit 0
+          fi
+          FIRST_KEY=$(echo "$YOUTUBE_API_KEYS" | cut -d',' -f1)
+          echo "::add-mask::$FIRST_KEY"
+          python scripts/pipeline.py channel-crawl \
+            --channel-allowlist data/channel_allowlist.csv \
+            --api-keys "$FIRST_KEY" \
+            --out-dir data/youtube_channel_crawl
+          python scripts/pipeline.py match-channel-videos \
+            --raw-videos data/youtube_channel_crawl/channel_videos_raw.csv \
+            --channel-allowlist data/channel_allowlist.csv \
+            --targets data/targets_enriched.csv \
+            --out data/youtube_channel_crawl/matched.csv \
+            --unmatched-out data/youtube_channel_crawl/unmatched.csv \
+            --ambiguous-out data/youtube_channel_crawl/ambiguous.csv
+
+      - name: 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/channel_candidates_auto.csv data/youtube_channel_crawl/ 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "채널 후보/크롤링/매칭 결과 갱신: $(date -u +'%Y-%m-%d')"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
