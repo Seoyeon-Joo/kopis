@@ -125,8 +125,8 @@ jobs:
             --out-dir "data/youtube_targeted/shard_${{ matrix.shard }}" \
             --state-file "data/youtube_targeted/shard_${{ matrix.shard }}/processed_units.txt" \
             --max-videos-per-query 15 \
-            --query-delay 3 \
-            --limit 102 \
+            --query-delay 4 \
+            --limit 80 \
             --order-strategy "${{ inputs.order_strategy || 'relevance' }}" \
             $DATE_WINDOWS_FLAG
 
