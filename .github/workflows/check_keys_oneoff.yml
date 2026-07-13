@@ -1,0 +1,36 @@
+name: (일회성) API 키 전체 유효성 검사
+
+# 기존 pipeline.yml과 완전히 별개인 워크플로우예요. pipeline.yml은 전혀 안 건드렸어요.
+# 확인 끝나고 필요 없으면 이 파일만 지우면 돼요 (다른 것에 영향 없음).
+on:
+  workflow_dispatch:
+
+jobs:
+  check-keys:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+
+      - name: 키 전체 검사 (키당 1 unit)
+        env:
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          python check_keys_standalone.py \
+            --api-keys "$YOUTUBE_API_KEYS" \
+            --out key_check_result.csv \
+            --valid-keys-out valid_keys.txt
+
+      - name: 결과를 아티팩트로 업로드 (커밋 안 함, 다운로드만 가능)
+        uses: actions/upload-artifact@v4
+        with:
+          name: key-check-result
+          path: |
+            key_check_result.csv
+            valid_keys.txt
+          retention-days: 7
