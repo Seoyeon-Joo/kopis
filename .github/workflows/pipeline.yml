@@ -1,6 +1,8 @@
 name: KOPIS YouTube 축약콘텐츠 수집 파이프라인
 
 on:
+  schedule:
+    - cron: "0 18 * * *"   # 매일 UTC 18:00(한국시간 새벽 3시) 자동 실행
   workflow_dispatch:
     inputs:
       order_strategy:
@@ -124,7 +126,8 @@ jobs:
             --state-file "data/youtube_targeted/shard_${{ matrix.shard }}/processed_units.txt" \
             --max-videos-per-query 15 \
             --query-delay 3 \
-            --order-strategy "${{ inputs.order_strategy }}" \
+            --limit 102 \
+            --order-strategy "${{ inputs.order_strategy || 'relevance' }}" \
             $DATE_WINDOWS_FLAG
 
       - name: 변경사항 커밋 & 푸시 (충돌 시 재시도)
