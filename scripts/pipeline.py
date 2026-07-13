@@ -22,6 +22,7 @@ KOPIS 공연 YouTube 축약콘텐츠 수집 파이프라인 전체를 파일 하
   다른 작품" 오배정(예: 유령↔퉁소소리)을 merge 이후 별도로 잡아낸다.
 """
 import argparse
+import random
 import csv
 import glob
 import json
@@ -319,9 +320,15 @@ class DailyQuotaExceededError(Exception):
     pass
 
 
+class InvalidApiKeyError(Exception):
+    """quota 초과가 아니라 키 자체가 무효한 경우 (삭제/비활성화된 키, 오타 등).
+    재시도해봐야 소용없으니 바로 다음 키로 넘어가야 함."""
+    pass
+
+
 def robust_get(url, params, max_retries=3, timeout=20):
     import requests  # collect 커맨드에서만 필요 (prepare/merge/qa는 pandas만 있으면 됨)
-    backoff = 2
+    backoff = 3
     for attempt in range(max_retries):
         try:
             resp = requests.get(url, params=params, timeout=timeout)
@@ -333,6 +340,11 @@ def robust_get(url, params, max_retries=3, timeout=20):
             continue
         if resp.status_code == 200:
             return resp
+        if resp.status_code == 400:
+            body = resp.text
+            if "api key not valid" in body.lower() or "api_key_invalid" in body.lower():
+                raise InvalidApiKeyError(body[:300])
+            resp.raise_for_status()
         if resp.status_code == 403:
             body = resp.text
             if "per minute" in body.lower() or "rate limit exceeded" in body.lower():
@@ -374,7 +386,18 @@ class KeyRotator:
         self.idx = 0
 
     @property
+    def exhausted(self):
+        """모든 키를 다 써봤는지(quota 소진이든 무효한 키든) - 호출부는 이걸
+        먼저 확인해서, exhausted면 아예 API를 다시 안 부르고 바로 종료해야 함."""
+        return self.idx >= len(self.keys)
+
+    @property
     def current(self):
+        # exhausted 상태에서 호출되면 IndexError 대신 None을 반환 (크래시 방지).
+        # 호출부는 exhausted를 먼저 체크하는 게 정상 경로지만, 혹시 놓치더라도
+        # 여기서 한 번 더 안전망 역할을 함.
+        if self.exhausted:
+            return None
         return self.keys[self.idx]
 
     def rotate(self):
@@ -446,6 +469,8 @@ def search_with_retry(rotator, query, max_results=15, per_minute_wait=15,
     if published_before:
         base["publishedBefore"] = published_before
     import requests  # HTTPError 참조용 (prepare/merge/qa 등은 requests 불필요하므로 로컬 import 유지)
+    if rotator.exhausted:
+        return None  # 이전 쿼리에서 이미 모든 키를 다 써봤음 - 재시도해봐야 소용없음
     max_key_tries = min(len(rotator.keys), 6)
     for key_try in range(max_key_tries):
         params = dict(base, key=rotator.current)
@@ -455,7 +480,10 @@ def search_with_retry(rotator, query, max_results=15, per_minute_wait=15,
         except PerMinuteRateLimitError:
             print(f"  [429/분당제한] '{query}' - 키 전환 시도 ({key_try + 1}/{max_key_tries})", flush=True)
             if rotator.rotate():
-                continue  # 다른 키로 바로 재시도 (대기 없이)
+                # 키를 바꿔도 같은 프로젝트 밑에 묶여있으면 quota가 공유될 수 있어서
+                # 즉시 재요청하면 또 걸리기 쉬움 - 짧게라도 텀을 두고 재시도
+                time.sleep(1.5)
+                continue
             # 이 shard 키를 전부 써봤는데도 막힘 -> 그제서야 짧게 대기하고 처음 키로 복귀
             print(f"  키를 모두 돌려봤는데도 막혀요. {per_minute_wait}초 대기 후 처음 키로 재시도.", flush=True)
             time.sleep(per_minute_wait)
@@ -463,6 +491,15 @@ def search_with_retry(rotator, query, max_results=15, per_minute_wait=15,
         except DailyQuotaExceededError:
             if not rotator.rotate():
                 print("  이 shard에 배정된 키를 모두 소진했어요.", flush=True)
+                return None
+        except InvalidApiKeyError:
+            print(f"  [무효한 키] {key_try + 1}번째 키가 유효하지 않아요 - 다음 키로 전환", flush=True)
+            if not rotator.rotate():
+                # None을 반환해야 함 - []를 반환하면 호출부가 "이 쿼리는 결과 없음"으로
+                # 오인하고 다음 쿼리를 계속 시도하는데, 그러면 rotator.current가
+                # 범위 밖 인덱스를 참조해서 IndexError로 크래시남 (실제 재현 확인함).
+                # DailyQuotaExceededError와 동일하게 "이 shard는 더 이상 진행 불가"로 처리.
+                print("  이 shard에 배정된 키를 모두 시도했는데 다 무효해요.", flush=True)
                 return None
         except requests.exceptions.HTTPError as e:
             # 400 등 재시도해도 소용없는(파라미터 자체가 문제인) 에러는 이 검색
@@ -476,18 +513,43 @@ def search_with_retry(rotator, query, max_results=15, per_minute_wait=15,
     return []
 
 
+def _get_with_rotation(rotator, url, params_base, max_key_tries=6, label=""):
+    """robust_get을 키 로테이션과 함께 감싸는 공통 헬퍼.
+    - DailyQuotaExceededError/InvalidApiKeyError: 다음 키로 전환해서 재시도
+    - 그 외 예상 못 한 HTTP 에러: 이 호출만 건너뛰고 None 반환 (전체가 죽으면 안 됨)
+    - 키를 다 써도 안 되면 None 반환
+    """
+    import requests
+    if rotator.exhausted:
+        return None
+    for _ in range(min(len(rotator.keys), max_key_tries)):
+        params = dict(params_base, key=rotator.current)
+        try:
+            return robust_get(url, params)
+        except DailyQuotaExceededError:
+            if not rotator.rotate():
+                print(f"  [{label}] 이 shard에 배정된 키를 모두 소진했어요.", flush=True)
+                return None
+        except InvalidApiKeyError:
+            if not rotator.rotate():
+                print(f"  [{label}] 이 shard에 배정된 키를 모두 시도했는데 다 무효해요.", flush=True)
+                return None
+        except requests.exceptions.HTTPError as e:
+            status = e.response.status_code if e.response is not None else "?"
+            body = e.response.text[:200] if e.response is not None else str(e)
+            print(f"  [{label}] [HTTP {status}] {body} - 이 호출만 건너뜀", flush=True)
+            return None
+    return None
+
+
 def videos_list(rotator, video_ids):
     out = {}
     for i in range(0, len(video_ids), 50):
         chunk = video_ids[i:i + 50]
-        params = {"part": "contentDetails,statistics", "id": ",".join(chunk), "key": rotator.current}
-        try:
-            resp = robust_get(f"{API_BASE}/videos", params)
-        except DailyQuotaExceededError:
-            if not rotator.rotate():
-                break
-            params["key"] = rotator.current
-            resp = robust_get(f"{API_BASE}/videos", params)
+        params = {"part": "contentDetails,statistics", "id": ",".join(chunk)}
+        resp = _get_with_rotation(rotator, f"{API_BASE}/videos", params, label="videos.list")
+        if resp is None:
+            continue  # 이 50개 묶음은 건너뛰고 나머지는 계속 진행
         for item in resp.json().get("items", []):
             out[item["id"]] = item
     return out
@@ -499,14 +561,10 @@ def channels_list(rotator, channel_ids, cache):
     new_ids = [c for c in dict.fromkeys(channel_ids) if c and c not in cache]
     for i in range(0, len(new_ids), 50):
         chunk = new_ids[i:i + 50]
-        params = {"part": "statistics", "id": ",".join(chunk), "key": rotator.current}
-        try:
-            resp = robust_get(f"{API_BASE}/channels", params)
-        except DailyQuotaExceededError:
-            if not rotator.rotate():
-                break
-            params["key"] = rotator.current
-            resp = robust_get(f"{API_BASE}/channels", params)
+        params = {"part": "statistics", "id": ",".join(chunk)}
+        resp = _get_with_rotation(rotator, f"{API_BASE}/channels", params, label="channels.list")
+        if resp is None:
+            continue
         for item in resp.json().get("items", []):
             cache[item["id"]] = item.get("statistics", {})
     return cache
@@ -811,7 +869,10 @@ def cmd_collect(args):
             if items is None:
                 print("전체 키 소진 - 스크립트 종료 (다음 실행에서 이어감)", flush=True)
                 return
-            time.sleep(args.query_delay)
+            # 고정 간격이면 20개 shard의 요청 타이밍이 우연히 겹치기 쉬워서,
+            # 살짝 무작위성을 줘서 서로 어긋나게 함 (같은 프로젝트 밑에 여러
+            # 키가 몰려있으면 quota가 공유될 수 있어서 이게 은근히 도움이 됨)
+            time.sleep(args.query_delay + random.uniform(0, args.query_delay * 0.5))
             _process_items(items)
 
         if kept:
@@ -1044,15 +1105,11 @@ def cmd_discover_channels(args):
 
     rows = []
     for idx, (kind, name) in enumerate(sorted(names), 1):
-        params = {"part": "snippet", "q": name, "type": "channel", "maxResults": 3, "key": rotator.current}
-        try:
-            resp = robust_get(f"{API_BASE}/search", params)
-        except DailyQuotaExceededError:
-            if not rotator.rotate():
-                print(f"[{idx}/{len(names)}] 키 전부 소진 - 지금까지 결과만 저장하고 종료")
-                break
-            params["key"] = rotator.current
-            resp = robust_get(f"{API_BASE}/search", params)
+        params = {"part": "snippet", "q": name, "type": "channel", "maxResults": 3}
+        resp = _get_with_rotation(rotator, f"{API_BASE}/search", params, label="discover-channels")
+        if resp is None:
+            print(f"[{idx}/{len(names)}] '{name}' 검색 실패 - 건너뛰고 계속 진행", flush=True)
+            continue
         for item in resp.json().get("items", []):
             sn = item.get("snippet", {})
             title, desc = sn.get("title", ""), sn.get("description", "") or ""
@@ -1102,8 +1159,10 @@ def _uploads_playlist_ids(rotator, channel_ids):
     result = {}
     for i in range(0, len(channel_ids), 50):
         chunk = channel_ids[i:i + 50]
-        params = {"part": "contentDetails", "id": ",".join(chunk), "key": rotator.current}
-        resp = robust_get(f"{API_BASE}/channels", params)
+        params = {"part": "contentDetails", "id": ",".join(chunk)}
+        resp = _get_with_rotation(rotator, f"{API_BASE}/channels", params, label="uploads-playlist")
+        if resp is None:
+            continue
         for item in resp.json().get("items", []):
             uploads = item.get("contentDetails", {}).get("relatedPlaylists", {}).get("uploads")
             if uploads:
@@ -1117,10 +1176,12 @@ def _iter_playlist_video_ids(rotator, playlist_id, published_after=None):
     video_ids = []
     next_page_token = None
     while True:
-        params = {"part": "contentDetails", "playlistId": playlist_id, "maxResults": 50, "key": rotator.current}
+        params = {"part": "contentDetails", "playlistId": playlist_id, "maxResults": 50}
         if next_page_token:
             params["pageToken"] = next_page_token
-        resp = robust_get(f"{API_BASE}/playlistItems", params)
+        resp = _get_with_rotation(rotator, f"{API_BASE}/playlistItems", params, label="playlistItems")
+        if resp is None:
+            break  # 이 재생목록은 여기까지만 (지금까지 모은 video_ids는 보존)
         data = resp.json()
         for item in data.get("items", []):
             cd = item.get("contentDetails", {})
@@ -1179,6 +1240,82 @@ def cmd_channel_crawl(args):
     print(f"\n완료: {len(rows)}개 -> {out_path}")
     print("이 파일은 아직 특정 공연과 매칭되지 않은 원본이에요.")
     print("scripts/pipeline.py match-channel-videos 로 이어서 매칭해주세요.")
+
+
+# =============================================================================
+# 유틸리티: check-keys - API 키 목록 전체 유효성 검사
+# =============================================================================
+_CHECK_KEYS_TEST_VIDEO_ID = "dQw4w9WgXcQ"  # 아무 공개 영상 ID면 됨 (part=id만 요청, 1 unit)
+
+
+def _check_one_key(key, timeout=15):
+    """키 하나로 최소 비용(1 unit) 호출을 날려서 상태를 판정.
+    반환값: ('ok'|'invalid'|'quota_exceeded'|'error', 상세메시지)"""
+    import requests
+    params = {"part": "id", "id": _CHECK_KEYS_TEST_VIDEO_ID, "key": key}
+    try:
+        resp = robust_get(f"{API_BASE}/videos", params, max_retries=1, timeout=timeout)
+        return "ok", f"{len(resp.json().get('items', []))}건 응답"
+    except InvalidApiKeyError as e:
+        return "invalid", str(e)[:150]
+    except DailyQuotaExceededError as e:
+        return "quota_exceeded", str(e)[:150]
+    except PerMinuteRateLimitError as e:
+        return "rate_limited", str(e)[:150]
+    except requests.exceptions.HTTPError as e:
+        status = e.response.status_code if e.response is not None else "?"
+        body = e.response.text[:150] if e.response is not None else str(e)
+        return "error", f"HTTP {status}: {body}"
+    except Exception as e:
+        return "error", str(e)[:150]
+
+
+def cmd_check_keys(args):
+    """
+    669개 키 전체를 각각 1 unit짜리 호출로 검사해서 상태를 분류한다.
+    - ok: 정상
+    - invalid: 키 자체가 무효 (삭제된 프로젝트, API 비활성화, 오타 등) -> 목록에서 빼야 함
+    - quota_exceeded: 오늘 이미 이 키의 quota를 다 씀 (내일이면 다시 정상일 수 있음)
+    - rate_limited: 순간적으로 막힘 (검사 자체를 너무 빨리 돌려서 그럴 수도 있음, 재검사 권장)
+    - error: 그 외 예상 못 한 응답
+
+    키 하나당 quota 1 unit만 쓰므로 669개를 다 검사해도 669 units밖에 안 듦
+    (search.list 1회 100 units보다 훨씬 저렴).
+    """
+    if args.keys_file:
+        with open(args.keys_file, encoding="utf-8") as f:
+            keys = [line.strip() for line in f if line.strip()]
+    else:
+        keys = [k.strip() for k in args.api_keys.split(",") if k.strip()]
+    print(f"키 {len(keys)}개 검사 시작 (키당 1 unit)")
+
+    rows = []
+    for idx, key in enumerate(keys, 1):
+        status, detail = _check_one_key(key)
+        masked = key[:6] + "..." + key[-4:] if len(key) > 12 else "***"
+        rows.append({"key_index": idx, "key_masked": masked, "status": status, "detail": detail})
+        if status != "ok":
+            print(f"[{idx}/{len(keys)}] {masked} -> {status} ({detail})", flush=True)
+        if idx % 50 == 0:
+            print(f"[{idx}/{len(keys)}] 진행 중...", flush=True)
+        time.sleep(args.delay)
+
+    df = pd.DataFrame(rows)
+    os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
+    df.to_csv(args.out, index=False, encoding="utf-8-sig")
+
+    print(f"\n=== 결과 요약 ({len(keys)}개 검사) ===")
+    print(df["status"].value_counts().to_string())
+    print(f"\n상세 결과 -> {args.out}")
+
+    invalid_count = (df["status"] == "invalid").sum()
+    if invalid_count:
+        print(f"\n⚠️  invalid로 나온 {invalid_count}개는 실제로 죽은 키일 가능성이 커요.")
+        print("   669개 키 목록(비밀 저장소 secrets.YOUTUBE_API_KEYS)에서 제거를 고려해보세요.")
+    quota_count = (df["status"] == "quota_exceeded").sum()
+    if quota_count:
+        print(f"ℹ️  quota_exceeded {quota_count}개는 오늘 이미 다 쓴 것뿐이라, 정상 키일 수 있어요")
+        print("   (내일 다시 검사하면 ok로 나올 가능성 높음 - 죽은 키로 오해하지 마세요).")
 
 
 def cmd_match_channel_videos(args):
@@ -1385,6 +1522,13 @@ def main():
     p6b.add_argument("--unmatched-out", default=None)
     p6b.add_argument("--ambiguous-out", default=None, help="서로 다른 작품이 동시에 걸린 영상 보류함")
     p6b.set_defaults(func=cmd_match_channel_videos)
+
+    p7 = sub.add_parser("check-keys", help="유틸: API 키 목록 전체 유효성 검사 (키당 1 unit)")
+    p7.add_argument("--api-keys", default=None, help="콤마로 구분된 키 목록")
+    p7.add_argument("--keys-file", default=None, help="한 줄에 키 하나씩 있는 파일 (--api-keys 대신 사용 가능)")
+    p7.add_argument("--delay", type=float, default=0.3, help="키 검사 사이 대기시간(초)")
+    p7.add_argument("--out", default="key_check_result.csv")
+    p7.set_defaults(func=cmd_check_keys)
 
     args = ap.parse_args()
     args.func(args)
