@@ -279,6 +279,18 @@ def cmd_build_targets(args):
 
     merged = merged.sort_values("total_ticket_sales_qty", ascending=False)
 
+    # 티켓 판매량 상위 10%는 "인기작"으로 표시 - 검색 결과 자체가 넘쳐서
+    # (50개 초과, order=relevance 상위권 경쟁이 치열해서) 놓치기 쉬운 공연들.
+    # 이런 공연은 collect 단계에서 max_pages를 늘리고 order=both를 강제
+    # 적용해서 더 깊게 판다 (자원을 필요한 곳에 몰아주는 방식).
+    if len(merged) > 0:
+        threshold = merged["total_ticket_sales_qty"].quantile(0.9)
+        merged["is_high_demand"] = merged["total_ticket_sales_qty"] >= threshold
+        print(f"인기작(티켓판매량 상위 10%) 감지: {merged['is_high_demand'].sum()}건 "
+              f"(판매량 {threshold:,.0f}건 이상) -> 검색 시 더 깊게 탐색하도록 표시")
+    else:
+        merged["is_high_demand"] = False
+
     os.makedirs(args.out_dir, exist_ok=True)
     targets_path = os.path.join(args.out_dir, "targets_enriched.csv")
     # CSV에는 리스트를 파이프(|)로 join해서 저장 (배우 이름 자체엔 콤마/파이프가 안 들어가므로 안전)
@@ -297,6 +309,7 @@ def cmd_build_targets(args):
             "perf_start_date": str(row["perf_start_date"]), "perf_end_date": str(row["perf_end_date"]),
             "season_rank": row["season_rank"], "genre": row["genre"],
             "company_name": row.get("company_name", ""), "cast": row.get("cast_names", []),
+            "is_high_demand": bool(row.get("is_high_demand", False)),
         } for _, row in g.iterrows()]
         rep = min(g["title"], key=len)
         groups[key] = {"representative_title": rep, "members": members}
@@ -448,39 +461,27 @@ def iter_date_windows(start_date, end_date, pre_buffer_days=30, post_buffer_days
     return windows
 
 
-def search_with_retry(rotator, query, max_results=15, per_minute_wait=35,
-                       order="relevance", video_duration=None,
-                       published_after=None, published_before=None):
-    """429/분당제한이 뜨면 다른 키로 전환해서 시도한다. 단, 여러 키가 같은
-    구글 클라우드 프로젝트 밑에 몰려있으면 분당 제한은 프로젝트 단위로 공유되기
-    때문에 "다른 키로 바꾸는 것" 자체가 별 효과가 없을 수 있다 - 그런 경우엔
-    키를 아무리 돌려도 계속 429가 남. 그래서 키 전환은 3번까지만 시도해보고
-    (혹시 정말 서로 다른 프로젝트라면 이 정도로도 충분히 우회됨), 그래도 막히면
-    "키를 더 돌리는 것"보다 "충분히 기다리는 것"에 거는 게 낫다고 보고 좀 더
-    길게(기본 35초) 기다린 뒤 처음 키로 복귀한다.
+def _fetch_search_page(rotator, params, query, per_minute_wait):
+    """검색 1페이지(최대 50개)를 키 재시도/전환과 함께 가져온다.
 
-    order: "relevance" 또는 "date" (date를 병행하면 인기/조회수가 낮아
-    relevance 상위에 안 뜨는 영상도 잡을 수 있음)
-    video_duration: None 또는 "short" (쇼츠 누락 방지용 별도 패스에 사용)
-    published_after/published_before: RFC3339 문자열 (날짜 윈도우 검색용)
+    반환:
+      (None, None)             - 이 shard의 키를 전부 시도했는데 다 안 됨
+                                  (quota소진/전부 무효). 호출부는 지금까지
+                                  모은 페이지만이라도 쓰고 멈춰야 함.
+      ([], None)                - 이 페이지 자체는 실패(400 등)했지만
+                                  전체를 멈출 이유는 아님 - 그냥 이 페이지만 포기.
+      (items, next_page_token)  - 정상 (items가 빈 리스트일 수도 있음, 정상).
     """
-    base = {"part": "snippet", "q": query, "type": "video",
-            "maxResults": max_results, "relevanceLanguage": "ko", "order": order}
-    if video_duration:
-        base["videoDuration"] = video_duration
-    if published_after:
-        base["publishedAfter"] = published_after
-    if published_before:
-        base["publishedBefore"] = published_before
-    import requests  # HTTPError 참조용 (prepare/merge/qa 등은 requests 불필요하므로 로컬 import 유지)
+    import requests
     if rotator.exhausted:
-        return None  # 이전 쿼리에서 이미 모든 키를 다 써봤음 - 재시도해봐야 소용없음
+        return None, None
     max_key_tries = min(len(rotator.keys), 3)
     for key_try in range(max_key_tries):
-        params = dict(base, key=rotator.current)
+        p = dict(params, key=rotator.current)
         try:
-            resp = robust_get(f"{API_BASE}/search", params)
-            return resp.json().get("items", [])
+            resp = robust_get(f"{API_BASE}/search", p)
+            data = resp.json()
+            return data.get("items", []), data.get("nextPageToken")
         except PerMinuteRateLimitError:
             print(f"  [429/분당제한] '{query}' - 키 전환 시도 ({key_try + 1}/{max_key_tries})", flush=True)
             if rotator.rotate():
@@ -495,26 +496,74 @@ def search_with_retry(rotator, query, max_results=15, per_minute_wait=35,
         except DailyQuotaExceededError:
             if not rotator.rotate():
                 print("  이 shard에 배정된 키를 모두 소진했어요.", flush=True)
-                return None
+                return None, None
         except InvalidApiKeyError:
             print(f"  [무효한 키] {key_try + 1}번째 키가 유효하지 않아요 - 다음 키로 전환", flush=True)
             if not rotator.rotate():
-                # None을 반환해야 함 - []를 반환하면 호출부가 "이 쿼리는 결과 없음"으로
-                # 오인하고 다음 쿼리를 계속 시도하는데, 그러면 rotator.current가
-                # 범위 밖 인덱스를 참조해서 IndexError로 크래시남 (실제 재현 확인함).
-                # DailyQuotaExceededError와 동일하게 "이 shard는 더 이상 진행 불가"로 처리.
                 print("  이 shard에 배정된 키를 모두 시도했는데 다 무효해요.", flush=True)
-                return None
+                return None, None
         except requests.exceptions.HTTPError as e:
-            # 400 등 재시도해도 소용없는(파라미터 자체가 문제인) 에러는 이 검색
+            # 400 등 재시도해도 소용없는(파라미터 자체가 문제인) 에러는 이 페이지
             # 1건만 건너뛰고 계속 진행한다 - shard 전체가 죽으면 안 됨.
             status = e.response.status_code if e.response is not None else "?"
             body = e.response.text[:200] if e.response is not None else str(e)
-            print(f"  [HTTP {status}] '{query}' (published_after={published_after}, "
-                  f"published_before={published_before}): {body} - 이 검색만 건너뜀", flush=True)
-            return []
-    print(f"  [포기] '{query}' 재시도 실패, 건너뜀", flush=True)
-    return []
+            print(f"  [HTTP {status}] '{query}': {body} - 이 페이지만 건너뜀", flush=True)
+            return [], None
+    print(f"  [포기] '{query}' 이 페이지 재시도 실패, 건너뜀", flush=True)
+    return [], None
+
+
+def search_with_retry(rotator, query, max_results=50, per_minute_wait=35,
+                       order="relevance", video_duration=None,
+                       published_after=None, published_before=None,
+                       max_pages=10):
+    """검색 결과를 페이지네이션으로 가져온다. 1페이지(최대 50개)가 꽉 차면
+    2페이지째도 마저 가져오고, 2페이지도 꽉 차면 3페이지째... 이런 식으로
+    "결과가 50개 미만으로 나올 때까지" 또는 max_pages(기본 5, 최대 250개)에
+    닿을 때까지 이어서 가져온다.
+
+    결과가 50개가 안 되는(대다수일 것으로 예상되는) 쿼리는 추가 비용 없이
+    1페이지로 끝나고, 정말 결과가 넘치는 인기 검색어만 추가 페이지 비용
+    (페이지당 100 units)을 더 쓰는 구조라 quota를 필요한 곳에만 쓴다.
+
+    order: "relevance" 또는 "date" (date를 병행하면 인기/조회수가 낮아
+    relevance 상위에 안 뜨는 영상도 잡을 수 있음)
+    video_duration: None 또는 "short" (쇼츠 누락 방지용 별도 패스에 사용)
+    published_after/published_before: RFC3339 문자열 (날짜 윈도우 검색용)
+    max_pages: 안전장치 - 아무리 꽉 차도 이 페이지 수 이상은 더 안 가져옴
+               (기본 10페이지=최대 500개. 극단적으로 인기 많은 검색어 하나가
+               quota를 통째로 먹는 것을 방지)
+    """
+    base = {"part": "snippet", "q": query, "type": "video",
+            "maxResults": min(max_results, 50), "relevanceLanguage": "ko", "order": order}
+    if video_duration:
+        base["videoDuration"] = video_duration
+    if published_after:
+        base["publishedAfter"] = published_after
+    if published_before:
+        base["publishedBefore"] = published_before
+
+    if rotator.exhausted:
+        return None  # 이전 쿼리에서 이미 모든 키를 다 써봤음 - 재시도해봐야 소용없음
+
+    all_items = []
+    next_page_token = None
+    for _ in range(max_pages):
+        params = dict(base)
+        if next_page_token:
+            params["pageToken"] = next_page_token
+        items, token = _fetch_search_page(rotator, params, query, per_minute_wait)
+        if items is None:
+            # 키 전부 소진 - 이미 모은 페이지가 있으면 그거라도 살려서 반환,
+            # 첫 페이지부터 안 됐으면 기존과 동일하게 None(shard 전체 종료 신호)
+            return all_items if all_items else None
+        all_items.extend(items)
+        if len(items) < 50 or not token:
+            break  # 결과가 덜 찼거나 다음 페이지가 없으면 여기서 끝
+        next_page_token = token
+        time.sleep(0.3)  # 페이지 사이에도 살짝 텀
+    return all_items
+
 
 
 def _get_with_rotation(rotator, url, params_base, max_key_tries=6, label=""):
@@ -733,18 +782,23 @@ def build_search_units(targets, groups):
         # 쿼리에 쓸 캐스트: 대표작(첫 멤버) 캐스트 우선, 없으면 다른 멤버에서 보충
         rep_cast = next((m.get("cast") for m in g["members"] if m.get("cast")), [])
         rep_company = next((m.get("company_name") for m in g["members"] if m.get("company_name")), "")
+        # 그룹 내 멤버 중 하나라도 인기작이면 그룹 전체를 인기작 취급
+        # (초연이 대박났으면 재연 검색도 결과가 넘칠 가능성이 높음)
+        is_high_demand = any(m.get("is_high_demand") for m in g["members"])
         units.append({
             "unit_id": f"group::{key}", "is_group": True,
             "title": g["representative_title"], "genre": None,
             "venue_name": g["members"][0]["venue_name"], "members": g["members"],
             "inst_name": split_institution_and_work(g["members"][0]["title"])[0],
             "cast_names": rep_cast, "company_name": rep_company,
+            "is_high_demand": is_high_demand,
         })
     for row in targets:
         if row["perf_id"] in grouped_perf_ids:
             continue
         cast = (row.get("cast_names") or "").split("|") if row.get("cast_names") else []
         is_recurring = str(row.get("is_recurring_title", "")).strip().lower() == "true"
+        is_high_demand = str(row.get("is_high_demand", "")).strip().lower() == "true"
         units.append({
             "unit_id": f"perf::{row['perf_id']}", "is_group": False,
             "title": row["title"], "genre": row.get("genre"), "venue_name": row.get("venue_name"),
@@ -756,6 +810,7 @@ def build_search_units(targets, groups):
             }],
             "inst_name": None,
             "cast_names": cast, "company_name": row.get("company_name", ""),
+            "is_high_demand": is_high_demand,
         })
     return units
 
@@ -815,6 +870,13 @@ def cmd_collect(args):
                                  is_group=unit["is_group"], inst_name=query_inst,
                                  cast_names=unit.get("cast_names"), company_name=unit.get("company_name"))
 
+        # 인기작(티켓판매량 상위 10%)은 검색 결과 자체가 넘칠 가능성이 높아서
+        # (order=relevance 상위권 경쟁이 치열함) 자원을 더 몰아준다:
+        # order=both를 강제 적용하고, 페이지도 평소보다 2배 더 받아온다.
+        is_high_demand = unit.get("is_high_demand", False)
+        unit_orders = orders_by_strategy["both"] if is_high_demand else orders
+        unit_max_pages = args.max_pages * 2 if is_high_demand else args.max_pages
+
         windows = [(None, None)]
         if args.use_date_windows:
             starts = [m.get("perf_start_date") for m in unit["members"] if m.get("perf_start_date")]
@@ -828,14 +890,15 @@ def cmd_collect(args):
                     windows = dw
 
         # 검색 콜 목록: (query, order, video_duration, published_after, published_before)
-        calls = [(q, order, None, pa, pb) for q in queries for order in orders for pa, pb in windows]
+        calls = [(q, order, None, pa, pb) for q in queries for order in unit_orders for pa, pb in windows]
         if args.include_shorts_pass:
             # 쇼츠 누락 방지용 별도 패스는 대표 제목 하나로, 날짜 윈도우 없이 1회만
             calls.append((unit["title"], "relevance", "short", None, None))
 
         print(f"[{unit['unit_id']}] 쿼리 {len(queries)}개 x 검색콜 {len(calls)}개 "
-              f"(order={args.order_strategy}, windows={len(windows) if args.use_date_windows else 0}, "
-              f"shorts_pass={args.include_shorts_pass})", flush=True)
+              f"(order={'both(인기작)' if is_high_demand else args.order_strategy}, "
+              f"windows={len(windows) if args.use_date_windows else 0}, "
+              f"shorts_pass={args.include_shorts_pass}, max_pages={unit_max_pages})", flush=True)
         seen_ids, kept = set(), []
 
         def _process_items(items):
@@ -869,6 +932,7 @@ def cmd_collect(args):
                 rotator, q, args.max_videos_per_query,
                 order=order, video_duration=video_duration,
                 published_after=pub_after, published_before=pub_before,
+                max_pages=unit_max_pages,
             )
             if items is None:
                 print("전체 키 소진 - 스크립트 종료 (다음 실행에서 이어감)", flush=True)
@@ -1458,7 +1522,11 @@ def main():
     p2.add_argument("--groups", default=None)
     p2.add_argument("--excluded-ids", default=None, help="선택사항. 없으면 그냥 진행")
     p2.add_argument("--api-keys", required=True)
-    p2.add_argument("--max-videos-per-query", type=int, default=15)
+    p2.add_argument("--max-videos-per-query", type=int, default=50,
+                     help="search.list는 1~50개 요청이든 quota가 동일(100 units)하므로 기본 50")
+    p2.add_argument("--max-pages", type=int, default=10,
+                     help="한 쿼리당 최대 몇 페이지까지 이어받을지 (페이지가 꽉 찰 때만 다음 페이지 요청, "
+                          "기본 10페이지=최대 500개, 인기작은 2배(20페이지=1000개) 적용됨)")
     p2.add_argument("--out-dir", default="./output_targeted")
     p2.add_argument("--state-file", default=None)
     p2.add_argument("--shard-index", type=int, default=None)
