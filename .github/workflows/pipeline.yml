@@ -124,7 +124,7 @@ jobs:
             --shard-count 20 \
             --out-dir "data/youtube_targeted/shard_${{ matrix.shard }}" \
             --state-file "data/youtube_targeted/shard_${{ matrix.shard }}/processed_units.txt" \
-            --max-videos-per-query 15 \
+            --max-videos-per-query 50 \
             --query-delay 4 \
             --limit 80 \
             --order-strategy "${{ inputs.order_strategy || 'relevance' }}" \
