@@ -461,7 +461,7 @@ def iter_date_windows(start_date, end_date, pre_buffer_days=30, post_buffer_days
     return windows
 
 
-def _fetch_search_page(rotator, params, query, per_minute_wait, fail_log_path=None):
+def _fetch_search_page(rotator, params, query, per_minute_wait, fail_log_path=None, unit_id=None):
     """검색 1페이지(최대 50개)를 키 재시도/전환과 함께 가져온다.
 
     핵심 원칙: **429(분당 제한)는 절대 포기하지 않는다.** 이건 영구적인 문제가
@@ -545,7 +545,11 @@ def _fetch_search_page(rotator, params, query, per_minute_wait, fail_log_path=No
         try:
             os.makedirs(os.path.dirname(fail_log_path) or ".", exist_ok=True)
             with open(fail_log_path, "a", encoding="utf-8") as f:
-                f.write(f"{query}\t{params.get('publishedAfter', '')}\t{params.get('publishedBefore', '')}\n")
+                f.write("\t".join([
+                    unit_id or "", query, params.get("order", "relevance"),
+                    params.get("videoDuration", ""), params.get("publishedAfter", ""),
+                    params.get("publishedBefore", ""),
+                ]) + "\n")
         except Exception:
             pass  # 로그 실패는 전체 흐름을 막을 이유가 아님
     return [], None
@@ -554,7 +558,7 @@ def _fetch_search_page(rotator, params, query, per_minute_wait, fail_log_path=No
 def search_with_retry(rotator, query, max_results=50, per_minute_wait=35,
                        order="relevance", video_duration=None,
                        published_after=None, published_before=None,
-                       max_pages=10, fail_log_path=None):
+                       max_pages=10, fail_log_path=None, unit_id=None):
     """검색 결과를 페이지네이션으로 가져온다. 1페이지(최대 50개)가 꽉 차면
     2페이지째도 마저 가져오고, 2페이지도 꽉 차면 3페이지째... 이런 식으로
     "결과가 50개 미만으로 나올 때까지" 또는 max_pages(기본 10, 최대 500개)에
@@ -592,7 +596,8 @@ def search_with_retry(rotator, query, max_results=50, per_minute_wait=35,
         params = dict(base)
         if next_page_token:
             params["pageToken"] = next_page_token
-        items, token = _fetch_search_page(rotator, params, query, per_minute_wait, fail_log_path=fail_log_path)
+        items, token = _fetch_search_page(rotator, params, query, per_minute_wait,
+                                           fail_log_path=fail_log_path, unit_id=unit_id)
         if items is None:
             # 키 전부 소진 - 이미 모은 페이지가 있으면 그거라도 살려서 반환,
             # 첫 페이지부터 안 됐으면 기존과 동일하게 None(shard 전체 종료 신호)
@@ -865,6 +870,86 @@ def _parse_iso8601_duration(s):
     return h * 3600 + mi * 60 + se
 
 
+VIDEO_ROW_FIELDNAMES = [
+    "video_id", "video_title", "description", "channel_id", "channel_name",
+    "channel_subscriber_count", "channel_video_count",
+    "published_at", "duration_sec", "video_format",
+    "view_count", "like_count", "comment_count", "video_url",
+    "matched_perf_id", "matched_title", "matched_genre", "season_match",
+    "substring_hit", "quote_hit", "venue_match", "date_match", "actor_match", "company_match", "is_news",
+    "gate_keep",
+]
+
+
+def _process_search_items(items, unit, seen_ids, excluded_ids):
+    """검색 결과 items를 성과(perf_id) 배정 + 신호 계산까지 마쳐서
+    (video_id, snippet, target_perf_id, member, season_match, signals) 튜플
+    리스트로 반환한다. cmd_collect와 retry-failed가 공유해서 쓴다."""
+    kept = []
+    for item in items:
+        vid = item["id"]["videoId"]
+        if vid in seen_ids or vid in excluded_ids:
+            continue
+        seen_ids.add(vid)
+        sn = item["snippet"]
+        video_text = f"{sn.get('title', '')} {sn.get('description', '')}"
+        target_perf_id, season_match = (
+            assign_to_member(sn.get("publishedAt"), unit["members"], video_text=video_text)
+            if unit["is_group"] else (unit["members"][0]["perf_id"], "current_season")
+        )
+        member = next(m for m in unit["members"] if m["perf_id"] == target_perf_id)
+        signals = compute_signals(
+            perf={"title": member["title"], "venue_name": member["venue_name"],
+                  "perf_start_date": member["perf_start_date"], "perf_end_date": member["perf_end_date"],
+                  "cast": member.get("cast"), "company_name": member.get("company_name"),
+                  "is_recurring_title": member.get("is_recurring_title", False)},
+            video_title=sn.get("title", ""), description=sn.get("description", ""),
+            channel_name=sn.get("channelTitle", ""), published_at=sn.get("publishedAt"),
+        )
+        # 여기서 discard하지 않음 - keep 여부는 gate_keep 컬럼에만 기록하고
+        # 실제 필터링은 apply-gate 서브커맨드에서 별도로 수행한다.
+        kept.append((vid, sn, target_perf_id, member, season_match, signals))
+    return kept
+
+
+def _write_kept_rows(kept, rotator, channel_cache, videos_path):
+    """kept 튜플 리스트를 videos.list/channels.list로 메타데이터까지 채워서
+    videos_path에 이어쓴다 (cmd_collect와 retry-failed가 공유). 갱신된
+    channel_cache를 반환한다 (호출부가 이어서 재사용할 수 있도록)."""
+    if not kept:
+        return channel_cache
+    meta = videos_list(rotator, [v[0] for v in kept])
+    channel_cache = channels_list(rotator, [sn.get("channelId", "") for _, sn, *_ in kept], channel_cache)
+    for vid, sn, target_perf_id, member, season_match, signals in kept:
+        m = meta.get(vid, {})
+        ch_id = sn.get("channelId", "")
+        ch_stats = channel_cache.get(ch_id, {})
+        duration_sec = _parse_iso8601_duration(m.get("contentDetails", {}).get("duration", ""))
+        _write_csv_row(videos_path, VIDEO_ROW_FIELDNAMES, {
+            "video_id": vid, "video_title": sn.get("title", ""),
+            "description": sn.get("description", ""), "channel_id": ch_id,
+            "channel_name": sn.get("channelTitle", ""),
+            "channel_subscriber_count": ch_stats.get("subscriberCount", ""),
+            "channel_video_count": ch_stats.get("videoCount", ""),
+            "published_at": sn.get("publishedAt", ""),
+            "duration_sec": duration_sec,
+            "video_format": "shorts" if (duration_sec and duration_sec <= 60) else "general",
+            "view_count": m.get("statistics", {}).get("viewCount", ""),
+            "like_count": m.get("statistics", {}).get("likeCount", ""),
+            "comment_count": m.get("statistics", {}).get("commentCount", ""),
+            "video_url": f"https://www.youtube.com/watch?v={vid}",
+            "matched_perf_id": target_perf_id, "matched_title": member["title"],
+            "matched_genre": member.get("genre", ""),
+            "season_match": season_match, "substring_hit": signals["substring_hit"],
+            "quote_hit": signals["quote_hit"], "venue_match": signals["venue_match"],
+            "date_match": signals["date_match"], "actor_match": signals["actor_match"],
+            "company_match": signals["company_match"],
+            "is_news": signals["is_news"],
+            "gate_keep": signals["keep"],
+        })
+    return channel_cache
+
+
 def cmd_collect(args):
     keys = [k.strip() for k in args.api_keys.split(",") if k.strip()]
     rotator = KeyRotator(keys)
@@ -887,15 +972,6 @@ def cmd_collect(args):
     print(f"이번 shard 처리 대상: {len(units)}개 검색 단위 ({len(keys)}개 키 배정됨)")
 
     videos_path = os.path.join(args.out_dir, "videos.csv")
-    fieldnames = [
-        "video_id", "video_title", "description", "channel_id", "channel_name",
-        "channel_subscriber_count", "channel_video_count",
-        "published_at", "duration_sec", "video_format",
-        "view_count", "like_count", "comment_count", "video_url",
-        "matched_perf_id", "matched_title", "matched_genre", "season_match",
-        "substring_hit", "quote_hit", "venue_match", "date_match", "actor_match", "company_match", "is_news",
-        "gate_keep",
-    ]
     channel_cache = {}  # channel_id -> statistics dict. shard 전체에서 재사용해 quota 절약.
 
     total_kept = 0
@@ -941,32 +1017,6 @@ def cmd_collect(args):
               f"shorts_pass={args.include_shorts_pass}, max_pages={unit_max_pages})", flush=True)
         seen_ids, kept = set(), []
 
-        def _process_items(items):
-            for item in items:
-                vid = item["id"]["videoId"]
-                if vid in seen_ids or vid in excluded_ids:
-                    continue
-                seen_ids.add(vid)
-                sn = item["snippet"]
-                video_text = f"{sn.get('title', '')} {sn.get('description', '')}"
-                target_perf_id, season_match = (
-                    assign_to_member(sn.get("publishedAt"), unit["members"], video_text=video_text)
-                    if unit["is_group"] else (unit["members"][0]["perf_id"], "current_season")
-                )
-                member = next(m for m in unit["members"] if m["perf_id"] == target_perf_id)
-                signals = compute_signals(
-                    perf={"title": member["title"], "venue_name": member["venue_name"],
-                          "perf_start_date": member["perf_start_date"], "perf_end_date": member["perf_end_date"],
-                          "cast": member.get("cast"), "company_name": member.get("company_name"),
-                          "is_recurring_title": member.get("is_recurring_title", False)},
-                    video_title=sn.get("title", ""), description=sn.get("description", ""),
-                    channel_name=sn.get("channelTitle", ""), published_at=sn.get("publishedAt"),
-                )
-                # 여기서 discard하지 않음 - keep 여부는 gate_keep 컬럼에만 기록하고
-                # 실제 필터링은 apply-gate 서브커맨드에서 별도로 수행한다.
-                # (검색으로 찾은 건 일단 다 저장해야 recall 손실이 안 생김)
-                kept.append((vid, sn, target_perf_id, member, season_match, signals))
-
         for q, order, video_duration, pub_after, pub_before in calls:
             items = search_with_retry(
                 rotator, q, args.max_videos_per_query,
@@ -974,6 +1024,7 @@ def cmd_collect(args):
                 published_after=pub_after, published_before=pub_before,
                 max_pages=unit_max_pages,
                 fail_log_path=os.path.join(args.out_dir, "failed_queries.txt"),
+                unit_id=unit["unit_id"],
             )
             if items is None:
                 print("전체 키 소진 - 스크립트 종료 (다음 실행에서 이어감)", flush=True)
@@ -982,38 +1033,9 @@ def cmd_collect(args):
             # 살짝 무작위성을 줘서 서로 어긋나게 함 (같은 프로젝트 밑에 여러
             # 키가 몰려있으면 quota가 공유될 수 있어서 이게 은근히 도움이 됨)
             time.sleep(args.query_delay + random.uniform(0, args.query_delay * 0.5))
-            _process_items(items)
+            kept.extend(_process_search_items(items, unit, seen_ids, excluded_ids))
 
-        if kept:
-            meta = videos_list(rotator, [v[0] for v in kept])
-            channel_cache = channels_list(rotator, [sn.get("channelId", "") for _, sn, *_ in kept], channel_cache)
-            for vid, sn, target_perf_id, member, season_match, signals in kept:
-                m = meta.get(vid, {})
-                ch_id = sn.get("channelId", "")
-                ch_stats = channel_cache.get(ch_id, {})
-                duration_sec = _parse_iso8601_duration(m.get("contentDetails", {}).get("duration", ""))
-                _write_csv_row(videos_path, fieldnames, {
-                    "video_id": vid, "video_title": sn.get("title", ""),
-                    "description": sn.get("description", ""), "channel_id": ch_id,
-                    "channel_name": sn.get("channelTitle", ""),
-                    "channel_subscriber_count": ch_stats.get("subscriberCount", ""),
-                    "channel_video_count": ch_stats.get("videoCount", ""),
-                    "published_at": sn.get("publishedAt", ""),
-                    "duration_sec": duration_sec,
-                    "video_format": "shorts" if (duration_sec and duration_sec <= 60) else "general",
-                    "view_count": m.get("statistics", {}).get("viewCount", ""),
-                    "like_count": m.get("statistics", {}).get("likeCount", ""),
-                    "comment_count": m.get("statistics", {}).get("commentCount", ""),
-                    "video_url": f"https://www.youtube.com/watch?v={vid}",
-                    "matched_perf_id": target_perf_id, "matched_title": member["title"],
-                    "matched_genre": member.get("genre", ""),
-                    "season_match": season_match, "substring_hit": signals["substring_hit"],
-                    "quote_hit": signals["quote_hit"], "venue_match": signals["venue_match"],
-                    "date_match": signals["date_match"], "actor_match": signals["actor_match"],
-                    "company_match": signals["company_match"],
-                    "is_news": signals["is_news"],
-                    "gate_keep": signals["keep"],
-                })
+        channel_cache = _write_kept_rows(kept, rotator, channel_cache, videos_path)
 
         total_kept += len(kept)
         gate_pass = sum(1 for *_, signals in kept if signals["keep"])
@@ -1042,6 +1064,103 @@ def cmd_collect(args):
 #   있으면 통과. 시즌그룹(초연/재연)이 원래 기간과 멀리 떨어진 시점에 영상이
 #   올라온 경우를 놓치지 않기 위한 완화 모드. 뉴스채널은 여전히 date_match 필수
 #   (뉴스는 다른 소재가 섞일 확률이 높아서 이 기준까지 풀면 오탐이 급증함).
+
+def cmd_retry_failed(args):
+    """collect 중 20바퀴를 다 돌아도 실패해서 failed_queries.txt에 남은
+    검색어들을 다시 시도한다. cmd_collect와 동일한 끈질긴 재시도 로직
+    (search_with_retry)을 그대로 쓰고, 성공한 결과는 같은 처리 과정
+    (_process_search_items/_write_kept_rows)을 거쳐 videos.csv에 이어쓴다.
+
+    failed_queries.txt는 이번 라운드 기준으로 다시 쓴다 - 이번에 성공한 건
+    빠지고, 이번에도 실패한 건 다시 남아서 다음 라운드에 또 시도할 수 있다.
+    """
+    keys = [k.strip() for k in args.api_keys.split(",") if k.strip()]
+    rotator = KeyRotator(keys)
+
+    targets = _load_csv_rows(args.targets)
+    groups = {}
+    if args.groups and os.path.isfile(args.groups):
+        with open(args.groups, encoding="utf-8") as f:
+            groups = json.load(f)
+    units_by_id = {u["unit_id"]: u for u in build_search_units(targets, groups)}
+
+    if not os.path.isfile(args.failed_queries):
+        print(f"실패 기록 파일이 없어요({args.failed_queries}) - 재시도할 게 없습니다.")
+        return
+
+    with open(args.failed_queries, encoding="utf-8") as f:
+        lines = [ln.rstrip("\n") for ln in f if ln.strip()]
+    print(f"재시도 대상 검색어: {len(lines)}건")
+    if not lines:
+        return
+
+    excluded_ids = _load_id_set(args.excluded_ids)
+    channel_cache = {}
+    seen_ids = set()
+    videos_path = args.out or os.path.join(os.path.dirname(os.path.abspath(args.failed_queries)), "videos.csv")
+
+    # 실패 로그를 일단 비움 - 이번 라운드에서 다시 실패하는 것만 search_with_retry가
+    # 자동으로 다시 채워넣게 됨(fail_log_path로 같은 파일을 넘기므로).
+    open(args.failed_queries, "w", encoding="utf-8").close()
+
+    still_failed = []
+    recovered_count = 0
+    skipped_unknown_unit = 0
+
+    for idx, line in enumerate(lines, 1):
+        parts = line.split("\t")
+        if len(parts) < 6:
+            print(f"[{idx}/{len(lines)}] 예전 포맷이라 재시도 불가, 그대로 보존: {line[:60]}")
+            still_failed.append(line)
+            continue
+        unit_id, query, order, video_duration, pub_after, pub_before = parts[:6]
+        video_duration = video_duration or None
+        pub_after = pub_after or None
+        pub_before = pub_before or None
+
+        unit = units_by_id.get(unit_id)
+        if unit is None:
+            print(f"[{idx}/{len(lines)}] unit_id '{unit_id}' 못 찾음(카탈로그 변경됐을 수 있음) - 건너뜀")
+            skipped_unknown_unit += 1
+            continue
+
+        if rotator.exhausted:
+            print("키를 모두 소진했어요 - 나머지는 다음 라운드로 넘깁니다.")
+            still_failed.extend(lines[idx - 1:])
+            break
+
+        print(f"[{idx}/{len(lines)}] '{query}' 재시도 중...", flush=True)
+        items = search_with_retry(
+            rotator, query, args.max_videos_per_query,
+            order=order, video_duration=video_duration,
+            published_after=pub_after, published_before=pub_before,
+            max_pages=args.max_pages,
+            fail_log_path=args.failed_queries,  # 이번에도 실패하면 여기에 자동으로 다시 기록됨
+            unit_id=unit_id,
+        )
+        if not items:  # None(키 소진) 또는 []([]는 이미 fail_log에 기록됨) 둘 다 이번엔 못 건짐
+            continue
+
+        kept = _process_search_items(items, unit, seen_ids, excluded_ids)
+        channel_cache = _write_kept_rows(kept, rotator, channel_cache, videos_path)
+        recovered_count += len(kept)
+        time.sleep(args.query_delay)
+
+    if still_failed:
+        with open(args.failed_queries, "a", encoding="utf-8") as f:
+            for line in still_failed:
+                f.write(line + "\n")
+
+    print(f"\n완료: 복구된 영상 {recovered_count}건 -> {videos_path}")
+    if skipped_unknown_unit:
+        print(f"알 수 없는 unit_id라 건너뛴 항목: {skipped_unknown_unit}건")
+    if os.path.isfile(args.failed_queries) and os.path.getsize(args.failed_queries) > 0:
+        with open(args.failed_queries, encoding="utf-8") as f:
+            remaining = sum(1 for _ in f)
+        print(f"여전히 실패로 남은 검색어: {remaining}건 (다음 라운드에서 다시 재시도 가능)")
+    else:
+        print("실패로 남은 검색어 없음 - 전부 복구했거나 처음부터 없었어요.")
+
 
 def cmd_apply_gate(args):
     videos = pd.read_csv(args.videos, low_memory=False)
@@ -1592,6 +1711,19 @@ def main():
                      help="videoDuration=short 별도 패스 (기본 켜짐, 비용 낮음)")
     p2.add_argument("--no-shorts-pass", dest="include_shorts_pass", action="store_false")
     p2.set_defaults(func=cmd_collect)
+
+    p2b = sub.add_parser("retry-failed",
+                          help="2.5단계: collect에서 20바퀴 다 돌아도 실패한 검색어 재시도")
+    p2b.add_argument("--failed-queries", required=True, help="collect가 남긴 failed_queries.txt 경로")
+    p2b.add_argument("--targets", required=True)
+    p2b.add_argument("--groups", default=None)
+    p2b.add_argument("--api-keys", required=True)
+    p2b.add_argument("--excluded-ids", default=None)
+    p2b.add_argument("--out", default=None, help="복구된 영상을 이어쓸 videos.csv 경로 (기본: failed_queries.txt와 같은 폴더)")
+    p2b.add_argument("--max-videos-per-query", type=int, default=50)
+    p2b.add_argument("--max-pages", type=int, default=10)
+    p2b.add_argument("--query-delay", type=float, default=4)
+    p2b.set_defaults(func=cmd_retry_failed)
 
     p3 = sub.add_parser("merge", help="3단계: shard 결과 병합")
     p3.add_argument("--base-dir", required=True)
