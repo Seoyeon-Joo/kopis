@@ -448,12 +448,16 @@ def iter_date_windows(start_date, end_date, pre_buffer_days=30, post_buffer_days
     return windows
 
 
-def search_with_retry(rotator, query, max_results=15, per_minute_wait=15,
+def search_with_retry(rotator, query, max_results=15, per_minute_wait=35,
                        order="relevance", video_duration=None,
                        published_after=None, published_before=None):
-    """429/분당제한이 뜨면 같은 키로 오래 기다리기보다, 배정된 다른 키로 바로
-    전환해서 시도한다 (이 shard가 여러 개 키를 갖고 있는 걸 활용). 그래도 막히면
-    그때 짧게 대기 후 재시도. 최대 min(len(키), 6)개 키까지 돌려본다.
+    """429/분당제한이 뜨면 다른 키로 전환해서 시도한다. 단, 여러 키가 같은
+    구글 클라우드 프로젝트 밑에 몰려있으면 분당 제한은 프로젝트 단위로 공유되기
+    때문에 "다른 키로 바꾸는 것" 자체가 별 효과가 없을 수 있다 - 그런 경우엔
+    키를 아무리 돌려도 계속 429가 남. 그래서 키 전환은 3번까지만 시도해보고
+    (혹시 정말 서로 다른 프로젝트라면 이 정도로도 충분히 우회됨), 그래도 막히면
+    "키를 더 돌리는 것"보다 "충분히 기다리는 것"에 거는 게 낫다고 보고 좀 더
+    길게(기본 35초) 기다린 뒤 처음 키로 복귀한다.
 
     order: "relevance" 또는 "date" (date를 병행하면 인기/조회수가 낮아
     relevance 상위에 안 뜨는 영상도 잡을 수 있음)
@@ -471,7 +475,7 @@ def search_with_retry(rotator, query, max_results=15, per_minute_wait=15,
     import requests  # HTTPError 참조용 (prepare/merge/qa 등은 requests 불필요하므로 로컬 import 유지)
     if rotator.exhausted:
         return None  # 이전 쿼리에서 이미 모든 키를 다 써봤음 - 재시도해봐야 소용없음
-    max_key_tries = min(len(rotator.keys), 6)
+    max_key_tries = min(len(rotator.keys), 3)
     for key_try in range(max_key_tries):
         params = dict(base, key=rotator.current)
         try:
