@@ -19,7 +19,8 @@
           "홍성호",
           "홍현택",
           "강진휘"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF216756",
@@ -38,7 +39,8 @@
           "홍성호",
           "홍현택",
           "강진휘"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -62,7 +64,8 @@
           "한상훈",
           "김도완",
           "현은영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF224259",
@@ -81,7 +84,8 @@
           "한상훈",
           "김도완",
           "현은영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -105,7 +109,8 @@
           "정은선",
           "박종선",
           "서승현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF233991",
@@ -124,7 +129,8 @@
           "정은선",
           "박종선",
           "서승현"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -140,7 +146,8 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF270087",
@@ -158,7 +165,8 @@
           "김석주",
           "박태성",
           "정지은"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -181,7 +189,8 @@
           "윤사랑",
           "이진우",
           "임가현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF271870",
@@ -198,7 +207,8 @@
           "안유진",
           "윤사랑",
           "임가현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF274923",
@@ -217,7 +227,8 @@
           "윤사랑",
           "이진우",
           "임가현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF278410",
@@ -235,7 +246,8 @@
           "윤사랑",
           "이진우",
           "임가현"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -259,7 +271,8 @@
           "엄채윤",
           "엄슬기",
           "김경태"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243437",
@@ -278,7 +291,8 @@
           "엄채윤",
           "엄슬기",
           "김경태"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -296,7 +310,8 @@
         "company_name": "",
         "cast": [
           "김유원"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF257789",
@@ -309,7 +324,8 @@
         "company_name": "",
         "cast": [
           "김유원"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -331,7 +347,8 @@
           "김소정",
           "박성하",
           "박소연"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF220926",
@@ -342,7 +359,8 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF222109",
@@ -353,7 +371,8 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -377,7 +396,8 @@
           "김수지",
           "안연제",
           "이창근"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264174",
@@ -396,7 +416,8 @@
           "김수지",
           "안연제",
           "허준"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -420,7 +441,8 @@
           "우은영",
           "임인하",
           "정혜윤"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264512",
@@ -438,7 +460,8 @@
           "임인하",
           "배수연",
           "정혜윤"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -454,7 +477,8 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246743",
@@ -471,7 +495,8 @@
           "안춘기",
           "나채원",
           "정민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -495,7 +520,8 @@
           "류제원",
           "이희연",
           "남희진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF289794",
@@ -514,7 +540,8 @@
           "오명준",
           "류제원",
           "남희진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF291384",
@@ -533,7 +560,8 @@
           "오명준",
           "류제원",
           "남희진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -555,7 +583,8 @@
           "강소연",
           "전미라",
           "정하연"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246803",
@@ -572,7 +601,8 @@
           "강소연",
           "전미라",
           "정하연"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -596,7 +626,8 @@
           "유선봉",
           "임창현",
           "신가인"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF261099",
@@ -615,7 +646,8 @@
           "유선봉",
           "임창현",
           "신가인"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -639,7 +671,8 @@
           "김규도",
           "이은주",
           "박예선"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF263481",
@@ -658,7 +691,8 @@
           "김규도",
           "이은주",
           "박예선"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -682,7 +716,8 @@
           "양우진",
           "임고은",
           "임규섭"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF253778",
@@ -693,7 +728,8 @@
         "season_rank": 6.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF222775",
@@ -712,7 +748,8 @@
           "양우진",
           "송광일",
           "황윤희"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -734,7 +771,8 @@
           "김여름",
           "정일행",
           "정수린"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248759",
@@ -751,7 +789,8 @@
           "김여름",
           "정일행",
           "정수린"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248754",
@@ -768,7 +807,8 @@
           "김여름",
           "정일행",
           "정수린"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -792,7 +832,8 @@
           "김도영",
           "허대청",
           "임예섭"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268334",
@@ -811,7 +852,8 @@
           "황유정",
           "김소영",
           "이기행"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -827,7 +869,8 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF242383",
@@ -846,7 +889,8 @@
           "박정인",
           "이선희",
           "김원근"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -868,7 +912,8 @@
           "이정주",
           "정선심",
           "도경한"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF236625",
@@ -884,7 +929,8 @@
           "김준영",
           "이정주",
           "김다은"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF241998",
@@ -900,7 +946,8 @@
           "박무성",
           "박애화",
           "박형진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -924,7 +971,8 @@
           "최용석",
           "유태평양",
           "김수인"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF279302",
@@ -941,7 +989,8 @@
           "전민경",
           "김준수",
           "추다혜"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF230594",
@@ -954,7 +1003,8 @@
         "company_name": "국립국악관현악단",
         "cast": [
           "황세희"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -978,7 +1028,8 @@
           "안창현",
           "정다연",
           "문예주"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF234678",
@@ -997,7 +1048,8 @@
           "이다혜",
           "이중현",
           "이혜미"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF238348",
@@ -1008,7 +1060,8 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "(재) 국립극단",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF240530",
@@ -1027,7 +1080,8 @@
           "구본혁",
           "이호철",
           "안창현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF234135",
@@ -1046,7 +1100,8 @@
           "성원",
           "이후징",
           "안창현"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1070,7 +1125,8 @@
           "권재원",
           "이승우",
           "김현민"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF267187",
@@ -1089,7 +1145,8 @@
           "박경주",
           "백승연",
           "성원"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1113,7 +1170,8 @@
           "박경주",
           "백승연",
           "성원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF267379",
@@ -1124,7 +1182,8 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268017",
@@ -1143,7 +1202,8 @@
           "권재원",
           "이승우",
           "김현민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1167,7 +1227,8 @@
           "김명기",
           "김은우",
           "박은호"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF262682",
@@ -1180,7 +1241,8 @@
         "company_name": "",
         "cast": [
           "이혜영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1204,7 +1266,8 @@
           "조용진",
           "박혜지",
           "황태인"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF230515",
@@ -1215,7 +1278,8 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF287957",
@@ -1226,7 +1290,8 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -1247,7 +1312,8 @@
           "조용진",
           "조승열",
           "김미애"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF268355",
@@ -1258,7 +1324,8 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269806",
@@ -1269,7 +1336,8 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -1293,7 +1361,8 @@
           "손재영",
           "서진희",
           "박은선"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250593",
@@ -1312,7 +1381,8 @@
           "손재영",
           "서진희",
           "박은선"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF275586",
@@ -1328,7 +1398,8 @@
           "정승희",
           "고준석",
           "손재영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272922",
@@ -1344,7 +1415,8 @@
           "정승희",
           "고준석",
           "손재영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1367,7 +1439,8 @@
           "안수연",
           "조연재",
           "이재우"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF243892",
@@ -1383,7 +1456,8 @@
           "이재우",
           "안수연",
           "변성완"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF244630",
@@ -1394,7 +1468,8 @@
         "season_rank": 4.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       }
     ]
   },
@@ -1410,7 +1485,8 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "(재)국립발레단",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF234442",
@@ -1421,7 +1497,8 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "(재)국립발레단",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       }
     ]
   },
@@ -1444,7 +1521,8 @@
           "허서명",
           "김기완",
           "박종석"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF275398",
@@ -1460,7 +1538,8 @@
           "조연재",
           "허서명",
           "박종석"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF275044",
@@ -1471,7 +1550,8 @@
         "season_rank": 4.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -1487,7 +1567,8 @@
         "season_rank": 7.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF250884",
@@ -1498,7 +1579,8 @@
         "season_rank": 4.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF262691",
@@ -1509,7 +1591,8 @@
         "season_rank": 8.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       }
     ]
   },
@@ -1528,7 +1611,8 @@
         "cast": [
           "정치용",
           "유다윤"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246701",
@@ -1542,7 +1626,8 @@
         "cast": [
           "정치용",
           "유다윤"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1566,7 +1651,8 @@
           "정희경",
           "박의현",
           "강도호"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF260093",
@@ -1577,7 +1663,8 @@
         "season_rank": 6.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269973",
@@ -1596,7 +1683,8 @@
           "이승우",
           "박승빈",
           "구나운"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266968",
@@ -1615,7 +1703,8 @@
           "김효주",
           "이미영",
           "윤희섭"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269027",
@@ -1634,7 +1723,8 @@
           "김효주",
           "이미영",
           "윤희섭"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF238252",
@@ -1645,7 +1735,8 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266143",
@@ -1664,7 +1755,8 @@
           "이미영",
           "최공석",
           "강도호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF262470",
@@ -1683,7 +1775,8 @@
           "김효주",
           "윤희섭",
           "강도호"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1707,7 +1800,8 @@
           "김보현",
           "이재훈",
           "김유라"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268202",
@@ -1718,7 +1812,8 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268136",
@@ -1737,7 +1832,8 @@
           "윤희섭",
           "김세린",
           "유신희"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268633",
@@ -1756,7 +1852,8 @@
           "김세린",
           "유신희",
           "정제학"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268636",
@@ -1774,7 +1871,8 @@
           "정제학",
           "오예은",
           "이상호"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1798,7 +1896,8 @@
           "강도호",
           "정제학",
           "김병헌"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF274268",
@@ -1817,7 +1916,8 @@
           "김유라",
           "강도호",
           "정제학"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1841,7 +1941,8 @@
           "이상봉",
           "이미영",
           "윤희섭"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF259859",
@@ -1852,7 +1953,8 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251800",
@@ -1871,7 +1973,8 @@
           "조정희",
           "한지수",
           "이민혁"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273993",
@@ -1890,7 +1993,8 @@
           "최공석",
           "이상봉",
           "이미영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250053",
@@ -1909,7 +2013,8 @@
           "강도호",
           "김현정",
           "박의현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266593",
@@ -1920,7 +2025,8 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -1942,7 +2048,8 @@
           "오미선",
           "양준모",
           "최인식"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF265319",
@@ -1961,7 +2068,8 @@
           "양준모",
           "최성규",
           "임은경"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF268738",
@@ -1980,7 +2088,8 @@
           "양준모",
           "최성규",
           "강도호"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -1996,7 +2105,8 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF245490",
@@ -2007,7 +2117,8 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF276722",
@@ -2026,7 +2137,8 @@
           "이나경",
           "박성우",
           "김금미"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2042,7 +2154,8 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266164",
@@ -2061,7 +2174,8 @@
           "강소리",
           "강은비",
           "김란이"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243712",
@@ -2072,7 +2186,8 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -2096,7 +2211,8 @@
           "양도담",
           "오채령",
           "이승은"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF281967",
@@ -2115,7 +2231,8 @@
           "문지영",
           "소진희",
           "심규형"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF282423",
@@ -2134,7 +2251,8 @@
           "문지영",
           "소진희",
           "심규형"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF282189",
@@ -2153,7 +2271,8 @@
           "양도담",
           "오채령",
           "이승은"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF282428",
@@ -2172,7 +2291,8 @@
           "양도담",
           "오채령",
           "이승은"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2194,7 +2314,8 @@
           "김세일",
           "이응광",
           "이동규"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251446",
@@ -2211,7 +2332,8 @@
           "이응광",
           "정민호",
           "박수용"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF253160",
@@ -2229,7 +2351,8 @@
           "김세일",
           "이응광",
           "정민호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251511",
@@ -2247,7 +2370,8 @@
           "윤태현",
           "정민호",
           "박수용"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2269,7 +2393,8 @@
           "박의준",
           "염경묵",
           "김민서"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250895",
@@ -2286,7 +2411,8 @@
           "염경묵",
           "강채연",
           "김민준"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF254978",
@@ -2303,7 +2429,8 @@
           "염경묵",
           "강채연",
           "김민준"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF277125",
@@ -2320,7 +2447,8 @@
           "박의준",
           "염경묵",
           "김민서"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2336,7 +2464,8 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269599",
@@ -2347,7 +2476,8 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -2371,7 +2501,8 @@
           "정경임",
           "신영미",
           "김은정"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF289284",
@@ -2387,7 +2518,8 @@
           "성다혜",
           "서미경",
           "김민환"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2410,7 +2542,8 @@
           "김현주",
           "박준영",
           "김윤현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF270867",
@@ -2427,7 +2560,8 @@
           "김혜진",
           "변혜림",
           "이우빈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2451,7 +2585,8 @@
           "서예진",
           "손승리",
           "윤태준"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266639",
@@ -2470,7 +2605,8 @@
           "백소리",
           "서예진",
           "손승리"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265177",
@@ -2489,7 +2625,8 @@
           "백소리",
           "서예진",
           "손승리"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2513,7 +2650,8 @@
           "박수진",
           "양병현",
           "오영훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF286382",
@@ -2524,7 +2662,8 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "(재)국립현대무용단, (재)창원문화재단",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -2548,7 +2687,8 @@
           "신상미",
           "양병현",
           "오영훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF258014",
@@ -2559,7 +2699,8 @@
         "season_rank": 5.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264191",
@@ -2578,7 +2719,8 @@
           "박수진",
           "양병현",
           "오영훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF262108",
@@ -2589,7 +2731,8 @@
         "season_rank": 6.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF257339",
@@ -2600,7 +2743,8 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF260944",
@@ -2619,7 +2763,8 @@
           "박수진",
           "양병현",
           "오영훈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2635,7 +2780,8 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF235795",
@@ -2646,7 +2792,8 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273471",
@@ -2665,7 +2812,8 @@
           "김윤현",
           "양지연",
           "유다정"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2689,7 +2837,8 @@
           "정두리",
           "선찬주",
           "김희영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF247894",
@@ -2708,7 +2857,8 @@
           "정두리",
           "김희영",
           "박수지"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2727,7 +2877,8 @@
         "cast": [
           "이명근",
           "방인주"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248875",
@@ -2743,7 +2894,8 @@
           "이연두",
           "유지민",
           "조석준"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2761,7 +2913,8 @@
         "company_name": "군산시청",
         "cast": [
           "주광영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF283283",
@@ -2774,7 +2927,8 @@
         "company_name": "군산시청",
         "cast": [
           "조은혜"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2795,7 +2949,8 @@
           "양경원",
           "오의식",
           "박은석"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF218932",
@@ -2811,7 +2966,8 @@
           "차용학",
           "김설진",
           "양경원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF217554",
@@ -2827,7 +2983,8 @@
           "차용학",
           "박은석",
           "양경원"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2847,7 +3004,8 @@
           "김설진",
           "양경원",
           "오의식"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF223025",
@@ -2863,7 +3021,8 @@
           "길은성",
           "오의식",
           "양경원"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2885,7 +3044,8 @@
           "이강혁",
           "김지훈",
           "이선주"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265815",
@@ -2902,7 +3062,8 @@
           "이강혁",
           "김지훈",
           "이선주"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2926,7 +3087,8 @@
           "최인형",
           "이한수",
           "송문선"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF241790",
@@ -2937,7 +3099,8 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "(재)서울예술단, 대전시립연정국악원",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250291",
@@ -2956,7 +3119,8 @@
           "이기완",
           "안재홍",
           "금승훈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2976,7 +3140,8 @@
           "강애심",
           "임강희",
           "김도실"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273774",
@@ -2990,7 +3155,8 @@
         "cast": [
           "임강희",
           "강애심"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3014,7 +3180,8 @@
           "정은혜",
           "이유진",
           "최성민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269403",
@@ -3033,7 +3200,8 @@
           "정은혜",
           "최성민",
           "김미현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF270982",
@@ -3052,7 +3220,8 @@
           "정은혜",
           "장수지",
           "최성민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269535",
@@ -3071,7 +3240,8 @@
           "정은혜",
           "장수지",
           "최성민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3089,7 +3259,8 @@
         "company_name": "",
         "cast": [
           "김성녀"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF263944",
@@ -3102,7 +3273,8 @@
         "company_name": "",
         "cast": [
           "김성녀"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3126,7 +3298,8 @@
           "백나현",
           "전애현",
           "이승호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265546",
@@ -3137,7 +3310,8 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264687",
@@ -3156,7 +3330,8 @@
           "백나현",
           "전애현",
           "김민주"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3180,7 +3355,8 @@
           "이소영",
           "나주희",
           "손영화"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF274122",
@@ -3199,7 +3375,8 @@
           "성지영",
           "이은아",
           "이소영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3223,7 +3400,8 @@
           "이지우",
           "이수영",
           "곽현호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF242209",
@@ -3242,7 +3420,8 @@
           "곽현호",
           "최지연",
           "이지우"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3266,7 +3445,8 @@
           "김슬기",
           "김대령",
           "정서우"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF266730",
@@ -3284,7 +3464,8 @@
           "박지예",
           "최영준",
           "정서우"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3304,7 +3485,8 @@
           "박정자",
           "강필석",
           "황지우"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF291509",
@@ -3319,7 +3501,8 @@
           "박정자",
           "최형석",
           "김현아"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3343,7 +3526,8 @@
           "김은국",
           "김재민",
           "김준동"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249083",
@@ -3362,7 +3546,8 @@
           "김은국",
           "김재민",
           "김준동"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248792",
@@ -3381,7 +3566,8 @@
           "김은국",
           "김재민",
           "김준동"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3405,7 +3591,8 @@
           "김현민",
           "최규선",
           "윤지원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF271671",
@@ -3423,7 +3610,8 @@
           "이상구",
           "최규선",
           "윤지원"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3447,7 +3635,8 @@
           "박시인",
           "서동진",
           "김도하"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF286331",
@@ -3466,7 +3655,8 @@
           "안상은",
           "남민우",
           "이건희"
-        ]
+        ],
+        "is_high_demand": true
       }
     ]
   },
@@ -3482,7 +3672,8 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF260602",
@@ -3493,7 +3684,8 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF286085",
@@ -3504,7 +3696,8 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -3520,7 +3713,8 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269339",
@@ -3531,7 +3725,8 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF288356",
@@ -3542,7 +3737,8 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "남양주시립합창단",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF275068",
@@ -3553,7 +3749,8 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -3569,7 +3766,8 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246652",
@@ -3580,7 +3778,8 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -3596,7 +3795,8 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF242734",
@@ -3614,7 +3814,8 @@
           "박주득",
           "이희돈",
           "김아름"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3634,7 +3835,8 @@
           "장윤성",
           "신지아",
           "원재연"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF252173",
@@ -3649,7 +3851,8 @@
           "장윤성",
           "임지영",
           "원재연"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3671,7 +3874,8 @@
           "엄세영",
           "이준석",
           "최형규"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250430",
@@ -3688,7 +3892,8 @@
           "엄세영",
           "최형규",
           "송재윤"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246801",
@@ -3705,7 +3910,8 @@
           "정철한",
           "엄세영",
           "이준석"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF274898",
@@ -3716,7 +3922,8 @@
         "season_rank": 4.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -3740,7 +3947,8 @@
           "이진혁",
           "김지희",
           "임미정"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF261729",
@@ -3759,7 +3967,8 @@
           "이진혁",
           "김지희",
           "임미정"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3780,7 +3989,8 @@
           "얀 보보릴",
           "피터 무어",
           "뷤 반 하셀트"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269591",
@@ -3795,7 +4005,8 @@
           "얀 보보릴",
           "피터 무어",
           "뷤 반 하셀트"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3815,7 +4026,8 @@
           "마르코스 마드리갈",
           "얀 프랜시스 팡",
           "와엘 파루크"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF245082",
@@ -3829,7 +4041,8 @@
         "cast": [
           "안나 불키나",
           "안토니오 폼파발디"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3853,7 +4066,8 @@
           "채은서",
           "김서희",
           "이수림"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250115",
@@ -3872,7 +4086,8 @@
           "주여진",
           "이종문",
           "임세연"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3892,7 +4107,8 @@
           "조은혜",
           "김명이",
           "이재호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF237428",
@@ -3907,7 +4123,8 @@
           "조은혜",
           "김명이",
           "이재호"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3927,7 +4144,8 @@
           "이동욱",
           "박휘민",
           "전영진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF263198",
@@ -3942,7 +4160,8 @@
           "이동욱",
           "이재나",
           "박휘민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -3966,7 +4185,8 @@
           "이대진",
           "윤국희",
           "송아경"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF259116",
@@ -3984,7 +4204,8 @@
           "이대진",
           "윤국희",
           "송아경"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4008,7 +4229,8 @@
           "김경훈",
           "최시몬",
           "강주신"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272417",
@@ -4024,7 +4246,8 @@
           "최솔지",
           "이준구",
           "조윤빈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4048,7 +4271,8 @@
           "양나영",
           "홍윤희",
           "김승환"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269086",
@@ -4067,7 +4291,8 @@
           "양나영",
           "어성욱",
           "서정식"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4091,7 +4316,8 @@
           "양나영",
           "어성욱",
           "서정식"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF262459",
@@ -4110,7 +4336,8 @@
           "양나영",
           "어성욱",
           "서정식"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4134,7 +4361,8 @@
           "배정찬",
           "민현기",
           "김용훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF271504",
@@ -4153,7 +4381,8 @@
           "민현기",
           "김용훈",
           "이정동"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266522",
@@ -4172,7 +4401,8 @@
           "김용훈",
           "이정동",
           "김동환"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272247",
@@ -4191,7 +4421,8 @@
           "민현기",
           "김용훈",
           "이정동"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264609",
@@ -4210,7 +4441,8 @@
           "민현기",
           "김용훈",
           "이정동"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4234,7 +4466,8 @@
           "김지민",
           "허철",
           "양종대"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF271723",
@@ -4253,7 +4486,8 @@
           "김지민",
           "유재언",
           "양종대"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4277,7 +4511,8 @@
           "김이후",
           "홍지희",
           "변희상"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF256997",
@@ -4288,7 +4523,8 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266183",
@@ -4304,7 +4540,8 @@
           "윤석원",
           "김주연",
           "변희상"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4320,7 +4557,8 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF223348",
@@ -4338,7 +4576,8 @@
           "안지환",
           "신재범",
           "나하나"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4359,7 +4598,8 @@
           "방진의",
           "안지환",
           "임예진"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF229738",
@@ -4378,7 +4618,8 @@
           "박보검",
           "안치환",
           "홍지희"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249407",
@@ -4394,7 +4635,8 @@
           "최수진",
           "안지환",
           "임예진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4418,7 +4660,8 @@
           "이경구",
           "김하리",
           "브래드 버지스"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF270620",
@@ -4437,7 +4680,8 @@
           "견민성",
           "원경식",
           "이경구"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4460,7 +4704,8 @@
           "도준영",
           "원빈",
           "이정희"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF263844",
@@ -4479,7 +4724,8 @@
           "이정희",
           "원빈",
           "김하정"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4503,7 +4749,8 @@
           "효은",
           "최지혜",
           "박영수"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF226243",
@@ -4522,7 +4769,8 @@
           "옥경민",
           "홍유정",
           "유낙원"
-        ]
+        ],
+        "is_high_demand": true
       }
     ]
   },
@@ -4546,7 +4794,8 @@
           "김호경",
           "김진욱",
           "강태을"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF274251",
@@ -4565,7 +4814,8 @@
           "박시원",
           "김보미",
           "박영빈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4589,7 +4839,8 @@
           "구민영",
           "김성혜",
           "김대엽"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF242250",
@@ -4608,7 +4859,8 @@
           "구민영",
           "김성혜",
           "김대엽"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4632,7 +4884,8 @@
           "강수정",
           "김종표",
           "박상욱"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273685",
@@ -4651,7 +4904,8 @@
           "정제윤",
           "강동명",
           "장성일"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273348",
@@ -4662,7 +4916,8 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -4678,7 +4933,8 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF247486",
@@ -4695,7 +4951,8 @@
           "김지섭",
           "강동진",
           "우정진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249735",
@@ -4712,7 +4969,8 @@
           "최재민",
           "김성진",
           "우정진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4728,7 +4986,8 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF262081",
@@ -4747,7 +5006,8 @@
           "김동훈",
           "전현준",
           "선우진영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264802",
@@ -4766,7 +5026,8 @@
           "김동훈",
           "전현준",
           "선우진영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF277835",
@@ -4777,7 +5038,8 @@
         "season_rank": 4.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -4801,7 +5063,8 @@
           "강지윤",
           "임윤수",
           "신민경"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF253658",
@@ -4819,7 +5082,8 @@
           "강지윤",
           "임윤수",
           "신민경"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4843,7 +5107,8 @@
           "백지연",
           "장석준",
           "곽은혜"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF242496",
@@ -4862,7 +5127,8 @@
           "백지연",
           "장석준",
           "곽은혜"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243448",
@@ -4881,7 +5147,8 @@
           "백지연",
           "장석준",
           "곽은혜"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4903,7 +5170,8 @@
           "서진",
           "서정식",
           "노준영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF226234",
@@ -4920,7 +5188,8 @@
           "서태성",
           "서정식",
           "노준영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4944,7 +5213,8 @@
           "김채아",
           "김희연",
           "문소윤"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268184",
@@ -4963,7 +5233,8 @@
           "김은정",
           "김재민",
           "김채아"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -4985,7 +5256,8 @@
           "정아인",
           "서승원",
           "김의환"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266826",
@@ -5002,7 +5274,8 @@
           "김의환",
           "박유덕",
           "서승원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265274",
@@ -5019,7 +5292,8 @@
           "정아인",
           "서승원",
           "김의환"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5042,7 +5316,8 @@
           "김동건",
           "이나경",
           "이준호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249338",
@@ -5060,7 +5335,8 @@
           "명인호",
           "김남호",
           "이준호"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5084,7 +5360,8 @@
           "김성철",
           "황세원",
           "박초롱"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273519",
@@ -5103,7 +5380,8 @@
           "김성철",
           "황세원",
           "박초롱"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5127,7 +5405,8 @@
           "김은식",
           "김상하",
           "황수빈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272116",
@@ -5146,7 +5425,8 @@
           "김은식",
           "김수진",
           "김상하"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5170,7 +5450,8 @@
           "이지용",
           "박배리",
           "강희윤"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF247301",
@@ -5181,7 +5462,8 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "협동조합손에손에, 협동조합손에손에",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -5205,7 +5487,8 @@
           "이루마",
           "정혜윤",
           "김우찬"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249134",
@@ -5224,7 +5507,8 @@
           "이루다",
           "이루마",
           "정혜윤"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5247,7 +5531,8 @@
           "한재아",
           "이한별",
           "송영미"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264532",
@@ -5262,7 +5547,8 @@
           "전혜주",
           "한재아",
           "송영미"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5286,7 +5572,8 @@
           "윤일식",
           "서정식",
           "이의현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF244934",
@@ -5305,7 +5592,8 @@
           "김승환",
           "서정식",
           "김솔빈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246102",
@@ -5324,7 +5612,8 @@
           "김승환",
           "서정식",
           "김솔빈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF244670",
@@ -5343,7 +5632,8 @@
           "김승환",
           "서정식",
           "김솔빈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248479",
@@ -5362,7 +5652,8 @@
           "김승환",
           "서정식",
           "김솔빈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5386,7 +5677,8 @@
           "김승환",
           "서정식",
           "김솔빈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF244121",
@@ -5405,7 +5697,8 @@
           "김승환",
           "서정식",
           "김솔빈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5429,7 +5722,8 @@
           "박하진",
           "김은희",
           "박정민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF263660",
@@ -5448,7 +5742,8 @@
           "박하진",
           "김은희",
           "박정민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5470,7 +5765,8 @@
           "송보라",
           "공미연",
           "장우찬"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF245710",
@@ -5481,7 +5777,8 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "창작하는 타루",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -5504,7 +5801,8 @@
           "김영진",
           "서태양",
           "강희경"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF247340",
@@ -5522,7 +5820,8 @@
           "최영진",
           "신도현",
           "이재득"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF252836",
@@ -5540,7 +5839,8 @@
           "이재득",
           "강희경",
           "최영진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5556,7 +5856,8 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF277374",
@@ -5572,7 +5873,8 @@
           "정혜윤",
           "조한얼",
           "우차은"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5591,7 +5893,8 @@
         "cast": [
           "백승현",
           "박규희"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF259029",
@@ -5604,7 +5907,8 @@
         "company_name": "",
         "cast": [
           "홍석원"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5628,7 +5932,8 @@
           "전주연",
           "권미정",
           "김유나"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF234748",
@@ -5647,7 +5952,8 @@
           "전어진",
           "전주연",
           "이동훈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5671,7 +5977,8 @@
           "오희경",
           "염지선",
           "채민수"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF263156",
@@ -5690,7 +5997,8 @@
           "채민수",
           "서보기",
           "전용균"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF287280",
@@ -5709,7 +6017,8 @@
           "염지선",
           "김은옥",
           "서보기"
-        ]
+        ],
+        "is_high_demand": true
       }
     ]
   },
@@ -5728,7 +6037,8 @@
         "cast": [
           "천경필",
           "우원석"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF259850",
@@ -5743,7 +6053,8 @@
           "차윤희",
           "권기원",
           "천경필"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5766,7 +6077,8 @@
           "유용준",
           "박소영",
           "이수정"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF239764",
@@ -5785,7 +6097,8 @@
           "김은영",
           "박예은",
           "박나래"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5801,7 +6114,8 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF252566",
@@ -5812,7 +6126,8 @@
         "season_rank": 6.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251956",
@@ -5823,7 +6138,8 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF253540",
@@ -5834,7 +6150,8 @@
         "season_rank": 7.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265798",
@@ -5847,7 +6164,8 @@
         "company_name": "",
         "cast": [
           "백승현"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5871,7 +6189,8 @@
           "이지우",
           "서가영",
           "이현지"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265800",
@@ -5890,7 +6209,8 @@
           "김예빈",
           "김정훈",
           "김채희"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -5906,7 +6226,8 @@
         "season_rank": 8.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF275579",
@@ -5917,7 +6238,8 @@
         "season_rank": 7.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF240659",
@@ -5928,7 +6250,8 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF240601",
@@ -5939,7 +6262,8 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF253064",
@@ -5950,7 +6274,8 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF253760",
@@ -5961,7 +6286,8 @@
         "season_rank": 6.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -5979,7 +6305,8 @@
         "company_name": "",
         "cast": [
           "임희준"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF258224",
@@ -5998,7 +6325,8 @@
           "최현서",
           "김세진",
           "이유진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6016,7 +6344,8 @@
         "company_name": "",
         "cast": [
           "김선아"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF262258",
@@ -6029,7 +6358,8 @@
         "company_name": "",
         "cast": [
           "김선아"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6052,7 +6382,8 @@
           "조수연",
           "방종혁",
           "윤정훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251705",
@@ -6070,7 +6401,8 @@
           "조수연",
           "방종혁",
           "윤정훈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6091,7 +6423,8 @@
           "김수용",
           "박혜민",
           "김담현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246675",
@@ -6107,7 +6440,8 @@
           "김수용",
           "박혜민",
           "김담현"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6129,7 +6463,8 @@
           "조준희",
           "박승규",
           "박진수"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251719",
@@ -6146,7 +6481,8 @@
           "윤선정",
           "박진수",
           "조준희"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6168,7 +6504,8 @@
           "윤선정",
           "박진수",
           "조준희"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249539",
@@ -6185,7 +6522,8 @@
           "조준희",
           "박승규",
           "박진수"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6205,7 +6543,8 @@
           "양성원",
           "김다미",
           "송영훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243843",
@@ -6220,7 +6559,8 @@
           "양성원",
           "임지영",
           "송영훈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6236,7 +6576,8 @@
         "season_rank": 37.0,
         "genre": "뮤지컬",
         "company_name": "(주)씨에이치수박",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF278298",
@@ -6255,7 +6596,8 @@
           "김영환",
           "안두호",
           "이윤성"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6279,7 +6621,8 @@
           "김현준",
           "송상훈",
           "이민규"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF288081",
@@ -6298,7 +6641,8 @@
           "이민규",
           "금보미",
           "장희원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248080",
@@ -6317,7 +6661,8 @@
           "김세환",
           "금보미",
           "진초록"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF247259",
@@ -6336,7 +6681,8 @@
           "견민성",
           "김세환",
           "금보미"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6356,7 +6702,8 @@
           "정동화",
           "최연우",
           "김재범"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF261787",
@@ -6367,7 +6714,8 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -6390,7 +6738,8 @@
           "정보권",
           "김수인",
           "김도완"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268666",
@@ -6408,7 +6757,8 @@
           "서의철",
           "정보권",
           "정승준"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6432,7 +6782,8 @@
           "고준석",
           "정윤형",
           "김도완"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272825",
@@ -6450,7 +6801,8 @@
           "정보권",
           "정윤형",
           "김도완"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6474,7 +6826,8 @@
           "강민재",
           "린다전",
           "김두은"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF220095",
@@ -6493,7 +6846,8 @@
           "김두은",
           "강해진",
           "신대철"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF225362",
@@ -6512,7 +6866,8 @@
           "강민재",
           "린다전",
           "김두은"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF218167",
@@ -6531,7 +6886,8 @@
           "강해진",
           "신대철",
           "강민재"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6547,7 +6903,8 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF277741",
@@ -6562,7 +6919,8 @@
           "박시은",
           "석지우",
           "백인규"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6586,7 +6944,8 @@
           "강신구",
           "김신기",
           "류주연"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF233740",
@@ -6597,7 +6956,8 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       }
     ]
   },
@@ -6620,7 +6980,8 @@
           "김신기",
           "손성호",
           "이승우"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF234482",
@@ -6631,7 +6992,8 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       }
     ]
   },
@@ -6649,7 +7011,8 @@
         "company_name": "",
         "cast": [
           "정나라"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF255240",
@@ -6668,7 +7031,8 @@
           "강인한",
           "임리라",
           "김보람"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6684,7 +7048,8 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF281834",
@@ -6695,7 +7060,8 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -6713,7 +7079,8 @@
         "company_name": "",
         "cast": [
           "이금희"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF233644",
@@ -6724,7 +7091,8 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF278595",
@@ -6743,7 +7111,8 @@
           "최승원",
           "김재성",
           "이상윤"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6767,7 +7136,8 @@
           "김용한",
           "이혜수",
           "송문선"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF289529",
@@ -6786,7 +7156,8 @@
           "이혜수",
           "송문선",
           "이종한"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6808,7 +7179,8 @@
           "이한수",
           "이기완",
           "이혜수"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266669",
@@ -6825,7 +7197,8 @@
           "이한수",
           "이기완",
           "이혜수"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6849,7 +7222,8 @@
           "최인형",
           "박재은",
           "이동규"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF253992",
@@ -6868,7 +7242,8 @@
           "송문선",
           "김건혜",
           "최인형"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF266595",
@@ -6887,7 +7262,8 @@
           "최인형",
           "박재은",
           "이한수"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6911,7 +7287,8 @@
           "송문선",
           "김건혜",
           "최인형"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265974",
@@ -6930,7 +7307,8 @@
           "최인형",
           "박재은",
           "이한수"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF263111",
@@ -6949,7 +7327,8 @@
           "최인형",
           "박재은",
           "이한수"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -6973,7 +7352,8 @@
           "천예서",
           "조진희",
           "신지현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF262145",
@@ -6984,7 +7364,8 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -7008,7 +7389,8 @@
           "공재민",
           "강정윤",
           "오세철"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269982",
@@ -7027,7 +7409,8 @@
           "공재민",
           "강정윤",
           "오세철"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272392",
@@ -7046,7 +7429,8 @@
           "공재민",
           "강정윤",
           "오세철"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF267258",
@@ -7057,7 +7441,8 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -7080,7 +7465,8 @@
           "김천",
           "이민지",
           "서지예"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273460",
@@ -7098,7 +7484,8 @@
           "유일한",
           "이민지",
           "서태인"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF277022",
@@ -7116,7 +7503,8 @@
           "유일한",
           "이민지",
           "김려은"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7140,7 +7528,8 @@
           "이상숙",
           "이정주",
           "민재원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249202",
@@ -7159,7 +7548,8 @@
           "이정주",
           "민재원",
           "김규도"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7183,7 +7573,8 @@
           "최진경",
           "조윤정",
           "이영훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF287270",
@@ -7202,7 +7593,8 @@
           "박진우",
           "이영훈",
           "조윤정"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7218,7 +7610,8 @@
         "season_rank": 11.0,
         "genre": "뮤지컬",
         "company_name": "(주)에이엠컬쳐(AMCULTURE), (주)에이엠컬쳐(AMCULTURE)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF239400",
@@ -7229,7 +7622,8 @@
         "season_rank": 10.0,
         "genre": "뮤지컬",
         "company_name": "(주)에이엠컬쳐(AMCULTURE)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -7253,7 +7647,8 @@
           "유시현",
           "김시현",
           "김승환"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF231335",
@@ -7272,7 +7667,8 @@
           "강단아",
           "김시현",
           "김승환"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7296,7 +7692,8 @@
           "송숙영",
           "원유대",
           "김준엽"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF240907",
@@ -7315,7 +7712,8 @@
           "송숙영",
           "원유대",
           "김준엽"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7331,7 +7729,8 @@
         "season_rank": 9.0,
         "genre": "뮤지컬",
         "company_name": "보성군청, 할리퀸크리에이션즈(주)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF290299",
@@ -7342,7 +7741,8 @@
         "season_rank": 8.0,
         "genre": "뮤지컬",
         "company_name": "할리퀸크리에이션즈(주)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -7365,7 +7765,8 @@
           "이은경",
           "임유정",
           "임종경"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF269326",
@@ -7383,7 +7784,8 @@
           "이은경",
           "이초은",
           "임유정"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272493",
@@ -7401,7 +7803,8 @@
           "이은경",
           "이초은",
           "임유정"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7417,7 +7820,8 @@
         "season_rank": 5.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF270041",
@@ -7428,7 +7832,8 @@
         "season_rank": 6.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -7452,7 +7857,8 @@
           "박현숙",
           "이세훈",
           "유수진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273188",
@@ -7471,7 +7877,8 @@
           "박현숙",
           "이세훈",
           "유수진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7495,7 +7902,8 @@
           "한다희",
           "박현숙",
           "유수진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF242850",
@@ -7514,7 +7922,8 @@
           "한다희",
           "박현숙",
           "유수진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF240309",
@@ -7533,7 +7942,8 @@
           "한다희",
           "박현숙",
           "유수진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF239147",
@@ -7552,7 +7962,8 @@
           "한다희",
           "박현숙",
           "유수진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243693",
@@ -7571,7 +7982,8 @@
           "한다희",
           "박현숙",
           "유수진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264787",
@@ -7590,7 +8002,8 @@
           "이세훈",
           "황성인",
           "박현숙"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7614,7 +8027,8 @@
           "이정환",
           "곽상훈",
           "김영은"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF245472",
@@ -7633,7 +8047,8 @@
           "이정환",
           "곽상훈",
           "김영은"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7654,7 +8069,8 @@
           "박현수",
           "김성식",
           "김제니"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF261678",
@@ -7670,7 +8086,8 @@
           "박현수",
           "김성식",
           "김제니"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF261661",
@@ -7686,7 +8103,8 @@
           "박현수",
           "김성식",
           "김제니"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7707,7 +8125,8 @@
           "박현수",
           "김성식",
           "김제니"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266199",
@@ -7723,7 +8142,8 @@
           "박현수",
           "김성식",
           "김제니"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7739,7 +8159,8 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "(주)콘텐츠컬쳐플레이스",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264196",
@@ -7750,7 +8171,8 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "(주)콘텐츠컬쳐플레이스",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF276774",
@@ -7761,7 +8183,8 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "(주)콘텐츠컬쳐플레이스",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -7785,7 +8208,8 @@
           "장성일",
           "김일훈",
           "김성결"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264614",
@@ -7804,7 +8228,8 @@
           "홍예원",
           "김혜현",
           "김일훈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7824,7 +8249,8 @@
           "김덕수",
           "김리혜",
           "이봉근"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF278470",
@@ -7837,7 +8263,8 @@
         "company_name": "",
         "cast": [
           "김덕수"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7861,7 +8288,8 @@
           "김성대",
           "방성혁",
           "송동운"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF245104",
@@ -7880,7 +8308,8 @@
           "김성대",
           "방성혁",
           "송동운"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7896,7 +8325,8 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250159",
@@ -7915,7 +8345,8 @@
           "이다희",
           "손명호",
           "이재현"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7939,7 +8370,8 @@
           "이다희",
           "손명호",
           "이재현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246890",
@@ -7954,7 +8386,8 @@
           "김학용",
           "이소연",
           "서정금"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF280439",
@@ -7965,7 +8398,8 @@
         "season_rank": 13.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266546",
@@ -7984,7 +8418,8 @@
           "이다희",
           "손명호",
           "이재현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273245",
@@ -8003,7 +8438,8 @@
           "이다희",
           "손명호",
           "이재현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF274977",
@@ -8022,7 +8458,8 @@
           "이다희",
           "손명호",
           "이재현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273167",
@@ -8039,7 +8476,8 @@
           "이소연",
           "박자희",
           "이광복"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8062,7 +8500,8 @@
           "김병준",
           "최서인",
           "황의정"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF247303",
@@ -8073,7 +8512,8 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248473",
@@ -8088,7 +8528,8 @@
           "조용휘",
           "임소윤",
           "성연"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8112,7 +8553,8 @@
           "박현아",
           "김준엽",
           "김다운"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266288",
@@ -8131,7 +8573,8 @@
           "박현아",
           "김준엽",
           "김다운"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273091",
@@ -8150,7 +8593,8 @@
           "박현아",
           "김준엽",
           "김다운"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8174,7 +8618,8 @@
           "유이삭",
           "김우연",
           "양미현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248795",
@@ -8190,7 +8635,8 @@
           "김지은",
           "조인혁",
           "원재연"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8214,7 +8660,8 @@
           "고상호",
           "윤소호",
           "정지우"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF243975",
@@ -8233,7 +8680,8 @@
           "고상호",
           "정지우",
           "홍기범"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF245822",
@@ -8252,7 +8700,8 @@
           "정지우",
           "홍기범",
           "이진혁"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246013",
@@ -8271,7 +8720,8 @@
           "정지우",
           "정평",
           "안두호"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8295,7 +8745,8 @@
           "신용진",
           "박종현",
           "우미화"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273964",
@@ -8314,7 +8765,8 @@
           "신용진",
           "박종현",
           "우미화"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8337,7 +8789,8 @@
           "윤별",
           "진유정",
           "김희래"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF221813",
@@ -8355,7 +8808,8 @@
           "윤별",
           "진유정",
           "김희래"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF221804",
@@ -8373,7 +8827,8 @@
           "윤별",
           "진유정",
           "김희래"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF221768",
@@ -8390,7 +8845,8 @@
           "김순정",
           "윤별",
           "김희래"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8414,7 +8870,8 @@
           "김민지",
           "심준호",
           "채재일"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF244668",
@@ -8433,7 +8890,8 @@
           "김민지",
           "이경준",
           "채재일"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243259",
@@ -8451,7 +8909,8 @@
           "김상진",
           "이한나",
           "윤소희"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8475,7 +8934,8 @@
           "김상진",
           "이한나",
           "이정란"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF260394",
@@ -8494,7 +8954,8 @@
           "김상진",
           "정승원",
           "김민지"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8518,7 +8979,8 @@
           "박정은",
           "윤정훈",
           "방종혁"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248265",
@@ -8537,7 +8999,8 @@
           "김유성",
           "김현지",
           "김대웅"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF220076",
@@ -8548,7 +9011,8 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF242999",
@@ -8567,7 +9031,8 @@
           "김유성",
           "이상택",
           "이민지"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF226211",
@@ -8586,7 +9051,8 @@
           "김은영",
           "박정은",
           "이설"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8608,7 +9074,8 @@
           "황민왕",
           "최인환",
           "성시영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF224240",
@@ -8627,7 +9094,8 @@
           "황민왕",
           "최인환",
           "성시영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF222350",
@@ -8638,7 +9106,8 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -8661,7 +9130,8 @@
           "정태혁",
           "박청용",
           "김시준"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF254928",
@@ -8679,7 +9149,8 @@
           "서현석",
           "차단비",
           "김시준"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249183",
@@ -8697,7 +9168,8 @@
           "서현석",
           "차단비",
           "김시준"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8721,7 +9193,8 @@
           "김성희",
           "조한",
           "변주원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF217047",
@@ -8742,7 +9215,8 @@
           "조한",
           "변주원",
           "이익현"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8765,7 +9239,8 @@
           "김은국",
           "박혜연",
           "임하린"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF216125",
@@ -8783,7 +9258,8 @@
           "박혜연",
           "김경천",
           "임하린"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8807,7 +9283,8 @@
           "조한",
           "황이현",
           "설호종"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF216127",
@@ -8826,7 +9303,8 @@
           "최벽혁",
           "황이현",
           "설호종"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8850,7 +9328,8 @@
           "손혜민",
           "신다해",
           "양은진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF261132",
@@ -8869,7 +9348,8 @@
           "나지수",
           "박미리",
           "박소정"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF261073",
@@ -8888,7 +9368,8 @@
           "박미리",
           "박소정",
           "손혜민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -8912,7 +9393,8 @@
           "변형범",
           "김도연",
           "오찬우"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272568",
@@ -8931,7 +9413,8 @@
           "류다휘",
           "김민지",
           "홍재호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF228736",
@@ -8942,7 +9425,8 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF226470",
@@ -8953,7 +9437,8 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF226126",
@@ -8964,7 +9449,8 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -8980,7 +9466,8 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "경기도극단",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF252947",
@@ -8999,7 +9486,8 @@
           "권승록",
           "장정선",
           "이진혁"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9023,7 +9511,8 @@
           "권혁풍",
           "강성해",
           "한록수"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF253643",
@@ -9034,7 +9523,8 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -9053,7 +9543,8 @@
         "cast": [
           "사샤 괴첼",
           "막심 벤게로프"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF276164",
@@ -9067,7 +9558,8 @@
         "cast": [
           "사샤 괴첼",
           "막심 벤게로프"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9090,7 +9582,8 @@
           "박성하",
           "박소연",
           "김유진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF240838",
@@ -9108,7 +9601,8 @@
           "박성하",
           "박소연",
           "김유진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9132,7 +9626,8 @@
           "양현석",
           "박예선",
           "김상훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246248",
@@ -9151,7 +9646,8 @@
           "양현석",
           "박예선",
           "김상훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF247565",
@@ -9170,7 +9666,8 @@
           "양현석",
           "박예선",
           "김상훈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9194,7 +9691,8 @@
           "한은비",
           "왕수희",
           "전필재"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243850",
@@ -9213,7 +9711,8 @@
           "한은비",
           "왕수희",
           "전필재"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9236,7 +9735,8 @@
           "김하준",
           "김두리",
           "오유라"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF289430",
@@ -9254,7 +9754,8 @@
           "김하준",
           "김두리",
           "오유라"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9277,7 +9778,8 @@
           "안민진",
           "정지수",
           "박소현"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243411",
@@ -9296,7 +9798,8 @@
           "이헤린",
           "강지윤",
           "박효빈"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9312,7 +9815,8 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272219",
@@ -9328,7 +9832,8 @@
           "임진섭",
           "김이후",
           "최민우"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9349,7 +9854,8 @@
           "김나연",
           "임하나",
           "이지언"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF281686",
@@ -9365,7 +9871,8 @@
           "김다인",
           "김예은",
           "신승경"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF256047",
@@ -9381,7 +9888,8 @@
           "홍보민",
           "이승해",
           "임재욱"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9405,7 +9913,8 @@
           "김귀선",
           "황정민",
           "최무인"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF270397",
@@ -9424,7 +9933,8 @@
           "김귀선",
           "황정민",
           "최무인"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9440,7 +9950,8 @@
         "season_rank": 42.0,
         "genre": "뮤지컬",
         "company_name": "할리퀸크리에이션즈(주)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF288098",
@@ -9451,7 +9962,8 @@
         "season_rank": 54.0,
         "genre": "뮤지컬",
         "company_name": "(재)의정부문화재단 (의정부예술의전당), 할리퀸크리에이션즈(주)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246030",
@@ -9462,7 +9974,8 @@
         "season_rank": 40.0,
         "genre": "뮤지컬",
         "company_name": "할리퀸크리에이션즈(주)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250496",
@@ -9473,7 +9986,8 @@
         "season_rank": 44.0,
         "genre": "뮤지컬",
         "company_name": "할리퀸크리에이션즈(주)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF252663",
@@ -9484,7 +9998,8 @@
         "season_rank": 43.0,
         "genre": "뮤지컬",
         "company_name": "할리퀸크리에이션즈(주)",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -9506,7 +10021,8 @@
           "정호영",
           "김태영",
           "강송대"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250534",
@@ -9520,7 +10036,8 @@
         "cast": [
           "손혜영",
           "유순자"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9544,7 +10061,8 @@
           "김용한",
           "김연",
           "이은솔"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF275221",
@@ -9563,7 +10081,8 @@
           "김연",
           "이은솔",
           "오지은"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9587,7 +10106,8 @@
           "조환준",
           "조원석",
           "원근영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250753",
@@ -9606,7 +10126,8 @@
           "조환준",
           "김태윤",
           "송나영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF260625",
@@ -9625,7 +10146,8 @@
           "조환준",
           "김태윤",
           "원근영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250361",
@@ -9644,7 +10166,8 @@
           "조환준",
           "김태윤",
           "원근영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266645",
@@ -9663,7 +10186,8 @@
           "손지애",
           "조환준",
           "원근영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9687,7 +10211,8 @@
           "김유상",
           "류정훈",
           "인선호"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF268948",
@@ -9698,7 +10223,8 @@
         "season_rank": 17.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       }
     ]
   },
@@ -9719,7 +10245,8 @@
           "김진호",
           "최정산",
           "송광일"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF275567",
@@ -9735,7 +10262,8 @@
           "김진호",
           "최정산",
           "송광일"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272011",
@@ -9746,7 +10274,8 @@
         "season_rank": 10.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272973",
@@ -9762,7 +10291,8 @@
           "김진호",
           "최정산",
           "송광일"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272804",
@@ -9773,7 +10303,8 @@
         "season_rank": 11.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -9797,7 +10328,8 @@
           "문용식",
           "조선재",
           "한가온"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF225115",
@@ -9816,7 +10348,8 @@
           "문용식",
           "정의영",
           "김덕영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF220723",
@@ -9834,7 +10367,8 @@
           "배효섭",
           "조선재",
           "문용식"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9858,7 +10392,8 @@
           "신현선",
           "김기진",
           "김연화"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246315",
@@ -9877,7 +10412,8 @@
           "신현선",
           "김기진",
           "송태진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF241452",
@@ -9896,7 +10432,8 @@
           "신현선",
           "김기진",
           "김연화"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -9918,7 +10455,8 @@
           "이수진",
           "임슬기",
           "조봉국"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF241538",
@@ -9937,7 +10475,8 @@
           "이수진",
           "임슬기",
           "조봉국"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251920",
@@ -9954,7 +10493,8 @@
           "이수진",
           "임슬기",
           "조봉국"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF270209",
@@ -9971,7 +10511,8 @@
           "이수진",
           "임슬기",
           "조봉국"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF242130",
@@ -9988,7 +10529,8 @@
           "이수진",
           "임슬기",
           "조봉국"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF241408",
@@ -10007,7 +10549,8 @@
           "이수진",
           "임슬기",
           "조봉국"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251917",
@@ -10024,7 +10567,8 @@
           "이수진",
           "임슬기",
           "조봉국"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF254800",
@@ -10041,7 +10585,8 @@
           "이수진",
           "임슬기",
           "조봉국"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10065,7 +10610,8 @@
           "이호재",
           "백은경",
           "이경한"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF225300",
@@ -10084,7 +10630,8 @@
           "이호재",
           "백은경",
           "이경한"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF225627",
@@ -10103,7 +10650,8 @@
           "홍선우",
           "예수빈",
           "문병설"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10123,7 +10671,8 @@
           "홍지호",
           "고상지",
           "박상욱"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246187",
@@ -10138,7 +10687,8 @@
           "홍진호",
           "고상지",
           "박상욱"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10162,7 +10712,8 @@
           "이광백",
           "김시현",
           "김미희"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF244203",
@@ -10180,7 +10731,8 @@
           "이신애",
           "임창숙",
           "이광백"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF290290",
@@ -10198,7 +10750,8 @@
           "임창숙",
           "이신애",
           "이광백"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF292145",
@@ -10216,7 +10769,8 @@
           "임창숙",
           "이신애",
           "이광백"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251433",
@@ -10234,7 +10788,8 @@
           "임창숙",
           "이신애",
           "이광백"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10250,7 +10805,8 @@
         "season_rank": 5.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF244814",
@@ -10268,7 +10824,8 @@
           "이신애",
           "임창숙",
           "이광백"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF267446",
@@ -10286,7 +10843,8 @@
           "임창숙",
           "이신애",
           "이광백"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF266399",
@@ -10297,7 +10855,8 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF280417",
@@ -10308,7 +10867,8 @@
         "season_rank": 6.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -10327,7 +10887,8 @@
         "cast": [
           "나태주",
           "목서윤"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF286553",
@@ -10341,7 +10902,8 @@
         "cast": [
           "조용헌",
           "목서윤"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10364,7 +10926,8 @@
           "김예성",
           "예수아",
           "장윤성"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF268629",
@@ -10381,7 +10944,8 @@
           "이영은",
           "정인호",
           "김예성"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF245470",
@@ -10399,7 +10963,8 @@
           "정인호",
           "김예성",
           "장윤성"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10421,7 +10986,8 @@
           "허윤희",
           "김미소",
           "최하린"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF224958",
@@ -10438,7 +11004,8 @@
           "허윤희",
           "김미소",
           "최하린"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10461,7 +11028,8 @@
           "안수호",
           "김성미",
           "김수민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF224813",
@@ -10479,7 +11047,8 @@
           "안수호",
           "김성미",
           "김수민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10503,7 +11072,8 @@
           "최예림",
           "이경성",
           "임춘길"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF240856",
@@ -10522,7 +11092,8 @@
           "최예림",
           "이경성",
           "임춘길"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF239325",
@@ -10541,7 +11112,8 @@
           "최예림",
           "이경성",
           "임춘길"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF241045",
@@ -10560,7 +11132,8 @@
           "최예림",
           "이경성",
           "임춘길"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10584,7 +11157,8 @@
           "최예림",
           "이경성",
           "임춘길"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF241228",
@@ -10603,7 +11177,8 @@
           "최예림",
           "이경성",
           "임춘길"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10622,7 +11197,8 @@
         "cast": [
           "김솔다니엘",
           "윤다영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251075",
@@ -10635,7 +11211,8 @@
         "company_name": "",
         "cast": [
           "윤다영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10659,7 +11236,8 @@
           "김소연",
           "심준호",
           "이경준"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF276228",
@@ -10678,7 +11256,8 @@
           "강미사",
           "김소연",
           "심준호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF276399",
@@ -10697,7 +11276,8 @@
           "강미사",
           "김소연",
           "심준호"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10716,7 +11296,8 @@
         "cast": [
           "송유진",
           "김주영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF287234",
@@ -10729,7 +11310,8 @@
         "company_name": "",
         "cast": [
           "송유진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10749,7 +11331,8 @@
           "박웅",
           "김용선",
           "조정민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF271656",
@@ -10764,7 +11347,8 @@
           "박웅",
           "김용선",
           "조정민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273826",
@@ -10779,7 +11363,8 @@
           "박웅",
           "김용선",
           "조정민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10798,7 +11383,8 @@
         "cast": [
           "이동규",
           "김태규"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251528",
@@ -10817,7 +11403,8 @@
           "김나영",
           "장희재",
           "유이삭"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10841,7 +11428,8 @@
           "원종환",
           "유성재",
           "김지훈"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF247849",
@@ -10859,7 +11447,8 @@
           "원종환",
           "김지훈",
           "이경욱"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246729",
@@ -10877,7 +11466,8 @@
           "유성재",
           "김지훈",
           "이경욱"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10893,7 +11483,8 @@
         "season_rank": 6.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF270709",
@@ -10912,7 +11503,8 @@
           "문경초",
           "이동명",
           "정선기"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF271626",
@@ -10931,7 +11523,8 @@
           "문경초",
           "이동명",
           "정선기"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -10955,7 +11548,8 @@
           "이종훈",
           "마현진",
           "이승일"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF246684",
@@ -10974,7 +11568,8 @@
           "김유상",
           "이동명",
           "정선기"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF248052",
@@ -10993,7 +11588,8 @@
           "문경초",
           "이종혁",
           "정선기"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF242547",
@@ -11012,7 +11608,8 @@
           "노재현",
           "문경초",
           "윤철주"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11036,7 +11633,8 @@
           "신정은",
           "이진철",
           "김하진"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF244801",
@@ -11055,7 +11653,8 @@
           "신정은",
           "이진철",
           "김하진"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11079,7 +11678,8 @@
           "박소연",
           "여은",
           "노희찬"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF221516",
@@ -11098,7 +11698,8 @@
           "노희찬",
           "여은",
           "이한밀"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF221163",
@@ -11117,7 +11718,8 @@
           "박소연",
           "여은",
           "이한밀"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF226763",
@@ -11133,7 +11735,8 @@
           "김경수",
           "유성재",
           "이한밀"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF223560",
@@ -11152,7 +11755,8 @@
           "김주호",
           "이한밀",
           "노희찬"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF219472",
@@ -11171,7 +11775,8 @@
           "유성재",
           "김주호",
           "이한밀"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF221102",
@@ -11190,7 +11795,8 @@
           "여은",
           "노희찬",
           "김주호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF217477",
@@ -11209,7 +11815,8 @@
           "루이스 초이",
           "노희찬",
           "이한밀"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11233,7 +11840,8 @@
           "이유준",
           "이향하",
           "김홍갑"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF261224",
@@ -11252,7 +11860,8 @@
           "이향하",
           "김홍갑",
           "이유준"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF251664",
@@ -11270,7 +11879,8 @@
           "백종승",
           "이유준",
           "이향하"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11294,7 +11904,8 @@
           "이향하",
           "김홍갑",
           "이유준"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF225303",
@@ -11313,7 +11924,8 @@
           "이유준",
           "이향하",
           "김홍갑"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11336,7 +11948,8 @@
           "김태형",
           "김범진",
           "나의석"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF259898",
@@ -11355,7 +11968,8 @@
           "김태형",
           "김범진",
           "나의석"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF262571",
@@ -11373,7 +11987,8 @@
           "김태형",
           "김범진",
           "나의석"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11397,7 +12012,8 @@
           "윤예솔",
           "황예원",
           "최정화"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF221678",
@@ -11416,7 +12032,8 @@
           "윤예솔",
           "황예원",
           "최정화"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11440,7 +12057,8 @@
           "김경환",
           "채송화",
           "이세영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF222966",
@@ -11459,7 +12077,8 @@
           "정수한",
           "강혁",
           "이정근"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF244176",
@@ -11478,7 +12097,8 @@
           "김경환",
           "채송화",
           "이세영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11502,7 +12122,8 @@
           "김설화",
           "엄려진",
           "정혜연"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272076",
@@ -11521,7 +12142,8 @@
           "김설화",
           "엄려진",
           "정혜연"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11542,7 +12164,8 @@
           "장해솔",
           "박인선",
           "허창열"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF263848",
@@ -11553,7 +12176,8 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -11576,7 +12200,8 @@
           "류지수",
           "문경재",
           "이가영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF228587",
@@ -11594,7 +12219,8 @@
           "류지수",
           "문경재",
           "이가영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11618,7 +12244,8 @@
           "김종훈",
           "김영아",
           "김선호"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF254563",
@@ -11634,7 +12261,8 @@
           "강혜정",
           "김재빈",
           "한아름"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11650,7 +12278,8 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250180",
@@ -11669,7 +12298,8 @@
           "박나연",
           "최혜정",
           "박도영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF249898",
@@ -11688,7 +12318,8 @@
           "박나연",
           "최혜정",
           "박도영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11709,7 +12340,8 @@
           "이호원",
           "김하람",
           "오영빈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF267088",
@@ -11722,7 +12354,8 @@
         "company_name": "",
         "cast": [
           "김주홍"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF261103",
@@ -11733,7 +12366,8 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF272927",
@@ -11749,7 +12383,8 @@
           "김하람",
           "권다영",
           "오영빈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF238855",
@@ -11765,7 +12400,8 @@
           "오영빈",
           "김하람",
           "권다영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF263046",
@@ -11781,7 +12417,8 @@
           "오영빈",
           "김하람",
           "권다영"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF267264",
@@ -11797,7 +12434,8 @@
           "김하람",
           "오영빈",
           "권다영"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11820,7 +12458,8 @@
           "문상희",
           "오근영",
           "김수아"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF243514",
@@ -11838,7 +12477,8 @@
           "문상희",
           "오근영",
           "김수아"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11857,7 +12497,8 @@
         "cast": [
           "유도온",
           "조정민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF273313",
@@ -11876,7 +12517,8 @@
           "이강",
           "오미준",
           "김태원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF279038",
@@ -11895,7 +12537,8 @@
           "이강",
           "오미준",
           "김태원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF270711",
@@ -11914,7 +12557,8 @@
           "이강",
           "오미준",
           "크리스티"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265978",
@@ -11933,7 +12577,8 @@
           "이강",
           "오미준",
           "김태원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF278371",
@@ -11952,7 +12597,8 @@
           "이강",
           "오미준",
           "김태원"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF265263",
@@ -11971,7 +12617,8 @@
           "이창희",
           "오미준",
           "김태원"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -11995,7 +12642,8 @@
           "조흠",
           "정문길",
           "천우주"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF220910",
@@ -12014,7 +12662,8 @@
           "천우주",
           "노혜성",
           "박혜민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF221317",
@@ -12033,7 +12682,8 @@
           "정문길",
           "천우주",
           "박혜민"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF222752",
@@ -12044,7 +12694,8 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF231846",
@@ -12063,7 +12714,8 @@
           "정문길",
           "김정은",
           "김선오"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF221314",
@@ -12082,7 +12734,8 @@
           "정문길",
           "천우주",
           "박혜민"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -12106,7 +12759,8 @@
           "배민우",
           "신이안",
           "심솔"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF224122",
@@ -12125,7 +12779,8 @@
           "배민우",
           "신이안",
           "심솔"
-        ]
+        ],
+        "is_high_demand": true
       }
     ]
   },
@@ -12141,7 +12796,8 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF271599",
@@ -12160,7 +12816,8 @@
           "신창주",
           "이종영",
           "김대현"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -12176,7 +12833,8 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "충북도립극단",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF264795",
@@ -12195,7 +12853,8 @@
           "신태희",
           "류명한",
           "이기복"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -12219,7 +12878,8 @@
           "조한나",
           "박승화",
           "이정훈"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF250228",
@@ -12238,7 +12898,8 @@
           "원경식",
           "김남표",
           "조한나"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF217043",
@@ -12257,7 +12918,8 @@
           "원경식",
           "김남표",
           "최하윤"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF217323",
@@ -12276,7 +12938,8 @@
           "원경식",
           "김남표",
           "조한나"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF217042",
@@ -12295,7 +12958,8 @@
           "조한나",
           "견민성",
           "최하윤"
-        ]
+        ],
+        "is_high_demand": false
       },
       {
         "perf_id": "PF256988",
@@ -12306,7 +12970,8 @@
         "season_rank": 8.0,
         "genre": "연극",
         "company_name": "",
-        "cast": []
+        "cast": [],
+        "is_high_demand": false
       }
     ]
   },
@@ -12330,7 +12995,8 @@
           "조영규",
           "견민성",
           "원경식"
-        ]
+        ],
+        "is_high_demand": true
       },
       {
         "perf_id": "PF249121",
@@ -12349,7 +13015,8 @@
           "김남표",
           "조한나",
           "박승화"
-        ]
+        ],
+        "is_high_demand": false
       }
     ]
   }
