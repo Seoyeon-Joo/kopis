@@ -461,44 +461,74 @@ def iter_date_windows(start_date, end_date, pre_buffer_days=30, post_buffer_days
     return windows
 
 
-def _fetch_search_page(rotator, params, query, per_minute_wait):
+def _fetch_search_page(rotator, params, query, per_minute_wait, fail_log_path=None):
     """검색 1페이지(최대 50개)를 키 재시도/전환과 함께 가져온다.
+
+    핵심 원칙: **429(분당 제한)는 절대 포기하지 않는다.** 이건 영구적인 문제가
+    아니라 "지금 당장 너무 빨리 요청해서" 생기는 일시적 제한이라, 충분히
+    기다리면 반드시 풀린다. 그래서 429는 키를 계속 돌려가며 무한정 재시도하고,
+    한 바퀴(모든 키)를 다 돌았는데도 안 풀리면 대기 시간을 점점 늘려가며
+    (최대 5분) 다시 처음부터 돈다 - "시간이 걸리더라도 결국은 찾는다"는
+    원칙. 안전장치로 20바퀴(수백 번 시도)까지만 허용하고, 그 이상은 정말
+    비정상 상황(예: API 자체 장애)으로 보고 그때는 포기한다.
+
+    반면 quota 소진/무효한 키/파라미터 에러(400)는 아무리 기다려도 저절로
+    안 풀리는 문제라 - 이런 것들은 기존처럼 빠르게 판단해서 처리한다.
 
     반환:
       (None, None)             - 이 shard의 키를 전부 시도했는데 다 안 됨
-                                  (quota소진/전부 무효). 호출부는 지금까지
-                                  모은 페이지만이라도 쓰고 멈춰야 함.
+                                  (quota소진/전부 무효, 또는 429가 20바퀴를
+                                  돌아도 안 풀리는 이상 상황). 호출부는
+                                  지금까지 모은 페이지만이라도 쓰고 멈춰야 함.
       ([], None)                - 이 페이지 자체는 실패(400 등)했지만
                                   전체를 멈출 이유는 아님 - 그냥 이 페이지만 포기.
       (items, next_page_token)  - 정상 (items가 빈 리스트일 수도 있음, 정상).
+
+    fail_log_path: 결국 포기한 검색어를 여기에 기록 (recall 손실 지점을
+                   나중에 확인할 수 있게).
     """
     import requests
     if rotator.exhausted:
         return None, None
-    max_key_tries = min(len(rotator.keys), 3)
-    for key_try in range(max_key_tries):
+
+    MAX_FULL_CYCLES = 20  # 이 이상은 API 자체 장애 등 비정상 상황으로 간주
+    rate_limit_hits_this_cycle = 0
+    full_cycles = 0
+
+    while True:
+        if rotator.exhausted:
+            return None, None
         p = dict(params, key=rotator.current)
         try:
             resp = robust_get(f"{API_BASE}/search", p)
             data = resp.json()
             return data.get("items", []), data.get("nextPageToken")
         except PerMinuteRateLimitError:
-            print(f"  [429/분당제한] '{query}' - 키 전환 시도 ({key_try + 1}/{max_key_tries})", flush=True)
+            rate_limit_hits_this_cycle += 1
+            print(f"  [429/분당제한] '{query}' - 키 전환 ({rate_limit_hits_this_cycle}번째 시도, "
+                  f"{full_cycles + 1}바퀴째)", flush=True)
             if rotator.rotate():
                 # 키를 바꿔도 같은 프로젝트 밑에 묶여있으면 quota가 공유될 수 있어서
                 # 즉시 재요청하면 또 걸리기 쉬움 - 짧게라도 텀을 두고 재시도
                 time.sleep(1.5)
                 continue
-            # 이 shard 키를 전부 써봤는데도 막힘 -> 그제서야 짧게 대기하고 처음 키로 복귀
-            print(f"  키를 모두 돌려봤는데도 막혀요. {per_minute_wait}초 대기 후 처음 키로 재시도.", flush=True)
-            time.sleep(per_minute_wait)
+            # 한 바퀴(모든 키)를 다 돌았는데도 안 풀림 -> 포기하지 않고, 대신
+            # 바퀴를 돌 때마다 대기 시간을 늘려가며(최대 5분) 처음부터 다시 시도
+            full_cycles += 1
+            if full_cycles >= MAX_FULL_CYCLES:
+                print(f"  {MAX_FULL_CYCLES}바퀴를 다 돌아도 안 풀려요 - 비정상 상황으로 보고 포기합니다.", flush=True)
+                break
+            wait = min(per_minute_wait * (1 + full_cycles * 0.5), 300)
+            print(f"  {full_cycles}바퀴째 - {wait:.0f}초 대기 후 처음 키로 재시도 (포기 안 함).", flush=True)
+            time.sleep(wait)
             rotator.idx = 0
+            rate_limit_hits_this_cycle = 0
         except DailyQuotaExceededError:
             if not rotator.rotate():
                 print("  이 shard에 배정된 키를 모두 소진했어요.", flush=True)
                 return None, None
         except InvalidApiKeyError:
-            print(f"  [무효한 키] {key_try + 1}번째 키가 유효하지 않아요 - 다음 키로 전환", flush=True)
+            print("  [무효한 키] 유효하지 않아요 - 다음 키로 전환", flush=True)
             if not rotator.rotate():
                 print("  이 shard에 배정된 키를 모두 시도했는데 다 무효해요.", flush=True)
                 return None, None
@@ -509,17 +539,25 @@ def _fetch_search_page(rotator, params, query, per_minute_wait):
             body = e.response.text[:200] if e.response is not None else str(e)
             print(f"  [HTTP {status}] '{query}': {body} - 이 페이지만 건너뜀", flush=True)
             return [], None
-    print(f"  [포기] '{query}' 이 페이지 재시도 실패, 건너뜀", flush=True)
+
+    print(f"  [포기] '{query}' {MAX_FULL_CYCLES}바퀴를 다 돌아도 실패, 건너뜀", flush=True)
+    if fail_log_path:
+        try:
+            os.makedirs(os.path.dirname(fail_log_path) or ".", exist_ok=True)
+            with open(fail_log_path, "a", encoding="utf-8") as f:
+                f.write(f"{query}\t{params.get('publishedAfter', '')}\t{params.get('publishedBefore', '')}\n")
+        except Exception:
+            pass  # 로그 실패는 전체 흐름을 막을 이유가 아님
     return [], None
 
 
 def search_with_retry(rotator, query, max_results=50, per_minute_wait=35,
                        order="relevance", video_duration=None,
                        published_after=None, published_before=None,
-                       max_pages=10):
+                       max_pages=10, fail_log_path=None):
     """검색 결과를 페이지네이션으로 가져온다. 1페이지(최대 50개)가 꽉 차면
     2페이지째도 마저 가져오고, 2페이지도 꽉 차면 3페이지째... 이런 식으로
-    "결과가 50개 미만으로 나올 때까지" 또는 max_pages(기본 5, 최대 250개)에
+    "결과가 50개 미만으로 나올 때까지" 또는 max_pages(기본 10, 최대 500개)에
     닿을 때까지 이어서 가져온다.
 
     결과가 50개가 안 되는(대다수일 것으로 예상되는) 쿼리는 추가 비용 없이
@@ -533,6 +571,8 @@ def search_with_retry(rotator, query, max_results=50, per_minute_wait=35,
     max_pages: 안전장치 - 아무리 꽉 차도 이 페이지 수 이상은 더 안 가져옴
                (기본 10페이지=최대 500개. 극단적으로 인기 많은 검색어 하나가
                quota를 통째로 먹는 것을 방지)
+    fail_log_path: 여러 키를 다 돌려봐도 결국 포기한 검색어를 기록할 파일 경로
+                   (recall 손실 지점을 나중에 확인/재시도할 수 있게)
     """
     base = {"part": "snippet", "q": query, "type": "video",
             "maxResults": min(max_results, 50), "relevanceLanguage": "ko", "order": order}
@@ -552,7 +592,7 @@ def search_with_retry(rotator, query, max_results=50, per_minute_wait=35,
         params = dict(base)
         if next_page_token:
             params["pageToken"] = next_page_token
-        items, token = _fetch_search_page(rotator, params, query, per_minute_wait)
+        items, token = _fetch_search_page(rotator, params, query, per_minute_wait, fail_log_path=fail_log_path)
         if items is None:
             # 키 전부 소진 - 이미 모은 페이지가 있으면 그거라도 살려서 반환,
             # 첫 페이지부터 안 됐으면 기존과 동일하게 None(shard 전체 종료 신호)
@@ -933,6 +973,7 @@ def cmd_collect(args):
                 order=order, video_duration=video_duration,
                 published_after=pub_after, published_before=pub_before,
                 max_pages=unit_max_pages,
+                fail_log_path=os.path.join(args.out_dir, "failed_queries.txt"),
             )
             if items is None:
                 print("전체 키 소진 - 스크립트 종료 (다음 실행에서 이어감)", flush=True)
@@ -981,6 +1022,11 @@ def cmd_collect(args):
         _append_line(args.state_file, unit["unit_id"])
 
     print(f"완료. 이 shard 총 수집(게이트 미적용, 전량 저장): {total_kept}건", flush=True)
+    fail_log = os.path.join(args.out_dir, "failed_queries.txt")
+    if os.path.isfile(fail_log):
+        with open(fail_log, encoding="utf-8") as f:
+            n_failed = sum(1 for _ in f)
+        print(f"참고: 키를 다 돌려봐도 실패해서 포기한 검색어 {n_failed}건 -> {fail_log}", flush=True)
 
 
 # =============================================================================
