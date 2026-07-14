@@ -130,6 +130,29 @@ jobs:
             --order-strategy "${{ inputs.order_strategy || 'relevance' }}" \
             $DATE_WINDOWS_FLAG
 
+      - name: 실패한 검색어 재시도 (20바퀴 다 돌아도 안 됐던 것들)
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          FAILED_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/failed_queries.txt"
+          if [ -s "$FAILED_FILE" ]; then
+            EXCLUDED=""
+            if [ -f "data/excluded_video_ids.txt" ]; then
+              EXCLUDED="--excluded-ids data/excluded_video_ids.txt"
+            fi
+            python scripts/pipeline.py retry-failed \
+              --failed-queries "$FAILED_FILE" \
+              --targets data/targets_enriched.csv \
+              --groups data/work_groups.json \
+              $EXCLUDED \
+              --api-keys "$SELECTED_KEYS" \
+              --out "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" \
+              --max-videos-per-query 50 \
+              --query-delay 4
+          else
+            echo "실패 기록 없음 - 재시도 건너뜀"
+          fi
+
       - name: 변경사항 커밋 & 푸시 (충돌 시 재시도)
         run: |
           git config user.name "github-actions[bot]"
