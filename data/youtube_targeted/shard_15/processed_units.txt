@@ -11,3 +11,9 @@ group::전남도립국악단 명인명창과 함께하는 오마주: 사제::전
 group::춘천시립예술단 정기회원 음악회::cast0
 group::헤어드레서::cast2
 perf::PF261034
+perf::PF258358
+perf::PF257898
+perf::PF277458
+perf::PF262183
+perf::PF277454
+perf::PF259188
