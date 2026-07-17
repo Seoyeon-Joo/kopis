@@ -116,6 +116,14 @@ jobs:
           echo "이 shard는 ${WAIT}초 후에 시작합니다"
           sleep "$WAIT"
 
+      - name: 이전에 압축 저장된 videos.csv 복원 (이어쓰기를 위해)
+        run: |
+          GZ_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz"
+          if [ -f "$GZ_FILE" ]; then
+            gunzip -k "$GZ_FILE"
+            echo "복원됨: $GZ_FILE -> videos.csv"
+          fi
+
       - name: 수집 실행 (shard ${{ matrix.shard }})
         env:
           PYTHONUNBUFFERED: "1"
@@ -175,11 +183,20 @@ jobs:
           retention-days: 14
           if-no-files-found: ignore
 
+      - name: videos.csv 압축 (GitHub 100MB 제한 대응)
+        run: |
+          CSV_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv"
+          if [ -f "$CSV_FILE" ]; then
+            gzip -9 -f "$CSV_FILE"
+            echo "압축됨: $CSV_FILE.gz ($(du -h "$CSV_FILE.gz" | cut -f1))"
+          fi
+
       - name: 변경사항 커밋 & 푸시 (충돌 시 재시도)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config merge.ours.driver true   # data/youtube_targeted/** merge=ours (.gitattributes)
+          git rm --cached "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" 2>/dev/null || true
           git add "data/youtube_targeted/shard_${{ matrix.shard }}/"
           if git diff --staged --quiet; then
             echo "변경사항 없음"; exit 0
@@ -238,16 +255,41 @@ jobs:
             --out data/youtube_targeted/all_videos_gated.csv \
             --dropped-out data/youtube_targeted/all_videos_dropped.csv
 
-      - name: 커밋 & 푸시 (충돌 시 재시도)
+      - name: 대용량 CSV는 git 대신 GitHub Release로 배포 (매일 최신본 덮어씀)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # all_videos*.csv는 shard 파일(git에 이미 있음)로부터 매번 100%
+          # 재생성되는 산출물이라 git 히스토리에 쌓을 필요가 없음 - 게다가
+          # 800MB대라 gzip으로도 100MB 밑으로 못 내림. GitHub Release 자산은
+          # git 오브젝트가 아니라서 repo 용량을 안 늘리고, 파일당 2GB까지 가능.
+          gzip -9 -k data/youtube_targeted/all_videos.csv
+          gzip -9 -k data/youtube_targeted/all_videos_gated.csv
+          gzip -9 -k data/youtube_targeted/all_videos_dropped.csv
+
+          TAG="latest-data"
+          if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            gh release create "$TAG" --repo "${{ github.repository }}" \
+              --title "최신 수집 데이터 (매일 자동 갱신)" \
+              --notes "all_videos.csv / all_videos_gated.csv / all_videos_dropped.csv 최신본. 매일 덮어써지므로 과거 버전은 보존되지 않음."
+          fi
+          gh release upload "$TAG" \
+            data/youtube_targeted/all_videos.csv.gz \
+            data/youtube_targeted/all_videos_gated.csv.gz \
+            data/youtube_targeted/all_videos_dropped.csv.gz \
+            --repo "${{ github.repository }}" --clobber
+
+      - name: QA 리포트 커밋 & 푸시 (충돌 시 재시도)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/youtube_targeted/all_videos.csv data/youtube_targeted/all_videos_gated.csv \
-                  data/youtube_targeted/all_videos_dropped.csv data/perf_id_mismatch_report.csv
+          git rm --cached data/youtube_targeted/all_videos.csv data/youtube_targeted/all_videos_gated.csv \
+                  data/youtube_targeted/all_videos_dropped.csv 2>/dev/null || true
+          git add data/perf_id_mismatch_report.csv
           if git diff --staged --quiet; then
             echo "변경사항 없음"; exit 0
           fi
-          git commit -m "영상 통합/게이트 CSV + QA 리포트 갱신: $(date -u +'%Y-%m-%d')"
+          git commit -m "QA 리포트 갱신: $(date -u +'%Y-%m-%d')"
           for i in 1 2 3 4 5 6 7 8; do
             git rebase --abort 2>/dev/null || true
             if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
