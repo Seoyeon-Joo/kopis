@@ -913,8 +913,15 @@ def _process_search_items(items, unit, seen_ids, excluded_ids):
     (video_id, snippet, target_perf_id, member, season_match, signals) 튜플
     리스트로 반환한다. cmd_collect와 retry-failed가 공유해서 쓴다."""
     kept = []
+    skipped_no_id = 0
     for item in items:
-        vid = item["id"]["videoId"]
+        # type=video로 요청해도 YouTube API가 드물게 videoId 없는 항목을
+        # 섞어 보내는 경우가 실제로 있음(삭제/지역제한 등) - 여기서 죽으면
+        # 이 shard가 그때까지 모은 데이터를 통째로 날리므로 건너뛰고 계속함.
+        vid = item.get("id", {}).get("videoId")
+        if not vid:
+            skipped_no_id += 1
+            continue
         if vid in seen_ids or vid in excluded_ids:
             continue
         seen_ids.add(vid)
@@ -936,6 +943,8 @@ def _process_search_items(items, unit, seen_ids, excluded_ids):
         # 여기서 discard하지 않음 - keep 여부는 gate_keep 컬럼에만 기록하고
         # 실제 필터링은 apply-gate 서브커맨드에서 별도로 수행한다.
         kept.append((vid, sn, target_perf_id, member, season_match, signals))
+    if skipped_no_id:
+        print(f"  [videoId 없음] {skipped_no_id}건 건너뜀 (API가 이상 항목을 섞어 보냄)", flush=True)
     return kept
 
 
@@ -1253,12 +1262,19 @@ def cmd_apply_gate(args):
 # =============================================================================
 
 def cmd_merge(args):
-    files = sorted(glob.glob(os.path.join(args.base_dir, "shard_*", "videos.csv")))
-    print(f"shard 결과 파일 {len(files)}개 발견")
+    # videos.csv가 100MB 넘어가면 GitHub Actions에서 gzip 압축해서
+    # videos.csv.gz로 커밋하므로, 둘 다 찾아야 함. 같은 shard에 두 파일이
+    # 동시에 있으면(압축 직후 재실행 등) .gz를 우선한다(더 최신 상태).
+    csv_files = glob.glob(os.path.join(args.base_dir, "shard_*", "videos.csv"))
+    gz_files = glob.glob(os.path.join(args.base_dir, "shard_*", "videos.csv.gz"))
+    gz_dirs = {os.path.dirname(f) for f in gz_files}
+    files = sorted(gz_files + [f for f in csv_files if os.path.dirname(f) not in gz_dirs])
+    print(f"shard 결과 파일 {len(files)}개 발견 (압축 {len(gz_files)}개 포함)")
     if not files:
         print("합칠 파일이 없어요.")
         return
 
+    # pandas는 .gz 확장자를 자동으로 인식해서 압축 해제 후 읽는다
     dfs = [pd.read_csv(f, low_memory=False) for f in files if os.path.getsize(f) > 0]
     if not dfs:
         print("모든 shard 파일이 비어있어요.")
