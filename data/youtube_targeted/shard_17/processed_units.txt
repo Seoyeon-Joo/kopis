@@ -33,3 +33,7 @@ perf::PF289081
 perf::PF270222
 perf::PF236170
 perf::PF281762
+perf::PF237592
+perf::PF251590
+perf::PF245226
+perf::PF283994
