@@ -24,3 +24,7 @@ perf::PF247845
 perf::PF252158
 perf::PF286854
 perf::PF269558
+perf::PF242268
+perf::PF260178
+perf::PF261746
+perf::PF285049
