@@ -491,7 +491,12 @@ def _fetch_search_page(rotator, params, query, per_minute_wait, fail_log_path=No
     if rotator.exhausted:
         return None, None
 
-    MAX_FULL_CYCLES = 20  # 이 이상은 API 자체 장애 등 비정상 상황으로 간주
+    MAX_FULL_CYCLES = 3  # 이 이상은 API 자체 장애 등 비정상 상황으로 간주
+    # (기존 20에서 축소 - 실측 결과 20바퀴까지 기다리는 동안 IP 기반으로 보이는
+    # 분당 제한이 전혀 안 풀리는 경우가 흔해서, 검색어 하나가 shard의 남은
+    # 시간 예산을 통째로 먹어버리는 사고가 반복 확인됨. 3바퀴(최소 52+70+88=210초
+    # 대기, 키 37개 기준 최대 111회 시도)까지만 기다리고 포기 -> failed_queries.txt에
+    # 기록해서 retry-failed 단계(별도 40분 예산, 다른 시간대)에서 다시 시도하게 함.
     rate_limit_hits_this_cycle = 0
     full_cycles = 0
 
@@ -1068,6 +1073,8 @@ def cmd_collect(args):
               f"windows={len(windows) if args.use_date_windows else 0}, "
               f"shorts_pass={args.include_shorts_pass}, max_pages={unit_max_pages})", flush=True)
         seen_ids, kept = set(), []
+        unit_start_time = time.time()
+        unit_completed = True
 
         for q, order, video_duration, pub_after, pub_before in calls:
             if _time_up():
@@ -1077,6 +1084,16 @@ def cmd_collect(args):
                 total_kept += len(kept)
                 print(f"완료(시간 예산으로 조기 종료). 이 shard 총 수집: {total_kept}건", flush=True)
                 return
+            if time.time() - unit_start_time >= args.max_seconds_per_unit:
+                # 429가 이 유닛 안에서 계속 안 풀려서(IP 기반 제한으로 보임) 검색어
+                # 하나하나가 몇 분씩 걸리는 상황 - shard의 남은 시간 예산을 이
+                # 유닛 하나가 다 먹어버리기 전에 포기하고 다음 유닛으로 넘어간다.
+                # processed_units.txt에 안 남기므로 다음 실행에서 이 유닛은 처음부터
+                # 다시 처리됨 (지금까지 모은 부분 결과는 아래에서 저장은 함).
+                print(f"  이 유닛 처리 시간이 {args.max_seconds_per_unit}초를 넘었어요 - "
+                      f"429가 계속 안 풀리는 것 같아 포기하고 다음 유닛으로 넘어갑니다.", flush=True)
+                unit_completed = False
+                break
             items = search_with_retry(
                 rotator, q, args.max_videos_per_query,
                 order=order, video_duration=video_duration,
@@ -1103,7 +1120,10 @@ def cmd_collect(args):
         gate_pass = sum(1 for *_, signals in kept if signals["keep"])
         print(f"  -> 이 유닛 수집: {len(kept)}건 (게이트통과 참고치: {gate_pass}건) (누적수집: {total_kept}건)", flush=True)
 
-        _append_line(args.state_file, unit["unit_id"])
+        if unit_completed:
+            _append_line(args.state_file, unit["unit_id"])
+        else:
+            print(f"  ('{unit['unit_id']}'은 미완료 처리라 처리기록에 안 남김 - 다음 실행에서 처음부터 다시 처리)", flush=True)
 
     print(f"완료. 이 shard 총 수집(게이트 미적용, 전량 저장): {total_kept}건", flush=True)
     fail_log = os.path.join(args.out_dir, "failed_queries.txt")
@@ -1872,6 +1892,11 @@ def main():
                      help="이 시간(분)이 지나면 GitHub Actions의 job 시간제한(보통 6시간=360분)에 "
                           "걸려 강제종료되기 전에 스스로 안전하게 멈춤 (기본 300분=5시간, "
                           "같은 job 안에서 뒤이어 도는 retry-failed 몫까지 감안한 여유)")
+    p2.add_argument("--max-seconds-per-unit", type=int, default=600,
+                     help="검색 단위(공연) 하나에 쓸 수 있는 최대 처리 시간(초). 429가 계속 "
+                          "안 풀려서 이 시간을 넘기면 그 유닛은 포기하고 다음 유닛으로 넘어감 "
+                          "(처리기록에 안 남겨서 다음 실행에서 처음부터 재시도됨). 검색어 하나가 "
+                          "shard 전체 시간 예산을 다 먹어버리는 걸 막는 안전장치 (기본 600초=10분)")
     p2.add_argument(
         "--order-strategy", choices=["relevance", "date", "both"], default="relevance",
         help="relevance만(기본) / date만 / both(quota 2배, 커버리지 최우선일 때)",
