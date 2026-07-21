@@ -1,3 +1,3 @@
-perf::PF233602	국립오페라단과 함께하는 오페라 여행	relevance			
 perf::PF266899	아이 스웨어 (I Swear)	relevance			
 perf::PF252678	대구낙원	relevance			
+perf::PF285666	폴란드 합창 음악의 향연 하이라이트	relevance			
