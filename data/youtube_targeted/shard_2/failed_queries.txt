@@ -1,2 +1,3 @@
 perf::PF269915	이야기가 있는 한여름 가족음악회	relevance			
 perf::PF269915	이야기가 있는 한여름 가족음악회	relevance			
+perf::PF270526	친구의 전설	relevance			
