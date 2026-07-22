@@ -1,5 +1,1 @@
-perf::PF252678	대구낙원	relevance			
-perf::PF285666	폴란드 합창 음악의 향연 하이라이트	relevance			
-perf::PF265963	경기필하모닉오케스트라	relevance			
-perf::PF275502	거장의 선율	relevance			
-perf::PF230600	기쁜 소리	relevance			
+perf::PF286278	난 책이 좋아요	relevance			
