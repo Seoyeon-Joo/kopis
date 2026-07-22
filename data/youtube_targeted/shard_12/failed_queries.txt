@@ -4,3 +4,4 @@ perf::PF238450	거대한 뿌리	relevance
 perf::PF246839	내가 물에서 본 것	relevance			
 perf::PF285082	경기필하모닉오케스트라 (04.18)	relevance			
 perf::PF285245	60 Stars 쇼츠	relevance			
+perf::PF246839	내가 물에서 본 것 쇼츠	relevance			
