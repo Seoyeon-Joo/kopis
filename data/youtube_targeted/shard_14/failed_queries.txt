@@ -1,1 +1,2 @@
 perf::PF230600	기쁜 소리	relevance			
+perf::PF286278	난 책이 좋아요	relevance			
