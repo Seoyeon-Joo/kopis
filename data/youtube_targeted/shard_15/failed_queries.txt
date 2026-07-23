@@ -3,3 +3,4 @@ perf::PF268394	피가로의 결혼	relevance
 perf::PF253095	서울시향 키릴 게르스타인의 브람스 피아노 협주곡 2번 ②	relevance			
 perf::PF265399	제135회 목포시립교향악단 정기연주회 실황	relevance			
 perf::PF277845	인연	relevance			
+perf::PF259093	대구시립교향악단 (04.19)	relevance			
