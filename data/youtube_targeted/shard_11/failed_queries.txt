@@ -1,9 +1,6 @@
-perf::PF251454	북유럽	relevance			
-perf::PF255214	마니피카트	relevance			
-perf::PF251454	북유럽	relevance			
-perf::PF248805	강릉합창대축제	relevance			
 perf::PF269763	별주부전 쇼츠	relevance			
 perf::PF276928	꽃	relevance			
 perf::PF275047	미녀와 야수	relevance			
 perf::PF251454	북유럽	relevance			
 perf::PF244832	장엄미사	relevance			
+perf::PF287390	오늘도 극한직업 쇼츠	relevance			
