@@ -126,12 +126,34 @@ jobs:
           echo "이 shard는 ${WAIT}초 후에 시작합니다"
           sleep "$WAIT"
 
-      - name: 이전에 압축 저장된 videos.csv 복원 (이어쓰기를 위해)
+      - name: 이전 videos.csv 복원 (Release에서 받거나, 최초 1회는 git 잔여본 사용)
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          # shard 원본은 더 이상 git에 커밋하지 않고 GitHub Release(태그: shard-data)에
+          # shard별 asset(shard_N_videos.csv.gz)으로 저장 + 매일 최신 누적본으로 덮어씀.
+          # (all_videos.csv와 달리 이건 재생성 불가능한 원본이라 "누적 파일 통째 clobber"
+          # 방식이되, 매 업로드가 "새로 받은 뒤 이어쓴" 버전이라 데이터 유실이 아님)
+          #
+          # 자동 이관: Release에 아직 이 shard의 asset이 없으면(=이번이 첫 실행) git에
+          # 예전 방식으로 남아있던 파일을 기준으로 삼는다. 그 다음부터는 Release만 사용.
           GZ_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz"
+          ASSET="shard_${{ matrix.shard }}_videos.csv.gz"
+          TAG="shard-data"
+          mkdir -p "$(dirname "$GZ_FILE")"
+
+          if gh release download "$TAG" -p "$ASSET" -D "$(dirname "$GZ_FILE")" --clobber --repo "${{ github.repository }}" 2>/dev/null; then
+            mv "$(dirname "$GZ_FILE")/$ASSET" "$GZ_FILE"
+            echo "Release에서 복원됨: $ASSET"
+          elif [ -f "$GZ_FILE" ]; then
+            echo "Release에 아직 없음 - git에 남아있던 기존 파일을 이관 기준으로 사용: $GZ_FILE"
+          else
+            echo "기존 데이터 없음 - 새로 시작"
+          fi
+
           if [ -f "$GZ_FILE" ]; then
-            gunzip -k "$GZ_FILE"
-            echo "복원됨: $GZ_FILE -> videos.csv"
+            gunzip -k -f "$GZ_FILE"
+            echo "압축 해제됨: $GZ_FILE -> videos.csv"
           fi
 
       - name: 수집 실행 (shard ${{ matrix.shard }})
@@ -201,13 +223,50 @@ jobs:
             echo "압축됨: $CSV_FILE.gz ($(du -h "$CSV_FILE.gz" | cut -f1))"
           fi
 
-      - name: 변경사항 커밋 & 푸시 (충돌 시 재시도)
+      - name: shard 원본을 GitHub Release로 업로드 (git 100MB 제한 회피, 누적본 덮어씀)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          GZ_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz"
+          if [ ! -f "$GZ_FILE" ]; then
+            echo "업로드할 파일 없음 - 건너뜀"; exit 0
+          fi
+          TAG="shard-data"
+          ASSET_NAME="shard_${{ matrix.shard }}_videos.csv.gz"
+
+          if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            # 20개 shard가 동시에 만들려고 할 수 있으니(race), 실패해도 무시하고 아래서 upload로 진행
+            gh release create "$TAG" --repo "${{ github.repository }}" \
+              --title "Shard별 원본 수집 데이터 (매일 누적 갱신)" \
+              --notes "shard_N_videos.csv.gz: 각 shard가 지금까지 모은 누적 원본. 매일 최신 누적본으로 덮어씀 - git에는 더 이상 저장하지 않음." \
+              2>/dev/null || true
+          fi
+
+          for i in 1 2 3 4 5; do
+            if gh release upload "$TAG" "${GZ_FILE}#${ASSET_NAME}" \
+                 --repo "${{ github.repository }}" --clobber; then
+              echo "Release 업로드 성공: $ASSET_NAME"
+              exit 0
+            fi
+            echo "Release 업로드 재시도 ($i/5)..."
+            sleep $(( (RANDOM % 10) + 5 ))
+          done
+          echo "Release 업로드 실패 - artifact 백업(14일 보관)은 남아있음"
+          exit 1
+
+      - name: 상태 파일만 커밋 & 푸시 (원본 데이터는 Release로 이관, 충돌 시 재시도)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git config merge.ours.driver true   # data/youtube_targeted/** merge=ours (.gitattributes)
+          # videos.csv/.gz는 이제 git 추적 대상에서 완전히 제외 (Release로만 관리).
+          # 예전에 git으로 커밋됐던 shard들은 여기서 한 번만 untrack되고, 이후로는
+          # .gitignore가 재추가를 막아줌.
           git rm --cached "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" 2>/dev/null || true
-          git add "data/youtube_targeted/shard_${{ matrix.shard }}/"
+          git rm --cached "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz" 2>/dev/null || true
+          git add "data/youtube_targeted/shard_${{ matrix.shard }}/" \
+            ":!data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" \
+            ":!data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz"
           if git diff --staged --quiet; then
             echo "변경사항 없음"; exit 0
           fi
@@ -243,6 +302,22 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install pandas
+
+      - name: shard 원본을 Release에서 받아오기 (git엔 더 이상 없음)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="shard-data"
+          for i in $(seq 0 19); do
+            DIR="data/youtube_targeted/shard_${i}"
+            ASSET="shard_${i}_videos.csv.gz"
+            mkdir -p "$DIR"
+            if gh release download "$TAG" -p "$ASSET" -D "$DIR" --clobber --repo "${{ github.repository }}" 2>/dev/null; then
+              mv "$DIR/$ASSET" "$DIR/videos.csv.gz"
+            else
+              echo "shard ${i}: Release에 아직 없음 - 건너뜀"
+            fi
+          done
 
       - name: shard 결과 병합 (video_id 중복 제거)
         run: |
