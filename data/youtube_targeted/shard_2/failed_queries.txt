@@ -1,4 +1,2 @@
-perf::PF235702	제2회 하남시립합창단 기획연주회	relevance			
-perf::PF269915	이야기가 있는 한여름 가족음악회	relevance			
 perf::PF239810	피터와 늑대	relevance			
 perf::PF288032	NEW 망원동 브라더스	relevance			
