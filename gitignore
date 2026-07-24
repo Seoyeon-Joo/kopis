@@ -1,0 +1,10 @@
+output/
+chunk_output/
+artifacts/
+__pycache__/
+*.pyc
+
+# shard 원본(videos.csv / videos.csv.gz)은 GitHub Release(태그: shard-data)로만 관리.
+# 매일 계속 커지는 파일이라 git에 커밋하면 100MB 제한에 걸림.
+data/youtube_targeted/shard_*/videos.csv
+data/youtube_targeted/shard_*/videos.csv.gz
