@@ -234,16 +234,24 @@ jobs:
           TAG="shard-data"
           ASSET_NAME="shard_${{ matrix.shard }}_videos.csv.gz"
 
+          # gh release upload의 "file#label" 문법은 화면에 보이는 표시 라벨만
+          # 바꿀 뿐, 실제 asset 파일명(다운로드 URL/gh release download -p 매칭에
+          # 쓰이는 이름)은 그대로 로컬 파일명(videos.csv.gz)이 된다. 그러면 20개
+          # shard가 전부 "videos.csv.gz"라는 같은 이름으로 업로드를 시도하게 되어
+          # 서로 덮어써버린다 - 그래서 실제로 이름을 바꾼 사본을 만들어 업로드한다.
+          UPLOAD_PATH="$RUNNER_TEMP/$ASSET_NAME"
+          cp "$GZ_FILE" "$UPLOAD_PATH"
+
           if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
             # 20개 shard가 동시에 만들려고 할 수 있으니(race), 실패해도 무시하고 아래서 upload로 진행
             gh release create "$TAG" --repo "${{ github.repository }}" \
               --title "Shard별 원본 수집 데이터 (매일 누적 갱신)" \
               --notes "shard_N_videos.csv.gz: 각 shard가 지금까지 모은 누적 원본. 매일 최신 누적본으로 덮어씀 - git에는 더 이상 저장하지 않음." \
-              2>/dev/null || true
+              || echo "release create 실패(이미 있거나 race) - 계속 진행"
           fi
 
           for i in 1 2 3 4 5; do
-            if gh release upload "$TAG" "${GZ_FILE}#${ASSET_NAME}" \
+            if gh release upload "$TAG" "$UPLOAD_PATH" \
                  --repo "${{ github.repository }}" --clobber; then
               echo "Release 업로드 성공: $ASSET_NAME"
               exit 0
