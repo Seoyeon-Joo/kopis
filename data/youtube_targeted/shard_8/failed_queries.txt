@@ -6,3 +6,4 @@ perf::PF254927	푸치니 오페라 & 뮤지컬 갈라콘서트	relevance
 perf::PF254927	푸치니 오페라 & 뮤지컬 갈라콘서트 리뷰	relevance			
 perf::PF276057	띵동 알림소리	relevance			
 perf::PF280700	그 판	relevance			
+perf::PF272164	2.0	relevance			
