@@ -7,3 +7,4 @@ perf::PF283740	봄을 향한 왈츠	relevance
 perf::PF253567	서쪽남자 & 동쪽여자	relevance			
 perf::PF287027	라 칼라스	relevance			
 perf::PF230524	완창판소리 (4월)	relevance			
+perf::PF247046	피아니스트 김용배와 함께하는 10월의 실내악 실황	relevance			
