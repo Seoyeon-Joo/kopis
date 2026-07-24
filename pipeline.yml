@@ -1,0 +1,474 @@
+name: KOPIS YouTube 축약콘텐츠 수집 파이프라인
+
+on:
+  schedule:
+    # YouTube API 일일 quota는 태평양시간(PT) 자정에 리셋됨. 지금(하절기)은
+    # PDT(UTC-7)라 PT 자정 = UTC 07:00 = 한국시간 16:00. 이 시점 직후부터
+    # 8시간 간격으로 하루 3번 실행 (quota를 새로 받은 직후에 바로 소진 시작 ->
+    # 하루 안에서 최대한 여러 라운드로 나눠 돌려서, 한 라운드가 429/시간
+    # 예산으로 일찍 멈춰도 다음 라운드가 8시간 뒤에 바로 이어감).
+    # 주의: 11월경 PST(UTC-8)로 바뀌면 PT 자정이 UTC 08:00로 한 시간
+    # 밀리니, 그때 아래 세 시각도 한 시간씩 밀어줘야 정확히 리셋 직후에 맞음
+    # (자정과 1시간 어긋나도 파이프라인이 깨지진 않음 - 그냥 약간 덜 최적).
+    - cron: "0 7 * * *"    # UTC 07:00 = 한국시간 16:00 (PT 자정 = quota 리셋 직후)
+    - cron: "0 15 * * *"   # UTC 15:00 = 한국시간 00:00 (다음날)
+    - cron: "0 23 * * *"   # UTC 23:00 = 한국시간 08:00 (다음날)
+  workflow_dispatch:
+    inputs:
+      order_strategy:
+        description: "검색 정렬 전략 (both는 quota 2배)"
+        type: choice
+        options: [relevance, date, both]
+        default: relevance
+      use_date_windows:
+        description: "공연 기간을 월 단위로 쪼개서 검색 (quota 크게 증가, 커버리지 최우선일 때만)"
+        type: boolean
+        default: false
+      run_channel_discovery:
+        description: "제작사/극장 채널 발견+크롤링 단계도 같이 실행 (quota 추가 소모)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  # ---------------------------------------------------------------------
+  # 1단계: 타겟/그룹 파일 준비 (KOPIS 통계 + 시즌매칭 -> targets_enriched.csv, work_groups.json)
+  # ---------------------------------------------------------------------
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          lfs: true   # data/02_공연상세.csv가 Git LFS 파일이라 캐스트/제작사 정보를 읽으려면 필요
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas
+      - name: 타겟 파일 생성
+        run: |
+          python scripts/pipeline.py build-targets \
+            --stats "data/16_공연통계_공연별_주간_전체_with_runtime.csv" \
+            --season "data/final_season_match_status.csv" \
+            --detail "data/02_공연상세.csv" \
+            --out-dir data/
+      - name: 커밋 & 푸시 (충돌 시 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/targets_enriched.csv data/work_groups.json
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "타겟/그룹 파일 갱신: $(date -u +'%Y-%m-%d')"
+          for i in 1 2 3 4 5 6 7 8; do
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
+              echo "푸시 성공"; exit 0
+            fi
+            if git status --porcelain | grep -q "^UU\|^AA"; then
+              git rebase --abort 2>/dev/null || true
+              if git pull --no-rebase origin "${GITHUB_REF_NAME}" && git push; then
+                echo "merge 방식으로 푸시 성공"; exit 0
+              fi
+            fi
+            echo "푸시 충돌, 재시도 ($i/8)..."
+            sleep $(( (RANDOM % 15) + 5 ))
+          done
+          echo "재시도 소진, 다음 실행에서 이어집니다."; exit 1
+
+  # ---------------------------------------------------------------------
+  # 2단계: 20개 shard 병렬 수집 (858개 키를 라운드로빈으로 배분)
+  # ---------------------------------------------------------------------
+  collect:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20   # GitHub Free 플랜 동시 job 한도
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests pandas
+
+      - name: 이번 shard가 쓸 API 키들 고르기 (858개를 20개로 라운드로빈)
+        env:
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          python3 - <<'PYEOF'
+          import os
+          keys = [k.strip() for k in os.environ["YOUTUBE_API_KEYS"].split(",") if k.strip()]
+          shard, shard_count = ${{ matrix.shard }}, 20
+          my_keys = [k for i, k in enumerate(keys) if i % shard_count == shard]
+          if not my_keys:
+              raise SystemExit(f"shard {shard}에 배정된 키가 없어요 (전체 {len(keys)}개)")
+          with open(os.environ["GITHUB_ENV"], "a") as f:
+              f.write(f"SELECTED_KEYS={','.join(my_keys)}\n")
+          print(f"shard {shard}: 키 {len(my_keys)}개 배정됨")
+          PYEOF
+
+      - name: 키 마스킹
+        run: |
+          IFS=',' read -ra KEYS <<< "$SELECTED_KEYS"
+          for k in "${KEYS[@]}"; do echo "::add-mask::$k"; done
+
+      - name: 시작 시점 분산 (20개 shard가 한꺼번에 몰리지 않게)
+        run: |
+          WAIT=$(( ${{ matrix.shard }} * 15 ))
+          echo "이 shard는 ${WAIT}초 후에 시작합니다"
+          sleep "$WAIT"
+
+      - name: 이전 videos.csv 복원 (Release에서 받거나, 최초 1회는 git 잔여본 사용)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # shard 원본은 더 이상 git에 커밋하지 않고 GitHub Release(태그: shard-data)에
+          # shard별 asset(shard_N_videos.csv.gz)으로 저장 + 매일 최신 누적본으로 덮어씀.
+          # (all_videos.csv와 달리 이건 재생성 불가능한 원본이라 "누적 파일 통째 clobber"
+          # 방식이되, 매 업로드가 "새로 받은 뒤 이어쓴" 버전이라 데이터 유실이 아님)
+          #
+          # 자동 이관: Release에 아직 이 shard의 asset이 없으면(=이번이 첫 실행) git에
+          # 예전 방식으로 남아있던 파일을 기준으로 삼는다. 그 다음부터는 Release만 사용.
+          GZ_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz"
+          ASSET="shard_${{ matrix.shard }}_videos.csv.gz"
+          TAG="shard-data"
+          mkdir -p "$(dirname "$GZ_FILE")"
+
+          if gh release download "$TAG" -p "$ASSET" -D "$(dirname "$GZ_FILE")" --clobber --repo "${{ github.repository }}" 2>/dev/null; then
+            mv "$(dirname "$GZ_FILE")/$ASSET" "$GZ_FILE"
+            echo "Release에서 복원됨: $ASSET"
+          elif [ -f "$GZ_FILE" ]; then
+            echo "Release에 아직 없음 - git에 남아있던 기존 파일을 이관 기준으로 사용: $GZ_FILE"
+          else
+            echo "기존 데이터 없음 - 새로 시작"
+          fi
+
+          if [ -f "$GZ_FILE" ]; then
+            gunzip -k -f "$GZ_FILE"
+            echo "압축 해제됨: $GZ_FILE -> videos.csv"
+          fi
+
+      - name: 수집 실행 (shard ${{ matrix.shard }})
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          EXCLUDED=""
+          if [ -f "data/excluded_video_ids.txt" ]; then
+            EXCLUDED="--excluded-ids data/excluded_video_ids.txt"
+          fi
+          DATE_WINDOWS_FLAG=""
+          if [ "${{ inputs.use_date_windows }}" = "true" ]; then
+            DATE_WINDOWS_FLAG="--use-date-windows"
+          fi
+          python scripts/pipeline.py collect \
+            --targets data/targets_enriched.csv \
+            --groups data/work_groups.json \
+            $EXCLUDED \
+            --api-keys "$SELECTED_KEYS" \
+            --shard-index ${{ matrix.shard }} \
+            --shard-count 20 \
+            --out-dir "data/youtube_targeted/shard_${{ matrix.shard }}" \
+            --state-file "data/youtube_targeted/shard_${{ matrix.shard }}/processed_units.txt" \
+            --max-videos-per-query 50 \
+            --query-delay 4 \
+            --limit 80 \
+            --order-strategy "${{ inputs.order_strategy || 'relevance' }}" \
+            $DATE_WINDOWS_FLAG
+
+      - name: 실패한 검색어 재시도 (20바퀴 다 돌아도 안 됐던 것들)
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          FAILED_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/failed_queries.txt"
+          if [ -s "$FAILED_FILE" ]; then
+            EXCLUDED=""
+            if [ -f "data/excluded_video_ids.txt" ]; then
+              EXCLUDED="--excluded-ids data/excluded_video_ids.txt"
+            fi
+            python scripts/pipeline.py retry-failed \
+              --failed-queries "$FAILED_FILE" \
+              --targets data/targets_enriched.csv \
+              --groups data/work_groups.json \
+              $EXCLUDED \
+              --api-keys "$SELECTED_KEYS" \
+              --out "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" \
+              --max-videos-per-query 50 \
+              --query-delay 4
+          else
+            echo "실패 기록 없음 - 재시도 건너뜀"
+          fi
+
+      - name: 데이터 백업 (git push 실패해도 안전하게 - 러너는 작업 끝나면 사라지므로)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-${{ matrix.shard }}-backup
+          path: data/youtube_targeted/shard_${{ matrix.shard }}/
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: videos.csv 압축 (GitHub 100MB 제한 대응)
+        run: |
+          CSV_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv"
+          if [ -f "$CSV_FILE" ]; then
+            gzip -9 -f "$CSV_FILE"
+            echo "압축됨: $CSV_FILE.gz ($(du -h "$CSV_FILE.gz" | cut -f1))"
+          fi
+
+      - name: shard 원본을 GitHub Release로 업로드 (git 100MB 제한 회피, 누적본 덮어씀)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          GZ_FILE="data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz"
+          if [ ! -f "$GZ_FILE" ]; then
+            echo "업로드할 파일 없음 - 건너뜀"; exit 0
+          fi
+          TAG="shard-data"
+          ASSET_NAME="shard_${{ matrix.shard }}_videos.csv.gz"
+
+          if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            # 20개 shard가 동시에 만들려고 할 수 있으니(race), 실패해도 무시하고 아래서 upload로 진행
+            gh release create "$TAG" --repo "${{ github.repository }}" \
+              --title "Shard별 원본 수집 데이터 (매일 누적 갱신)" \
+              --notes "shard_N_videos.csv.gz: 각 shard가 지금까지 모은 누적 원본. 매일 최신 누적본으로 덮어씀 - git에는 더 이상 저장하지 않음." \
+              2>/dev/null || true
+          fi
+
+          for i in 1 2 3 4 5; do
+            if gh release upload "$TAG" "${GZ_FILE}#${ASSET_NAME}" \
+                 --repo "${{ github.repository }}" --clobber; then
+              echo "Release 업로드 성공: $ASSET_NAME"
+              exit 0
+            fi
+            echo "Release 업로드 재시도 ($i/5)..."
+            sleep $(( (RANDOM % 10) + 5 ))
+          done
+          echo "Release 업로드 실패 - artifact 백업(14일 보관)은 남아있음"
+          exit 1
+
+      - name: 상태 파일만 커밋 & 푸시 (원본 데이터는 Release로 이관, 충돌 시 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config merge.ours.driver true   # data/youtube_targeted/** merge=ours (.gitattributes)
+          # videos.csv/.gz는 이제 git 추적 대상에서 완전히 제외 (Release로만 관리).
+          # 예전에 git으로 커밋됐던 shard들은 여기서 한 번만 untrack되고, 이후로는
+          # .gitignore가 재추가를 막아줌.
+          git rm --cached "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" 2>/dev/null || true
+          git rm --cached "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz" 2>/dev/null || true
+          git add "data/youtube_targeted/shard_${{ matrix.shard }}/" \
+            ":!data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" \
+            ":!data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz"
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "수집 shard ${{ matrix.shard }}: $(date -u +'%Y-%m-%d')"
+          for i in 1 2 3 4 5 6 7 8; do
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
+              echo "푸시 성공"; exit 0
+            fi
+            if git status --porcelain | grep -q "^UU\|^AA"; then
+              git rebase --abort 2>/dev/null || true
+              if git pull --no-rebase origin "${GITHUB_REF_NAME}" && git push; then
+                echo "merge 방식으로 푸시 성공"; exit 0
+              fi
+            fi
+            echo "푸시 충돌, 재시도 ($i/8)..."
+            sleep $(( (RANDOM % 15) + 5 ))
+          done
+          echo "재시도 소진, 다음 실행에서 이어집니다."; exit 1
+
+  # ---------------------------------------------------------------------
+  # 3단계: 병합 + QA (모든 shard 끝난 뒤 1회)
+  # ---------------------------------------------------------------------
+  finalize:
+    needs: collect
+    if: always()   # shard 하나가 실패해도(exit 1) 나머지 성공한 shard들 데이터는 병합/요약이 되게 함
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas
+
+      - name: shard 원본을 Release에서 받아오기 (git엔 더 이상 없음)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="shard-data"
+          for i in $(seq 0 19); do
+            DIR="data/youtube_targeted/shard_${i}"
+            ASSET="shard_${i}_videos.csv.gz"
+            mkdir -p "$DIR"
+            if gh release download "$TAG" -p "$ASSET" -D "$DIR" --clobber --repo "${{ github.repository }}" 2>/dev/null; then
+              mv "$DIR/$ASSET" "$DIR/videos.csv.gz"
+            else
+              echo "shard ${i}: Release에 아직 없음 - 건너뜀"
+            fi
+          done
+
+      - name: shard 결과 병합 (video_id 중복 제거)
+        run: |
+          python scripts/pipeline.py merge \
+            --base-dir data/youtube_targeted \
+            --out-dir data/youtube_targeted
+
+      - name: 기관 교차검증 QA (perf_id 오배정 탐지)
+        run: |
+          python scripts/pipeline.py qa \
+            --videos data/youtube_targeted/all_videos.csv \
+            --catalog data/targets_enriched.csv \
+            --out data/perf_id_mismatch_report.csv
+
+      - name: 게이트 적용 (collect는 더 이상 게이트에서 거르지 않으므로 여기서 별도 수행)
+        run: |
+          python scripts/pipeline.py apply-gate \
+            --videos data/youtube_targeted/all_videos.csv \
+            --mode strict \
+            --out data/youtube_targeted/all_videos_gated.csv \
+            --dropped-out data/youtube_targeted/all_videos_dropped.csv
+
+      - name: 대용량 CSV는 git 대신 GitHub Release로 배포 (매일 최신본 덮어씀)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # all_videos*.csv는 shard 파일(git에 이미 있음)로부터 매번 100%
+          # 재생성되는 산출물이라 git 히스토리에 쌓을 필요가 없음 - 게다가
+          # 800MB대라 gzip으로도 100MB 밑으로 못 내림. GitHub Release 자산은
+          # git 오브젝트가 아니라서 repo 용량을 안 늘리고, 파일당 2GB까지 가능.
+          gzip -9 -k data/youtube_targeted/all_videos.csv
+          gzip -9 -k data/youtube_targeted/all_videos_gated.csv
+          gzip -9 -k data/youtube_targeted/all_videos_dropped.csv
+
+          TAG="latest-data"
+          if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            gh release create "$TAG" --repo "${{ github.repository }}" \
+              --title "최신 수집 데이터 (매일 자동 갱신)" \
+              --notes "all_videos.csv / all_videos_gated.csv / all_videos_dropped.csv 최신본. 매일 덮어써지므로 과거 버전은 보존되지 않음."
+          fi
+          gh release upload "$TAG" \
+            data/youtube_targeted/all_videos.csv.gz \
+            data/youtube_targeted/all_videos_gated.csv.gz \
+            data/youtube_targeted/all_videos_dropped.csv.gz \
+            --repo "${{ github.repository }}" --clobber
+
+      - name: QA 리포트 커밋 & 푸시 (충돌 시 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git rm --cached data/youtube_targeted/all_videos.csv data/youtube_targeted/all_videos_gated.csv \
+                  data/youtube_targeted/all_videos_dropped.csv 2>/dev/null || true
+          git add data/perf_id_mismatch_report.csv
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "QA 리포트 갱신: $(date -u +'%Y-%m-%d')"
+          for i in 1 2 3 4 5 6 7 8; do
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
+              echo "푸시 성공"; exit 0
+            fi
+            if git status --porcelain | grep -q "^UU\|^AA"; then
+              git rebase --abort 2>/dev/null || true
+              if git pull --no-rebase origin "${GITHUB_REF_NAME}" && git push; then
+                echo "merge 방식으로 푸시 성공"; exit 0
+              fi
+            fi
+            echo "푸시 충돌, 재시도 ($i/8)..."
+            sleep $(( (RANDOM % 15) + 5 ))
+          done
+          echo "재시도 소진, 다음 실행에서 이어집니다."; exit 1
+
+  # ---------------------------------------------------------------------
+  # 4단계(선택): 제작사/극장 채널 발견 + 크롤링 + 매칭
+  # discover-channels는 quota를 쓰므로 workflow_dispatch에서 껐다 켰다 할 수 있게 함.
+  # channel-crawl/match-channel-videos는 사람이 검수해서 만든
+  # data/channel_allowlist.csv가 저장소에 있을 때만 실행됨(없으면 건너뜀).
+  # ---------------------------------------------------------------------
+  channel_pipeline:
+    needs: prepare
+    if: ${{ inputs.run_channel_discovery == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas requests
+
+      - name: 채널 후보 자동 탐색 (제작사/극장명 기준)
+        env:
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          # search.list(type=channel)은 100 units/호출이라 제작사/극장명이 100개만
+          # 넘어도 키 1개로는 하루치를 금방 다 씀 - 여러 키(최대 20개)를 배정
+          DISCOVER_KEYS=$(echo "$YOUTUBE_API_KEYS" | tr ',' '\n' | head -n 20 | paste -sd ',')
+          echo "::add-mask::$DISCOVER_KEYS"
+          python scripts/pipeline.py discover-channels \
+            --targets data/targets_enriched.csv \
+            --api-keys "$DISCOVER_KEYS" \
+            --out data/channel_candidates_auto.csv \
+            --state-file data/channel_candidates_auto_processed.txt
+
+      - name: 채널 크롤링 + 매칭 (channel_allowlist.csv가 검수 완료된 경우에만)
+        env:
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          if [ ! -f "data/channel_allowlist.csv" ]; then
+            echo "data/channel_allowlist.csv가 아직 없어요 (discover-channels 결과를"
+            echo "검수해서 만들어주세요) - 크롤링/매칭은 건너뜁니다."
+            exit 0
+          fi
+          FIRST_KEYS=$(echo "$YOUTUBE_API_KEYS" | tr ',' '\n' | head -n 5 | paste -sd ',')
+          echo "::add-mask::$FIRST_KEYS"
+          python scripts/pipeline.py channel-crawl \
+            --channel-allowlist data/channel_allowlist.csv \
+            --api-keys "$FIRST_KEYS" \
+            --out-dir data/youtube_channel_crawl \
+            --state-file data/youtube_channel_crawl/processed_channels.txt
+          python scripts/pipeline.py match-channel-videos \
+            --raw-videos data/youtube_channel_crawl/channel_videos_raw.csv \
+            --channel-allowlist data/channel_allowlist.csv \
+            --targets data/targets_enriched.csv \
+            --out data/youtube_channel_crawl/matched.csv \
+            --unmatched-out data/youtube_channel_crawl/unmatched.csv \
+            --ambiguous-out data/youtube_channel_crawl/ambiguous.csv
+
+      - name: 커밋 & 푸시 (충돌 시 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/channel_candidates_auto.csv data/youtube_channel_crawl/ 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "채널 후보/크롤링/매칭 결과 갱신: $(date -u +'%Y-%m-%d')"
+          for i in 1 2 3 4 5 6 7 8; do
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
+              echo "푸시 성공"; exit 0
+            fi
+            if git status --porcelain | grep -q "^UU\|^AA"; then
+              git rebase --abort 2>/dev/null || true
+              if git pull --no-rebase origin "${GITHUB_REF_NAME}" && git push; then
+                echo "merge 방식으로 푸시 성공"; exit 0
+              fi
+            fi
+            echo "푸시 충돌, 재시도 ($i/8)..."
+            sleep $(( (RANDOM % 15) + 5 ))
+          done
+          echo "재시도 소진, 다음 실행에서 이어집니다."; exit 1
