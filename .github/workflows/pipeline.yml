@@ -272,9 +272,10 @@ jobs:
           # .gitignore가 재추가를 막아줌.
           git rm --cached "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" 2>/dev/null || true
           git rm --cached "data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz" 2>/dev/null || true
-          git add "data/youtube_targeted/shard_${{ matrix.shard }}/" \
-            ":!data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv" \
-            ":!data/youtube_targeted/shard_${{ matrix.shard }}/videos.csv.gz"
+          # 주의: git add에 ":!videos.csv.gz" 같은 제외 pathspec을 명시적으로 넣으면
+          # git이 "무시된 파일을 명시적으로 지정했다"고 판단해 에러를 낸다(제외 의도와
+          # 무관하게). .gitignore가 이미 이 파일들을 걸러주므로 그냥 디렉토리만 add하면 된다.
+          git add "data/youtube_targeted/shard_${{ matrix.shard }}/"
           if git diff --staged --quiet; then
             echo "변경사항 없음"; exit 0
           fi
