@@ -6,3 +6,4 @@ perf::PF230336	서울시향 얍 판 츠베덴의 브루크너 교향곡 7번	rel
 perf::PF282061	목가적 전원	relevance			
 perf::PF262385	정글라이프	relevance			
 perf::PF292662	빨간기타 리뷰	relevance			
+perf::PF288748	체어	relevance			
