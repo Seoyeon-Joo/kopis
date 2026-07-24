@@ -6,3 +6,4 @@ perf::PF253567	서쪽남자 & 동쪽여자	relevance
 perf::PF283740	봄을 향한 왈츠	relevance			
 perf::PF253567	서쪽남자 & 동쪽여자	relevance			
 perf::PF287027	라 칼라스	relevance			
+perf::PF230524	완창판소리 (4월)	relevance			
