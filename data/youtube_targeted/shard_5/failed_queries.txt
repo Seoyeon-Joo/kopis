@@ -7,3 +7,4 @@ perf::PF241081	우리가 사랑했던 그날	relevance
 perf::PF275205	사랑의 묘약	relevance			
 perf::PF275724	제194회 원주시립교향악단 정기연주회 하이라이트	relevance			
 perf::PF253391	라보엠	relevance			
+perf::PF266490	설공찬	relevance			
