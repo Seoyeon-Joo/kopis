@@ -6,3 +6,4 @@ perf::PF249911	연	relevance
 perf::PF252692	제22회 천안시립무용단 정기공연	relevance			
 perf::PF280209	아름다운 낭만주의 음악 리뷰	relevance			
 perf::PF250882	NEW ARTIST CONCERT	relevance			
+perf::PF223138	졸 2.0	relevance			
