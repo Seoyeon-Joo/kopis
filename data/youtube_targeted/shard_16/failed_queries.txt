@@ -1,5 +1,4 @@
 perf::PF247815	CHAMBER MUSIC SERIES	relevance			
-perf::PF247815	CHAMBER MUSIC SERIES	relevance			
 perf::PF240551	우리의 사명	relevance			
 perf::PF242487	나의 가장 친한 친구에게	relevance			
 perf::PF289823	구름빵	relevance			
@@ -12,3 +11,4 @@ perf::PF237212	비발디	relevance
 perf::PF286056	NEW 망원동 브라더스	relevance			
 perf::PF247260	클래식 히스토리 콘서트 쇼츠	relevance			
 perf::PF292252	뚝딱하니 어흥! 리뷰	relevance			
+perf::PF244268	광주시립국악관현악단 with 아창제	relevance			
