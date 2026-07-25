@@ -5,3 +5,4 @@ perf::PF243770	모던민요	relevance
 perf::PF276657	쇼스타코비치	relevance			
 perf::PF241081	우리가 사랑했던 그날	relevance			
 perf::PF275205	사랑의 묘약	relevance			
+perf::PF275724	제194회 원주시립교향악단 정기연주회 하이라이트	relevance			
