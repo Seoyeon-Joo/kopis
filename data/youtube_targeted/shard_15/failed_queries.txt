@@ -7,3 +7,4 @@ perf::PF259093	대구시립교향악단 (04.19)	relevance
 perf::PF277845	인연	relevance			
 perf::PF252462	이기동 체육관	relevance			
 perf::PF284139	등등곡	relevance			
+perf::PF252462	이기동 체육관	relevance			
