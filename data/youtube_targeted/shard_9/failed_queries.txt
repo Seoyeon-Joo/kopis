@@ -3,3 +3,4 @@ perf::PF280132	말괄량이? 길들이기	relevance
 perf::PF244396	해피 투게더	relevance			
 perf::PF244396	해피 투게더	relevance			
 perf::PF252542	환상기행	relevance			
+perf::PF266929	납량특집 콘서트 쇼츠	relevance			
