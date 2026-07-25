@@ -8,3 +8,4 @@ perf::PF277845	인연	relevance
 perf::PF252462	이기동 체육관	relevance			
 perf::PF284139	등등곡	relevance			
 perf::PF252462	이기동 체육관	relevance			
+perf::PF249972	독일 오스트리아 음악여행 실황	relevance			
