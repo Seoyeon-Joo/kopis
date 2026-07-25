@@ -6,3 +6,4 @@ perf::PF271122	대구시립국악단	relevance
 perf::PF252105	늘근도둑 이야기	relevance			
 perf::PF248269	러시안 로망스	relevance			
 perf::PF287735	8 Seasons	relevance			
+perf::PF276931	청이	relevance			
