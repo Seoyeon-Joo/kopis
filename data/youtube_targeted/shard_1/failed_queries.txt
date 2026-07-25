@@ -3,3 +3,4 @@ perf::PF262625	전쟁 그리고 평화	relevance
 perf::PF253040	나를 노래해	relevance			
 perf::PF275736	인사이드 미	relevance			
 perf::PF246774	이슬의 노래 쇼츠	relevance			
+perf::PF252371	엄마를 찾아 떠나는 아리의 모험	relevance			
