@@ -4,3 +4,4 @@ perf::PF276848	제81회 청소년 협주곡의 밤 하이라이트	relevance
 perf::PF244891	바디 콘서트	relevance			
 perf::PF257601	천지창조	relevance			
 perf::PF235752	대구시립교향악단 (4.9)	relevance			
+perf::PF270270	우면산 별밤축제	relevance			
