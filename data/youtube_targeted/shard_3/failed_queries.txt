@@ -4,3 +4,4 @@ perf::PF277091	지지지	relevance
 perf::PF242072	시원한 여름음악회	relevance			
 perf::PF265706	최치원 놀이	relevance			
 perf::PF293043	판타스틱	relevance			
+perf::PF238223	제163회 부산시립소년소녀합창단 정기연주회	relevance			
