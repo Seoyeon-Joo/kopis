@@ -3,3 +3,4 @@ perf::PF272215	현실동화	relevance
 perf::PF252825	크리스마스 캐럴 쇼츠	relevance			
 perf::PF280197	제32회 경산시립합창단 정기연주회	relevance			
 perf::PF266273	명창무대 쇼츠	relevance			
+perf::PF266273	명창무대	relevance			
