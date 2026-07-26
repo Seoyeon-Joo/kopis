@@ -13,3 +13,4 @@ perf::PF247260	클래식 히스토리 콘서트 쇼츠	relevance
 perf::PF292252	뚝딱하니 어흥! 리뷰	relevance			
 perf::PF244268	광주시립국악관현악단 with 아창제	relevance			
 perf::PF244268	광주시립국악관현악단 with 아창제	relevance			
+perf::PF260029	Gabriel Faure의 합창 명곡 하이라이트	relevance			
