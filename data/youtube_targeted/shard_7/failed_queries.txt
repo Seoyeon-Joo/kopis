@@ -1,5 +1,3 @@
-perf::PF286832	EROICA 영웅	relevance			
-perf::PF271734	시벨리우스와 모차르트	relevance			
 perf::PF254163	가난한 크리스마스	relevance			
 perf::PF269831	페페의 꿈	relevance			
 perf::PF230336	서울시향 얍 판 츠베덴의 브루크너 교향곡 7번	relevance			
@@ -10,3 +8,4 @@ perf::PF288748	체어	relevance
 perf::PF265670	아름다운 여정	relevance			
 perf::PF287867	아니오라고 하는 사람	relevance			
 perf::PF240026	바로크의 향연	relevance			
+perf::PF250548	록산느를 위한 발라드	relevance			
