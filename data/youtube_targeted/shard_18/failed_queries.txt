@@ -8,3 +8,4 @@ perf::PF248269	러시안 로망스	relevance
 perf::PF287735	8 Seasons	relevance			
 perf::PF276931	청이	relevance			
 perf::PF279313	김일구 편	relevance			
+perf::PF234176	시네마 클래식	relevance			
