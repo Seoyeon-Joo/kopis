@@ -1,18 +1,3 @@
-perf::PF256800	국립심포니오케스트라 실내악 시리즈 1	relevance			
-perf::PF260894	가족음악회	relevance			
-perf::PF289745	앤 쇼츠	relevance			
-perf::PF278583	하나의 노래	relevance			
-perf::PF271487	The Echo of Peace	relevance			
-perf::PF232000	올림포스의 음악축제	relevance			
-perf::PF232864	신년음악회 Festival	relevance			
-perf::PF278583	하나의 노래	relevance			
-perf::PF236048	당신의 봄	relevance			
-perf::PF263682	꿈을 달다 쇼츠	relevance			
-perf::PF263509	열어볼 결심	relevance			
-perf::PF263509	열어볼 결심	relevance			
-perf::PF274121	조선마술사	relevance			
-perf::PF250244	갯골의 여자들	relevance			
-perf::PF232864	신년음악회 Festival	relevance			
 perf::PF274119	소수민족	relevance			
 perf::PF247328	셰프 쇼츠	relevance			
 perf::PF234277	마티네 콘서트 1	relevance			
