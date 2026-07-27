@@ -1,5 +1,3 @@
-perf::PF276928	꽃	relevance			
-perf::PF275047	미녀와 야수	relevance			
 perf::PF251454	북유럽	relevance			
 perf::PF244832	장엄미사	relevance			
 perf::PF287390	오늘도 극한직업 쇼츠	relevance			
@@ -9,3 +7,4 @@ perf::PF284741	봄맞이 소리	relevance
 perf::PF279462	돈의 신 (神)	relevance			
 perf::PF291312	시간 속의 대화	relevance			
 perf::PF260005	당신만이	relevance			
+perf::PF285042	서울시립교향악단 (04.09)	relevance			
