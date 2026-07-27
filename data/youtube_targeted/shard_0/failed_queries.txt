@@ -1,11 +1,3 @@
-perf::PF237150	드보르자크 인 아메리카	relevance			
-perf::PF253023	레미제라블 하이라이트	relevance			
-perf::PF250429	정화된 밤	relevance			
-perf::PF257252	악기와 합창음악	relevance			
-perf::PF253567	서쪽남자 & 동쪽여자	relevance			
-perf::PF283740	봄을 향한 왈츠	relevance			
-perf::PF253567	서쪽남자 & 동쪽여자	relevance			
-perf::PF287027	라 칼라스	relevance			
 perf::PF230524	완창판소리 (4월)	relevance			
 perf::PF247046	피아니스트 김용배와 함께하는 10월의 실내악 실황	relevance			
 perf::PF264708	날다	relevance			
