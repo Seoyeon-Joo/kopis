@@ -1,7 +1,0 @@
-perf::PF272164	2.0	relevance			
-perf::PF285041	다시 찾아온 봄	relevance			
-perf::PF289416	냉면 한 그릇 후루룩 넘기듯	relevance			
-perf::PF253781	성남시립국악단과 함게하는 조선팝 에볼루션	relevance			
-perf::PF253112	서울시향 얍 판 츠베덴과 김봄소리 ②	relevance			
-perf::PF250721	아리랑랩소디	relevance			
-perf::PF242458	back to the music	relevance			
