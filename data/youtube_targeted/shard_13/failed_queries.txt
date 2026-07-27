@@ -10,3 +10,4 @@ perf::PF223138	졸 2.0	relevance
 perf::PF287145	니들이 인천을 알어	relevance			
 perf::PF254803	손 없는 색시	relevance			
 perf::PF262224	헤리티지 만찬 쇼츠	relevance			
+perf::PF262224	헤리티지 만찬 쇼츠	relevance			
