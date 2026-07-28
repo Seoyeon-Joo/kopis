@@ -10,3 +10,4 @@ perf::PF260029	Gabriel Faure의 합창 명곡 하이라이트	relevance
 perf::PF265087	시를 노래하다	relevance			
 perf::PF284806	풍류 리뷰	relevance			
 perf::PF250350	유희	relevance			
+perf::PF269338	함께! Ⅰ	relevance			
