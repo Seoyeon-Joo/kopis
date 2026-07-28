@@ -1,3 +1,0 @@
-perf::PF247328	셰프 쇼츠	relevance			
-perf::PF234277	마티네 콘서트 1	relevance			
-perf::PF235837	내일	relevance			
