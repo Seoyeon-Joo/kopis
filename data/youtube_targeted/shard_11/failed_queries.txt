@@ -8,3 +8,4 @@ perf::PF279462	돈의 신 (神)	relevance
 perf::PF291312	시간 속의 대화	relevance			
 perf::PF260005	당신만이	relevance			
 perf::PF285042	서울시립교향악단 (04.09)	relevance			
+perf::PF260005	당신만이	relevance			
