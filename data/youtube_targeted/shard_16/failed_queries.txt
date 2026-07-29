@@ -1,5 +1,3 @@
-perf::PF263922	스페이스 매직쇼	relevance			
-perf::PF237212	비발디	relevance			
 perf::PF286056	NEW 망원동 브라더스	relevance			
 perf::PF247260	클래식 히스토리 콘서트 쇼츠	relevance			
 perf::PF292252	뚝딱하니 어흥! 리뷰	relevance			
