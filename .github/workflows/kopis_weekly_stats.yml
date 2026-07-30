@@ -138,18 +138,36 @@ jobs:
           if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
             gh release create "$TAG" --repo "${{ github.repository }}" \
               --title "KOPIS 주간 신규 수집 (매주 자동 갱신)" \
-              --notes "01_공연목록(최근 구간)/02_공연상세(신규분)/공연통계 요약(GraphQL, 최근 30일) 최신본. 매주 덮어써짐."
+              --notes "01=공연목록(최근 구간) / 02=공연상세(신규분) / 12,13b,13,14,15,18,booking_stats_*=공연통계 요약(GraphQL, 최근 30일). 매주 덮어써짐. (Release 첨부파일은 GitHub이 한글 등 비ASCII 문자를 자동으로 지워버려서 영문 파일명 사용 - 매핑은 이 설명 참고)"
           fi
           # 2026-07-30: 옛 REST 통계 엔드포인트(13~18) 폐기 -> fetch_graphql_stats.py summary가
           # 만드는 파일명으로 교체. 시설별(17번 상당)은 GraphQL summary에 대응 항목이 없어 빠짐.
-          for f in data/01_공연목록.csv data/02_공연상세.csv \
-                   data/13b_종합통계.csv data/13_공연통계_기간별_일별.csv \
-                   data/14_공연통계_지역별.csv data/15_공연통계_장르별.csv \
-                   data/18_공연통계_가격대별.csv data/12_예매통계_장르별.csv \
-                   data/예매통계_시간대별.csv data/예매통계_가격대별.csv; do
-            [ -f "$f" ] && gzip -9 -k -f "$f"
+          #
+          # 2026-07-30 (2): GitHub Release 첨부파일명은 ASCII만 허용돼서, 한글이 든
+          # 파일명을 그대로 올리면 한글 부분이 통째로 잘려나감(예: "01_공연목록.csv.gz"
+          # -> "01_.csv.gz") - 실제로 이번 실행에서 겪은 문제. data/ 원본은 한글 이름
+          # 그대로 두고, Release에 올릴 사본만 영문 파일명으로 복사해서 gzip한다.
+          declare -A ASCII_NAME=(
+            ["data/01_공연목록.csv"]="01_perf_list.csv"
+            ["data/02_공연상세.csv"]="02_perf_detail.csv"
+            ["data/13b_종합통계.csv"]="13b_stats_summary.csv"
+            ["data/13_공연통계_기간별_일별.csv"]="13_stats_daily.csv"
+            ["data/14_공연통계_지역별.csv"]="14_stats_area.csv"
+            ["data/15_공연통계_장르별.csv"]="15_stats_genre.csv"
+            ["data/18_공연통계_가격대별.csv"]="18_stats_price.csv"
+            ["data/12_예매통계_장르별.csv"]="12_booking_stats_genre.csv"
+            ["data/예매통계_시간대별.csv"]="booking_stats_hourly.csv"
+            ["data/예매통계_가격대별.csv"]="booking_stats_price.csv"
+          )
+          UPLOAD_DIR="release_upload"
+          mkdir -p "$UPLOAD_DIR"
+          for src in "${!ASCII_NAME[@]}"; do
+            [ -f "$src" ] || continue
+            dst="$UPLOAD_DIR/${ASCII_NAME[$src]}"
+            cp "$src" "$dst"
+            gzip -9 -f "$dst"
           done
-          gh release upload "$TAG" data/*.csv.gz --repo "${{ github.repository }}" --clobber
+          gh release upload "$TAG" "$UPLOAD_DIR"/*.csv.gz --repo "${{ github.repository }}" --clobber
 
       - name: 신규 공연을 targets_enriched.csv / work_groups.json에 반영
         if: env.SKIP_SYNC == '0'
