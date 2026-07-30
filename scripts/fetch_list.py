@@ -15,7 +15,9 @@ TODAY    = datetime.today().strftime("%Y%m%d")
 CONFIGS = {
     "performances": {
         "endpoint": "pblprfr",
-        "params":   {"stdate": "20100101", "eddate": TODAY},
+        # KOPIS_STDATE 환경변수로 시작일을 좁힐 수 있음(주간 증분 수집용).
+        # 안 주면 기존과 동일하게 2010년부터 전체 이력을 긁음(kopis_collect.yml 그대로).
+        "params":   {"stdate": os.environ.get("KOPIS_STDATE", "20100101"), "eddate": TODAY},
         "outfile":  "01_공연목록.csv",
         "id_field": "mt20id",
         "ids_file": "ids_performances.txt",
