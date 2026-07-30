@@ -7,7 +7,7 @@ KOPIS 공연 YouTube 축약콘텐츠 수집 파이프라인 전체를 파일 하
 
   python pipeline.py build-targets  --stats ... --season ... --out-dir data/
   python pipeline.py collect        --targets ... --groups ... --api-keys ... --shard-index 0 --shard-count 20
-  python pipeline.py merge          --base-dir data/youtube_targeted --out-dir data/youtube_targeted
+  python pipeline.py merge          --base-dir data/youtube_targeted --targets data/targets_enriched.csv --out-dir data/youtube_targeted
   python pipeline.py qa             --videos ... --catalog ... --out ...
 
 === 핵심 설계 (대화에서 검증된 내용 요약) ===
@@ -20,6 +20,12 @@ KOPIS 공연 YouTube 축약콘텐츠 수집 파이프라인 전체를 파일 하
 - excluded_video_ids.txt는 선택사항 - 없으면 그냥 빈 걸로 취급하고 진행.
 - QA(institution cross-check): 인라인 게이트만으로 못 잡는 "같은 기관의
   다른 작품" 오배정(예: 유령↔퉁소소리)을 merge 이후 별도로 잡아낸다.
+- post_end 표기: 공연 종료일 이후 업로드된 영상은 해당 perf_id의 티켓
+  판매에 인과적으로 영향을 줄 수 없다는 판단에 따라(2026-07-30 대화 결정),
+  merge 단계에서 매 행마다 `is_post_end` 컬럼을 붙이고 gated/dropped를
+  각각 "종료일 이전"과 "종료일 이후" 4개 파일로 분리해 저장한다. 원본
+  전체(all_videos.csv)는 shard 파일에서 언제든 재생성 가능해 기본적으로는
+  더 이상 만들지 않는다 (원하면 --emit-raw로 켤 수 있음).
 """
 import argparse
 import random
@@ -30,6 +36,7 @@ import os
 import re
 import sys
 import time
+from collections import defaultdict
 
 import pandas as pd
 
@@ -123,6 +130,30 @@ def _date_within_buffer(published_at, perf_start, perf_end, buffer_days=90):
     if pub is None or start is None or end is None:
         return False
     return start - timedelta(days=buffer_days) <= pub <= end + timedelta(days=buffer_days)
+
+
+def _load_perf_end_dates(targets_path):
+    """targets_enriched.csv에서 perf_id -> perf_end_date 매핑을 만든다.
+    merge 단계에서 videos.csv(matched_perf_id, published_at만 있음)와
+    조인해 종료일 이후 업로드분을 판별하는 데 쓴다."""
+    end_dates = {}
+    with open(targets_path, encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            pid = row.get("perf_id")
+            end = row.get("perf_end_date")
+            if pid and end:
+                end_dates[pid] = end
+    return end_dates
+
+
+def _is_post_end(published_at, perf_end_date):
+    """공연 종료일 이후 업로드된 영상인지 판별. 날짜를 못 읽으면(둘 중
+    하나라도 파싱 실패) 판단 불가로 보고 False(=종료일 이전과 동일하게 취급,
+    즉 기존 gated/dropped 파일에서 빠지지 않게) 처리한다."""
+    pub, end = _parse_dt(published_at), _parse_dt(perf_end_date)
+    if pub is None or end is None:
+        return False
+    return pub > end
 
 
 SHORT_TITLE_LEN = 3  # 정규화 후 이 미만 길이 제목은 "짧고 흔한 제목"으로 간주
@@ -319,6 +350,228 @@ def cmd_build_targets(args):
         json.dump(groups, f, ensure_ascii=False, indent=2)
     print(f"그룹 윈도우 저장: {groups_path} ({len(groups)}개 그룹, "
           f"{sum(len(v['members']) for v in groups.values())}개 공연 포함)")
+
+
+# =============================================================================
+# 1.5단계: sync-new-performances (주간 증분 수집용, 신규 공연만 추가)
+# =============================================================================
+#
+# 기존 4,093개 카탈로그(및 그 시즌 매칭 825/3,268 결과)는 절대 재계산하지 않고
+# 그대로 둔 채, KOPIS에 새로 올라온 공연만 targets_enriched.csv/work_groups.json에
+# 덧붙인다. 시즌 그룹핑(초연/재연 매칭)은 원래 스크립트가 남아있지 않아 완전히
+# 재현할 수는 없어서, 검증 결과 "완전 재현 74.2%, 오매칭(false merge) 사실상 없음"인
+# 보수적 규칙(제목 정규화 + (제작사 일치 OR 캐스트 자카드 유사도 >= 0.4))만 쓴다.
+# 애매하면 그냥 단독(unmatched)으로 남긴다 - 이 프로젝트 전체의 기본 철학과 동일하게
+# recall보다 precision(오탐 없음)을 우선한다.
+
+def _strip_trailing_brackets(title):
+    """'회란기 [광주]' -> '회란기', '다이어리 [대구 (앵콜)]' -> '다이어리'.
+    끝에 붙은 대괄호/괄호 블록을 (중첩돼도) 반복해서 제거."""
+    t = (title or "").strip()
+    prev = None
+    while prev != t:
+        prev = t
+        t = re.sub(r"[\[(][^\[\]()]*[\])]\s*$", "", t).strip()
+    return t
+
+
+def _cast_jaccard(a, b):
+    sa, sb = set(a or []), set(b or [])
+    if not sa or not sb:
+        return 0.0
+    return len(sa & sb) / len(sa | sb)
+
+
+def _parse_runtime_minutes(raw):
+    """'2시간 10분' / '1시간 30분' / '90분' -> 분 단위 정수. 파싱 실패 시 None."""
+    if not raw:
+        return None
+    s = str(raw)
+    h = re.search(r"(\d+)\s*시간", s)
+    m = re.search(r"(\d+)\s*분", s)
+    if not h and not m:
+        return None
+    return (int(h.group(1)) * 60 if h else 0) + (int(m.group(1)) if m else 0)
+
+
+def cmd_sync_new_performances(args):
+    existing = pd.read_csv(args.existing_targets, dtype=str, encoding="utf-8-sig")
+    existing_ids = set(existing["perf_id"])
+
+    groups = {}
+    if args.existing_groups and os.path.isfile(args.existing_groups):
+        with open(args.existing_groups, encoding="utf-8") as f:
+            groups = json.load(f)
+
+    perf_list = pd.read_csv(args.perf_list, dtype=str, encoding="utf-8-sig")
+    new_list = perf_list[~perf_list["mt20id"].isin(existing_ids)].drop_duplicates("mt20id")
+    if new_list.empty:
+        print("새로 추가된 공연 없음 - targets_enriched.csv/work_groups.json 변경 없음.")
+        return
+
+    # 캐스트/제작사 강화 (build-targets와 동일한 헬퍼 재사용)
+    detail_enrich = _load_detail_enrichment(args.detail)
+    enrich_map = {}
+    if detail_enrich is not None:
+        for _, r in detail_enrich.iterrows():
+            enrich_map[r["perf_id"]] = {"company_name": r["company_name"], "cast_names": r["cast_names"]}
+
+    # 러닝타임/제작사코드는 02_공연상세 원본에서 별도로 뽑음 (mt13id 앞부분 = company_id)
+    detail_extra = {}
+    if args.detail and os.path.isfile(args.detail):
+        raw = pd.read_csv(args.detail, dtype=str, encoding="utf-8-sig", low_memory=False)
+        for _, r in raw.iterrows():
+            pid = r.get("mt20id")
+            if not pid or pid in detail_extra:
+                continue
+            mt13 = (r.get("mt13id") or "").strip()
+            detail_extra[pid] = {
+                "runtime_min": _parse_runtime_minutes(r.get("prfruntime")),
+                "company_id": mt13.split("-")[0] if mt13 else "",
+            }
+
+    new_rows = []
+    for _, r in new_list.iterrows():
+        pid = r["mt20id"]
+        extra = detail_extra.get(pid, {})
+        enrich = enrich_map.get(pid, {"company_name": "", "cast_names": []})
+        new_rows.append({
+            "perf_id": pid,
+            "title": r.get("prfnm", ""),
+            "genre": r.get("genrenm", ""),
+            "perf_start_date": (r.get("prfpdfrom") or "").replace(".", "-"),
+            "perf_end_date": (r.get("prfpdto") or "").replace(".", "-"),
+            "venue_name": r.get("fcltynm", ""),
+            "runtime_min": extra.get("runtime_min"),
+            "company_id": extra.get("company_id", ""),
+            "company_name": enrich.get("company_name", "") or "",
+            "cast_names_list": enrich.get("cast_names", []) or [],
+        })
+
+    matched_count = 0
+
+    # 1) 기존 시즌 그룹에 재연/삼연으로 편입되는지 먼저 확인
+    for row in new_rows:
+        norm_title = normalize(_strip_trailing_brackets(row["title"]))
+        best_key, best_group = None, None
+        if norm_title:
+            for key, g in groups.items():
+                rep_norm = normalize(_strip_trailing_brackets(g.get("representative_title", "")))
+                if rep_norm != norm_title:
+                    continue
+                rep_company = next((m.get("company_name") for m in g["members"] if m.get("company_name")), "")
+                rep_cast = next((m.get("cast") for m in g["members"] if m.get("cast")), [])
+                company_ok = bool(row["company_name"]) and bool(rep_company) and \
+                    normalize(row["company_name"]) == normalize(rep_company)
+                cast_ok = _cast_jaccard(row["cast_names_list"], rep_cast) >= 0.4
+                if company_ok or cast_ok:
+                    best_key, best_group = key, g
+                    break
+        if best_group is not None:
+            next_rank = max((m.get("season_rank") or 0) for m in best_group["members"]) + 1
+            best_group["members"].append({
+                "perf_id": row["perf_id"], "title": row["title"], "venue_name": row["venue_name"],
+                "perf_start_date": row["perf_start_date"], "perf_end_date": row["perf_end_date"],
+                "season_rank": next_rank, "genre": row["genre"],
+                "company_name": row["company_name"], "cast": row["cast_names_list"],
+                "is_high_demand": False,
+            })
+            row["season_match_status"] = "matched"
+            row["work_group_key"] = best_key
+            row["season_rank"] = next_rank
+            matched_count += 1
+        else:
+            row["season_match_status"] = "unmatched"
+            row["work_group_key"] = ""
+            row["season_rank"] = ""
+
+    # 2) 아직 안 묶인 것들끼리 이번 배치 안에서 새 그룹 형성 시도
+    #    (예: 이번 주에 같은 작품이 여러 지역 투어로 동시에 새로 올라온 경우)
+    unmatched = [r for r in new_rows if r["season_match_status"] == "unmatched"]
+    by_title = defaultdict(list)
+    for r in unmatched:
+        nt = normalize(_strip_trailing_brackets(r["title"]))
+        if nt:
+            by_title[nt].append(r)
+
+    new_group_seq = 0
+    for norm_title, rows in by_title.items():
+        if len(rows) < 2:
+            continue
+        n = len(rows)
+        parent = list(range(n))
+
+        def find(x):
+            while parent[x] != x:
+                parent[x] = parent[parent[x]]
+                x = parent[x]
+            return x
+
+        def union(a, b):
+            ra, rb = find(a), find(b)
+            if ra != rb:
+                parent[ra] = rb
+
+        for i in range(n):
+            for j in range(i + 1, n):
+                same_company = bool(rows[i]["company_name"]) and bool(rows[j]["company_name"]) and \
+                    normalize(rows[i]["company_name"]) == normalize(rows[j]["company_name"])
+                similar_cast = _cast_jaccard(rows[i]["cast_names_list"], rows[j]["cast_names_list"]) >= 0.4
+                if same_company or similar_cast:
+                    union(i, j)
+
+        clusters = defaultdict(list)
+        for i in range(n):
+            clusters[find(i)].append(rows[i])
+
+        for cluster_rows in clusters.values():
+            if len(cluster_rows) < 2:
+                continue  # 끝내 짝을 못 찾은 건 단독(unmatched)으로 남김
+            cluster_rows.sort(key=lambda r: r["perf_start_date"] or "")
+            new_group_seq += 1
+            key = f"{norm_title}::new_{new_group_seq}"
+            groups[key] = {"representative_title": min((r["title"] for r in cluster_rows), key=len), "members": []}
+            for rank, r in enumerate(cluster_rows, start=1):
+                groups[key]["members"].append({
+                    "perf_id": r["perf_id"], "title": r["title"], "venue_name": r["venue_name"],
+                    "perf_start_date": r["perf_start_date"], "perf_end_date": r["perf_end_date"],
+                    "season_rank": rank, "genre": r["genre"],
+                    "company_name": r["company_name"], "cast": r["cast_names_list"],
+                    "is_high_demand": False,
+                })
+                r["season_match_status"] = "matched"
+                r["work_group_key"] = key
+                r["season_rank"] = rank
+                matched_count += 1
+
+    # 3) targets_enriched.csv에 append (ticket_sales/is_high_demand는 다음 전체
+    #    stats 재수집 전까지는 알 수 없으므로 0/False로 시작 - collect 단계
+    #    로직상 필수값이 아니라 안전함)
+    append_df = pd.DataFrame([{
+        "perf_id": r["perf_id"], "title": r["title"], "genre": r["genre"],
+        "perf_start_date": r["perf_start_date"], "perf_end_date": r["perf_end_date"],
+        "venue_name": r["venue_name"], "runtime_min": r["runtime_min"], "company_id": r["company_id"],
+        "total_ticket_sales_qty": 0,
+        "season_match_status": r["season_match_status"], "work_group_key": r["work_group_key"],
+        "season_rank": r["season_rank"], "company_name": r["company_name"],
+        "cast_names": "|".join(r["cast_names_list"]),
+        "actual_group_size": 1, "runtime_missing": r["runtime_min"] in (None, ""),
+        "is_recurring_title": False, "is_high_demand": False,
+    } for r in new_rows])
+
+    combined = pd.concat([existing, append_df], ignore_index=True)
+    os.makedirs(os.path.dirname(args.out_targets) or ".", exist_ok=True)
+    combined.to_csv(args.out_targets, index=False, encoding="utf-8-sig")
+
+    os.makedirs(os.path.dirname(args.out_groups) or ".", exist_ok=True)
+    with open(args.out_groups, "w", encoding="utf-8") as f:
+        json.dump(groups, f, ensure_ascii=False, indent=2)
+
+    print(f"새 공연 {len(new_rows)}건 발견 (그중 시즌 그룹 매칭 {matched_count}건, "
+          f"단독 {len(new_rows) - matched_count}건 - 애매하면 안전하게 단독으로 남김)")
+    print(f"타겟 파일 갱신: {args.out_targets} (총 {len(combined)}건)")
+    print(f"그룹 파일 갱신: {args.out_groups}")
+    print("주의: 티켓판매량/인기작 여부는 아직 반영 안 됨 - 다음 build-targets 전체 재실행 때 채워짐.")
 
 
 # =============================================================================
@@ -1294,22 +1547,34 @@ def cmd_merge(args):
         print("합칠 파일이 없어요.")
         return
 
+    # perf_id -> perf_end_date 매핑 (공연 종료일 이후 업로드분을 판별하기 위함).
+    # 종료 이후엔 그 공연 자체의 매출이 더 이상 존재하지 않으므로, 그런
+    # 영상은 티켓 판매에 인과적으로 영향을 줄 수 없다는 판단(2026-07-30
+    # 대화에서 확정)에 따라 gated/dropped와는 별도로 표기 + 분리한다.
+    end_dates = _load_perf_end_dates(args.targets)
+    print(f"perf_end_date 매핑 {len(end_dates)}건 로드 ({args.targets})")
+
     # 예전엔 20개 shard를 pd.read_csv로 전부 동시에 메모리에 올린 뒤
     # pd.concat으로 한 번 더 복사본을 만들었음 -> shard가 쌓일수록 러너
     # 메모리(7GB)를 넘겨서 hosted runner가 죽는 원인이 됨(2026-07-30 확인).
     # 지금은 파일을 하나씩만 열어서 한 줄씩 흘려보내며 쓰기 때문에, 메모리
     # 사용량이 "shard 전체 크기"가 아니라 "video_id 집합 + 파일 하나 크기"
     # 수준으로 유지됨. season_match / perf_id 집계도 스트리밍 중에 같이 계산.
+    #
+    # 예전엔 여기서 (게이트 미적용) all_videos.csv를 통째로 썼다가 별도
+    # apply-gate 단계에서 다시 읽어 gated/dropped로 나눴음. all_videos.csv는
+    # 800MB대라 gzip으로도 100MB를 못 넘기고(GitHub 커밋 불가), shard 원본
+    # 데이터로부터 언제든 재생성 가능해서 별도 산출물로 보존할 실익이 없다고
+    # 판단(2026-07-30) -> 기본적으로 더 이상 만들지 않고, merge 단계에서
+    # 바로 gate_keep + is_post_end 기준 4개 파일로 나눠서 스트리밍으로 쓴다.
+    # (원본 전체가 정말 필요하면 --emit-raw로 all_videos.csv도 추가로 남길 수 있음)
     seen_ids = set()
     total_rows = 0
     kept_rows = 0
     season_counts = {}
     perf_ids_with_video = set()
     fieldnames = None
-
-    os.makedirs(args.out_dir, exist_ok=True)
-    out_path = os.path.join(args.out_dir, "all_videos.csv")
-    tmp_path = out_path + ".tmp"
+    bucket_counts = {"gated": 0, "dropped": 0, "gated_post_end": 0, "dropped_post_end": 0}
 
     def _open_reader(path):
         if path.endswith(".gz"):
@@ -1317,46 +1582,99 @@ def cmd_merge(args):
             return gzip.open(path, "rt", newline="", encoding="utf-8-sig")
         return open(path, "r", newline="", encoding="utf-8-sig")
 
-    writer = None
+    os.makedirs(args.out_dir, exist_ok=True)
+    out_paths = {
+        "gated": os.path.join(args.out_dir, "all_videos_gated.csv"),
+        "dropped": os.path.join(args.out_dir, "all_videos_dropped.csv"),
+        "gated_post_end": os.path.join(args.out_dir, "all_videos_gated_post_end.csv"),
+        "dropped_post_end": os.path.join(args.out_dir, "all_videos_dropped_post_end.csv"),
+    }
+    tmp_paths = {k: p + ".tmp" for k, p in out_paths.items()}
+    raw_path = os.path.join(args.out_dir, "all_videos.csv")
+    raw_tmp_path = raw_path + ".tmp"
+
+    out_files = {}
+    writers = {}
+    raw_f, raw_writer = None, None
     try:
-        with open(tmp_path, "w", newline="", encoding="utf-8-sig") as out_f:
-            for f in files:
-                if os.path.getsize(f) == 0:
+        for k, p in tmp_paths.items():
+            out_files[k] = open(p, "w", newline="", encoding="utf-8-sig")
+        if args.emit_raw:
+            raw_f = open(raw_tmp_path, "w", newline="", encoding="utf-8-sig")
+
+        for f in files:
+            if os.path.getsize(f) == 0:
+                continue
+            with _open_reader(f) as in_f:
+                reader = csv.DictReader(in_f)
+                if reader.fieldnames is None:
                     continue
-                with _open_reader(f) as in_f:
-                    reader = csv.DictReader(in_f)
-                    if reader.fieldnames is None:
+                if fieldnames is None:
+                    fieldnames = reader.fieldnames
+                    out_fieldnames = fieldnames + ["is_post_end"]
+                    for k, out_f2 in out_files.items():
+                        writers[k] = csv.DictWriter(out_f2, fieldnames=out_fieldnames)
+                        writers[k].writeheader()
+                    if raw_f is not None:
+                        raw_writer = csv.DictWriter(raw_f, fieldnames=out_fieldnames)
+                        raw_writer.writeheader()
+                for row in reader:
+                    total_rows += 1
+                    vid = row.get("video_id")
+                    if vid in seen_ids:
                         continue
-                    if fieldnames is None:
-                        fieldnames = reader.fieldnames
-                        writer = csv.DictWriter(out_f, fieldnames=fieldnames)
-                        writer.writeheader()
-                    for row in reader:
-                        total_rows += 1
-                        vid = row.get("video_id")
-                        if vid in seen_ids:
-                            continue
-                        seen_ids.add(vid)
-                        kept_rows += 1
-                        if "season_match" in row:
-                            season_counts[row["season_match"]] = season_counts.get(row["season_match"], 0) + 1
-                        pid = row.get("matched_perf_id")
-                        if pid:
-                            perf_ids_with_video.add(pid)
-                        writer.writerow(row)
+                    seen_ids.add(vid)
+                    kept_rows += 1
+                    if "season_match" in row:
+                        season_counts[row["season_match"]] = season_counts.get(row["season_match"], 0) + 1
+                    pid = row.get("matched_perf_id")
+                    if pid:
+                        perf_ids_with_video.add(pid)
+
+                    is_post_end = _is_post_end(row.get("published_at"), end_dates.get(pid))
+                    row["is_post_end"] = is_post_end
+                    gate_keep = str(row.get("gate_keep", "")).strip().lower() == "true"
+
+                    if gate_keep and not is_post_end:
+                        bucket = "gated"
+                    elif gate_keep and is_post_end:
+                        bucket = "gated_post_end"
+                    elif (not gate_keep) and not is_post_end:
+                        bucket = "dropped"
+                    else:
+                        bucket = "dropped_post_end"
+                    bucket_counts[bucket] += 1
+                    writers[bucket].writerow(row)
+                    if raw_writer is not None:
+                        raw_writer.writerow(row)
     except Exception:
         # 실패 시 중간 파일이 남아 다음 실행에 잘못 쓰이지 않게 정리
-        if os.path.exists(tmp_path):
-            os.remove(tmp_path)
+        for k, out_f2 in out_files.items():
+            out_f2.close()
+        if raw_f is not None:
+            raw_f.close()
+        for p in list(tmp_paths.values()) + [raw_tmp_path]:
+            if os.path.exists(p):
+                os.remove(p)
         raise
+    finally:
+        for k, out_f2 in out_files.items():
+            out_f2.close()
+        if raw_f is not None:
+            raw_f.close()
 
     if fieldnames is None:
         print("모든 shard 파일이 비어있어요.")
-        if os.path.exists(tmp_path):
-            os.remove(tmp_path)
+        for p in list(tmp_paths.values()) + [raw_tmp_path]:
+            if os.path.exists(p):
+                os.remove(p)
         return
 
-    os.replace(tmp_path, out_path)
+    for k, p in tmp_paths.items():
+        os.replace(p, out_paths[k])
+    if args.emit_raw:
+        os.replace(raw_tmp_path, raw_path)
+
     print(f"videos: {total_rows} -> {kept_rows}건 (중복 {total_rows - kept_rows}건 제거)")
     if season_counts:
         print("\nseason_match 분포:")
@@ -1364,7 +1682,17 @@ def cmd_merge(args):
             print(f"  {k}: {v}")
     if perf_ids_with_video:
         print(f"\nperf_id 커버리지: {len(perf_ids_with_video)}개 공연에 영상 있음")
-    print(f"\n저장: {out_path}")
+
+    n_post_end = bucket_counts["gated_post_end"] + bucket_counts["dropped_post_end"]
+    pct_post_end = (n_post_end / kept_rows * 100) if kept_rows else 0.0
+    print(f"\n종료일 이후(is_post_end=True) 업로드분: {n_post_end}건 ({pct_post_end:.1f}%)")
+    print("\n저장:")
+    print(f"  게이트 통과 (종료일 이전) -> {out_paths['gated']} ({bucket_counts['gated']}건)")
+    print(f"  게이트 제외 (종료일 이전) -> {out_paths['dropped']} ({bucket_counts['dropped']}건)")
+    print(f"  게이트 통과 (종료일 이후) -> {out_paths['gated_post_end']} ({bucket_counts['gated_post_end']}건)")
+    print(f"  게이트 제외 (종료일 이후) -> {out_paths['dropped_post_end']} ({bucket_counts['dropped_post_end']}건)")
+    if args.emit_raw:
+        print(f"  원본 전체(비게이트, --emit-raw) -> {raw_path} ({kept_rows}건)")
 
 
 # =============================================================================
@@ -1558,7 +1886,7 @@ def cmd_discover_channels(args):
 
 
 def cmd_suggest_channels(args):
-    """기존 all_videos.csv에서 channel_id별 등장 횟수를 세어 크롤링 후보를 뽑는다.
+    """merge 산출물(all_videos_gated.csv 등)에서 channel_id별 등장 횟수를 세어 크롤링 후보를 뽑는다.
     사람이 채널명을 보고 제작사/극장 공식 채널인지 직접 검수해야 한다."""
     videos = pd.read_csv(args.videos, low_memory=False)
     counts = videos.groupby(["channel_id", "channel_name"]).size().reset_index(name="video_count_in_data")
@@ -1922,6 +2250,17 @@ def main():
     p1.add_argument("--out-dir", required=True)
     p1.set_defaults(func=cmd_build_targets)
 
+    p1b = sub.add_parser("sync-new-performances",
+                          help="1.5단계(주간 증분): KOPIS에 새로 올라온 공연만 targets_enriched.csv/"
+                               "work_groups.json에 추가 (기존 4,093개는 안 건드림)")
+    p1b.add_argument("--existing-targets", required=True, help="기존 targets_enriched.csv")
+    p1b.add_argument("--existing-groups", required=True, help="기존 work_groups.json")
+    p1b.add_argument("--perf-list", required=True, help="이번 주 새로 받은 01_공연목록.csv")
+    p1b.add_argument("--detail", default=None, help="이번 주 새로 받은 02_공연상세.csv (선택, 있으면 캐스트/제작사/러닝타임 채움)")
+    p1b.add_argument("--out-targets", required=True)
+    p1b.add_argument("--out-groups", required=True)
+    p1b.set_defaults(func=cmd_sync_new_performances)
+
     p2 = sub.add_parser("collect", help="2단계: YouTube 수집 (shard 하나 분량)")
     p2.add_argument("--targets", required=True)
     p2.add_argument("--groups", default=None)
@@ -1977,9 +2316,13 @@ def main():
                            "collect 몫까지 합쳐서 GitHub Actions 6시간 제한 안에 들어오게)")
     p2b.set_defaults(func=cmd_retry_failed)
 
-    p3 = sub.add_parser("merge", help="3단계: shard 결과 병합")
+    p3 = sub.add_parser("merge", help="3단계: shard 결과 병합 (게이트+종료일 기준 4개 파일로 바로 분리)")
     p3.add_argument("--base-dir", required=True)
+    p3.add_argument("--targets", required=True, help="targets_enriched.csv 경로 (perf_end_date 조인용)")
     p3.add_argument("--out-dir", required=True)
+    p3.add_argument("--emit-raw", action="store_true",
+                     help="게이트 적용 전 원본 전체(all_videos.csv)도 추가로 남김 (기본 off, "
+                          "재생성 가능한 800MB대 파일이라 보통 불필요)")
     p3.set_defaults(func=cmd_merge)
 
     p4 = sub.add_parser("qa", help="4단계: 기관 교차검증 QA")
@@ -1988,15 +2331,21 @@ def main():
     p4.add_argument("--out", required=True)
     p4.set_defaults(func=cmd_qa)
 
-    p4b = sub.add_parser("apply-gate", help="4.5단계: 수집과 분리된 필터링 (raw는 항상 보존)")
-    p4b.add_argument("--videos", required=True, help="merge 단계 산출물 (gate_keep 컬럼 포함된 all_videos.csv)")
+    p4b = sub.add_parser(
+        "apply-gate",
+        help="4.5단계(선택): strict 외 다른 기준(text-only)으로 재필터링하고 싶을 때만 사용. "
+             "기본 strict 게이트는 이제 merge 단계에서 바로 4개 파일로 나뉘어 나오므로 "
+             "보통은 이 커맨드를 따로 돌릴 필요 없음.",
+    )
+    p4b.add_argument("--videos", required=True,
+                      help="gate_keep 컬럼 포함 CSV (merge --emit-raw로 만든 all_videos.csv 등)")
     p4b.add_argument("--mode", choices=["strict", "text-only"], default="strict")
     p4b.add_argument("--out", required=True, help="통과분 저장 경로")
     p4b.add_argument("--dropped-out", default=None, help="제외분 저장 경로 (선택, 나중에 재검토용)")
     p4b.set_defaults(func=cmd_apply_gate)
 
     p5 = sub.add_parser("suggest-channels", help="5단계(선택): 기존 영상 데이터에서 채널 크롤링 후보 추출")
-    p5.add_argument("--videos", required=True, help="all_videos.csv 경로")
+    p5.add_argument("--videos", required=True, help="merge 산출물 경로 (예: all_videos_gated.csv)")
     p5.add_argument("--min-count", type=int, default=3)
     p5.add_argument("--out", required=True)
     p5.set_defaults(func=cmd_suggest_channels)
