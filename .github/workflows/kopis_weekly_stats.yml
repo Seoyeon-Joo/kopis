@@ -2,6 +2,11 @@ name: KOPIS 주간 신규 공연 수집
 
 on:
   workflow_dispatch:
+    inputs:
+      stdate:
+        description: "수집 시작일 수동 지정 (YYYYMMDD, 비워두면 '지난 실행 14일 전' 자동 계산). 놓친 구간을 따라잡을 때만 채워넣기 - 예: 20260626"
+        required: false
+        default: ""
   schedule:
     - cron: "0 2 * * 0"   # 매주 일요일 UTC 02:00 (한국시간 11:00)
 
@@ -35,10 +40,17 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: pip install requests
-      - name: 수집 구간 계산 (지난 실행 이후 놓친 것 대비 14일 여유 + 향후 6개월 예정작까지)
+      - name: 수집 구간 계산 (수동 지정 있으면 그걸로, 없으면 지난 실행 이후 놓친 것 대비 14일 여유)
         run: |
-          echo "KOPIS_STDATE=$(date -u -d '14 days ago' +%Y%m%d)" >> "$GITHUB_ENV"
-          echo "다음 스텝에서 쓸 시작일: $(date -u -d '14 days ago' +%Y%m%d)"
+          MANUAL="${{ github.event.inputs.stdate }}"
+          if [ -n "$MANUAL" ]; then
+            echo "KOPIS_STDATE=$MANUAL" >> "$GITHUB_ENV"
+            echo "수동 지정된 시작일 사용: $MANUAL"
+          else
+            AUTO="$(date -u -d '14 days ago' +%Y%m%d)"
+            echo "KOPIS_STDATE=$AUTO" >> "$GITHUB_ENV"
+            echo "자동 계산된 시작일(14일 전) 사용: $AUTO"
+          fi
       - name: 공연목록 수집 (최근 구간)
         run: python scripts/fetch_list.py performances
         env:
