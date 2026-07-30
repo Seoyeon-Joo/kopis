@@ -10,11 +10,19 @@ permissions:
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # kopis_collect.yml(전체 9개 카테고리)의 축소판. 매주 필요한 것만:
-#   [01] 공연목록(최근 구간만) -> [02] 공연상세(그 신규분만) -> [13-18] 공연통계
+#   [01] 공연목록(최근 구간만) -> [02] 공연상세(그 신규분만) -> [공연통계 요약]
 # 그 다음 pipeline.py sync-new-performances로 targets_enriched.csv에
 # 새 공연만 append (기존 4,093개/시즌매칭 결과는 절대 안 건드림).
-# all_videos*.csv와 마찬가지로 01/02/13-18 원본은 git에 안 올리고
+# all_videos*.csv와 마찬가지로 01/02/공연통계 원본은 git에 안 올리고
 # Release(kopis-weekly-stats 태그)에 매주 덮어쓰기로 업로드.
+#
+# [2026-07-30] fetch_stats.py performance(구 REST 엔드포인트 prfsttsqrst 등
+# 6종)가 전부 404로 죽어서(KOPIS가 REST 통계 API를 내린 것으로 보임) 이미
+# GraphQL 기반으로 새로 검증해둔 fetch_graphql_stats.py summary로 교체함.
+# 참고로 sync-new-performances는 애초에 통계 파일을 안 쓰고(01/02만 사용)
+# 새 공연의 total_ticket_sales_qty는 0으로 시작해서 다음 build-targets 전체
+# 재실행 때 채워지므로, 이 job이 실패해도 신규 공연 반영 자체는 막히지 않음
+# - 다만 원본 아카이브(Release)가 비어있으면 안 되니 정상화함.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 jobs:
@@ -42,21 +50,19 @@ jobs:
           path: output/
 
   fetch-perf-stats:
-    name: "[13-18] 공연통계"
+    name: "[GQL] 공연통계 요약 (최근 30일)"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: pip install requests
-      - name: 공연통계 수집
-        run: python scripts/fetch_stats.py performance
-        env:
-          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - name: 공연통계 수집 (GraphQL, quick=최근 30일 - 주간 증분이라 굳이 3년치 안 돌림)
+        run: python scripts/fetch_graphql_stats.py summary quick
       - uses: actions/upload-artifact@v4
         with:
           name: weekly-13-18-perf-stats
-          path: output/
+          path: output_graphql/
 
   fetch-perf-details:
     name: "[02] 공연상세 (신규분만)"
@@ -111,7 +117,7 @@ jobs:
             echo "SKIP_SYNC=0" >> "$GITHUB_ENV"
           fi
 
-      - name: Release 업로드 (원본 01/02/13-18은 git 대신 Release로, 매주 덮어씀)
+      - name: Release 업로드 (원본 01/02/공연통계는 git 대신 Release로, 매주 덮어씀)
         if: env.SKIP_SYNC == '0'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -120,12 +126,15 @@ jobs:
           if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
             gh release create "$TAG" --repo "${{ github.repository }}" \
               --title "KOPIS 주간 신규 수집 (매주 자동 갱신)" \
-              --notes "01_공연목록(최근 구간)/02_공연상세(신규분)/13~18_공연통계 최신본. 매주 덮어써짐."
+              --notes "01_공연목록(최근 구간)/02_공연상세(신규분)/공연통계 요약(GraphQL, 최근 30일) 최신본. 매주 덮어써짐."
           fi
+          # 2026-07-30: 옛 REST 통계 엔드포인트(13~18) 폐기 -> fetch_graphql_stats.py summary가
+          # 만드는 파일명으로 교체. 시설별(17번 상당)은 GraphQL summary에 대응 항목이 없어 빠짐.
           for f in data/01_공연목록.csv data/02_공연상세.csv \
-                   data/13_공연통계_기간별.csv data/14_공연통계_지역별.csv \
-                   data/15_공연통계_장르별.csv data/16_공연통계_공연별.csv \
-                   data/17_공연통계_시설별.csv data/18_공연통계_가격대별.csv; do
+                   data/13b_종합통계.csv data/13_공연통계_기간별_일별.csv \
+                   data/14_공연통계_지역별.csv data/15_공연통계_장르별.csv \
+                   data/18_공연통계_가격대별.csv data/12_예매통계_장르별.csv \
+                   data/예매통계_시간대별.csv data/예매통계_가격대별.csv; do
             [ -f "$f" ] && gzip -9 -k -f "$f"
           done
           gh release upload "$TAG" data/*.csv.gz --repo "${{ github.repository }}" --clobber
