@@ -1294,26 +1294,76 @@ def cmd_merge(args):
         print("합칠 파일이 없어요.")
         return
 
-    # pandas는 .gz 확장자를 자동으로 인식해서 압축 해제 후 읽는다
-    dfs = [pd.read_csv(f, low_memory=False) for f in files if os.path.getsize(f) > 0]
-    if not dfs:
-        print("모든 shard 파일이 비어있어요.")
-        return
-
-    merged = pd.concat(dfs, ignore_index=True)
-    before = len(merged)
-    merged = merged.drop_duplicates(subset="video_id", keep="first")
-    print(f"videos: {before} -> {len(merged)}건 (중복 {before - len(merged)}건 제거)")
-    # 요약 출력(참고용)이 실패해도 실제 병합/저장까지 막으면 안 되므로 방어적으로 처리
-    if "season_match" in merged.columns:
-        print("\nseason_match 분포:")
-        print(merged["season_match"].value_counts())
-    if "matched_perf_id" in merged.columns:
-        print(f"\nperf_id 커버리지: {merged['matched_perf_id'].nunique()}개 공연에 영상 있음")
+    # 예전엔 20개 shard를 pd.read_csv로 전부 동시에 메모리에 올린 뒤
+    # pd.concat으로 한 번 더 복사본을 만들었음 -> shard가 쌓일수록 러너
+    # 메모리(7GB)를 넘겨서 hosted runner가 죽는 원인이 됨(2026-07-30 확인).
+    # 지금은 파일을 하나씩만 열어서 한 줄씩 흘려보내며 쓰기 때문에, 메모리
+    # 사용량이 "shard 전체 크기"가 아니라 "video_id 집합 + 파일 하나 크기"
+    # 수준으로 유지됨. season_match / perf_id 집계도 스트리밍 중에 같이 계산.
+    seen_ids = set()
+    total_rows = 0
+    kept_rows = 0
+    season_counts = {}
+    perf_ids_with_video = set()
+    fieldnames = None
 
     os.makedirs(args.out_dir, exist_ok=True)
     out_path = os.path.join(args.out_dir, "all_videos.csv")
-    merged.to_csv(out_path, index=False, encoding="utf-8-sig")
+    tmp_path = out_path + ".tmp"
+
+    def _open_reader(path):
+        if path.endswith(".gz"):
+            import gzip
+            return gzip.open(path, "rt", newline="", encoding="utf-8-sig")
+        return open(path, "r", newline="", encoding="utf-8-sig")
+
+    writer = None
+    try:
+        with open(tmp_path, "w", newline="", encoding="utf-8-sig") as out_f:
+            for f in files:
+                if os.path.getsize(f) == 0:
+                    continue
+                with _open_reader(f) as in_f:
+                    reader = csv.DictReader(in_f)
+                    if reader.fieldnames is None:
+                        continue
+                    if fieldnames is None:
+                        fieldnames = reader.fieldnames
+                        writer = csv.DictWriter(out_f, fieldnames=fieldnames)
+                        writer.writeheader()
+                    for row in reader:
+                        total_rows += 1
+                        vid = row.get("video_id")
+                        if vid in seen_ids:
+                            continue
+                        seen_ids.add(vid)
+                        kept_rows += 1
+                        if "season_match" in row:
+                            season_counts[row["season_match"]] = season_counts.get(row["season_match"], 0) + 1
+                        pid = row.get("matched_perf_id")
+                        if pid:
+                            perf_ids_with_video.add(pid)
+                        writer.writerow(row)
+    except Exception:
+        # 실패 시 중간 파일이 남아 다음 실행에 잘못 쓰이지 않게 정리
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+        raise
+
+    if fieldnames is None:
+        print("모든 shard 파일이 비어있어요.")
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+        return
+
+    os.replace(tmp_path, out_path)
+    print(f"videos: {total_rows} -> {kept_rows}건 (중복 {total_rows - kept_rows}건 제거)")
+    if season_counts:
+        print("\nseason_match 분포:")
+        for k, v in sorted(season_counts.items(), key=lambda x: -x[1]):
+            print(f"  {k}: {v}")
+    if perf_ids_with_video:
+        print(f"\nperf_id 커버리지: {len(perf_ids_with_video)}개 공연에 영상 있음")
     print(f"\n저장: {out_path}")
 
 
