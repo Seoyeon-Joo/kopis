@@ -1,0 +1,168 @@
+name: KOPIS 주간 신규 공연 수집
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * 0"   # 매주 일요일 UTC 02:00 (한국시간 11:00)
+
+permissions:
+  contents: write
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# kopis_collect.yml(전체 9개 카테고리)의 축소판. 매주 필요한 것만:
+#   [01] 공연목록(최근 구간만) -> [02] 공연상세(그 신규분만) -> [13-18] 공연통계
+# 그 다음 pipeline.py sync-new-performances로 targets_enriched.csv에
+# 새 공연만 append (기존 4,093개/시즌매칭 결과는 절대 안 건드림).
+# all_videos*.csv와 마찬가지로 01/02/13-18 원본은 git에 안 올리고
+# Release(kopis-weekly-stats 태그)에 매주 덮어쓰기로 업로드.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+jobs:
+
+  fetch-perf-list:
+    name: "[01] 공연목록 (최근 구간만)"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 수집 구간 계산 (지난 실행 이후 놓친 것 대비 14일 여유 + 향후 6개월 예정작까지)
+        run: |
+          echo "KOPIS_STDATE=$(date -u -d '14 days ago' +%Y%m%d)" >> "$GITHUB_ENV"
+          echo "다음 스텝에서 쓸 시작일: $(date -u -d '14 days ago' +%Y%m%d)"
+      - name: 공연목록 수집 (최근 구간)
+        run: python scripts/fetch_list.py performances
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+          KOPIS_STDATE: ${{ env.KOPIS_STDATE }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-01-perf-list
+          path: output/
+
+  fetch-perf-stats:
+    name: "[13-18] 공연통계"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 공연통계 수집
+        run: python scripts/fetch_stats.py performance
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-13-18-perf-stats
+          path: output/
+
+  fetch-perf-details:
+    name: "[02] 공연상세 (신규분만)"
+    needs: fetch-perf-list
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests
+      - name: 공연목록 ID 파일 다운로드
+        uses: actions/download-artifact@v4
+        with:
+          name: weekly-01-perf-list
+          path: output/
+      - name: 공연상세 수집 (청크 분할 없이 한 번에 - 신규분만이라 적음)
+        run: python scripts/fetch_details.py performances 0 1
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: weekly-02-perf-details-0
+          path: chunk_output/
+
+  sync-and-release:
+    name: "병합 + Release 업로드 + 신규 공연 반영"
+    needs: [fetch-perf-list, fetch-perf-details, fetch-perf-stats]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install pandas
+
+      - name: 모든 아티팩트 다운로드
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+
+      - name: CSV 병합 (기존 merge.py 그대로 재사용)
+        run: python scripts/merge.py
+
+      - name: 새로 몇 건 들어왔는지 확인
+        run: |
+          if [ ! -f "data/01_공연목록.csv" ]; then
+            echo "이번 주 신규 공연 없음 (01_공연목록.csv 비어있음) - 이후 스텝 건너뜀"
+            echo "SKIP_SYNC=1" >> "$GITHUB_ENV"
+          else
+            echo "SKIP_SYNC=0" >> "$GITHUB_ENV"
+          fi
+
+      - name: Release 업로드 (원본 01/02/13-18은 git 대신 Release로, 매주 덮어씀)
+        if: env.SKIP_SYNC == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="kopis-weekly-stats"
+          if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            gh release create "$TAG" --repo "${{ github.repository }}" \
+              --title "KOPIS 주간 신규 수집 (매주 자동 갱신)" \
+              --notes "01_공연목록(최근 구간)/02_공연상세(신규분)/13~18_공연통계 최신본. 매주 덮어써짐."
+          fi
+          for f in data/01_공연목록.csv data/02_공연상세.csv \
+                   data/13_공연통계_기간별.csv data/14_공연통계_지역별.csv \
+                   data/15_공연통계_장르별.csv data/16_공연통계_공연별.csv \
+                   data/17_공연통계_시설별.csv data/18_공연통계_가격대별.csv; do
+            [ -f "$f" ] && gzip -9 -k -f "$f"
+          done
+          gh release upload "$TAG" data/*.csv.gz --repo "${{ github.repository }}" --clobber
+
+      - name: 신규 공연을 targets_enriched.csv / work_groups.json에 반영
+        if: env.SKIP_SYNC == '0'
+        run: |
+          python scripts/pipeline.py sync-new-performances \
+            --existing-targets data/targets_enriched.csv \
+            --existing-groups data/work_groups.json \
+            --perf-list data/01_공연목록.csv \
+            --detail data/02_공연상세.csv \
+            --out-targets data/targets_enriched.csv \
+            --out-groups data/work_groups.json
+
+      - name: 커밋 & 푸시 (충돌 시 재시도)
+        if: env.SKIP_SYNC == '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/targets_enriched.csv data/work_groups.json
+          if git diff --staged --quiet; then
+            echo "변경사항 없음"; exit 0
+          fi
+          git commit -m "주간 신규 공연 반영: $(date -u +'%Y-%m-%d')"
+          for i in 1 2 3 4 5 6 7 8; do
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
+              echo "푸시 성공"; exit 0
+            fi
+            if git status --porcelain | grep -q "^UU\|^AA"; then
+              git rebase --abort 2>/dev/null || true
+              if git pull --no-rebase origin "${GITHUB_REF_NAME}" && git push; then
+                echo "merge 방식으로 푸시 성공"; exit 0
+              fi
+            fi
+            echo "푸시 충돌, 재시도 ($i/8)..."
+            sleep $(( (RANDOM % 15) + 5 ))
+          done
+          echo "재시도 소진, 다음 실행에서 이어집니다."; exit 1
