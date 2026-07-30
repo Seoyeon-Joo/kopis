@@ -190,6 +190,16 @@ jobs:
             echo "변경사항 없음"; exit 0
           fi
           git commit -m "주간 신규 공연 반영: $(date -u +'%Y-%m-%d')"
+
+          # merge.py가 data/01_공연목록.csv, data/02_공연상세.csv 등에 "최근 구간만"
+          # 내용으로 덮어쓴 게 남아있는데, 이 경로들은 kopis_collect.yml이 전체 이력을
+          # git(LFS)으로 추적하는 파일들과 같은 경로라서 그 변경이 커밋 안 된 채 남으면
+          # "cannot pull with rebase: unstaged changes"로 매번 실패함(2026-07-30 확인).
+          # 방금 커밋한 targets_enriched.csv/work_groups.json 말고는 전부 워킹트리를
+          # 깨끗하게 리셋해서 pull/push가 항상 성사되게 함.
+          git checkout -- .
+          git clean -fd -- data/ artifacts/ release_upload/ 2>/dev/null || true
+
           for i in 1 2 3 4 5 6 7 8; do
             git rebase --abort 2>/dev/null || true
             if git pull --rebase origin "${GITHUB_REF_NAME}" && git push; then
