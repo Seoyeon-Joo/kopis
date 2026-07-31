@@ -332,45 +332,45 @@ jobs:
         run: |
           python scripts/pipeline.py merge \
             --base-dir data/youtube_targeted \
+            --targets data/targets_enriched.csv \
             --out-dir data/youtube_targeted
 
       - name: 기관 교차검증 QA (perf_id 오배정 탐지)
         run: |
+          # QA는 "게이트를 통과했지만 사실 다른 작품 영상인" 오탐을 잡는 게 목적이라
+          # 게이트를 통과한 데이터(all_videos_gated.csv)를 대상으로 돌리면 됨.
+          # (2026-07-30: merge가 이제 strict 게이트를 바로 적용해서 내놓으므로
+          # 별도 apply-gate 단계는 더 이상 필요 없어 제거함)
           python scripts/pipeline.py qa \
-            --videos data/youtube_targeted/all_videos.csv \
+            --videos data/youtube_targeted/all_videos_gated.csv \
             --catalog data/targets_enriched.csv \
             --out data/perf_id_mismatch_report.csv
-
-      - name: 게이트 적용 (collect는 더 이상 게이트에서 거르지 않으므로 여기서 별도 수행)
-        run: |
-          python scripts/pipeline.py apply-gate \
-            --videos data/youtube_targeted/all_videos.csv \
-            --mode strict \
-            --out data/youtube_targeted/all_videos_gated.csv \
-            --dropped-out data/youtube_targeted/all_videos_dropped.csv
 
       - name: 대용량 CSV는 git 대신 GitHub Release로 배포 (매일 최신본 덮어씀)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          # all_videos*.csv는 shard 파일(git에 이미 있음)로부터 매번 100%
-          # 재생성되는 산출물이라 git 히스토리에 쌓을 필요가 없음 - 게다가
-          # 800MB대라 gzip으로도 100MB 밑으로 못 내림. GitHub Release 자산은
-          # git 오브젝트가 아니라서 repo 용량을 안 늘리고, 파일당 2GB까지 가능.
-          gzip -9 -k data/youtube_targeted/all_videos.csv
+          # 4개 파일(게이트/종료일 기준 분리, is_post_end 컬럼 포함) 모두 shard
+          # 파일(git에 이미 있음)로부터 매번 100% 재생성되는 산출물이라 git 히스토리에
+          # 쌓을 필요가 없음 - 게다가 합치면 800MB대라 gzip으로도 100MB 밑으로 못 내림.
+          # GitHub Release 자산은 git 오브젝트가 아니라서 repo 용량을 안 늘리고,
+          # 파일당 2GB까지 가능.
           gzip -9 -k data/youtube_targeted/all_videos_gated.csv
           gzip -9 -k data/youtube_targeted/all_videos_dropped.csv
+          gzip -9 -k data/youtube_targeted/all_videos_gated_post_end.csv
+          gzip -9 -k data/youtube_targeted/all_videos_dropped_post_end.csv
 
           TAG="latest-data"
           if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
             gh release create "$TAG" --repo "${{ github.repository }}" \
               --title "최신 수집 데이터 (매일 자동 갱신)" \
-              --notes "all_videos.csv / all_videos_gated.csv / all_videos_dropped.csv 최신본. 매일 덮어써지므로 과거 버전은 보존되지 않음."
+              --notes "all_videos_gated/all_videos_dropped(종료일 이전) + all_videos_gated_post_end/all_videos_dropped_post_end(종료일 이후) 최신본. 매일 덮어써지므로 과거 버전은 보존되지 않음. (전체 미필터 원본이 필요하면 merge에 --emit-raw 추가)"
           fi
           gh release upload "$TAG" \
-            data/youtube_targeted/all_videos.csv.gz \
             data/youtube_targeted/all_videos_gated.csv.gz \
             data/youtube_targeted/all_videos_dropped.csv.gz \
+            data/youtube_targeted/all_videos_gated_post_end.csv.gz \
+            data/youtube_targeted/all_videos_dropped_post_end.csv.gz \
             --repo "${{ github.repository }}" --clobber
 
       - name: QA 리포트 커밋 & 푸시 (충돌 시 재시도)
@@ -378,7 +378,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git rm --cached data/youtube_targeted/all_videos.csv data/youtube_targeted/all_videos_gated.csv \
-                  data/youtube_targeted/all_videos_dropped.csv 2>/dev/null || true
+                  data/youtube_targeted/all_videos_dropped.csv data/youtube_targeted/all_videos_gated_post_end.csv \
+                  data/youtube_targeted/all_videos_dropped_post_end.csv 2>/dev/null || true
           git add data/perf_id_mismatch_report.csv
           if git diff --staged --quiet; then
             echo "변경사항 없음"; exit 0
