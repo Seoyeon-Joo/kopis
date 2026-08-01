@@ -1,2 +1,0 @@
-perf::PF242689	햄릿	relevance			
-perf::PF242689	햄릿	relevance			
