@@ -1,4 +1,0 @@
-perf::PF244891	바디 콘서트 쇼츠	relevance			
-perf::PF247369	프로젝트54	relevance			
-perf::PF259365	박수범	relevance			
-perf::PF238608	그린국악	relevance			
