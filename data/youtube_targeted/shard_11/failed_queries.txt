@@ -1,3 +1,0 @@
-perf::PF278924	송년음악회 쇼츠	relevance			
-perf::PF282878	새해국악연	relevance			
-perf::PF278846	월드 클래식 오페라 시리즈 V	relevance			
