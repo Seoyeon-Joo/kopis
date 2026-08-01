@@ -1,2 +1,0 @@
-perf::PF238625	그린국악	relevance			
-perf::PF291185	김민지	relevance			
