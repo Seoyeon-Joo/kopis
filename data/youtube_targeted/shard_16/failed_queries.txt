@@ -1,4 +1,0 @@
-perf::PF246276	에즈라스	relevance			
-perf::PF234646	대구보디 & 정글	relevance			
-perf::PF264708	날다	relevance			
-perf::PF264708	날다	relevance			
