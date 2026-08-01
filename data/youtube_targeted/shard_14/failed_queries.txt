@@ -1,2 +1,0 @@
-perf::PF253169	우리가 사랑했던 그 날	relevance			
-perf::PF230600	기쁜 소리	relevance			
