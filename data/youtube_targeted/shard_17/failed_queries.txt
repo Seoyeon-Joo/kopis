@@ -1,3 +1,4 @@
 perf::PF289909	그루브 in 판소리	relevance			
 perf::PF289361	배꼽잡는 슬로우	relevance			
 perf::PF249256	국악을 만나다	relevance			
+perf::PF249256	국악을 만나다	relevance			
