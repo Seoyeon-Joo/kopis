@@ -1,2 +1,0 @@
-perf::PF247032	VOYAGE	relevance			
-perf::PF242793	슬픈사랑	relevance			
