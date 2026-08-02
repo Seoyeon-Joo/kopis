@@ -1289,7 +1289,7 @@
         "perf_end_date": "2026-04-17",
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "",
+        "company_name": "속초문화예술회관",
         "cast": [],
         "is_high_demand": false
       }
@@ -12634,7 +12634,15 @@
         "season_rank": 5.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [],
+        "cast": [
+          "박선우",
+          "이지원",
+          "박혜민",
+          "안태준",
+          "조흠",
+          "정문길",
+          "천우주"
+        ],
         "is_high_demand": false
       },
       {
