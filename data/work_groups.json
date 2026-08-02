@@ -5149,6 +5149,25 @@
           "곽은혜"
         ],
         "is_high_demand": false
+      },
+      {
+        "perf_id": "PF296353",
+        "title": "목 짧은 기린 지피 [장성]",
+        "venue_name": "장성문화예술회관",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 24.0,
+        "genre": "뮤지컬",
+        "company_name": "사단법인 하늘에",
+        "cast": [
+          "김지은",
+          "김은진",
+          "정재헌",
+          "곽은혜",
+          "오경미",
+          "장석준"
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -7876,6 +7895,26 @@
           "한다희",
           "박현숙",
           "이세훈",
+          "유수진"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295652",
+        "title": "스프레이 [고흥]",
+        "venue_name": "고흥문화회관",
+        "perf_start_date": "2026-07-23",
+        "perf_end_date": "2026-07-23",
+        "season_rank": 3.0,
+        "genre": "연극",
+        "company_name": "극단 초인",
+        "cast": [
+          "이상희",
+          "김정아",
+          "김민규",
+          "김영건",
+          "김민정",
+          "박현숙",
           "유수진"
         ],
         "is_high_demand": false
@@ -13007,6 +13046,1977 @@
           "김남표",
           "조한나",
           "박승화"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "인어공주::new_1": {
+    "representative_title": "인어공주 [인천]",
+    "members": [
+      {
+        "perf_id": "PF291686",
+        "title": "인어공주 [인천]",
+        "venue_name": "운율북클래식",
+        "perf_start_date": "2026-06-13",
+        "perf_end_date": "2026-08-30",
+        "season_rank": 1,
+        "genre": "서양음악(클래식)",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF296058",
+        "title": "인어공주 [서울 금천]",
+        "venue_name": "레미어린이극장 [금천]",
+        "perf_start_date": "2026-07-16",
+        "perf_end_date": "2026-08-16",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293537",
+        "title": "인어공주 [파주]",
+        "venue_name": "파주시민회관",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 3,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291994",
+        "title": "인어공주 [보령]",
+        "venue_name": "보령문화예술회관",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 4,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF297346",
+        "title": "인어공주 [광주]",
+        "venue_name": "롯데마트 [월드컵]",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-31",
+        "season_rank": 5,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292589",
+        "title": "인어공주 [청주]",
+        "venue_name": "청주아트홀 (구. 청주시민회관)",
+        "perf_start_date": "2026-08-02",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 6,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "신데렐라::new_2": {
+    "representative_title": "신데렐라 [진주]",
+    "members": [
+      {
+        "perf_id": "PF291801",
+        "title": "신데렐라 [진주]",
+        "venue_name": "경상대학교 칠암캠퍼스",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291768",
+        "title": "신데렐라 [부산 기장]",
+        "venue_name": "기장군청",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF297273",
+        "title": "신데렐라 [부천]",
+        "venue_name": "뉴코아소극장 [부천]",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-30",
+        "season_rank": 3,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293010",
+        "title": "신데렐라 [서울 구로]",
+        "venue_name": "구로구민회관",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 4,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "페인터즈::new_3": {
+    "representative_title": "페인터즈 [경향아트힐]",
+    "members": [
+      {
+        "perf_id": "PF237479",
+        "title": "페인터즈 [경향아트힐]",
+        "venue_name": "경향아트힐",
+        "perf_start_date": "2024-03-25",
+        "perf_end_date": "2026-10-31",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": "(주)펜타토닉, (주)펜타토닉",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF242666",
+        "title": "페인터즈 [서대문전용관]",
+        "venue_name": "NH아트홀",
+        "perf_start_date": "2024-06-05",
+        "perf_end_date": "2026-07-31",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": "(주)펜타토닉, (주)펜타토닉",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "난타::new_4": {
+    "representative_title": "난타 [제주]",
+    "members": [
+      {
+        "perf_id": "PF236460",
+        "title": "난타 [제주]",
+        "venue_name": "제주난타극장",
+        "perf_start_date": "2024-04-01",
+        "perf_end_date": "2026-08-31",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": "(주)피엠씨프러덕션(PMC Production)",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF236349",
+        "title": "난타 [홍대]",
+        "venue_name": "홍대난타극장(구. 뮤직쇼웨딩 전용관)",
+        "perf_start_date": "2024-04-01",
+        "perf_end_date": "2026-12-31",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": "(주)피엠씨프러덕션(PMC Production)",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "백설공주::new_5": {
+    "representative_title": "백설공주 [보령]",
+    "members": [
+      {
+        "perf_id": "PF291906",
+        "title": "백설공주 [보령]",
+        "venue_name": "보령문화의전당",
+        "perf_start_date": "2026-07-19",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294918",
+        "title": "백설공주 [울산]",
+        "venue_name": "울산중구문화의전당",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "워터버블쇼::new_6": {
+    "representative_title": "워터버블쇼 [광주]",
+    "members": [
+      {
+        "perf_id": "PF292627",
+        "title": "워터버블쇼 [광주]",
+        "venue_name": "빛고을시민문화관",
+        "perf_start_date": "2026-07-19",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "서커스/마술",
+        "company_name": NaN,
+        "cast": [
+          "김해성",
+          "김정록"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292443",
+        "title": "워터버블쇼 [양주]",
+        "venue_name": "경기섬유종합지원센터",
+        "perf_start_date": "2026-07-19",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 2,
+        "genre": "서커스/마술",
+        "company_name": NaN,
+        "cast": [
+          "김해성",
+          "김정록"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292862",
+        "title": "워터버블쇼 [시흥]",
+        "venue_name": "시흥ABC행복학습센터",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 3,
+        "genre": "서커스/마술",
+        "company_name": "i기획",
+        "cast": [
+          "김해성",
+          "김정록"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF296367",
+        "title": "워터 버블쇼 [의정부]",
+        "venue_name": "우리소극장 [의정부]",
+        "perf_start_date": "2026-07-29",
+        "perf_end_date": "2026-07-31",
+        "season_rank": 4,
+        "genre": "서커스/마술",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294303",
+        "title": "워터버블쇼 [순천]",
+        "venue_name": "순천문화예술회관",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 5,
+        "genre": "서커스/마술",
+        "company_name": "아이기획",
+        "cast": [
+          "김해성",
+          "김정록"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293853",
+        "title": "워터버블쇼 [파주]",
+        "venue_name": "파주운정행복센터",
+        "perf_start_date": "2026-08-02",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 6,
+        "genre": "서커스/마술",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "어느60대노부부이야기::new_7": {
+    "representative_title": "어느 60대 노부부 이야기 [태안]",
+    "members": [
+      {
+        "perf_id": "PF295454",
+        "title": "어느 60대 노부부 이야기 [태안]",
+        "venue_name": "태안군문화예술회관",
+        "perf_start_date": "2026-07-23",
+        "perf_end_date": "2026-07-23",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [
+          "이필모",
+          "이희진"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF296019",
+        "title": "어느 60대 노부부 이야기 [예산]",
+        "venue_name": "예산문예회관",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [
+          "이필모",
+          "이희진",
+          "정아영",
+          "손영우",
+          "지인규"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "수상한스테이지::new_8": {
+    "representative_title": "수상한스테이지 (07.24)",
+    "members": [
+      {
+        "perf_id": "PF296012",
+        "title": "수상한스테이지 (07.24)",
+        "venue_name": "수상한창고",
+        "perf_start_date": "2026-07-24",
+        "perf_end_date": "2026-07-24",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295938",
+        "title": "수상한스테이지 (07.31)",
+        "venue_name": "수상한창고",
+        "perf_start_date": "2026-07-31",
+        "perf_end_date": "2026-07-31",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "점프jump::new_9": {
+    "representative_title": "점프 JUMP",
+    "members": [
+      {
+        "perf_id": "PF247938",
+        "title": "점프 JUMP",
+        "venue_name": "명보아트홀",
+        "perf_start_date": "2024-10-01",
+        "perf_end_date": "2026-08-31",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295551",
+        "title": "점프 JUMP [금산]",
+        "venue_name": "금산다락원 생명의집",
+        "perf_start_date": "2026-07-23",
+        "perf_end_date": "2026-07-23",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "조성진피아노리사이틀::new_10": {
+    "representative_title": "조성진 피아노 리사이틀 [세종]",
+    "members": [
+      {
+        "perf_id": "PF293416",
+        "title": "조성진 피아노 리사이틀 [세종]",
+        "venue_name": "세종예술의전당",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 1,
+        "genre": "서양음악(클래식)",
+        "company_name": NaN,
+        "cast": [
+          "조성진"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295301",
+        "title": "조성진 피아노 리사이틀 [평택]",
+        "venue_name": "평택아트센터",
+        "perf_start_date": "2026-07-29",
+        "perf_end_date": "2026-07-29",
+        "season_rank": 2,
+        "genre": "서양음악(클래식)",
+        "company_name": "(재) 평택시문화재단(평택아트센터)",
+        "cast": [
+          "조성진"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "제36회거창국제연극제오셀로::new_11": {
+    "representative_title": "제36회 거창국제연극제, 오셀로 (08.01)",
+    "members": [
+      {
+        "perf_id": "PF295189",
+        "title": "제36회 거창국제연극제, 오셀로 (08.01)",
+        "venue_name": "거창 수승대",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "시즈오카 공연예술센터(Shizuoka Performing Arts Center (SPAC)) [일본]",
+        "cast": [
+          "아베 카즈노리",
+          "이케다 마키코",
+          "오우치 요네지",
+          "카스가이 잇페이",
+          "카토 유키오",
+          "키우치 코토코",
+          "사쿠라우치 유"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295294",
+        "title": "제36회 거창 국제 연극제, 오셀로 (08.02)",
+        "venue_name": "거창 수승대",
+        "perf_start_date": "2026-08-02",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "시즈오카 공연예술센터(Shizuoka Performing Arts Center (SPAC)) [일본]",
+        "cast": [
+          "아베 카즈노리",
+          "오우치 요네지",
+          "카토 유키오",
+          "다이도무몬 유야",
+          "나가이 사야코",
+          "혼다 마키",
+          "요시우에 소이치로"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "제36회거창국제연극제찔레꽃::new_12": {
+    "representative_title": "제36회 거창 국제 연극제, 찔레꽃 (08.01)",
+    "members": [
+      {
+        "perf_id": "PF295181",
+        "title": "제36회 거창 국제 연극제, 찔레꽃 (08.01)",
+        "venue_name": "거창 수승대",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "극단 큰들",
+        "cast": [
+          "하은희",
+          "윤민서",
+          "이인근",
+          "홍수완",
+          "김정경",
+          "김가람",
+          "김안순"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295182",
+        "title": "제36회 거창 국제 연극제, 찔레꽃 (08.02)",
+        "venue_name": "거창 수승대",
+        "perf_start_date": "2026-08-02",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "극단 큰들",
+        "cast": [
+          "하은희",
+          "윤민서",
+          "이인근",
+          "홍수완",
+          "김정경",
+          "김가람",
+          "김안순"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "너드커넥션클럽투어파도의고점::new_13": {
+    "representative_title": "너드커넥션 클럽 투어: 파도의 고점 [부산]",
+    "members": [
+      {
+        "perf_id": "PF295045",
+        "title": "너드커넥션 클럽 투어: 파도의 고점 [부산]",
+        "venue_name": "금사락",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "당신의 여름(유어썸머)",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295062",
+        "title": "너드커넥션 클럽 투어: 파도의 고점 [대구]",
+        "venue_name": "락왕",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "당신의 여름(유어썸머)",
+        "cast": [
+          "신연태",
+          "박재현",
+          "서영주",
+          "최승원"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295159",
+        "title": "너드커넥션 클럽 투어: 파도의 고점 [광주]",
+        "venue_name": "보헤미안 소극장",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 3,
+        "genre": "대중음악",
+        "company_name": "당신의 여름(유어썸머)",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "변진섭전국투어콘서트변천사시즌25시간여행::new_14": {
+    "representative_title": "변진섭 전국투어 콘서트: 변천사 시즌2.5: 시간여행 [아산]",
+    "members": [
+      {
+        "perf_id": "PF292427",
+        "title": "변진섭 전국투어 콘서트, 변천사 시즌 2.5: 시간여행 [광주]",
+        "venue_name": "전남광주통합특별시 예술의전당 (구. 광주예술의전당)",
+        "perf_start_date": "2026-07-19",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "(주)좋은콘서트, 굿초이스",
+        "cast": [
+          "변진섭"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295143",
+        "title": "변진섭 전국투어 콘서트: 변천사 시즌2.5: 시간여행 [아산]",
+        "venue_name": "아산시 평생학습관(아산아트홀)",
+        "perf_start_date": "2026-08-02",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "(주)오름기획, (주)좋은콘서트",
+        "cast": [
+          "변진섭"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "구름도사와송이도사빨간괴물의습격::new_15": {
+    "representative_title": "구름도사와 송이도사: 빨간 괴물의 습격 [김포]",
+    "members": [
+      {
+        "perf_id": "PF295040",
+        "title": "구름도사와 송이도사: 빨간 괴물의 습격 [김포]",
+        "venue_name": "김포아트홀",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": "(재)광명문화재단",
+        "cast": [
+          "민병욱",
+          "배혜미",
+          "임혁빈",
+          "선승수",
+          "이승혁",
+          "박은혜"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294880",
+        "title": "구름도사와 송이도사: 빨간 괴물의 습격 [구리]",
+        "venue_name": "구리아트홀",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": "(재)광명문화재단",
+        "cast": [
+          "민병욱",
+          "배혜미",
+          "임혁빈",
+          "선승수",
+          "이승혁",
+          "박은혜"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "국립청년극단헤파이스토스로미오와줄리엣::new_16": {
+    "representative_title": "국립청년극단, 헤파이스토스 로미오와 줄리엣 [춘천]",
+    "members": [
+      {
+        "perf_id": "PF294589",
+        "title": "국립청년극단, 헤파이스토스 로미오와 줄리엣 [춘천]",
+        "venue_name": "축제극장몸짓",
+        "perf_start_date": "2026-07-24",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "(재) 국립극단, (주)원앤원엔터테인먼트",
+        "cast": [
+          "김빛나",
+          "김윤서",
+          "박상윤",
+          "심효민",
+          "윤방",
+          "이서한",
+          "이현우"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295020",
+        "title": "국립청년극단, 헤파이스토스 로미오와 줄리엣 [정선]",
+        "venue_name": "정선문화예술회관",
+        "perf_start_date": "2026-07-31",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "(재) 국립극단, (주)원앤원엔터테인먼트",
+        "cast": [
+          "김빛나",
+          "김윤서",
+          "박상윤",
+          "심효민",
+          "윤방",
+          "이서한",
+          "이현우"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "광주시립극단출장연극시리즈오스카와장미할머니::new_17": {
+    "representative_title": "광주시립극단, 출장연극시리즈: 오스카와 장미할머니",
+    "members": [
+      {
+        "perf_id": "PF294113",
+        "title": "광주시립극단, 출장연극시리즈: 오스카와 장미할머니",
+        "venue_name": "국립아시아문화전당",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "전남광주통합특별시예술의전당 (구.광주예술의전당)",
+        "cast": [
+          "양선아",
+          "윤미란",
+          "김여름",
+          "정일행",
+          "조아라"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294907",
+        "title": "광주시립극단 출장연극시리즈, 오스카와 장미할머니 [광주 광산]",
+        "venue_name": "광산문화예술회관",
+        "perf_start_date": "2026-07-29",
+        "perf_end_date": "2026-07-29",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "광산구청, 광주시립극단",
+        "cast": [
+          "양선아",
+          "윤미란",
+          "김여름",
+          "정일행",
+          "조아라"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294366",
+        "title": "광주시립극단, 출장연극시리즈: 오스카와 장미할머니 [광주]",
+        "venue_name": "광주공연마루",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 3,
+        "genre": "연극",
+        "company_name": "광주시립극단, 전남광주통합특별시예술의전당 (구.광주예술의전당)",
+        "cast": [
+          "양선아",
+          "윤미란",
+          "김여름",
+          "정일행",
+          "조아라"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "nibarchive전국클럽투어ideaofnib::new_18": {
+    "representative_title": "nib.archive 전국 클럽투어: idea of nib [서울]",
+    "members": [
+      {
+        "perf_id": "PF294706",
+        "title": "nib.archive 전국 클럽투어: idea of nib [서울]",
+        "venue_name": "언플러그드 서교",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "닙아카이브(nib.archive)",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294728",
+        "title": "nib.archive 전국 클럽투어: idea of nib [광주]",
+        "venue_name": "보헤미안 소극장",
+        "perf_start_date": "2026-08-02",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "닙아카이브(nib.archive)",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "누가내머리에똥쌌어::new_19": {
+    "representative_title": "누가 내 머리에 똥 쌌어? [광주]",
+    "members": [
+      {
+        "perf_id": "PF293390",
+        "title": "누가 내 머리에 똥 쌌어? [광주]",
+        "venue_name": "5.18기념문화센터",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294692",
+        "title": "누가 내 머리에 똥 쌌어? [안산]",
+        "venue_name": "안산올림픽기념관",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "베베핀두근두근새친구::new_20": {
+    "representative_title": "베베핀, 두근두근 새친구 [이천]",
+    "members": [
+      {
+        "perf_id": "PF294429",
+        "title": "베베핀, 두근두근 새친구 [이천]",
+        "venue_name": "이천아트홀",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": "(주)애드칸, (주)애드칸",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292979",
+        "title": "베베핀, 두근두근 새친구 [서울 강북]",
+        "venue_name": "성신여자대학교 운정그린캠퍼스",
+        "perf_start_date": "2026-07-29",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": "(주)애드칸, (주)애드칸",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "공룡애니멀쇼::new_21": {
+    "representative_title": "공룡 애니멀쇼 [서울 도봉]",
+    "members": [
+      {
+        "perf_id": "PF294093",
+        "title": "공룡 애니멀 쇼 [대구 달성]",
+        "venue_name": "달성문화원",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "서커스/마술",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292291",
+        "title": "공룡 애니멀쇼 [서울 도봉]",
+        "venue_name": "도봉구민회관",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 2,
+        "genre": "서커스/마술",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "나윤권소극장콘서트여름산책2::new_22": {
+    "representative_title": "나윤권 소극장 콘서트: 여름산책2 [서울]",
+    "members": [
+      {
+        "perf_id": "PF293947",
+        "title": "나윤권 소극장 콘서트: 여름산책2 [서울]",
+        "venue_name": "KT&G 상상마당 라이브홀 [마포]",
+        "perf_start_date": "2026-07-18",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "KT&G 상상마당",
+        "cast": [
+          "황윤권"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294075",
+        "title": "나윤권 소극장 콘서트: 여름산책2 [부산]",
+        "venue_name": "KT&G 상상마당 라이브홀 [부산]",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "KT&G 상상마당",
+        "cast": [
+          "황윤권"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "구미호::new_23": {
+    "representative_title": "구미호 [화성]",
+    "members": [
+      {
+        "perf_id": "PF294004",
+        "title": "구미호 [서울 성동]",
+        "venue_name": "소월아트홀 (성동문화회관)",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "무용(서양/한국무용)",
+        "company_name": "M발레단(엠발레단), M발레단(엠발레단)",
+        "cast": [
+          "정영재",
+          "이준구",
+          "현지연",
+          "박은비",
+          "이창희"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293986",
+        "title": "구미호 [화성]",
+        "venue_name": "화성아트홀",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 2,
+        "genre": "무용(서양/한국무용)",
+        "company_name": "(재) 화성시문화관광재단, M발레단(엠발레단)",
+        "cast": [
+          "정영재",
+          "박관우",
+          "류희정",
+          "박은비",
+          "이창희"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "정글북::new_24": {
+    "representative_title": "정글북 [울산 중구]",
+    "members": [
+      {
+        "perf_id": "PF292931",
+        "title": "정글북 [울산 중구]",
+        "venue_name": "울산중구문화의전당",
+        "perf_start_date": "2026-07-19",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292491",
+        "title": "정글북 [부산 강서]",
+        "venue_name": "낙동아트센터",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293944",
+        "title": "정글북 [서울 은평]",
+        "venue_name": "은평문화예술회관",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 3,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "더울림영도시리즈julyfestival프랑스의빛::new_25": {
+    "representative_title": "더울림 영도 시리즈, July Festival: 프랑스의 빛 (07.23) [부산]",
+    "members": [
+      {
+        "perf_id": "PF293665",
+        "title": "더울림 영도 시리즈, July Festival: 프랑스의 빛 (07.23) [부산]",
+        "venue_name": "영도문화예술회관",
+        "perf_start_date": "2026-07-23",
+        "perf_end_date": "2026-07-23",
+        "season_rank": 1,
+        "genre": "서양음악(클래식)",
+        "company_name": NaN,
+        "cast": [
+          "이수빈",
+          "박지혁"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293661",
+        "title": "더울림 영도 시리즈, July Festival: 프랑스의 빛 (07.24) [부산]",
+        "venue_name": "영도문화예술회관",
+        "perf_start_date": "2026-07-24",
+        "perf_end_date": "2026-07-24",
+        "season_rank": 2,
+        "genre": "서양음악(클래식)",
+        "company_name": NaN,
+        "cast": [
+          "최진우",
+          "송찬영"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "미녀와야수::new_26": {
+    "representative_title": "미녀와 야수 [시흥]",
+    "members": [
+      {
+        "perf_id": "PF293064",
+        "title": "미녀와 야수 [시흥]",
+        "venue_name": "시흥ABC행복학습센터",
+        "perf_start_date": "2026-07-19",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293659",
+        "title": "미녀와 야수 [양주]",
+        "venue_name": "경기섬유종합지원센터",
+        "perf_start_date": "2026-08-02",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "투란도트::new_27": {
+    "representative_title": "투란도트 (07.24)",
+    "members": [
+      {
+        "perf_id": "PF290350",
+        "title": "투란도트 (07.22, 23, 25)",
+        "venue_name": "예술의전당 [서울]",
+        "perf_start_date": "2026-07-22",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "서양음악(클래식)",
+        "company_name": "예술의전당, 예술의전당, 예술의전당",
+        "cast": [
+          "에바 프원카",
+          "서선영",
+          "백성종",
+          "김영우",
+          "황수미",
+          "신은혜",
+          "심인성"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293338",
+        "title": "투란도트 (07.24)",
+        "venue_name": "예술의전당 [서울]",
+        "perf_start_date": "2026-07-24",
+        "perf_end_date": "2026-07-24",
+        "season_rank": 2,
+        "genre": "서양음악(클래식)",
+        "company_name": "예술의전당",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF290343",
+        "title": "투란도트 (07.26)",
+        "venue_name": "예술의전당 [서울]",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 3,
+        "genre": "서양음악(클래식)",
+        "company_name": "예술의전당",
+        "cast": [
+          "에바 프원카",
+          "서선영",
+          "백석종",
+          "김영우",
+          "황수미",
+          "신은혜",
+          "심인성"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "브로콜리너마저기획공연이른열대야::new_28": {
+    "representative_title": "브로콜리너마저 기획 공연: 이른 열대야 [서울]",
+    "members": [
+      {
+        "perf_id": "PF292950",
+        "title": "브로콜리너마저 기획 공연: 이른 열대야 [서울]",
+        "venue_name": "한국콘텐츠진흥원 CKL스테이지",
+        "perf_start_date": "2026-07-10",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "(주)스튜디오브로콜리",
+        "cast": [
+          "윤덕원",
+          "김잔디",
+          "류지현",
+          "문동혁"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293187",
+        "title": "브로콜리너마저 기획 공연: 이른 열대야 [대전]",
+        "venue_name": "인터플레이 [대전]",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "(주)스튜디오브로콜리",
+        "cast": [
+          "윤덕원",
+          "류지현",
+          "김잔디",
+          "문동혁"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "프린세스캐치티니핑::new_29": {
+    "representative_title": "프린세스 캐치! 티니핑 [수원]",
+    "members": [
+      {
+        "perf_id": "PF291836",
+        "title": "프린세스 캐치! 티니핑 [수원]",
+        "venue_name": "경기아트센터(구. 경기도문화의전당)",
+        "perf_start_date": "2026-07-18",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": "(주) EJ, (주) EJ, (주)에스에이엠지엔터테인먼트(SAMG엔터테인먼트), (주)이지",
+        "cast": [
+          "공예림",
+          "박선주",
+          "김명현",
+          "조예은",
+          "박주혜",
+          "강태욱",
+          "양인성"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292795",
+        "title": "프린세스 캐치! 티니핑 [부산 (앵콜) ]",
+        "venue_name": "소향씨어터",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": "(주)에스에이엠지엔터테인먼트(SAMG엔터테인먼트), (주)이제이(EJ), 이지(EG)뮤지컬 컴퍼니",
+        "cast": [
+          "공예림",
+          "박선주",
+          "김명현",
+          "조예은",
+          "박주혜",
+          "강태욱",
+          "양인성"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293133",
+        "title": "프린세스 캐치! 티니핑 [대전]",
+        "venue_name": "우송예술회관",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 3,
+        "genre": "뮤지컬",
+        "company_name": "(주) EJ, (주)EG컴퍼니 (이지컴퍼니), (주)에스에이엠지엔터테인먼트(SAMG엔터테인먼트), 인엔터",
+        "cast": [
+          "공예림",
+          "박선주",
+          "김명현",
+          "조예은",
+          "박주혜",
+          "강태욱",
+          "양인성"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "싸이흠뻑쇼summerswag::new_30": {
+    "representative_title": "싸이흠뻑쇼: SUMMERSWAG [원주]",
+    "members": [
+      {
+        "perf_id": "PF293125",
+        "title": "싸이흠뻑쇼: SUMMERSWAG [원주]",
+        "venue_name": "원주 종합운동장",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "피네이션(주)",
+        "cast": [
+          "박재상"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF293131",
+        "title": "싸이흠뻑쇼: SUMMERSWAG [수원]",
+        "venue_name": "수원월드컵경기장",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "피네이션(주)",
+        "cast": [
+          "박재상"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "무명전설전국투어콘서트::new_31": {
+    "representative_title": "무명전설 전국투어 콘서트 [수원]",
+    "members": [
+      {
+        "perf_id": "PF292848",
+        "title": "무명전설 전국투어 콘서트 [수원]",
+        "venue_name": "경희대학교",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "(주)콘서트가든",
+        "cast": [
+          "김성리",
+          "이찬호",
+          "장한별",
+          "황윤성",
+          "정연호",
+          "이창민",
+          "이루네"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291549",
+        "title": "무명전설 전국투어 콘서트 [대전]",
+        "venue_name": "대전컨벤션센터 (DCC)",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": NaN,
+        "cast": [
+          "김성리",
+          "이찬호",
+          "장한별",
+          "황윤성",
+          "정연호",
+          "이창민",
+          "이석훈"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "우리시대에투알::new_32": {
+    "representative_title": "우리 시대 에투알 (07.30)",
+    "members": [
+      {
+        "perf_id": "PF292554",
+        "title": "우리 시대 에투알 (07.29, 08.01, 08.02)",
+        "venue_name": "예술의전당 [서울]",
+        "perf_start_date": "2026-07-29",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 1,
+        "genre": "무용(서양/한국무용)",
+        "company_name": "(주)에투알클래식",
+        "cast": [
+          "박세은",
+          "아망딘 알비송",
+          "블루엔 바티스토니",
+          "폴 마르크",
+          "기욤 디오프",
+          "로렌조 렐리",
+          "니콜레타 마니"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292573",
+        "title": "우리 시대 에투알 (07.30)",
+        "venue_name": "예술의전당 [서울]",
+        "perf_start_date": "2026-07-30",
+        "perf_end_date": "2026-07-30",
+        "season_rank": 2,
+        "genre": "무용(서양/한국무용)",
+        "company_name": "(주)에투알클래식",
+        "cast": [
+          "박세은",
+          "아망딘 알비송",
+          "블루엔 바티스토니",
+          "폴 마르크",
+          "기욤 디오프",
+          "로렌조 렐리",
+          "니콜레타 마니"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "넘버블록스::new_33": {
+    "representative_title": "넘버블록스 [성남]",
+    "members": [
+      {
+        "perf_id": "PF292512",
+        "title": "넘버블록스 [하남 (앵콜) ]",
+        "venue_name": "하남문화예술회관",
+        "perf_start_date": "2026-07-18",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": "(유)브러쉬씨어터, (유)브러쉬씨어터",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF290973",
+        "title": "넘버블록스 [성남]",
+        "venue_name": "성남아트센터",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": "(유)브러쉬씨어터, (유)브러쉬씨어터",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "서편제::new_34": {
+    "representative_title": "서편제 [서울]",
+    "members": [
+      {
+        "perf_id": "PF286493",
+        "title": "서편제 [서울]",
+        "venue_name": "광림아트센터",
+        "perf_start_date": "2026-04-30",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": "(주) 페이지원(Page1), (주) 페이지원(Page1)",
+        "cast": [
+          "이자람",
+          "차지연",
+          "이봄소리",
+          "박시은",
+          "정은혜",
+          "김경수",
+          "유현석"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292434",
+        "title": "서편제 [세종]",
+        "venue_name": "세종예술의전당",
+        "perf_start_date": "2026-07-30",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": "(재) 세종시문화관광재단(세종문화예술회관)",
+        "cast": [
+          "이자람",
+          "차지연",
+          "이봄소리",
+          "박희준",
+          "김경수",
+          "김준수",
+          "서범석"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "함안문화예술회관하우스콘서트julyfestivalin함안::new_35": {
+    "representative_title": "함안문화예술회관 하우스콘서트, July Festival In 함안 (07.21)",
+    "members": [
+      {
+        "perf_id": "PF292315",
+        "title": "함안문화예술회관 하우스콘서트, July Festival In 함안 (07.21)",
+        "venue_name": "함안문화예술회관",
+        "perf_start_date": "2026-07-21",
+        "perf_end_date": "2026-07-21",
+        "season_rank": 1,
+        "genre": "서양음악(클래식)",
+        "company_name": "함안문화예술회관",
+        "cast": [
+          "고관수",
+          "장재혁",
+          "이은호"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292317",
+        "title": "함안문화예술회관 하우스콘서트, July Festival In 함안 (07.22)",
+        "venue_name": "함안문화예술회관",
+        "perf_start_date": "2026-07-22",
+        "perf_end_date": "2026-07-22",
+        "season_rank": 2,
+        "genre": "서양음악(클래식)",
+        "company_name": "함안문화예술회관",
+        "cast": [
+          "심준호",
+          "신재민"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "피노키오::new_36": {
+    "representative_title": "피노키오 [대구]",
+    "members": [
+      {
+        "perf_id": "PF290896",
+        "title": "피노키오 [대구]",
+        "venue_name": "대백프라자",
+        "perf_start_date": "2026-07-01",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292240",
+        "title": "피노키오 [아산]",
+        "venue_name": "아산시 평생학습관(아산아트홀)",
+        "perf_start_date": "2026-07-19",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "내일은내일에게::new_37": {
+    "representative_title": "내일은 내일에게 [대전]",
+    "members": [
+      {
+        "perf_id": "PF238631",
+        "title": "내일은 내일에게 [대학로]",
+        "venue_name": "초록씨어터",
+        "perf_start_date": "2024-03-22",
+        "perf_end_date": "2026-09-27",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "파랑컴퍼니",
+        "cast": [
+          "백지연",
+          "한선임",
+          "이지은",
+          "안은성",
+          "김현진",
+          "김용오",
+          "정기자"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291809",
+        "title": "내일은 내일에게 [대전]",
+        "venue_name": "상상아트홀 [대전]",
+        "perf_start_date": "2026-06-06",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "(주)파랑아트, 라이노컴퍼니(구. 극단 셰익스피어)",
+        "cast": [
+          "백지연",
+          "한선임",
+          "이지은",
+          "안은성",
+          "윤종서",
+          "김용오",
+          "정기자"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "지브리와사랑에빠지다지브리영화음악콘서트::new_38": {
+    "representative_title": "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [청주]",
+    "members": [
+      {
+        "perf_id": "PF254737",
+        "title": "지브리와 사랑에 빠지다: 지브리 영화 음악 콘서트 [대구]",
+        "venue_name": "스테이지엠 (STAGE M) (구.프란츠홀)",
+        "perf_start_date": "2025-01-05",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 1,
+        "genre": "서양음악(클래식)",
+        "company_name": "스테이지M(구.프란츠스튜디오)",
+        "cast": [
+          "권수진",
+          "이유진",
+          "이희수",
+          "박민혜",
+          "박에스라",
+          "박현우"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291719",
+        "title": "지브리와 사랑에 빠지다: 지브리 영화음악 콘서트 [청주]",
+        "venue_name": "청주아트홀 (구. 청주시민회관)",
+        "perf_start_date": "2026-07-19",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 2,
+        "genre": "서양음악(클래식)",
+        "company_name": "스테이지M(구.프란츠스튜디오)",
+        "cast": [
+          "이영현",
+          "박성근",
+          "신호연",
+          "박현우",
+          "윤현상"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "701호::new_39": {
+    "representative_title": "701호 [대구]",
+    "members": [
+      {
+        "perf_id": "PF249529",
+        "title": "701호 [대학로]",
+        "venue_name": "우리소극장 [대학로]",
+        "perf_start_date": "2024-10-09",
+        "perf_end_date": "2026-08-31",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "(주)팀플레이예술기획, (주)팀플레이예술기획, 콘텐츠er",
+        "cast": [
+          "김대권",
+          "이은호",
+          "이준희",
+          "심승희",
+          "이이현",
+          "이예은",
+          "신용빈"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291672",
+        "title": "701호 [대구]",
+        "venue_name": "여우별아트홀",
+        "perf_start_date": "2026-06-12",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "여우별아트홀 (극단여우별), 여우별아트홀 (극단여우별)",
+        "cast": [
+          "김대권",
+          "이은호",
+          "이준희",
+          "심승희",
+          "이이현",
+          "이예은",
+          "신용빈"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF288142",
+        "title": "701호 [전주]",
+        "venue_name": "한해랑아트홀",
+        "perf_start_date": "2026-07-24",
+        "perf_end_date": "2026-09-06",
+        "season_rank": 3,
+        "genre": "연극",
+        "company_name": "한해랑아트홀(극단 한해랑)",
+        "cast": [
+          "김대권",
+          "이은호",
+          "이준희",
+          "심승희",
+          "이이현",
+          "이예은",
+          "신용빈"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "지브리디즈니영화음악오케스트라콘서트::new_40": {
+    "representative_title": "지브리 & 디즈니 영화음악 오케스트라 콘서트 [당진]",
+    "members": [
+      {
+        "perf_id": "PF291500",
+        "title": "지브리 & 디즈니 영화음악 오케스트라 콘서트 [당진]",
+        "venue_name": "당진문예의전당",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 1,
+        "genre": "서양음악(클래식)",
+        "company_name": "필뮤직 컴퍼니",
+        "cast": [
+          "백윤학",
+          "이희주"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291377",
+        "title": "지브리 & 디즈니 영화음악 오케스트라 콘서트 [경주]",
+        "venue_name": "경주예술의전당",
+        "perf_start_date": "2026-08-02",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 2,
+        "genre": "서양음악(클래식)",
+        "company_name": "필뮤직 컴퍼니",
+        "cast": [
+          "백윤학",
+          "이희주"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "알파블록스::new_41": {
+    "representative_title": "알파블록스 [전주]",
+    "members": [
+      {
+        "perf_id": "PF291124",
+        "title": "알파블록스 [전주]",
+        "venue_name": "전북대학교 삼성문화회관",
+        "perf_start_date": "2026-07-18",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": "(유)브러쉬씨어터, (유)브러쉬씨어터",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291081",
+        "title": "알파블록스 [대구]",
+        "venue_name": "천마아트센터",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": "(유)브러쉬씨어터, (유)브러쉬씨어터",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF290887",
+        "title": "알파블록스 [의정부]",
+        "venue_name": "의정부예술의전당",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-02",
+        "season_rank": 3,
+        "genre": "뮤지컬",
+        "company_name": "(유)브러쉬씨어터, (유)브러쉬씨어터",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "흉터::new_42": {
+    "representative_title": "흉터 [대구]",
+    "members": [
+      {
+        "perf_id": "PF265271",
+        "title": "흉터 [서울 홍대]",
+        "venue_name": "홍대 씨어터 윤",
+        "perf_start_date": "2025-03-01",
+        "perf_end_date": "2026-08-30",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": NaN,
+        "cast": [
+          "김윤수",
+          "조신휘",
+          "전청일",
+          "윤민혁",
+          "전민지",
+          "김태인"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291038",
+        "title": "흉터 [대구]",
+        "venue_name": "아트플러스씨어터",
+        "perf_start_date": "2026-06-19",
+        "perf_end_date": "2026-08-30",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "peppertonesclubtour::new_43": {
+    "representative_title": "PEPPERTONES CLUB TOUR [부산]",
+    "members": [
+      {
+        "perf_id": "PF290816",
+        "title": "PEPPERTONES CLUB TOUR [부산]",
+        "venue_name": "금사락",
+        "perf_start_date": "2026-07-18",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "(주)안테나",
+        "cast": [
+          "신재평",
+          "이장원"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF290958",
+        "title": "PEPPERTONES CLUB TOUR [전주]",
+        "venue_name": "더뮤지션",
+        "perf_start_date": "2026-07-25",
+        "perf_end_date": "2026-07-25",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "(주)안테나",
+        "cast": [
+          "신재평",
+          "이장원"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF290925",
+        "title": "PEPPERTONES CLUB TOUR [광주]",
+        "venue_name": "보헤미안 소극장",
+        "perf_start_date": "2026-07-26",
+        "perf_end_date": "2026-07-26",
+        "season_rank": 3,
+        "genre": "대중음악",
+        "company_name": "(주)안테나",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF290946",
+        "title": "PEPPERTONES CLUB TOUR [대전]",
+        "venue_name": "대전음악창작소",
+        "perf_start_date": "2026-08-01",
+        "perf_end_date": "2026-08-01",
+        "season_rank": 4,
+        "genre": "대중음악",
+        "company_name": "(주)안테나",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "사랑해엄마::new_44": {
+    "representative_title": "사랑해 엄마 [수원]",
+    "members": [
+      {
+        "perf_id": "PF288742",
+        "title": "사랑해 엄마 [대학로]",
+        "venue_name": "아트하우스",
+        "perf_start_date": "2026-05-01",
+        "perf_end_date": "2026-09-30",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "(주)위아더컬쳐, (주)조이컬쳐스, 안녕컴퍼니, 안녕컴퍼니",
+        "cast": [
+          "이경실",
+          "김지선",
+          "김효진",
+          "정지환",
+          "안대겸",
+          "지강혁"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF289232",
+        "title": "사랑해 엄마 [수원]",
+        "venue_name": "KBS 수원아트홀",
+        "perf_start_date": "2026-06-12",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "(주)위아더컬쳐, (주)위아더컬쳐, (주)조이컬쳐스, (주)조이컬쳐스, 아폴론art컴퍼니, 안녕컴퍼니, 안녕컴퍼니",
+        "cast": [
+          "이경실",
+          "김지선",
+          "김효진",
+          "정지환",
+          "김건호",
+          "고준혁"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "할래말래::new_45": {
+    "representative_title": "할래말래 [부산]",
+    "members": [
+      {
+        "perf_id": "PF288776",
+        "title": "할래말래 [부산]",
+        "venue_name": "BNK부산은행 조은극장",
+        "perf_start_date": "2026-04-02",
+        "perf_end_date": "2026-08-09",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "(주)조은아트플러스, (주)조은아트플러스, BNK부산은행조은극장, 조은문화마을",
+        "cast": [
+          "김태윤",
+          "정성주",
+          "박명정",
+          "고미선",
+          "이재찬",
+          "권정욱",
+          "박대영"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF286457",
+        "title": "할래? !말래 [부산]",
+        "venue_name": "BNK부산은행 조은극장",
+        "perf_start_date": "2026-04-02",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "(주)조은아트플러스, (주)조은아트플러스, BNK부산은행조은극장, 조은문화마을",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "아주아주배고픈애벌레쇼::new_46": {
+    "representative_title": "아주아주 배고픈 애벌레 쇼",
+    "members": [
+      {
+        "perf_id": "PF274407",
+        "title": "아주아주 배고픈 애벌레 쇼",
+        "venue_name": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+        "perf_start_date": "2025-10-24",
+        "perf_end_date": "2026-08-30",
+        "season_rank": 1,
+        "genre": "연극",
+        "company_name": "할리퀸크리에이션즈(주)",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF277037",
+        "title": "아주아주 배고픈 애벌레 쇼 (영어)",
+        "venue_name": "NOL 씨어터 합정(구, 신한카드 SOL페이 스퀘어)",
+        "perf_start_date": "2025-11-21",
+        "perf_end_date": "2026-08-30",
+        "season_rank": 2,
+        "genre": "연극",
+        "company_name": "할리퀸크리에이션즈(주)",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "코미디매직쇼::new_47": {
+    "representative_title": "코미디 매직쇼 [수원]",
+    "members": [
+      {
+        "perf_id": "PF257417",
+        "title": "코미디 매직쇼 [수원]",
+        "venue_name": "매직앤조이 [광교]",
+        "perf_start_date": "2025-01-14",
+        "perf_end_date": "2026-08-30",
+        "season_rank": 1,
+        "genre": "서커스/마술",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF259569",
+        "title": "코미디 매직쇼 [인천 송도]",
+        "venue_name": "미리내 마술극단 [송도]",
+        "perf_start_date": "2025-01-31",
+        "perf_end_date": "2026-08-29",
+        "season_rank": 2,
+        "genre": "서커스/마술",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "요리하는마술사::new_48": {
+    "representative_title": "요리하는 마술사 [부천]",
+    "members": [
+      {
+        "perf_id": "PF151901",
+        "title": "요리하는 마술사 [대학로]",
+        "venue_name": "맛있는 극장",
+        "perf_start_date": "2019-01-27",
+        "perf_end_date": "2026-08-30",
+        "season_rank": 1,
+        "genre": "서커스/마술",
+        "company_name": "(주)미스터이엔티",
+        "cast": [
+          "박연수",
+          "한준희",
+          "이원혁",
+          "이춘봉",
+          "박현우"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF216967",
+        "title": "요리하는 마술사 [부천]",
+        "venue_name": "부천소극장",
+        "perf_start_date": "2023-04-22",
+        "perf_end_date": "2026-07-19",
+        "season_rank": 2,
+        "genre": "서커스/마술",
+        "company_name": "(주)미스터이엔티",
+        "cast": [
+          "박연수",
+          "한준희",
+          "이원혁",
+          "이춘봉",
+          "박현우"
         ],
         "is_high_demand": false
       }
