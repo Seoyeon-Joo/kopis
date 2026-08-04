@@ -1,2 +1,0 @@
-perf::PF242689	햄릿	date			
-perf::PF242689	햄릿	date			
