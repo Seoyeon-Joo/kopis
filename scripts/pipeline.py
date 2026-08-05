@@ -394,6 +394,15 @@ def _parse_runtime_minutes(raw):
     return (int(h.group(1)) * 60 if h else 0) + (int(m.group(1)) if m else 0)
 
 
+def _safe_str(x):
+    """pandas가 빈 CSV 필드를 NaN(float)으로 읽어들이는 경우까지 포함해서
+    항상 문자열로 안전하게 변환한다. (2026-08-05: mt13id가 비어있는 신규
+    공연상세 행에서 'float' object has no attribute 'strip' 크래시 발생해 추가)"""
+    if x is None or (isinstance(x, float) and pd.isna(x)):
+        return ""
+    return str(x).strip()
+
+
 def cmd_sync_new_performances(args):
     existing = pd.read_csv(args.existing_targets, dtype=str, encoding="utf-8-sig")
     existing_ids = set(existing["perf_id"])
@@ -424,7 +433,7 @@ def cmd_sync_new_performances(args):
             pid = r.get("mt20id")
             if not pid or pid in detail_extra:
                 continue
-            mt13 = (r.get("mt13id") or "").strip()
+            mt13 = _safe_str(r.get("mt13id"))
             detail_extra[pid] = {
                 "runtime_min": _parse_runtime_minutes(r.get("prfruntime")),
                 "company_id": mt13.split("-")[0] if mt13 else "",
@@ -439,8 +448,8 @@ def cmd_sync_new_performances(args):
             "perf_id": pid,
             "title": r.get("prfnm", ""),
             "genre": r.get("genrenm", ""),
-            "perf_start_date": (r.get("prfpdfrom") or "").replace(".", "-"),
-            "perf_end_date": (r.get("prfpdto") or "").replace(".", "-"),
+            "perf_start_date": _safe_str(r.get("prfpdfrom")).replace(".", "-"),
+            "perf_end_date": _safe_str(r.get("prfpdto")).replace(".", "-"),
             "venue_name": r.get("fcltynm", ""),
             "runtime_min": extra.get("runtime_min"),
             "company_id": extra.get("company_id", ""),
