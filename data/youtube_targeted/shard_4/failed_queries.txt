@@ -1,1 +1,2 @@
 perf::PF269496	룸 위드 어 뷰	relevance			
+group::구미호::new_43	구미호	relevance			
