@@ -562,18 +562,6 @@
           "남희진"
         ],
         "is_high_demand": false
-      },
-      {
-        "perf_id": "PF291787",
-        "title": "강아지똥 [곡성]",
-        "venue_name": "곡성레저문화센터 동악아트홀",
-        "perf_start_date": "2026-06-27",
-        "perf_end_date": "2026-06-27",
-        "season_rank": 6.0,
-        "genre": "연극",
-        "company_name": "극단 모시는사람들",
-        "cast": [],
-        "is_high_demand": false
       }
     ]
   },
@@ -7024,7 +7012,7 @@
         "cast": [
           "정나라"
         ],
-        "is_high_demand": true
+        "is_high_demand": false
       },
       {
         "perf_id": "PF255240",
@@ -8237,26 +8225,6 @@
           "김지훈",
           "장성일",
           "김성결",
-          "홍예원",
-          "김혜현",
-          "김일훈"
-        ],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF293320",
-        "title": "신데렐라의 모래이야기 [고성]",
-        "venue_name": "고성군문화복지센터 대공연장",
-        "perf_start_date": "2026-06-27",
-        "perf_end_date": "2026-06-27",
-        "season_rank": 3.0,
-        "genre": "서양음악(클래식)",
-        "company_name": "강원도 고성군",
-        "cast": [
-          "김지현",
-          "김지훈",
-          "김성결",
-          "장성일",
           "홍예원",
           "김혜현",
           "김일훈"
