@@ -1,25 +1,32 @@
-name: KOPIS 주간 신규 공연 수집
+name: KOPIS 신규 공연 수집
 
 on:
   workflow_dispatch:
     inputs:
       stdate:
-        description: "수집 시작일 수동 지정 (YYYYMMDD, 비워두면 '지난 실행 14일 전' 자동 계산). 놓친 구간을 따라잡을 때만 채워넣기 - 예: 20260626"
+        description: "수집 시작일 수동 지정 (YYYYMMDD, 비워두면 '지난 실행 3일 전' 자동 계산). 놓친 구간을 따라잡을 때만 채워넣기 - 예: 20260626"
         required: false
         default: ""
   schedule:
-    - cron: "0 2 * * 0"   # 매주 일요일 UTC 02:00 (한국시간 11:00)
+    - cron: "0 2 * * *"   # 매일 UTC 02:00 (한국시간 11:00)
 
 permissions:
   contents: write
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# kopis_collect.yml(전체 9개 카테고리)의 축소판. 매주 필요한 것만:
+# kopis_collect.yml(전체 9개 카테고리)의 축소판. 매일 필요한 것만:
 #   [01] 공연목록(최근 구간만) -> [02] 공연상세(그 신규분만) -> [공연통계 요약]
 # 그 다음 pipeline.py sync-new-performances로 targets_enriched.csv에
 # 새 공연만 append (기존 4,093개/시즌매칭 결과는 절대 안 건드림).
 # all_videos*.csv와 마찬가지로 01/02/공연통계 원본은 git에 안 올리고
-# Release(kopis-weekly-stats 태그)에 매주 덮어쓰기로 업로드.
+# Release(kopis-weekly-stats 태그)에 매일 덮어쓰기로 업로드.
+#
+# [2026-08-05] 원래 매주 일요일 1회였는데(창 14일), 매일 실행으로 변경.
+# 공연 목록 API(01)는 "티켓 판매 이력이 없어도" 등록만 되면 잡히는 소스라,
+# perfoStatsPerfoByList(주간 통계, kopis_perfoby_weekly.yml에서 매일 수집)는
+# 판매 실적이 있는 공연만 잡는 것과 상호 보완적임 - 둘 다 매일 돌아야
+# "아직 티켓 안 팔린 신규 공연"도 놓치지 않음. 매일 도는 만큼 수집 창은
+# 14일 -> 3일로 줄임(놓친 실행 하루 이틀 대비면 충분, API 호출량 절약).
 #
 # [2026-07-30] fetch_stats.py performance(구 REST 엔드포인트 prfsttsqrst 등
 # 6종)가 전부 404로 죽어서(KOPIS가 REST 통계 API를 내린 것으로 보임) 이미
@@ -40,16 +47,16 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: pip install requests
-      - name: 수집 구간 계산 (수동 지정 있으면 그걸로, 없으면 지난 실행 이후 놓친 것 대비 14일 여유)
+      - name: 수집 구간 계산 (수동 지정 있으면 그걸로, 없으면 매일 실행 기준 3일 여유)
         run: |
           MANUAL="${{ github.event.inputs.stdate }}"
           if [ -n "$MANUAL" ]; then
             echo "KOPIS_STDATE=$MANUAL" >> "$GITHUB_ENV"
             echo "수동 지정된 시작일 사용: $MANUAL"
           else
-            AUTO="$(date -u -d '14 days ago' +%Y%m%d)"
+            AUTO="$(date -u -d '3 days ago' +%Y%m%d)"
             echo "KOPIS_STDATE=$AUTO" >> "$GITHUB_ENV"
-            echo "자동 계산된 시작일(14일 전) 사용: $AUTO"
+            echo "자동 계산된 시작일(3일 전) 사용: $AUTO"
           fi
       - name: 공연목록 수집 (최근 구간)
         run: python scripts/fetch_list.py performances
@@ -129,7 +136,7 @@ jobs:
             echo "SKIP_SYNC=0" >> "$GITHUB_ENV"
           fi
 
-      - name: Release 업로드 (원본 01/02/공연통계는 git 대신 Release로, 매주 덮어씀)
+      - name: Release 업로드 (원본 01/02/공연통계는 git 대신 Release로, 매일 덮어씀)
         if: env.SKIP_SYNC == '0'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -137,8 +144,8 @@ jobs:
           TAG="kopis-weekly-stats"
           if ! gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
             gh release create "$TAG" --repo "${{ github.repository }}" \
-              --title "KOPIS 주간 신규 수집 (매주 자동 갱신)" \
-              --notes "01=공연목록(최근 구간) / 02=공연상세(신규분) / 12,13b,13,14,15,18,booking_stats_*=공연통계 요약(GraphQL, 최근 30일). 매주 덮어써짐. (Release 첨부파일은 GitHub이 한글 등 비ASCII 문자를 자동으로 지워버려서 영문 파일명 사용 - 매핑은 이 설명 참고)"
+              --title "KOPIS 신규 공연 수집 (매일 자동 갱신)" \
+              --notes "01=공연목록(최근 구간) / 02=공연상세(신규분) / 12,13b,13,14,15,18,booking_stats_*=공연통계 요약(GraphQL, 최근 30일). 매일 덮어써짐. (Release 첨부파일은 GitHub이 한글 등 비ASCII 문자를 자동으로 지워버려서 영문 파일명 사용 - 매핑은 이 설명 참고)"
           fi
           # 2026-07-30: 옛 REST 통계 엔드포인트(13~18) 폐기 -> fetch_graphql_stats.py summary가
           # 만드는 파일명으로 교체. 시설별(17번 상당)은 GraphQL summary에 대응 항목이 없어 빠짐.
@@ -189,7 +196,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "변경사항 없음"; exit 0
           fi
-          git commit -m "주간 신규 공연 반영: $(date -u +'%Y-%m-%d')"
+          git commit -m "신규 공연 반영: $(date -u +'%Y-%m-%d')"
 
           # merge.py가 data/01_공연목록.csv, data/02_공연상세.csv 등에 "최근 구간만"
           # 내용으로 덮어쓴 게 남아있는데, 이 경로들은 kopis_collect.yml이 전체 이력을

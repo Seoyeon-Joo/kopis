@@ -1,0 +1,87 @@
+name: KOPIS 공연별 주간 통계 (매일 갱신)
+
+on:
+  workflow_dispatch:
+    inputs:
+      weeks_back:
+        description: "기존 파일이 없을 때만 사용할 초기 수집 구간(주). 평소엔 비워두면 됨."
+        required: false
+        default: "8"
+  schedule:
+    - cron: "0 3 * * *"   # 매일 UTC 03:00 (한국시간 12:00)
+
+permissions:
+  contents: write
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# data/16_공연통계_공연별_주간_전체_with_runtime.csv 전용 워크플로.
+# kopis_weekly_stats.yml(신규 공연 반영용)과는 별개 파일/별개 목적.
+#
+# 매일 실행하지만 KOPIS 원본 자체가 "주간" 단위라, 대부분의 날엔
+# fetch_perfoby_weekly.py가 "수집할 신규 구간 없음"으로 끝나고 커밋도
+# 안 함 - 그래도 매일 돌려두면 새 주간 데이터가 뜨자마자(며칠 지연될 수
+# 있음) 최대 하루 지연으로 반영됨.
+#
+# runtime_min 보강: 새로 수집된 공연 중 data/02_공연상세.csv에 아직
+# 없는 것들은 KOPIS 공연상세 API(pblprfr)로 개별 조회해서 그 자리에서
+# data/02_공연상세.csv에도 같이 append함 (kopis_weekly_stats.yml의
+# 주간 상세 수집을 기다릴 필요 없이 매일 최신 상태 유지).
+#
+# 영상 수집 대상 연동: 이번에 새로 잡힌 공연 중 targets_enriched.csv에
+# 없는 것들은 output/16_new_perf_candidates.csv로 뽑아두고, 바로 이어서
+# pipeline.py sync-new-performances(kopis_weekly_stats.yml과 동일 로직)로
+# targets_enriched.csv/work_groups.json에도 반영함. 즉 이제 "01_공연목록
+# API 기준 신규"(일요일) + "주간 통계 API 기준 신규"(매일) 두 경로 모두
+# 영상 수집 대상에 들어감.
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          lfs: true   # data/02_공연상세.csv에서 runtime_min을 조인하려면 필요
+
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - run: pip install requests pandas
+
+      - name: 공연별 주간 통계 이어서 수집 (+ 누락된 공연상세 보강 + 신규 공연 후보 추출)
+        run: python scripts/fetch_perfoby_weekly.py --weeks-back "${{ github.event.inputs.weeks_back || '8' }}"
+        env:
+          KOPIS_API_KEY: ${{ secrets.KOPIS_API_KEY }}
+
+      - name: 신규 공연을 targets_enriched.csv / work_groups.json에 반영
+        run: |
+          if [ -f "output/16_new_perf_candidates.csv" ]; then
+            python scripts/pipeline.py sync-new-performances \
+              --existing-targets data/targets_enriched.csv \
+              --existing-groups data/work_groups.json \
+              --perf-list output/16_new_perf_candidates.csv \
+              --detail data/02_공연상세.csv \
+              --out-targets data/targets_enriched.csv \
+              --out-groups data/work_groups.json
+          else
+            echo "신규 공연 후보 없음 - sync-new-performances 건너뜀"
+          fi
+
+      - name: 커밋 & 푸시 (충돌 시 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "data/16_공연통계_공연별_주간_전체_with_runtime.csv" "data/02_공연상세.csv" \
+                  "data/targets_enriched.csv" "data/work_groups.json"
+          if git diff --staged --quiet; then
+            echo "변경사항 없음 (신규 주간 데이터 없음)"; exit 0
+          fi
+          git commit -m "공연별 주간 통계 + 공연상세 + 영상수집 대상 갱신: $(date -u +'%Y-%m-%d')"
+
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && { echo "푸시 성공"; exit 0; }
+            echo "푸시 충돌, 재시도 ($i/5)..."
+            sleep $(( (RANDOM % 10) + 5 ))
+          done
+          echo "재시도 소진, 다음 실행에서 이어집니다."; exit 1
