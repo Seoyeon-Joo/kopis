@@ -1,2 +1,0 @@
-perf::PF255874	지젤	relevance			
-perf::PF251909	맥베스	relevance			
