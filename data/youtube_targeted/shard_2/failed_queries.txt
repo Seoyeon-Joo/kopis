@@ -1,3 +1,0 @@
-perf::PF271928	콩쥐팥쥐	relevance			
-perf::PF284314	삼매경	relevance			
-perf::PF284314	삼매경	relevance			
