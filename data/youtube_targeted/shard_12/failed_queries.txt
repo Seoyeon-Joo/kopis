@@ -1,2 +1,0 @@
-perf::PF256685	어둠에서 빛으로	relevance			
-perf::PF253954	그의 어머니	relevance			
