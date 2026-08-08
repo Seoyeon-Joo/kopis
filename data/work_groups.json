@@ -975,20 +975,6 @@
         "is_high_demand": false
       },
       {
-        "perf_id": "PF230594",
-        "title": "국립국악관현악단, 신년 음악회",
-        "venue_name": "국립극장 해오름극장",
-        "perf_start_date": "2024-01-12",
-        "perf_end_date": "2024-01-12",
-        "season_rank": 1.0,
-        "genre": "한국음악(국악)",
-        "company_name": "국립국악관현악단",
-        "cast": [
-          "황세희"
-        ],
-        "is_high_demand": false
-      },
-      {
         "perf_id": "PF279302",
         "title": "국립국악관현악단, 신년 음악회",
         "venue_name": "국립극장 해오름극장",
@@ -1003,6 +989,20 @@
           "전민경",
           "김준수",
           "추다혜"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF230594",
+        "title": "국립국악관현악단, 신년 음악회",
+        "venue_name": "국립극장 해오름극장",
+        "perf_start_date": "2024-01-12",
+        "perf_end_date": "2024-01-12",
+        "season_rank": 1.0,
+        "genre": "한국음악(국악)",
+        "company_name": "국립국악관현악단",
+        "cast": [
+          "황세희"
         ],
         "is_high_demand": false
       }
