@@ -4,3 +4,4 @@ perf::PF278396	태풍	date
 perf::PF234435	연습학교 하이라이트	relevance			
 perf::PF257640	일무	relevance			
 perf::PF278396	태풍	date			
+perf::PF292057	라 트라비아타 & 마술피리	relevance			
