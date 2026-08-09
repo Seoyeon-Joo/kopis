@@ -6,3 +6,4 @@ perf::PF265661	제100회 순천시립합창단 정기연주회	relevance
 perf::PF221591	친절한 돼지씨	relevance			
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF277458	비극적	relevance			
+perf::PF260777	달을 쏘다.	relevance			
