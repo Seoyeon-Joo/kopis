@@ -7,3 +7,4 @@ perf::PF272998	해적	relevance
 perf::PF234507	마리 퀴리	relevance			
 perf::PF258358	피가로의 결혼	relevance			
 perf::PF239705	마음은 즐겁게	relevance			
+perf::PF258358	피가로의 결혼	relevance			
