@@ -7,3 +7,4 @@ perf::PF250687	금난새의 영화음악이야기	relevance
 perf::PF230622	축제	relevance			
 perf::PF280218	너를 두고	relevance			
 perf::PF257631	파우스트	relevance			
+perf::PF230622	축제	relevance			
