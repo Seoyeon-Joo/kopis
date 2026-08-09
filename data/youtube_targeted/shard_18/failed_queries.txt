@@ -5,3 +5,4 @@ perf::PF258358	피가로의 결혼	relevance
 perf::PF258358	피가로의 결혼 리뷰	relevance			
 perf::PF272998	해적	relevance			
 perf::PF234507	마리 퀴리	relevance			
+perf::PF258358	피가로의 결혼	relevance			
