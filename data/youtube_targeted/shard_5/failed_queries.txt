@@ -6,3 +6,4 @@ perf::PF225394	이상한 엄마	relevance
 perf::PF286496	광대	relevance			
 perf::PF285068	베르테르	relevance			
 perf::PF286496	광대	relevance			
+perf::PF285068	베르테르	relevance			
