@@ -7,3 +7,4 @@ perf::PF278396	태풍	date
 perf::PF292057	라 트라비아타 & 마술피리	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF276276	제148회 강릉시립교향악단 정기연주회 쇼츠	relevance			
+perf::PF272799	세바우 전설	relevance			
