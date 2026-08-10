@@ -1,4 +1,3 @@
-perf::PF230530	정오의 음악회 (4월)	relevance			
 perf::PF236841	마리 퀴리	relevance			
 perf::PF234724	백조의 호수	relevance			
 perf::PF269536	복수의 씨앗	relevance			
@@ -6,3 +5,4 @@ perf::PF234724	백조의 호수	date
 perf::PF234724	백조의 호수	relevance			
 perf::PF277028	8090	relevance			
 perf::PF234724	백조의 호수	date			
+perf::PF271522	옛 노래	relevance			
