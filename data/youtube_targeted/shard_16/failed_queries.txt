@@ -10,3 +10,4 @@ perf::PF272881	생텍쥐페리	relevance
 perf::PF242783	라 트라비아타	relevance			
 perf::PF272142	하리보 김치	relevance			
 perf::PF233715	토스카	date			
+perf::PF232741	교향곡 5번	relevance			
