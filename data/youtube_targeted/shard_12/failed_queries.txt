@@ -1,8 +1,8 @@
-perf::PF234435	연습학교 리뷰	relevance			
 perf::PF263022	단심	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF276243	스페셜 콘서트 Ⅱ	relevance			
 perf::PF219406	파리넬리	relevance			
 perf::PF230602	리어	relevance			
 perf::PF286634	불편한 편의점	relevance			
+perf::PF253954	그의 어머니	relevance			
 perf::PF253954	그의 어머니	relevance			
