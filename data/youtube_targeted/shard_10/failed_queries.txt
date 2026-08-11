@@ -1,6 +1,4 @@
 perf::PF233617	일무	relevance			
-perf::PF223953	이상한 나라의 앨리스	relevance			
-perf::PF233617	일무	relevance			
 perf::PF253216	제15회 논산시립합창단 정기연주회	relevance			
 perf::PF279354	귀향	relevance			
 perf::PF233617	일무	relevance			
@@ -8,3 +6,4 @@ perf::PF239906	벨벳토끼	relevance
 perf::PF267168	봄	relevance			
 perf::PF279354	귀향	relevance			
 perf::PF279354	귀향	relevance			
+perf::PF267168	봄	relevance			
