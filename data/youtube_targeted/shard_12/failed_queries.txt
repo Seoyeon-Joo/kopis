@@ -7,3 +7,4 @@ perf::PF286634	불편한 편의점	relevance
 perf::PF253954	그의 어머니	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF253954	그의 어머니 리뷰	relevance			
+perf::PF253954	그의 어머니	relevance			
