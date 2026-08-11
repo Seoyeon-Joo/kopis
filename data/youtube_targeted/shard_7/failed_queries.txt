@@ -7,3 +7,4 @@ perf::PF234724	백조의 호수	date
 perf::PF271522	옛 노래	relevance			
 perf::PF269536	복수의 씨앗	relevance			
 perf::PF293054	오늘을 기억해	relevance			
+perf::PF285273	비극과 서정사이 커튼콜	relevance			
