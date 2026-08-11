@@ -7,3 +7,4 @@ perf::PF253951	미인	relevance
 perf::PF219630	수박 수영장	relevance			
 perf::PF284314	삼매경	relevance			
 perf::PF239993	활화산	relevance			
+perf::PF284314	삼매경	relevance			
