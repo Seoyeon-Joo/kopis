@@ -10,3 +10,4 @@ perf::PF239705	마음은 즐겁게	relevance
 perf::PF258358	피가로의 결혼	relevance			
 perf::PF272998	해적	relevance			
 perf::PF263282	영웅	relevance			
+perf::PF258358	피가로의 결혼	relevance			
