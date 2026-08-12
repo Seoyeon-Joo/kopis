@@ -5,6 +5,20 @@ data/16_공연통계_공연별_주간_전체_with_runtime.csv 를 이어서 채�
 7일 단위 주간 구간으로 쪼개 perfoStatsPerfoByList(sql_type="week")를 호출하고,
 02_공연상세.csv에서 러닝타임(runtime_min)을 조인해 기존 파일에 이어붙인다.
 
+[2026-08-12] 요일 정렬 버그 수정: 2023-03 ~ 2026-06-20까지 3년간 수동/자동
+수집분은 전부 "일요일 시작" 주간이었는데, 자동화가 이어받은 6/27부터 "어제"
+기준 클리핑 때문에 시작 요일이 토요일로 밀렸고, 그 이후 완전한 7일 구간도
+행수가 1/5~1/10로 급감했다 (KOPIS sql_type="week" 집계가 자기 내부 주간
+경계(일~토)에 안 맞는 임의 구간엔 데이터를 온전히 안 주는 것으로 추정).
+그래서 이제부터는:
+  1) 항상 다음 수집 시작일을 "다음 일요일"로 정렬
+  2) 해당 주(일~토)가 완전히 끝난 것만 수집 (어제까지로 자르지 않음 -
+     즉 이번 주가 아직 안 끝났으면 그 주는 아예 건너뛰고 다음 실행을 기다림)
+매일 크론이 돌긴 하지만, 실제로 신규 데이터가 생기는 건 매주 일요일이 지난
+직후부터라 결과적으로 "주 1회 수집"과 동일하게 동작한다. 크론 자체를
+주간으로 바꾸지 않고 매일 유지한 이유는, 특정 실행이 네트워크 등으로
+실패해도 다음날 바로 재시도되게 하기 위함(견고성).
+
 data1~data12 매핑(2026-06-26 세션에서 검증 완료, fetch_graphql_stats.py의
 perfoby 쿼리와 동일한 필드셋을 사용):
   data1=rank, data2=title, data3=genre, data4=perf_start_date,
@@ -143,20 +157,33 @@ def fetch_missing_details(missing_ids, api_key):
     return rows
 
 
-def week_windows(start, end):
-    """start~end를 7일 단위(겹침 없음)로 쪼갠다."""
-    cur = start
-    while cur <= end:
-        w_end = min(cur + timedelta(days=6), end)
-        yield cur, w_end
-        cur = w_end + timedelta(days=1)
+def _align_to_next_sunday(dt):
+    """dt가 이미 일요일이면 그대로, 아니면 다음 일요일로 당긴다.
+    (Python weekday(): 월=0 ... 일=6)"""
+    days_until_sunday = (6 - dt.weekday()) % 7
+    return dt + timedelta(days=days_until_sunday)
 
 
 def determine_start_date(existing_rows, weeks_back):
     if existing_rows:
         max_end = max(r["week_end_date"] for r in existing_rows)
-        return datetime.strptime(max_end, "%Y%m%d") + timedelta(days=1)
-    return datetime.today() - timedelta(weeks=weeks_back)
+        start = datetime.strptime(max_end, "%Y%m%d") + timedelta(days=1)
+    else:
+        start = datetime.today() - timedelta(weeks=weeks_back)
+    return _align_to_next_sunday(start)
+
+
+def complete_week_windows(start, yesterday):
+    """start(일요일)부터 시작해서, "어제"까지 완전히 끝난 주(일~토)만 순서대로 반환.
+    끝나지 않은 마지막 주는 아예 포함하지 않는다 (예전처럼 어제까지로 잘라서
+    partial week를 만들지 않음 - 이게 요일 정렬 붕괴의 원인이었음)."""
+    cur = start
+    while True:
+        w_end = cur + timedelta(days=6)
+        if w_end > yesterday:
+            break
+        yield cur, w_end
+        cur = w_end + timedelta(days=1)
 
 
 def load_existing(path):
@@ -210,19 +237,30 @@ def collect(target_path, detail_path, weeks_back):
     existing_rows = load_existing(target_path)
     print(f"기존 행 수: {len(existing_rows):,}", flush=True)
 
-    start = determine_start_date(existing_rows, weeks_back)
+    start = determine_start_date(existing_rows, weeks_back)  # 항상 일요일
     yesterday = datetime.today() - timedelta(days=1)
-    if start > yesterday:
-        print(f"이미 최신 상태 (다음 시작일 {start.strftime('%Y-%m-%d')} > 어제). 수집할 신규 구간 없음.", flush=True)
+
+    weeks = list(complete_week_windows(start, yesterday))
+    if not weeks:
+        next_end = start + timedelta(days=6)
+        print(
+            f"아직 완전한 주가 안 끝남 (다음 주 종료일 {next_end.strftime('%Y-%m-%d')} "
+            f"> 어제 {yesterday.strftime('%Y-%m-%d')}). 수집할 신규 구간 없음.",
+            flush=True,
+        )
         return
 
-    print(f"수집 구간: {start.strftime('%Y-%m-%d')} ~ {yesterday.strftime('%Y-%m-%d')}", flush=True)
+    print(
+        f"수집 대상: {len(weeks)}개 완전한 주 "
+        f"({weeks[0][0].strftime('%Y-%m-%d')} ~ {weeks[-1][1].strftime('%Y-%m-%d')})",
+        flush=True,
+    )
 
     detail_df = load_detail_df(detail_path)
     runtime_lookup = build_runtime_lookup(detail_df)
 
     new_rows = []
-    for w_start, w_end in week_windows(start, yesterday):
+    for w_start, w_end in weeks:
         s, e = w_start.strftime("%Y%m%d"), w_end.strftime("%Y%m%d")
         print(f"  {s} ~ {e} 수집 중...", flush=True)
         page = 1

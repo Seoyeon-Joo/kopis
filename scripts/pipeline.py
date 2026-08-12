@@ -327,8 +327,30 @@ def cmd_build_targets(args):
     # CSV에는 리스트를 파이프(|)로 join해서 저장 (배우 이름 자체엔 콤마/파이프가 안 들어가므로 안전)
     out_df = merged.copy()
     out_df["cast_names"] = out_df["cast_names"].apply(lambda v: "|".join(v))
+    out_df = out_df.astype(str)
+
+    # [2026-08-12] build-targets가 매번 --stats(16번 파일) 기준으로 완전히
+    # 새로 쓰다 보니, 16번 파일이 아직 못 따라잡은 신규 공연(sync-new-performances로
+    # targets_enriched.csv에 먼저 들어온 것들)이 다음 build-targets 실행 때마다
+    # 통째로 지워지는 문제가 있었음(16번 파일 수집이 며칠 지연되면 특히 심함).
+    # 그래서 이번 stats에 없는 기존 perf_id는 그대로 보존하고, 있는 것만 최신
+    # 통계로 갱신(replace)한다 - "replace 알고 있는 것 + 보존 모르는 것"으로 변경.
+    n_from_stats = len(out_df)
+    n_preserved = 0
+    if os.path.isfile(targets_path):
+        prev = pd.read_csv(targets_path, dtype=str, encoding="utf-8-sig")
+        stats_ids = set(out_df["perf_id"])
+        preserved = prev[~prev["perf_id"].isin(stats_ids)]
+        n_preserved = len(preserved)
+        if n_preserved:
+            out_df = pd.concat([out_df, preserved], ignore_index=True)
+
     out_df.to_csv(targets_path, index=False, encoding="utf-8-sig")
-    print(f"타겟 파일 저장: {targets_path} ({len(merged)}건)")
+    if n_preserved:
+        print(f"타겟 파일 저장: {targets_path} (16번 통계 기준 {n_from_stats}건 갱신 + "
+              f"아직 통계에 안 잡힌 기존 공연 {n_preserved}건 보존 = 총 {len(out_df)}건)")
+    else:
+        print(f"타겟 파일 저장: {targets_path} ({len(out_df)}건)")
 
     groups = {}
     matched = merged[merged["season_match_status"] == "matched"]
