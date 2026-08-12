@@ -12,3 +12,4 @@ perf::PF272998	해적	relevance
 perf::PF263282	영웅	relevance			
 perf::PF258358	피가로의 결혼	relevance			
 perf::PF259188	헨젤과 그레텔	relevance			
+perf::PF258379	화전가	relevance			
