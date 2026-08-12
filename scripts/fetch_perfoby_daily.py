@@ -23,6 +23,10 @@ sql_type="day" 호출을 하고 있었지만, 그건 청크 병렬 백필용(한
 일별 DV) 쓰는 별도 데이터 소스다. 필요하면 나중에 이 파일을 주 단위로
 groupby해서 16_..._with_runtime.csv 검증용으로 대조해볼 수도 있다.
 
+[2026-08-12] 정산 지연 보정(--reconfirm-days): 주간 버전(fetch_perfoby_weekly.py)과
+동일한 이유로, 매 실행마다 "신규 날짜"뿐 아니라 이미 저장된 최근 N일(기본
+21일 = 주간 버전의 3주와 동일 폭)도 다시 조회해서 값을 덮어쓴다.
+
 Usage:
   python fetch_perfoby_daily.py
   python fetch_perfoby_daily.py --days-back 60   # 기존 파일이 없을 때 초기 수집 구간(일)
@@ -131,23 +135,40 @@ def load_existing(path):
         return list(csv.DictReader(f))
 
 
-def collect(target_path, detail_path, days_back):
+def collect(target_path, detail_path, days_back, reconfirm_days=21):
     existing_rows = load_existing(target_path)
     print(f"기존 행 수: {len(existing_rows):,}", flush=True)
 
     start = determine_start_date(existing_rows, days_back)
     yesterday = datetime.today() - timedelta(days=1)
-    if start > yesterday:
+    new_days = list(day_range(start, yesterday)) if start <= yesterday else []
+
+    # 정산 지연 보정: 이미 저장된 최근 N일도 다시 조회해서 값 갱신 (주간 버전과
+    # 동일한 이유 - "막 지난 날짜"는 티켓 취소/환불 정산이 덜 끝나서 실제보다
+    # 적게 잡히는 경향이 있음. 값이 안 바뀌었으면 동일 값으로 덮어써질 뿐이라 안전)
+    reconfirm_day_list = []
+    if reconfirm_days > 0 and existing_rows:
+        existing_dates = sorted(set(r["date"] for r in existing_rows))
+        for d in existing_dates[-reconfirm_days:]:
+            reconfirm_day_list.append(datetime.strptime(d, "%Y%m%d"))
+
+    days = reconfirm_day_list + new_days
+    if not days:
         print(f"이미 최신 상태 (다음 시작일 {start.strftime('%Y-%m-%d')} > 어제). 수집할 신규 날짜 없음.", flush=True)
         return
 
-    print(f"수집 구간: {start.strftime('%Y-%m-%d')} ~ {yesterday.strftime('%Y-%m-%d')} ({(yesterday-start).days + 1}일)", flush=True)
+    print(
+        f"재확인(정산 지연 보정) 대상: {len(reconfirm_day_list)}일 / "
+        f"신규 대상: {len(new_days)}일",
+        flush=True,
+    )
 
     runtime_lookup = build_runtime_lookup(detail_path)
 
     new_rows = []
-    for day in day_range(start, yesterday):
+    for day in days:
         date_str = day.strftime("%Y%m%d")
+        tag = "재확인" if day in reconfirm_day_list else "신규"
         page = 1
         day_count = 0
         while True:
@@ -179,7 +200,7 @@ def collect(target_path, detail_path, days_back):
                 break
             page += 1
             time.sleep(0.2)
-        print(f"  {date_str}: +{day_count}건", flush=True)
+        print(f"  [{tag}] {date_str}: +{day_count}건", flush=True)
         time.sleep(0.3)
 
     print(f"신규 행: {len(new_rows):,}", flush=True)
@@ -211,8 +232,10 @@ def main():
     ap.add_argument("--target", default=TARGET_PATH)
     ap.add_argument("--detail", default=DETAIL_PATH)
     ap.add_argument("--days-back", type=int, default=60, help="기존 파일이 없을 때 초기 수집 구간(일)")
+    ap.add_argument("--reconfirm-days", type=int, default=21,
+                     help="정산 지연 보정을 위해 매번 다시 조회할 최근 일수 (0이면 재확인 안 함)")
     args = ap.parse_args()
-    collect(args.target, args.detail, args.days_back)
+    collect(args.target, args.detail, args.days_back, args.reconfirm_days)
 
 
 if __name__ == "__main__":

@@ -19,6 +19,14 @@ data/16_공연통계_공연별_주간_전체_with_runtime.csv 를 이어서 채�
 주간으로 바꾸지 않고 매일 유지한 이유는, 특정 실행이 네트워크 등으로
 실패해도 다음날 바로 재시도되게 하기 위함(견고성).
 
+[2026-08-12] 정산 지연 보정(--reconfirm-weeks): KOPIS 통계가 "막 끝난 주"는
+티켓 취소/환불 정산이 덜 끝나서 실제보다 적게 잡히는 경향이 있음(2026년
+7말~8초 실측: 작년 동기 20건대 vs 올해 2~7건 - 요일 정렬 문제 아님, 정산
+지연으로 추정). 그래서 매 실행마다 "신규 주"뿐 아니라 이미 저장된 최근
+N주(기본 3주)도 같이 다시 조회해서 값을 덮어쓴다. 값이 갱신되면(정산이
+끝나서 숫자가 올라가면) 자동 반영되고, 안 바뀌었으면 동일 값으로 그냥
+덮어써질 뿐이라 안전하다.
+
 data1~data12 매핑(2026-06-26 세션에서 검증 완료, fetch_graphql_stats.py의
 perfoby 쿼리와 동일한 필드셋을 사용):
   data1=rank, data2=title, data3=genre, data4=perf_start_date,
@@ -233,14 +241,24 @@ def write_new_perf_candidates(new_rows, targets_enriched_path, out_path):
     print(f"  영상 수집 대상 후보 {len(seen):,}건 -> {out_path}", flush=True)
 
 
-def collect(target_path, detail_path, weeks_back):
+def collect(target_path, detail_path, weeks_back, reconfirm_weeks=3):
     existing_rows = load_existing(target_path)
     print(f"기존 행 수: {len(existing_rows):,}", flush=True)
 
-    start = determine_start_date(existing_rows, weeks_back)  # 항상 일요일
+    start = determine_start_date(existing_rows, weeks_back)  # 항상 일요일 (다음 신규 주)
     yesterday = datetime.today() - timedelta(days=1)
 
-    weeks = list(complete_week_windows(start, yesterday))
+    new_weeks = list(complete_week_windows(start, yesterday))
+
+    # 정산 지연 보정: 이미 저장된 최근 N주도 다시 조회해서 값 갱신 (안 바뀌었으면
+    # 동일 값으로 그냥 덮어써질 뿐이라 안전함)
+    reconfirm_weeks_list = []
+    if reconfirm_weeks > 0 and existing_rows:
+        existing_periods = sorted(set((r["week_start_date"], r["week_end_date"]) for r in existing_rows))
+        for s, e in existing_periods[-reconfirm_weeks:]:
+            reconfirm_weeks_list.append((datetime.strptime(s, "%Y%m%d"), datetime.strptime(e, "%Y%m%d")))
+
+    weeks = reconfirm_weeks_list + new_weeks
     if not weeks:
         next_end = start + timedelta(days=6)
         print(
@@ -251,8 +269,8 @@ def collect(target_path, detail_path, weeks_back):
         return
 
     print(
-        f"수집 대상: {len(weeks)}개 완전한 주 "
-        f"({weeks[0][0].strftime('%Y-%m-%d')} ~ {weeks[-1][1].strftime('%Y-%m-%d')})",
+        f"재확인(정산 지연 보정) 대상: {len(reconfirm_weeks_list)}개 주 / "
+        f"신규 대상: {len(new_weeks)}개 주",
         flush=True,
     )
 
@@ -262,7 +280,8 @@ def collect(target_path, detail_path, weeks_back):
     new_rows = []
     for w_start, w_end in weeks:
         s, e = w_start.strftime("%Y%m%d"), w_end.strftime("%Y%m%d")
-        print(f"  {s} ~ {e} 수집 중...", flush=True)
+        tag = "재확인" if (w_start, w_end) in reconfirm_weeks_list else "신규"
+        print(f"  [{tag}] {s} ~ {e} 수집 중...", flush=True)
         page = 1
         while True:
             result = gql({
@@ -352,8 +371,10 @@ def main():
     ap.add_argument("--target", default=TARGET_PATH)
     ap.add_argument("--detail", default=DETAIL_PATH)
     ap.add_argument("--weeks-back", type=int, default=8, help="기존 파일이 없을 때 초기 수집 구간(주)")
+    ap.add_argument("--reconfirm-weeks", type=int, default=3,
+                     help="정산 지연 보정을 위해 매번 다시 조회할 최근 주 수 (0이면 재확인 안 함)")
     args = ap.parse_args()
-    collect(args.target, args.detail, args.weeks_back)
+    collect(args.target, args.detail, args.weeks_back, args.reconfirm_weeks)
 
 
 if __name__ == "__main__":
