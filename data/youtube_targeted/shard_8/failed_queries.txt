@@ -1,8 +1,3 @@
-perf::PF256447	유원	relevance			
-perf::PF256447	유원	relevance			
-perf::PF216757	12인의 성난 사람들	relevance			
-perf::PF256784	교향곡 11번	relevance			
-perf::PF253180	여기가 집이다	relevance			
 perf::PF256784	교향곡 11번	relevance			
 perf::PF287338	동방의 빛	relevance			
 perf::PF287338	동방의 빛	relevance			
