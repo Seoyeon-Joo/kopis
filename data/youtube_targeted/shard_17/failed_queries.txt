@@ -9,3 +9,4 @@ perf::PF283897	오즈의 마법사	relevance
 perf::PF277458	비극적	relevance			
 perf::PF283897	오즈의 마법사	relevance			
 perf::PF284352	더 픽션	relevance			
+perf::PF257898	유령	relevance			
