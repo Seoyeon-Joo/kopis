@@ -562,6 +562,26 @@
           "남희진"
         ],
         "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295169",
+        "title": "강아지똥 [증평]",
+        "venue_name": "증평문화회관 대강당",
+        "perf_start_date": "2026-06-24",
+        "perf_end_date": "2026-06-24",
+        "season_rank": 6.0,
+        "genre": "연극",
+        "company_name": "극단 모시는사람들",
+        "cast": [
+          "정래석",
+          "이희연",
+          "허정진",
+          "안중현",
+          "오명준",
+          "류제원",
+          "남희진"
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -2446,6 +2466,24 @@
           "이혜정",
           "박의준",
           "염경묵",
+          "김민서"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF289836",
+        "title": "국립합창단, 카르미나 부라나 [거제]",
+        "venue_name": "거제문화예술회관 대극장",
+        "perf_start_date": "2026-06-26",
+        "perf_end_date": "2026-06-26",
+        "season_rank": 5.0,
+        "genre": "서양음악(클래식)",
+        "company_name": NaN,
+        "cast": [
+          "민인기",
+          "이혜진",
+          "박의준",
+          "강형규",
           "김민서"
         ],
         "is_high_demand": false
