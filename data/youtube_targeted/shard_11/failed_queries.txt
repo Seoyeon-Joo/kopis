@@ -13,3 +13,4 @@ perf::PF235995	최상윤 상임지휘자 취임기념 리뷰	relevance
 perf::PF257640	일무	relevance			
 perf::PF244287	템플	relevance			
 perf::PF253956	축제 祝·祭	relevance			
+perf::PF267656	오페라 카르멘	relevance			
