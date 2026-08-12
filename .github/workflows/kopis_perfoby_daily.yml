@@ -1,0 +1,62 @@
+name: KOPIS 공연별 일간 통계 (매일 갱신)
+
+on:
+  workflow_dispatch:
+    inputs:
+      days_back:
+        description: "기존 파일이 없을 때만 사용할 초기 수집 구간(일). 평소엔 비워두면 됨."
+        required: false
+        default: "60"
+  schedule:
+    - cron: "0 5 * * *"   # 매일 UTC 05:00 (한국시간 14:00) - 다른 워크플로우들(02/03/07/15/23시)과 안 겹치게
+
+permissions:
+  contents: write
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# data/16_공연통계_공연별_일별_전체.csv 전용 워크플로.
+# kopis_perfoby_weekly.yml(주간, 일요일 정렬)과는 완전히 별개 산출물/목적.
+#
+# 주간 버전과 달리 "요일 경계" 개념 자체가 없어서(하루는 항상 하루) 정렬
+# 붕괴 문제가 생길 수 없음. 매일 어제 하루치를 이어붙이는 순수 증분 수집.
+#
+# 이 워크플로는 targets_enriched.csv/work_groups.json을 건드리지 않음 -
+# 신규 공연 반영은 여전히 kopis_perfoby_weekly.yml(+ kopis_weekly_stats.yml)
+# 담당. 이 파일은 순수하게 "공연 x 일" 단위 세밀한 패널이 필요할 때 쓰는
+# 별도 데이터 소스 (예: 논문 회귀분석 DV, 또는 16_..._with_runtime.csv
+# 주간 집계 검증용 대조 데이터).
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          lfs: true   # data/02_공연상세.csv에서 runtime_min을 조인하려면 필요
+
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - run: pip install requests pandas
+
+      - name: 공연별 일간 통계 이어서 수집
+        run: python scripts/fetch_perfoby_daily.py --days-back "${{ github.event.inputs.days_back || '60' }}"
+
+      - name: 커밋 & 푸시 (충돌 시 재시도)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "data/16_공연통계_공연별_일별_전체.csv"
+          if git diff --staged --quiet; then
+            echo "변경사항 없음 (신규 일간 데이터 없음)"; exit 0
+          fi
+          git commit -m "공연별 일간 통계 갱신: $(date -u +'%Y-%m-%d')"
+
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && { echo "푸시 성공"; exit 0; }
+            echo "푸시 충돌, 재시도 ($i/5)..."
+            sleep $(( (RANDOM % 10) + 5 ))
+          done
+          echo "재시도 소진, 다음 실행에서 이어집니다."; exit 1
