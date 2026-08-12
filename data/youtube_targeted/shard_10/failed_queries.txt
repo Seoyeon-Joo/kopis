@@ -8,3 +8,4 @@ perf::PF279354	귀향	relevance
 perf::PF279354	귀향	relevance			
 perf::PF267168	봄	relevance			
 perf::PF235602	더 북	relevance			
+perf::PF235602	더 북	relevance			
