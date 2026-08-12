@@ -11,3 +11,4 @@ perf::PF286496	광대	relevance
 perf::PF285068	베르테르	relevance			
 perf::PF276294	제24회 해운대구립 청소년 오케스트라 정기연주회	relevance			
 perf::PF286496	광대	relevance			
+perf::PF285068	베르테르	relevance			
