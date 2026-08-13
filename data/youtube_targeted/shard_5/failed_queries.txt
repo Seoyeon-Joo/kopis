@@ -12,3 +12,4 @@ perf::PF286496	광대	relevance
 perf::PF285068	베르테르	relevance			
 perf::PF282128	더 트라이브	relevance			
 perf::PF285931	백조의 호수	relevance			
+perf::PF274463	체어. 쇼츠	relevance			
