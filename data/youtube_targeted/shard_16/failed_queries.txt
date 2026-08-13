@@ -16,3 +16,4 @@ perf::PF232741	교향곡 5번	relevance
 perf::PF246249	PNO	relevance			
 perf::PF258755	만선	relevance			
 perf::PF272097	홍련	relevance			
+perf::PF288420	DTX 042 (Dynamic Train eXpress) 하이라이트	relevance			
