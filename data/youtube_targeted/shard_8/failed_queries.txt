@@ -1,7 +1,7 @@
 perf::PF287338	동방의 빛	relevance			
-perf::PF287338	동방의 빛	relevance			
 perf::PF256447	유원	relevance			
 perf::PF256784	교향곡 11번	relevance			
 perf::PF287338	동방의 빛	relevance			
 perf::PF281671	인천시향의 말러	relevance			
 perf::PF285068	베르테르	relevance			
+perf::PF279326	축제	relevance			
