@@ -1,2 +1,0 @@
-perf::PF289586	배리어프리	relevance			
-perf::PF286730	그의 어머니 Mother of Him	relevance			
