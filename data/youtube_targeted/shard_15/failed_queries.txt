@@ -1,6 +1,4 @@
 perf::PF233715	토스카	relevance			
-perf::PF235449	스트라빈스키 봄의 제전	relevance			
-perf::PF233715	토스카	relevance			
 perf::PF233715	토스카	relevance			
 perf::PF257633	코믹 (Com!que)	relevance			
 perf::PF275053	호두까기 인형	relevance			
