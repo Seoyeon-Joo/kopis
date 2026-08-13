@@ -1,5 +1,3 @@
-perf::PF286496	광대	relevance			
-perf::PF261353	다시 그리는 노래	relevance			
 perf::PF235434	엘가	relevance			
 perf::PF225394	이상한 엄마	relevance			
 perf::PF286496	광대	relevance			
@@ -13,3 +11,4 @@ perf::PF276294	제24회 해운대구립 청소년 오케스트라 정기연주�
 perf::PF286496	광대	relevance			
 perf::PF285068	베르테르	relevance			
 perf::PF282128	더 트라이브	relevance			
+perf::PF285931	백조의 호수	relevance			
