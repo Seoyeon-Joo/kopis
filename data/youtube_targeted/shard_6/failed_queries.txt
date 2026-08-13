@@ -1,5 +1,4 @@
 perf::PF281245	교향곡 2번	relevance			
-perf::PF281245	교향곡 2번	relevance			
 perf::PF233608	봄	relevance			
 perf::PF264809	Chorus of Dream	relevance			
 perf::PF286950	시네마 클래식	relevance			
