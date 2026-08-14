@@ -8105,6 +8105,23 @@
           "김제니"
         ],
         "is_high_demand": false
+      },
+      {
+        "perf_id": "PF296142",
+        "title": "신귀복 가곡음악회: 가곡의 별 [강릉]",
+        "venue_name": "강릉아트센터 (구. 강릉문화예술관)",
+        "perf_start_date": "2026-08-14",
+        "perf_end_date": "2026-08-14",
+        "season_rank": 4.0,
+        "genre": "서양음악(클래식)",
+        "company_name": NaN,
+        "cast": [
+          "길병민",
+          "김성식",
+          "윤서준",
+          "김제니"
+        ],
+        "is_high_demand": false
       }
     ]
   },
