@@ -9,3 +9,4 @@ perf::PF281245	교향곡 2번	relevance
 perf::PF281245	교향곡 2번	relevance			
 perf::PF286496	광대 쇼츠	relevance			
 perf::PF293241	우리의 미래	relevance			
+perf::PF293241	우리의 미래	relevance			
