@@ -7,3 +7,4 @@ perf::PF233592	더 트라이브 (THE TRIBE)	relevance
 perf::PF250886	시칠리아 섬의 저녁기도	relevance			
 perf::PF242914	전기 없는 마을	relevance			
 perf::PF281481	토요명품	date			
+perf::PF250576	기억하다	relevance			
