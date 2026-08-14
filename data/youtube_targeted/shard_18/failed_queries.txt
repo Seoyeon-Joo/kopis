@@ -14,3 +14,4 @@ perf::PF259188	헨젤과 그레텔	relevance
 perf::PF258379	화전가	relevance			
 perf::PF261034	카멜리아 레이디	relevance			
 perf::PF269552	대한민국 전통춤 축제	relevance			
+perf::PF257633	코믹 (Com!que)	relevance			
