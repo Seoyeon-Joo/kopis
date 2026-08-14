@@ -12,3 +12,4 @@ perf::PF269547	심청	relevance
 perf::PF280846	Classic in Drama	relevance			
 perf::PF270834	홍련	relevance			
 perf::PF249752	라 바야데르	relevance			
+perf::PF278073	라 보엠	relevance			
