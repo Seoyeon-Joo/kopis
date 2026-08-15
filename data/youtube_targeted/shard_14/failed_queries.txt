@@ -8,3 +8,4 @@ perf::PF279404	크리스마스 캐럴	relevance
 perf::PF235602	더 북	relevance			
 perf::PF256158	토요명품	relevance			
 perf::PF286742	어느 봄날의 꿈	relevance			
+perf::PF242597	셰프	relevance			
