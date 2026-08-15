@@ -14,3 +14,4 @@ perf::PF243199	Colorful	relevance
 perf::PF249400	코뿔소	relevance			
 perf::PF239993	활화산	relevance			
 perf::PF247764	간과 강	relevance			
+perf::PF239993	활화산	relevance			
