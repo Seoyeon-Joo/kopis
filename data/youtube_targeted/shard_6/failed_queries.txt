@@ -9,3 +9,4 @@ perf::PF293241	우리의 미래	relevance
 perf::PF293241	우리의 미래	relevance			
 perf::PF264636	상선약수 쇼츠	relevance			
 perf::PF289865	노란 달	relevance			
+perf::PF232584	제15기 시민연극교실	relevance			
