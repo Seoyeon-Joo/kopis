@@ -17,3 +17,4 @@ perf::PF247751	베토벤 교향곡 7번	relevance
 perf::PF294570	봉황	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF258358	피가로의 결혼	date			
+perf::PF257899	아이다	relevance			
