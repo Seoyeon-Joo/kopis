@@ -7,3 +7,4 @@ perf::PF285068	베르테르	relevance
 perf::PF279326	축제	relevance			
 perf::PF269536	복수의 씨앗	relevance			
 perf::PF290329	피리 부는 사나이	relevance			
+perf::PF269536	복수의 씨앗	relevance			
