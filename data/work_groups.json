@@ -13019,5 +13019,34 @@
         "is_high_demand": false
       }
     ]
+  },
+  "누가내머리에똥쌌어::new_1": {
+    "representative_title": "누가 내 머리에 똥 쌌어? [전주]",
+    "members": [
+      {
+        "perf_id": "PF294627",
+        "title": "누가 내 머리에 똥쌌어? [서울 성동]",
+        "venue_name": "성수아트홀(성수문화복지회관)",
+        "perf_start_date": "2026-08-15",
+        "perf_end_date": "2026-08-16",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292420",
+        "title": "누가 내 머리에 똥 쌌어? [전주]",
+        "venue_name": "전주학생교육문화관(전북교육문화회관)",
+        "perf_start_date": "2026-08-15",
+        "perf_end_date": "2026-08-15",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
   }
 }
