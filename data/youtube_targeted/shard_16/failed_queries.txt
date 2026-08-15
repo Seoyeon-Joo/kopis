@@ -19,3 +19,4 @@ perf::PF272097	홍련	relevance
 perf::PF288420	DTX 042 (Dynamic Train eXpress) 하이라이트	relevance			
 perf::PF267416	삼매경	relevance			
 perf::PF256784	교향곡 11번	relevance			
+perf::PF230602	리어	date			
