@@ -13,3 +13,4 @@ perf::PF243742	알사탕 쇼츠	relevance
 perf::PF240748	카르미나 부라나	relevance			
 perf::PF250417	라 트라비아타	relevance			
 perf::PF260777	달을 쏘다.	relevance			
+perf::PF260777	달을 쏘다.	relevance			
