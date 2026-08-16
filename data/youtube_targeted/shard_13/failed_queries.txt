@@ -14,3 +14,4 @@ perf::PF263022	단심	relevance
 perf::PF235837	내일	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF261891	조선통신사 유마도를 그리다	relevance			
+perf::PF253954	그의 어머니	relevance			
