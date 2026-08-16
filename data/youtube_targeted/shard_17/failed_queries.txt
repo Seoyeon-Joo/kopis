@@ -18,3 +18,4 @@ perf::PF283881	기억과 울림	relevance
 perf::PF282257	신년음악회	relevance			
 perf::PF245213	헤르만 헤세의 음악 세계 리뷰	relevance			
 perf::PF233715	토스카	relevance			
+perf::PF272483	제122회 강릉시립합창단 정기연주회	relevance			
