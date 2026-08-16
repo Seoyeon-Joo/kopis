@@ -16,3 +16,4 @@ perf::PF278073	라 보엠	relevance
 perf::PF249752	라 바야데르	relevance			
 perf::PF261353	다시 그리는 노래	relevance			
 perf::PF234724	백조의 호수	relevance			
+perf::PF269547	심청	relevance			
