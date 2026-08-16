@@ -13,3 +13,4 @@ perf::PF272998	해적	relevance
 perf::PF276784	고전편	relevance			
 perf::PF233744	라 트라비아타	date			
 perf::PF292527	노인의 꿈	relevance			
+perf::PF242888	낭만의 노래 쇼츠	relevance			
