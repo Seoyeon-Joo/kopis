@@ -15,3 +15,4 @@ perf::PF250417	라 트라비아타	relevance
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF260777	달을 쏘다.	date			
+perf::PF270365	지젤	relevance			
