@@ -12,3 +12,4 @@ perf::PF291223	시네마 클래식	relevance
 perf::PF278891	가거라 삼팔선	relevance			
 perf::PF241448	포항시립교향악단 with 라포엠 쇼츠	relevance			
 perf::PF269594	완창판소리 (11월)	relevance			
+perf::PF263674	레미제라블	relevance			
