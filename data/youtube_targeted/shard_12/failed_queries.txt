@@ -1,4 +1,3 @@
-perf::PF253954	그의 어머니	relevance			
 perf::PF253954	그의 어머니 리뷰	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF230602	리어	relevance			
@@ -14,3 +13,4 @@ perf::PF274858	스코틀랜드	relevance
 perf::PF257640	일무	relevance			
 perf::PF253801	합창	relevance			
 perf::PF276371	What's in my Orchestra	relevance			
+perf::PF278467	제98회 천안시립합창단 정기연주회 하이라이트	relevance			
