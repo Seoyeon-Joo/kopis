@@ -16,3 +16,4 @@ perf::PF233608	봄	relevance
 perf::PF249683	코펠리아	date			
 perf::PF233608	봄	relevance			
 perf::PF249683	코펠리아	relevance			
+perf::PF240292	DIVINE	relevance			
