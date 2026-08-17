@@ -20,3 +20,4 @@ perf::PF245213	헤르만 헤세의 음악 세계 리뷰	relevance
 perf::PF233715	토스카	relevance			
 perf::PF272483	제122회 강릉시립합창단 정기연주회	relevance			
 perf::PF243045	The Sage	relevance			
+perf::PF258984	마술피리	relevance			
