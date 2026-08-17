@@ -19,3 +19,4 @@ perf::PF252113	구립시니어합창단	relevance
 perf::PF266067	인어공주	relevance			
 perf::PF244276	앤	relevance			
 perf::PF290269	백조의호수	relevance			
+perf::PF266067	인어공주	relevance			
