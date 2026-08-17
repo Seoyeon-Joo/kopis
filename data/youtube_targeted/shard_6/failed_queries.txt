@@ -1,5 +1,3 @@
-perf::PF286950	시네마 클래식	relevance			
-perf::PF288006	1919년	relevance			
 perf::PF233608	봄	relevance			
 perf::PF233608	봄 쇼츠	relevance			
 perf::PF281245	교향곡 2번	relevance			
@@ -14,3 +12,4 @@ perf::PF286496	광대	relevance
 perf::PF286496	광대	relevance			
 perf::PF286496	광대	relevance			
 perf::PF294045	갈매기	relevance			
+perf::PF281616	미녀와 야수	relevance			
