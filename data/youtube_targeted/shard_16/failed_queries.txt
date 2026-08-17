@@ -1,18 +1,3 @@
-perf::PF251924	이어갈 혁신	relevance			
-perf::PF242783	라 트라비아타	relevance			
-perf::PF258755	만선	relevance			
-perf::PF262325	안녕? 빨강머리 앤	relevance			
-perf::PF258755	만선	relevance			
-perf::PF278544	송년음악회 CINE오페라 리뷰	relevance			
-perf::PF243428	Romantic	relevance			
-perf::PF258755	만선	relevance			
-perf::PF272881	생텍쥐페리	relevance			
-perf::PF242783	라 트라비아타	relevance			
-perf::PF272142	하리보 김치	relevance			
-perf::PF233715	토스카	date			
-perf::PF232741	교향곡 5번	relevance			
-perf::PF233715	토스카	date			
-perf::PF232741	교향곡 5번	relevance			
 perf::PF246249	PNO	relevance			
 perf::PF258755	만선	relevance			
 perf::PF272097	홍련	relevance			
@@ -25,3 +10,4 @@ perf::PF263450	DIVINE	date
 perf::PF265101	꽃의 비밀	relevance			
 perf::PF291223	시네마 클래식	relevance			
 perf::PF278891	가거라 삼팔선	relevance			
+perf::PF241448	포항시립교향악단 with 라포엠 쇼츠	relevance			
