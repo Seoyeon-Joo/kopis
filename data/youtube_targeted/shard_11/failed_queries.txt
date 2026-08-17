@@ -20,3 +20,4 @@ perf::PF233617	일무	relevance
 perf::PF233617	일무	relevance			
 perf::PF233617	일무	relevance			
 perf::PF234670	Drama	relevance			
+perf::PF262269	걸음마 콘서트 쇼츠	relevance			
