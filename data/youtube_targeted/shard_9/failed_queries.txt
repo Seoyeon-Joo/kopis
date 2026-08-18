@@ -6,3 +6,4 @@ perf::PF266553	김덕수와 친구들	relevance
 perf::PF230622	축제	relevance			
 perf::PF260159	꽃의 비밀	relevance			
 perf::PF230622	축제	relevance			
+perf::PF260159	꽃의 비밀	relevance			
