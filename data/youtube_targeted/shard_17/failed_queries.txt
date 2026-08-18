@@ -22,3 +22,4 @@ perf::PF272483	제122회 강릉시립합창단 정기연주회	relevance
 perf::PF243045	The Sage	relevance			
 perf::PF258984	마술피리	relevance			
 perf::PF243045	The Sage	relevance			
+perf::PF243045	The Sage	relevance			
