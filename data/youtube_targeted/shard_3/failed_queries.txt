@@ -17,3 +17,4 @@ perf::PF242888	낭만의 노래 쇼츠	relevance
 perf::PF284314	삼매경	relevance			
 perf::PF284314	삼매경	relevance			
 perf::PF272998	해적	relevance			
+perf::PF272998	해적	relevance			
