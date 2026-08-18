@@ -13,3 +13,4 @@ perf::PF286496	광대	relevance
 perf::PF286496	광대	relevance			
 perf::PF294045	갈매기	relevance			
 perf::PF281616	미녀와 야수	relevance			
+perf::PF281616	미녀와 야수	relevance			
