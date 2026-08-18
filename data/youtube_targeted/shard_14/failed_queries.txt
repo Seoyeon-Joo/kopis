@@ -13,3 +13,4 @@ perf::PF263022	단심	relevance
 perf::PF285245	60 Stars	relevance			
 perf::PF235602	더 북	relevance			
 perf::PF263022	단심	relevance			
+perf::PF284622	축제	relevance			
