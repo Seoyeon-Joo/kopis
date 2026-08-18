@@ -1,4 +1,3 @@
-perf::PF280087	동행	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF230615	사자의 서	relevance			
 perf::PF254412	호두까기 인형	relevance			
@@ -17,3 +16,4 @@ perf::PF260777	달을 쏘다.	relevance
 perf::PF260777	달을 쏘다.	date			
 perf::PF270365	지젤	relevance			
 perf::PF260777	달을 쏘다.	relevance			
+perf::PF260260	제8회 경산시립교향악단 정기연주회	relevance			
