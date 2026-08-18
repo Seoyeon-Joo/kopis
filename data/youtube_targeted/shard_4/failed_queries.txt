@@ -18,3 +18,4 @@ perf::PF249929	행진	relevance
 perf::PF247764	간과 강	relevance			
 perf::PF247764	간과 강	relevance			
 perf::PF252438	군산 세레나데	relevance			
+perf::PF247764	간과 강	relevance			
