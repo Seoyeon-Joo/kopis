@@ -16,3 +16,4 @@ perf::PF276371	What's in my Orchestra	relevance
 perf::PF278467	제98회 천안시립합창단 정기연주회 하이라이트	relevance			
 perf::PF259813	노래가 세상이라면	relevance			
 perf::PF257640	일무	relevance			
+perf::PF222566	슬리핑 뷰티	relevance			
