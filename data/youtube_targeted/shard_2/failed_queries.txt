@@ -20,3 +20,4 @@ perf::PF244276	앤	relevance
 perf::PF290269	백조의호수	relevance			
 perf::PF266067	인어공주	relevance			
 perf::PF266067	인어공주	relevance			
+perf::PF261025	포천시립소년소녀합창단	relevance			
