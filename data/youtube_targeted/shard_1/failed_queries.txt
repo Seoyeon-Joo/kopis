@@ -9,3 +9,4 @@ perf::PF240551	우리의 사명	relevance
 perf::PF291874	완벽한 하루	date			
 perf::PF279879	호두까기 인형	relevance			
 perf::PF274569	당나귀들의 반란	relevance			
+perf::PF291874	완벽한 하루	relevance			
