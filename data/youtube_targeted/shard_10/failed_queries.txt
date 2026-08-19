@@ -19,3 +19,4 @@ perf::PF234724	백조의 호수	relevance
 perf::PF251837	류한필 예술감독 취임연주회 하이라이트	relevance			
 perf::PF282294	셋톱박스	relevance			
 perf::PF244447	나와 몬스터 그리고 가방 리뷰	relevance			
+perf::PF282294	셋톱박스	relevance			
