@@ -1,4 +1,3 @@
-perf::PF250417	라 트라비아타	relevance			
 perf::PF225394	이상한 엄마	relevance			
 perf::PF277461	서울시향 얍 판 츠베덴의 브루크너 교향곡 4번 쇼츠	date			
 perf::PF252101	The Choral	relevance			
@@ -14,3 +13,4 @@ perf::PF285245	60 Stars	relevance
 perf::PF235602	더 북	relevance			
 perf::PF263022	단심	relevance			
 perf::PF284622	축제	relevance			
+perf::PF244623	재밌는 국악 신나는 국악 (7월)	relevance			
