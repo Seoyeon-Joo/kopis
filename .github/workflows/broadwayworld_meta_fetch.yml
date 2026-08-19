@@ -1,0 +1,62 @@
+name: BroadwayWorld Show Meta Fetch (one-off)
+
+# 매주 도는 크론이 아니라, 필요할 때 Actions 탭에서 수동으로 눌러서 실행하는 1회성 작업.
+# broadway_targets.csv에 있는 모든 쇼(run)에 대해 장르 + 개막일/폐막일만 받아온다
+# (주간 티켓판매 데이터는 이미 Playbill/tacookson에서 검증된 게 있어서 다시 안 받음).
+on:
+  workflow_dispatch:
+    inputs:
+      sleep_seconds:
+        description: "요청 사이 대기 시간(초) - 서버 부담 줄이기용"
+        required: false
+        default: "1.0"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-meta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180  # 1,300개 쇼 * 요청당 대기시간 감안, 넉넉히 3시간
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pandas openpyxl
+
+      - name: Fetch BroadwayWorld show meta (genre + opening/closing dates)
+        run: |
+          python scripts/fetch_broadwayworld_history.py \
+            --targets data/broadway_targets.csv \
+            --out-dir data \
+            --meta-only \
+            --sleep ${{ github.event.inputs.sleep_seconds }}
+
+      - name: Show result summary
+        run: |
+          echo "결과 파일:"
+          ls -la data/broadwayworld_show_meta.csv
+          echo "행 수:"
+          wc -l data/broadwayworld_show_meta.csv
+
+      - name: Upload as artifact (다운로드용, 커밋과 별개로 바로 받을 수 있음)
+        uses: actions/upload-artifact@v4
+        with:
+          name: broadwayworld-show-meta
+          path: data/broadwayworld_show_meta.csv
+          retention-days: 30
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/broadwayworld_show_meta.csv
+          git diff --cached --quiet && echo "변경 없음, 커밋 건너뜀" && exit 0
+          git commit -m "chore: broadwayworld 쇼 메타데이터(장르/개막일/폐막일) 수집"
+          git push
