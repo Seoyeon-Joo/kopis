@@ -1,0 +1,79 @@
+name: Backfill YouTube Descriptions
+
+# 수동 실행 전용 (1회성 백필 작업). 결과가 안전하다고 확인되면
+# 이후에 release asset을 자동으로 덮어쓰도록 바꿀 수 있음.
+# scripts/refetch_descriptions.py 는 scripts/net_utils.py 를 재사용하므로
+# 반드시 scripts/ 폴더 안에 같이 있어야 함.
+on:
+  workflow_dispatch:
+    inputs:
+      target_file:
+        description: "백필할 대상 파일명 (release asset, .csv.gz 확장자 제외)"
+        required: true
+        default: "all_videos_gated_post_end"
+        type: choice
+        options:
+          - all_videos_gated_post_end
+          - all_videos_gated
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: 체크아웃
+        uses: actions/checkout@v4
+
+      - name: 파이썬 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: 대상 파일 다운로드 (latest-data release)
+        run: |
+          curl -sL "https://github.com/${{ github.repository }}/releases/download/latest-data/${{ inputs.target_file }}.csv.gz" \
+            -o input.csv.gz
+          gunzip -c input.csv.gz > input.csv
+          echo "다운로드 완료:"
+          wc -l input.csv
+
+      - name: 이전 캐시 복원 (있으면 이어서 진행)
+        uses: actions/cache@v4
+        with:
+          path: description_cache.json
+          key: description-cache-${{ inputs.target_file }}-${{ github.run_id }}
+          restore-keys: |
+            description-cache-${{ inputs.target_file }}-
+
+      - name: description 재수집 실행
+        env:
+          # 콤마로 구분된 API 키 목록. 저장소 Settings > Secrets and variables > Actions 에서
+          # YOUTUBE_API_KEYS = "key1,key2,key3,...,key37" 형태로 등록해두세요.
+          YOUTUBE_API_KEYS: ${{ secrets.YOUTUBE_API_KEYS }}
+        run: |
+          python scripts/refetch_descriptions.py \
+            --input input.csv \
+            --output output.csv \
+            --cache description_cache.json
+
+      - name: 결과 압축
+        run: |
+          gzip -c output.csv > "${{ inputs.target_file }}_full.csv.gz"
+          ls -la "${{ inputs.target_file }}_full.csv.gz"
+
+      - name: 결과를 artifact로 업로드 (검토용, release에 자동 반영 안 함)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.target_file }}-full-descriptions
+          path: ${{ inputs.target_file }}_full.csv.gz
+          retention-days: 14
+
+      - name: 캐시 저장
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: description_cache.json
+          key: description-cache-${{ inputs.target_file }}-${{ github.run_id }}
