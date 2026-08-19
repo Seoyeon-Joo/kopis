@@ -22,3 +22,4 @@ perf::PF266067	인어공주	relevance
 perf::PF266067	인어공주	relevance			
 perf::PF261025	포천시립소년소녀합창단	relevance			
 perf::PF254412	호두까기 인형	relevance			
+perf::PF246257	뮤지엄	relevance			
