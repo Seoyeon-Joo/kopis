@@ -1,0 +1,43 @@
+name: Playbill Grosses Weekly Scrape
+
+# playbill.com/grosses는 그 주(일~토) 데이터가 보통 월요일에 갱신됨.
+# KOPIS 쪽 fetch_perfoby_weekly.py와 같은 이유로 crontab은 매일 걸어두고,
+# 스크립트 자체가 "이어붙일 신규 주가 없으면 조용히 종료"하도록 만들어서
+# 특정 실행이 네트워크 문제 등으로 실패해도 다음날 자동 재시도되게 함.
+on:
+  schedule:
+    - cron: "0 15 * * *"  # 매일 UTC 15:00 (KST 00:00)
+  workflow_dispatch: {}     # 수동 실행 버튼
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pandas
+
+      - name: Scrape new weeks
+        run: |
+          python scripts/scrape_playbill_grosses.py \
+            --append-to data/playbill_grosses_recent.csv \
+            --sleep 1.0
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/playbill_grosses_recent.csv
+          git diff --cached --quiet && echo "변경 없음, 커밋 건너뜀" && exit 0
+          git commit -m "chore: playbill grosses 주간 자동 업데이트 ($(date -u +%Y-%m-%d))"
+          git push
