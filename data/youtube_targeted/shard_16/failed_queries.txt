@@ -15,3 +15,4 @@ perf::PF269594	완창판소리 (11월)	relevance
 perf::PF263674	레미제라블	relevance			
 perf::PF263450	DIVINE	relevance			
 perf::PF263450	DIVINE	relevance			
+perf::PF263674	레미제라블	relevance			
