@@ -13019,36 +13019,5 @@
         "is_high_demand": false
       }
     ]
-  },
-  "성남국제윈드페스티벌::new_1": {
-    "representative_title": "성남국제윈드페스티벌",
-    "members": [
-      {
-        "perf_id": "PF298720",
-        "title": "성남국제윈드페스티벌",
-        "venue_name": "성남아트센터",
-        "perf_start_date": "2026-08-18",
-        "perf_end_date": "2026-08-18",
-        "season_rank": 1,
-        "genre": "서양음악(클래식)",
-        "company_name": NaN,
-        "cast": [
-          "드미트리로 카렌코프"
-        ],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF298723",
-        "title": "성남국제윈드페스티벌",
-        "venue_name": "성남아트센터",
-        "perf_start_date": "2026-08-19",
-        "perf_end_date": "2026-08-19",
-        "season_rank": 2,
-        "genre": "대중음악",
-        "company_name": NaN,
-        "cast": [],
-        "is_high_demand": false
-      }
-    ]
   }
 }
