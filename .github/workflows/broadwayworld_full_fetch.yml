@@ -1,0 +1,72 @@
+name: BroadwayWorld Full Meta Fetch (one-off)
+
+# 원본 grosses.csv(=업로드하신 data/broadway_targets.csv)의 고유 쇼 이름 기준으로
+# BroadwayWorld에서 개막일/폐막일/장르/캐스트/창작진을 긁어옴.
+# 매주 도는 크론이 아니라 필요할 때 Actions 탭에서 수동으로 실행하는 1회성 작업.
+on:
+  workflow_dispatch:
+    inputs:
+      sleep_seconds:
+        description: "요청 사이 대기 시간(초) - 서버 부담 줄이기용"
+        required: false
+        default: "1.0"
+      limit:
+        description: "테스트용 처리 개수 제한 (비워두면 전체 처리)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-meta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300  # 쇼당 요청 2번 + 대기시간 * 1,100여개 쇼 감안, 넉넉히 5시간
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pandas
+
+      - name: Fetch BroadwayWorld full meta (dates + genre + cast + creative team)
+        run: |
+          LIMIT_ARG=""
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            LIMIT_ARG="--limit ${{ github.event.inputs.limit }}"
+          fi
+          python scripts/fetch_broadwayworld_full.py \
+            --raw data/broadway_targets.csv \
+            --out-dir data \
+            --sleep ${{ github.event.inputs.sleep_seconds }} \
+            $LIMIT_ARG
+
+      - name: Show result summary
+        run: |
+          echo "결과 파일:"
+          ls -la data/broadwayworld_full.csv
+          echo "행 수:"
+          wc -l data/broadwayworld_full.csv
+          echo "미리보기:"
+          head -5 data/broadwayworld_full.csv
+
+      - name: Upload as artifact (다운로드용, 커밋과 별개로 바로 받을 수 있음)
+        uses: actions/upload-artifact@v4
+        with:
+          name: broadwayworld-full-meta
+          path: data/broadwayworld_full.csv
+          retention-days: 30
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/broadwayworld_full.csv
+          git diff --cached --quiet && echo "변경 없음, 커밋 건너뜀" && exit 0
+          git commit -m "chore: broadwayworld 전체 메타데이터(개막/폐막일/장르/캐스트/창작진) 수집"
+          git push
