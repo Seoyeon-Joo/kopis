@@ -1,0 +1,99 @@
+name: Broadway Data Pipeline (Playbill + BroadwayWorld)
+
+# 1단계: Playbill에서 2021-08-08 이후 최신 주간 데이터를 이어붙임
+#         (2020년 이후 개막해서 원본 grosses.csv에 없는 쇼들을 포함시키기 위함)
+# 2단계: 원본 grosses.csv + 방금 받은 playbill_grosses_recent.csv 두 곳에서
+#         쇼 이름을 모두 모아 BroadwayWorld에서 개막/폐막일/장르/캐스트/창작진 수집
+# 두 단계를 한 job 안에서 순서대로 실행해서, 체크아웃한 파일 상태를 그대로 이어씀.
+on:
+  workflow_dispatch:
+    inputs:
+      sleep_seconds:
+        description: "요청 사이 대기 시간(초)"
+        required: false
+        default: "1.0"
+      limit:
+        description: "BroadwayWorld 수집 테스트용 처리 개수 제한 (비워두면 전체)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pandas
+
+      # ---------- 1단계: Playbill 이어붙이기 ----------
+      - name: Step 1 - Scrape recent Playbill grosses (2021-08-08 ~ 현재)
+        run: |
+          python scripts/scrape_playbill_grosses.py \
+            --append-to data/playbill_grosses_recent.csv \
+            --sleep ${{ github.event.inputs.sleep_seconds }}
+
+      - name: Step 1 result summary
+        run: |
+          if [ -f data/playbill_grosses_recent.csv ]; then
+            echo "playbill_grosses_recent.csv 행 수:"
+            wc -l data/playbill_grosses_recent.csv
+          else
+            echo "playbill_grosses_recent.csv 생성 안 됨 (수집 실패 또는 신규 주 없음)"
+          fi
+
+      # ---------- 2단계: BroadwayWorld 메타 수집 ----------
+      - name: Step 2 - Fetch BroadwayWorld meta (원본 + Playbill 신규분 합쳐서)
+        run: |
+          LIMIT_ARG=""
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            LIMIT_ARG="--limit ${{ github.event.inputs.limit }}"
+          fi
+          python scripts/fetch_broadwayworld_full.py \
+            --raw data/broadway_targets.csv \
+            --extra-raw data/playbill_grosses_recent.csv \
+            --corgis-genre data/broadway_weekly_with_genre.csv \
+            --include-current-shows \
+            --out-dir data \
+            --sleep ${{ github.event.inputs.sleep_seconds }} \
+            $LIMIT_ARG
+
+      - name: Step 2 result summary
+        run: |
+          echo "broadwayworld_full.csv 행 수:"
+          wc -l data/broadwayworld_full.csv
+          head -5 data/broadwayworld_full.csv
+
+      # ---------- 결과물 업로드 + 커밋 ----------
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: broadway-pipeline-results
+          path: |
+            data/playbill_grosses_recent.csv
+            data/broadwayworld_full.csv
+          retention-days: 30
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/playbill_grosses_recent.csv data/broadwayworld_full.csv
+          git diff --cached --quiet && echo "변경 없음, 커밋 건너뜀" && exit 0
+          git commit -m "chore: playbill 이어붙이기 + broadwayworld 메타 수집 ($(date -u +%Y-%m-%d))"
+
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break
+            echo "push 실패, 재시도 ($i/3)..."
+            sleep 5
+          done
