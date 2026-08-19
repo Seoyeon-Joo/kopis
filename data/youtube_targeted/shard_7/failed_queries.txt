@@ -22,3 +22,4 @@ perf::PF240292	DIVINE	relevance
 perf::PF233608	봄	relevance			
 perf::PF280811	c단조 미사	relevance			
 perf::PF233608	봄	relevance			
+perf::PF255874	지젤	relevance			
