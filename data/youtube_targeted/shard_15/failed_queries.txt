@@ -1,4 +1,3 @@
-perf::PF257633	코믹 (Com!que)	relevance			
 perf::PF256786	레퀴엠	date			
 perf::PF266542	수원시립합창단 기획연주회	relevance			
 perf::PF233592	더 트라이브 (THE TRIBE)	relevance			
@@ -15,3 +14,4 @@ perf::PF236821	인어공주	relevance
 perf::PF249653	한 여름밤의 템페스트	relevance			
 perf::PF251909	맥베스	relevance			
 perf::PF251909	맥베스	relevance			
+perf::PF235664	한여름 밤의 꿈	relevance			
