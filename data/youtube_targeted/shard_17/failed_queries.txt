@@ -25,3 +25,4 @@ perf::PF243045	The Sage	relevance
 perf::PF243045	The Sage	relevance			
 perf::PF291881	유산의 색채	relevance			
 perf::PF263857	모차르트 레퀴엠	relevance			
+perf::PF266542	수원시립합창단 기획연주회	relevance			
