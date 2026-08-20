@@ -14,3 +14,4 @@ perf::PF284622	축제	relevance
 perf::PF244623	재밌는 국악 신나는 국악 (7월)	relevance			
 perf::PF273195	브람스 교향곡 제4번	relevance			
 perf::PF235602	더 북 쇼츠	relevance			
+perf::PF254163	가난한 크리스마스	relevance			
