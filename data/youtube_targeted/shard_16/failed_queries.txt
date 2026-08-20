@@ -18,3 +18,4 @@ perf::PF263450	DIVINE	relevance
 perf::PF263674	레미제라블	relevance			
 perf::PF235843	합창으로 노래하다 쇼츠	relevance			
 perf::PF263450	DIVINE 쇼츠	relevance			
+perf::PF263674	레미제라블	relevance			
