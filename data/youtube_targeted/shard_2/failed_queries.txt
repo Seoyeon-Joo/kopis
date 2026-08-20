@@ -25,3 +25,4 @@ perf::PF254412	호두까기 인형	relevance
 perf::PF246257	뮤지엄	relevance			
 perf::PF278924	송년음악회	relevance			
 perf::PF266067	인어공주	relevance			
+perf::PF250948	강강숲에 떨어진 달님 쇼츠	relevance			
