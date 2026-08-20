@@ -23,3 +23,4 @@ perf::PF285931	백조의 호수	relevance
 perf::PF283590	부천필하모닉오케스트라 with 프랑스대사관 리뷰	relevance			
 perf::PF253951	미인	relevance			
 perf::PF285931	백조의 호수	relevance			
+perf::PF285931	백조의 호수 쇼츠	relevance			
