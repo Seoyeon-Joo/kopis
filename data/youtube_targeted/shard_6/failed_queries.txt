@@ -3,3 +3,4 @@ perf::PF241432	제173회 춘천시립교향악단 정기연주회 리뷰	relevan
 perf::PF242571	라 트라비아타	relevance			
 perf::PF257751	회란기	relevance			
 perf::PF248715	봄날의 곰	relevance			
+perf::PF242571	라 트라비아타	relevance			
