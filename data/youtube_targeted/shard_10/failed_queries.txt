@@ -22,3 +22,4 @@ perf::PF282294	셋톱박스	relevance
 perf::PF225084	친절한 돼지씨	relevance			
 perf::PF269547	심청	relevance			
 perf::PF269617	놀음	relevance			
+perf::PF234724	백조의 호수 리뷰	relevance			
