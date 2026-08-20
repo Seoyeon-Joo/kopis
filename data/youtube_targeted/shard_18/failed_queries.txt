@@ -26,3 +26,4 @@ perf::PF241498	청소년 협주곡의 밤	relevance
 perf::PF241498	청소년 협주곡의 밤	relevance			
 perf::PF279227	당신을 위한 노래 Song for you	relevance			
 perf::PF290072	세 번째 전쟁	relevance			
+perf::PF266542	수원시립합창단 기획연주회	relevance			
