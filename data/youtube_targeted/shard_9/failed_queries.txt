@@ -6,3 +6,4 @@ perf::PF260159	꽃의 비밀	relevance
 perf::PF283897	오즈의 마법사	relevance			
 perf::PF230619	신선 리뷰	relevance			
 perf::PF283841	The Cinema and Classic	relevance			
+perf::PF279418	시네마 클래식	relevance			
