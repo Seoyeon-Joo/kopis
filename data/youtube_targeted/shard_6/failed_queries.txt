@@ -4,3 +4,4 @@ perf::PF242571	라 트라비아타	relevance
 perf::PF257751	회란기	relevance			
 perf::PF248715	봄날의 곰	relevance			
 perf::PF242571	라 트라비아타	relevance			
+perf::PF286496	광대	relevance			
