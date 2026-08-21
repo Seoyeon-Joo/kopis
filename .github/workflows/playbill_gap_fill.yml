@@ -41,20 +41,53 @@ jobs:
           echo "행 수:"
           wc -l data/playbill_gap_fill.csv
 
+      - name: Merge gap-fill into original data
+        run: |
+          python - <<'EOF'
+          import pandas as pd
+
+          gap = pd.read_csv("data/playbill_gap_fill.csv")
+          orig = pd.read_csv("data/broadway_targets.csv", sep=None, engine="python", encoding="utf-8-sig")
+          orig.columns = [c.strip().lstrip("\ufeff") for c in orig.columns]
+
+          # 스크래퍼 컬럼명 -> 원본(grosses.csv) 컬럼명으로 맞춤
+          gap = gap.rename(columns={"this_week_gross": "weekly_gross"})
+          for col in ["diff_dollar", "diff_pct_cap", "production_id"]:
+              if col in gap.columns:
+                  gap = gap.drop(columns=[col])
+
+          # 원본에 없는 컬럼(week_number, weekly_gross_overall)은 gap 쪽에 없으니 빈 값으로 채움
+          for col in orig.columns:
+              if col not in gap.columns:
+                  gap[col] = pd.NA
+
+          gap = gap[orig.columns]  # 컬럼 순서 맞춤
+
+          combined = pd.concat([orig, gap], ignore_index=True)
+          combined["week_ending"] = pd.to_datetime(combined["week_ending"])
+          combined = combined.sort_values(["show", "week_ending"]).drop_duplicates(
+              subset=["show", "week_ending"], keep="last"
+          )
+          combined.to_csv("data/broadway_targets.csv", index=False, encoding="utf-8-sig")
+
+          print(f"병합 완료: 원본 {len(orig)}행 + gap-fill {len(gap)}행 -> 최종 {len(combined)}행")
+          print(f"gap-fill에 있던 주차: {sorted(gap['week_ending'].unique()) if 'week_ending' in gap else gap['week_ending'].tolist()}")
+          EOF
+
       - name: Upload as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: playbill-gap-fill
-          path: data/playbill_gap_fill.csv
+          name: broadway-targets-with-gap-filled
+          path: data/broadway_targets.csv
           retention-days: 30
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/playbill_gap_fill.csv
+          git add data/broadway_targets.csv
           git diff --cached --quiet && echo "변경 없음, 커밋 건너뜀" && exit 0
-          git commit -m "chore: 셧다운 직전 누락 주차(2020-03-08, 03-15) 채움"
+          git commit -m "chore: 셧다운 직전 누락 주차(2020-03-08, 03-15)를 원본에 병합"
 
           for i in 1 2 3; do
             git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break
