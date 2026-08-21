@@ -1,5 +1,3 @@
-perf::PF285931	백조의 호수	relevance			
-perf::PF236732	달의 춤	relevance			
 perf::PF251451	북유럽	relevance			
 perf::PF242516	햄릿	relevance			
 perf::PF281719	백조의 호수	relevance			
