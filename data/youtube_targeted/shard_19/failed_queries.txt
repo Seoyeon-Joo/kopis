@@ -1,5 +1,3 @@
-perf::PF257899	아이다	relevance			
-perf::PF230615	사자의 서	relevance			
 perf::PF254412	호두까기 인형	relevance			
 perf::PF254412	호두까기 인형	relevance			
 perf::PF279879	호두까기 인형	relevance			
@@ -24,3 +22,4 @@ perf::PF234341	다윈 영의 악의 기원	relevance
 perf::PF290247	완다랜드	relevance			
 perf::PF243742	알사탕	relevance			
 perf::PF251979	好夜	relevance			
+perf::PF235403	냉정과 열정	relevance			
