@@ -1,0 +1,63 @@
+name: Playbill Gap Fill (pre-shutdown last weeks)
+
+# tacookson grosses.csv는 2020-03-01 주차에서 끝나고, 코로나 셧다운은
+# 2020-03-12(목)에 시작됨. 그 사이 두 주(2020-03-08: 완전한 마지막 영업주,
+# 2020-03-15: 셧다운으로 중간에 끊긴 partial 주)가 원본에도, 이어붙이기
+# 데이터(2021-08-08~)에도 없는 공백 구간. 이 workflow가 그 공백만 따로 채운다.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  gap-fill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pandas
+
+      - name: Scrape 2020-03-08 and 2020-03-15
+        run: |
+          python scripts/scrape_playbill_grosses.py \
+            --start 2020-03-08 \
+            --end 2020-03-15 \
+            --out data/playbill_gap_fill.csv \
+            --sleep 1.0
+
+      - name: Show result
+        run: |
+          echo "결과:"
+          cat data/playbill_gap_fill.csv | head -20
+          echo "행 수:"
+          wc -l data/playbill_gap_fill.csv
+
+      - name: Upload as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: playbill-gap-fill
+          path: data/playbill_gap_fill.csv
+          retention-days: 30
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/playbill_gap_fill.csv
+          git diff --cached --quiet && echo "변경 없음, 커밋 건너뜀" && exit 0
+          git commit -m "chore: 셧다운 직전 누락 주차(2020-03-08, 03-15) 채움"
+
+          for i in 1 2 3; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push && break
+            echo "push 실패, 재시도 ($i/3)..."
+            sleep 5
+          done
