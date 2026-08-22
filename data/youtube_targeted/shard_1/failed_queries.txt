@@ -15,3 +15,4 @@ perf::PF270526	친구의 전설	relevance
 perf::PF260826	봄	relevance			
 perf::PF279879	호두까기 인형 리뷰	relevance			
 perf::PF279879	호두까기 인형	relevance			
+perf::PF275205	사랑의 묘약	relevance			
