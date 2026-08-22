@@ -24,3 +24,4 @@ perf::PF233403	크루서블 도가니	relevance
 perf::PF223953	이상한 나라의 앨리스	relevance			
 perf::PF294563	피아노의 숲	relevance			
 perf::PF279780	여명 쇼츠	relevance			
+perf::PF230615	사자의 서	date			
