@@ -497,25 +497,6 @@
           "정민"
         ],
         "is_high_demand": false
-      },
-      {
-        "perf_id": "PF297468",
-        "title": "강릉 청소년 오케스트라 페스티벌",
-        "venue_name": "강릉아트센터 (구. 강릉문화예술관)",
-        "perf_start_date": "2026-08-22",
-        "perf_end_date": "2026-08-22",
-        "season_rank": 4.0,
-        "genre": "서양음악(클래식)",
-        "company_name": "강릉시립교향악단",
-        "cast": [
-          "정민",
-          "박금도",
-          "안춘기",
-          "윤단세",
-          "나채원",
-          "한우람"
-        ],
-        "is_high_demand": false
       }
     ]
   },
