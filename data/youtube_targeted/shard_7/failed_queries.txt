@@ -24,3 +24,4 @@ perf::PF280811	c단조 미사	relevance
 perf::PF233608	봄 쇼츠	relevance			
 perf::PF234507	마리 퀴리	relevance			
 perf::PF251356	무브먼트 코리아	relevance			
+perf::PF233608	봄	relevance			
