@@ -15,3 +15,4 @@ perf::PF285068	베르테르	relevance
 perf::PF237862	광주시립교향악단 GSO 체임버 시리즈 Ⅳ 티저	relevance			
 perf::PF224764	테레즈 라캥	relevance			
 perf::PF279326	축제	relevance			
+perf::PF279326	축제	relevance			
