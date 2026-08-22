@@ -27,3 +27,4 @@ perf::PF288478	호두까기 인형	relevance
 perf::PF241430	헨젤과 그레텔	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF278396	태풍	relevance			
+perf::PF278396	태풍	relevance			
