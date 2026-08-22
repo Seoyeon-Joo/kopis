@@ -31,3 +31,4 @@ perf::PF245191	레미제라블	relevance
 perf::PF232962	어린왕자	relevance			
 perf::PF261731	모차르트 Ⅱ	relevance			
 perf::PF260794	제60회 성남시립소년소녀합창단 정기연주회	relevance			
+perf::PF232962	어린왕자	relevance			
