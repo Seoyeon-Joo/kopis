@@ -25,3 +25,4 @@ perf::PF233608	봄 쇼츠	relevance
 perf::PF234507	마리 퀴리	relevance			
 perf::PF251356	무브먼트 코리아	relevance			
 perf::PF233608	봄	relevance			
+perf::PF266553	김덕수와 친구들	relevance			
