@@ -23,3 +23,4 @@ perf::PF269617	놀음	relevance
 perf::PF234724	백조의 호수 리뷰	relevance			
 perf::PF234724	백조의 호수	relevance			
 perf::PF250301	비발디 그리고 우리의 가을 이야기	relevance			
+perf::PF234724	백조의 호수	relevance			
