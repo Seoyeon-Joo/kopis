@@ -18,3 +18,4 @@ perf::PF235664	한여름 밤의 꿈	relevance
 perf::PF235664	한여름 밤의 꿈	relevance			
 perf::PF236821	인어공주	relevance			
 perf::PF242689	햄릿	relevance			
+perf::PF235664	한여름 밤의 꿈	relevance			
