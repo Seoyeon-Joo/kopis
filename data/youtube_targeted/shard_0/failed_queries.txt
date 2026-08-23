@@ -28,3 +28,4 @@ perf::PF257899	아이다 리뷰	relevance
 perf::PF270295	볼레로	relevance			
 perf::PF294570	봉황	relevance			
 perf::PF257899	아이다	relevance			
+perf::PF279622	시네마 클래식	relevance			
