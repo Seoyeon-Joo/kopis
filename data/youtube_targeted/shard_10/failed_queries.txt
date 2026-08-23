@@ -26,3 +26,4 @@ perf::PF250301	비발디 그리고 우리의 가을 이야기	relevance
 perf::PF234724	백조의 호수	relevance			
 perf::PF234724	백조의 호수	relevance			
 perf::PF282294	셋톱박스	relevance			
+perf::PF234724	백조의 호수	relevance			
