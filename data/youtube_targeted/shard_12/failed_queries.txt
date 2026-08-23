@@ -25,3 +25,4 @@ perf::PF247044	푸치니 오페라 토스카	relevance
 perf::PF257640	일무	relevance			
 perf::PF264708	날다	relevance			
 perf::PF280208	제192회 수원시립합창단 정기연주회	relevance			
+perf::PF257640	일무	relevance			
