@@ -11472,8 +11472,20 @@
     ]
   },
   "템플|::cast1": {
-    "representative_title": "템플 [밀양]",
+    "representative_title": "템플 [김해]",
     "members": [
+      {
+        "perf_id": "PF239719",
+        "title": "템플 [김해]",
+        "venue_name": "김해문화의전당 누리홀",
+        "perf_start_date": "2024-05-17",
+        "perf_end_date": "2024-05-18",
+        "season_rank": 6.0,
+        "genre": "연극",
+        "company_name": "",
+        "cast": [],
+        "is_high_demand": false
+      },
       {
         "perf_id": "PF270709",
         "title": "템플 [밀양]",
@@ -11492,18 +11504,6 @@
           "이동명",
           "정선기"
         ],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF239719",
-        "title": "템플 [김해]",
-        "venue_name": "김해문화의전당 누리홀",
-        "perf_start_date": "2024-05-17",
-        "perf_end_date": "2024-05-18",
-        "season_rank": 6.0,
-        "genre": "연극",
-        "company_name": "",
-        "cast": [],
         "is_high_demand": false
       },
       {
