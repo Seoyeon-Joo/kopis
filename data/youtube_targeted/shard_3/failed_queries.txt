@@ -25,3 +25,4 @@ perf::PF250372	오르페우스	relevance
 perf::PF272998	해적	relevance			
 perf::PF265139	연희 판	relevance			
 perf::PF233744	라 트라비아타	relevance			
+perf::PF233744	라 트라비아타	relevance			
