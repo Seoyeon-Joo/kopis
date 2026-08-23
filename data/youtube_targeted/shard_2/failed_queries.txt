@@ -32,3 +32,4 @@ perf::PF277458	비극적	relevance
 perf::PF246586	Impressionism	relevance			
 perf::PF254412	호두까기 인형	relevance			
 perf::PF266067	인어공주	relevance			
+perf::PF226022	벽을 허물다	relevance			
