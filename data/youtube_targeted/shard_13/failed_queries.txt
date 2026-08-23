@@ -29,3 +29,4 @@ perf::PF278396	태풍	relevance
 perf::PF278396	태풍	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF288478	호두까기 인형	relevance			
+perf::PF262226	불가불가 (不可不可)	relevance			
