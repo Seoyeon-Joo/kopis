@@ -27,3 +27,4 @@ perf::PF279780	여명 쇼츠	relevance
 perf::PF230615	사자의 서	date			
 perf::PF247764	간과 강	relevance			
 perf::PF247764	간과 강	relevance			
+perf::PF247764	간과 강	relevance			
