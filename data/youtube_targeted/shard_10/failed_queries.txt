@@ -27,3 +27,4 @@ perf::PF234724	백조의 호수	relevance
 perf::PF234724	백조의 호수	relevance			
 perf::PF282294	셋톱박스	relevance			
 perf::PF234724	백조의 호수	relevance			
+perf::PF234724	백조의 호수	relevance			
