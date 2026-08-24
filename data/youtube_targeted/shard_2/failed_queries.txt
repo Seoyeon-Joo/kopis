@@ -34,3 +34,4 @@ perf::PF254412	호두까기 인형	relevance
 perf::PF266067	인어공주	relevance			
 perf::PF226022	벽을 허물다	relevance			
 perf::PF266067	인어공주	relevance			
+perf::PF266067	인어공주	relevance			
