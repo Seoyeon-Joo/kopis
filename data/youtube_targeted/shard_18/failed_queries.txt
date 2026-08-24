@@ -33,3 +33,4 @@ perf::PF260794	제60회 성남시립소년소녀합창단 정기연주회	releva
 perf::PF232962	어린왕자	relevance			
 perf::PF268650	늦은 여름밤 음악	relevance			
 perf::PF232962	어린왕자	relevance			
+perf::PF232962	어린왕자	relevance			
