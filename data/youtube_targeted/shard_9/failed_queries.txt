@@ -14,3 +14,4 @@ perf::PF261697	모차르트 Ⅰ 쇼츠	relevance
 perf::PF230622	축제	relevance			
 perf::PF260159	꽃의 비밀	date			
 perf::PF230622	축제	relevance			
+perf::PF230622	축제	relevance			
