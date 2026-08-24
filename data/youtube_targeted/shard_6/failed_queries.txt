@@ -9,3 +9,4 @@ perf::PF293241	우리의 미래	relevance
 perf::PF286496	광대	relevance			
 perf::PF286496	광대	relevance			
 perf::PF286496	광대	relevance			
+perf::PF286496	광대	relevance			
