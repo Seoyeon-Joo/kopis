@@ -6803,6 +6803,26 @@
           "김도완"
         ],
         "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295028",
+        "title": "살로메 [천안]",
+        "venue_name": "천안예술의전당",
+        "perf_start_date": "2026-08-26",
+        "perf_end_date": "2026-08-26",
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)",
+        "company_name": "(재) 천안문화재단(천안예술의전당)",
+        "cast": [
+          "김준수",
+          "정은혜",
+          "이승민",
+          "서의철",
+          "김도완",
+          "고준석",
+          "정윤형"
+        ],
+        "is_high_demand": false
       }
     ]
   },
