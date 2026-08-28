@@ -8,7 +8,7 @@ on:
         required: false
         default: "8"
   schedule:
-    - cron: "0 3 * * *"   # 매일 UTC 03:00 (한국시간 12:00)
+#    - cron: "0 3 * * *"   # 매일 UTC 03:00 (한국시간 12:00)
 
 permissions:
   contents: write
