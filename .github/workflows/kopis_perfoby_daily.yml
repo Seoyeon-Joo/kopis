@@ -8,7 +8,7 @@ on:
         required: false
         default: "60"
   schedule:
-    - cron: "0 5 * * *"   # 매일 UTC 05:00 (한국시간 14:00) - 다른 워크플로우들(02/03/07/15/23시)과 안 겹치게
+    #- cron: "0 5 * * *"   # 매일 UTC 05:00 (한국시간 14:00) - 다른 워크플로우들(02/03/07/15/23시)과 안 겹치게
 
 permissions:
   contents: write
