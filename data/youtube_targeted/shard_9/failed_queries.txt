@@ -15,3 +15,4 @@ perf::PF230622	축제	relevance
 perf::PF260159	꽃의 비밀	date			
 perf::PF230622	축제	relevance			
 perf::PF230622	축제	relevance			
+perf::PF246455	콩쥐팥쥐	relevance			
