@@ -27,3 +27,4 @@ perf::PF265139	연희 판	relevance
 perf::PF233744	라 트라비아타	relevance			
 perf::PF233744	라 트라비아타	relevance			
 perf::PF233744	라 트라비아타	relevance			
+perf::PF276033	휘영청둥근달	relevance			
