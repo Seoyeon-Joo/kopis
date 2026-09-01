@@ -28,3 +28,4 @@ perf::PF230615	사자의 서	date
 perf::PF247764	간과 강	relevance			
 perf::PF247764	간과 강	relevance			
 perf::PF247764	간과 강	relevance			
+perf::PF227243	이상한 나라의 앨리스	relevance			
