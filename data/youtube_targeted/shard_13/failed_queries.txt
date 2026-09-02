@@ -26,3 +26,4 @@ perf::PF262226	불가불가 (不可不可)	relevance
 perf::PF278396	태풍	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF257620	여름 가족 음악회	relevance			
+perf::PF281857	기억	relevance			
