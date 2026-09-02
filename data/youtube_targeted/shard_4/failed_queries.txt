@@ -30,3 +30,4 @@ perf::PF247764	간과 강	relevance
 perf::PF247764	간과 강	relevance			
 perf::PF227243	이상한 나라의 앨리스	relevance			
 perf::PF254412	호두까기 인형	relevance			
+perf::PF270020	위험한 놀이터	relevance			
