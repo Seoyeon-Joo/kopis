@@ -1,9 +1,3 @@
-perf::PF253954	그의 어머니	relevance			
-perf::PF230602	리어	relevance			
-perf::PF230602	리어	relevance			
-perf::PF260334	상상보따리 쇼츠	relevance			
-perf::PF241430	헨젤과 그레텔	relevance			
-perf::PF257640	일무	relevance			
 perf::PF235837	내일	relevance			
 perf::PF257640	일무	relevance			
 perf::PF247044	푸치니 오페라 토스카	relevance			
