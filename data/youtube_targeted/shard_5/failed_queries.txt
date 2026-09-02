@@ -1,7 +1,3 @@
-perf::PF251707	호두까기인형	relevance			
-perf::PF242516	햄릿	date			
-perf::PF253951	미인	relevance			
-perf::PF285931	백조의 호수	relevance			
 perf::PF279990	새로운 미래	relevance			
 perf::PF285931	백조의 호수	relevance			
 perf::PF295417	그때도 오늘	relevance			
@@ -24,3 +20,4 @@ perf::PF254879	부산시립국악관현악단 수능생을 위한 음악회	rele
 perf::PF285931	백조의 호수	relevance			
 perf::PF242516	햄릿	relevance			
 perf::PF260990	미사 글로리아	relevance			
+perf::PF272998	해적	relevance			
