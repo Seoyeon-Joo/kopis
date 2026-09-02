@@ -1,10 +1,3 @@
-perf::PF246249	PNO	relevance			
-perf::PF258755	만선	relevance			
-perf::PF272097	홍련	relevance			
-perf::PF288420	DTX 042 (Dynamic Train eXpress) 하이라이트	relevance			
-perf::PF267416	삼매경	relevance			
-perf::PF256784	교향곡 11번	relevance			
-perf::PF230602	리어	date			
 perf::PF236003	베르디 갈라콘서트 리뷰	relevance			
 perf::PF263450	DIVINE	date			
 perf::PF265101	꽃의 비밀	relevance			
