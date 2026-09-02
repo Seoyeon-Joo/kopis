@@ -1,6 +1,3 @@
-perf::PF293054	오늘을 기억해	relevance			
-perf::PF285273	비극과 서정사이 커튼콜	relevance			
-perf::PF269536	복수의 씨앗	relevance			
 perf::PF238300	해설이 있는 교과서 음악회	relevance			
 perf::PF275053	호두까기 인형	relevance			
 perf::PF233608	봄	relevance			
@@ -32,3 +29,4 @@ perf::PF281669	실내악 콘서트 Ⅰ	relevance
 perf::PF233608	봄	relevance			
 perf::PF253951	미인	relevance			
 perf::PF289586	배리어프리	relevance			
+perf::PF238942	슈퍼 파워	relevance			
