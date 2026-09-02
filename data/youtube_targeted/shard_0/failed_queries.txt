@@ -31,3 +31,4 @@ perf::PF257899	아이다	relevance
 perf::PF279622	시네마 클래식	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF257899	아이다	relevance			
+perf::PF275566	춘향단전	relevance			
