@@ -1,5 +1,3 @@
-perf::PF284314	삼매경	relevance			
-perf::PF254412	호두까기 인형	relevance			
 perf::PF252158	라 보엠	relevance			
 perf::PF254412	호두까기 인형	relevance			
 perf::PF260258	교향악축제 프리뷰	relevance			
@@ -31,3 +29,4 @@ perf::PF266067	인어공주	relevance
 perf::PF266067	인어공주	relevance			
 perf::PF257898	유령	relevance			
 perf::PF280840	REQUIEM	relevance			
+perf::PF269552	대한민국 전통춤 축제	relevance			
