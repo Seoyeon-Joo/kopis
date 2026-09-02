@@ -34,3 +34,4 @@ perf::PF233617	일무	relevance
 perf::PF233617	일무	relevance			
 perf::PF281481	토요명품	relevance			
 perf::PF281481	토요명품	relevance			
+perf::PF235661	탄호이저	relevance			
