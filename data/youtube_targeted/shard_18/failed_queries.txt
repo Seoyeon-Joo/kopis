@@ -1,4 +1,3 @@
-perf::PF263282	영웅	relevance			
 perf::PF258358	피가로의 결혼	relevance			
 perf::PF259188	헨젤과 그레텔	relevance			
 perf::PF258379	화전가	relevance			
@@ -28,4 +27,5 @@ perf::PF268650	늦은 여름밤 음악	relevance
 perf::PF232962	어린왕자	relevance			
 perf::PF232962	어린왕자	relevance			
 perf::PF281245	교향곡 2번	relevance			
+perf::PF230602	리어	relevance			
 perf::PF230602	리어	relevance			
