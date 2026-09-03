@@ -23,3 +23,4 @@ perf::PF260990	미사 글로리아	relevance
 perf::PF272998	해적	relevance			
 perf::PF253975	국립심포니오케스트라 시즌 오프닝 콘서트	relevance			
 perf::PF283881	기억과 울림	relevance			
+perf::PF233744	라 트라비아타	relevance			
