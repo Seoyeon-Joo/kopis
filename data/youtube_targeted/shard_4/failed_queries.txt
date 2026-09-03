@@ -32,3 +32,4 @@ perf::PF227243	이상한 나라의 앨리스	relevance
 perf::PF254412	호두까기 인형	relevance			
 perf::PF270020	위험한 놀이터	relevance			
 perf::PF277458	비극적	date			
+perf::PF266067	인어공주	relevance			
