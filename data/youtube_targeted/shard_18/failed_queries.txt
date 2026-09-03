@@ -30,3 +30,4 @@ perf::PF281245	교향곡 2번	relevance
 perf::PF230602	리어	relevance			
 perf::PF230602	리어	relevance			
 perf::PF294571	호프	relevance			
+perf::PF230602	리어	relevance			
