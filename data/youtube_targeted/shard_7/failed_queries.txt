@@ -30,3 +30,4 @@ perf::PF233608	봄	relevance
 perf::PF253951	미인	relevance			
 perf::PF289586	배리어프리	relevance			
 perf::PF238942	슈퍼 파워	relevance			
+perf::PF242516	햄릿	relevance			
