@@ -22,3 +22,4 @@ perf::PF269547	심청	relevance
 perf::PF269547	심청	relevance			
 perf::PF273316	인천문화예술회관 재개관 시범공연 인천시립교향악단 기획연주회	relevance			
 perf::PF283994	제195회 인천시립합창단 정기연주회	relevance			
+perf::PF269547	심청	relevance			
