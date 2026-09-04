@@ -28,3 +28,4 @@ perf::PF257899	아이다	relevance
 perf::PF275566	춘향단전	relevance			
 perf::PF290251	저승편	relevance			
 perf::PF261034	카멜리아 레이디	relevance			
+perf::PF290251	저승편	relevance			
