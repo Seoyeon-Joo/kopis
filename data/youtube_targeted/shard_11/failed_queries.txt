@@ -38,3 +38,4 @@ perf::PF235661	탄호이저	relevance
 perf::PF235661	탄호이저	date			
 perf::PF240292	DIVINE	relevance			
 perf::PF249752	라 바야데르 하이라이트	relevance			
+perf::PF249752	라 바야데르	relevance			
