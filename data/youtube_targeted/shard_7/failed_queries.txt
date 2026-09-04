@@ -34,3 +34,4 @@ perf::PF242516	햄릿	relevance
 perf::PF242516	햄릿	relevance			
 perf::PF255718	대구시립교향악단 신년음악회	relevance			
 perf::PF253107	CINEMA ADVENTURE	relevance			
+perf::PF238942	슈퍼 파워	relevance			
