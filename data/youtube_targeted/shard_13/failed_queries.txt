@@ -28,3 +28,4 @@ perf::PF281857	기억	relevance
 perf::PF281481	토요명품	relevance			
 perf::PF268187	아버지와 나와 홍매와	relevance			
 perf::PF233185	사랑의 묘약	relevance			
+perf::PF281481	토요명품	relevance			
