@@ -26,3 +26,4 @@ perf::PF269097	택견마을 혹부리영감 리뷰	relevance
 perf::PF233608	봄	relevance			
 perf::PF233608	봄 쇼츠	relevance			
 perf::PF259312	쇼스타코비치 in 군산	relevance			
+perf::PF286496	광대	relevance			
