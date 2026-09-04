@@ -28,3 +28,4 @@ perf::PF223372	이상한 엄마	relevance
 perf::PF258755	만선	relevance			
 perf::PF258755	만선	relevance			
 perf::PF221326	이상한 엄마	relevance			
+perf::PF258755	만선	relevance			
