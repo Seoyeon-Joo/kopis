@@ -20,3 +20,4 @@ perf::PF234341	다윈 영의 악의 기원	relevance
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF234341	다윈 영의 악의 기원	relevance			
 perf::PF286970	눈	relevance			
+perf::PF242689	햄릿	relevance			
