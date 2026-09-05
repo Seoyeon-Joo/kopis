@@ -21,3 +21,4 @@ perf::PF275794	해적	relevance
 perf::PF256779	교향곡 9번 합창	relevance			
 perf::PF241498	청소년 협주곡의 밤	relevance			
 perf::PF264216	미녀와 야수	relevance			
+perf::PF275794	해적	relevance			
