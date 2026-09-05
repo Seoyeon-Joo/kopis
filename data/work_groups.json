@@ -6759,6 +6759,25 @@
           "정승준"
         ],
         "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294080",
+        "title": "살로메 [고양]",
+        "venue_name": "고양어울림누리",
+        "perf_start_date": "2026-09-05",
+        "perf_end_date": "2026-09-05",
+        "season_rank": 3.0,
+        "genre": "한국음악(국악)",
+        "company_name": NaN,
+        "cast": [
+          "김준수",
+          "유태평양",
+          "서의철",
+          "김도완",
+          "정보권",
+          "정승준"
+        ],
+        "is_high_demand": false
       }
     ]
   },
@@ -13016,6 +13035,35 @@
           "조한나",
           "박승화"
         ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "신데렐라::new_1": {
+    "representative_title": "신데렐라 [수원]",
+    "members": [
+      {
+        "perf_id": "PF295437",
+        "title": "신데렐라 [인천 수봉]",
+        "venue_name": "인천수봉문화회관",
+        "perf_start_date": "2026-09-05",
+        "perf_end_date": "2026-09-05",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF294705",
+        "title": "신데렐라 [수원]",
+        "venue_name": "장안구민회관 한누리아트홀",
+        "perf_start_date": "2026-09-05",
+        "perf_end_date": "2026-09-05",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
         "is_high_demand": false
       }
     ]
