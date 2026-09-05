@@ -1,4 +1,3 @@
-perf::PF226022	벽을 허물다	relevance			
 perf::PF257631	파우스트	relevance			
 perf::PF230622	축제	relevance			
 perf::PF253956	축제 祝·祭	relevance			
