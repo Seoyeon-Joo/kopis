@@ -37,3 +37,4 @@ perf::PF254412	호두까기 인형	relevance
 perf::PF257631	파우스트	relevance			
 perf::PF269744	어질더질	relevance			
 perf::PF266067	인어공주	relevance			
+perf::PF266067	인어공주 쇼츠	relevance			
