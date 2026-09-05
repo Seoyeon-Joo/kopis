@@ -24,3 +24,4 @@ perf::PF235602	더 북	relevance
 perf::PF256158	토요명품	relevance			
 perf::PF263022	단심	relevance			
 perf::PF256158	토요명품	relevance			
+perf::PF242060	Concerto vs Concerto	relevance			
