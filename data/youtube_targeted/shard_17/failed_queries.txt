@@ -1,8 +1,3 @@
-perf::PF251924	이어갈 혁신	relevance			
-perf::PF217261	이상한 엄마	relevance			
-perf::PF221326	이상한 엄마	relevance			
-perf::PF241498	청소년 협주곡의 밤	relevance			
-perf::PF248557	오페라 페스타 쇼츠	relevance			
 perf::PF258755	만선	relevance			
 perf::PF257639	피어나다	relevance			
 perf::PF283881	기억과 울림	relevance			
@@ -35,3 +30,4 @@ perf::PF251909	맥베스	relevance
 perf::PF280846	Classic in Drama 커튼콜	relevance			
 perf::PF251909	맥베스	relevance			
 perf::PF251909	맥베스 리뷰	relevance			
+perf::PF291876	셰익스피스	relevance			
