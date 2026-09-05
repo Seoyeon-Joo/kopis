@@ -30,3 +30,4 @@ perf::PF281481	토요명품	relevance
 perf::PF266929	납량특집 콘서트	relevance			
 perf::PF281481	토요명품	relevance			
 perf::PF281481	토요명품	relevance			
+perf::PF230622	축제	relevance			
