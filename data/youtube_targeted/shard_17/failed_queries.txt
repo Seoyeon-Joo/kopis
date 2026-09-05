@@ -31,3 +31,4 @@ perf::PF280846	Classic in Drama 커튼콜	relevance
 perf::PF251909	맥베스	relevance			
 perf::PF251909	맥베스 리뷰	relevance			
 perf::PF291876	셰익스피스	relevance			
+perf::PF251909	맥베스	relevance			
