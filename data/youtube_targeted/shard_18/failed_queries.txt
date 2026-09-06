@@ -34,3 +34,4 @@ perf::PF277028	8090	relevance
 perf::PF294571	호프	relevance			
 perf::PF230602	리어 리뷰	relevance			
 perf::PF230602	리어	relevance			
+perf::PF230602	리어 리뷰	relevance			
