@@ -1,5 +1,3 @@
-perf::PF250576	기억하다	relevance			
-perf::PF281481	토요명품	relevance			
 perf::PF251909	맥베스	relevance			
 perf::PF281481	토요명품 쇼츠	relevance			
 perf::PF279354	귀향	relevance			
@@ -31,3 +29,4 @@ perf::PF278396	태풍	relevance
 perf::PF253954	그의 어머니	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF253954	그의 어머니	relevance			
+perf::PF252050	그대와 영원히	relevance			
