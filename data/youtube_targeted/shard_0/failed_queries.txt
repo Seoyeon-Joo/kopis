@@ -31,3 +31,4 @@ perf::PF290251	저승편	relevance
 perf::PF246839	내가 물에서 본 것	relevance			
 perf::PF290251	저승편	relevance			
 perf::PF257633	코믹 (Com!que)	relevance			
+perf::PF290251	저승편	relevance			
