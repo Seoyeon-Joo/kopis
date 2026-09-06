@@ -1,4 +1,3 @@
-perf::PF257631	파우스트	relevance			
 perf::PF230622	축제	relevance			
 perf::PF253956	축제 祝·祭	relevance			
 perf::PF247751	베토벤 교향곡 7번	relevance			
@@ -32,3 +31,4 @@ perf::PF246839	내가 물에서 본 것	relevance
 perf::PF290251	저승편	relevance			
 perf::PF257633	코믹 (Com!que)	relevance			
 perf::PF290251	저승편	relevance			
+perf::PF257633	코믹 (Com!que)	relevance			
