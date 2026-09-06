@@ -24,3 +24,4 @@ perf::PF264216	미녀와 야수	relevance
 perf::PF275794	해적	relevance			
 perf::PF233744	라 트라비아타	relevance			
 perf::PF290247	완다랜드	relevance			
+perf::PF233744	라 트라비아타	relevance			
