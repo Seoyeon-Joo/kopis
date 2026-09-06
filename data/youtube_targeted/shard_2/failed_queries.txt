@@ -1,5 +1,3 @@
-perf::PF254412	호두까기 인형	relevance			
-perf::PF260258	교향악축제 프리뷰	relevance			
 perf::PF232891	청룡이 나르샤	relevance			
 perf::PF266067	인어공주	relevance			
 perf::PF253993	정오의 음악회 (5월)	relevance			
