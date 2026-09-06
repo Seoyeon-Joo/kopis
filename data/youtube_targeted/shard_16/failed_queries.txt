@@ -1,4 +1,3 @@
-perf::PF236003	베르디 갈라콘서트 리뷰	relevance			
 perf::PF263450	DIVINE	date			
 perf::PF265101	꽃의 비밀	relevance			
 perf::PF291223	시네마 클래식	relevance			
@@ -25,3 +24,4 @@ perf::PF256158	토요명품	relevance
 perf::PF263022	단심	relevance			
 perf::PF256158	토요명품	relevance			
 perf::PF242060	Concerto vs Concerto	relevance			
+perf::PF256158	토요명품	relevance			
