@@ -13019,5 +13019,34 @@
         "is_high_demand": false
       }
     ]
+  },
+  "백설공주::new_1": {
+    "representative_title": "백설공주 [부산]",
+    "members": [
+      {
+        "perf_id": "PF296380",
+        "title": "백설공주 [부산]",
+        "venue_name": "낙동아트센터",
+        "perf_start_date": "2026-09-06",
+        "perf_end_date": "2026-09-06",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF295339",
+        "title": "백설공주 [광주]",
+        "venue_name": "광주서구문화센터",
+        "perf_start_date": "2026-09-06",
+        "perf_end_date": "2026-09-06",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
   }
 }
