@@ -30,3 +30,4 @@ perf::PF262260	부천시립예술단 복사골 예술제 경축음악회	relevan
 perf::PF278396	태풍	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF278396	태풍	relevance			
+perf::PF253954	그의 어머니	relevance			
