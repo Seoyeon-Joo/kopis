@@ -37,3 +37,4 @@ perf::PF251707	호두까기인형	relevance
 perf::PF242516	햄릿	relevance			
 perf::PF255606	RHAPSODY & CAPRICCIO	relevance			
 perf::PF264096	솔로 프로젝트	relevance			
+perf::PF242516	햄릿	relevance			
