@@ -39,3 +39,4 @@ perf::PF266067	인어공주 쇼츠	relevance
 perf::PF286905	제151회 강릉시립교향악단 정기연주회 리뷰	relevance			
 perf::PF243742	알사탕	relevance			
 perf::PF266067	인어공주	relevance			
+perf::PF244379	고도를 기다리며	relevance			
