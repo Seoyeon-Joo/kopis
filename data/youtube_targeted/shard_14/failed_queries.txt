@@ -27,3 +27,4 @@ perf::PF241087	퀸 심포니	relevance
 perf::PF257640	일무	relevance			
 perf::PF279314	정오의 음악회 (5월)	relevance			
 perf::PF257640	일무	relevance			
+perf::PF257640	일무	date			
