@@ -30,3 +30,4 @@ perf::PF258755	만선	relevance
 perf::PF233715	토스카	relevance			
 perf::PF233715	토스카	relevance			
 perf::PF233715	토스카	relevance			
+perf::PF258755	만선	relevance			
