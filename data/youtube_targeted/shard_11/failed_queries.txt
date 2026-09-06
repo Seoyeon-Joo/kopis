@@ -38,3 +38,4 @@ perf::PF249752	라 바야데르	relevance
 perf::PF240292	DIVINE	relevance			
 perf::PF249752	라 바야데르	relevance			
 perf::PF249752	라 바야데르 커튼콜	relevance			
+perf::PF249752	라 바야데르	relevance			
