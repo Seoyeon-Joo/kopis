@@ -32,3 +32,4 @@ perf::PF281481	토요명품	relevance
 perf::PF230622	축제	relevance			
 perf::PF241938	미싱링크	relevance			
 perf::PF271465	시련	relevance			
+perf::PF230622	축제 쇼츠	relevance			
