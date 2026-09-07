@@ -35,3 +35,4 @@ perf::PF257899	아이다	relevance
 perf::PF257899	아이다	relevance			
 perf::PF258358	피가로의 결혼	relevance			
 perf::PF257899	아이다	relevance			
+perf::PF232973	광주시립교향악단 with 에마뉘엘 파위	relevance			
