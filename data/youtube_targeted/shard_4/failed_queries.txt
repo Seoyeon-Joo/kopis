@@ -40,3 +40,4 @@ perf::PF243742	알사탕	relevance
 perf::PF266067	인어공주	relevance			
 perf::PF244379	고도를 기다리며	relevance			
 perf::PF257631	파우스트	relevance			
+perf::PF266067	인어공주	relevance			
