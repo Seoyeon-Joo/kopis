@@ -30,3 +30,4 @@ perf::PF253954	그의 어머니	relevance
 perf::PF278396	태풍	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF252050	그대와 영원히	relevance			
+perf::PF278396	태풍	relevance			
