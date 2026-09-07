@@ -28,3 +28,4 @@ perf::PF256158	토요명품	relevance
 perf::PF256158	토요명품	relevance			
 perf::PF282294	셋톱박스	relevance			
 perf::PF257855	낭만주의 영웅들 Romantic Heroes 쇼츠	relevance			
+perf::PF256158	토요명품	relevance			
