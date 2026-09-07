@@ -32,3 +32,4 @@ perf::PF290251	저승편	relevance
 perf::PF257633	코믹 (Com!que)	relevance			
 perf::PF290251	저승편	relevance			
 perf::PF257633	코믹 (Com!que)	relevance			
+perf::PF290251	저승편	relevance			
