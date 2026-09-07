@@ -26,3 +26,4 @@ perf::PF233744	라 트라비아타	relevance
 perf::PF290247	완다랜드	relevance			
 perf::PF233744	라 트라비아타	relevance			
 perf::PF233744	라 트라비아타	relevance			
+perf::PF272998	해적	relevance			
