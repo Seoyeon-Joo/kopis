@@ -39,3 +39,4 @@ perf::PF255606	RHAPSODY & CAPRICCIO	relevance
 perf::PF264096	솔로 프로젝트	relevance			
 perf::PF242516	햄릿	relevance			
 perf::PF242516	햄릿	relevance			
+perf::PF265661	제100회 순천시립합창단 정기연주회	relevance			
