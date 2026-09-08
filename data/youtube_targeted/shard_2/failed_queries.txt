@@ -1,4 +1,3 @@
-perf::PF252113	구립시니어합창단	relevance			
 perf::PF266067	인어공주	relevance			
 perf::PF244276	앤	relevance			
 perf::PF290269	백조의호수	relevance			
@@ -34,3 +33,4 @@ perf::PF257899	아이다	relevance
 perf::PF232973	광주시립교향악단 with 에마뉘엘 파위	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF288215	제7회 세종시립청소년교향악단 정기연주회	relevance			
+perf::PF278811	호두까기인형 하이라이트	relevance			
