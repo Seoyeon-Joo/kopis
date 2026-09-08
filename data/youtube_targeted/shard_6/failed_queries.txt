@@ -17,3 +17,4 @@ perf::PF251459	하모니	relevance
 perf::PF285931	백조의 호수	relevance			
 perf::PF285931	백조의 호수	relevance			
 perf::PF285931	백조의 호수	date			
+perf::PF285931	백조의 호수	relevance			
