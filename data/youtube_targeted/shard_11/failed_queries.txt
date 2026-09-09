@@ -1,5 +1,4 @@
 perf::PF267656	오페라 카르멘	relevance			
-perf::PF267656	오페라 카르멘	relevance			
 perf::PF249817	라 트라비아타	relevance			
 perf::PF265077	ROMA	relevance			
 perf::PF281719	백조의 호수	relevance			
@@ -42,3 +41,4 @@ perf::PF249752	라 바야데르	relevance
 perf::PF284595	차이콥스키 쇼츠	relevance			
 perf::PF240292	DIVINE	relevance			
 perf::PF260345	교향악축제 프리뷰 콘서트	relevance			
+perf::PF255356	제16기 시민연극교실	relevance			
