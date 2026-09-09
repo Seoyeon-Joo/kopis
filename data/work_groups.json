@@ -8478,26 +8478,6 @@
           "이광복"
         ],
         "is_high_demand": false
-      },
-      {
-        "perf_id": "PF299505",
-        "title": "신뺑파전 [함양]",
-        "venue_name": "함양문화예술회관",
-        "perf_start_date": "2026-09-09",
-        "perf_end_date": "2026-09-09",
-        "season_rank": 14.0,
-        "genre": "연극",
-        "company_name": "경상남도 함양군문화시설사업소(함양군문화예술회관)",
-        "cast": [
-          "김학용",
-          "박자희",
-          "서정금",
-          "이광복",
-          "이다희",
-          "손명호",
-          "이재현"
-        ],
-        "is_high_demand": false
       }
     ]
   },
