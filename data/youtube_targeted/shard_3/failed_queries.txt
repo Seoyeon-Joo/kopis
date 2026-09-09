@@ -38,3 +38,4 @@ perf::PF234795	20세기 음악가들	relevance
 perf::PF289313	베토벤	relevance			
 perf::PF221685	페페의 꿈	relevance			
 perf::PF289313	베토벤	relevance			
+perf::PF289313	베토벤	relevance			
