@@ -35,3 +35,4 @@ perf::PF288215	제7회 세종시립청소년교향악단 정기연주회	relevan
 perf::PF278811	호두까기인형 하이라이트	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF250417	라 트라비아타	relevance			
+perf::PF264923	달 샤베트	relevance			
