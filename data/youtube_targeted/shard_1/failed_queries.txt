@@ -1,4 +1,3 @@
-perf::PF270526	친구의 전설	relevance			
 perf::PF260826	봄	relevance			
 perf::PF279879	호두까기 인형 리뷰	relevance			
 perf::PF279879	호두까기 인형	relevance			
@@ -27,3 +26,4 @@ perf::PF234341	다윈 영의 악의 기원	relevance
 perf::PF234341	다윈 영의 악의 기원	relevance			
 perf::PF234341	다윈 영의 악의 기원	relevance			
 perf::PF288932	코드네임X	relevance			
+perf::PF271546	춤 스케치	relevance			
