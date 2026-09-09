@@ -30,3 +30,4 @@ perf::PF234724	백조의 호수	relevance
 perf::PF287781	봄 날	relevance			
 perf::PF258959	보이지 않는 것	relevance			
 perf::PF234724	백조의 호수	relevance			
+perf::PF269547	심청	relevance			
