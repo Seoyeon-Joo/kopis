@@ -17,3 +17,4 @@ perf::PF285931	백조의 호수	date
 perf::PF285931	백조의 호수	relevance			
 perf::PF265265	호국보훈 유월음악회	relevance			
 perf::PF256795	교향곡 4번	relevance			
+perf::PF285931	백조의 호수	relevance			
