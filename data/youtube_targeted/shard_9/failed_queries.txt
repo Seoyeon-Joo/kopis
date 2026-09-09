@@ -19,3 +19,4 @@ perf::PF256799	새로운 기원	relevance
 perf::PF269536	복수의 씨앗	relevance			
 perf::PF282128	더 트라이브	relevance			
 perf::PF269536	복수의 씨앗	relevance			
+perf::PF282128	더 트라이브	relevance			
