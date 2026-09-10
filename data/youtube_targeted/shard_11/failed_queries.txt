@@ -42,3 +42,4 @@ perf::PF284595	차이콥스키 쇼츠	relevance
 perf::PF240292	DIVINE	relevance			
 perf::PF260345	교향악축제 프리뷰 콘서트	relevance			
 perf::PF255356	제16기 시민연극교실	relevance			
+perf::PF240292	DIVINE	relevance			
