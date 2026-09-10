@@ -47,3 +47,4 @@ perf::PF266067	인어공주	relevance
 perf::PF248996	해설이 있는 전막발레 돈키호테	relevance			
 perf::PF266067	인어공주	relevance			
 perf::PF257631	파우스트	relevance			
+perf::PF253537	고맙습니Day	relevance			
