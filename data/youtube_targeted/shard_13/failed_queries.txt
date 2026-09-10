@@ -1,5 +1,3 @@
-perf::PF263914	타악기야 놀자!	relevance			
-perf::PF291789	피아노의 숲	date			
 perf::PF278396	태풍	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF291789	피아노의 숲	relevance			
@@ -32,3 +30,4 @@ perf::PF230622	축제 리뷰	relevance
 perf::PF281296	국립심포니오케스트라	relevance			
 perf::PF230622	축제	relevance			
 perf::PF251746	구립여성합창단	relevance			
+perf::PF230622	축제	relevance			
