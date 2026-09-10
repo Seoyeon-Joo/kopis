@@ -32,3 +32,4 @@ perf::PF294570	봉황	relevance
 perf::PF233744	라 트라비아타	relevance			
 perf::PF284013	산초와 돈키호테	relevance			
 perf::PF233744	라 트라비아타	relevance			
+perf::PF272998	해적	relevance			
