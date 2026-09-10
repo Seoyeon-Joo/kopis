@@ -1,6 +1,4 @@
 perf::PF281719	백조의 호수	relevance			
-perf::PF281719	백조의 호수	relevance			
-perf::PF281719	백조의 호수	relevance			
 perf::PF239809	슈만과 브람스	relevance			
 perf::PF233617	일무	relevance			
 perf::PF233617	일무	relevance			
@@ -40,3 +38,4 @@ perf::PF240292	DIVINE	relevance
 perf::PF260345	교향악축제 프리뷰 콘서트	relevance			
 perf::PF255356	제16기 시민연극교실	relevance			
 perf::PF240292	DIVINE	relevance			
+perf::PF284430	and Pathétique	relevance			
