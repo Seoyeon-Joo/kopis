@@ -31,3 +31,4 @@ perf::PF234724	백조의 호수	relevance
 perf::PF269547	심청	relevance			
 perf::PF234575	화이트데이 콘서트	date			
 perf::PF246278	사람들	relevance			
+perf::PF234724	백조의 호수 하이라이트	relevance			
