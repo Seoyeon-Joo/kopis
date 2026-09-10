@@ -42,3 +42,4 @@ perf::PF230602	리어 리뷰	relevance
 perf::PF275226	스냅	relevance			
 perf::PF230602	리어	relevance			
 perf::PF225394	이상한 엄마	relevance			
+perf::PF286226	양산30	relevance			
