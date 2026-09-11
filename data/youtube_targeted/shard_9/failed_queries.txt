@@ -22,3 +22,4 @@ perf::PF269536	복수의 씨앗	relevance
 perf::PF282128	더 트라이브	relevance			
 perf::PF269536	복수의 씨앗	relevance			
 perf::PF235434	엘가	relevance			
+perf::PF269536	복수의 씨앗 하이라이트	relevance			
