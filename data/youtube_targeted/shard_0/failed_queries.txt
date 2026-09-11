@@ -34,3 +34,4 @@ perf::PF242143	헨젤과 그레텔	relevance
 perf::PF290251	저승편	relevance			
 perf::PF257633	코믹 (Com!que)	relevance			
 perf::PF278331	컬렉션	relevance			
+perf::PF290251	저승편	relevance			
