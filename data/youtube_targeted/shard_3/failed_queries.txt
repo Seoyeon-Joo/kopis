@@ -1,4 +1,3 @@
-perf::PF272998	해적	relevance			
 perf::PF256786	레퀴엠	relevance			
 perf::PF272998	해적	relevance			
 perf::PF276784	고전편	relevance			
@@ -43,3 +42,4 @@ perf::PF288614	햄릿  (영상화)	relevance
 perf::PF274350	모차르트 피아노 협주곡 전곡 시리즈 2	relevance			
 perf::PF289313	베토벤 리뷰	relevance			
 perf::PF246272	이부산의 타의 향	relevance			
+perf::PF247456	강원특별자치도립국악관현악단	relevance			
