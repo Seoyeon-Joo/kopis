@@ -1,6 +1,3 @@
-perf::PF259813	노래가 세상이라면	relevance			
-perf::PF257640	일무	relevance			
-perf::PF222566	슬리핑 뷰티	relevance			
 perf::PF264510	폴리팝	relevance			
 perf::PF257640	일무	relevance			
 perf::PF237163	소리높여 합창포유	relevance			
@@ -33,3 +30,4 @@ perf::PF234575	화이트데이 콘서트	date
 perf::PF246278	사람들	relevance			
 perf::PF234724	백조의 호수 하이라이트	relevance			
 perf::PF246278	사람들	relevance			
+perf::PF283920	피노키오	relevance			
