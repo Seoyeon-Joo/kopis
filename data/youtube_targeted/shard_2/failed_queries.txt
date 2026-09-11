@@ -38,3 +38,4 @@ perf::PF250417	라 트라비아타	relevance
 perf::PF264923	달 샤베트	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF257899	아이다	relevance			
+perf::PF257899	아이다	relevance			
