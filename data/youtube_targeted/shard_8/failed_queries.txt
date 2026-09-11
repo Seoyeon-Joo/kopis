@@ -19,3 +19,4 @@ perf::PF233608	봄	relevance
 perf::PF286254	나빌레라	relevance			
 perf::PF286496	광대	date			
 perf::PF233608	봄	relevance			
+perf::PF251499	Star	relevance			
