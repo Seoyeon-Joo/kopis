@@ -49,3 +49,4 @@ perf::PF266067	인어공주	relevance
 perf::PF257631	파우스트	relevance			
 perf::PF253537	고맙습니Day	relevance			
 perf::PF266067	인어공주	relevance			
+perf::PF257631	파우스트	relevance			
