@@ -1,4 +1,3 @@
-perf::PF290251	저승편	relevance			
 perf::PF257633	코믹 (Com!que)	relevance			
 perf::PF290251	저승편	relevance			
 perf::PF278998	더 좋은 내일을 꿈꾸며	relevance			
@@ -40,3 +39,4 @@ perf::PF225394	이상한 엄마	relevance
 perf::PF286226	양산30	relevance			
 perf::PF253598	똥벼락	relevance			
 perf::PF278683	피가로의 결혼 Le nozze di Figaro	relevance			
+perf::PF270512	전통의 재발견 Ⅵ	relevance			
