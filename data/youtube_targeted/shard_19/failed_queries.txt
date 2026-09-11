@@ -35,3 +35,4 @@ perf::PF258755	만선	relevance
 perf::PF258755	만선 리뷰	relevance			
 perf::PF232740	교향곡 7번	relevance			
 perf::PF256798	전람회의 그림	relevance			
+perf::PF258755	만선	relevance			
