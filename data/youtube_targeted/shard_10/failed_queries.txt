@@ -44,3 +44,4 @@ perf::PF252763	크리스마스 선물 하이라이트	relevance
 perf::PF251617	스크루지	relevance			
 perf::PF271681	젤리피쉬	date			
 perf::PF294045	갈매기	relevance			
+perf::PF272413	승천	relevance			
