@@ -19,3 +19,4 @@ perf::PF285931	백조의 호수	relevance
 perf::PF263908	제96회 천안시립합창단 정기연주회	relevance			
 perf::PF269765	한여름 밤의 꿈	relevance			
 perf::PF265276	갓	relevance			
+perf::PF285931	백조의 호수	relevance			
