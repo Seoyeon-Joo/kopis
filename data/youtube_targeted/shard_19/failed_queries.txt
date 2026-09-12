@@ -35,3 +35,4 @@ perf::PF256798	전람회의 그림	relevance
 perf::PF258755	만선	relevance			
 perf::PF240541	록산느를 위한 발라드	relevance			
 perf::PF258755	만선	relevance			
+perf::PF278331	컬렉션	relevance			
