@@ -40,3 +40,4 @@ perf::PF286226	양산30	relevance
 perf::PF253598	똥벼락	relevance			
 perf::PF278683	피가로의 결혼 Le nozze di Figaro	relevance			
 perf::PF270512	전통의 재발견 Ⅵ	relevance			
+perf::PF230602	리어	relevance			
