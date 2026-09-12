@@ -29,3 +29,4 @@ perf::PF260777	달을 쏘다.	relevance
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF274507	우리가 노래하는 세상	relevance			
 perf::PF217261	이상한 엄마 쇼츠	relevance			
+perf::PF260777	달을 쏘다.	relevance			
