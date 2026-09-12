@@ -1,5 +1,4 @@
 perf::PF278396	태풍	relevance			
-perf::PF278396	태풍	relevance			
 perf::PF291789	피아노의 숲	relevance			
 perf::PF288478	호두까기 인형	relevance			
 perf::PF241430	헨젤과 그레텔	relevance			
@@ -33,3 +32,4 @@ perf::PF251746	구립여성합창단	relevance
 perf::PF230622	축제	relevance			
 perf::PF230622	축제	relevance			
 perf::PF230622	축제	relevance			
+perf::PF283897	오즈의 마법사	relevance			
