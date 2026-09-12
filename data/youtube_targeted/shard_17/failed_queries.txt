@@ -1,4 +1,3 @@
-perf::PF282257	신년음악회	relevance			
 perf::PF245213	헤르만 헤세의 음악 세계 리뷰	relevance			
 perf::PF233715	토스카	relevance			
 perf::PF272483	제122회 강릉시립합창단 정기연주회	relevance			
@@ -44,3 +43,4 @@ perf::PF251909	맥베스 리뷰	relevance
 perf::PF251909	맥베스	relevance			
 perf::PF273050	등등곡	relevance			
 perf::PF251909	맥베스	relevance			
+perf::PF245210	자라는 자라	relevance			
