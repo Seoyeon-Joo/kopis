@@ -6803,26 +6803,6 @@
           "김도완"
         ],
         "is_high_demand": false
-      },
-      {
-        "perf_id": "PF297872",
-        "title": "살로메 [창원]",
-        "venue_name": "3.15아트센터",
-        "perf_start_date": "2026-09-12",
-        "perf_end_date": "2026-09-12",
-        "season_rank": 3.0,
-        "genre": "한국음악(국악)",
-        "company_name": "(재)창원문화재단",
-        "cast": [
-          "최예림",
-          "정은혜",
-          "유태평양",
-          "서의철",
-          "정승준",
-          "권태하",
-          "김도완"
-        ],
-        "is_high_demand": false
       }
     ]
   },
@@ -8655,26 +8635,6 @@
           "김지은",
           "조인혁",
           "원재연"
-        ],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF298600",
-        "title": "실험실 콘서트 [인천]",
-        "venue_name": "제물포구문화체육센터(구. 동구문화체육센터)",
-        "perf_start_date": "2026-09-12",
-        "perf_end_date": "2026-09-12",
-        "season_rank": 3.0,
-        "genre": "서양음악(클래식)",
-        "company_name": "제물포구",
-        "cast": [
-          "나웅준",
-          "이경면",
-          "원재연",
-          "이준영",
-          "유이삭",
-          "박병호",
-          "박지혁"
         ],
         "is_high_demand": false
       }
@@ -13056,68 +13016,6 @@
           "조한나",
           "박승화"
         ],
-        "is_high_demand": false
-      }
-    ]
-  },
-  "머야모야::new_1": {
-    "representative_title": "머야모야 (오후 2시) [화성] (9월)",
-    "members": [
-      {
-        "perf_id": "PF299479",
-        "title": "머야모야 (오후 2시) [화성] (9월)",
-        "venue_name": "민들레연극마을",
-        "perf_start_date": "2026-09-12",
-        "perf_end_date": "2026-09-13",
-        "season_rank": 1,
-        "genre": "연극",
-        "company_name": NaN,
-        "cast": [
-          "주소영"
-        ],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF299477",
-        "title": "머야모야 (오전 11시) [화성] (9월)",
-        "venue_name": "민들레연극마을",
-        "perf_start_date": "2026-09-12",
-        "perf_end_date": "2026-09-13",
-        "season_rank": 2,
-        "genre": "연극",
-        "company_name": NaN,
-        "cast": [
-          "주소영"
-        ],
-        "is_high_demand": false
-      }
-    ]
-  },
-  "콧구멍을후비면::new_2": {
-    "representative_title": "콧구멍을 후비면 [서울 노원]",
-    "members": [
-      {
-        "perf_id": "PF297198",
-        "title": "콧구멍을 후비면 [부산 해운대]",
-        "venue_name": "신세계 문화홀 [센텀시티]",
-        "perf_start_date": "2026-09-12",
-        "perf_end_date": "2026-09-13",
-        "season_rank": 1,
-        "genre": "뮤지컬",
-        "company_name": NaN,
-        "cast": [],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF295683",
-        "title": "콧구멍을 후비면 [서울 노원]",
-        "venue_name": "노원어린이극장 (구.노원어울림극장)",
-        "perf_start_date": "2026-09-12",
-        "perf_end_date": "2026-09-13",
-        "season_rank": 2,
-        "genre": "뮤지컬",
-        "company_name": NaN,
-        "cast": [],
         "is_high_demand": false
       }
     ]
