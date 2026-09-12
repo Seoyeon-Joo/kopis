@@ -45,3 +45,4 @@ perf::PF251617	스크루지	relevance
 perf::PF271681	젤리피쉬	date			
 perf::PF294045	갈매기	relevance			
 perf::PF272413	승천	relevance			
+perf::PF271681	젤리피쉬	relevance			
