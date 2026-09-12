@@ -38,3 +38,4 @@ perf::PF257640	일무	relevance
 perf::PF233617	일무 쇼츠	relevance			
 perf::PF257640	일무	relevance			
 perf::PF257640	일무	relevance			
+perf::PF257640	일무	relevance			
