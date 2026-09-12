@@ -39,3 +39,4 @@ perf::PF264923	달 샤베트	relevance
 perf::PF257899	아이다	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF257899	아이다	relevance			
+perf::PF257899	아이다	relevance			
