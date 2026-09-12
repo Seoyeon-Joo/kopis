@@ -34,3 +34,4 @@ perf::PF270834	홍련	relevance
 perf::PF253954	그의 어머니	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF291789	피아노의 숲	relevance			
+perf::PF253954	그의 어머니	relevance			
