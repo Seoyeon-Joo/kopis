@@ -39,3 +39,4 @@ perf::PF263022	단심	relevance
 perf::PF235602	더 북	relevance			
 perf::PF235602	더 북	relevance			
 perf::PF235602	더 북	date			
+perf::PF266553	김덕수와 친구들	relevance			
