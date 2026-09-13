@@ -29,3 +29,4 @@ perf::PF233403	크루서블 도가니	relevance
 perf::PF269536	복수의 씨앗	relevance			
 perf::PF269259	신콩쥐	relevance			
 perf::PF266036	보훈의 달 추념음악회	relevance			
+perf::PF240551	우리의 사명	relevance			
