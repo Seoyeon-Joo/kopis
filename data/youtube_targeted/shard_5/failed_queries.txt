@@ -37,3 +37,4 @@ perf::PF233744	라 트라비아타	relevance
 perf::PF289782	피아니스트 고희안의 Spring Holiday	relevance			
 perf::PF233744	라 트라비아타	relevance			
 perf::PF263867	Great & Joy	relevance			
+perf::PF233744	라 트라비아타	relevance			
