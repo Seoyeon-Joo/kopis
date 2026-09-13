@@ -38,3 +38,4 @@ perf::PF258755	만선	relevance
 perf::PF278331	컬렉션	relevance			
 perf::PF277816	6시 퇴근	relevance			
 perf::PF258755	만선	relevance			
+perf::PF258755	만선	relevance			
