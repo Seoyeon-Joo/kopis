@@ -22,3 +22,4 @@ perf::PF233608	봄	relevance
 perf::PF251499	Star	relevance			
 perf::PF233608	봄	relevance			
 perf::PF233608	봄	relevance			
+perf::PF233608	봄	relevance			
