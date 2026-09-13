@@ -1,4 +1,3 @@
-perf::PF260777	달을 쏘다.	relevance			
 perf::PF260260	제8회 경산시립교향악단 정기연주회	relevance			
 perf::PF250417	라 트라비아타	relevance			
 perf::PF234341	다윈 영의 악의 기원	relevance			
@@ -37,5 +36,6 @@ perf::PF240541	록산느를 위한 발라드	relevance
 perf::PF258755	만선	relevance			
 perf::PF278331	컬렉션	relevance			
 perf::PF277816	6시 퇴근	relevance			
+perf::PF258755	만선	relevance			
 perf::PF258755	만선	relevance			
 perf::PF258755	만선	relevance			
