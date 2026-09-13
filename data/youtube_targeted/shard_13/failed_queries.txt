@@ -33,3 +33,4 @@ perf::PF230622	축제	relevance
 perf::PF230622	축제	relevance			
 perf::PF230622	축제	relevance			
 perf::PF283897	오즈의 마법사	relevance			
+perf::PF230622	축제	relevance			
