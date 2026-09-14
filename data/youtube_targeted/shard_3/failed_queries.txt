@@ -47,3 +47,4 @@ perf::PF288932	코드네임X	relevance
 perf::PF289313	베토벤	relevance			
 perf::PF289313	베토벤	relevance			
 perf::PF283422	흥으로 잇는 세상	relevance			
+perf::PF289313	베토벤	relevance			
