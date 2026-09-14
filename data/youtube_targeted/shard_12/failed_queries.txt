@@ -1,4 +1,3 @@
-perf::PF237163	소리높여 합창포유	relevance			
 perf::PF257640	일무 리뷰	relevance			
 perf::PF264510	폴리팝	relevance			
 perf::PF247044	푸치니 오페라 토스카	relevance			
@@ -34,3 +33,4 @@ perf::PF279326	축제	relevance
 perf::PF234724	백조의 호수	relevance			
 perf::PF276206	생텍쥐페리	relevance			
 perf::PF234724	백조의 호수	relevance			
+perf::PF264403	피노키오와 파란마녀	relevance			
