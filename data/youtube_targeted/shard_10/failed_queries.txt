@@ -49,3 +49,4 @@ perf::PF271681	젤리피쉬	relevance
 perf::PF285068	베르테르	relevance			
 perf::PF242002	햄릿	relevance			
 perf::PF271681	젤리피쉬	relevance			
+perf::PF239545	빙빙 (Being Being)	relevance			
