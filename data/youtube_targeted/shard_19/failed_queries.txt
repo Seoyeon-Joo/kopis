@@ -41,3 +41,4 @@ perf::PF258755	만선	relevance
 perf::PF258755	만선	relevance			
 perf::PF278331	컬렉션	relevance			
 perf::PF283546	국립국악원 설 공연	relevance			
+perf::PF258755	만선	relevance			
