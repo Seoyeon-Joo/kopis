@@ -45,3 +45,4 @@ perf::PF257899	아이다	relevance
 perf::PF285245	60 Stars	relevance			
 perf::PF251009	가을합창축제	relevance			
 perf::PF257899	아이다	relevance			
+perf::PF272531	조선팝 에볼루션 Ⅱ	relevance			
