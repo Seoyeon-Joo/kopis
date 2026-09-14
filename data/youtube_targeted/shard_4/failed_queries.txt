@@ -57,3 +57,4 @@ perf::PF257631	파우스트	relevance
 perf::PF257631	파우스트	relevance			
 perf::PF266067	인어공주	relevance			
 perf::PF264216	미녀와 야수	relevance			
+perf::PF266067	인어공주	relevance			
