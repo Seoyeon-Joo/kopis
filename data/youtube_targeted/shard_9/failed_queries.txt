@@ -31,3 +31,4 @@ perf::PF266036	보훈의 달 추념음악회	relevance
 perf::PF240551	우리의 사명	relevance			
 perf::PF223953	이상한 나라의 앨리스	relevance			
 perf::PF280811	c단조 미사	relevance			
+perf::PF223953	이상한 나라의 앨리스	relevance			
