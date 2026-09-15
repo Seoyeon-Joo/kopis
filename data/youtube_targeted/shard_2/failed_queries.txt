@@ -1,4 +1,3 @@
-perf::PF266067	인어공주	relevance			
 perf::PF261025	포천시립소년소녀합창단	relevance			
 perf::PF254412	호두까기 인형	relevance			
 perf::PF246257	뮤지엄	relevance			
@@ -45,3 +44,4 @@ perf::PF251009	가을합창축제	relevance
 perf::PF257899	아이다	relevance			
 perf::PF272531	조선팝 에볼루션 Ⅱ	relevance			
 perf::PF235577	이강덕	relevance			
+perf::PF257899	아이다	relevance			
