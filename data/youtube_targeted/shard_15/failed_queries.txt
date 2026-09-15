@@ -40,3 +40,4 @@ perf::PF253954	그의 어머니	relevance
 perf::PF249817	라 트라비아타	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF253954	그의 어머니	relevance			
+perf::PF253954	그의 어머니	relevance			
