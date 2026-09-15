@@ -5,8 +5,8 @@ name: Playbill Grosses Weekly Scrape
 # 스크립트 자체가 "이어붙일 신규 주가 없으면 조용히 종료"하도록 만들어서
 # 특정 실행이 네트워크 문제 등으로 실패해도 다음날 자동 재시도되게 함.
 on:
-  schedule:
-    - cron: "0 15 * * *"  # 매일 UTC 15:00 (KST 00:00)
+  #schedule:
+    #- cron: "0 15 * * *"  # 매일 UTC 15:00 (KST 00:00)
   workflow_dispatch: {}     # 수동 실행 버튼
 
 permissions:
