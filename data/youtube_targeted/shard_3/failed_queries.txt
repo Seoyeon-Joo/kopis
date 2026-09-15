@@ -49,3 +49,4 @@ perf::PF289313	베토벤	relevance
 perf::PF283422	흥으로 잇는 세상	relevance			
 perf::PF289313	베토벤	relevance			
 perf::PF289313	베토벤	relevance			
+perf::PF230526	완창판소리 (3월)	relevance			
