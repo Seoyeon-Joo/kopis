@@ -36,3 +36,4 @@ perf::PF234724	백조의 호수	relevance
 perf::PF264403	피노키오와 파란마녀	relevance			
 perf::PF234724	백조의 호수	relevance			
 perf::PF234724	백조의 호수	relevance			
+perf::PF269547	심청	relevance			
