@@ -45,3 +45,4 @@ perf::PF270512	전통의 재발견 Ⅵ	relevance
 perf::PF281245	교향곡 2번	relevance			
 perf::PF225394	이상한 엄마	relevance			
 perf::PF230602	리어 리뷰	relevance			
+perf::PF230602	리어	relevance			
