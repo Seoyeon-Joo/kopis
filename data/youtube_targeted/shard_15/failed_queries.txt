@@ -43,3 +43,4 @@ perf::PF253954	그의 어머니	relevance
 perf::PF253954	그의 어머니	relevance			
 perf::PF259785	항해	relevance			
 perf::PF253954	그의 어머니	relevance			
+perf::PF253954	그의 어머니	relevance			
