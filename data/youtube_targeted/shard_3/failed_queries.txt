@@ -51,3 +51,4 @@ perf::PF289313	베토벤	relevance
 perf::PF289313	베토벤	relevance			
 perf::PF230526	완창판소리 (3월)	relevance			
 perf::PF279879	호두까기 인형	date			
+perf::PF284622	축제	relevance			
