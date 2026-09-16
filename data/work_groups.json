@@ -13019,5 +13019,50 @@
         "is_high_demand": false
       }
     ]
+  },
+  "문학주간곁눈질::new_1": {
+    "representative_title": "문학주간, 곁눈질 [아르코꿈밭극장]",
+    "members": [
+      {
+        "perf_id": "PF300224",
+        "title": "문학주간, 곁눈질 [아르코꿈밭극장]",
+        "venue_name": "아르코 꿈밭극장",
+        "perf_start_date": "2026-09-16",
+        "perf_end_date": "2026-09-20",
+        "season_rank": 1,
+        "genre": "복합",
+        "company_name": NaN,
+        "cast": [
+          "윤태호",
+          "이원영",
+          "천운영",
+          "김병운",
+          "김지연",
+          "박선우",
+          "하은빈"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF300220",
+        "title": "문학주간, 곁눈질 [아르코예술극장]",
+        "venue_name": "아르코예술극장",
+        "perf_start_date": "2026-09-16",
+        "perf_end_date": "2026-09-20",
+        "season_rank": 2,
+        "genre": "복합",
+        "company_name": NaN,
+        "cast": [
+          "김소연",
+          "이제니",
+          "임솔아",
+          "하미나",
+          "이민하",
+          "김진선",
+          "홍지호"
+        ],
+        "is_high_demand": false
+      }
+    ]
   }
 }
