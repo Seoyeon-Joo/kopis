@@ -1,5 +1,3 @@
-perf::PF278396	태풍	relevance			
-perf::PF288478	호두까기 인형	relevance			
 perf::PF262226	불가불가 (不可不可)	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF278396	태풍	relevance			
@@ -37,3 +35,4 @@ perf::PF254004	완창판소리 (6월)	relevance
 perf::PF269581	코레오 커넥션	relevance			
 perf::PF230622	축제	relevance			
 perf::PF280071	그리움에서 희망으로	relevance			
+perf::PF291470	사의 찬미	date			
