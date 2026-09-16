@@ -1,5 +1,3 @@
-perf::PF261025	포천시립소년소녀합창단	relevance			
-perf::PF254412	호두까기 인형	relevance			
 perf::PF246257	뮤지엄	relevance			
 perf::PF278924	송년음악회	relevance			
 perf::PF266067	인어공주	relevance			
@@ -48,3 +46,4 @@ perf::PF257899	아이다	relevance
 perf::PF247461	평택시립국악관현악단	relevance			
 perf::PF271546	춤 스케치	relevance			
 perf::PF257899	아이다	relevance			
+perf::PF291223	시네마 클래식 쇼츠	relevance			
