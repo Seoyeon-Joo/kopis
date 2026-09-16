@@ -1,4 +1,3 @@
-perf::PF278891	가거라 삼팔선	relevance			
 perf::PF241448	포항시립교향악단 with 라포엠 쇼츠	relevance			
 perf::PF269594	완창판소리 (11월)	relevance			
 perf::PF263674	레미제라블	relevance			
@@ -45,3 +44,4 @@ perf::PF271596	자라는 자라	relevance
 perf::PF263022	단심	relevance			
 perf::PF240138	벨벳토끼	relevance			
 perf::PF258940	그녀의 계절	relevance			
+perf::PF247793	함안의 편지	relevance			
