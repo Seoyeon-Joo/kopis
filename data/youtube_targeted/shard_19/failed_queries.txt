@@ -44,3 +44,4 @@ perf::PF258755	만선	relevance
 perf::PF271522	옛 노래	relevance			
 perf::PF283546	국립국악원 설 공연 리뷰	relevance			
 perf::PF233715	토스카 쇼츠	relevance			
+perf::PF258755	만선 리뷰	relevance			
