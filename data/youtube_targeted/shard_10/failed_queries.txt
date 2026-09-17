@@ -52,3 +52,4 @@ perf::PF271681	젤리피쉬	relevance
 perf::PF242002	햄릿	relevance			
 perf::PF260781	클래식 음악 여행 쇼츠	date			
 perf::PF278924	송년음악회	relevance			
+perf::PF285068	베르테르	relevance			
