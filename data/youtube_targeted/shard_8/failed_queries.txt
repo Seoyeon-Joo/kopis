@@ -24,3 +24,4 @@ perf::PF294563	피아노의 숲	relevance
 perf::PF233608	봄	relevance			
 perf::PF235542	원천 (O川)	relevance			
 perf::PF269259	신콩쥐	relevance			
+perf::PF233608	봄	relevance			
