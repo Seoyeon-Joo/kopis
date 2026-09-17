@@ -31,3 +31,4 @@ perf::PF282257	신년음악회	relevance
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF279374	공존	relevance			
+perf::PF260777	달을 쏘다.	relevance			
