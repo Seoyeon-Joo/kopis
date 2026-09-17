@@ -1,4 +1,3 @@
-perf::PF260260	제8회 경산시립교향악단 정기연주회 쇼츠	date			
 perf::PF242585	제66회 안산시립국악단 정기연주회	relevance			
 perf::PF241498	청소년 협주곡의 밤	relevance			
 perf::PF241498	청소년 협주곡의 밤	relevance			
@@ -46,3 +45,4 @@ perf::PF225394	이상한 엄마	relevance
 perf::PF230602	리어 리뷰	relevance			
 perf::PF230602	리어	relevance			
 perf::PF271070	제180회 춘천시립교향악단 정기연주회 쇼츠	relevance			
+perf::PF230602	리어	relevance			
