@@ -1,4 +1,3 @@
-perf::PF272483	제122회 강릉시립합창단 정기연주회	relevance			
 perf::PF243045	The Sage	relevance			
 perf::PF258984	마술피리	relevance			
 perf::PF243045	The Sage	relevance			
@@ -57,3 +56,4 @@ perf::PF286425	바람 사랑 꽃 희망의 노래	relevance
 perf::PF254307	월드오케스트라6	relevance			
 perf::PF268517	밀정리스트	relevance			
 perf::PF251909	맥베스	relevance			
+perf::PF254307	월드오케스트라6	relevance			
