@@ -34,3 +34,4 @@ perf::PF223953	이상한 나라의 앨리스	relevance
 perf::PF269536	복수의 씨앗	relevance			
 perf::PF281247	교향곡 1번	relevance			
 perf::PF284086	정글	relevance			
+perf::PF269536	복수의 씨앗	relevance			
