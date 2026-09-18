@@ -9713,26 +9713,6 @@
           "전필재"
         ],
         "is_high_demand": false
-      },
-      {
-        "perf_id": "PF298524",
-        "title": "의자 고치는 여인 [서울 광진]",
-        "venue_name": "나루아트센터",
-        "perf_start_date": "2026-09-18",
-        "perf_end_date": "2026-09-20",
-        "season_rank": 6.0,
-        "genre": "연극",
-        "company_name": "옐로밤",
-        "cast": [
-          "김준삼",
-          "오주원",
-          "진여준",
-          "신서진",
-          "조정민",
-          "권설아",
-          "왕수희"
-        ],
-        "is_high_demand": false
       }
     ]
   },
@@ -13035,51 +13015,6 @@
           "김남표",
           "조한나",
           "박승화"
-        ],
-        "is_high_demand": false
-      }
-    ]
-  },
-  "사랑해엄마::new_1": {
-    "representative_title": "사랑해 엄마 [고창]",
-    "members": [
-      {
-        "perf_id": "PF300635",
-        "title": "사랑해 엄마 [고창]",
-        "venue_name": "고창문화의전당",
-        "perf_start_date": "2026-09-16",
-        "perf_end_date": "2026-09-16",
-        "season_rank": 1,
-        "genre": "연극",
-        "company_name": NaN,
-        "cast": [
-          "조혜련",
-          "이서주",
-          "정지환",
-          "조지환",
-          "김연수",
-          "유민정",
-          "엄대"
-        ],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF300385",
-        "title": "사랑해 엄마 [의령]",
-        "venue_name": "의령군민문화회관",
-        "perf_start_date": "2026-09-18",
-        "perf_end_date": "2026-09-18",
-        "season_rank": 2,
-        "genre": "연극",
-        "company_name": NaN,
-        "cast": [
-          "조혜련",
-          "안대겸",
-          "조지환",
-          "이서주",
-          "김연수",
-          "유민정",
-          "성보람"
         ],
         "is_high_demand": false
       }
