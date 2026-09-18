@@ -47,3 +47,4 @@ perf::PF271070	제180회 춘천시립교향악단 정기연주회 쇼츠	relevan
 perf::PF230602	리어	relevance			
 perf::PF281245	교향곡 2번	relevance			
 perf::PF230602	리어	relevance			
+perf::PF269784	광복의 빛을 넘어	relevance			
