@@ -44,3 +44,4 @@ perf::PF276885	헨젤과 그레텔	relevance
 perf::PF253954	그의 어머니	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF253954	그의 어머니	relevance			
+perf::PF276885	헨젤과 그레텔	relevance			
