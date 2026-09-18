@@ -40,3 +40,4 @@ perf::PF234531	라벨 다프니스와 클로에 모음곡 제2번	relevance
 perf::PF268686	피버 (FEVER)	relevance			
 perf::PF268686	피버 (FEVER)	relevance			
 perf::PF233744	라 트라비아타	date			
+perf::PF233744	라 트라비아타	relevance			
