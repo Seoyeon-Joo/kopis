@@ -54,3 +54,4 @@ perf::PF242516	햄릿	relevance
 perf::PF238942	슈퍼 파워	relevance			
 perf::PF244624	거인의 정원	relevance			
 perf::PF256786	레퀴엠	relevance			
+perf::PF242516	햄릿	relevance			
