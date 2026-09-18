@@ -9,3 +9,4 @@ perf::PF256187	신년음악회	relevance
 perf::PF256187	신년음악회	relevance			
 perf::PF286597	진정성 Ⅰ. 전통을 대하는 태도 하이라이트	relevance			
 perf::PF263022	단심	relevance			
+perf::PF259237	New song & New action	relevance			
