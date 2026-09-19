@@ -1,5 +1,4 @@
 perf::PF233617	일무	relevance			
-perf::PF233617	일무	relevance			
 perf::PF234670	Drama	relevance			
 perf::PF262269	걸음마 콘서트 쇼츠	relevance			
 perf::PF261746	New World	relevance			
@@ -55,3 +54,4 @@ perf::PF240292	DIVINE	relevance
 perf::PF234507	마리 퀴리	relevance			
 perf::PF240292	DIVINE	relevance			
 perf::PF261025	포천시립소년소녀합창단	relevance			
+perf::PF269338	함께! Ⅰ	relevance			
