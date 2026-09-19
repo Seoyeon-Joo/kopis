@@ -562,6 +562,26 @@
           "남희진"
         ],
         "is_high_demand": false
+      },
+      {
+        "perf_id": "PF300719",
+        "title": "강아지똥 [장성]",
+        "venue_name": "장성문화예술회관",
+        "perf_start_date": "2026-09-19",
+        "perf_end_date": "2026-09-19",
+        "season_rank": 6.0,
+        "genre": "연극",
+        "company_name": NaN,
+        "cast": [
+          "정래석",
+          "이희연",
+          "안중현",
+          "고예본",
+          "오명준",
+          "류제원",
+          "남희진"
+        ],
+        "is_high_demand": false
       }
     ]
   },
