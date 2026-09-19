@@ -41,3 +41,4 @@ perf::PF268686	피버 (FEVER)	relevance
 perf::PF233744	라 트라비아타	date			
 perf::PF233744	라 트라비아타	relevance			
 perf::PF233744	라 트라비아타	relevance			
+perf::PF233744	라 트라비아타 하이라이트	relevance			
