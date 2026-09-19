@@ -54,3 +54,4 @@ perf::PF252131	덧배기블루스	relevance
 perf::PF226022	벽을 허물다	relevance			
 perf::PF240292	DIVINE	relevance			
 perf::PF234507	마리 퀴리	relevance			
+perf::PF240292	DIVINE	relevance			
