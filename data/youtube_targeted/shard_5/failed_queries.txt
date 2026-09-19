@@ -42,3 +42,4 @@ perf::PF233744	라 트라비아타	date
 perf::PF233744	라 트라비아타	relevance			
 perf::PF233744	라 트라비아타	relevance			
 perf::PF233744	라 트라비아타 하이라이트	relevance			
+perf::PF250997	가을수채화 리뷰	relevance			
