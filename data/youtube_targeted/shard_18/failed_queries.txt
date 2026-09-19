@@ -48,3 +48,4 @@ perf::PF230602	리어	relevance
 perf::PF269784	광복의 빛을 넘어	relevance			
 perf::PF230602	리어	relevance			
 perf::PF230602	리어	relevance			
+perf::PF271418	겨울 그리고 다시 봄	relevance			
