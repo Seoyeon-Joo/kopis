@@ -1,4 +1,3 @@
-perf::PF254412	호두까기 인형	relevance			
 perf::PF266067	인어공주	relevance			
 perf::PF226022	벽을 허물다	relevance			
 perf::PF266067	인어공주	relevance			
@@ -46,3 +45,4 @@ perf::PF235456	봄의 길목에서	relevance
 perf::PF272531	조선팝 에볼루션 Ⅱ	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF271426	지젤	relevance			
+perf::PF257899	아이다 리뷰	relevance			
