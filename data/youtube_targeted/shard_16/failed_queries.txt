@@ -12,3 +12,4 @@ perf::PF263022	단심	relevance
 perf::PF259237	New song & New action	relevance			
 perf::PF275510	재밌는 국악 신나는 국악	relevance			
 perf::PF263022	단심 쇼츠	date			
+perf::PF252462	이기동 체육관	relevance			
