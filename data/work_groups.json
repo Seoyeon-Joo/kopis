@@ -11,15 +11,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김애진",
-          "박시유",
-          "남동진",
-          "신용진",
-          "홍성호",
-          "홍현택",
-          "강진휘"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -31,15 +23,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김애진",
-          "박시유",
-          "남동진",
-          "신용진",
-          "홍성호",
-          "홍현택",
-          "강진휘"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -55,16 +39,8 @@
         "perf_end_date": "2023-10-07",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "극단 산수유",
-        "cast": [
-          "홍성춘",
-          "남동진",
-          "오일영",
-          "신용진",
-          "한상훈",
-          "김도완",
-          "현은영"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -75,16 +51,8 @@
         "perf_end_date": "2023-09-09",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "극단 산수유",
-        "cast": [
-          "홍성춘",
-          "남동진",
-          "오일영",
-          "신용진",
-          "한상훈",
-          "김도완",
-          "현은영"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -101,15 +69,7 @@
         "season_rank": 2.0,
         "genre": "복합",
         "company_name": "",
-        "cast": [
-          "김기원",
-          "서기철",
-          "변지영",
-          "최용호",
-          "정은선",
-          "박종선",
-          "서승현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -121,15 +81,7 @@
         "season_rank": 1.0,
         "genre": "복합",
         "company_name": "",
-        "cast": [
-          "김기원",
-          "서기철",
-          "변지영",
-          "최용호",
-          "정은선",
-          "박종선",
-          "서승현"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -158,14 +110,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김태호",
-          "홍은기",
-          "정소연",
-          "김석주",
-          "박태성",
-          "정지은"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -182,14 +127,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "박정휘",
-          "신혜수",
-          "안유진",
-          "윤사랑",
-          "이진우",
-          "임가현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -201,13 +139,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "박정휘",
-          "신혜수",
-          "안유진",
-          "윤사랑",
-          "임가현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -219,15 +151,7 @@
         "season_rank": 4.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "기무간",
-          "박정휘",
-          "신혜수",
-          "안유진",
-          "윤사랑",
-          "이진우",
-          "임가현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -239,14 +163,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "박정휘",
-          "신혜수",
-          "안유진",
-          "윤사랑",
-          "이진우",
-          "임가현"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -262,16 +179,8 @@
         "perf_end_date": "2024-09-13",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "라이노컴퍼니(구. 극단 셰익스피어)",
-        "cast": [
-          "박찬우",
-          "김기영",
-          "이시윤",
-          "이상혁",
-          "엄채윤",
-          "엄슬기",
-          "김경태"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -282,16 +191,8 @@
         "perf_end_date": "2024-07-26",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "라이노컴퍼니(구. 극단 셰익스피어)",
-        "cast": [
-          "박찬우",
-          "김기영",
-          "이시윤",
-          "이상혁",
-          "엄채윤",
-          "엄슬기",
-          "김경태"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -308,9 +209,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김유원"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -322,9 +221,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김유원"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -341,13 +238,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "백승렬",
-          "권소이",
-          "김소정",
-          "박성하",
-          "박소연"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -388,15 +279,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "허준",
-          "김대종",
-          "조민성",
-          "김재훈",
-          "김수지",
-          "안연제",
-          "이창근"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -408,15 +291,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이창근",
-          "김대종",
-          "조민성",
-          "김재훈",
-          "김수지",
-          "안연제",
-          "허준"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -433,15 +308,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "강서연",
-          "박정은",
-          "박혜민",
-          "배수연",
-          "우은영",
-          "임인하",
-          "정혜윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -453,14 +320,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "정이진",
-          "양희재",
-          "양예진",
-          "임인하",
-          "배수연",
-          "정혜윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -489,13 +349,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박금도",
-          "안지민",
-          "안춘기",
-          "나채원",
-          "정민"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -511,16 +365,8 @@
         "perf_end_date": "2025-04-12",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "극단 모시는사람들",
-        "cast": [
-          "안중현",
-          "고예본",
-          "정래석",
-          "오명준",
-          "류제원",
-          "이희연",
-          "남희진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -531,16 +377,8 @@
         "perf_end_date": "2026-06-13",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "(재) 전북특별자치도 문화관광재단, 극단 모시는사람들",
-        "cast": [
-          "정래석",
-          "이희연",
-          "허정진",
-          "안중현",
-          "오명준",
-          "류제원",
-          "남희진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -551,16 +389,8 @@
         "perf_end_date": "2026-06-20",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "극단 모시는사람들, 극단 모시는사람들, 민주공원",
-        "cast": [
-          "정래석",
-          "이희연",
-          "허정진",
-          "안중현",
-          "오명준",
-          "류제원",
-          "남희진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -577,13 +407,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김소연",
-          "김재은",
-          "강소연",
-          "전미라",
-          "정하연"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -595,13 +419,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김소연",
-          "김재은",
-          "강소연",
-          "전미라",
-          "정하연"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -618,15 +436,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "함태영",
-          "서담희",
-          "박석현",
-          "한상욱",
-          "유선봉",
-          "임창현",
-          "신가인"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -638,15 +448,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "함태영",
-          "서담희",
-          "박석현",
-          "한상욱",
-          "유선봉",
-          "임창현",
-          "신가인"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -662,16 +464,8 @@
         "perf_end_date": "2025-05-14",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "경남도립극단",
-        "cast": [
-          "천영훈",
-          "박진수",
-          "윤재진",
-          "윤하진",
-          "김규도",
-          "이은주",
-          "박예선"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -682,16 +476,8 @@
         "perf_end_date": "2025-05-01",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "경남도립극단",
-        "cast": [
-          "천영훈",
-          "박진수",
-          "윤재진",
-          "윤하진",
-          "김규도",
-          "이은주",
-          "박예선"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -708,15 +494,7 @@
         "season_rank": 5.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "최동석",
-          "황윤희",
-          "송광일",
-          "김진호",
-          "양우진",
-          "임고은",
-          "임규섭"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -740,15 +518,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "최동석",
-          "권소연",
-          "김진호",
-          "조희윤",
-          "양우진",
-          "송광일",
-          "황윤희"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -765,13 +535,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "양선아",
-          "윤미란",
-          "김여름",
-          "정일행",
-          "정수린"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -783,13 +547,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "양선아",
-          "윤미란",
-          "김여름",
-          "정일행",
-          "정수린"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -801,13 +559,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "양선아",
-          "윤미란",
-          "김여름",
-          "정일행",
-          "정수린"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -824,15 +576,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "황유정",
-          "김소영",
-          "홍주연",
-          "허요완",
-          "김도영",
-          "허대청",
-          "임예섭"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -844,15 +588,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "이고은",
-          "김도영",
-          "김효은",
-          "박종호",
-          "황유정",
-          "김소영",
-          "이기행"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -881,15 +617,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이정주",
-          "정해성",
-          "김태례",
-          "빈중영",
-          "박정인",
-          "이선희",
-          "김원근"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -906,13 +634,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이서희",
-          "김다은",
-          "이정주",
-          "정선심",
-          "도경한"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -924,12 +646,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "정승기",
-          "김준영",
-          "이정주",
-          "김다은"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -941,12 +658,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "도경한",
-          "박무성",
-          "박애화",
-          "박형진"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -963,15 +675,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "박천지",
-          "윤현상",
-          "홍지혜",
-          "이광복",
-          "최용석",
-          "유태평양",
-          "김수인"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -982,10 +686,8 @@
         "perf_end_date": "2024-01-12",
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
-        "company_name": "국립국악관현악단",
-        "cast": [
-          "황세희"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -997,13 +699,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "박천지",
-          "김영랑",
-          "전민경",
-          "김준수",
-          "추다혜"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1019,16 +715,8 @@
         "perf_end_date": "2024-05-06",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단, (재) 국립극단",
-        "cast": [
-          "이중현",
-          "박경주",
-          "이호철",
-          "이다혜",
-          "안창현",
-          "정다연",
-          "문예주"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1039,16 +727,8 @@
         "perf_end_date": "2024-05-25",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
-        "cast": [
-          "문예주",
-          "박경주",
-          "서원",
-          "안창현",
-          "이다혜",
-          "이중현",
-          "이혜미"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1059,7 +739,7 @@
         "perf_end_date": "2024-06-01",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -1071,16 +751,8 @@
         "perf_end_date": "2024-06-08",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
-        "cast": [
-          "이중현",
-          "박경주",
-          "이다혜",
-          "정다연",
-          "구본혁",
-          "이호철",
-          "안창현"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1091,16 +763,8 @@
         "perf_end_date": "2024-05-17",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
-        "cast": [
-          "문예주",
-          "이중현",
-          "박경주",
-          "이호철",
-          "성원",
-          "이후징",
-          "안창현"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1116,16 +780,8 @@
         "perf_end_date": "2025-07-06",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
-        "cast": [
-          "강해진",
-          "성원",
-          "구본혁",
-          "이경민",
-          "권재원",
-          "이승우",
-          "김현민"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1136,16 +792,8 @@
         "perf_end_date": "2025-08-09",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
-        "cast": [
-          "강해진",
-          "구본혁",
-          "권재원",
-          "김현민",
-          "박경주",
-          "백승연",
-          "성원"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1162,15 +810,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "강해진",
-          "구본혁",
-          "권재원",
-          "김현민",
-          "박경주",
-          "백승연",
-          "성원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1194,15 +834,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "강해진",
-          "성원",
-          "구본혁",
-          "이경민",
-          "권재원",
-          "이승우",
-          "김현민"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1219,15 +851,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이혜영",
-          "윤상화",
-          "고수희",
-          "송인성",
-          "김명기",
-          "김은우",
-          "박은호"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1239,9 +863,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이혜영"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1258,15 +880,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김미애",
-          "김은이",
-          "박지은",
-          "황용천",
-          "조용진",
-          "박혜지",
-          "황태인"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1289,7 +903,7 @@
         "perf_end_date": "2026-04-17",
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "속초문화예술회관",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       }
@@ -1307,12 +921,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "장현수",
-          "조용진",
-          "조승열",
-          "김미애"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1353,15 +962,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "강길원",
-          "윤영진",
-          "정승희",
-          "고준석",
-          "손재영",
-          "서진희",
-          "박은선"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1373,15 +974,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "강길원",
-          "윤영진",
-          "정승희",
-          "고준석",
-          "손재영",
-          "서진희",
-          "박은선"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1393,12 +986,7 @@
         "season_rank": 4.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김강수",
-          "정승희",
-          "고준석",
-          "손재영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1409,13 +997,8 @@
         "perf_end_date": "2025-09-06",
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
-        "company_name": "국립민속국악원",
-        "cast": [
-          "김강수",
-          "정승희",
-          "고준석",
-          "손재영"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1432,14 +1015,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "이병욱",
-          "조연재",
-          "심현희",
-          "안수연",
-          "조연재",
-          "이재우"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1451,12 +1027,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "조연재",
-          "이재우",
-          "안수연",
-          "변성완"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1484,7 +1055,7 @@
         "perf_end_date": "2024-03-16",
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "(재)국립발레단",
+        "company_name": "",
         "cast": [],
         "is_high_demand": true
       },
@@ -1496,7 +1067,7 @@
         "perf_end_date": "2024-03-21",
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "(재)국립발레단",
+        "company_name": "",
         "cast": [],
         "is_high_demand": true
       }
@@ -1514,14 +1085,7 @@
         "season_rank": 5.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "박슬기",
-          "박세은",
-          "조연재",
-          "허서명",
-          "김기완",
-          "박종석"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1533,12 +1097,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "박슬기",
-          "조연재",
-          "허서명",
-          "박종석"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1608,10 +1167,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "정치용",
-          "유다윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1623,10 +1179,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "정치용",
-          "유다윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1643,15 +1196,7 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김수정",
-          "김누리",
-          "유신희",
-          "정제학",
-          "정희경",
-          "박의현",
-          "강도호"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -1675,15 +1220,7 @@
         "season_rank": 11.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "강은총",
-          "박채원",
-          "김재열",
-          "양진영",
-          "이승우",
-          "박승빈",
-          "구나운"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1695,15 +1232,7 @@
         "season_rank": 9.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김지환",
-          "김수정",
-          "유신희",
-          "정제학",
-          "김효주",
-          "이미영",
-          "윤희섭"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1715,15 +1244,7 @@
         "season_rank": 10.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김지환",
-          "오예은",
-          "유신희",
-          "정제학",
-          "김효주",
-          "이미영",
-          "윤희섭"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1747,15 +1268,7 @@
         "season_rank": 8.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "오예은",
-          "유신희",
-          "김원",
-          "김효주",
-          "이미영",
-          "최공석",
-          "강도호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1767,15 +1280,7 @@
         "season_rank": 7.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "오예은",
-          "정제학",
-          "이미영",
-          "유신희",
-          "김효주",
-          "윤희섭",
-          "강도호"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1792,15 +1297,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박세진",
-          "강성빈",
-          "정주연",
-          "최영원",
-          "김보현",
-          "이재훈",
-          "김유라"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1824,15 +1321,7 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "송안훈",
-          "김원",
-          "오예은",
-          "김효주",
-          "윤희섭",
-          "김세린",
-          "유신희"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1844,15 +1333,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "송안훈",
-          "김원",
-          "오예은",
-          "윤희섭",
-          "김세린",
-          "유신희",
-          "정제학"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1864,14 +1345,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이단비",
-          "김동일",
-          "김원",
-          "정제학",
-          "오예은",
-          "이상호"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1888,15 +1362,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김원",
-          "김수정",
-          "최공석",
-          "김유라",
-          "강도호",
-          "정제학",
-          "김병헌"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1908,15 +1374,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김원",
-          "유신희",
-          "김수정",
-          "최공석",
-          "김유라",
-          "강도호",
-          "정제학"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -1933,15 +1391,7 @@
         "season_rank": 6.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김원",
-          "오예은",
-          "강도호",
-          "신성희",
-          "이상봉",
-          "이미영",
-          "윤희섭"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1965,15 +1415,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김원",
-          "김수정",
-          "최공석",
-          "김현정",
-          "조정희",
-          "한지수",
-          "이민혁"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -1985,15 +1427,7 @@
         "season_rank": 7.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김원",
-          "강도호",
-          "오예은",
-          "신성희",
-          "최공석",
-          "이상봉",
-          "이미영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2005,15 +1439,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "유신희",
-          "김수정",
-          "김세린",
-          "최공석",
-          "강도호",
-          "김현정",
-          "박의현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2042,13 +1468,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "로베르토 사카",
-          "레이첼 니콜스",
-          "오미선",
-          "양준모",
-          "최인식"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -2060,15 +1480,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "로베르토 사카",
-          "박성규",
-          "레이첼 니콜스",
-          "오미선",
-          "양준모",
-          "최성규",
-          "임은경"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -2080,15 +1492,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "로베르토 사카",
-          "신현식",
-          "레이철 니콜스",
-          "오미선",
-          "양준모",
-          "최성규",
-          "강도호"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2129,15 +1533,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이광복",
-          "김수인",
-          "최용석",
-          "서정금",
-          "이나경",
-          "박성우",
-          "김금미"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2166,15 +1562,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김유진",
-          "지명인",
-          "이재현",
-          "강나현",
-          "강소리",
-          "강은비",
-          "김란이"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2202,16 +1590,8 @@
         "perf_end_date": "2026-01-17",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
-        "cast": [
-          "황혜원",
-          "김해미",
-          "문지영",
-          "소진희",
-          "양도담",
-          "오채령",
-          "이승은"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -2222,16 +1602,8 @@
         "perf_end_date": "2026-02-01",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
-        "cast": [
-          "김재민",
-          "김재형",
-          "김태완",
-          "김해미",
-          "문지영",
-          "소진희",
-          "심규형"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2242,16 +1614,8 @@
         "perf_end_date": "2026-02-07",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단",
-        "cast": [
-          "김재민",
-          "김재형",
-          "김태완",
-          "김해미",
-          "문지영",
-          "소진희",
-          "심규형"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2262,16 +1626,8 @@
         "perf_end_date": "2026-01-24",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단, (주)원앤원엔터테인먼트",
-        "cast": [
-          "황혜원",
-          "김해미",
-          "문지영",
-          "소진희",
-          "양도담",
-          "오채령",
-          "이승은"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2282,16 +1638,8 @@
         "perf_end_date": "2026-02-28",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단, (주)원앤원엔터테인먼트",
-        "cast": [
-          "황혜원",
-          "김해미",
-          "문지영",
-          "소진희",
-          "양도담",
-          "오채령",
-          "이승은"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2308,13 +1656,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박소영",
-          "백재은",
-          "김세일",
-          "이응광",
-          "이동규"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2326,13 +1668,7 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이혜정",
-          "백재은",
-          "이응광",
-          "정민호",
-          "박수용"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2344,14 +1680,7 @@
         "season_rank": 6.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "민인기",
-          "박소영",
-          "김세린",
-          "김세일",
-          "이응광",
-          "정민호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2363,14 +1692,7 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이혜정",
-          "백재은",
-          "박회림",
-          "윤태현",
-          "정민호",
-          "박수용"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2387,13 +1709,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "민인기",
-          "김성은",
-          "박의준",
-          "염경묵",
-          "김민서"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2405,13 +1721,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김방술",
-          "박의준",
-          "염경묵",
-          "강채연",
-          "김민준"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2423,13 +1733,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김방술",
-          "박의준",
-          "염경묵",
-          "강채연",
-          "김민준"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2441,13 +1745,7 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "민인기",
-          "이혜정",
-          "박의준",
-          "염경묵",
-          "김민서"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2493,15 +1791,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "장영숙",
-          "박미자",
-          "진지영",
-          "조윤정",
-          "정경임",
-          "신영미",
-          "김은정"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2513,12 +1803,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "민인기",
-          "성다혜",
-          "서미경",
-          "김민환"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2535,14 +1820,7 @@
         "season_rank": 5.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "정범관",
-          "김미리",
-          "김영은",
-          "김현주",
-          "박준영",
-          "김윤현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2554,13 +1832,7 @@
         "season_rank": 6.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "권혁",
-          "김소연",
-          "김혜진",
-          "변혜림",
-          "이우빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2577,15 +1849,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김희준",
-          "도윤승",
-          "류지수",
-          "백소리",
-          "서예진",
-          "손승리",
-          "윤태준"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2597,15 +1861,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김윤지",
-          "김희준",
-          "도윤승",
-          "류지수",
-          "백소리",
-          "서예진",
-          "손승리"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2617,15 +1873,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김윤지",
-          "김희준",
-          "도윤승",
-          "류지수",
-          "백소리",
-          "서예진",
-          "손승리"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2641,16 +1889,8 @@
         "perf_end_date": "2025-05-17",
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "(재)국립현대무용단",
-        "cast": [
-          "고다희",
-          "김래혁",
-          "김승록",
-          "문형수",
-          "박수진",
-          "양병현",
-          "오영훈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2661,7 +1901,7 @@
         "perf_end_date": "2026-05-05",
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "(재)국립현대무용단, (재)창원문화재단",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       }
@@ -2679,15 +1919,7 @@
         "season_rank": 4.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "고다희",
-          "김승록",
-          "문형수",
-          "박수진",
-          "신상미",
-          "양병현",
-          "오영훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2711,15 +1943,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "고다희",
-          "김래혁",
-          "김승록",
-          "문형수",
-          "박수진",
-          "양병현",
-          "오영훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2755,15 +1979,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "고다희",
-          "김래혁",
-          "김승록",
-          "문형수",
-          "박수진",
-          "양병현",
-          "오영훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2804,15 +2020,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "강성룡",
-          "강승현",
-          "김민아",
-          "김윤미",
-          "김윤현",
-          "양지연",
-          "유다정"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2829,15 +2037,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이예원",
-          "김성은",
-          "노민지",
-          "서하영",
-          "정두리",
-          "선찬주",
-          "김희영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2849,15 +2049,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김성은",
-          "노민지",
-          "서하영",
-          "최세리",
-          "정두리",
-          "김희영",
-          "박수지"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2874,10 +2066,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이명근",
-          "방인주"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2889,12 +2078,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이명근",
-          "이연두",
-          "유지민",
-          "조석준"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2910,10 +2094,8 @@
         "perf_end_date": "2024-04-04",
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
-        "company_name": "군산시청",
-        "cast": [
-          "주광영"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2924,10 +2106,8 @@
         "perf_end_date": "2026-02-05",
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
-        "company_name": "군산시청",
-        "cast": [
-          "조은혜"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2944,12 +2124,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "길은성",
-          "양경원",
-          "오의식",
-          "박은석"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2961,12 +2136,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "오의식",
-          "차용학",
-          "김설진",
-          "양경원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -2978,12 +2148,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이동하",
-          "차용학",
-          "박은석",
-          "양경원"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -2999,12 +2164,8 @@
         "perf_end_date": "2023-09-02",
         "season_rank": 8.0,
         "genre": "연극",
-        "company_name": "(재)창원문화재단, 공연배달서비스간다",
-        "cast": [
-          "김설진",
-          "양경원",
-          "오의식"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3015,13 +2176,8 @@
         "perf_end_date": "2023-08-27",
         "season_rank": 7.0,
         "genre": "연극",
-        "company_name": "공연배달서비스간다",
-        "cast": [
-          "이동하",
-          "길은성",
-          "오의식",
-          "양경원"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3038,13 +2194,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "홍나현",
-          "안지환",
-          "이강혁",
-          "김지훈",
-          "이선주"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3056,13 +2206,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "홍나현",
-          "안지환",
-          "이강혁",
-          "김지훈",
-          "이선주"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3078,16 +2222,8 @@
         "perf_end_date": "2024-09-28",
         "season_rank": 4.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단",
-        "cast": [
-          "김건혜",
-          "하은서",
-          "박재은",
-          "김백현",
-          "최인형",
-          "이한수",
-          "송문선"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -3098,7 +2234,7 @@
         "perf_end_date": "2024-07-27",
         "season_rank": 3.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단, 대전시립연정국악원",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -3110,16 +2246,8 @@
         "perf_end_date": "2024-10-26",
         "season_rank": 5.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단",
-        "cast": [
-          "하은서",
-          "최인형",
-          "서연정",
-          "이혜수",
-          "이기완",
-          "안재홍",
-          "금승훈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3136,11 +2264,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "강애심",
-          "임강희",
-          "김도실"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3152,10 +2276,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "임강희",
-          "강애심"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3172,15 +2293,7 @@
         "season_rank": 4.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "강선일",
-          "박승원",
-          "송경근",
-          "이지현",
-          "정은혜",
-          "이유진",
-          "최성민"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3192,15 +2305,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "강선일",
-          "박승원",
-          "송경근",
-          "이지현",
-          "정은혜",
-          "최성민",
-          "김미현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3212,15 +2317,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "강선일",
-          "박승원",
-          "송경근",
-          "이지현",
-          "정은혜",
-          "장수지",
-          "최성민"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3232,15 +2329,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "강선일",
-          "박승원",
-          "송경근",
-          "이지현",
-          "정은혜",
-          "장수지",
-          "최성민"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3257,9 +2346,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김성녀"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3271,9 +2358,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김성녀"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3290,15 +2375,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김성녀",
-          "김성예",
-          "정준태",
-          "송나영",
-          "백나현",
-          "전애현",
-          "이승호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3322,15 +2399,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김성녀",
-          "김성예",
-          "정준태",
-          "송나영",
-          "백나현",
-          "전애현",
-          "김민주"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3347,15 +2416,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "황연숙",
-          "안숙현",
-          "성지영",
-          "이은아",
-          "이소영",
-          "나주희",
-          "손영화"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -3367,15 +2428,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "안지현",
-          "조설리",
-          "황연숙",
-          "안숙현",
-          "성지영",
-          "이은아",
-          "이소영"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3391,16 +2444,8 @@
         "perf_end_date": "2024-08-24",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "동화가 꽃피는 나무",
-        "cast": [
-          "방현주",
-          "최지연",
-          "이상희",
-          "유지수",
-          "이지우",
-          "이수영",
-          "곽현호"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3411,16 +2456,8 @@
         "perf_end_date": "2024-06-22",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "동화가 꽃피는 나무",
-        "cast": [
-          "황미선",
-          "이대은",
-          "이상희",
-          "유지수",
-          "곽현호",
-          "최지연",
-          "이지우"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3436,16 +2473,8 @@
         "perf_end_date": "2025-05-17",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "(주)파크컴퍼니, 문화창작집단 수다, 장차",
-        "cast": [
-          "황정민",
-          "정영주",
-          "조연진",
-          "공승연",
-          "김슬기",
-          "김대령",
-          "정서우"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -3456,15 +2485,8 @@
         "perf_end_date": "2025-07-05",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "(주)파크컴퍼니, 문화창작집단 수다, 장차",
-        "cast": [
-          "황정민",
-          "조연진",
-          "안소희",
-          "박지예",
-          "최영준",
-          "정서우"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3480,12 +2502,8 @@
         "perf_end_date": "2026-05-02",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "(재)성남문화재단, 화이트캣시어터컴퍼니",
-        "cast": [
-          "박정자",
-          "강필석",
-          "황지우"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3496,12 +2514,8 @@
         "perf_end_date": "2026-06-20",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "화이트캣시어터컴퍼니",
-        "cast": [
-          "박정자",
-          "최형석",
-          "김현아"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3518,15 +2532,7 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "정희경",
-          "한경성",
-          "정유진",
-          "유현주",
-          "김은국",
-          "김재민",
-          "김준동"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3538,15 +2544,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "정희경",
-          "한경성",
-          "정유진",
-          "유현주",
-          "김은국",
-          "김재민",
-          "김준동"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3558,15 +2556,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "정희경",
-          "한경성",
-          "정유진",
-          "유현주",
-          "김은국",
-          "김재민",
-          "김준동"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3583,15 +2573,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "전국향",
-          "이현주",
-          "조혜선",
-          "이상구",
-          "김현민",
-          "최규선",
-          "윤지원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3603,14 +2585,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "전국향",
-          "이현주",
-          "조혜선",
-          "이상구",
-          "최규선",
-          "윤지원"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3626,16 +2601,8 @@
         "perf_end_date": "2026-03-14",
         "season_rank": 5.0,
         "genre": "뮤지컬",
-        "company_name": "(주)랑, 대덕문화전당",
-        "cast": [
-          "기세중",
-          "신주협",
-          "류제윤",
-          "박새힘",
-          "박시인",
-          "서동진",
-          "김도하"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -3646,16 +2613,8 @@
         "perf_end_date": "2026-03-28",
         "season_rank": 6.0,
         "genre": "뮤지컬",
-        "company_name": "(주)랑, 제천시청",
-        "cast": [
-          "최민우",
-          "장민수",
-          "류제윤",
-          "박슬기",
-          "안상은",
-          "남민우",
-          "이건희"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3736,7 +2695,7 @@
         "perf_end_date": "2026-04-11",
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
-        "company_name": "남양주시립합창단",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -3807,14 +2766,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "황동남",
-          "최햇살",
-          "김준태",
-          "박주득",
-          "이희돈",
-          "김아름"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3831,11 +2783,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "장윤성",
-          "신지아",
-          "원재연"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3847,11 +2795,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "장윤성",
-          "임지영",
-          "원재연"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3868,13 +2812,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "조휘성",
-          "정철한",
-          "엄세영",
-          "이준석",
-          "최형규"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3886,13 +2824,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "조휘성",
-          "정철한",
-          "엄세영",
-          "최형규",
-          "송재윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3904,13 +2836,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김한솔",
-          "조휘성",
-          "정철한",
-          "엄세영",
-          "이준석"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -3938,16 +2864,8 @@
         "perf_end_date": "2024-05-05",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "경기도극단",
-        "cast": [
-          "연주하",
-          "이은",
-          "육세진",
-          "장정선",
-          "이진혁",
-          "김지희",
-          "임미정"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -3958,16 +2876,8 @@
         "perf_end_date": "2025-05-11",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "경기도극단",
-        "cast": [
-          "연주하",
-          "이은",
-          "육세진",
-          "장정선",
-          "이진혁",
-          "김지희",
-          "임미정"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -3984,12 +2894,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "백진현",
-          "얀 보보릴",
-          "피터 무어",
-          "뷤 반 하셀트"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4001,11 +2906,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "얀 보보릴",
-          "피터 무어",
-          "뷤 반 하셀트"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4022,11 +2923,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "마르코스 마드리갈",
-          "얀 프랜시스 팡",
-          "와엘 파루크"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4038,10 +2935,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "안나 불키나",
-          "안토니오 폼파발디"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4058,15 +2952,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이민경",
-          "김병철",
-          "박채린",
-          "조윤주",
-          "채은서",
-          "김서희",
-          "이수림"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4078,15 +2964,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이준혁",
-          "김채영",
-          "이현조",
-          "강현지",
-          "주여진",
-          "이종문",
-          "임세연"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4103,11 +2981,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "조은혜",
-          "김명이",
-          "이재호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4119,11 +2993,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "조은혜",
-          "김명이",
-          "이재호"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4139,12 +3009,8 @@
         "perf_end_date": "2026-05-10",
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "국립아시아문화전당, 국립아시아문화전당, 국립어린이청소년극단(구. (재) 국립극단 어린이청소년극연구소), 국립어린이청소년극단(구. (재) 국립극단 어린이청소년극연구소), 창작단체 온몸",
-        "cast": [
-          "이동욱",
-          "박휘민",
-          "전영진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4155,12 +3021,8 @@
         "perf_end_date": "2025-05-11",
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "국립아시아문화전당, 국립어린이청소년극단(구. (재) 국립극단 어린이청소년극연구소), 창작단체 온몸",
-        "cast": [
-          "이동욱",
-          "이재나",
-          "박휘민"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4176,16 +3038,8 @@
         "perf_end_date": "2025-04-05",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "극단 물결",
-        "cast": [
-          "박정자",
-          "길용우",
-          "오주원",
-          "라경민",
-          "이대진",
-          "윤국희",
-          "송아경"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4196,15 +3050,8 @@
         "perf_end_date": "2025-03-14",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "극단 물결",
-        "cast": [
-          "박정자",
-          "길용우",
-          "오주원",
-          "이대진",
-          "윤국희",
-          "송아경"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4220,16 +3067,8 @@
         "perf_end_date": "2025-11-06",
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "M발레단(엠발레단)",
-        "cast": [
-          "이은수",
-          "강서연",
-          "이준구",
-          "조윤빈",
-          "김경훈",
-          "최시몬",
-          "강주신"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4240,13 +3079,8 @@
         "perf_end_date": "2025-09-25",
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "M발레단(엠발레단)",
-        "cast": [
-          "정용재",
-          "최솔지",
-          "이준구",
-          "조윤빈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4263,15 +3097,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "황세원",
-          "박윤정",
-          "박소연",
-          "윤일식",
-          "양나영",
-          "홍윤희",
-          "김승환"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4283,15 +3109,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박윤정",
-          "황세원",
-          "박소연",
-          "윤일식",
-          "양나영",
-          "어성욱",
-          "서정식"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4307,16 +3125,8 @@
         "perf_end_date": "2025-06-14",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "프로덕션IDA",
-        "cast": [
-          "박윤정",
-          "황세원",
-          "박소연",
-          "윤일식",
-          "양나영",
-          "어성욱",
-          "서정식"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4327,16 +3137,8 @@
         "perf_end_date": "2025-04-10",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "프로덕션IDA",
-        "cast": [
-          "박윤정",
-          "황세원",
-          "박소연",
-          "윤일식",
-          "양나영",
-          "어성욱",
-          "서정식"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4353,15 +3155,7 @@
         "season_rank": 7.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "안대천",
-          "최영호",
-          "선영욱",
-          "허창열",
-          "배정찬",
-          "민현기",
-          "김용훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4373,15 +3167,7 @@
         "season_rank": 5.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "안대천",
-          "최영호",
-          "선영욱",
-          "배정찬",
-          "민현기",
-          "김용훈",
-          "이정동"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4393,15 +3179,7 @@
         "season_rank": 4.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "안대천",
-          "선영욱",
-          "배정찬",
-          "민현기",
-          "김용훈",
-          "이정동",
-          "김동환"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4413,15 +3191,7 @@
         "season_rank": 6.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "안대천",
-          "최영호",
-          "선영욱",
-          "배정찬",
-          "민현기",
-          "김용훈",
-          "이정동"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4433,15 +3203,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "안대천",
-          "선영욱",
-          "허창열",
-          "배정찬",
-          "민현기",
-          "김용훈",
-          "이정동"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4458,15 +3220,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김순영",
-          "이동명",
-          "고성현",
-          "김순희",
-          "김지민",
-          "허철",
-          "양종대"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4478,15 +3232,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김순영",
-          "이동명",
-          "고성현",
-          "장은",
-          "김지민",
-          "유재언",
-          "양종대"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4503,15 +3249,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "최수진",
-          "이지숙",
-          "박영수",
-          "김종구",
-          "김이후",
-          "홍지희",
-          "변희상"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4535,12 +3273,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이지숙",
-          "윤석원",
-          "김주연",
-          "변희상"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4569,14 +3302,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김도빈",
-          "이형훈",
-          "방진의",
-          "안지환",
-          "신재범",
-          "나하나"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4593,12 +3319,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김태한",
-          "방진의",
-          "안지환",
-          "임예진"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -4610,15 +3331,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김태한",
-          "김도빈",
-          "최수진",
-          "방진의",
-          "박보검",
-          "안치환",
-          "홍지희"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4630,12 +3343,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이형훈",
-          "최수진",
-          "안지환",
-          "임예진"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4651,16 +3359,8 @@
         "perf_end_date": "2025-08-31",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "(재) 국립극단, 국립아시아문화전당, 국립아시아문화전당재단, 옐로밤",
-        "cast": [
-          "김성령",
-          "고인배",
-          "견민성",
-          "원경식",
-          "이경구",
-          "김하리",
-          "브래드 버지스"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -4671,16 +3371,8 @@
         "perf_end_date": "2025-09-06",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "(재)영화의전당, 국립아시아문화전당, 국립아시아문화전당재단, 옐로밤",
-        "cast": [
-          "김성령",
-          "브래드 버지스",
-          "엠마 수 해리스",
-          "고인배",
-          "견민성",
-          "원경식",
-          "이경구"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4696,15 +3388,8 @@
         "perf_end_date": "2025-07-05",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "국립어린이청소년극단(구. (재) 국립극단 어린이청소년극연구소)",
-        "cast": [
-          "최하윤",
-          "장석환",
-          "안창현",
-          "도준영",
-          "원빈",
-          "이정희"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4715,16 +3400,8 @@
         "perf_end_date": "2025-05-31",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "국립어린이청소년극단(구. (재) 국립극단 어린이청소년극연구소)",
-        "cast": [
-          "최하윤",
-          "장석환",
-          "안창현",
-          "도준형",
-          "이정희",
-          "원빈",
-          "김하정"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4741,15 +3418,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김소현",
-          "이정화",
-          "유리아",
-          "강혜인",
-          "효은",
-          "최지혜",
-          "박영수"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -4761,15 +3430,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이정화",
-          "강혜인",
-          "최지혜",
-          "민정아",
-          "옥경민",
-          "홍유정",
-          "유낙원"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4786,15 +3447,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김소향",
-          "옥주현",
-          "강혜인",
-          "전민지",
-          "김호경",
-          "김진욱",
-          "강태을"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -4806,15 +3459,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "옥주현",
-          "이봄소리",
-          "김진욱",
-          "김호경",
-          "박시원",
-          "김보미",
-          "박영빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4831,15 +3476,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "전병호",
-          "이세진",
-          "허희경",
-          "김원",
-          "구민영",
-          "김성혜",
-          "김대엽"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4851,15 +3488,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "전병호",
-          "이세진",
-          "허희경",
-          "김원",
-          "구민영",
-          "김성혜",
-          "김대엽"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4876,15 +3505,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박세진",
-          "구은경",
-          "장성일",
-          "이준석",
-          "강수정",
-          "김종표",
-          "박상욱"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4896,15 +3517,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "카를로 팔레스키",
-          "박세진",
-          "구은경",
-          "양두름",
-          "정제윤",
-          "강동명",
-          "장성일"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4945,13 +3558,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "윤오건",
-          "신동혁",
-          "김지섭",
-          "강동진",
-          "우정진"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -4963,13 +3570,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "윤오건",
-          "이상규",
-          "최재민",
-          "김성진",
-          "우정진"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -4998,15 +3599,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이유진",
-          "최은비",
-          "김현수",
-          "이향희",
-          "김동훈",
-          "전현준",
-          "선우진영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5018,15 +3611,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이유진",
-          "최은비",
-          "김현수",
-          "이향희",
-          "김동훈",
-          "전현준",
-          "선우진영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5055,15 +3640,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "윤종현",
-          "황윤지",
-          "박소영",
-          "김예지",
-          "강지윤",
-          "임윤수",
-          "신민경"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5075,14 +3652,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "황윤지",
-          "박소영",
-          "김예지",
-          "강지윤",
-          "임윤수",
-          "신민경"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5099,15 +3669,7 @@
         "season_rank": 22.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이은아",
-          "오경미",
-          "정재헌",
-          "장정현",
-          "백지연",
-          "장석준",
-          "곽은혜"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5119,15 +3681,7 @@
         "season_rank": 21.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이은아",
-          "오경미",
-          "정재헌",
-          "장장현",
-          "백지연",
-          "장석준",
-          "곽은혜"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5139,15 +3693,7 @@
         "season_rank": 23.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이은아",
-          "오경미",
-          "정재헌",
-          "장정현",
-          "백지연",
-          "장석준",
-          "곽은혜"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5163,14 +3709,8 @@
         "perf_end_date": "2023-10-21",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "극단 난희 (The 난희)",
-        "cast": [
-          "박상종",
-          "서태성",
-          "서진",
-          "서정식",
-          "노준영"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5181,14 +3721,8 @@
         "perf_end_date": "2023-10-28",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "극단 난희 (The 난희)",
-        "cast": [
-          "박상종",
-          "서진",
-          "서태성",
-          "서정식",
-          "노준영"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5205,15 +3739,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "강소연",
-          "김경원",
-          "김은정",
-          "김재민",
-          "김채아",
-          "김희연",
-          "문소윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5225,15 +3751,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "강소연",
-          "강승현",
-          "김경원",
-          "김나리",
-          "김은정",
-          "김재민",
-          "김채아"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5250,13 +3768,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조성필",
-          "김재만",
-          "정아인",
-          "서승원",
-          "김의환"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5268,13 +3780,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조성필",
-          "정아인",
-          "김의환",
-          "박유덕",
-          "서승원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5286,13 +3792,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조성필",
-          "박유덕",
-          "정아인",
-          "서승원",
-          "김의환"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5309,14 +3809,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "윤관우",
-          "박수연",
-          "명인호",
-          "김동건",
-          "이나경",
-          "이준호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5328,14 +3821,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김동건",
-          "류지훈",
-          "장희재",
-          "명인호",
-          "김남호",
-          "이준호"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5352,15 +3838,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "손숙",
-          "손병호",
-          "배상돈",
-          "노상원",
-          "김성철",
-          "황세원",
-          "박초롱"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5372,15 +3850,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "손숙",
-          "손병호",
-          "배상돈",
-          "노상원",
-          "김성철",
-          "황세원",
-          "박초롱"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5397,15 +3867,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "권민석",
-          "한경성",
-          "염현준",
-          "유종훈",
-          "김은식",
-          "김상하",
-          "황수빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5417,15 +3879,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "권민석",
-          "한경성",
-          "염현준",
-          "유종훈",
-          "김은식",
-          "김수진",
-          "김상하"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5441,16 +3895,8 @@
         "perf_end_date": "2024-09-21",
         "season_rank": 4.0,
         "genre": "뮤지컬",
-        "company_name": "협동조합손에손에, 협동조합손에손에",
-        "cast": [
-          "민들샘",
-          "김민지",
-          "안동기",
-          "정나율",
-          "이지용",
-          "박배리",
-          "강희윤"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5461,7 +3907,7 @@
         "perf_end_date": "2024-08-29",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "협동조합손에손에, 협동조합손에손에",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       }
@@ -5479,15 +3925,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "최유정",
-          "김준경",
-          "엄진솔",
-          "이루다",
-          "이루마",
-          "정혜윤",
-          "김우찬"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5499,15 +3937,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "조희원",
-          "이은수",
-          "최유리",
-          "김동철",
-          "이루다",
-          "이루마",
-          "정혜윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5523,15 +3953,8 @@
         "perf_end_date": "2025-09-14",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "(주)쇼노트, 낭만바리케이트",
-        "cast": [
-          "전혜주",
-          "이아진",
-          "정다예",
-          "한재아",
-          "이한별",
-          "송영미"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5542,12 +3965,8 @@
         "perf_end_date": "2025-07-12",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "(주)쇼노트, 낭만바리케이트",
-        "cast": [
-          "전혜주",
-          "한재아",
-          "송영미"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5564,15 +3983,7 @@
         "season_rank": 5.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "황세원",
-          "임정은",
-          "서미영",
-          "이예지",
-          "윤일식",
-          "서정식",
-          "이의현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5584,15 +3995,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "황세원",
-          "임정은",
-          "서미영",
-          "임다은",
-          "김승환",
-          "서정식",
-          "김솔빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5604,15 +4007,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "황세원",
-          "임정은",
-          "서미영",
-          "임다은",
-          "김승환",
-          "서정식",
-          "김솔빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5624,15 +4019,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "황세원",
-          "임정은",
-          "서미영",
-          "임다은",
-          "김승환",
-          "서정식",
-          "김솔빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5644,15 +4031,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "황세원",
-          "임정은",
-          "서미영",
-          "임다은",
-          "김승환",
-          "서정식",
-          "김솔빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5668,16 +4047,8 @@
         "perf_end_date": "2024-07-13",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "프로덕션IDA",
-        "cast": [
-          "황세원",
-          "임정은",
-          "서미영",
-          "임다은",
-          "김승환",
-          "서정식",
-          "김솔빈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5688,16 +4059,8 @@
         "perf_end_date": "2024-07-27",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "프로덕션IDA",
-        "cast": [
-          "황세원",
-          "임정은",
-          "서미영",
-          "임다은",
-          "김승환",
-          "서정식",
-          "김솔빈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5713,16 +4076,8 @@
         "perf_end_date": "2025-09-13",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "극단 여행자",
-        "cast": [
-          "강산",
-          "이화정",
-          "남승혜",
-          "정수영",
-          "박하진",
-          "김은희",
-          "박정민"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5733,16 +4088,8 @@
         "perf_end_date": "2025-06-21",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "극단 여행자",
-        "cast": [
-          "강산",
-          "이화정",
-          "남승혜",
-          "정수영",
-          "박하진",
-          "김은희",
-          "박정민"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5758,14 +4105,8 @@
         "perf_end_date": "2025-05-05",
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
-        "company_name": "창작하는 타루",
-        "cast": [
-          "심소라",
-          "김정운",
-          "송보라",
-          "공미연",
-          "장우찬"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5776,7 +4117,7 @@
         "perf_end_date": "2024-08-24",
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
-        "company_name": "창작하는 타루",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       }
@@ -5794,14 +4135,7 @@
         "season_rank": 4.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "오현",
-          "이재득",
-          "신도현",
-          "김영진",
-          "서태양",
-          "강희경"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5813,14 +4147,7 @@
         "season_rank": 5.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "오현",
-          "강희경",
-          "서태양",
-          "최영진",
-          "신도현",
-          "이재득"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5832,14 +4159,7 @@
         "season_rank": 6.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "오현",
-          "서태양",
-          "신도현",
-          "이재득",
-          "강희경",
-          "최영진"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5868,12 +4188,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "이준구",
-          "정혜윤",
-          "조한얼",
-          "우차은"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5890,10 +4205,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "백승현",
-          "박규희"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5905,9 +4217,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "홍석원"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5924,15 +4234,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김경수",
-          "노주원",
-          "박미나",
-          "장영진",
-          "전주연",
-          "권미정",
-          "김유나"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -5944,15 +4246,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "최성수",
-          "정유빈",
-          "박예은",
-          "박서진",
-          "전어진",
-          "전주연",
-          "이동훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -5968,16 +4262,8 @@
         "perf_end_date": "2024-10-12",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "부산시립극단",
-        "cast": [
-          "이현주",
-          "황창기",
-          "김은희",
-          "이혁우",
-          "오희경",
-          "염지선",
-          "채민수"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -5988,16 +4274,8 @@
         "perf_end_date": "2025-07-06",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "부산시립극단",
-        "cast": [
-          "오희경",
-          "김수휘",
-          "김은옥",
-          "이수현",
-          "채민수",
-          "서보기",
-          "전용균"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -6008,16 +4286,8 @@
         "perf_end_date": "2026-04-25",
         "season_rank": 3.0,
         "genre": "뮤지컬",
-        "company_name": "부산시립극단",
-        "cast": [
-          "이혁우",
-          "황창기",
-          "이현주",
-          "김은희",
-          "염지선",
-          "김은옥",
-          "서보기"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       }
     ]
@@ -6034,10 +4304,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "천경필",
-          "우원석"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6049,11 +4316,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "차윤희",
-          "권기원",
-          "천경필"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6070,14 +4333,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김동녘",
-          "김준태",
-          "시영민",
-          "유용준",
-          "박소영",
-          "이수정"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -6089,15 +4345,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김동녘",
-          "김준태",
-          "시영민",
-          "유용준",
-          "김은영",
-          "박예은",
-          "박나래"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6162,9 +4410,7 @@
         "season_rank": 8.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "백승현"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6181,15 +4427,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "심채영",
-          "김예빈",
-          "송예빈",
-          "성아란",
-          "이지우",
-          "서가영",
-          "이현지"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6201,15 +4439,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "강채림",
-          "김가원",
-          "김성민",
-          "김수정",
-          "김예빈",
-          "김정훈",
-          "김채희"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6303,9 +4533,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "임희준"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -6317,15 +4545,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김하정",
-          "남순천",
-          "김태우",
-          "강은태",
-          "최현서",
-          "김세진",
-          "이유진"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6342,9 +4562,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김선아"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6356,9 +4574,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김선아"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6374,15 +4590,8 @@
         "perf_end_date": "2024-11-09",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "공연배달서비스간다",
-        "cast": [
-          "차재원",
-          "조현식",
-          "이원민",
-          "조수연",
-          "방종혁",
-          "윤정훈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6393,15 +4602,8 @@
         "perf_end_date": "2024-11-02",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "공연배달서비스간다",
-        "cast": [
-          "차재원",
-          "조현식",
-          "이원민",
-          "조수연",
-          "방종혁",
-          "윤정훈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6417,13 +4619,8 @@
         "perf_end_date": "2024-09-29",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "NTA 컴퍼니",
-        "cast": [
-          "조훈",
-          "김수용",
-          "박혜민",
-          "김담현"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6434,13 +4631,8 @@
         "perf_end_date": "2024-09-07",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "NTA 컴퍼니",
-        "cast": [
-          "조훈",
-          "김수용",
-          "박혜민",
-          "김담현"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6457,13 +4649,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이규성",
-          "윤선정",
-          "조준희",
-          "박승규",
-          "박진수"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6475,13 +4661,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박승규",
-          "이규성",
-          "윤선정",
-          "박진수",
-          "조준희"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6497,14 +4677,8 @@
         "perf_end_date": "2024-06-29",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "극단 벅수골",
-        "cast": [
-          "박승규",
-          "이규성",
-          "윤선정",
-          "박진수",
-          "조준희"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6515,14 +4689,8 @@
         "perf_end_date": "2024-09-29",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "극단 벅수골",
-        "cast": [
-          "이규성",
-          "윤선정",
-          "조준희",
-          "박승규",
-          "박진수"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6539,11 +4707,7 @@
         "season_rank": 6.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "양성원",
-          "김다미",
-          "송영훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6555,11 +4719,7 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "양성원",
-          "임지영",
-          "송영훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6575,7 +4735,7 @@
         "perf_end_date": "2025-08-23",
         "season_rank": 37.0,
         "genre": "뮤지컬",
-        "company_name": "(주)씨에이치수박",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -6587,16 +4747,8 @@
         "perf_end_date": "2025-12-13",
         "season_rank": 41.0,
         "genre": "뮤지컬",
-        "company_name": "(주)씨에이치수박",
-        "cast": [
-          "신고은",
-          "노희찬",
-          "조영임",
-          "김은지",
-          "김영환",
-          "안두호",
-          "이윤성"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6612,16 +4764,8 @@
         "perf_end_date": "2026-06-14",
         "season_rank": 6.0,
         "genre": "연극",
-        "company_name": "(재) 화성시문화관광재단, (주)쇼노트, (주)엠비제트컴퍼니",
-        "cast": [
-          "김경수",
-          "원태민",
-          "전성민",
-          "박동욱",
-          "김현준",
-          "송상훈",
-          "이민규"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6632,16 +4776,8 @@
         "perf_end_date": "2026-06-06",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "(재) 세종시문화관광재단(세종문화예술회관), (주)쇼노트, (주)엠비제트컴퍼니",
-        "cast": [
-          "전성우",
-          "김지혜",
-          "김현준",
-          "송상훈",
-          "이민규",
-          "금보미",
-          "장희원"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6652,16 +4788,8 @@
         "perf_end_date": "2024-10-19",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "(주)쇼노트, (주)엠비제트컴퍼니",
-        "cast": [
-          "박정원",
-          "이진희",
-          "오대석",
-          "송상훈",
-          "김세환",
-          "금보미",
-          "진초록"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6672,16 +4800,8 @@
         "perf_end_date": "2024-10-05",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "(주)쇼노트, (주)엠비제트컴퍼니",
-        "cast": [
-          "전성우",
-          "이진희",
-          "전성민",
-          "박동욱",
-          "견민성",
-          "김세환",
-          "금보미"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6698,11 +4818,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "정동화",
-          "최연우",
-          "김재범"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6731,14 +4847,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김준수",
-          "유태평양",
-          "서의철",
-          "정보권",
-          "김수인",
-          "김도완"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6750,14 +4859,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김준수",
-          "최예림",
-          "이승민",
-          "서의철",
-          "정보권",
-          "정승준"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6773,16 +4875,8 @@
         "perf_end_date": "2025-09-27",
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
-        "company_name": "시화사(구. 움직임팩토리)",
-        "cast": [
-          "최예림",
-          "정은혜",
-          "이승민",
-          "서의철",
-          "고준석",
-          "정윤형",
-          "김도완"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6793,15 +4887,8 @@
         "perf_end_date": "2025-10-19",
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
-        "company_name": "시화사(구. 움직임팩토리), 옐로밤",
-        "cast": [
-          "김준수",
-          "이승민",
-          "서의철",
-          "정보권",
-          "정윤형",
-          "김도완"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6818,15 +4905,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박완규",
-          "이하늘",
-          "서진",
-          "박정민",
-          "강민재",
-          "린다전",
-          "김두은"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6838,15 +4917,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "서진",
-          "박완규",
-          "린다전",
-          "박정민",
-          "김두은",
-          "강해진",
-          "신대철"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6858,15 +4929,7 @@
         "season_rank": 5.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박완규",
-          "이하늘",
-          "서진",
-          "박정민",
-          "강민재",
-          "린다전",
-          "김두은"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -6878,15 +4941,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "서진",
-          "박완규",
-          "박정민",
-          "김두은",
-          "강해진",
-          "신대철",
-          "강민재"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6915,11 +4970,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "박시은",
-          "석지우",
-          "백인규"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -6935,16 +4986,8 @@
         "perf_end_date": "2025-09-28",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "서울시극단",
-        "cast": [
-          "이호재",
-          "정새별",
-          "박영민",
-          "장연익",
-          "강신구",
-          "김신기",
-          "류주연"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -6972,15 +5015,8 @@
         "perf_end_date": "2025-11-30",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "서울시극단",
-        "cast": [
-          "박건형",
-          "남명렬",
-          "강신구",
-          "김신기",
-          "손성호",
-          "이승우"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -7009,9 +5045,7 @@
         "season_rank": 5.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "정나라"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7023,15 +5057,7 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김민정",
-          "최해성",
-          "임요섭",
-          "차은미",
-          "강인한",
-          "임리라",
-          "김보람"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7077,9 +5103,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이금희"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7103,15 +5127,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "신채림",
-          "김재화",
-          "배우선",
-          "이용희",
-          "최승원",
-          "김재성",
-          "이상윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7127,16 +5143,8 @@
         "perf_end_date": "2026-05-17",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단, (재)서울예술단",
-        "cast": [
-          "최인형",
-          "이재환",
-          "이재윤",
-          "김연",
-          "김용한",
-          "이혜수",
-          "송문선"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -7147,16 +5155,8 @@
         "perf_end_date": "2026-05-23",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단",
-        "cast": [
-          "최인형",
-          "이재환",
-          "김연",
-          "김용한",
-          "이혜수",
-          "송문선",
-          "이종한"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7173,13 +5173,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김용한",
-          "윤태호",
-          "이한수",
-          "이기완",
-          "이혜수"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7191,13 +5185,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김용한",
-          "윤태호",
-          "이한수",
-          "이기완",
-          "이혜수"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7213,16 +5201,8 @@
         "perf_end_date": "2024-05-26",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단",
-        "cast": [
-          "윤태호",
-          "서연정",
-          "송문선",
-          "김건혜",
-          "최인형",
-          "박재은",
-          "이동규"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -7233,16 +5213,8 @@
         "perf_end_date": "2025-03-07",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단",
-        "cast": [
-          "윤태호",
-          "조진호",
-          "서연정",
-          "최효정",
-          "송문선",
-          "김건혜",
-          "최인형"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -7253,16 +5225,8 @@
         "perf_end_date": "2025-07-12",
         "season_rank": 3.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단",
-        "cast": [
-          "윤태호",
-          "최효정",
-          "강혜인",
-          "김건혜",
-          "최인형",
-          "박재은",
-          "이한수"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7279,15 +5243,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "윤태호",
-          "조진호",
-          "서연정",
-          "최효정",
-          "송문선",
-          "김건혜",
-          "최인형"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7299,15 +5255,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조진호",
-          "서연정",
-          "강혜인",
-          "김건혜",
-          "최인형",
-          "박재은",
-          "이한수"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7319,15 +5267,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조진호",
-          "서연정",
-          "강혜인",
-          "김건혜",
-          "최인형",
-          "박재은",
-          "이한수"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7344,15 +5284,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "고현주",
-          "이명은",
-          "박선혜",
-          "변상윤",
-          "천예서",
-          "조진희",
-          "신지현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7381,15 +5313,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김동현",
-          "정상훈",
-          "이갑선",
-          "김왕근",
-          "공재민",
-          "강정윤",
-          "오세철"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7401,15 +5325,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김동현",
-          "정상훈",
-          "이갑선",
-          "김왕근",
-          "공재민",
-          "강정윤",
-          "오세철"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7421,15 +5337,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김동현",
-          "정상훈",
-          "이갑선",
-          "김왕근",
-          "공재민",
-          "강정윤",
-          "오세철"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7458,14 +5366,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이성욱",
-          "이순원",
-          "태항호",
-          "김천",
-          "이민지",
-          "서지예"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7477,14 +5378,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김대곤",
-          "이순원",
-          "태항호",
-          "유일한",
-          "이민지",
-          "서태인"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7496,14 +5390,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김대곤",
-          "최영우",
-          "태항호",
-          "유일한",
-          "이민지",
-          "김려은"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7520,15 +5407,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이원재",
-          "오순태",
-          "김규도",
-          "심원석",
-          "이상숙",
-          "이정주",
-          "민재원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7540,15 +5419,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이원재",
-          "오순태",
-          "심원석",
-          "이상숙",
-          "이정주",
-          "민재원",
-          "김규도"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7565,15 +5436,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "송소희",
-          "김준수",
-          "김현보",
-          "박진우",
-          "최진경",
-          "조윤정",
-          "이영훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7585,15 +5448,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "송소희",
-          "김준수",
-          "김현보",
-          "최진경",
-          "박진우",
-          "이영훈",
-          "조윤정"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7609,7 +5464,7 @@
         "perf_end_date": "2024-06-15",
         "season_rank": 11.0,
         "genre": "뮤지컬",
-        "company_name": "(주)에이엠컬쳐(AMCULTURE), (주)에이엠컬쳐(AMCULTURE)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -7621,7 +5476,7 @@
         "perf_end_date": "2024-04-27",
         "season_rank": 10.0,
         "genre": "뮤지컬",
-        "company_name": "(주)에이엠컬쳐(AMCULTURE)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       }
@@ -7639,15 +5494,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "정호윤",
-          "강단아",
-          "성나윤",
-          "권아린",
-          "유시현",
-          "김시현",
-          "김승환"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7659,15 +5506,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "정호윤",
-          "유시현",
-          "성나윤",
-          "권아린",
-          "강단아",
-          "김시현",
-          "김승환"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7684,15 +5523,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "원유대",
-          "박현아",
-          "김재율",
-          "김수정",
-          "송숙영",
-          "원유대",
-          "김준엽"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7704,15 +5535,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "원유대",
-          "박현아",
-          "김재율",
-          "김수정",
-          "송숙영",
-          "원유대",
-          "김준엽"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7728,7 +5551,7 @@
         "perf_end_date": "2026-05-23",
         "season_rank": 9.0,
         "genre": "뮤지컬",
-        "company_name": "보성군청, 할리퀸크리에이션즈(주)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -7740,7 +5563,7 @@
         "perf_end_date": "2026-05-09",
         "season_rank": 8.0,
         "genre": "뮤지컬",
-        "company_name": "할리퀸크리에이션즈(주)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       }
@@ -7758,14 +5581,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김은",
-          "박시한",
-          "박휘연",
-          "이은경",
-          "임유정",
-          "임종경"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7777,14 +5593,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김은",
-          "박시한",
-          "박휘연",
-          "이은경",
-          "이초은",
-          "임유정"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7796,14 +5605,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김은",
-          "박시한",
-          "박휘연",
-          "이은경",
-          "이초은",
-          "임유정"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7849,15 +5651,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이상희",
-          "김정아",
-          "김영건",
-          "한다희",
-          "박현숙",
-          "이세훈",
-          "유수진"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7869,15 +5663,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이상희",
-          "김정아",
-          "김영건",
-          "한다희",
-          "박현숙",
-          "이세훈",
-          "유수진"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -7893,16 +5679,8 @@
         "perf_end_date": "2024-07-06",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "극단 초인",
-        "cast": [
-          "이상희",
-          "김정아",
-          "김민규",
-          "김영건",
-          "한다희",
-          "박현숙",
-          "유수진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7913,16 +5691,8 @@
         "perf_end_date": "2024-07-13",
         "season_rank": 6.0,
         "genre": "연극",
-        "company_name": "(재)성남문화재단, 극단 초인",
-        "cast": [
-          "이상희",
-          "김정아",
-          "김민규",
-          "김영건",
-          "한다희",
-          "박현숙",
-          "유수진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7933,16 +5703,8 @@
         "perf_end_date": "2024-05-11",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "극단 초인",
-        "cast": [
-          "이상희",
-          "김정아",
-          "김민규",
-          "김영건",
-          "한다희",
-          "박현숙",
-          "유수진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7953,16 +5715,8 @@
         "perf_end_date": "2024-05-18",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "극단 초인",
-        "cast": [
-          "이상희",
-          "김정아",
-          "김민규",
-          "김영건",
-          "한다희",
-          "박현숙",
-          "유수진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7973,16 +5727,8 @@
         "perf_end_date": "2024-07-18",
         "season_rank": 7.0,
         "genre": "연극",
-        "company_name": "극단 초인",
-        "cast": [
-          "이상희",
-          "김정아",
-          "김민규",
-          "김영건",
-          "한다희",
-          "박현숙",
-          "유수진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -7993,16 +5739,8 @@
         "perf_end_date": "2025-06-11",
         "season_rank": 8.0,
         "genre": "연극",
-        "company_name": "극단 초인",
-        "cast": [
-          "이상희",
-          "김정아",
-          "김영건",
-          "한다희",
-          "이세훈",
-          "황성인",
-          "박현숙"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8019,15 +5757,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "전승현",
-          "박현아",
-          "왕승원",
-          "현서진",
-          "이정환",
-          "곽상훈",
-          "김영은"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8039,15 +5769,7 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "전승현",
-          "박현아",
-          "왕승원",
-          "현서진",
-          "이정환",
-          "곽상훈",
-          "김영은"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8064,12 +5786,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "길병민",
-          "박현수",
-          "김성식",
-          "김제니"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8081,12 +5798,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "길병민",
-          "박현수",
-          "김성식",
-          "김제니"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8098,12 +5810,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "길병민",
-          "박현수",
-          "김성식",
-          "김제니"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8120,12 +5827,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "길병민",
-          "박현수",
-          "김성식",
-          "김제니"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8137,12 +5839,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "길병민",
-          "박현수",
-          "김성식",
-          "김제니"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8158,7 +5855,7 @@
         "perf_end_date": "2025-07-26",
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
-        "company_name": "(주)콘텐츠컬쳐플레이스",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -8170,7 +5867,7 @@
         "perf_end_date": "2025-05-16",
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
-        "company_name": "(주)콘텐츠컬쳐플레이스",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -8182,7 +5879,7 @@
         "perf_end_date": "2025-11-07",
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
-        "company_name": "(주)콘텐츠컬쳐플레이스",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       }
@@ -8200,15 +5897,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김지현",
-          "홍예원",
-          "김지훈",
-          "김혜현",
-          "장성일",
-          "김일훈",
-          "김성결"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8220,15 +5909,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김지현",
-          "김지훈",
-          "장성일",
-          "김성결",
-          "홍예원",
-          "김혜현",
-          "김일훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8245,11 +5926,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김덕수",
-          "김리혜",
-          "이봉근"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8261,9 +5938,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김덕수"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8280,15 +5955,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김덕수",
-          "김복만",
-          "이윤구",
-          "홍윤기",
-          "김성대",
-          "방성혁",
-          "송동운"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8300,15 +5967,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김덕수",
-          "김복만",
-          "이윤구",
-          "홍윤기",
-          "김성대",
-          "방성혁",
-          "송동운"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8337,15 +5996,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김학용",
-          "박자희",
-          "서정금",
-          "이광복",
-          "이다희",
-          "손명호",
-          "이재현"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8362,15 +6013,7 @@
         "season_rank": 7.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김학용",
-          "박자희",
-          "서정금",
-          "이광복",
-          "이다희",
-          "손명호",
-          "이재현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8382,11 +6025,7 @@
         "season_rank": 8.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김학용",
-          "이소연",
-          "서정금"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8410,15 +6049,7 @@
         "season_rank": 9.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김학용",
-          "이소연",
-          "서정금",
-          "이광복",
-          "이다희",
-          "손명호",
-          "이재현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8430,15 +6061,7 @@
         "season_rank": 10.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김학용",
-          "이소연",
-          "서정금",
-          "이광복",
-          "이다희",
-          "손명호",
-          "이재현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8450,15 +6073,7 @@
         "season_rank": 12.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "서정금",
-          "김학용",
-          "이광복",
-          "박자희",
-          "이다희",
-          "손명호",
-          "이재현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8470,13 +6085,7 @@
         "season_rank": 11.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김학용",
-          "서정금",
-          "이소연",
-          "박자희",
-          "이광복"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8493,14 +6102,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조용휘",
-          "임소윤",
-          "성연",
-          "김병준",
-          "최서인",
-          "황의정"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8524,11 +6126,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조용휘",
-          "임소윤",
-          "성연"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8545,15 +6143,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "성이현",
-          "김지훈",
-          "류동휘",
-          "이선아",
-          "박현아",
-          "김준엽",
-          "김다운"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8565,15 +6155,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "성이현",
-          "김지훈",
-          "류동휘",
-          "이선아",
-          "박현아",
-          "김준엽",
-          "김다운"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8585,15 +6167,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "성이현",
-          "김지훈",
-          "류동휘",
-          "이선아",
-          "박현아",
-          "김준엽",
-          "김다운"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8610,15 +6184,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "나웅준",
-          "이경면",
-          "원재연",
-          "이준영",
-          "유이삭",
-          "김우연",
-          "양미현"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8630,12 +6196,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "나웅준",
-          "김지은",
-          "조인혁",
-          "원재연"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8652,15 +6213,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "최수진",
-          "백은혜",
-          "이정화",
-          "김재범",
-          "고상호",
-          "윤소호",
-          "정지우"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -8672,15 +6225,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "최수진",
-          "백은혜",
-          "이정화",
-          "김재범",
-          "고상호",
-          "정지우",
-          "홍기범"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -8692,15 +6237,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "백은혜",
-          "최수진",
-          "김재범",
-          "고상호",
-          "정지우",
-          "홍기범",
-          "이진혁"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8712,15 +6249,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "백은혜",
-          "이정화",
-          "고상호",
-          "윤소호",
-          "정지우",
-          "정평",
-          "안두호"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8737,15 +6266,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김선경",
-          "김하람",
-          "남권아",
-          "린다전",
-          "신용진",
-          "박종현",
-          "우미화"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8757,15 +6278,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김선경",
-          "김하람",
-          "남권아",
-          "린다전",
-          "신용진",
-          "박종현",
-          "우미화"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8782,14 +6295,7 @@
         "season_rank": 6.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "이동훈",
-          "정혜윤",
-          "김순정",
-          "윤별",
-          "진유정",
-          "김희래"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -8801,14 +6307,7 @@
         "season_rank": 5.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "이동훈",
-          "정혜윤",
-          "김순정",
-          "윤별",
-          "진유정",
-          "김희래"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8820,14 +6319,7 @@
         "season_rank": 4.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "이동훈",
-          "이은원",
-          "김순정",
-          "윤별",
-          "진유정",
-          "김희래"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8839,13 +6331,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "이동훈",
-          "정혜윤",
-          "김순정",
-          "윤별",
-          "김희래"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8862,15 +6348,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "백주영",
-          "송지원",
-          "김상진",
-          "이한나",
-          "김민지",
-          "심준호",
-          "채재일"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8882,15 +6360,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "백주영",
-          "박규민",
-          "김상진",
-          "이한나",
-          "김민지",
-          "이경준",
-          "채재일"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8902,14 +6372,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "백주영",
-          "송지원",
-          "박규민",
-          "김상진",
-          "이한나",
-          "윤소희"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8926,15 +6389,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "최인혁",
-          "김홍박",
-          "송지원",
-          "김동현",
-          "김상진",
-          "이한나",
-          "이정란"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8946,15 +6401,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "최인혁",
-          "김홍박",
-          "송지원",
-          "김서현",
-          "김상진",
-          "정승원",
-          "김민지"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -8971,15 +6418,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "권태진",
-          "조현식",
-          "김유성",
-          "김현지",
-          "박정은",
-          "윤정훈",
-          "방종혁"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -8991,15 +6430,7 @@
         "season_rank": 5.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "박정은",
-          "강인대",
-          "김은영",
-          "윤정훈",
-          "김유성",
-          "김현지",
-          "김대웅"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9023,15 +6454,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "박정은",
-          "강인대",
-          "김은영",
-          "방종혁",
-          "김유성",
-          "이상택",
-          "이민지"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9043,15 +6466,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조현식",
-          "강인대",
-          "이상택",
-          "윤정훈",
-          "김은영",
-          "박정은",
-          "이설"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9068,13 +6483,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "박인선",
-          "이아람",
-          "황민왕",
-          "최인환",
-          "성시영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9086,15 +6495,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이주원",
-          "박인선",
-          "허창열",
-          "이아람",
-          "황민왕",
-          "최인환",
-          "성시영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9123,14 +6524,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "손현정",
-          "유정",
-          "강한나",
-          "정태혁",
-          "박청용",
-          "김시준"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9142,14 +6536,7 @@
         "season_rank": 5.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "손현정",
-          "박은혜",
-          "백중태",
-          "서현석",
-          "차단비",
-          "김시준"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9161,14 +6548,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "손현정",
-          "박은혜",
-          "백중태",
-          "서현석",
-          "차단비",
-          "김시준"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9185,15 +6565,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "장성일",
-          "이재욱",
-          "박미영",
-          "신민정",
-          "김성희",
-          "조한",
-          "변주원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9205,17 +6577,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이건용",
-          "장성일",
-          "이재욱",
-          "박미영",
-          "신민정",
-          "김성희",
-          "조한",
-          "변주원",
-          "이익현"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9232,14 +6594,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "윤병길",
-          "김현진",
-          "김경천",
-          "김은국",
-          "박혜연",
-          "임하린"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9251,14 +6606,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "윤병길",
-          "김은국",
-          "김현진",
-          "박혜연",
-          "김경천",
-          "임하린"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9275,15 +6623,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "손진희",
-          "안민우",
-          "박하나",
-          "최병혁",
-          "조한",
-          "황이현",
-          "설호종"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9295,15 +6635,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박소영",
-          "김선정",
-          "안민우",
-          "박하나",
-          "최벽혁",
-          "황이현",
-          "설호종"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9320,15 +6652,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김나영",
-          "김선주",
-          "김수현",
-          "박미리",
-          "손혜민",
-          "신다해",
-          "양은진"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9340,15 +6664,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "길병민",
-          "김나영",
-          "김선주",
-          "김수현",
-          "나지수",
-          "박미리",
-          "박소정"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9360,15 +6676,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김나영",
-          "김선주",
-          "김수현",
-          "나지수",
-          "박미리",
-          "박소정",
-          "손혜민"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9385,15 +6693,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김재형",
-          "김혜인",
-          "왕하성",
-          "송희정",
-          "변형범",
-          "김도연",
-          "오찬우"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9405,15 +6705,7 @@
         "season_rank": 6.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김재형",
-          "김도연",
-          "왕하성",
-          "송희정",
-          "류다휘",
-          "김민지",
-          "홍재호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9465,7 +6757,7 @@
         "perf_end_date": "2024-11-24",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "경기도극단",
+        "company_name": "",
         "cast": [],
         "is_high_demand": true
       },
@@ -9477,16 +6769,8 @@
         "perf_end_date": "2024-12-07",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "경기도극단",
-        "cast": [
-          "윤재웅",
-          "임미정",
-          "황성진",
-          "최예림",
-          "권승록",
-          "장정선",
-          "이진혁"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9503,15 +6787,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이일섭",
-          "최우성",
-          "류진현",
-          "정운봉",
-          "권혁풍",
-          "강성해",
-          "한록수"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9540,10 +6816,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "사샤 괴첼",
-          "막심 벤게로프"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9555,10 +6828,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "사샤 괴첼",
-          "막심 벤게로프"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9574,15 +6844,8 @@
         "perf_end_date": "2024-10-26",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "이지(EG)뮤지컬 컴퍼니",
-        "cast": [
-          "서형훈",
-          "서찬양",
-          "김소정",
-          "박성하",
-          "박소연",
-          "김유진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9593,15 +6856,8 @@
         "perf_end_date": "2024-06-22",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "이지(EG)뮤지컬 컴퍼니, 이지(EG)뮤지컬 컴퍼니",
-        "cast": [
-          "박시환",
-          "윤진솔",
-          "김소정",
-          "박성하",
-          "박소연",
-          "김유진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9617,16 +6873,8 @@
         "perf_end_date": "2024-09-28",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "경남도립극단",
-        "cast": [
-          "박시우",
-          "이은주",
-          "홍성희",
-          "최지훈",
-          "양현석",
-          "박예선",
-          "김상훈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9637,16 +6885,8 @@
         "perf_end_date": "2024-09-05",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "경남도립극단",
-        "cast": [
-          "박시우",
-          "이은주",
-          "홍성희",
-          "최지훈",
-          "양현석",
-          "박예선",
-          "김상훈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9657,16 +6897,8 @@
         "perf_end_date": "2024-09-21",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "경남도립극단",
-        "cast": [
-          "박시우",
-          "이은주",
-          "홍성희",
-          "최지훈",
-          "양현석",
-          "박예선",
-          "김상훈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9683,15 +6915,7 @@
         "season_rank": 5.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "오주원",
-          "진여준",
-          "김준삼",
-          "신서진",
-          "한은비",
-          "왕수희",
-          "전필재"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9703,15 +6927,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "오주원",
-          "진여준",
-          "김준삼",
-          "신서진",
-          "한은비",
-          "왕수희",
-          "전필재"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9727,15 +6943,8 @@
         "perf_end_date": "2026-05-31",
         "season_rank": 3.0,
         "genre": "뮤지컬",
-        "company_name": "해의아이들",
-        "cast": [
-          "유정민",
-          "설재영",
-          "김봉영",
-          "김하준",
-          "김두리",
-          "오유라"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9746,15 +6955,8 @@
         "perf_end_date": "2026-06-13",
         "season_rank": 4.0,
         "genre": "뮤지컬",
-        "company_name": "(주)엔엔터테인먼트, 해의아이들",
-        "cast": [
-          "유정민",
-          "설재영",
-          "김봉영",
-          "김하준",
-          "김두리",
-          "오유라"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9770,15 +6972,8 @@
         "perf_end_date": "2024-09-08",
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "궁중춤예술연구원",
-        "cast": [
-          "장보름이",
-          "유여진",
-          "공유화",
-          "안민진",
-          "정지수",
-          "박소현"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9789,16 +6984,8 @@
         "perf_end_date": "2024-07-07",
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
-        "company_name": "(재)예술경영지원센터, 궁중춤예술연구원",
-        "cast": [
-          "공유화",
-          "안민진",
-          "정지수",
-          "박소현",
-          "이헤린",
-          "강지윤",
-          "박효빈"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9827,12 +7014,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김아영",
-          "임진섭",
-          "김이후",
-          "최민우"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9849,12 +7031,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이병욱",
-          "김나연",
-          "임하나",
-          "이지언"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9866,12 +7043,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "정한결",
-          "김다인",
-          "김예은",
-          "신승경"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9883,12 +7055,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "정한결",
-          "홍보민",
-          "이승해",
-          "임재욱"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9905,15 +7072,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이도유재",
-          "이진경",
-          "서지우",
-          "김화영",
-          "김귀선",
-          "황정민",
-          "최무인"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -9925,15 +7084,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이도유재",
-          "이진경",
-          "서지우",
-          "김화영",
-          "김귀선",
-          "황정민",
-          "최무인"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -9949,7 +7100,7 @@
         "perf_end_date": "2024-10-19",
         "season_rank": 42.0,
         "genre": "뮤지컬",
-        "company_name": "할리퀸크리에이션즈(주)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": true
       },
@@ -9961,7 +7112,7 @@
         "perf_end_date": "2026-05-23",
         "season_rank": 54.0,
         "genre": "뮤지컬",
-        "company_name": "(재)의정부문화재단 (의정부예술의전당), 할리퀸크리에이션즈(주)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -9973,7 +7124,7 @@
         "perf_end_date": "2024-08-24",
         "season_rank": 40.0,
         "genre": "뮤지컬",
-        "company_name": "할리퀸크리에이션즈(주)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -9985,7 +7136,7 @@
         "perf_end_date": "2024-12-01",
         "season_rank": 44.0,
         "genre": "뮤지컬",
-        "company_name": "할리퀸크리에이션즈(주)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -9997,7 +7148,7 @@
         "perf_end_date": "2024-11-14",
         "season_rank": 43.0,
         "genre": "뮤지컬",
-        "company_name": "할리퀸크리에이션즈(주)",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       }
@@ -10015,13 +7166,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김영자",
-          "김도현",
-          "정호영",
-          "김태영",
-          "강송대"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10033,10 +7178,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "손혜영",
-          "유순자"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10052,16 +7194,8 @@
         "perf_end_date": "2025-11-02",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단",
-        "cast": [
-          "이한수",
-          "손동운",
-          "최인형",
-          "금승훈",
-          "김용한",
-          "김연",
-          "이은솔"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -10072,16 +7206,8 @@
         "perf_end_date": "2025-11-08",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "(재)서울예술단",
-        "cast": [
-          "이한수",
-          "최인형",
-          "금승훈",
-          "김용한",
-          "김연",
-          "이은솔",
-          "오지은"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10098,15 +7224,7 @@
         "season_rank": 6.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이주광",
-          "신원경",
-          "황재열",
-          "손지애",
-          "조환준",
-          "조원석",
-          "원근영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10118,15 +7236,7 @@
         "season_rank": 8.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이주광",
-          "신원경",
-          "김진철",
-          "손지애",
-          "조환준",
-          "김태윤",
-          "송나영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10138,15 +7248,7 @@
         "season_rank": 9.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이주광",
-          "하미미",
-          "김진철",
-          "손지애",
-          "조환준",
-          "김태윤",
-          "원근영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10158,15 +7260,7 @@
         "season_rank": 7.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "이주광",
-          "하미미",
-          "김진철",
-          "손지애",
-          "조환준",
-          "김태윤",
-          "원근영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10178,15 +7272,7 @@
         "season_rank": 10.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "조원석",
-          "이주광",
-          "신원경",
-          "김진철",
-          "손지애",
-          "조환준",
-          "원근영"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10203,15 +7289,7 @@
         "season_rank": 24.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김민규",
-          "이지명",
-          "장경원",
-          "박정민",
-          "김유상",
-          "류정훈",
-          "인선호"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -10240,12 +7318,7 @@
         "season_rank": 12.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "최동석",
-          "김진호",
-          "최정산",
-          "송광일"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10257,12 +7330,7 @@
         "season_rank": 13.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "최동석",
-          "김진호",
-          "최정산",
-          "송광일"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10286,12 +7354,7 @@
         "season_rank": 14.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "최동석",
-          "김진호",
-          "최정산",
-          "송광일"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10320,15 +7383,7 @@
         "season_rank": 3.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김혜경",
-          "김지연",
-          "윤혜진",
-          "배효섭",
-          "문용식",
-          "조선재",
-          "한가온"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10340,15 +7395,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "안은미",
-          "김혜경",
-          "김지연",
-          "윤혜진",
-          "문용식",
-          "정의영",
-          "김덕영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10360,14 +7407,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김혜경",
-          "김지연",
-          "윤혜진",
-          "배효섭",
-          "조선재",
-          "문용식"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10384,15 +7424,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "권용만",
-          "김효주",
-          "이상문",
-          "나규보",
-          "신현선",
-          "김기진",
-          "김연화"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10404,15 +7436,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "권용만",
-          "김효주",
-          "이상문",
-          "나규보",
-          "신현선",
-          "김기진",
-          "송태진"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10424,15 +7448,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박경종",
-          "이상문",
-          "윤나람",
-          "나규보",
-          "신현선",
-          "김기진",
-          "김연화"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10448,14 +7464,8 @@
         "perf_end_date": "2025-08-22",
         "season_rank": 7.0,
         "genre": "한국음악(국악)",
-        "company_name": "판소리아지트 놀애박스",
-        "cast": [
-          "이예린",
-          "황지영",
-          "이수진",
-          "임슬기",
-          "조봉국"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10466,16 +7476,8 @@
         "perf_end_date": "2024-07-13",
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
-        "company_name": "(재)의정부문화재단 (의정부예술의전당), 판소리아지트 놀애박스",
-        "cast": [
-          "박인혜",
-          "이예린",
-          "이해원",
-          "최인환",
-          "이수진",
-          "임슬기",
-          "조봉국"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10486,14 +7488,8 @@
         "perf_end_date": "2024-10-31",
         "season_rank": 4.0,
         "genre": "한국음악(국악)",
-        "company_name": "판소리아지트 놀애박스",
-        "cast": [
-          "이예린",
-          "황지영",
-          "이수진",
-          "임슬기",
-          "조봉국"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10504,14 +7500,8 @@
         "perf_end_date": "2025-08-30",
         "season_rank": 8.0,
         "genre": "한국음악(국악)",
-        "company_name": "판소리아지트 놀애박스",
-        "cast": [
-          "이예린",
-          "이해원",
-          "이수진",
-          "임슬기",
-          "조봉국"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10522,14 +7512,8 @@
         "perf_end_date": "2024-07-27",
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
-        "company_name": "판소리아지트 놀애박스",
-        "cast": [
-          "이예린",
-          "이해원",
-          "이수진",
-          "임슬기",
-          "조봉국"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10540,16 +7524,8 @@
         "perf_end_date": "2024-06-15",
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
-        "company_name": "판소리아지트 놀애박스",
-        "cast": [
-          "박인혜",
-          "이예린",
-          "이해원",
-          "최인환",
-          "이수진",
-          "임슬기",
-          "조봉국"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10560,14 +7536,8 @@
         "perf_end_date": "2024-11-09",
         "season_rank": 5.0,
         "genre": "한국음악(국악)",
-        "company_name": "판소리아지트 놀애박스",
-        "cast": [
-          "이예린",
-          "황지영",
-          "이수진",
-          "임슬기",
-          "조봉국"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10578,14 +7548,8 @@
         "perf_end_date": "2024-12-28",
         "season_rank": 6.0,
         "genre": "한국음악(국악)",
-        "company_name": "판소리아지트 놀애박스",
-        "cast": [
-          "이예린",
-          "이해원",
-          "이수진",
-          "임슬기",
-          "조봉국"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10602,15 +7566,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이영숙",
-          "예수빈",
-          "문예주",
-          "홍선우",
-          "이호재",
-          "백은경",
-          "이경한"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10622,15 +7578,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이영숙",
-          "예수빈",
-          "문예주",
-          "홍선우",
-          "이호재",
-          "백은경",
-          "이경한"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10642,15 +7590,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이호재",
-          "백은경",
-          "이영숙",
-          "문예주",
-          "홍선우",
-          "예수빈",
-          "문병설"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10667,11 +7607,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "홍지호",
-          "고상지",
-          "박상욱"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10683,11 +7619,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "홍진호",
-          "고상지",
-          "박상욱"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10703,16 +7635,8 @@
         "perf_end_date": "2024-09-05",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "(사)마당극패 우금치",
-        "cast": [
-          "이주행",
-          "김황식",
-          "이신애",
-          "임창숙",
-          "이광백",
-          "김시현",
-          "김미희"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10723,15 +7647,8 @@
         "perf_end_date": "2024-07-20",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "(사)마당극패 우금치",
-        "cast": [
-          "이주행",
-          "김황식",
-          "성장순",
-          "이신애",
-          "임창숙",
-          "이광백"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10742,15 +7659,8 @@
         "perf_end_date": "2026-05-22",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "(사)마당극패 우금치",
-        "cast": [
-          "이주행",
-          "이동혁",
-          "김황식",
-          "임창숙",
-          "이신애",
-          "이광백"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10761,15 +7671,8 @@
         "perf_end_date": "2026-06-20",
         "season_rank": 6.0,
         "genre": "연극",
-        "company_name": "(사)마당극패 우금치",
-        "cast": [
-          "이주행",
-          "이동혁",
-          "김황식",
-          "임창숙",
-          "이신애",
-          "이광백"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10780,15 +7683,8 @@
         "perf_end_date": "2024-11-09",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "(사)마당극패 우금치",
-        "cast": [
-          "이주행",
-          "이동혁",
-          "김황식",
-          "임창숙",
-          "이신애",
-          "이광백"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10817,14 +7713,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이주행",
-          "김황식",
-          "성장순",
-          "이신애",
-          "임창숙",
-          "이광백"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10836,14 +7725,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이주행",
-          "이동혁",
-          "김황식",
-          "임창숙",
-          "이신애",
-          "이광백"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10884,10 +7766,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "나태주",
-          "목서윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10899,10 +7778,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "조용헌",
-          "목서윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10919,14 +7795,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "손지훈",
-          "이영은",
-          "정인호",
-          "김예성",
-          "예수아",
-          "장윤성"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10938,13 +7807,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "백윤학",
-          "손지훈",
-          "이영은",
-          "정인호",
-          "김예성"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10956,14 +7819,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "예수아",
-          "이영은",
-          "손지훈",
-          "정인호",
-          "김예성",
-          "장윤성"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -10979,14 +7835,8 @@
         "perf_end_date": "2023-09-13",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "극단 디아코노스",
-        "cast": [
-          "성유미",
-          "김성훈",
-          "허윤희",
-          "김미소",
-          "최하린"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -10997,14 +7847,8 @@
         "perf_end_date": "2023-09-07",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "극단 디아코노스",
-        "cast": [
-          "성유미",
-          "김성훈",
-          "허윤희",
-          "김미소",
-          "최하린"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11020,15 +7864,8 @@
         "perf_end_date": "2023-07-12",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "(주)아트파이, 박종우 청소년극 창작소",
-        "cast": [
-          "김덕중",
-          "안장환",
-          "김서진",
-          "안수호",
-          "김성미",
-          "김수민"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11039,15 +7876,8 @@
         "perf_end_date": "2023-09-05",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "(주)아트파이, 박종우 청소년극 창작소",
-        "cast": [
-          "김덕중",
-          "안장환",
-          "김서진",
-          "안수호",
-          "김성미",
-          "김수민"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11064,15 +7894,7 @@
         "season_rank": 5.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "남경주",
-          "김하연",
-          "신인선",
-          "이영호",
-          "최예림",
-          "이경성",
-          "임춘길"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11084,15 +7906,7 @@
         "season_rank": 8.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "남경주",
-          "김하연",
-          "신인선",
-          "이영호",
-          "최예림",
-          "이경성",
-          "임춘길"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11104,15 +7918,7 @@
         "season_rank": 6.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "남경주",
-          "김하연",
-          "신인선",
-          "이영호",
-          "최예림",
-          "이경성",
-          "임춘길"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11124,15 +7930,7 @@
         "season_rank": 7.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "남경주",
-          "김하연",
-          "신인선",
-          "이영호",
-          "최예림",
-          "이경성",
-          "임춘길"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11148,16 +7946,8 @@
         "perf_end_date": "2024-06-08",
         "season_rank": 1.0,
         "genre": "뮤지컬",
-        "company_name": "뉴스테이지(NEWSTAGE)",
-        "cast": [
-          "남경주",
-          "김하연",
-          "신인선",
-          "이영호",
-          "최예림",
-          "이경성",
-          "임춘길"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11168,16 +7958,8 @@
         "perf_end_date": "2024-06-22",
         "season_rank": 2.0,
         "genre": "뮤지컬",
-        "company_name": "뉴스테이지(NEWSTAGE)",
-        "cast": [
-          "남경주",
-          "김하연",
-          "신인선",
-          "이영호",
-          "최예림",
-          "이경성",
-          "임춘길"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11194,10 +7976,7 @@
         "season_rank": 1.0,
         "genre": "복합",
         "company_name": "",
-        "cast": [
-          "김솔다니엘",
-          "윤다영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11209,9 +7988,7 @@
         "season_rank": 2.0,
         "genre": "복합",
         "company_name": "",
-        "cast": [
-          "윤다영"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11228,15 +8005,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박상민",
-          "김두민",
-          "김민지",
-          "강미사",
-          "김소연",
-          "심준호",
-          "이경준"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11248,15 +8017,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박상민",
-          "김두민",
-          "김민지",
-          "주연선",
-          "강미사",
-          "김소연",
-          "심준호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11268,15 +8029,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "박상민",
-          "김두민",
-          "김민지",
-          "주연선",
-          "강미사",
-          "김소연",
-          "심준호"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11293,10 +8046,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "송유진",
-          "김주영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11308,9 +8058,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "송유진"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11327,11 +8075,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박웅",
-          "김용선",
-          "조정민"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11343,11 +8087,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박웅",
-          "김용선",
-          "조정민"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11359,11 +8099,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박웅",
-          "김용선",
-          "조정민"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11380,10 +8116,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이동규",
-          "김태규"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11395,15 +8128,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이동규",
-          "김태규",
-          "김기환",
-          "김예지",
-          "김나영",
-          "장희재",
-          "유이삭"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11420,15 +8145,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "송나영",
-          "홍나현",
-          "정욱진",
-          "한보라",
-          "원종환",
-          "유성재",
-          "김지훈"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -11440,14 +8157,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "홍나현",
-          "정욱진",
-          "한보라",
-          "원종환",
-          "김지훈",
-          "이경욱"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11459,14 +8169,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "송나영",
-          "정욱진",
-          "한보라",
-          "유성재",
-          "김지훈",
-          "이경욱"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11483,15 +8186,7 @@
         "season_rank": 7.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박희정",
-          "유연",
-          "윤성원",
-          "마현진",
-          "문경초",
-          "이동명",
-          "정선기"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11515,15 +8210,7 @@
         "season_rank": 8.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김주연",
-          "유연",
-          "윤성원",
-          "마현진",
-          "문경초",
-          "이동명",
-          "정선기"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11539,16 +8226,8 @@
         "perf_end_date": "2024-10-17",
         "season_rank": 6.0,
         "genre": "연극",
-        "company_name": "(주)창작하는 공간, 공연배달서비스간다",
-        "cast": [
-          "김주연",
-          "박희정",
-          "박선혜",
-          "윤성원",
-          "이종훈",
-          "마현진",
-          "이승일"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11559,16 +8238,8 @@
         "perf_end_date": "2024-10-12",
         "season_rank": 5.0,
         "genre": "연극",
-        "company_name": "(주)창작하는 공간, 공연배달서비스간다",
-        "cast": [
-          "김주연",
-          "유연",
-          "윤성원",
-          "이승일",
-          "김유상",
-          "이동명",
-          "정선기"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11579,16 +8250,8 @@
         "perf_end_date": "2024-10-26",
         "season_rank": 7.0,
         "genre": "연극",
-        "company_name": "공연배달서비스간다",
-        "cast": [
-          "김주연",
-          "유연",
-          "윤성원",
-          "마현진",
-          "문경초",
-          "이종혁",
-          "정선기"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11599,16 +8262,8 @@
         "perf_end_date": "2024-06-29",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "(재)횡성문화재단, 공연배달서비스간다",
-        "cast": [
-          "박희정",
-          "박선혜",
-          "윤성원",
-          "마현진",
-          "노재현",
-          "문경초",
-          "윤철주"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11624,16 +8279,8 @@
         "perf_end_date": "2024-09-04",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "극단 수수파보리",
-        "cast": [
-          "남명렬",
-          "문경희",
-          "김정우",
-          "이한희",
-          "신정은",
-          "이진철",
-          "김하진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11644,16 +8291,8 @@
         "perf_end_date": "2024-08-31",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "극단 수수파보리",
-        "cast": [
-          "남명렬",
-          "문경희",
-          "김정우",
-          "이한희",
-          "신정은",
-          "이진철",
-          "김하진"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11670,15 +8309,7 @@
         "season_rank": 6.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "루이스초이",
-          "석재승",
-          "김경수",
-          "이준혁",
-          "박소연",
-          "여은",
-          "노희찬"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -11690,15 +8321,7 @@
         "season_rank": 5.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "루이스초이",
-          "김경수",
-          "박소연",
-          "김주호",
-          "노희찬",
-          "여은",
-          "이한밀"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -11710,15 +8333,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "루이스초이",
-          "석재승",
-          "김경수",
-          "이준혁",
-          "박소연",
-          "여은",
-          "이한밀"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -11730,12 +8345,7 @@
         "season_rank": 8.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "박소연",
-          "김경수",
-          "유성재",
-          "이한밀"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11747,15 +8357,7 @@
         "season_rank": 7.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "루이스초이",
-          "김경수",
-          "여은",
-          "박소연",
-          "김주호",
-          "이한밀",
-          "노희찬"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11767,15 +8369,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "루이스초이",
-          "석재승",
-          "이준혁",
-          "여은",
-          "유성재",
-          "김주호",
-          "이한밀"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11787,15 +8381,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "루이스초이",
-          "석재승",
-          "김경수",
-          "이준혁",
-          "여은",
-          "노희찬",
-          "김주호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11807,15 +8393,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "김경수",
-          "박소연",
-          "유성재",
-          "김주호",
-          "루이스 초이",
-          "노희찬",
-          "이한밀"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11832,15 +8410,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이승희",
-          "김홍식",
-          "김소진",
-          "백종승",
-          "이유준",
-          "이향하",
-          "김홍갑"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11852,15 +8422,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이승희",
-          "김소진",
-          "백종승",
-          "김홍식",
-          "이향하",
-          "김홍갑",
-          "이유준"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11872,14 +8434,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이승희",
-          "김홍식",
-          "김소진",
-          "백종승",
-          "이유준",
-          "이향하"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11896,15 +8451,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이승희",
-          "김홍식",
-          "김소진",
-          "백종승",
-          "이향하",
-          "김홍갑",
-          "이유준"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11916,15 +8463,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이승희",
-          "김홍식",
-          "김소진",
-          "백종승",
-          "이유준",
-          "이향하",
-          "김홍갑"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -11941,14 +8480,7 @@
         "season_rank": 4.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "양지윤",
-          "김경희",
-          "조예희",
-          "김태형",
-          "김범진",
-          "나의석"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11960,15 +8492,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "민인기",
-          "서활란",
-          "김경희",
-          "조예희",
-          "김태형",
-          "김범진",
-          "나의석"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -11980,14 +8504,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "서활란",
-          "김경희",
-          "조예희",
-          "김태형",
-          "김범진",
-          "나의석"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12004,15 +8521,7 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "채송화",
-          "이진경",
-          "문수아",
-          "조슬아",
-          "윤예솔",
-          "황예원",
-          "최정화"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12024,15 +8533,7 @@
         "season_rank": 1.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "채송화",
-          "이진경",
-          "문수아",
-          "조슬아",
-          "윤예솔",
-          "황예원",
-          "최정화"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12048,16 +8549,8 @@
         "perf_end_date": "2024-07-23",
         "season_rank": 4.0,
         "genre": "연극",
-        "company_name": "극단 산, 극단 산",
-        "cast": [
-          "최재섭",
-          "정수한",
-          "최정화",
-          "남현우",
-          "김경환",
-          "채송화",
-          "이세영"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12068,16 +8561,8 @@
         "perf_end_date": "2023-08-31",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "극단 산",
-        "cast": [
-          "홍성민",
-          "조슬아",
-          "김경환",
-          "여동훈",
-          "정수한",
-          "강혁",
-          "이정근"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12088,16 +8573,8 @@
         "perf_end_date": "2024-07-20",
         "season_rank": 3.0,
         "genre": "연극",
-        "company_name": "극단 산",
-        "cast": [
-          "최재섭",
-          "정수한",
-          "최정화",
-          "남현우",
-          "김경환",
-          "채송화",
-          "이세영"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12114,15 +8591,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "허서명",
-          "김상진",
-          "김태연",
-          "장윤서",
-          "김설화",
-          "엄려진",
-          "정혜연"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12134,15 +8603,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "허서명",
-          "김상진",
-          "김태연",
-          "장윤서",
-          "김설화",
-          "엄려진",
-          "정혜연"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12159,12 +8620,7 @@
         "season_rank": 3.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김영찬",
-          "장해솔",
-          "박인선",
-          "허창열"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12193,14 +8649,7 @@
         "season_rank": 1.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김모든",
-          "김은주",
-          "김재은",
-          "류지수",
-          "문경재",
-          "이가영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12212,14 +8661,7 @@
         "season_rank": 2.0,
         "genre": "무용(서양/한국무용)",
         "company_name": "",
-        "cast": [
-          "김모든",
-          "김은주",
-          "김재은",
-          "류지수",
-          "문경재",
-          "이가영"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12236,15 +8678,7 @@
         "season_rank": 1.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김동규",
-          "강혜정",
-          "김재빈",
-          "한아름",
-          "김종훈",
-          "김영아",
-          "김선호"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12256,12 +8690,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "김동규",
-          "강혜정",
-          "김재빈",
-          "한아름"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12290,15 +8719,7 @@
         "season_rank": 3.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이현진",
-          "박정희",
-          "이효진",
-          "편성준",
-          "박나연",
-          "최혜정",
-          "박도영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12310,15 +8731,7 @@
         "season_rank": 2.0,
         "genre": "서양음악(클래식)",
         "company_name": "",
-        "cast": [
-          "이현진",
-          "박정희",
-          "이효진",
-          "편성준",
-          "박나연",
-          "최혜정",
-          "박도영"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12335,12 +8748,7 @@
         "season_rank": 2.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "박순아",
-          "이호원",
-          "김하람",
-          "오영빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12352,9 +8760,7 @@
         "season_rank": 5.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "김주홍"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12378,12 +8784,7 @@
         "season_rank": 7.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이호원",
-          "김하람",
-          "권다영",
-          "오영빈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12395,12 +8796,7 @@
         "season_rank": 1.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이호원",
-          "오영빈",
-          "김하람",
-          "권다영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12412,12 +8808,7 @@
         "season_rank": 4.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이호원",
-          "오영빈",
-          "김하람",
-          "권다영"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12429,12 +8820,7 @@
         "season_rank": 6.0,
         "genre": "한국음악(국악)",
         "company_name": "",
-        "cast": [
-          "이호원",
-          "김하람",
-          "오영빈",
-          "권다영"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12451,14 +8837,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김동현",
-          "류지훈",
-          "구옥분",
-          "문상희",
-          "오근영",
-          "김수아"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12470,14 +8849,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김동현",
-          "류지훈",
-          "구옥분",
-          "문상희",
-          "오근영",
-          "김수아"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12494,10 +8866,7 @@
         "season_rank": 7.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "유도온",
-          "조정민"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12509,15 +8878,7 @@
         "season_rank": 5.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "유도온",
-          "조정민",
-          "임재혁",
-          "유학승",
-          "이강",
-          "오미준",
-          "김태원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12529,15 +8890,7 @@
         "season_rank": 6.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "유도온",
-          "조정민",
-          "임재혁",
-          "유학승",
-          "이강",
-          "오미준",
-          "김태원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12549,15 +8902,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "유도온",
-          "조정민",
-          "임재혁",
-          "유학승",
-          "이강",
-          "오미준",
-          "크리스티"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12569,15 +8914,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "유도온",
-          "조정민",
-          "임재혁",
-          "유학승",
-          "이강",
-          "오미준",
-          "김태원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12589,15 +8926,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "유도온",
-          "조정민",
-          "임재혁",
-          "유학승",
-          "이강",
-          "오미준",
-          "김태원"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12609,15 +8938,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "유도온",
-          "조정민",
-          "임재혁",
-          "유학승",
-          "이창희",
-          "오미준",
-          "김태원"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12634,15 +8955,7 @@
         "season_rank": 5.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "박선우",
-          "이지원",
-          "박혜민",
-          "안태준",
-          "조흠",
-          "정문길",
-          "천우주"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12654,15 +8967,7 @@
         "season_rank": 3.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "박선우",
-          "이지원",
-          "정문길",
-          "안태준",
-          "천우주",
-          "노혜성",
-          "박혜민"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12674,15 +8979,7 @@
         "season_rank": 1.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "정소리",
-          "하미미",
-          "안태준",
-          "조흠",
-          "정문길",
-          "천우주",
-          "박혜민"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12706,15 +9003,7 @@
         "season_rank": 6.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "박선우",
-          "이지원",
-          "안태준",
-          "조흠",
-          "정문길",
-          "김정은",
-          "김선오"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12726,15 +9015,7 @@
         "season_rank": 4.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "정소리",
-          "하미미",
-          "안태준",
-          "조흠",
-          "정문길",
-          "천우주",
-          "박혜민"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12751,15 +9032,7 @@
         "season_rank": 1.0,
         "genre": "복합",
         "company_name": "",
-        "cast": [
-          "강다영",
-          "김은진",
-          "김하현",
-          "민근혜",
-          "배민우",
-          "신이안",
-          "심솔"
-        ],
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -12771,15 +9044,7 @@
         "season_rank": 2.0,
         "genre": "복합",
         "company_name": "",
-        "cast": [
-          "강다연",
-          "김은진",
-          "김하현",
-          "민근혜",
-          "배민우",
-          "신이안",
-          "심솔"
-        ],
+        "cast": [],
         "is_high_demand": true
       }
     ]
@@ -12808,15 +9073,7 @@
         "season_rank": 2.0,
         "genre": "뮤지컬",
         "company_name": "",
-        "cast": [
-          "한재아",
-          "홍나현",
-          "이아름솔",
-          "이지연",
-          "신창주",
-          "이종영",
-          "김대현"
-        ],
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12832,7 +9089,7 @@
         "perf_end_date": "2025-06-20",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "충북도립극단",
+        "company_name": "",
         "cast": [],
         "is_high_demand": false
       },
@@ -12844,16 +9101,8 @@
         "perf_end_date": "2025-06-14",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "충북도립극단",
-        "cast": [
-          "박선혜",
-          "이채윤",
-          "문창완",
-          "이유진",
-          "신태희",
-          "류명한",
-          "이기복"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
@@ -12870,15 +9119,7 @@
         "season_rank": 6.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이서현",
-          "박주연",
-          "원경식",
-          "김남표",
-          "조한나",
-          "박승화",
-          "이정훈"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12890,15 +9131,7 @@
         "season_rank": 7.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "김호산",
-          "이서현",
-          "박주연",
-          "견민성",
-          "원경식",
-          "김남표",
-          "조한나"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12910,15 +9143,7 @@
         "season_rank": 4.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "호 산",
-          "이서현",
-          "박주연",
-          "견민성",
-          "원경식",
-          "김남표",
-          "최하윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12930,15 +9155,7 @@
         "season_rank": 5.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "이서현",
-          "박주연",
-          "조영규",
-          "견민성",
-          "원경식",
-          "김남표",
-          "조한나"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12950,15 +9167,7 @@
         "season_rank": 3.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [
-          "박상원",
-          "이서현",
-          "박주연",
-          "조영규",
-          "조한나",
-          "견민성",
-          "최하윤"
-        ],
+        "cast": [],
         "is_high_demand": false
       },
       {
@@ -12986,16 +9195,8 @@
         "perf_end_date": "2023-04-02",
         "season_rank": 1.0,
         "genre": "연극",
-        "company_name": "극공작소 마방진, 두산아트센터((재)두산연강재단)",
-        "cast": [
-          "박상원",
-          "호산",
-          "이서현",
-          "박주연",
-          "조영규",
-          "견민성",
-          "원경식"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": true
       },
       {
@@ -13006,16 +9207,8 @@
         "perf_end_date": "2024-10-19",
         "season_rank": 2.0,
         "genre": "연극",
-        "company_name": "극공작소 마방진",
-        "cast": [
-          "이서현",
-          "박주연",
-          "견민성",
-          "원경식",
-          "김남표",
-          "조한나",
-          "박승화"
-        ],
+        "company_name": "",
+        "cast": [],
         "is_high_demand": false
       }
     ]
