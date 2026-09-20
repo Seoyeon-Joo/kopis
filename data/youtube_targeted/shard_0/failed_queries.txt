@@ -51,3 +51,4 @@ perf::PF290251	저승편	relevance
 perf::PF263740	강아지똥	relevance			
 perf::PF233325	Ensemble	relevance			
 perf::PF265101	꽃의 비밀	relevance			
+perf::PF230600	기쁜 소리	relevance			
