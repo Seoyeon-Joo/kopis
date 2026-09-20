@@ -23,3 +23,4 @@ perf::PF283740	봄을 향한 왈츠	relevance
 perf::PF264492	황제와 영웅 쇼츠	relevance			
 perf::PF247845	적벽	relevance			
 perf::PF285931	백조의 호수 리뷰	relevance			
+perf::PF271069	제167회 부산시립소년소녀합창단 정기연주회	relevance			
