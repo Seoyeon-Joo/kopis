@@ -57,3 +57,4 @@ perf::PF261025	포천시립소년소녀합창단	relevance
 perf::PF269338	함께! Ⅰ	relevance			
 perf::PF253973	파이브 바이브	relevance			
 perf::PF272869	춘향전	relevance			
+perf::PF240292	DIVINE	relevance			
