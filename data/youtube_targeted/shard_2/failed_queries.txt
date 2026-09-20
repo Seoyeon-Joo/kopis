@@ -46,3 +46,4 @@ perf::PF272531	조선팝 에볼루션 Ⅱ	relevance
 perf::PF257899	아이다	relevance			
 perf::PF271426	지젤	relevance			
 perf::PF257899	아이다 리뷰	relevance			
+perf::PF257899	아이다	relevance			
