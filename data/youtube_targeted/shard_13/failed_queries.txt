@@ -39,3 +39,4 @@ perf::PF230622	축제	relevance
 perf::PF269623	완창판소리 (10월)	relevance			
 perf::PF280071	그리움에서 희망으로	relevance			
 perf::PF218080	페페의 꿈 리뷰	relevance			
+perf::PF230622	축제 쇼츠	relevance			
