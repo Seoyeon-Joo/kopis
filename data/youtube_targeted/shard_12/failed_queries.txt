@@ -42,3 +42,4 @@ perf::PF234724	백조의 호수	relevance
 perf::PF234724	백조의 호수 리뷰	relevance			
 perf::PF231990	영화와 합창음악 리뷰	relevance			
 perf::PF234724	백조의 호수 리뷰	relevance			
+perf::PF234724	백조의 호수	relevance			
