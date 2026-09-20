@@ -58,3 +58,4 @@ perf::PF289313	베토벤	relevance
 perf::PF289313	베토벤	relevance			
 perf::PF247222	슈베르트 & 이수인	relevance			
 perf::PF289313	베토벤	relevance			
+perf::PF289313	베토벤 쇼츠	relevance			
