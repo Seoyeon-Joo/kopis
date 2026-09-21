@@ -9212,5 +9212,71 @@
         "is_high_demand": false
       }
     ]
+  },
+  "라라라온::new_1": {
+    "representative_title": "라라라온 [롤링홀]",
+    "members": [
+      {
+        "perf_id": "PF299823",
+        "title": "라라라온 [KT&G 상상마당 부산]",
+        "venue_name": "KT&G 상상마당 라이브홀 [부산]",
+        "perf_start_date": "2026-09-20",
+        "perf_end_date": "2026-09-20",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "(사)한국음악레이블산업협회",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF300397",
+        "title": "라라라온 [롤링홀]",
+        "venue_name": "롤링홀",
+        "perf_start_date": "2026-09-21",
+        "perf_end_date": "2026-09-21",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "(사)한국음악레이블산업협회",
+        "cast": [
+          "김규태",
+          "나병준",
+          "남창훈",
+          "도성희",
+          "남경운",
+          "이혁",
+          "김정모"
+        ],
+        "is_high_demand": false
+      }
+    ]
+  },
+  "백설공주::new_2": {
+    "representative_title": "백설공주 [서울 영등포]",
+    "members": [
+      {
+        "perf_id": "PF298226",
+        "title": "백설공주 [서울 영등포]",
+        "venue_name": "롯데백화점 [영등포]",
+        "perf_start_date": "2026-09-19",
+        "perf_end_date": "2026-09-20",
+        "season_rank": 1,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF292421",
+        "title": "백설공주 [서울 서대문]",
+        "venue_name": "서대문문화체육회관",
+        "perf_start_date": "2026-09-19",
+        "perf_end_date": "2026-09-19",
+        "season_rank": 2,
+        "genre": "뮤지컬",
+        "company_name": NaN,
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
   }
 }
