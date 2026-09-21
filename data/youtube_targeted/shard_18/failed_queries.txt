@@ -53,3 +53,4 @@ perf::PF230602	리어	relevance
 perf::PF247404	전북특별자치도립국악원 관현악단	relevance			
 perf::PF225394	이상한 엄마	relevance			
 perf::PF240574	여자야 여자야	relevance			
+perf::PF249010	합창뷔페	relevance			
