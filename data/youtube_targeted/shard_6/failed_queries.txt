@@ -25,3 +25,4 @@ perf::PF285931	백조의 호수 리뷰	relevance
 perf::PF271069	제167회 부산시립소년소녀합창단 정기연주회	relevance			
 perf::PF247764	간과 강	relevance			
 perf::PF247764	간과 강	relevance			
+perf::PF247764	간과 강	relevance			
