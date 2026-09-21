@@ -1,6 +1,4 @@
 perf::PF266067	인어공주	relevance			
-perf::PF226022	벽을 허물다	relevance			
-perf::PF266067	인어공주	relevance			
 perf::PF266067	인어공주	relevance			
 perf::PF257898	유령	relevance			
 perf::PF280840	REQUIEM	relevance			
