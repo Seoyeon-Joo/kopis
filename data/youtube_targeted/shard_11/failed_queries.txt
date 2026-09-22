@@ -61,3 +61,4 @@ perf::PF240292	DIVINE	relevance
 perf::PF240292	DIVINE	relevance			
 perf::PF272869	춘향전	relevance			
 perf::PF283920	피노키오	relevance			
+perf::PF240292	DIVINE	relevance			
