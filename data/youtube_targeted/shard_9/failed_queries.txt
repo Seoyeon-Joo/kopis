@@ -42,3 +42,4 @@ perf::PF269536	복수의 씨앗	relevance
 perf::PF238507	솔로이스트들의 축제	relevance			
 perf::PF281247	교향곡 1번	relevance			
 perf::PF284467	강북구립청소년오케스트라 정기연주회	relevance			
+perf::PF274568	라이트 트리스	relevance			
