@@ -26,3 +26,4 @@ perf::PF271069	제167회 부산시립소년소녀합창단 정기연주회	relev
 perf::PF247764	간과 강	relevance			
 perf::PF247764	간과 강	relevance			
 perf::PF247764	간과 강	relevance			
+perf::PF247764	간과 강	relevance			
