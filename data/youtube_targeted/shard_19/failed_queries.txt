@@ -1,5 +1,5 @@
-perf::PF258755	만선	relevance			
 perf::PF267168	봄	relevance			
 perf::PF258755	만선	relevance			
 perf::PF275683	데렐라	relevance			
 perf::PF280700	그 판	relevance			
+perf::PF223372	이상한 엄마	relevance			
