@@ -1,4 +1,1 @@
-perf::PF275683	데렐라	relevance			
-perf::PF280700	그 판	relevance			
-perf::PF223372	이상한 엄마	relevance			
 perf::PF232740	교향곡 7번	relevance			
