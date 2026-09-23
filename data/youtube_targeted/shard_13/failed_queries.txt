@@ -45,3 +45,4 @@ perf::PF249152	The KISS	relevance
 perf::PF291470	사의 찬미	relevance			
 perf::PF230622	축제	relevance			
 perf::PF230622	축제	relevance			
+perf::PF230622	축제	relevance			
