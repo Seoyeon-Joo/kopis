@@ -41,3 +41,4 @@ perf::PF217261	이상한 엄마	relevance
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF251284	사라져가는 것에 대하여	relevance			
 perf::PF288294	구보씨	relevance			
+perf::PF260777	달을 쏘다. 리뷰	relevance			
