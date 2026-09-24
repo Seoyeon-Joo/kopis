@@ -59,3 +59,4 @@ perf::PF253954	그의 어머니	relevance
 perf::PF249817	라 트라비아타	date			
 perf::PF253954	그의 어머니	relevance			
 perf::PF246242	이것은 대사관이 아니다	relevance			
+perf::PF270995	염원	relevance			
