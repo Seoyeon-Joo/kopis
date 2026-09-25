@@ -41,3 +41,4 @@ perf::PF232962	어린왕자	relevance
 perf::PF250417	라 트라비아타	relevance			
 perf::PF258358	피가로의 결혼	date			
 perf::PF257899	아이다	relevance			
+perf::PF257898	유령	relevance			
