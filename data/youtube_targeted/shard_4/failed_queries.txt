@@ -74,3 +74,4 @@ perf::PF289258	우리춤	relevance
 perf::PF263141	남풍	relevance			
 perf::PF257631	파우스트	date			
 perf::PF254412	호두까기 인형	relevance			
+perf::PF277458	비극적	relevance			
