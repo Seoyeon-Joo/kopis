@@ -48,3 +48,4 @@ perf::PF269536	복수의 씨앗	relevance
 perf::PF223953	이상한 나라의 앨리스	relevance			
 perf::PF248279	모든	relevance			
 perf::PF245058	네	relevance			
+perf::PF290549	발 (鈸)	relevance			
