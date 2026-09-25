@@ -65,3 +65,4 @@ perf::PF253973	파이브 바이브	relevance
 perf::PF240292	DIVINE	relevance			
 perf::PF240292	DIVINE	relevance			
 perf::PF272795	Fanfare	relevance			
+perf::PF253973	파이브 바이브	relevance			
