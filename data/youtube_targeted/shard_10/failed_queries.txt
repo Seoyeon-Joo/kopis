@@ -1,5 +1,4 @@
 perf::PF234724	백조의 호수	relevance			
-perf::PF234724	백조의 호수	relevance			
 perf::PF283056	독일 낭만의 대화 리뷰	relevance			
 perf::PF242002	햄릿	relevance			
 perf::PF285068	베르테르	relevance			
@@ -52,3 +51,4 @@ perf::PF290329	피리 부는 사나이 리뷰	relevance
 perf::PF285068	베르테르	relevance			
 perf::PF275053	호두까기 인형	relevance			
 perf::PF285068	베르테르	relevance			
+perf::PF281616	미녀와 야수	relevance			
