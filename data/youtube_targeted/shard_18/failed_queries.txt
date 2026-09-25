@@ -1,4 +1,3 @@
-perf::PF232962	어린왕자	relevance			
 perf::PF261731	모차르트 Ⅱ	relevance			
 perf::PF260794	제60회 성남시립소년소녀합창단 정기연주회	relevance			
 perf::PF232962	어린왕자	relevance			
@@ -58,3 +57,4 @@ perf::PF243944	벽을 뚫고 나온 꽃	relevance
 perf::PF278683	피가로의 결혼 Le nozze di Figaro	relevance			
 perf::PF225394	이상한 엄마	relevance			
 perf::PF273403	넥스트 저니	relevance			
+perf::PF294299	슈퍼루나틱	relevance			
