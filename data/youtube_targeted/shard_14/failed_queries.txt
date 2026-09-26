@@ -1,5 +1,3 @@
-perf::PF235602	더 북	relevance			
-perf::PF279404	크리스마스 캐럴	relevance			
 perf::PF273195	브람스 교향곡 제4번 리뷰	relevance			
 perf::PF235602	더 북	relevance			
 perf::PF245346	원더매직의 오리지널 과학마술 콘서트 시즌1	relevance			
@@ -58,3 +56,4 @@ perf::PF260178	레미제라블	relevance
 perf::PF276362	오르페우스	relevance			
 perf::PF257640	일무	relevance			
 perf::PF260178	레미제라블	relevance			
+perf::PF258725	전람회의 그림	relevance			
