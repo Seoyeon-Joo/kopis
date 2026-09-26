@@ -42,3 +42,4 @@ perf::PF234724	백조의 호수	relevance
 perf::PF293241	우리의 미래	relevance			
 perf::PF255874	지젤	relevance			
 perf::PF279326	축제	relevance			
+perf::PF275933	합동교류연주회	relevance			
