@@ -63,3 +63,4 @@ perf::PF253951	미인	relevance
 perf::PF253951	미인	relevance			
 perf::PF253951	미인	date			
 perf::PF242516	햄릿	relevance			
+perf::PF293925	딜리버리	relevance			
