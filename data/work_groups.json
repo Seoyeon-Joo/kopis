@@ -9212,5 +9212,34 @@
         "is_high_demand": false
       }
     ]
+  },
+  "신비한샌드매직쇼사라진모래상자::new_1": {
+    "representative_title": "신비한 샌드매직쇼: 사라진 모래상자 [고양]",
+    "members": [
+      {
+        "perf_id": "PF298346",
+        "title": "신비한 샌드매직쇼: 사라진 모래상자 [서울 영등포]",
+        "venue_name": "롯데백화점 [영등포]",
+        "perf_start_date": "2026-09-26",
+        "perf_end_date": "2026-09-27",
+        "season_rank": 1,
+        "genre": "서커스/마술",
+        "company_name": "(주)블루아트컴퍼니",
+        "cast": [],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF297661",
+        "title": "신비한 샌드매직쇼: 사라진 모래상자 [고양]",
+        "venue_name": "현대백화점 문화홀 [킨텍스]",
+        "perf_start_date": "2026-09-26",
+        "perf_end_date": "2026-09-27",
+        "season_rank": 2,
+        "genre": "서커스/마술",
+        "company_name": "(주)블루아트컴퍼니",
+        "cast": [],
+        "is_high_demand": false
+      }
+    ]
   }
 }
