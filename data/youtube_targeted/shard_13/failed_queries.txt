@@ -52,3 +52,4 @@ perf::PF283897	오즈의 마법사	relevance
 perf::PF273493	야견들	relevance			
 perf::PF230622	축제	relevance			
 perf::PF230622	축제	relevance			
+perf::PF267528	별주부전	relevance			
