@@ -68,3 +68,4 @@ perf::PF272795	Fanfare	relevance
 perf::PF253973	파이브 바이브	relevance			
 perf::PF260826	봄	relevance			
 perf::PF253973	파이브 바이브	relevance			
+perf::PF283920	피노키오	relevance			
