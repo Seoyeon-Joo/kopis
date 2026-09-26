@@ -1,4 +1,3 @@
-perf::PF249929	행진	relevance			
 perf::PF247764	간과 강	relevance			
 perf::PF247764	간과 강	relevance			
 perf::PF252438	군산 세레나데	relevance			
@@ -75,3 +74,4 @@ perf::PF263141	남풍	relevance
 perf::PF257631	파우스트	date			
 perf::PF254412	호두까기 인형	relevance			
 perf::PF277458	비극적	relevance			
+perf::PF257631	파우스트	relevance			
