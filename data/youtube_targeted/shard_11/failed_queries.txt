@@ -69,3 +69,4 @@ perf::PF253973	파이브 바이브	relevance
 perf::PF260826	봄	relevance			
 perf::PF253973	파이브 바이브	relevance			
 perf::PF283920	피노키오	relevance			
+perf::PF292843	슈퍼 루나틱	relevance			
