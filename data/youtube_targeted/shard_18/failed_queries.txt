@@ -60,3 +60,4 @@ perf::PF273403	넥스트 저니	relevance
 perf::PF294299	슈퍼루나틱	relevance			
 perf::PF230602	리어	relevance			
 perf::PF291867	박태준	relevance			
+perf::PF230602	리어	relevance			
