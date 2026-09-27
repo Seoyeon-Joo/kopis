@@ -52,3 +52,4 @@ perf::PF290549	발 (鈸)	relevance
 perf::PF269536	복수의 씨앗	relevance			
 perf::PF281247	교향곡 1번	relevance			
 perf::PF281247	교향곡 1번	relevance			
+perf::PF281247	교향곡 1번	relevance			
