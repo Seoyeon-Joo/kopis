@@ -65,3 +65,4 @@ perf::PF253954	그의 어머니	relevance
 perf::PF279946	듀오	relevance			
 perf::PF253954	그의 어머니	relevance			
 perf::PF253954	그의 어머니	relevance			
+perf::PF276931	청이	relevance			
