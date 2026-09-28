@@ -59,3 +59,4 @@ perf::PF230602	리어	relevance
 perf::PF267482	갈매기	relevance			
 perf::PF230602	리어	relevance			
 perf::PF225183	친절한 돼지씨	relevance			
+perf::PF230602	리어	relevance			
