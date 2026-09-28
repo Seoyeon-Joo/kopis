@@ -46,3 +46,4 @@ perf::PF269547	심청	date
 perf::PF234724	백조의 호수	relevance			
 perf::PF264279	가락송송	relevance			
 perf::PF279326	축제	relevance			
+perf::PF234724	백조의 호수	relevance			
