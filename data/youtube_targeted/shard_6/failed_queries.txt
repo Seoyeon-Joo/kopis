@@ -28,3 +28,4 @@ perf::PF247764	간과 강	relevance
 perf::PF288006	1919년	relevance			
 perf::PF247764	간과 강	relevance			
 perf::PF288006	1919년	relevance			
+perf::PF230615	사자의 서	relevance			
