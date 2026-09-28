@@ -1,4 +1,3 @@
-perf::PF234670	Drama	relevance			
 perf::PF262269	걸음마 콘서트 쇼츠	relevance			
 perf::PF261746	New World	relevance			
 perf::PF262269	걸음마 콘서트	relevance			
@@ -74,3 +73,4 @@ perf::PF240292	DIVINE	relevance
 perf::PF287115	백조의 호수 (영상화)	relevance			
 perf::PF281616	미녀와 야수	relevance			
 perf::PF240292	DIVINE	relevance			
+perf::PF234507	마리 퀴리	relevance			
