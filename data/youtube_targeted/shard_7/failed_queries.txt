@@ -68,3 +68,4 @@ perf::PF254700	광주예술의전당 발레교실 작품발표회	relevance
 perf::PF256786	레퀴엠	relevance			
 perf::PF266296	토요국악 (06.28)	relevance			
 perf::PF253951	미인 쇼츠	relevance			
+perf::PF238942	슈퍼 파워	relevance			
