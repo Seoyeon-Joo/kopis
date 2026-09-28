@@ -73,3 +73,4 @@ perf::PF292843	슈퍼 루나틱	relevance
 perf::PF240292	DIVINE	relevance			
 perf::PF287115	백조의 호수 (영상화)	relevance			
 perf::PF281616	미녀와 야수	relevance			
+perf::PF240292	DIVINE	relevance			
