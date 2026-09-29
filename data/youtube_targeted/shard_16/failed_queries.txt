@@ -20,3 +20,4 @@ perf::PF268568	배꼽잡는 슬로우	relevance
 perf::PF261746	New World	relevance			
 perf::PF263022	단심	relevance			
 perf::PF275928	판	relevance			
+perf::PF263022	단심	relevance			
