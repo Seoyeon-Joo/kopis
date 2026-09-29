@@ -69,3 +69,4 @@ perf::PF266296	토요국악 (06.28)	relevance
 perf::PF253951	미인 쇼츠	relevance			
 perf::PF238942	슈퍼 파워	relevance			
 perf::PF253951	미인	relevance			
+perf::PF253951	미인	date			
