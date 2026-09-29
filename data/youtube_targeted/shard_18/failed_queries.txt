@@ -1,5 +1,3 @@
-perf::PF232962	어린왕자	relevance			
-perf::PF281245	교향곡 2번	relevance			
 perf::PF230602	리어	relevance			
 perf::PF230602	리어	relevance			
 perf::PF294571	호프	relevance			
@@ -60,3 +58,4 @@ perf::PF267482	갈매기	relevance
 perf::PF230602	리어	relevance			
 perf::PF225183	친절한 돼지씨	relevance			
 perf::PF230602	리어	relevance			
+perf::PF250969	사제동행 쇼츠	relevance			
