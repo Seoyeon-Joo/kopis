@@ -1,6 +1,3 @@
-perf::PF266929	납량특집 콘서트	relevance			
-perf::PF281481	토요명품	relevance			
-perf::PF281481	토요명품	relevance			
 perf::PF230622	축제	relevance			
 perf::PF241938	미싱링크	relevance			
 perf::PF271465	시련	relevance			
@@ -54,3 +51,4 @@ perf::PF260159	꽃의 비밀	relevance
 perf::PF242624	화염	relevance			
 perf::PF291470	사의 찬미	relevance			
 perf::PF283897	오즈의 마법사	relevance			
+perf::PF260159	꽃의 비밀	relevance			
