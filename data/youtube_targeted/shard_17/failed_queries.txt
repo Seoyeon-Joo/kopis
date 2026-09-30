@@ -1,9 +1,3 @@
-perf::PF266078	Identity	relevance			
-perf::PF269578	국악가요	relevance			
-perf::PF257678	발렌타인 콘서트 쇼츠	relevance			
-perf::PF279564	도연	relevance			
-perf::PF276559	돈키호테	relevance			
-perf::PF251909	맥베스	relevance			
 perf::PF243639	신데렐라	relevance			
 perf::PF265109	브루크너 6	relevance			
 perf::PF251909	맥베스	relevance			
