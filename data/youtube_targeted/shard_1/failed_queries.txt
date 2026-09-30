@@ -51,3 +51,4 @@ perf::PF296379	겨울 무대 낭독공연	relevance
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF291582	별이 지나 쇼츠	relevance			
 perf::PF293299	드라랄라 치과	relevance			
+perf::PF260777	달을 쏘다.	relevance			
