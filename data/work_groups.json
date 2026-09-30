@@ -9212,42 +9212,5 @@
         "is_high_demand": false
       }
     ]
-  },
-  "라라라온::new_1": {
-    "representative_title": "라라라온 [우무지]",
-    "members": [
-      {
-        "perf_id": "PF301007",
-        "title": "라라라온 [우무지]",
-        "venue_name": "우무지",
-        "perf_start_date": "2026-09-30",
-        "perf_end_date": "2026-09-30",
-        "season_rank": 1,
-        "genre": "대중음악",
-        "company_name": "(사)한국음악레이블산업협회",
-        "cast": [
-          "이병진",
-          "이승준",
-          "정용훈",
-          "윤택선",
-          "고한결",
-          "황영원",
-          "이현석"
-        ],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF300973",
-        "title": "라라라온 [서울 라운지 엠]",
-        "venue_name": "엠피엠지",
-        "perf_start_date": "2026-09-30",
-        "perf_end_date": "2026-09-30",
-        "season_rank": 2,
-        "genre": "대중음악",
-        "company_name": "(사)한국음악레이블산업협회",
-        "cast": [],
-        "is_high_demand": false
-      }
-    ]
   }
 }
