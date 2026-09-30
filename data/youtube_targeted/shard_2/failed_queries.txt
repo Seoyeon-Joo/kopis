@@ -44,3 +44,4 @@ perf::PF295169	강아지똥	relevance
 perf::PF232962	어린왕자	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF257898	유령	relevance			
+perf::PF257899	아이다	relevance			
