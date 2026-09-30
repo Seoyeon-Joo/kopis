@@ -21,3 +21,4 @@ perf::PF275928	판	relevance
 perf::PF263022	단심	relevance			
 perf::PF296034	럭키! 전당포	relevance			
 perf::PF235602	더 북	date			
+perf::PF235602	더 북 쇼츠	relevance			
