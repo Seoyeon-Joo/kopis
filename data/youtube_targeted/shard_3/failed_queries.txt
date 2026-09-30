@@ -66,3 +66,4 @@ perf::PF296348	#8 겟팅 아웃	relevance
 perf::PF250721	아리랑랩소디	relevance			
 perf::PF289313	베토벤	relevance			
 perf::PF289313	베토벤	relevance			
+perf::PF235879	피노키오야 노올자~! 리뷰	relevance			
