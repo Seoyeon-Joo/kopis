@@ -67,3 +67,4 @@ perf::PF249743	성악단 리뷰	relevance
 perf::PF265627	다듬고 가꾸어 잇고 있다 리뷰	relevance			
 perf::PF290779	오늘이의 노래	relevance			
 perf::PF236821	인어공주	relevance			
+perf::PF297834	Born to be BEST CONCERT	relevance			
