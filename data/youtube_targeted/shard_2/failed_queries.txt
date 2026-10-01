@@ -1,4 +1,3 @@
-perf::PF257899	아이다	relevance			
 perf::PF250417	라 트라비아타	relevance			
 perf::PF264923	달 샤베트	relevance			
 perf::PF257899	아이다	relevance			
@@ -47,3 +46,4 @@ perf::PF257899	아이다	relevance
 perf::PF273337	교향곡 7번	relevance			
 perf::PF257898	유령	date			
 perf::PF269091	카트라이더	relevance			
+perf::PF270887	염전이야기 쇼츠	relevance			
