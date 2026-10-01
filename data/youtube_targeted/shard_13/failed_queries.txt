@@ -1,5 +1,3 @@
-perf::PF271465	시련	relevance			
-perf::PF230622	축제 쇼츠	relevance			
 perf::PF230622	축제	relevance			
 perf::PF239158	사랑의 노래	relevance			
 perf::PF227876	무풍	relevance			
@@ -52,3 +50,4 @@ perf::PF283897	오즈의 마법사	relevance
 perf::PF260159	꽃의 비밀	relevance			
 perf::PF230622	축제	relevance			
 perf::PF293998	경성의 고독한 미식가들	relevance			
+perf::PF230622	축제	relevance			
