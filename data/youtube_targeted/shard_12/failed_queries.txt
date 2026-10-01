@@ -1,7 +1,3 @@
-perf::PF246278	사람들	relevance			
-perf::PF283920	피노키오	relevance			
-perf::PF234724	백조의 호수	relevance			
-perf::PF279326	축제	relevance			
 perf::PF234724	백조의 호수	relevance			
 perf::PF276206	생텍쥐페리	relevance			
 perf::PF234724	백조의 호수	relevance			
@@ -47,3 +43,4 @@ perf::PF279326	축제	relevance
 perf::PF242499	희망의 메아리	relevance			
 perf::PF234724	백조의 호수	relevance			
 perf::PF234724	백조의 호수	relevance			
+perf::PF255874	지젤	relevance			
