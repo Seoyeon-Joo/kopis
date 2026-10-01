@@ -1,3 +1,0 @@
-perf::PF251463	영국	relevance			
-perf::PF258755	만선	relevance			
-perf::PF261876	파랑새	relevance			
