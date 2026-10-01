@@ -1,9 +1,3 @@
-perf::PF276931	청이	relevance			
-perf::PF233617	일무	relevance			
-perf::PF281719	백조의 호수	date			
-perf::PF274559	백조의 호수	relevance			
-perf::PF233617	일무	relevance			
-perf::PF233617	일무	relevance			
 perf::PF281481	토요명품	relevance			
 perf::PF281481	토요명품	relevance			
 perf::PF235661	탄호이저	relevance			
@@ -75,3 +69,4 @@ perf::PF240292	DIVINE	relevance
 perf::PF279567	시간이 흘러 여기까지	relevance			
 perf::PF234507	마리 퀴리	date			
 perf::PF292726	죽음 혹은 아님	relevance			
+perf::PF262696	쉿! 크릿 콘서트	relevance			
