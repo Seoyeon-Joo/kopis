@@ -1,6 +1,4 @@
 perf::PF247764	간과 강	relevance			
-perf::PF247764	간과 강	relevance			
-perf::PF247764	간과 강	relevance			
 perf::PF285931	백조의 호수	relevance			
 perf::PF274739	Jazz	relevance			
 perf::PF269765	한여름 밤의 꿈	relevance			
@@ -19,3 +17,4 @@ perf::PF285931	백조의 호수	relevance
 perf::PF253548	슈트라우스의 왈츠	relevance			
 perf::PF259798	왔소! 봄이	relevance			
 perf::PF247845	적벽	relevance			
+perf::PF247764	간과 강	relevance			
