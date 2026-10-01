@@ -38,3 +38,4 @@ perf::PF233744	라 트라비아타	relevance
 perf::PF291874	완벽한 하루	relevance			
 perf::PF274946	춘향 (영상화)	relevance			
 perf::PF272998	해적	date			
+perf::PF233744	라 트라비아타	relevance			
