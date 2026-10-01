@@ -1,54 +1,3 @@
-perf::PF241087	퀸 심포니	relevance			
-perf::PF257640	일무	relevance			
-perf::PF279314	정오의 음악회 (5월)	relevance			
-perf::PF257640	일무	relevance			
-perf::PF257640	일무	date			
-perf::PF257640	일무 리뷰	relevance			
-perf::PF257640	일무	relevance			
-perf::PF278073	라 보엠	relevance			
-perf::PF233617	일무	relevance			
-perf::PF257640	일무	relevance			
-perf::PF257640	일무	relevance			
-perf::PF249790	유림	relevance			
-perf::PF257640	일무	relevance			
-perf::PF257640	일무	relevance			
-perf::PF233617	일무 쇼츠	relevance			
-perf::PF257640	일무	relevance			
-perf::PF257640	일무	relevance			
-perf::PF257640	일무	relevance			
-perf::PF232741	교향곡 5번	relevance			
-perf::PF233617	일무 쇼츠	relevance			
-perf::PF292463	싸운드 써커스	relevance			
-perf::PF257640	일무	relevance			
-perf::PF268892	페페의 꿈	relevance			
-perf::PF232741	교향곡 5번	relevance			
-perf::PF257640	일무	relevance			
-perf::PF257640	일무	relevance			
-perf::PF257640	일무	relevance			
-perf::PF248737	해설이 있는 전막발레 돈키호테	relevance			
-perf::PF260593	사의 찬미	relevance			
-perf::PF257640	일무	relevance			
-perf::PF257640	일무	relevance			
-perf::PF245644	플라잉심포니	relevance			
-perf::PF260178	레미제라블	relevance			
-perf::PF257640	일무	relevance			
-perf::PF272850	혹부리 영감이 되고 싶은 도깨비	relevance			
-perf::PF257640	일무	relevance			
-perf::PF292463	싸운드 써커스	relevance			
-perf::PF257640	일무	relevance			
-perf::PF281266	Goodbye 2025	relevance			
-perf::PF257640	일무	relevance			
-perf::PF232741	교향곡 5번	relevance			
-perf::PF257640	일무	relevance			
-perf::PF259186	희망과 사랑	relevance			
-perf::PF260178	레미제라블	relevance			
-perf::PF276362	오르페우스	relevance			
-perf::PF257640	일무	relevance			
-perf::PF260178	레미제라블	relevance			
-perf::PF258725	전람회의 그림	relevance			
-perf::PF289276	클래식 세레나데	relevance			
-perf::PF257640	일무	relevance			
-perf::PF245668	셰프	relevance			
 perf::PF232741	교향곡 5번	relevance			
 perf::PF257640	일무	relevance			
 perf::PF230309	서울시향 실내악 시리즈 V	relevance			
@@ -57,3 +6,4 @@ perf::PF232741	교향곡 5번	relevance
 perf::PF232741	교향곡 5번	relevance			
 perf::PF242034	신예지휘자 연주회	relevance			
 perf::PF257640	일무	relevance			
+perf::PF250502	청송군민을 위한 가을음악회	relevance			
