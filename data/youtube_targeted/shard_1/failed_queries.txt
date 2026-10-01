@@ -45,3 +45,4 @@ perf::PF293299	드라랄라 치과	relevance
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF282257	신년음악회	relevance			
 perf::PF298146	오늘부터 맑음	relevance			
+perf::PF260777	달을 쏘다.	relevance			
