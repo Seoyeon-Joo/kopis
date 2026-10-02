@@ -59,3 +59,4 @@ perf::PF276931	청이	relevance
 perf::PF253954	그의 어머니	relevance			
 perf::PF270995	염원	relevance			
 perf::PF281719	백조의 호수	relevance			
+perf::PF281719	백조의 호수	relevance			
