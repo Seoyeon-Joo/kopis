@@ -1,2 +1,0 @@
-perf::PF223372	이상한 엄마	relevance			
-perf::PF250969	사제동행	relevance			
