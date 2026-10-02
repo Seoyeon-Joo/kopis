@@ -40,3 +40,4 @@ perf::PF272998	해적	date
 perf::PF233744	라 트라비아타	relevance			
 perf::PF233744	라 트라비아타	relevance			
 perf::PF291874	완벽한 하루	date			
+perf::PF291874	완벽한 하루	relevance			
