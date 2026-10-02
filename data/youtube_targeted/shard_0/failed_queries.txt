@@ -50,3 +50,4 @@ perf::PF246190	제74회 부산시립청소년교향악단 정기연주회	releva
 perf::PF287955	수작 Ⅱ	relevance			
 perf::PF296780	독립하여 산다는 건 리뷰	relevance			
 perf::PF297329	하늘나라에는 하이라이트	relevance			
+perf::PF242727	벨벳토끼 쇼츠	relevance			
