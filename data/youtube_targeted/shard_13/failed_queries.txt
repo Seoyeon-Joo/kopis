@@ -52,3 +52,4 @@ perf::PF230622	축제	relevance
 perf::PF293998	경성의 고독한 미식가들	relevance			
 perf::PF230622	축제	relevance			
 perf::PF230622	축제	relevance			
+perf::PF241439	남사친 여사친 리뷰	relevance			
