@@ -6,3 +6,4 @@ perf::PF242034	신예지휘자 연주회	relevance
 perf::PF257640	일무	relevance			
 perf::PF250502	청송군민을 위한 가을음악회	relevance			
 perf::PF257043	판을 나온 소리	relevance			
+perf::PF244891	바디 콘서트	relevance			
