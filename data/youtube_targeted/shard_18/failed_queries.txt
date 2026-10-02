@@ -46,3 +46,4 @@ perf::PF225394	이상한 엄마 쇼츠	relevance
 perf::PF230602	리어	date			
 perf::PF267560	줌인 Ⅱ 쇼츠	relevance			
 perf::PF262385	정글라이프	relevance			
+perf::PF270776	판소리 감상회 (8월)	relevance			
