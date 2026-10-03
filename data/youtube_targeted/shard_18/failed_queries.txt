@@ -1,4 +1,3 @@
-perf::PF225394	이상한 엄마	relevance			
 perf::PF286226	양산30	relevance			
 perf::PF253598	똥벼락	relevance			
 perf::PF278683	피가로의 결혼 Le nozze di Figaro	relevance			
