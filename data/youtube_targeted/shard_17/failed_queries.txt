@@ -67,3 +67,4 @@ perf::PF290779	오늘이의 노래	relevance
 perf::PF236821	인어공주	relevance			
 perf::PF297834	Born to be BEST CONCERT	relevance			
 perf::PF251909	맥베스	date			
+perf::PF245094	수상한 외갓집	relevance			
