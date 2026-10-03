@@ -39,3 +39,4 @@ perf::PF233608	봄	relevance
 perf::PF240854	그린국악	relevance			
 perf::PF257643	수도SONG 세계여행 쇼츠	relevance			
 perf::PF272158	12 사운드	relevance			
+perf::PF233608	봄	relevance			
