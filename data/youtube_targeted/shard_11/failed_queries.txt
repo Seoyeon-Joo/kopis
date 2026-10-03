@@ -72,3 +72,4 @@ perf::PF292726	죽음 혹은 아님	relevance
 perf::PF262696	쉿! 크릿 콘서트	relevance			
 perf::PF274851	도는놈 뛰는놈 나는놈	relevance			
 perf::PF240292	DIVINE	relevance			
+perf::PF224064	지수가 누구야	relevance			
