@@ -73,3 +73,4 @@ perf::PF262696	쉿! 크릿 콘서트	relevance
 perf::PF274851	도는놈 뛰는놈 나는놈	relevance			
 perf::PF240292	DIVINE	relevance			
 perf::PF224064	지수가 누구야	relevance			
+perf::PF293241	우리의 미래	relevance			
