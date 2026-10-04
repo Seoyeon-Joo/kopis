@@ -67,3 +67,4 @@ perf::PF251909	맥베스	date
 perf::PF245094	수상한 외갓집	relevance			
 perf::PF290950	산초와 돈키호테	relevance			
 perf::PF235664	한여름 밤의 꿈	relevance			
+perf::PF251909	맥베스	relevance			
