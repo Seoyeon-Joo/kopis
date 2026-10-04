@@ -60,3 +60,4 @@ perf::PF270834	홍련	relevance
 perf::PF278396	태풍	date			
 perf::PF268035	비손	relevance			
 perf::PF291789	피아노의 숲	relevance			
+perf::PF245200	괴물도감	relevance			
