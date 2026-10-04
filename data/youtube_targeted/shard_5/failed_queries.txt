@@ -35,3 +35,4 @@ perf::PF291874	완벽한 하루	date
 perf::PF291874	완벽한 하루	relevance			
 perf::PF233744	라 트라비아타	relevance			
 perf::PF291874	완벽한 하루	relevance			
+perf::PF295293	현진영 콘서트	relevance			
