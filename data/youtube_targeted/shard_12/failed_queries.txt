@@ -52,3 +52,4 @@ perf::PF292469	룰렛	relevance
 perf::PF255874	지젤 쇼츠	relevance			
 perf::PF253183	시 그리고 낭만	relevance			
 perf::PF234724	백조의 호수	relevance			
+perf::PF242666	페인터즈	relevance			
