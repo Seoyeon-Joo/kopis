@@ -54,3 +54,4 @@ perf::PF297491	솔직 클럽	relevance
 perf::PF260777	달을 쏘다.	relevance			
 perf::PF294869	교향곡 1번	relevance			
 perf::PF298518	윤봉길은 왜? 물통폭탄을 던졌을까?	relevance			
+perf::PF260777	달을 쏘다.	relevance			
