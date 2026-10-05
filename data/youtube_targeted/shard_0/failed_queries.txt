@@ -1,5 +1,3 @@
-perf::PF257633	코믹 (Com!que)	relevance			
-perf::PF278331	컬렉션	relevance			
 perf::PF290251	저승편	relevance			
 perf::PF265101	꽃의 비밀	relevance			
 perf::PF290251	저승편	relevance			
@@ -56,3 +54,4 @@ perf::PF293896	CELL 쇼츠	relevance
 perf::PF295351	그 여름날의 계곡	relevance			
 perf::PF294717	리프나	relevance			
 perf::PF293896	CELL	relevance			
+perf::PF290251	저승편	relevance			
