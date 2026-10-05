@@ -54,3 +54,4 @@ perf::PF275469	바람에 새겨진 이름	relevance
 perf::PF258358	피가로의 결혼	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF258358	피가로의 결혼	relevance			
+perf::PF258358	피가로의 결혼	relevance			
