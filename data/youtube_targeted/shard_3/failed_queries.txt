@@ -63,3 +63,4 @@ perf::PF298626	찬여름 (앵콜)	relevance
 perf::PF289313	베토벤	relevance			
 perf::PF292836	pleasure	relevance			
 perf::PF292836	pleasure	relevance			
+perf::PF289313	베토벤 쇼츠	relevance			
