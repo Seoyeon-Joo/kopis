@@ -1,2 +1,0 @@
-perf::PF253234	그들의 논쟁 & 혼돈	relevance			
-perf::PF279404	크리스마스 캐럴	relevance			
