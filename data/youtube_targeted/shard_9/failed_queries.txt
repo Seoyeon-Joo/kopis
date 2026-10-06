@@ -49,3 +49,4 @@ perf::PF295477	Day Off	relevance
 perf::PF248279	모든	relevance			
 perf::PF248279	모든 리뷰	date			
 perf::PF293692	백설공주	relevance			
+perf::PF297933	다섯 번째 외박	relevance			
