@@ -1,5 +1,4 @@
 perf::PF269547	심청	relevance			
-perf::PF269547	심청	relevance			
 perf::PF291527	세종국악관현악단 & 김경호의 아리랑목동	relevance			
 perf::PF234724	백조의 호수	relevance			
 perf::PF269547	심청	date			
@@ -50,3 +49,4 @@ perf::PF242666	페인터즈	relevance
 perf::PF269547	심청	relevance			
 perf::PF234724	백조의 호수	relevance			
 perf::PF296030	박민희 피아노 독주회	relevance			
+perf::PF255874	지젤	date			
