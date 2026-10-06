@@ -64,3 +64,4 @@ perf::PF289313	베토벤	relevance
 perf::PF292836	pleasure	relevance			
 perf::PF292836	pleasure	relevance			
 perf::PF289313	베토벤 쇼츠	relevance			
+perf::PF297705	파주포크페스티벌 전야제	relevance			
