@@ -79,3 +79,4 @@ perf::PF283016	대전시립교향악단 마티네 콘서트 1	relevance
 perf::PF240292	DIVINE	relevance			
 perf::PF273550	국악의 내일을 그리다	relevance			
 perf::PF234507	마리 퀴리 리뷰	relevance			
+perf::PF234507	마리 퀴리	date			
