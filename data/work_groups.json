@@ -9758,5 +9758,38 @@
         "is_high_demand": false
       }
     ]
+  },
+  "현대카드슈퍼콘서트28위켄드::new_1": {
+    "representative_title": "현대카드 슈퍼콘서트 28, 위켄드 (The Weeknd)",
+    "members": [
+      {
+        "perf_id": "PF292014",
+        "title": "[패키지] 현대카드 슈퍼콘서트 28, 위켄드 (The Weeknd)",
+        "venue_name": "고양종합운동장",
+        "perf_start_date": "2026-10-07",
+        "perf_end_date": "2026-10-08",
+        "season_rank": 1,
+        "genre": "대중음악",
+        "company_name": "(주)라이브네이션코리아",
+        "cast": [
+          "에이블 마코넨 테스페이"
+        ],
+        "is_high_demand": false
+      },
+      {
+        "perf_id": "PF291729",
+        "title": "현대카드 슈퍼콘서트 28, 위켄드 (The Weeknd)",
+        "venue_name": "고양종합운동장",
+        "perf_start_date": "2026-10-07",
+        "perf_end_date": "2026-10-08",
+        "season_rank": 2,
+        "genre": "대중음악",
+        "company_name": "(주)라이브네이션코리아",
+        "cast": [
+          "에이블 마코넨 테스페이"
+        ],
+        "is_high_demand": false
+      }
+    ]
   }
 }
