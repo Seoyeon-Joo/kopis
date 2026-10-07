@@ -1,5 +1,4 @@
 perf::PF233744	라 트라비아타	relevance			
-perf::PF233744	라 트라비아타	relevance			
 perf::PF233744	라 트라비아타 하이라이트	relevance			
 perf::PF250997	가을수채화 리뷰	relevance			
 perf::PF233744	라 트라비아타	relevance			
@@ -36,3 +35,4 @@ perf::PF291874	완벽한 하루	date
 perf::PF295293	현진영 콘서트	relevance			
 perf::PF294570	봉황	date			
 perf::PF292881	The Originals 쇼츠	relevance			
+perf::PF291874	완벽한 하루	relevance			
