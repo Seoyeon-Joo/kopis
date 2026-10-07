@@ -1,6 +1,3 @@
-perf::PF247764	간과 강	relevance			
-perf::PF288006	1919년	relevance			
-perf::PF247764	간과 강	relevance			
 perf::PF288006	1919년	relevance			
 perf::PF230615	사자의 서	relevance			
 perf::PF261547	강원-부산 ITX 개통기념 합동교류연주회 결말	relevance			
@@ -23,3 +20,4 @@ perf::PF292810	지킬 앤 하이드	relevance
 perf::PF272938	초이스	relevance			
 perf::PF285931	백조의 호수	relevance			
 perf::PF286721	오렌지 스카이	relevance			
+perf::PF285931	백조의 호수	relevance			
