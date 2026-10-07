@@ -55,3 +55,4 @@ perf::PF260777	달을 쏘다.	relevance
 perf::PF296753	해서웨이 × 잭킹콩 × 산보	relevance			
 perf::PF282257	신년음악회	date			
 perf::PF242689	햄릿	relevance			
+perf::PF282257	신년음악회	relevance			
