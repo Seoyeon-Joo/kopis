@@ -41,3 +41,4 @@ perf::PF272998	해적	relevance
 perf::PF291874	완벽한 하루	date			
 perf::PF295293	현진영 콘서트	relevance			
 perf::PF294570	봉황	date			
+perf::PF292881	The Originals 쇼츠	relevance			
