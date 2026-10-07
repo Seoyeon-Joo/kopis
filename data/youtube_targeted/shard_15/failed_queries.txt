@@ -61,3 +61,4 @@ perf::PF281719	백조의 호수	relevance
 perf::PF278396	태풍	relevance			
 perf::PF291789	피아노의 숲	relevance			
 perf::PF281719	백조의 호수	date			
+perf::PF236936	1972	relevance			
