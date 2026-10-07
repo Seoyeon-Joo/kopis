@@ -1,5 +1,4 @@
 perf::PF281481	토요명품	relevance			
-perf::PF281481	토요명품	relevance			
 perf::PF235661	탄호이저	relevance			
 perf::PF235661	탄호이저	date			
 perf::PF240292	DIVINE	relevance			
@@ -81,3 +80,4 @@ perf::PF273550	국악의 내일을 그리다	relevance
 perf::PF234507	마리 퀴리 리뷰	relevance			
 perf::PF234507	마리 퀴리	date			
 perf::PF283920	피노키오	relevance			
+perf::PF294030	브룸스타운의 에너지를 지켜라!	relevance			
