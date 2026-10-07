@@ -1,6 +1,4 @@
 perf::PF289313	베토벤	relevance			
-perf::PF221685	페페의 꿈	relevance			
-perf::PF289313	베토벤	relevance			
 perf::PF289313	베토벤	relevance			
 perf::PF279879	호두까기 인형	relevance			
 perf::PF288614	햄릿  (영상화)	relevance			
@@ -65,3 +63,4 @@ perf::PF297705	파주포크페스티벌 전야제	relevance
 perf::PF298608	미운 아기 오리	relevance			
 perf::PF279879	호두까기 인형 쇼츠	date			
 perf::PF289313	베토벤	relevance			
+perf::PF279879	호두까기 인형	relevance			
