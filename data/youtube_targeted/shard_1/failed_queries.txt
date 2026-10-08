@@ -57,3 +57,4 @@ perf::PF282257	신년음악회	date
 perf::PF242689	햄릿	relevance			
 perf::PF282257	신년음악회	relevance			
 perf::PF242689	햄릿	relevance			
+perf::PF242689	햄릿	relevance			
