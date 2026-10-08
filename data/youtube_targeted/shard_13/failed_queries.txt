@@ -61,3 +61,4 @@ perf::PF297830	여름의 공명	relevance
 perf::PF295510	아들은? 쇼츠	relevance			
 perf::PF295510	아들은? 하이라이트	relevance			
 perf::PF299078	산 아래 사람들	relevance			
+perf::PF230622	축제	relevance			
