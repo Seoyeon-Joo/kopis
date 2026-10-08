@@ -45,3 +45,4 @@ perf::PF278683	피가로의 결혼 Le nozze di Figaro 하이라이트	relevance
 perf::PF293611	세계평화음악앙상블 쇼츠	relevance			
 perf::PF296770	조용히 죽어가는 집	relevance			
 perf::PF298795	Beethoveniana Ⅲ. 위대한 도약 리뷰	relevance			
+perf::PF298181	영 아티스트 콘서트 (Young Artist Concert)	relevance			
