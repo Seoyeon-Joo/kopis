@@ -1,6 +1,3 @@
-perf::PF232741	교향곡 5번	relevance			
-perf::PF232741	교향곡 5번	relevance			
-perf::PF272222	가노	relevance			
 perf::PF250111	나의 그린국악	relevance			
 perf::PF287196	아인슈타인의 과학여행	relevance			
 perf::PF285965	리턴	relevance			
@@ -10,3 +7,4 @@ perf::PF291038	흉터	relevance
 perf::PF292969	매직서커스	relevance			
 perf::PF281900	어쩌다 보니	relevance			
 perf::PF292969	매직서커스	relevance			
+perf::PF298720	성남국제윈드페스티벌	relevance			
