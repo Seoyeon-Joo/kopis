@@ -64,3 +64,4 @@ perf::PF298608	미운 아기 오리	relevance
 perf::PF279879	호두까기 인형 쇼츠	date			
 perf::PF289313	베토벤	relevance			
 perf::PF279879	호두까기 인형	relevance			
+perf::PF297388	Tae-Yeon Kim 김태연	relevance			
