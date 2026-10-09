@@ -423,26 +423,6 @@
           "남희진"
         ],
         "is_high_demand": false
-      },
-      {
-        "perf_id": "PF301921",
-        "title": "강아지똥 [군위]",
-        "venue_name": "군위 삼국유사교육문화회관",
-        "perf_start_date": "2026-10-09",
-        "perf_end_date": "2026-10-09",
-        "season_rank": 6.0,
-        "genre": "연극",
-        "company_name": "군위군 시설관리사업소, 삼국유사교육문화회관",
-        "cast": [
-          "정래석",
-          "이희연",
-          "고예본",
-          "오명준",
-          "류제원",
-          "김수영",
-          "남희진"
-        ],
-        "is_high_demand": false
       }
     ]
   },
@@ -9774,35 +9754,6 @@
         "season_rank": 2.0,
         "genre": "연극",
         "company_name": "",
-        "cast": [],
-        "is_high_demand": false
-      }
-    ]
-  },
-  "피노키오::new_1": {
-    "representative_title": "피노키오 [창원]",
-    "members": [
-      {
-        "perf_id": "PF299219",
-        "title": "피노키오 [창원]",
-        "venue_name": "성산아트홀",
-        "perf_start_date": "2026-10-09",
-        "perf_end_date": "2026-10-09",
-        "season_rank": 1,
-        "genre": "뮤지컬",
-        "company_name": NaN,
-        "cast": [],
-        "is_high_demand": false
-      },
-      {
-        "perf_id": "PF298422",
-        "title": "피노키오 [시흥]",
-        "venue_name": "시흥ABC행복학습센터",
-        "perf_start_date": "2026-10-09",
-        "perf_end_date": "2026-10-09",
-        "season_rank": 2,
-        "genre": "뮤지컬",
-        "company_name": NaN,
         "cast": [],
         "is_high_demand": false
       }
