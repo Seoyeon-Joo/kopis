@@ -63,3 +63,4 @@ perf::PF270834	홍련	relevance
 perf::PF277371	백조의 호수	relevance			
 perf::PF278396	태풍	relevance			
 perf::PF247885	몹 Ⅹ 수선되는 밤	relevance			
+perf::PF270834	홍련	relevance			
