@@ -59,3 +59,4 @@ perf::PF294045	갈매기	date
 perf::PF288124	FEVER (피버)	relevance			
 perf::PF275053	호두까기 인형	relevance			
 perf::PF266618	매우 춰라!	relevance			
+perf::PF294045	갈매기	relevance			
