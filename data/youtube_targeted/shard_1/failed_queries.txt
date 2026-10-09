@@ -1,4 +1,3 @@
-perf::PF282257	신년음악회	relevance			
 perf::PF284107	낭 쉐	relevance			
 perf::PF279318	완창판소리 (4월)	relevance			
 perf::PF217261	이상한 엄마	relevance			
@@ -57,3 +56,4 @@ perf::PF282257	신년음악회	relevance
 perf::PF242689	햄릿	relevance			
 perf::PF242689	햄릿	relevance			
 perf::PF242689	햄릿	relevance			
+perf::PF297927	도 를 아십니까? 쇼츠	relevance			
