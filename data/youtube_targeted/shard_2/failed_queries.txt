@@ -55,3 +55,4 @@ perf::PF232962	어린왕자	relevance
 perf::PF257899	아이다	relevance			
 perf::PF276781	우리의 노래	relevance			
 perf::PF257899	아이다	relevance			
+perf::PF297549	굿 닥터	relevance			
