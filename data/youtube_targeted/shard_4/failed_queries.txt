@@ -77,3 +77,4 @@ perf::PF287666	씻김굿	relevance
 perf::PF266067	인어공주	relevance			
 perf::PF266067	인어공주	relevance			
 perf::PF276816	어린이와 마법	relevance			
+perf::PF266067	인어공주	relevance			
