@@ -63,3 +63,4 @@ perf::PF294045	갈매기	relevance
 perf::PF287390	오늘도 극한직업	relevance			
 perf::PF261282	The Way	relevance			
 perf::PF294045	갈매기	relevance			
+perf::PF266618	매우 춰라!	relevance			
