@@ -52,3 +52,4 @@ perf::PF298831	프로젝트 비	relevance
 perf::PF248279	모든	relevance			
 perf::PF248279	모든	relevance			
 perf::PF286267	모차르트 에센셜  (8월)	relevance			
+perf::PF248279	모든	relevance			
