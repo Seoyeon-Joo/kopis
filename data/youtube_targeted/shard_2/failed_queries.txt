@@ -54,3 +54,4 @@ perf::PF258358	피가로의 결혼	date
 perf::PF232962	어린왕자	relevance			
 perf::PF257899	아이다	relevance			
 perf::PF276781	우리의 노래	relevance			
+perf::PF257899	아이다	relevance			
