@@ -64,3 +64,4 @@ perf::PF299078	산 아래 사람들	relevance
 perf::PF230622	축제	relevance			
 perf::PF299812	The Essence of Harmony	relevance			
 perf::PF297676	Raise You Up	relevance			
+perf::PF230622	축제	relevance			
