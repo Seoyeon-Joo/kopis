@@ -1,6 +1,5 @@
 perf::PF230622	축제	relevance			
 perf::PF230622	축제	relevance			
-perf::PF230622	축제	relevance			
 perf::PF283897	오즈의 마법사	relevance			
 perf::PF230622	축제	relevance			
 perf::PF256110	천안시립교향악단 신년음악회	relevance			
@@ -65,3 +64,4 @@ perf::PF230622	축제	relevance
 perf::PF299812	The Essence of Harmony	relevance			
 perf::PF297676	Raise You Up	relevance			
 perf::PF230622	축제	relevance			
+perf::PF296189	십이야	relevance			
