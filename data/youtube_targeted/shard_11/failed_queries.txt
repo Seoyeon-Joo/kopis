@@ -1,6 +1,4 @@
 perf::PF249752	라 바야데르	relevance			
-perf::PF240292	DIVINE	relevance			
-perf::PF249752	라 바야데르	relevance			
 perf::PF249752	라 바야데르 커튼콜	relevance			
 perf::PF249752	라 바야데르	relevance			
 perf::PF264062	어린 왕자	relevance			
@@ -83,3 +81,4 @@ perf::PF229985	천로역정	relevance
 perf::PF240292	DIVINE	relevance			
 perf::PF298109	해송의 시간	relevance			
 perf::PF297012	대전 MBC 예술단 초청 스페인 밀레니엄 합창단 내한 연주회	relevance			
+perf::PF298109	해송의 시간	relevance			
