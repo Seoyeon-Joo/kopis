@@ -46,3 +46,4 @@ perf::PF298795	Beethoveniana Ⅲ. 위대한 도약 리뷰	relevance
 perf::PF298181	영 아티스트 콘서트 (Young Artist Concert)	relevance			
 perf::PF278683	피가로의 결혼 Le nozze di Figaro	relevance			
 perf::PF295833	오방신과	relevance			
+perf::PF297596	김정림 피아노 독주회	relevance			
