@@ -37,3 +37,4 @@ perf::PF291874	완벽한 하루 쇼츠	relevance
 perf::PF297163	끝나지 않는 이야기	relevance			
 perf::PF298238	스케르초 전곡	relevance			
 perf::PF272998	해적	relevance			
+perf::PF272998	해적	relevance			
