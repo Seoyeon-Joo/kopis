@@ -13,3 +13,4 @@ perf::PF299196	선풍	relevance
 perf::PF263022	단심	relevance			
 perf::PF261746	New World	date			
 perf::PF263022	단심	relevance			
+perf::PF299882	가요톱텐	relevance			
