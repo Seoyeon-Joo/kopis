@@ -69,3 +69,4 @@ perf::PF289313	베토벤	relevance
 perf::PF289313	베토벤	relevance			
 perf::PF301182	나눔으로 함께하는 서귀포	relevance			
 perf::PF301451	쇼 (Show) & 보이스 (Voice)	relevance			
+perf::PF289313	베토벤	relevance			
