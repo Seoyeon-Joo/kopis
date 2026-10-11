@@ -7,7 +7,7 @@ on:
         description: "기존 파일이 없을 때만 사용할 초기 수집 구간(주). 평소엔 비워두면 됨."
         required: false
         default: "8"
-  schedule:
+  #schedule:
     #- cron: "0 3 * * *"   # 매일 UTC 03:00 (한국시간 12:00)
 
 permissions:

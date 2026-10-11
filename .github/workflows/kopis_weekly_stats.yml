@@ -7,8 +7,8 @@ on:
         description: "수집 시작일 수동 지정 (YYYYMMDD, 비워두면 '지난 실행 3일 전' 자동 계산). 놓친 구간을 따라잡을 때만 채워넣기 - 예: 20260626"
         required: false
         default: ""
-  schedule:
-    - cron: "0 2 * * *"   # 매일 UTC 02:00 (한국시간 11:00)
+  #schedule:
+    #- cron: "0 2 * * *"   # 매일 UTC 02:00 (한국시간 11:00)
 
 permissions:
   contents: write

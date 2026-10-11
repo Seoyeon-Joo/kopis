@@ -2,8 +2,8 @@ name: KOPIS 전체 데이터 수집
 
 on:
   workflow_dispatch:          # 수동 실행
-  schedule:
-    - cron: '0 1 * * 0'      # 매주 일요일 01:00 UTC (한국 10:00)
+  #schedule:
+    #- cron: '0 1 * * 0'      # 매주 일요일 01:00 UTC (한국 10:00)
 
 permissions:
   contents: write
