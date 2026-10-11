@@ -83,3 +83,4 @@ perf::PF297012	대전 MBC 예술단 초청 스페인 밀레니엄 합창단 내�
 perf::PF298109	해송의 시간	relevance			
 perf::PF295822	바이올리니스트 노윤정 리사이틀 쇼츠	relevance			
 perf::PF299113	정서연 피아노 독주회	relevance			
+perf::PF240292	DIVINE	relevance			
