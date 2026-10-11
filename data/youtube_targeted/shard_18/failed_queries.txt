@@ -1,4 +1,3 @@
-perf::PF269784	광복의 빛을 넘어	relevance			
 perf::PF230602	리어	relevance			
 perf::PF230602	리어	relevance			
 perf::PF271418	겨울 그리고 다시 봄	relevance			
@@ -47,3 +46,4 @@ perf::PF298181	영 아티스트 콘서트 (Young Artist Concert)	relevance
 perf::PF278683	피가로의 결혼 Le nozze di Figaro	relevance			
 perf::PF295833	오방신과	relevance			
 perf::PF297596	김정림 피아노 독주회	relevance			
+perf::PF299323	가까운 이야기	relevance			
